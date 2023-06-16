@@ -1,0 +1,237 @@
+HUN_alternate_AH = {
+	name = "Hungarian Alternate plan to restore Austria-Hungary"
+	desc = ""
+
+	allowed = {
+		original_tag = HUN
+		has_dlc = "Death or Dishonor"
+	}
+	enable = {
+		OR = {
+			has_country_flag = HUN_AI_RANDOM_AUSTRIA_HUNGARY
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = AUSTRIA_HUNGARY
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		HUN_balanced_budget
+		HUN_strengthen_the_monarchists
+		HUN_elect_a_king
+		HUN_the_unthinkable
+		HUN_habsburg_takeover
+		HUN_remember_our_great_leader
+		HUN_demand_a_referendum
+		HUN_secret_rearmament
+		HUN_industrial_revitalization
+		HUN_reintegrate_the_railroads
+		HUN_support_domestic_industry
+		HUN_support_urbanization
+		HUN_institute_for_industrial_techniques
+		HUN_proclaim_the_restoration_of_austria_hungary
+		HUN_announce_the_gyor_program
+		HUN_gyori_program_focus
+		HUN_protect_czechoslovakia
+		
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		armor = 15.0
+	}
+
+	ideas = {
+		
+	}
+	ai_strategy = {
+		type = befriend
+		id = "AUS"
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = "CZE"
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = "GER"
+		value = 100
+	}
+	traits = {
+		captain_of_industry = 5
+		staunch_monarchist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		HUN_boost_hungarian_aviation_industry = 10
+		HUN_claim_transylvania = 5
+		HUN_march_to_the_shore = 5
+	}
+
+}
+
+HUN_alternate_KING_HORTHY = {
+	name = "Hungarian Alternate plan to chose Horthy as King and dominate the Balkans"
+	desc = ""
+
+	allowed = {
+		original_tag = HUN
+		has_dlc = "Death or Dishonor"
+	}
+	enable = {
+		OR = {
+			has_country_flag = HUN_AI_RANDOM_KING_HORTHY
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = KING_HORTHY
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		HUN_balanced_budget
+		HUN_strengthen_the_monarchists
+		HUN_elect_a_king
+		HUN_elect_horthy
+		HUN_nobility_protests
+		HUN_approach_czechoslovakia
+		HUN_deals_with_the_nobility
+		HUN_appease_nobility
+		HUN_increase_popular_support
+		HUN_peoples_king
+		HUN_the_true_hungary
+		HUN_secret_rearmament
+		HUN_industrial_revitalization
+		HUN_reintegrate_the_railroads
+		HUN_support_domestic_industry
+		HUN_support_urbanization
+		HUN_institute_for_industrial_techniques
+		HUN_proclaim_the_restoration_of_austria_hungary
+		HUN_announce_the_gyor_program
+		HUN_gyori_program_focus
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+	
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	
+	}
+
+}
+
+HUN_alternate_FAS = {
+	name = "Hungarian Alternate plan to become a German Puppet"
+	desc = ""
+
+	allowed = {
+		original_tag = HUN
+		has_dlc = "Death or Dishonor"
+	}
+	enable = {
+		OR = {
+			has_country_flag = HUN_AI_RANDOM_FASCIST_ALTERNATE
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = FASCIST_ALTERNATE
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		HUN_economic_intervention
+		HUN_strengthen_fascists
+		HUN_diplomatic_revision
+		HUN_swear_loyalty
+		HUN_seek_german_friendship
+		HUN_limied_exports
+		HUN_extensive_conscription
+		HUN_total_mobilization
+		HUN_german_scientists
+		HUN_german_factories
+		HUN_ask_for_southern_slovakia
+		HUN_german_hungarian_unity
+		HUN_secret_rearmament
+		HUN_industrial_revitalization
+		HUN_reintegrate_the_railroads
+		HUN_support_domestic_industry
+		HUN_support_urbanization
+		HUN_institute_for_industrial_techniques
+		HUN_proclaim_the_restoration_of_austria_hungary
+		HUN_announce_the_gyor_program
+		HUN_gyori_program_focus
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+	
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		HUN_a_vision_for_tomorrow = 0.1
+	}
+}

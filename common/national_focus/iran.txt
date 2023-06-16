@@ -1,0 +1,1018 @@
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_NAVY_XP}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = persian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PER
+			always = yes
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 225 y = 850 }
+
+#	focus = {
+#		id = PER_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	##########################
+	##### Economic Path ######
+	##########################
+
+	focus = {
+		id = PER_economic_development
+		icon = GFX_goal_generic_construct_civ_factory
+		#mutually_exclusive = { focus = }
+		#prerequisite = { focus = }
+		x = 2
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+
+			random_core_state = {
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+
+				add_extra_state_shared_building_slots = 2
+			}
+			random_core_state = {
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	focus = {
+		id = PER_embrace_the_rural_culture
+		icon = GFX_focus_ITA_grande_rivolta_rurale
+		mutually_exclusive = { focus = PER_enact_industrial_reforms }
+		prerequisite = { focus = PER_economic_development }
+		x = -1
+		y = 1
+		relative_position_id = PER_economic_development
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+
+			random_core_state = {
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_core_state = {
+
+				add_extra_state_shared_building_slots = 2
+			}
+			random_core_state = {
+
+				add_extra_state_shared_building_slots = 2
+			}
+			random_core_state = {
+
+				add_extra_state_shared_building_slots = 2
+			}
+
+			swap_ideas = {
+			    remove_idea = PER_rural_nation
+			    add_idea = PER_rural_nation2
+			}
+		}
+	}
+
+	focus = {
+		id = PER_in_honor_of_alah
+		icon = GFX_focus_ITA_comandante_diavolo
+		#mutually_exclusive = { focus = PER_enact_industrial_reforms }
+		prerequisite = { focus = PER_embrace_the_rural_culture }
+		x = 0
+		y = 1
+		relative_position_id = PER_embrace_the_rural_culture
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+
+			random_core_state = {
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+
+			swap_ideas = {
+			    remove_idea = PER_rural_nation2
+			    add_idea = PER_rural_nation3
+			}
+		}
+	}
+
+	focus = {
+		id = PER_spit_on_western_industrialization
+		icon = GFX_focus_ITA_topple_amhara_rulers
+		#mutually_exclusive = { focus = PER_enact_industrial_reforms }
+		prerequisite = { focus = PER_in_honor_of_alah }
+		x = 0
+		y = 1
+		relative_position_id = PER_in_honor_of_alah
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+
+			random_core_state = {
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+
+			swap_ideas = {
+			    remove_idea = PER_rural_nation3
+			    add_idea = PER_rural_nation4
+			}
+		}
+	}
+
+	focus = {
+		id = PER_enact_industrial_reforms
+		icon = GFX_focus_generic_industry_1
+		mutually_exclusive = { focus = PER_embrace_the_rural_culture }
+		prerequisite = { focus = PER_economic_development }
+		x = 1
+		y = 1
+		relative_position_id = PER_economic_development
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+
+			random_core_state = {
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 1
+			    category = industry
+			}
+
+			swap_ideas = {
+			    remove_idea = PER_rural_nation
+			    add_idea = PER_industrial_nation
+			}
+		}
+	}
+
+	focus = {
+		id = PER_industrialized_cities
+		icon = GFX_focus_generic_industry_2
+		#mutually_exclusive = { focus = PER_embrace_the_rural_culture }
+		prerequisite = { focus = PER_enact_industrial_reforms }
+		x = 0
+		y = 1
+		relative_position_id = PER_enact_industrial_reforms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+
+			random_core_state = {
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 1
+			    category = industry
+			}
+
+			swap_ideas = {
+			    remove_idea = PER_industrial_nation
+			    add_idea = PER_industrial_nation2
+			}
+		}
+	}
+
+	focus = {
+		id = PER_industrialized_economy
+		icon = GFX_focus_generic_industry_3
+		#mutually_exclusive = { focus = PER_embrace_the_rural_culture }
+		prerequisite = { focus = PER_industrialized_cities }
+		x = 0
+		y = 1
+		relative_position_id = PER_industrialized_cities
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+
+			random_core_state = {
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+
+			add_tech_bonus = {
+			    bonus = 1.0
+			    uses = 1
+			    category = industry
+			}
+
+			swap_ideas = {
+			    remove_idea = PER_industrial_nation2
+			    add_idea = PER_industrial_nation3
+			}
+		}
+	}
+
+	focus = {
+		id = PER_research_instutute_of_baghdad
+		icon = GFX_focus_research
+		#mutually_exclusive = { focus = PER_embrace_the_rural_culture }
+		prerequisite = { focus = PER_industrialized_economy focus = PER_spit_on_western_industrialization }
+		x = 1
+		y = 1
+		relative_position_id = PER_spit_on_western_industrialization
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+
+	focus = {
+		id = PER_blessed_by_alah
+		icon = GFX_focus_ITA_blackshirts
+		mutually_exclusive = { focus = PER_rethink_our_plans }
+		#prerequisite = { focus = }
+		x = 8
+		y = 0
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+
+			add_ideas = PER_blessed_by_alah
+
+			news_event = {
+				id = Panda_Per_News.2
+				hours = 6
+				random_hours = 6
+			}
+		}
+	}
+
+	focus = {
+		id = PER_prepare_our_nation_for_jihad
+		icon = GFX_focus_ITA_banda_carita
+		#mutually_exclusive = { focus = }
+		prerequisite = { focus = PER_blessed_by_alah }
+		x = 0
+		y = 1
+		relative_position_id = PER_blessed_by_alah
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			AND = {
+				has_idea = tot_economic_mobilisation
+				has_idea = closed_economy
+				has_idea = extensive_conscription
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_ideas = war_economy
+			add_ideas = closed_economy
+			add_ideas = extensive_conscription
+		}
+	}
+
+	focus = {
+		id = PER_research_our_enemies
+		icon = GFX_focus_generic_secret_service_agency
+		#mutually_exclusive = { focus = }
+		prerequisite = { focus = PER_blessed_by_alah focus = PER_rethink_our_plans }
+		x = 2
+		y = 1
+		relative_position_id = PER_blessed_by_alah
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_ideas = PER_research_our_enemies
+		}
+	}
+
+	focus = {
+		id = PER_establish_underground_support
+		icon = GFX_focus_generic_infiltration
+		#mutually_exclusive = { focus = }
+		prerequisite = { focus = PER_prepare_our_nation_for_jihad }
+		x = 0
+		y = 1
+		relative_position_id = PER_prepare_our_nation_for_jihad
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			every_neighbor_country = {
+				add_timed_idea = {
+					idea = PER_jihadist_refugees
+					days = 365
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_ready_to_fight
+		icon = GFX_focus_ETH_sway_the_warlords
+		#mutually_exclusive = { focus = }
+		prerequisite = { focus = PER_establish_underground_support }
+		x = 0
+		y = 1
+		relative_position_id = PER_establish_underground_support
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_ideas = PER_ready_to_fight
+		}
+	}
+
+	focus = {
+		id = PER_alahu_akbar
+		icon = GFX_focus_generic_strike_at_democracy2
+		#mutually_exclusive = { focus = }
+		prerequisite = { focus = PER_ready_to_fight }
+		x = 0
+		y = 1
+		relative_position_id = PER_ready_to_fight
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_political_power = 240
+
+			#custom_effect_tooltip = PER_alahu_akbar_tt
+			
+			set_cosmetic_tag = PER_UNIFIED
+
+			custom_effect_tooltip = restore_per_panda
+			
+			hidden_effect = {
+				680 = { add_core_of = PER }
+				677 = { add_core_of = PER }
+				799 = { add_core_of = PER }
+				554 = { add_core_of = PER }
+				553 = { add_core_of = PER }
+				656 = { add_core_of = PER }
+				859 = { add_core_of = PER }
+				765 = { add_core_of = PER }
+				658 = { add_core_of = PER }
+				678 = { add_core_of = PER }
+				294 = { add_core_of = PER }
+				659 = { add_core_of = PER }
+				293 = { add_core_of = PER }
+				858 = { add_core_of = PER }
+				292 = { add_core_of = PER }
+				856 = { add_core_of = PER }
+				679 = { add_core_of = PER }
+				857 = { add_core_of = PER }
+				854 = { add_core_of = PER }
+				855 = { add_core_of = PER }
+				455 = { add_core_of = PER }
+				442 = { add_core_of = PER }
+				445 = { add_core_of = PER }
+				444 = { add_core_of = PER }
+				352 = { add_core_of = PER }
+				350 = { add_core_of = PER }
+				344 = { add_core_of = PER }
+				353 = { add_core_of = PER }
+				354 = { add_core_of = PER }
+				800 = { add_core_of = PER }
+			}
+		}
+	}
+	
+	focus = {
+		id = PER_rethink_our_plans
+		icon = GFX_focus_TUR_reconfigure_turkish_foreign_policy
+		mutually_exclusive = { focus = PER_blessed_by_alah }
+		#prerequisite = { focus = }
+		x = 12
+		y = 0
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_ideas = PER_slow_approach
+		}
+	}
+	
+	focus = {
+		id = PER_modern_islam
+		icon = GFX_focus_ITA_modernize_ansaldo_facilities
+		#mutually_exclusive = { focus = }
+		prerequisite = { focus = PER_rethink_our_plans }
+		x = 0
+		y = 1
+		relative_position_id = PER_rethink_our_plans
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_ideas = war_economy
+			add_ideas = free_trade
+			add_ideas = extensive_conscription
+		}
+	}
+	
+	focus = {
+		id = PER_literature_project
+		icon = GFX_focus_SOV_restore_cossack_units
+		#mutually_exclusive = { focus = }
+		prerequisite = { focus = PER_modern_islam }
+		x = 0
+		y = 1
+		relative_position_id = PER_modern_islam
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_ideas = PER_literature_project
+		}
+	}
+	
+	focus = {
+		id = PER_promote_research
+		icon = GFX_focus_ITA_redirect_alfa_romeo_production
+		#mutually_exclusive = { focus = }
+		prerequisite = { focus = PER_literature_project }
+		x = 0
+		y = 1
+		relative_position_id = PER_literature_project
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+			add_tech_bonus = {
+				bonus = 0.76
+				uses = 1
+				category = cat_anti_tank
+			}
+			add_tech_bonus = {
+				bonus = 0.76
+				uses = 1
+				category = cat_anti_air
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
+		}
+	}
+	
+#	focus = {
+#		id = PER_militray_science
+#		icon = GFX_focus_generic_combined_arms
+#		#mutually_exclusive = { focus = }
+#		prerequisite = { focus = PER_deterance }
+#		x = 2
+#		y = 1
+#		relative_position_id = PER_deterance
+#
+#		cost = 14.4
+#
+#		ai_will_do = {
+#			factor = 20
+#		}
+#
+#		available = {
+#
+#		}
+#
+#		bypass = {
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		
+#		completion_reward = {
+#			add_tech_bonus = {
+#				bonus = 1.0
+#				uses = 1
+#				category = rocketry
+#				category = mot_rockets
+#			}
+#			
+#			add_tech_bonus = {
+#				bonus = 0.75
+#				uses = 3
+#				category = artillery
+#			}
+#			
+#			add_tech_bonus = {
+#				bonus = 0.5
+#				uses = 3
+#				category = infantry_weapons
+#				category = support_tech
+#				category = motorized_equipment
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = PER_aeronautics_studies
+#		icon = GFX_goal_generic_air_fighter
+#		#mutually_exclusive = { focus = }
+#		prerequisite = { focus = PER_militray_science }
+#		x = 0
+#		y = 1
+#		relative_position_id = PER_militray_science
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 20
+#		}
+#
+#		available = {
+#
+#		}
+#
+#		bypass = {
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		
+#		completion_reward = {
+#			add_tech_bonus = {
+#				bonus = 1.0
+#				uses = 1
+#				category = light_air
+#				category = medium_air
+#				category = heavy_air
+#			}
+#			add_tech_bonus = {
+#				bonus = 0.5
+#				uses = 2
+#				category = air_equipment
+#			}
+#		}
+#	}
+	
+	focus = {
+		id = PER_persian_legacy
+		icon = GFX_focus_ETH_the-italo_ethiopian_empire
+		#mutually_exclusive = { focus = }
+		prerequisite = { focus = PER_promote_research }
+		x = 0
+		y = 1
+		relative_position_id = PER_promote_research
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+		
+			set_cosmetic_tag = PER_UNIFIED
+			
+			custom_effect_tooltip = restore_per_panda
+			
+			
+			
+			hidden_effect = {
+				680 = { add_core_of = PER }
+				677 = { add_core_of = PER }
+				799 = { add_core_of = PER }
+				554 = { add_core_of = PER }
+				553 = { add_core_of = PER }
+				656 = { add_core_of = PER }
+				859 = { add_core_of = PER }
+				765 = { add_core_of = PER }
+				658 = { add_core_of = PER }
+				678 = { add_core_of = PER }
+				294 = { add_core_of = PER }
+				659 = { add_core_of = PER }
+				293 = { add_core_of = PER }
+				858 = { add_core_of = PER }
+				292 = { add_core_of = PER }
+				856 = { add_core_of = PER }
+				679 = { add_core_of = PER }
+				857 = { add_core_of = PER }
+				854 = { add_core_of = PER }
+				855 = { add_core_of = PER }
+				455 = { add_core_of = PER }
+				442 = { add_core_of = PER }
+				445 = { add_core_of = PER }
+				444 = { add_core_of = PER }
+				352 = { add_core_of = PER }
+				350 = { add_core_of = PER }
+				344 = { add_core_of = PER }
+				353 = { add_core_of = PER }
+				354 = { add_core_of = PER }
+				800 = { add_core_of = PER }
+			}
+		}
+	}
+}

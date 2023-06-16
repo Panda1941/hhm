@@ -1,0 +1,117 @@
+SWE_election = {
+	
+	SWE_gatherings_in_stocholm = {
+		available  = {
+			always = no
+		}
+
+		activation = {
+			OR = {
+    	    	has_country_flag = swe_left_won
+    	    	has_country_flag = swe_right_won
+    		}
+    	}
+
+    	days_mission_timeout = 70
+
+    	timeout_effect = {
+   		    country_event = {
+				id = Panda_Sweden.2
+				hours = 6
+			}
+   		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	SWE_protests_in_stockholm = {
+		available  = {
+			always = no
+		}
+
+		activation = {
+    	    has_country_flag = swe_no_resp
+    	}
+
+    	days_mission_timeout = 70
+
+    	timeout_effect = {
+   		    country_event = {
+				id = Panda_Sweden.3
+				hours = 6
+			}
+   		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	SWE_contained_protests = {
+		available  = {
+			always = no
+		}
+
+		activation = {
+    	    has_country_flag = swe_contain_protests
+    	}
+
+    	days_mission_timeout = 35
+
+    	timeout_effect = {
+   		    every_owned_state = {
+   		    	damage_building = {
+				    type = infrastructure
+				    damage = 1
+				}
+   		    }
+   		}
+   		
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+
+
+
+
+
+political_actions = {
+	
+}
+
+economy_decisions = {
+
+}
+
+operations = {
+	
+}
+
+war_measures = {
+	
+}
+
+foreign_politics = {
+	
+}
+
+economy_decisions = {
+	
+}
+
+foreign_support = {
+
+}

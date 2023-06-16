@@ -1,0 +1,15 @@
+china_gamerule_debuff = {
+	name = "Is it a player?"
+	group = "China"
+	icon = "GFX_volunteers"
+	default = {
+		name = NO
+		text = "NO"
+		desc = "Doesn't give a debuff to China."
+	}
+	option = {
+		name = YES
+		text = "YES"
+		desc = "Gives a debuff to China."
+	}
+}

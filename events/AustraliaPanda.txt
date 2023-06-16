@@ -1,0 +1,42 @@
+﻿add_namespace = Panda_Australia
+
+
+###########################
+#### AUSTRALIAN Events ####
+###########################
+
+#
+country_event = {
+	id = Panda_Australia.1
+	title = Panda_Australia.1.t
+	desc = Panda_Australia.1.desc
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = Panda_Australia.1.a
+
+		add_popularity = {
+		    ideology = communism
+		    popularity = 0.1
+		}
+	}
+}
+
+#add_namespace = Panda_News
+#
+#news_event = { # AUSTRIA - HUNGARY NEWS
+#    id = Panda_News.1
+#    title = Panda_News.1.t
+#    desc = Panda_News.1.desc
+#    
+#    picture = GFX_news_event_009
+#    
+#    is_triggered_only = yes
+#    major = yes
+#    
+#    option = {
+#        name = Panda_News.1.a
+#    }
+#}

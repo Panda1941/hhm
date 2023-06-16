@@ -1,0 +1,77 @@
+AST_decisions = {
+	
+	AST_annex_NZL = {
+		fire_only_once = yes
+
+        cost = 0
+
+		available  = {
+			NZL = {
+				is_ai = yes
+				country_exists = NZL
+			}
+
+			is_ai = no
+			
+			OR = {
+				date > 1939.01.01
+				threat > 0.6
+				has_war = yes
+			}
+		}
+
+    	complete_effect  = {
+			723 = {
+				add_core_of = ROOT
+			}
+			284 = {
+				add_core_of = ROOT
+			}
+
+			annex_country = {
+			    target = NZL
+			}
+   		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+
+
+
+
+
+political_actions = {
+	
+}
+
+economy_decisions = {
+
+}
+
+operations = {
+	
+}
+
+war_measures = {
+	
+}
+
+foreign_politics = {
+	
+}
+
+economy_decisions = {
+	
+}
+
+foreign_support = {
+
+}

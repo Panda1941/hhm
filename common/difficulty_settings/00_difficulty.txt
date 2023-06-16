@@ -1,0 +1,8 @@
+difficulty_settings = {
+	difficulty_setting = {
+		key = "this is disabled because cheat engine exists"
+		modifier = diff_strong_ai_generic
+		countries = { AFG }
+		multiplier = 0.0
+	}
+}

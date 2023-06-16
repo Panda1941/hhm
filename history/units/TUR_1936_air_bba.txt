@@ -1,0 +1,33 @@
+﻿
+
+
+### Air Wings ###
+air_wings = {
+	##### Türk Hava Kuvvetleri #####
+	49 = {
+		small_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			creator = "ENG"
+			version_name = "Hawker Fury"
+		}
+		small_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			creator = "ENG"
+			version_name = "Hawker Fury"
+		}
+		small_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			creator = "ENG"
+			version_name = "Hawker Fury"
+		}
+		medium_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			creator = "ENG"
+			version_name = "Handley Page Heyford"
+		}
+	}
+}

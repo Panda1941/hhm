@@ -1,0 +1,10 @@
+﻿l_english:
+
+ TS_RECALL_DIPLO_TITLE:0 "Recall Volunteers"
+ TS_RECALL_DIPLO_ACTION_DESC:0 "Recall our volunteers from this country." 
+
+ TS_recall_volunteers_LOC:0 "Would you like to recall our volunteers from\n\n§Y[From.Getname]?§!"
+ TS_recall_volunteers_TITLE:0 "[ROOT.GetAdjective] Volunteers Recalled"
+ TS_recall_volunteers_DESC:0 "§Y[ROOT.GetName]§!\n\nHas decided to recall their volunteers."
+ 
+ TS_betrayed_volunteers:0 "Recalled Forces Promised To Us"

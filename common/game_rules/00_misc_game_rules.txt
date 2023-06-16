@@ -1,0 +1,25 @@
+####---> State Transfer <><> <><> <><>
+#
+#allow_subject_transfers = {
+#	name = "RULE_ALLOW_SUBJECT_TRANSFERS"
+#	group = other_gamerules_group
+#	default = {
+#		name = "FREE"
+#		text = "Free"
+#		desc = "RULE_ALLOW_SUBJECT_TRANSFERS_FREE_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = "LOW_AUTONOMY_ONLY"
+#		text = "Low autonomy only"
+#		desc = "RULE_ALLOW_SUBJECT_TRANSFERS_LOW_AUTONOMY_ONLY_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = "BLOCKED"
+#		text = "Blocked"
+#		desc = "RULE_ALLOW_SUBJECT_TRANSFERS_BLOCKED_DESC"
+#		allow_achievements = yes
+#	}
+#}
+

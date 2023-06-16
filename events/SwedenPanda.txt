@@ -1,0 +1,252 @@
+﻿add_namespace = Panda_Sweden
+
+
+########################
+#### SWEDISH Events ####
+########################
+
+#Election of 36
+country_event = {
+	id = Panda_Sweden.1
+	title = Panda_Sweden.1.t
+	desc = Panda_Sweden.1.desc
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { #left won
+		name = Panda_Sweden.1.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -4
+				is_historical_focus_on = yes
+			}
+		}
+
+		set_country_flag = swe_left_won
+		custom_effect_tooltip = swe_left_won_tt
+		add_popularity = {
+		    ideology = communism
+		    popularity = 0.1
+		}
+	}
+
+	option = { #center won
+		name = Panda_Sweden.1.b
+		ai_chance = {
+			base = 10
+
+			modifier = {
+				add = 10
+				is_historical_focus_on = yes
+			}
+
+			modifier = {
+				add = -1
+				is_historical_focus_on = no
+			}
+		}
+
+		set_country_flag = swe_center_won
+		custom_effect_tooltip = swe_center_won_tt
+		add_popularity = {
+		    ideology = democratic
+		    popularity = 0.1
+		}
+	}
+
+	option = { #right won
+		name = Panda_Sweden.1.c
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1
+				is_historical_focus_on = no
+			}
+
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		set_country_flag = swe_right_won
+		custom_effect_tooltip = swe_right_won_tt
+		add_popularity = {
+		    ideology = fascism
+		    popularity = 0.1
+		}
+	}
+}
+
+#Gatherings in stockholm
+country_event = {
+	id = Panda_Sweden.2
+	title = Panda_Sweden.2.t
+	desc = Panda_Sweden.2.desc
+	picture = GFX_report_event_bul_muraviev_protest
+	
+	is_triggered_only = yes
+	
+	option = { #Police Response
+		name = Panda_Sweden.2.a
+		ai_chance = {
+			base = 10
+
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+
+			modifier = {
+				factor = 2
+				has_country_flag = swe_right_won
+			}
+		}
+
+		set_country_flag = swe_pol_resp
+		
+		add_stability = -0.1
+		add_war_support = -0.2
+		add_political_power = -100
+		add_manpower = -2169
+		army_experience = 1
+	}
+
+	option = { #No Response
+		name = Panda_Sweden.2.b
+		ai_chance = {
+			base = 10
+
+			modifier = {
+				factor = 2
+				has_country_flag = swe_left_won
+			}
+
+			modifier = {
+				factor = 2
+				has_country_flag = swe_right_won
+			}
+		}
+		custom_effect_tooltip = Panda_Sweden_2_tt
+
+		set_country_flag = swe_no_resp
+
+		add_stability = -0.05
+		add_war_support = -0.1
+		add_political_power = -30
+		add_manpower = -309
+		add_popularity = {
+    		ideology = fascism
+    		popularity = 0.1
+		}
+		add_popularity = {
+    		ideology = communism
+    		popularity = 0.1
+		}
+	}
+}
+
+#Protests in stockholm
+country_event = {
+	id = Panda_Sweden.3
+	title = Panda_Sweden.3.t
+	desc = Panda_Sweden.3.desc
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = { #Military Response
+		name = Panda_Sweden.3.a
+		ai_chance = {
+			base = 10
+		}
+
+		set_country_flag = swe_military_intervention
+
+		add_stability = -0.1
+		add_war_support = -0.2
+		add_political_power = -100
+		add_manpower = -8898
+		army_experience = 2
+	}
+
+	option = { #Police Response
+		name = Panda_Sweden.3.b
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Panda_Sweden_3b_tt
+
+		set_country_flag = swe_contain_protests
+
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -30
+		add_manpower = -4460
+		army_experience = 1
+
+		add_popularity = {
+    		ideology = fascism
+    		popularity = 0.1
+		}
+		add_popularity = {
+    		ideology = communism
+    		popularity = 0.1
+		}
+	}
+
+	option = { #No Response
+		name = Panda_Sweden.3.c
+		ai_chance = {
+			base = 10
+
+			modifier = {
+				factor = 3
+				has_country_flag = swe_left_won
+			}
+
+			modifier = {
+				factor = 1
+				has_country_flag = swe_right_won
+			}
+		}
+
+		custom_effect_tooltip = Panda_Sweden_3c_tt
+
+		set_country_flag = swe_ignore_protests
+
+		add_stability = -0.02
+		add_war_support = -0.02
+		add_political_power = -10
+		add_manpower = -1520
+
+		add_popularity = {
+    		ideology = fascism
+    		popularity = 0.2
+		}
+		add_popularity = {
+    		ideology = communism
+    		popularity = 0.2
+		}
+	}
+}
+
+
+#add_namespace = Panda_News
+#
+#news_event = { # AUSTRIA - HUNGARY NEWS
+#    id = Panda_News.1
+#    title = Panda_News.1.t
+#    desc = Panda_News.1.desc
+#    
+#    picture = GFX_news_event_009
+#    
+#    is_triggered_only = yes
+#    major = yes
+#    
+#    option = {
+#        name = Panda_News.1.a
+#    }
+#}

@@ -1,0 +1,64 @@
+scripted_diplomatic_actions = {
+	
+
+	request_resource_rights = {
+		cost = 25
+		icon = 2
+
+		selectable = {
+			PREV = { is_puppet = no }
+		}
+		
+		visible = {
+			ROOT = {
+				NOT = {
+					has_relation_modifier = {
+						target = PREV
+						modifier = resource_rights_given_opmod
+					}
+					has_war_with = PREV
+				}
+				is_ai = no
+			}
+		}
+
+		accept_title = REQUEST_RESOURCE_RIGHTS_ACCEPT
+		accept_description = REQUEST_RESOURCE_RIGHTS_ACCEPT_DESC
+		reject_title = REQUEST_RESOURCE_RIGHTS_REJECT
+		reject_description = REQUEST_RESOURCE_RIGHTS_REJECT_DESC
+		send_description = REQUEST_RESOURCE_RIGHTS_SEND_DESC
+		receive_description = REQUEST_RESOURCE_RIGHTS_RECEIVE_DESC
+
+		requires_acceptance = yes
+		show_acceptance_on_action_button = yes 
+		
+		can_be_sent = {
+			always = yes
+		}
+
+		on_sent_effect = {
+			ROOT = {
+				set_country_flag = { 
+					flag = diplomatic_action_cooldown
+					value = 1
+					days = 30
+				}
+			}
+		}
+		
+		complete_effect = {
+			ROOT = {
+				add_relation_modifier = {
+					target = PREV
+					modifier = resource_rights_given_opmod
+				}
+			}
+		}
+
+		ai_acceptance = {
+			request_resource_rights_ai_condition = {
+				base = -100
+			}
+		}
+	}
+}

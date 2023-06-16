@@ -1,0 +1,98 @@
+scripted_gui = {
+	
+	pd_offer_peace_deal_receive = {
+	
+		context_type = diplomatic_action
+		
+		window_name = "pd_offer_peace_deal_receive"
+		
+		visible = {
+			always = yes
+		}
+		
+		dynamic_lists = {
+			pd_take_states_grid = {
+				array = ROOT.pd_take_array
+				change_scope = yes
+				entry_container = "pd_state_list_entry" 
+			}
+			
+			pd_give_states_grid = {
+				array = ROOT.pd_give_array
+				change_scope = yes
+				entry_container = "pd_state_list_entry" 
+			}
+			
+			pd_puppet_states_grid = {
+				array = ROOT.pd_puppet_array
+				change_scope = yes
+				entry_container = "pd_state_list_entry" 
+			}
+
+			pd_puppet_states_grid_give = {
+				array = ROOT.pd_puppet_array_give
+				change_scope = yes
+				entry_container = "pd_state_list_entry" 
+			}
+			
+			pd_demilitarize_states_grid = {
+				array = ROOT.pd_demilitarize_array
+				change_scope = yes
+				entry_container = "pd_state_list_entry" 
+			}
+			
+			pd_demilitarize_states_grid_give = {
+				array = ROOT.pd_demilitarize_array_give
+				change_scope = yes
+				entry_container = "pd_state_list_entry" 
+			}
+			
+			pd_liberate_states_grid = {
+				array = ROOT.pd_liberate_array
+				change_scope = yes
+				entry_container = "pd_state_list_entry" 
+			}
+
+			pd_liberate_states_grid_give = {
+				array = ROOT.pd_liberate_array_give
+				change_scope = yes
+				entry_container = "pd_state_list_entry" 
+			}
+			
+		}
+		
+		triggers = {
+			pd_reperations_text_visible = {
+				ROOT = { has_country_flag = pd_war_reparations }
+			}
+
+			pd_reperations_text_give_visible = {
+				ROOT = { has_country_flag = pd_war_reparations_gives }
+			}			
+			
+			pd_disarm_text_visible = {
+				ROOT = { has_country_flag = pd_disarm }
+			}
+			
+			pd_disarm_text_give_visible = {
+				ROOT = { has_country_flag = pd_disarm_gives }
+			}
+		}
+		
+		ai_enabled = {
+			always = no
+        }
+		
+		properties = {
+			root_flag = {
+                image = "[Root.GetFlag]"
+            }
+			
+			this_flag = {
+                image = "[This.GetFlag]"
+            }
+		}
+        
+	}
+}
+

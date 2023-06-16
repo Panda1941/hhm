@@ -1,0 +1,87 @@
+HUN_historical = {
+	name = "Hungarian historical plan"
+	desc = "Hungarian AI will atempt to go down the historical political branch of its focus tree"
+
+	allowed = {
+		original_tag = HUN
+		has_dlc = "Death or Dishonor"
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = HUN_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = HUN_AI_RANDOM_FASCIST_HISTORICAL
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = FASCIST_HISTORICAL
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		HUN_economic_intervention
+		HUN_strengthen_fascists
+		HUN_secret_rearmament
+		HUN_war_games
+		HUN_industrial_revitalization
+		HUN_reintegrate_the_railroads
+		HUN_support_domestic_industry
+		HUN_support_urbanization
+		HUN_institute_for_industrial_techniques
+		HUN_announce_the_gyor_program
+		HUN_gyori_program_focus
+		HUN_renounce_the_treaty_of_trianon
+		HUN_reaffirm_territorial_claims
+		HUN_joint_aluminum_mining_company
+		HUN_join_axis
+		HUN_proclaim_greater_hungary
+		HUN_approach_czechoslovakia_fas
+		HUN_approach_yugoslavia_fas
+		HUN_approach_czechoslovakia_2_fas
+		HUN_approach_romania_fas
+		HUN_recruit_hungarian_ss
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = 200
+	}
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

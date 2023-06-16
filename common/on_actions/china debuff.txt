@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {has_game_rule = {rule = china_gamerule_debuff option = YES}}
+				CHI = {add_ideas = CHI_Nerf}
+			}
+		}
+	}
+}
+

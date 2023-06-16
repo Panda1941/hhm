@@ -1,0 +1,38 @@
+ideas = {
+
+	country = {
+		
+			CHI_Nerf = {
+	     
+					allowed = {
+						original_tag = "CHI"
+					}
+
+					available = {
+				
+					}
+					
+					allowed_civil_war = { 
+			
+					}
+			
+					removal_cost = -1
+					picture = idea_generic_war_preparation
+					
+				modifier = {
+					army_defence_factor = -0.15
+					army_attack_factor = -0.15
+					industrial_capacity_factory = -0.3
+					agency_upgrade_time = 100.0
+					intelligence_agency_defense = -1
+					conversion_cost_civ_to_mil_factor = 100.0
+					conversion_cost_mil_to_civ_factor = 100.0
+				}
+				
+				name = "China player"
+			
+			}
+	}
+	
+	
+}
