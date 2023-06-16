@@ -10,17 +10,14 @@ state={
 		chromium = 3 # was: 4
 	}
 
-	history={
-		owner = GXC
-		add_core_of = GXC
+history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
+		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = GXC
+		add_core_of = GXC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			4023 = {
-				naval_base = 1
-			}
 		}
 		victory_points = { 
 			7137 10 

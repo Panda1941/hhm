@@ -448,7 +448,7 @@
 	focus = {
 		id = NZL_expand_the_nzpaf
 		icon = GFX_goal_generic_air_doctrine
-		x = 13
+		x = 18
 		y = 0
 
 		cost = 10
@@ -739,7 +739,10 @@
 				name = NZL_modern_fighters
 				bonus = 1.0
 				uses = 1
-				category = light_fighter
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
 				category = cat_heavy_fighter
 			}
 		}
@@ -791,7 +794,7 @@
 	focus = {
 		id = NZL_national_roads_board
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 17
+		x = 12
 		y = 0
 
 		cost = 10
@@ -1251,7 +1254,7 @@
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = NZL_heavy_bombers focus = NZL_modern_fighters }
 		prerequisite = { focus = NZL_department_of_scientific_and_industrial_research }
-		x = -2
+		x = 0
 		y = 4
 		relative_position_id = NZL_national_roads_board
 
@@ -1357,7 +1360,7 @@
 	focus = {
 		id = NZL_army_reforms
 		icon = GFX_goal_generic_army_doctrines
-		x = 22
+		x = 24
 		y = 0
 
 		cost = 10
@@ -1798,7 +1801,7 @@
 		id = NZL_ratana_alliance
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = NZL_the_first_labor_government }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
@@ -2125,4 +2128,109 @@
 			ENG = { add_opinion_modifier = { target = NZL modifier = NZL_strengthen_ties } }
 		}
 	}
+
+	############################
+	# GO COMMONWEALTH SECTION ##
+	############################
+
+	focus = {
+		id = NZL_2nzef
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = NZL_strengthen_the_commonwealth }
+		x = 0
+		y = 1
+		relative_position_id = NZL_strengthen_the_commonwealth
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = NZL_2nzef
+		}
+	}
+
+	focus = {
+		id = NZL_arrest_pacifist_leaders
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = NZL_2nzef }
+		x = 0
+		y = 2
+		relative_position_id = NZL_strengthen_the_commonwealth
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			add_ideas = NZL_stomp_out_pacifism
+		}
+	}
+
+	focus = {
+		id = NZL_technology_sharing_with_britain
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = NZL_arrest_pacifist_leaders }
+		x = 0
+		y = 3
+		relative_position_id = NZL_strengthen_the_commonwealth
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			ENG = { has_government = ROOT }
+			is_in_tech_sharing_group = commonwealth_research
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			modify_tech_sharing_bonus = {
+ 				id = commonwealth_research
+ 				bonus = 0.05  # we get 20% higher bonus from this group
+			}
+		}
+	}
+
+
 }		

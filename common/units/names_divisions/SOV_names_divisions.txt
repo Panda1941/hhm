@@ -1548,7 +1548,7 @@ SOV_CAV_02 = #COSSACK CAVALRY
 {
 	name = "Cossack Cavalry Division"
 
-	for_countries = { SOV }
+	for_countries = { SOV UKR }
 
 	can_use = {
 		OR = {

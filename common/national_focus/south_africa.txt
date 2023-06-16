@@ -9,9 +9,55 @@
 			tag = SAF
 			has_dlc = "Together for Victory"
 		}
+		
+		#modifier = {
+		#	add = 10
+		#	original_tag = SAF
+		#	has_dlc = "Together for Victory"
+		#}
 	}
 	
 	default = no
+
+
+
+#	focus = {
+#		id = SAF_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
 
 	############################
 	#### WAR PREP SECTION ######
@@ -556,17 +602,13 @@
 	}
 
 	############################
-	#### GO FASCIST SECTION ####
-	############################
-
-	############################
 	##### INDUSTRY SECTION #####
 	############################
 
 	focus = {
 		id = SAF_south_african_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 9
+		x = 10
 		y = 0
 
 		cost = 10
@@ -1128,7 +1170,7 @@
 	focus = {
 		id = SAF_special_service_battalion
 		icon = GFX_goal_generic_army_doctrines
-		x = 13
+		x = 16
 		y = 0
 
 		cost = 10
@@ -1510,7 +1552,7 @@
 	focus = {
 		id = SAF_commit_to_the_five_year_plan
 		icon = GFX_goal_generic_build_airforce
-		x = 17
+		x = 20
 		y = 0	
 
 		cost = 10
@@ -1610,7 +1652,10 @@
 				name = SAF_improve_the_hawker_hartbees
 				bonus = 1.0
 				uses = 1
-				category = light_fighter
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
 			}
 		}
 	}
@@ -1813,7 +1858,7 @@
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 21
+		x = 26
 		y = 0		
 
 		cost = 10

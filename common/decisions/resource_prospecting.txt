@@ -161,7 +161,7 @@ prospect_for_resources = {
 		}
 	}
 
-	develop_daqing_deposits = { #714						################### ATARI
+	develop_daqing_deposits = { #714
 
 		icon = oil
 
@@ -245,8 +245,7 @@ prospect_for_resources = {
 			714 = {
 				add_resource = {
 					type = oil
-					amount = 8
-#					amount = 4
+					amount = 4
 				}
 			}
 		}
@@ -326,8 +325,7 @@ prospect_for_resources = {
 			714 = {
 				add_resource = {
 					type = oil
-					amount = 12
-#					amount = 8
+					amount = 8
 				}
 			}
 		}
@@ -3931,7 +3929,7 @@ prospect_for_resources = {
 		}
 	}
 
-	develop_south_sakhalin_oil_deposits = { #537								############## ATARI
+	develop_south_sakhalin_oil_deposits = { #537
 		icon = oil
 
 		highlight_states = {
@@ -4001,8 +3999,7 @@ prospect_for_resources = {
 			537 = {
 				add_resource = {
 					type = oil
-					amount = 10
-#					amount = 8
+					amount = 48
 				}
 				set_state_flag = sakhalin_oil_developed
 			}

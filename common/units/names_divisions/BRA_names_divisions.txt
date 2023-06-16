@@ -34,8 +34,7 @@ BRA_INF_01 =
 {
 	name = "Infantry Division"
 
-#	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
-	for_countries = { BRA }						# ATARI 
+	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
 
 	can_use = { always = yes }
 
@@ -77,8 +76,7 @@ BRA_CAV_01 =
 {
 	name = "Cavalry Division"
 
-#	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
-	for_countries = { BRA }						# ATARI 
+	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
 
 	can_use = { always = yes }
 
@@ -110,8 +108,7 @@ BRA_MOT_01 =
 {
 	name = "Motorized Division"
 
-#	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
-	for_countries = { BRA }						# ATARI 
+	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
 
 	can_use = { always = yes }
 
@@ -143,8 +140,7 @@ BRA_MEC_01 =
 {
 	name = "Mechanized Division"
 
-#	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
-	for_countries = { BRA }						# ATARI 
+	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
 
 	can_use = { always = yes }
 
@@ -176,8 +172,7 @@ BRA_ARM_01 =
 {
 	name = "Armored Division"
 
-#	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
-	for_countries = { BRA }						# ATARI 
+	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
 
 	can_use = { always = yes }
 
@@ -209,8 +204,7 @@ BRA_PAR_01 =
 {
 	name = "Parachute Division"
 
-#	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
-	for_countries = { BRA }						# ATARI 
+	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
 
 	can_use = { always = yes }
 
@@ -242,8 +236,7 @@ BRA_MAR_01 =
 {
 	name = "Marine Division"
 
-#	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
-	for_countries = { BRA }						# ATARI 
+	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
 
 	can_use = { always = yes }
 
@@ -275,8 +268,7 @@ BRA_MNT_01 =
 {
 	name = "Mountain Division"
 
-#	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
-	for_countries = { BRA }						# ATARI 
+	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
 
 	can_use = { always = yes }
 
@@ -308,8 +300,7 @@ BRA_GAR_01 =
 {
 	name = "Garrison Division"
 
-#	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
-	for_countries = { BRA }						# ATARI 
+	for_countries = { BRA ANG GNB MZB }				# Also includes releasable Portuguese colonlies
 
 	can_use = { always = yes }
 

@@ -527,7 +527,7 @@
 		}
 	}
 
-	focus = {
+		focus = {
 		id = AST_z_special_unit
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = AST_introduce_unconventional_warfare }
@@ -605,7 +605,7 @@
 			}
 		}
 	}
-
+	
 	focus = {
 		id = AST_central_bureau
 		icon = GFX_goal_generic_radar
@@ -650,8 +650,6 @@
 			}
 		}
 	}
-
-
 
 	############################
 	####### AIR SECTION ########
@@ -913,7 +911,7 @@
 			else = {
 				add_tech_bonus = {
 					name = AST_cac_woomera
-					bonus = 1
+					bonus = 2
 					uses = 2
 					category = tactical_bomber
 					category = naval_air
@@ -1440,7 +1438,7 @@
 		x = 10
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1468,15 +1466,18 @@
 				limit = {
 					has_state_flag = AST_cockatoo_island_shipyards_DY
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = Cockatoo_doe
 		}
 
+			
 		completion_reward = {
 			navy_experience = 25
 			random_owned_controlled_state = {
@@ -1485,22 +1486,24 @@
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
-						size > 2
+						size > 1
 						include_locked = yes
 					}
 					NOT = { state = 674 }
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_cockatoo_island_shipyards_DY
 			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = Cockatoo_doe
 		}
 	}
-
+	
 	focus = {
 		id = AST_kangaroo_point_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1571,7 +1574,7 @@
 			show_ideas_tooltip = evans_deakin_co
 		}
 	}
-
+	
 	focus = {
 		id = AST_protect_overseas_commerce
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -1928,7 +1931,6 @@
 			NOT = {
 				controls_state = 522
 				controls_state = 519
-				controls_state = 871
 			}
 		}
 
@@ -1940,40 +1942,6 @@
 		completion_reward = {
 			build_railway = {
 				path = { 1652 2157 10983 1526 10949 8200 10969 2191 12948 5197 8165 10927 8186 }
-			}
-
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					NOT = {state = 674}
-				}
-
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					NOT = {state = 674}
-				}
-
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 		}
 	}
@@ -2292,8 +2260,6 @@
 				level = 2
 				path = { 7669 1431 12104 1454 }
 			}
-
-
 		}
 	}
 
@@ -2899,15 +2865,13 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
-			random_state = {
-				limit = { has_state_flag = AST_rationing_and_recycling_alu }
+			518 = {
 				add_resource = {
 					type = aluminium
 					amount = 24
 				}
 			}
-			random_state = {
-				limit = { has_state_flag = AST_rationing_and_recycling_oil }
+			518 = {
 				add_resource = {
 					type = oil
 					amount = 12
@@ -2916,27 +2880,17 @@
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					NOT = { state = 674 }
-				}
+			518 = {
 				add_resource = {
 					type = aluminium
 					amount = 24
 				}
-				set_state_flag = AST_rationing_and_recycling_alu
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					NOT = { state = 674 }
-				}
+			518 = {
 				add_resource = {
 					type = oil
 					amount = 12
 				}
-				set_state_flag = AST_rationing_and_recycling_oil
 			}
 		}
 	}
@@ -3111,7 +3065,7 @@
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = AST_support_the_policy_of_appeasement }
 		relative_position_id = AST_support_the_policy_of_appeasement
-		x = -1
+		x = 0
 		y = 1
 
 		cost = 10
@@ -3169,63 +3123,11 @@
 			}
 		}
 
-	focus = {
-		id = AST_the_singapore_strategy
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = AST_support_the_policy_of_appeasement }
-		x = 1
-		y = 1
-		relative_position_id = AST_support_the_policy_of_appeasement
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 0.2
-		}
-
-		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
-			MAL = {
-				is_puppet_of = ENG
-			}
-		}
-		
-		bypass = {
-			OR = {
-				NOT = {
-					OR = {
-						336 = {
-							is_owned_by = MAL
-						}
-						333 = {
-							is_owned_by = MAL
-						}
-					}
-				}
-				NOT = {
-					MAL = {
-						is_puppet_of = ENG
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			ENG = {
-				country_event = { id = tfv_australia.1 }
-			}
-		}
-	}
 
 	focus = {
 		id = AST_adopt_westminster
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = AST_strengthen_ties_with_uk focus = AST_the_singapore_strategy }
+		prerequisite = { focus = AST_strengthen_ties_with_uk }
 		x = 0
 		y = 2
 		relative_position_id = AST_support_the_policy_of_appeasement
@@ -3530,4 +3432,5 @@
 			add_ideas = AST_commonwealth_aircraft_corporation
 		}
 	}
+
 }		

@@ -60,6 +60,41 @@ country_event = {
 			custom_effect_tooltip = GAME_OVER_TT
 		}
 	}
+	option = { # Refuse
+		name = baltic.1.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					any_other_country = {
+						is_major = yes
+						is_in_faction_with = EST
+						NOT = { is_in_faction_with = FROM }
+					}
+				}
+			}
+			modifier = {
+				add = 5
+				is_historical_focus_on = no
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = EST
+				}
+			}
+		}
+
+		FROM = {
+			country_event = { days = 5 id = soviet.7 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = annex_everything
+					target = EST
+				}	
+			}
+		}
+	}
 }
 
 # Soviet Ultimatum (Latvia)
@@ -119,6 +154,41 @@ country_event = {
 			custom_effect_tooltip = GAME_OVER_TT
 		}
 	}
+	option = { # Refuse
+		name = baltic.1.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					any_other_country = {
+						is_major = yes
+						is_in_faction_with = LAT
+						NOT = { is_in_faction_with = FROM }
+					}
+				}
+			}
+			modifier = {
+				add = 5
+				is_historical_focus_on = no
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = LAT
+				}
+			}
+		}
+
+		FROM = {
+			country_event = { days = 5 id = soviet.9 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = annex_everything
+					target = LAT
+				}
+			}
+		}
+	}
 }
 
 # Soviet Ultimatum (Lithuania)
@@ -166,7 +236,7 @@ country_event = {
 			}
 			effect_tooltip = {
 				FROM = { 
-					annex = {
+					puppet = {
 						target = ROOT
 						end_civil_wars = no
 						end_wars = no
@@ -176,6 +246,41 @@ country_event = {
 		}
 		else = {
 			custom_effect_tooltip = GAME_OVER_TT
+		}
+	}
+	option = { # Refuse
+		name = baltic.1.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					any_other_country = {
+						is_major = yes
+						is_in_faction_with = LIT
+						NOT = { is_in_faction_with = FROM }
+					}
+				}
+			}
+			modifier = {
+				add = 5
+				is_historical_focus_on = no
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = LIT
+				}
+			}
+		}
+
+		FROM = {
+			country_event = { days = 5 id = soviet.11 }
+			effect_tooltip = {
+				create_wargoal = {
+				type = annex_everything
+				target = LIT
+				}		
+			}
 		}
 	}
 }
@@ -355,7 +460,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 }
 

@@ -353,6 +353,55 @@ news_event = {
 	}
 }
 
+# Finland Accepts Demands
+news_event = {
+	id = news.13
+	title = news.13.t
+	desc = news.13.d
+	picture = GFX_news_event_012
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.13.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = FIN
+				TAG = GER
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = news.13.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.13.c
+		trigger = { TAG = FIN }
+	}
+	option = {
+		name = news.13.e
+		trigger = { TAG = GER }
+	}
+
+	option = {
+		name = news.13.f
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = FIN
+				TAG = GER
+			}
+			is_in_faction_with = SOV
+		}
+	}
+}
+
+
 # Soviet Union annexes Tannu Tuva
 news_event = {
 	id = news.14
@@ -2219,12 +2268,13 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	immediate = {
 		set_global_flag = nationalist_victory
 		set_global_flag = scw_over
+                if = { limit = { NOT = { SOV = { has_idea = SPR_seized_spanish_gold_reserves } } } SOV = { add_timed_idea = { idea = SPR_seized_spanish_gold_reserves days = 365 } } }
 	}
 	
 	option = {
@@ -2267,12 +2317,13 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	immediate = {
 		set_global_flag = republican_victory
 		set_global_flag = scw_over
+                if = { limit = { NOT = { SOV = { has_idea = SPR_seized_spanish_gold_reserves } } } SOV = { add_timed_idea = { idea = SPR_seized_spanish_gold_reserves days = 365 } } }
 	}
 	
 	option = {
@@ -2322,7 +2373,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	immediate = {
@@ -2368,7 +2419,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	immediate = {
@@ -2411,7 +2462,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	immediate = {
@@ -2567,7 +2618,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -2610,7 +2661,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -2653,7 +2704,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -2696,7 +2747,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -2740,7 +2791,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -2791,7 +2842,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -2834,7 +2885,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -2877,7 +2928,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -2920,7 +2971,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -2963,7 +3014,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3006,7 +3057,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3049,7 +3100,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3092,7 +3143,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3135,7 +3186,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3178,7 +3229,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3221,7 +3272,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3264,7 +3315,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3307,7 +3358,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3350,7 +3401,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3393,7 +3444,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3436,7 +3487,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3479,7 +3530,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3522,7 +3573,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3565,7 +3616,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3608,7 +3659,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3657,7 +3708,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3700,7 +3751,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3743,7 +3794,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3786,7 +3837,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3829,7 +3880,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3872,7 +3923,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3915,7 +3966,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -3967,7 +4018,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4030,7 +4081,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4128,7 +4179,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4178,7 +4229,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4272,7 +4323,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4353,7 +4404,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4396,7 +4447,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4439,7 +4490,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4482,7 +4533,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4525,7 +4576,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4568,7 +4619,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4611,7 +4662,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4654,7 +4705,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4697,7 +4748,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4749,7 +4800,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -4899,7 +4950,7 @@ news_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 
 	immediate = {
@@ -4980,7 +5031,7 @@ news_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 
 	immediate = {
@@ -5052,7 +5103,7 @@ news_event = {
 	
 
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -5082,7 +5133,7 @@ news_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -5228,7 +5279,7 @@ news_event = {
 	
 
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {
@@ -5299,11 +5350,12 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	immediate = {
 		set_global_flag = scw_over
+                if = { limit = { NOT = { SOV = { has_idea = SPR_seized_spanish_gold_reserves } } } SOV = { add_timed_idea = { idea = SPR_seized_spanish_gold_reserves days = 365 } } }
 	}
 	
 	option = {
@@ -13067,7 +13119,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	option = {

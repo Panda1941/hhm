@@ -13,10 +13,36 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	option = { # Accept demands
+		name = finland.1.a
+		ai_chance = { 
+			base = 25
+			modifier = { # Don't accept if in a faction that can protect them
+				factor = 0
+				NOT = { is_in_faction_with = FROM }
+				OR = {
+					any_other_country = {
+						is_major = yes
+						OR = {
+							is_in_faction_with = FIN
+							has_guaranteed = FIN
+						}
+					}
+					has_idea = anti_soviet_pact
+				}
+			}
+		}
+		FROM = {
+			country_event = { days = 5 id = soviet.12 }
+			effect_tooltip = {
+				transfer_state = 146
+			}
+		}
+	}
 	option = { # Refuse
 		name = finland.1.b
 		ai_chance = {
-			base = 100
+			base = 75
 			modifier = {
 				factor = 0
 				is_in_faction_with = FROM
@@ -55,7 +81,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 1
+		days = 3
 	}
 
 	option = {
@@ -287,7 +313,7 @@ country_event = {
 		is_in_faction = no
 	}
 
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 20 }
 
 	fire_only_once = yes
 
@@ -295,7 +321,7 @@ country_event = {
 	option = {
 		name = finland.7.a
 		ai_chance = {
-			base = 100
+			base = 8
 		}
 		SOV = {
 			country_event = { id = finland.8 }
@@ -320,6 +346,18 @@ country_event = {
 			}
 		}
 	}
+
+	#Never give up!
+	option = {
+		name = finland.7.b
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
 }
 
 #Soviet response to Finish surrender
@@ -335,7 +373,7 @@ country_event = {
 	option = {
 		name = finland.8.a
 		ai_chance = {
-			base = 100
+			base = 9
 		}
 		white_peace = FIN
 		transfer_state = 146
@@ -379,6 +417,33 @@ country_event = {
 		}
 		add_political_power = 75 #Good Propaganda to win "fast"
 		SOV_paranoia_medium_decrease_effect = yes #Stalin likes this has been dealt with in a timely fashion
+	}
+
+	#Take it all
+	option = {
+		name = finland.8.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}			
+		}
+		FIN = { country_event = { id = finland.9 } }
+	}
+}
+
+#Soviet says no!
+country_event = {
+	id = finland.9
+	title = finland.9.t
+	desc = finland.9.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+
+	option = {
+		name = finland.9.a
 	}
 }
 

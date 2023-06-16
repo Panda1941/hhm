@@ -29,14 +29,14 @@ add_ideas = {
 	start_resistance = yes
 	set_compliance = 5
 	set_resistance = 5
-#	set_garrison_strength = 1.0
+	set_garrison_strength = 1.0
 }
 
 525 = {
 	start_resistance = yes
 	set_compliance = 5
 	set_resistance = 5
-#	set_garrison_strength = 1.0
+	set_garrison_strength = 1.0
 }
 
 745 = {
@@ -50,28 +50,28 @@ add_ideas = {
 	start_resistance = yes
 	set_compliance = 5
 	set_resistance = 5
-#	set_garrison_strength = 1.0
+	set_garrison_strength = 1.0
 }
 
 647 = {
 	start_resistance = yes
 	set_compliance = 20
 	set_resistance = 0
-#	set_garrison_strength = 1.0
+	set_garrison_strength = 1.0
 }
 
 684 = {
 	start_resistance = yes
 	set_compliance = 20
 	set_resistance = 0
-#	set_garrison_strength = 1.0
+	set_garrison_strength = 1.0
 }
 
 633 = {
 	start_resistance = yes
 	set_compliance = 20
 	set_resistance = 0
-#	set_garrison_strength = 1.0
+	set_garrison_strength = 1.0
 }
 
 if = {
@@ -209,12 +209,6 @@ if = {
 	set_technology = {
 		armored_car1 = 1
 	}
-}
-
-create_import = {
-		resource = oil
-		factories = 2
-		exporter = USA
 }
 
 1939.1.1 = {
@@ -1295,7 +1289,7 @@ if = {
 				modules = {
 					fixed_main_weapon_slot = medium_bomb_bay
 					fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-					engine_type_slot = engine_3_2x #Increased tier due to thrust/weight issues
+					engine_type_slot = engine_2_2x
 					special_type_slot_1 = lmg_defense_turret_2x
 					special_type_slot_2 = fuel_tanks_medium
 				}

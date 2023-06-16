@@ -1,0 +1,15 @@
+
+
+units = {
+
+    ##### Naval OOB #####
+    fleet = {
+        name = "War Support Pride"
+        naval_base = 5139 # Gabon
+        task_force = {
+            name = "War Support Pride"
+            location = 5139 # Gabon
+            ship = { name = "Foch" definition = heavy_cruiser pride_of_the_fleet = yes equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Suffren Class" } } }
+        }
+    }
+}

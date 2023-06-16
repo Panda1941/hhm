@@ -6,11 +6,10 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes
-		
+
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { NOT = { has_dlc = "La Resistance" } }
 			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
@@ -18,23 +17,8 @@ bookmarks = {
 			}
 			focuses = {
 				FRA_form_the_popular_front
-				FRA_devalue_the_franc
-				FRA_defensive_strategems
-			}
-		}
-		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { has_dlc = "La Resistance" } 
-			ideas = {
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
-			}
-			focuses = {
-				FRA_form_the_popular_front
-				FRA_devalue_the_franc
-				FRA_defensive_strategems
+				FRA_revive_the_national_bloc
+				FRA_go_with_britain
 			}
 		}
 		"USA"={
@@ -47,29 +31,12 @@ bookmarks = {
 			}
 			focuses = {
 				USA_war_plan_black
-				USA_build_the_pentagon
-				USA_arsenal_of_democracy
 			}
 		}
+
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { has_dlc = "Man the Guns" }
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-			focuses = {
-				ENG_imperial_federation
-				ENG_the_kings_party
-				ENG_organize_the_blackshirts
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
@@ -77,29 +44,13 @@ bookmarks = {
 			}
 			focuses = {
 				tizard_mission_focus
-				ENG_war_with_germany
-				ENG_war_with_italy
 			}
 		}
+
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" }
-			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
-			}
-			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_revive_the_kaiserreich
-			}
-		}
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
+
 			ideas = {
 				sour_loser
 				general_staff
@@ -114,30 +65,13 @@ bookmarks = {
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "By Blood Alone" }
 			ideas = {
 				vittorio_emanuele
 				ITA_iri_fake_ns
 				ITA_re_fake_ns
 			}	
 			focuses = {
-				ITA_comandante_diavolo
 				ITA_il_sol_dell_avvenire
-				ITA_a_colonial_empire
-			}		
-		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { NOT = { has_dlc = "By Blood Alone" } }
-			ideas = {
-				vittorio_emanuele
-				ITA_iri_fake_ns
-				ITA_re_fake_ns
-			}	
-			focuses = {
-				ITA_comandante_diavolo
-				ITA_to_live_as_a_lion
 				ITA_a_colonial_empire
 			}		
 		}
@@ -155,10 +89,11 @@ bookmarks = {
 				JAP_strike_on_the_southern_resource_area
 			}			
 		}
+
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
-			available = { has_dlc = "No Step Back" }
+
 			ideas = {
 				trotskyite_plot_nsb
 				SOV_second_five_year_plan_fake_1936_ns
@@ -166,41 +101,13 @@ bookmarks = {
 			}
 			focuses = {
 				SOV_behead_the_snake
-				SOV_the_supreme_soviet
-				SOV_reconvene_the_zemsky_sobor
+				SOV_the_centre
 			}	
-		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
-			available = { NOT = { has_dlc = "No Step Back" } }
-			ideas = {
-				trotskyite_plot_nsb
-				SOV_second_five_year_plan_fake_1936_ns
-				SOV_politicized_military
-			}
-			focuses = {
-				SOV_behead_the_snake
-				SOV_father_of_nations
-				SOV_the_supreme_soviet
-			}	
-		}
-		"NEU"={
-			history = "NEUTRAL_STATES_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				neutrality_idea
-				disarmed_nation
-#				limited_exports
-				undisturbed_isolation
-			}
-			focuses = {
-			}
 		}
 
-#		"---"={
-#			history = "OTHER_GATHERING_STORM_DESC"
-#		}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
 
 
 		# minors from DLC ####
@@ -213,9 +120,9 @@ bookmarks = {
 				CAN_conscription_crisis
 			}
 			focuses = {
-				CAN_skewer_the_eagle
-				CAN_north_american_alliance
-				CAN_join_comintern
+				CAN_strengthen_the_commonwealth_ties
+				CAN_commit_to_the_war
+				CAN_war_fueled_economy
 			}
 		}
 		"AST"={
@@ -226,9 +133,9 @@ bookmarks = {
 				AST_great_depression_1
 			}
 			focuses = {
-				AST_never_another_gallipoli
-				AST_support_indonesian_uprising
-				AST_delegation_to_china
+				AST_support_the_policy_of_appeasement
+				AST_rats_of_tobruk
+				AST_fight_work_or_perish
 			}
 		}
 		"NZL"={
@@ -240,7 +147,7 @@ bookmarks = {
 			}
 			focuses = {
 				NZL_bob_semple_tank
-				NZL_independent_new_zealand
+				NZL_strengthen_the_commonwealth
 				NZL_maori_volunteers
 			}
 		}
@@ -254,8 +161,8 @@ bookmarks = {
 			}
 			focuses = {
 				SAF_secure_interests_in_africa
-				SAF_support_the_german_coup
-				SAF_anti_colonialist_crusade
+				SAF_work_for_all_poor
+				SAF_expand_the_cape_corps
 			}
 		}
 		"RAJ"={
@@ -267,11 +174,12 @@ bookmarks = {
 				RAJ_princely_states
 			}
 			focuses = {
-				RAJ_all_india_forward_bloc
+				RAJ_provincial_elections
 				RAJ_indian_gurkhas
 				RAJ_the_smiling_buddha
 			}
 		}
+
 
 		"HUN"={
 			minor = yes
@@ -281,7 +189,7 @@ bookmarks = {
 				HUN_treaty_of_triannon
 			}
 			focuses = {
-				HUN_proclaim_the_restoration_of_austria_hungary
+				HUN_proclaim_greater_hungary
 				HUN_secret_rearmament
 				HUN_renounce_the_treaty_of_trianon
 			}
@@ -296,27 +204,12 @@ bookmarks = {
 				neutrality_idea
 			}
 			focuses = {
-				ROM_balkans_dominance
+				ROM_appoint_german_friendly_government
 				ROM_institute_royal_dictatorship
 				ROM_preserve_greater_romania
 			}
 		}
 
-		"CHI"={
-			minor = yes
-			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				CHI_army_corruption_1
-				CHI_hyper_inflation_1
-				CHI_nine_power_treaty
-			}
-			focuses = {
-				CHI_army_reform
-				CHI_invite_the_flying_tigers
-				CHI_the_soviet_volunteer_group
-			}
-		}
 
 		"MAN"={
 			minor = yes
@@ -329,10 +222,12 @@ bookmarks = {
 			}
 			focuses = {
 				MAN_obedience
-				MAN_independence_war
-				MAN_claim_the_mandate_of_heaven
+				MAN_the_two_emperors
+				MAN_national_defense_state
 			}
 		}
+		
+
 		
 		"MEX"={
 			minor = yes
@@ -345,8 +240,7 @@ bookmarks = {
 			}
 			focuses = {
 				MEX_focus_aztec_eagles
-				MEX_focus_hispanic_alliance
-				MEX_focus_smash_the_bureaucrats
+				MEX_focus_nationalize_the_oil_fields
 			}
 		}
 
@@ -361,8 +255,6 @@ bookmarks = {
 			}
 			focuses = {
 				SPA_caudillo_of_spain
-				SPA_no_compromise_on_carlist_ideals
-				SPR_anarchism_knows_no_borders
 			}
 		}
 
@@ -376,12 +268,39 @@ bookmarks = {
 				BUL_imro_01
 			}
 			focuses = {
-				BUL_the_fatherland_front
+				BUL_power_to_the_tsar
 				BUL_restore_the_bulgarian_patriarchate
 				BUL_prussia_of_the_balkans
 			}
 		}
-
+		"ETH"={
+			minor = yes
+			history = "ETH_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ETH_conservative_high_command_idea
+				ETH_the_heroes_of_adwa_idea
+				ETH_on_our_own_idea
+			}
+			focuses = {
+				ETH_reach_out_to_the_italians
+			}
+		}
+		"VIC"={
+			minor = yes
+			history = "NEEDS THE GAMERULE TO BE ON Starts with Algeria, has normal French tree plus Vichy tree, you get the French navy, starts with same spirits as France"
+			ideology = neutrality
+			ideas = {
+				FRA_up_with_jean_darc
+				FRA_venerate_the_craftsman
+				VIC_aircraft_parts
+			}
+			focuses = {
+				VIC_down_with_marianne
+				VIC_concessions_to_the_germans
+				VIC_end_the_occupation
+			}
+		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

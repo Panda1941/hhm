@@ -1,0 +1,169 @@
+characters={
+	VIC_philippe_petain={ #Fascist Leader
+		name=FRA_philippe_petain
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_philippe_petain
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	VIC_marcel_bucard={
+		name=FRA_marcel_bucard
+		portraits={
+			army={
+				small="GFX_idea_marcel_bucard"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = marcel_bucard
+			allowed  = {
+				original_tag  = VIC 
+			}
+			available  = {
+				if  = {
+					limit  = {
+						has_dlc = "Man the Guns"
+					}
+					not  = {
+						has_autonomy_state  = autonomy_supervised_state
+					}
+				}
+			}
+			traits  = {
+				fascist_demagogue
+			}
+			do_effect  = {
+				not  = {
+					has_government  = fascism
+				}
+			}
+			on_add  = {
+				if  = {
+					limit  = {
+						not  = {
+							owner = { tag = VIC }
+						}
+					}
+					owner = {
+						country_event  = lar_france_political_violence.2
+					}
+				}
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+	VIC_georges_bonnet={
+		name=FRA_georges_bonnet
+		portraits={
+			army={
+				small="GFX_idea_georges_bonnet"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = georges_bonnet_vic
+			allowed  = {
+				original_tag = VIC
+			}
+			available  = {
+				has_completed_focus = VIC_buy_time
+			}
+			cost  = 75.000
+			traits  = {
+				appeaser
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+	VIC_maurice_gamelin={
+		name=FRA_maurice_gamelin
+		portraits={
+			army={
+				small="GFX_idea_maurice_gamelin"
+			}
+			army={
+				large=GFX_portrait_FRA_maurice_gamelin
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = maurice_gamelin_vic
+			allowed = {
+				original_tag = VIC
+			}
+			available = {
+				has_completed_focus = VIC_aggressive_focus
+			}
+			cost = 100.000
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer defensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	VIC_maxime_weygand={
+		name=FRA_maxime_weygand
+		portraits={
+			army={
+				small="GFX_idea_maxime_weygand"
+			}
+			army={
+				large=GFX_portrait_FRA_maxime_weygand
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = maxime_weygand_vic
+			allowed = {
+				original_tag = VIC
+			}
+			available = {
+				has_completed_focus = VIC_defensive_focus
+			}
+			cost = 100.000
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer defensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+}
