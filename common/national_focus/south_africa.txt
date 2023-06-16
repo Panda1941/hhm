@@ -9,55 +9,9 @@
 			tag = SAF
 			has_dlc = "Together for Victory"
 		}
-		
-		#modifier = {
-		#	add = 10
-		#	original_tag = SAF
-		#	has_dlc = "Together for Victory"
-		#}
 	}
 	
 	default = no
-
-
-
-#	focus = {
-#		id = SAF_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
-
-
 
 	############################
 	#### WAR PREP SECTION ######
@@ -601,36 +555,9 @@
 		}
 	}
 
-	focus = {
-		id = SAF_voortrekker_monument
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = SAF_native_laws_amendment_act }
-		x = 1
-		y = 1
-		relative_position_id = SAF_native_laws_amendment_act
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			NOT = { has_country_flag = britain_enforced_our_loyalty }
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-        search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
-		completion_reward = {
-			add_ideas = SAF_voortrekker_monument
-		}
-	}
+	############################
+	#### GO FASCIST SECTION ####
+	############################
 
 	############################
 	##### INDUSTRY SECTION #####
@@ -804,14 +731,20 @@
         search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
-			681 = {
+			random_state = {
+				limit = {
+					has_state_flag = SAF_infrastructure_effort_Inf
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			719 = {
+			random_state = {
+				limit = {
+					has_state_flag = SAF_infrastructure_effort_Inf2
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -821,14 +754,27 @@
 		}
 
 		completion_reward = {
-			681 = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 				set_state_flag = SAF_infrastructure_effort_Inf
-				719 = {
+				random_neighbor_state = { # done like this to prevent double selection of previous state
+					limit = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1664,10 +1610,7 @@
 				name = SAF_improve_the_hawker_hartbees
 				bonus = 1.0
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				category = light_fighter
 			}
 		}
 	}

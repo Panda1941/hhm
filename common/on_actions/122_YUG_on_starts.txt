@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {limit = {YUG = {is_ai = yes}}
+				YUG = {
+					country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+}

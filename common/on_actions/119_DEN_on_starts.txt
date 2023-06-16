@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {limit = {DEN = {is_ai = yes}}
+				DEN = {
+					country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+}

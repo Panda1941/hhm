@@ -15,41 +15,6 @@
 
 	continuous_focus_position = { x = 20 y = 1000 }
 
-#	focus = {
-#		id = CHI_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
 	shared_focus = CHI_invite_foreign_investors
 
 	focus = {
@@ -431,7 +396,7 @@
 		y = 1
 		relative_position_id = CHI_constitutional_reform
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -747,6 +712,10 @@
 			is_in_faction = no
 		}
 
+		bypass = {
+			is_in_faction_with = PRC
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -759,6 +728,9 @@
 			CHI = {
 				set_rule = { can_create_factions = yes }
 				create_faction = chinese_united_front
+			}
+			PRC = {
+				country_event = generic.5
 			}
 		}
 	}
@@ -803,7 +775,31 @@
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					MAN = {
+						OR = {
+							is_in_faction_with = JAP
+							is_puppet_of = JAP
+						}
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MAN
+					expire = 0
+				}
+				else = {
+					create_wargoal = {
+						type = annex_everything
+						target = JAP
+						expire = 0
+					}	
+				}
+			}
+			hidden_effect = {
+				news_event = { id = wtt_news.35 days = 1}
+			}
 		}
 	}
 
@@ -837,6 +833,39 @@
 
 		completion_reward = {
 			add_ideas = CHI_war_of_resistance
+		}
+	}
+
+	focus = {
+		id = CHI_industrial_evacuations
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = CHI_war_of_resistance }
+		x = -2
+		y = 1
+		relative_position_id = CHI_war_of_resistance
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			unlock_decision_category_tooltip = CHI_industrial_evacuations			
+			set_variable = { var = CHI_industrial_evacuations_amount_factor value = 0.75 } #Ratio for how many building are moved. Change CHI_industrial_evacuations_add_AF and CHI_industrial_evacuations_add_IC if you change the value
 		}
 	}
 
@@ -893,7 +922,7 @@
 		y = 1
 		relative_position_id = CHI_war_of_resistance
 
-		cost = 0.1
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -911,7 +940,9 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = { }
+		completion_reward = {
+			unlock_decision_tooltip = CHI_scorched_earth_tactics
+		}
 	}
 
 	focus = {
@@ -1891,6 +1922,38 @@
 		search_filters = { FOCUS_FILTER_CHI_INFLATION }
 		completion_reward = {
 			CHI_hyper_inflation_level_down = yes
+		}
+	}
+
+	focus = {
+		id = CHI_forced_loans
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = CHI_reform_the_national_bank }
+		x = 0
+		y = 1
+		relative_position_id = CHI_reform_the_national_bank
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_hyper_inflation = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_CHI_INFLATION }
+		completion_reward = {
+			unlock_decision_tooltip = CHI_forced_loans
 		}
 	}
 

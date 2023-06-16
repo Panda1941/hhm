@@ -1,0 +1,13 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			FRA = {
+				diplomatic_relation = {
+   					country = YUG
+   					relation = guarantee
+   					active = no
+				}
+			}
+		}
+	}
+}

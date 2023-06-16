@@ -1,0 +1,19 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ROM = {
+				diplomatic_relation = {
+   					country = YUG
+   					relation = guarantee
+   					active = no
+				}
+
+				diplomatic_relation = {
+   					country = GRE
+   					relation = guarantee
+   					active = no
+				}
+			}
+		}
+	}
+}

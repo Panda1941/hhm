@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_plan_of_agua_prieta
 		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 123
+		x = 23
 		y = 0
 
 		cost = 5
@@ -60,8 +60,7 @@ focus_tree = {
 		id = MEX_focus_exile_calles
 		icon = GFX_focus_mex_exile_calles
 		prerequisite = { focus = MEX_focus_plan_of_agua_prieta }
-		mutually_exclusive = { focus = MEX_focus_jefe_maximo }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = MEX_focus_plan_of_agua_prieta
 
@@ -91,89 +90,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MEX_focus_jefe_maximo
-		icon = GFX_focus_mex_jefe_maximo
-		mutually_exclusive = { focus = MEX_focus_exile_calles }
-		prerequisite = { focus = MEX_focus_plan_of_agua_prieta }
-		x = 1
-		y = 1
-		relative_position_id = MEX_focus_plan_of_agua_prieta
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 0.1
-				is_historical_focus_on = yes
-			}
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = MEX_focus_professional_army
-				}
-				add_field_marshal_role = {
-					character = MEX_plutarco_calles
-					legacy_id = 711
-					traits = { harsh_leader } # Incited many rebellions with his heavy hand
-					skill = 4
-					attack_skill = 5
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 4
-				}
-				else = {
-					add_field_marshal_role = {
-						character = MEX_plutarco_calles
-						legacy_id = 711
-						traits = { harsh_leader } # Incited many rebellions with his heavy hand
-						skill = 4
-						attack_skill = 5
-						defense_skill = 3
-						planning_skill = 2
-						logistics_skill = 3
-					}
-				}
-			}
-			swap_ideas = {
-				remove_idea = MEX_callistas
-				add_idea = MEX_plutarco_calles
-			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = MEX_aaron_saenz
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							has_global_flag = trotsky_exile_mexico
-							has_global_flag = flag_mexico_invited_trotsky_to_government
-						}
-					}
-				}
-				set_global_flag = trotsky_not_welcome_in_mexico
-			}			
-		}
-	}
-	
-	focus = {
 		id = MEX_focus_national_bank
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 109
+		x = 9
 		y = 0
 
 		cost = 5
@@ -333,6 +252,121 @@ focus_tree = {
 		completion_reward = {
 			MEX_decrease_church_power = yes
 			add_ideas = MEX_ejido_worker_militias
+		}
+	}
+	
+	focus = {
+		id = MEX_focus_party_of_the_revolution
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = MEX_focus_ejido_worker_militias }
+		x = 0
+		y = 1
+		relative_position_id = MEX_focus_ejido_worker_militias
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			communism > 0.4
+			has_civil_war = no
+			NOT = { has_completed_focus = MEX_focus_institutional_revolution }
+			NOT = { has_completed_focus = MEX_focus_catholic_politics }
+			NOT = { has_completed_focus = MEX_focus_crusade_against_atheism }
+			NOT = { has_completed_focus = MEX_focus_revanchist_revolution }
+			NOT = { has_completed_focus = MEX_focus_communist_revolution }
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			
+			add_stability = 0.05
+			add_war_support = 0.05
+
+			if = {
+				limit = {
+					has_country_leader = { character = MEX_lazaro_cardenas }
+				}
+				add_country_leader_role = {
+					character = MEX_lazaro_cardenas
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+							protector_of_the_campesinos
+						}
+					}
+				promote_leader = yes				
+				}
+				add_country_leader_role = {
+					character = MEX_plutarco_calles
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							el_jefe_maximo
+						}
+					}
+				promote_leader = yes				
+				}
+			}
+			
+			if = {
+				limit = {
+					has_country_leader = { character = MEX_vicente_lombardo }
+				}
+				add_country_leader_role = {
+					character = MEX_vicente_lombardo
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+							the_dean_of_mexican_marxism
+						}
+					}
+					promote_leader = yes
+				}
+				add_country_leader_role = {
+					character = MEX_plutarco_calles
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							el_jefe_maximo
+						}
+					}
+					promote_leader = yes
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = {
+						has_government = communism
+					}
+				}
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = yes
+				}
+			}
+			
+			set_party_name = { ideology = communism name = MEX_democratic_party_mexican_revolution_party_short long_name = MEX_democratic_party_mexican_revolution_party_long }
+			
+			hidden_effect = {set_cosmetic_tag = MEX_cristero } # Hidden because the tooltip looks odd together with ideology changes
 		}
 	}
 	
@@ -817,7 +851,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = MEX_focus_rural_schools focus = MEX_focus_cientifico_camarilla }
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = MEX_focus_rural_schools
 
 		cost = 5
@@ -857,11 +891,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MEX_focus_royal_dutch_shell
-		icon = GFX_focus_generic_the_giant_wakes
+		id = MEX_focus_nationalize_the_oil_fields
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = { focus = MEX_focus_oil_field_expansion }
-		mutually_exclusive = { focus = MEX_focus_nationalize_the_oil_fields }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = MEX_focus_oil_field_expansion
 
@@ -869,31 +902,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 100
-			
-			modifier = {
-				factor = 0.1
-				is_historical_focus_on = yes
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					NOT = {
-						country_exists = ENG
-					}
-					ENG = {
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}	
-			}
 		}
 
 		available = {
-			NOT = {
-				has_war_with = ENG
-			}
+			
 		}
 
 		bypass = {
@@ -903,35 +915,53 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+
 		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = USA
+					}
+					NOT = {
+						has_war_with = ROOT
+					}
+					NOT = {
+						is_subject_of = ROOT
+					}
+				}
+				add_opinion_modifier = {
+					target = MEX
+					modifier = sanctions
+				}
+				country_event = {
+					days = 1
+					id = mexico.2
+				}
+				custom_effect_tooltip = tooltip_mexico_they_may_declare_war
+			}
+			remove_ideas = MEX_oil_concessions
 			USA = {
+				remove_resource_rights = 479
 				remove_resource_rights = 480
 			}
-			480 = {
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-			add_tech_bonus = {
-				name = synth_resources
-				bonus = 1.0
-				uses = 2
-				category = synth_resources
+			ENG = {
+				remove_resource_rights = 477
+				remove_resource_rights = 476
 			}
 			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = MEX_royal_dutch_shell
+
+			show_ideas_tooltip = MEX_pemex
 		}
 	}
-	
+
 	focus = {
 		id = MEX_focus_oil_revenue_reinvestment
 		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = MEX_focus_royal_dutch_shell focus = MEX_focus_nationalize_the_oil_fields }
-		x = 0
-		y = 2
-		relative_position_id = MEX_focus_oil_field_expansion
+		prerequisite = { focus = MEX_focus_nationalize_the_oil_fields }
+		x = -2
+		y = 1
+		relative_position_id = MEX_focus_nationalize_the_oil_fields
 
 		cost = 10
 
@@ -1009,242 +1039,13 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = MEX_focus_community_of_nations
-		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = MEX_focus_royal_dutch_shell }
-		x = 0
-		y = 2
-		relative_position_id = MEX_focus_royal_dutch_shell
 
-		cost = 5
 
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			is_subject = no
-			NOT = {
-				has_war_with = ENG
-			}
-		}
-
-		bypass = {
-			OR = {
-				is_in_faction = yes
-				ENG = {
-					exists = no
-				}
-				ENG = {
-					is_subject = yes
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			if = {
-				limit = {
-					ENG = { has_government = neutrality }
-				}
-				add_popularity = {
-					ideology = neutrality
-					popularity = 0.1
-				}
-			}
-			else_if = {
-				limit = {
-					ENG = { has_government = democratic }
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.1
-				}
-			}
-			else_if = {
-				limit = {
-					ENG = { has_government = fascism }
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.1
-				}
-			}
-			else_if = {
-				limit = {
-					ENG = { has_government = communism }
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = 0.1
-				}
-			}
-
-			add_opinion_modifier = {
-				target = ENG
-				modifier = anglo_mexican_diplomacy
-			}
-			ENG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = anglo_mexican_diplomacy
-				}
-			}
-			if = {
-				limit = {
-					ENG = { is_faction_leader = yes }
-				}
-				ENG = {
-					country_event = {
-						id = mexico.8
-						days = 1
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					ENG = {
-						is_in_faction = yes
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_faction_leader = yes
-						is_in_faction_with = ENG
-					}
-					country_event = generic.2
-				}
-			}
-			else = {
-				create_faction = MEX_focus_community_of_nations
-				ENG = {
-					country_event = generic.5
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = MEX_focus_purchase_belize
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = MEX_focus_community_of_nations }
-		x = 0
-		y = 1
-		relative_position_id = MEX_focus_community_of_nations
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			is_subject = no
-			NOT = {
-				has_war_with = ENG
-			}
-			311 = {
-				is_owned_by = ENG
-			}
-		}
-
-		bypass = {
-		NOT= {
-			311 = {
-				is_owned_by = ENG
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			ENG = {
-				country_event = {
-					id = mexico.12
-					days = 1
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = MEX_focus_nationalize_the_oil_fields
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		prerequisite = { focus = MEX_focus_oil_field_expansion }
-		mutually_exclusive = { focus = MEX_focus_royal_dutch_shell }
-		x = 2
-		y = 1
-		relative_position_id = MEX_focus_oil_field_expansion
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			every_country = {
-				limit = {
-					OR = {
-						tag = ENG
-						tag = USA
-					}
-					NOT = {
-						has_war_with = ROOT
-					}
-					NOT = {
-						is_subject_of = ROOT
-					}
-				}
-				add_opinion_modifier = {
-					target = MEX
-					modifier = sanctions
-				}
-				country_event = {
-					days = 1
-					id = mexico.2
-				}
-				custom_effect_tooltip = tooltip_mexico_they_may_declare_war
-			}
-			remove_ideas = MEX_oil_concessions
-			USA = {
-				remove_resource_rights = 479
-				remove_resource_rights = 480
-			}
-			ENG = {
-				remove_resource_rights = 477
-				remove_resource_rights = 476
-			}
-			custom_effect_tooltip = available_industrial_concern
-
-			show_ideas_tooltip = MEX_pemex
-		}
-	}
 	focus = {
 		id = MEX_focus_northern_steel_plants
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = MEX_focus_oil_field_expansion }
-		x = 7
+		x = 8
 		y = 1
 		relative_position_id = MEX_focus_oil_field_expansion
 
@@ -1529,8 +1330,8 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_international_peacekeepers
 		icon = GFX_focus_generic_paratrooper
-		prerequisite = { focus = MEX_focus_aztec_eagles focus = MEX_focus_purchase_belize }
-		x = -2
+		prerequisite = { focus = MEX_focus_aztec_eagles }
+		x = 0
 		y = 1
 		relative_position_id = MEX_focus_aztec_eagles
 
@@ -1635,7 +1436,11 @@ focus_tree = {
 		available = {
 			democratic > 0.4
 			has_civil_war = no
+			NOT = { has_completed_focus = MEX_focus_party_of_the_revolution }
 			NOT = { has_completed_focus = MEX_focus_catholic_politics }
+			NOT = { has_completed_focus = MEX_focus_crusade_against_atheism }
+			NOT = { has_completed_focus = MEX_focus_revanchist_revolution }
+			NOT = { has_completed_focus = MEX_focus_communist_revolution }
 		}
 
 		bypass = {
@@ -1735,7 +1540,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_control_the_army
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = MEX_focus_exile_calles focus = MEX_focus_jefe_maximo }
+		prerequisite = { focus = MEX_focus_exile_calles }
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_exile_calles
@@ -2278,7 +2083,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = MEX_focus_rewrite_the_constitution }
 		mutually_exclusive = { focus = MEX_focus_state_education }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = MEX_focus_rewrite_the_constitution
 
@@ -2310,8 +2115,8 @@ focus_tree = {
 		id = MEX_focus_catholic_politics
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = MEX_focus_knights_of_columbus }
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = MEX_focus_knights_of_columbus
 
 		cost = 10
@@ -2324,7 +2129,11 @@ focus_tree = {
 			has_idea = MEX_church_power_5
 			democratic > 0.4
 			has_civil_war = no
+			NOT = { has_completed_focus = MEX_focus_party_of_the_revolution }
 			NOT = { has_completed_focus = MEX_focus_institutional_revolution }
+			NOT = { has_completed_focus = MEX_focus_crusade_against_atheism }
+			NOT = { has_completed_focus = MEX_focus_revanchist_revolution }
+			NOT = { has_completed_focus = MEX_focus_communist_revolution }
 		}
 
 		bypass = {
@@ -2405,7 +2214,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = MEX_focus_church_schools
 		icon = GFX_focus_research
@@ -2644,7 +2453,7 @@ focus_tree = {
 		id = MEX_focus_ban_political_militias
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = MEX_focus_plan_of_agua_prieta }
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = MEX_focus_plan_of_agua_prieta
 
@@ -2882,7 +2691,7 @@ focus_tree = {
 			MEX_decrease_cedillo_tension = yes
 		}
 	}
-	
+
 	focus = {
 		id = MEX_focus_spanish_civil_war_refugees
 		icon = GFX_goal_generic_intelligence_exchange
@@ -2951,6 +2760,8 @@ focus_tree = {
 			}
 		}
 	}
+	
+
 
 	focus = {
 		id = MEX_focus_support_spains_loyalists
@@ -3041,6 +2852,42 @@ focus_tree = {
 				}
 			}
 			MEX_decrease_church_power = yes
+		}
+	}
+	
+
+	focus = {
+		id = MEX_focus_realpolitik
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = MEX_focus_support_spains_loyalists }
+
+		x = 0
+		y = 2
+		relative_position_id = MEX_focus_spanish_civil_war_refugees
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 120
 		}
 	}
 	

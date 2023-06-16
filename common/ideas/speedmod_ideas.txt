@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		ai_faster_training = {
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				training_time_factor = -0.5
+			}
+		}
+	}
+}

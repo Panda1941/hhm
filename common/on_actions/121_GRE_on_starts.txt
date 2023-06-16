@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {limit = {GRE = {is_ai = yes}}
+				GRE = {
+					country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+}

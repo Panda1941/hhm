@@ -1,6 +1,0 @@
-leader_traits = {
-    HMM_BUL_no_entrenchment = { #Regency Council (led by Hristo Lukov)
-        random = no
-        max_dig_in = -5
-    }
-}

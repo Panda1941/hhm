@@ -1,6 +1,0 @@
-opinion_modifiers = {
-    HMM_embargo = {
-		trade = yes
-		value = -200
-	}
-}

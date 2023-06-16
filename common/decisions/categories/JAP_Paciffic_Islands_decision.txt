@@ -1,0 +1,6 @@
+JAP_Paciffic_Islands = {
+	icon = military_operation	
+	picture = GFX_decision_cat_picture_ger_case_anton
+	allowed = { original_tag = JAP has_dlc = "Man the Guns" }
+	visible = { has_government = fascism }
+}

@@ -67,7 +67,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_provincial_elections
 		icon = GFX_goal_generic_forceful_treaty
-		x = 3
+		x = 2
 		y = 0
 
 		cost = 10
@@ -149,45 +149,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RAJ_quit_india_movement
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = RAJ_cripps_mission }
-		x = 1
-		y = 3
-		#relative_position_id = RAJ_cripps_mission
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			is_subject = yes
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_ideas = RAJ_quit_india_movement
-			set_country_flag = RAJ_quit_india_movement
-			custom_effect_tooltip = "tfv_raj_quit_india_unrest_tt"
-			hidden_effect = {
-				country_event = { id = tfv_raj.210 days = 15 random_days = 20 }
-				news_event = { id = news.282 hours = 6 }
-			}
-		}
-	}
-
 	############################
 	### SOMEWHAT DEMOCRATIC ####
 	############################
@@ -264,6 +225,7 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_idea = RAJ_marginalized_muslim_community_happy
+				PAK = { exists = yes }
 			}
 		}
 
@@ -496,6 +458,7 @@ focus_tree = {
 						type = ship_hull_cruiser_2
 						name_group = RAJ_CL_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_battery_slot = ship_light_medium_battery_2
 							fixed_ship_anti_air_slot = ship_anti_air_1
@@ -538,7 +501,7 @@ focus_tree = {
 							basic_torpedo = 1
 							basic_medium_battery = 1
 						}
-						navy_experience = 20
+						navy_experience = 50
 						custom_effect_tooltip = RAJ_navy_funding_effect
 					}
 				}
@@ -580,11 +543,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 20
+			army_experience = 30
 			add_tech_bonus = {
 				name = RAJ_british_army_support
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = support_tech
 			}
 		}
@@ -675,7 +638,18 @@ focus_tree = {
 		}
 
 		available = {
-
+			IF = {
+				limit = {
+					ETH = { has_character = RAJ_orde_wingate }
+				}
+				OR = {
+					ETH = { controls_state = 271 }
+					any_owned_state = {
+						NOT = { is_controlled_by = ROOT }
+					}
+					date > 1942.1.1
+				}			
+			}
 		}
 
 		bypass = {
@@ -690,14 +664,27 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = RAJ_orde_wingate_tt
 		hidden_effect = {
-			add_corps_commander_role = {
-				character = RAJ_orde_wingate
-				traits = { jungle_rat commando }
-				skill = 4
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 5
+			IF = {
+				limit = {
+					ETH = { has_character = RAJ_orde_wingate }
+				}
+				ETH = {
+					country_event = {
+						id = BBA_ethiopia_exile_events.05
+						hours = 1
+					}
+				}
+			}
+			ELSE = {
+				add_corps_commander_role = {
+					character = RAJ_orde_wingate
+					traits = { jungle_rat commando }
+					skill = 4
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 5
+					}
 				}
 			}
 			add_tech_bonus = {
@@ -753,7 +740,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_lessons_of_the_great_war
 		icon = GFX_goal_generic_small_arms
-		x = 16
+		x = 15
 		y = 0
 
 		cost = 10
@@ -977,6 +964,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = RAJ_lions_of_the_great_war
+			army_experience = 30
 			custom_effect_tooltip = RAJ_create_unit_sikh_tt
 			hidden_effect = {
 
@@ -1660,7 +1648,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_great_indian_peninsula_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 27
+		x = 26
 		y = 0
 
 		cost = 10
@@ -2367,7 +2355,7 @@ focus_tree = {
 		id = RAJ_east_india_railways
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = RAJ_great_indian_peninsula_railway
 
@@ -2483,7 +2471,7 @@ focus_tree = {
 		id = RAJ_ishapore_arsenal
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = RAJ_east_india_railways }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
@@ -2576,6 +2564,119 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = RAJ_risk_of_famine
+		}
+	}
+	
+	focus = {
+		id = RAJ_administrative_oversight
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RAJ_clamp_down_on_corruption }
+		x = 0
+		y = 1
+		relative_position_id = RAJ_clamp_down_on_corruption
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = RAJ_enable_local_industrialization
+		}
+	}
+	
+	focus = {
+		id = RAJ_land_clearance
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RAJ_administrative_oversight }
+		mutually_exclusive = { focus = RAJ_workforce_integration }
+		x = -1
+		y = 1
+		relative_position_id = RAJ_administrative_oversight
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				every_owned_state = {
+					limit = { has_state_flag = RAJ_industrialized_this_state }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			custom_effect_tooltip = RAJ_land_clearance_effect_tt
+		}
+	}
+	
+	focus = {
+		id = RAJ_workforce_integration
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RAJ_administrative_oversight }
+		mutually_exclusive = { focus = RAJ_land_clearance }
+		x = 1
+		y = 1
+		relative_position_id = RAJ_administrative_oversight
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				every_owned_state = {
+					limit = { has_state_flag = RAJ_industrialized_this_state }
+					add_dynamic_modifier = {
+						modifier = RAJ_industrialized_personnel
+					}
+				}
+			}
+			custom_effect_tooltip = RAJ_integration_tooltip
+			add_dynamic_modifier = {
+				modifier = RAJ_industrialized_personnel
+			}
+			custom_effect_tooltip = RAJ_integration_tooltip_post
 		}
 	}
 

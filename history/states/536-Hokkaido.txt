@@ -11,16 +11,15 @@ state={
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 2
+			10444 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			10444 15 
 		}
 		victory_points = {
 			12421 5 
-		}
-		1936.1.1.13 = {
-			owner = NEU
-			add_core_of = NEU
 		}
 
 	}

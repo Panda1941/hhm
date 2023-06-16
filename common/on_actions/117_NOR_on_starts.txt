@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {limit = {NOR = {is_ai = yes}}
+				NOR = {
+					country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+defined_text = {
+	name = RULE_host
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = GER }}localization_key = "Germany"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = ITA }}localization_key = "Italy"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = ROM }}localization_key = "Romania"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = JAP }}localization_key = "Japan"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = HUN }}localization_key = "Hungry"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = BUL }}localization_key = "Bulgaria"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = FIN }}localization_key = "Finland"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = ENG }}localization_key = "UK"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = USA }}localization_key = "United States"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = CAN }}localization_key = "Canada"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = SAF }}localization_key = "South Africa"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = RAJ }}localization_key = "Raj"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = AST }}localization_key = "Australia"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = NZL }}localization_key = "New Zealand"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = MAN }}localization_key = "Manchukuo"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = SOV }}localization_key = "Soviets"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = FRA }}localization_key = "France"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = BRA }}localization_key = "Brazil"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = MEX }}localization_key = "Mexico"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = SPR }}localization_key = "Spain"}
+	text = {trigger = {has_game_rule = { rule = hosttool_game_rule option = NOR }}localization_key = "Norway"}
+	text = {localization_key = RULE_HT_NONE}
+}

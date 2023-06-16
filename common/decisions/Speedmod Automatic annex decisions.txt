@@ -1,0 +1,101 @@
+operations = {
+
+    Automatic_SOV_annex_Tannu_Tuva = {
+	#icon = generic_operation
+	icon = generic_formable_nations
+	allowed = {tag = NEU}
+	available = {TAN = { is_ai = yes } TAN = {has_completed_focus = construction_effort_3}}
+	fire_only_once = yes
+        ai_will_do = {factor = 1}
+	visible = {tag = NEU TAN = { is_ai = yes }}
+	targets = {TAN}
+	complete_effect = {
+		TAN = {
+#			delete_units = { division_template = "Strelkovaya Polk" disband = yes }
+			delete_units = { division_template = "20 width Infantry" disband = yes }
+		}
+		SOV = { annex_country = {target = TAN transfer_troops = yes}}
+		every_state = {limit = {is_controlled_by = SOV is_core_of = TAN} remove_core_of = TAN add_core_of = SOV}
+        }
+    }
+
+    Automatic_SOV_annex_Mongolia = {
+	#icon = generic_operation
+	icon = generic_formable_nations
+	allowed = {tag = NEU}
+	available = {MON = { is_ai = yes } MON = {has_completed_focus = construction_effort_3}}
+	fire_only_once = yes
+        ai_will_do = {factor = 1}
+	visible = {tag = NEU MON = { is_ai = yes }}
+	targets = {MON}
+	complete_effect = {
+		MON = {
+#			delete_units = { division_template = "Morit Diviziin" disband = yes }
+			delete_units = { division_template = "20 width Infantry" disband = yes }
+		}
+		SOV = {annex_country = {target = MON transfer_troops = yes}}
+		every_state = {limit = {is_controlled_by = SOV is_core_of = MON} remove_core_of = MON add_core_of = SOV}
+        }
+    }
+
+    Automatic_AST_annex_New_Zealand = {
+        # icon = generic_operation
+	allowed = {tag = NEU}
+        fire_only_once = yes
+        ai_will_do = {factor = 1}
+	available = {NZL = { is_ai = yes } NZL = {has_completed_focus = construction_effort_3}}
+	visible = {tag = NEU NZL = { is_ai = yes }}
+	targets = {NZL}
+	complete_effect = {
+		NZL = {
+		delete_unit_template_and_units = { division_template = "District Force" disband = yes }
+		delete_unit_template_and_units = { division_template = "Armoured Division" disband = yes }
+		delete_unit_template_and_units = { division_template = "20 width Infantry" disband = yes }
+		}	
+		AST = {annex_country = {target = NZL transfer_troops = yes} add_research_slot = 1}
+		every_state = {limit = {is_core_of = NZL is_controlled_by = AST} add_core_of = AST remove_core_of = NZL}
+        }
+    }
+
+   Automatic_ENG_annex_British_Malaya = {
+        # icon = generic_operation
+	allowed = {tag = NEU}
+        fire_only_once = yes
+        ai_will_do = {factor = 1}
+	available = {MAL = { is_ai = yes } MAL = {has_completed_focus = construction_effort_3}}
+	visible = {tag = NEU MAL = { is_ai = yes }}
+	targets = {MAL}
+	complete_effect = {
+		MAL = { delete_units = { division_template = "Malaya Infantry Brigade" disband = yes }}
+			every_state = {
+				limit = {is_core_of = MAL }
+					remove_core_of = MAL
+					add_core_of = AFA
+					transfer_state_to = AFA						
+					transfer_state_to = ENG					
+					set_garrison_strength = 1.0
+					set_compliance = 30
+				}
+		}
+   }
+
+    Automatic_USA_annex_Philippines = {
+        # icon = generic_operation
+	 allowed = {tag = NEU}
+        fire_only_once = yes
+        ai_will_do = {factor = 1}
+	available = {PHI = { is_ai = yes } PHI = {has_completed_focus = construction_effort_3}}
+	visible = {tag = NEU PHI = { is_ai = yes }}
+	targets = {PHI}
+	complete_effect = {
+		PHI = {
+		delete_unit_template_and_units = { division_template = "Infantry Division" disband = yes }
+		}	
+	USA = {annex_country = {target = PHI transfer_troops = yes}}
+	every_state = {limit = {is_core_of = PHI is_controlled_by = USA} add_core_of = USA remove_core_of = PHI}
+		}
+    }
+
+
+}
+

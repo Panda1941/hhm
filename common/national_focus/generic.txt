@@ -1,17 +1,14 @@
 ﻿search_filter_prios = {
 	FOCUS_FILTER_POLITICAL = 1010
-
-	
- 
-	
 	
 	FOCUS_FILTER_RESEARCH = 522
-
 	
 	FOCUS_FILTER_INDUSTRY = 509
 
+	FOCUS_FILTER_BALANCE_OF_POWER = 200
 	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
 	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_MISSIOLINI = 110
 	FOCUS_FILTER_ARMY_XP = 103
 	FOCUS_FILTER_NAVY_XP = 102
 	FOCUS_FILTER_AIR_XP = 101
@@ -377,13 +374,8 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 1.0
 				uses = 2
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
+				category = light_fighter
+				category = cat_heavy_fighter
 			}
 		}
 	}
@@ -407,9 +399,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
+				category = cat_strategic_bomber
 				category = tactical_bomber
 			}
 		}
@@ -744,9 +734,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = sub_op_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				technology = convoy_interdiction_ti
 				technology = unrestricted_submarine_warfare
@@ -968,10 +958,29 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-		}
 
+		}
+	
 		ai_will_do = {
-			factor = 100
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+				OR = { 
+					# we dont want chinese minors to go crazy on slots early since they get eaten
+					tag = GXC 
+					tag = YUN
+					tag = SHX
+					tag = XSM
+					tag = BEL
+					tag = LUX
+					tag = HOL
+					tag = DEN
+
+					# we also dont want tiny nations to go crazy with slots right away
+					num_of_controlled_states < 2
+				}				
+			}
 		}
 	}
 
@@ -991,7 +1000,7 @@ focus_tree = {
 
 		
 		ai_will_do = {
-			factor = 100
+			factor = 2
 		}
 
 		bypass = {
@@ -1019,7 +1028,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					HMM_is_sov_claim = no
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
@@ -1066,7 +1074,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 100			
+			factor = 2			
 		}
 
 		bypass = {
@@ -1094,7 +1102,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					HMM_is_sov_claim = no
 					free_building_slots = {
 						building = arms_factory
 						size > 0
@@ -1141,7 +1148,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 100
+			factor = 2
 		}
 
 		bypass = {
@@ -1169,7 +1176,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					HMM_is_sov_claim = no
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
@@ -1216,7 +1222,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 100
+			factor = 2
 		}
 
 		bypass = {
@@ -1244,7 +1250,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					HMM_is_sov_claim = no
 					free_building_slots = {
 						building = arms_factory
 						size > 0
@@ -1285,10 +1290,6 @@ focus_tree = {
 		relative_position_id = construction_effort_2
 		cost = 10
 
-		ai_will_do = {
-			factor = 100
-		}
-
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available_if_capitulated = yes
@@ -1321,7 +1322,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					HMM_is_sov_claim = no
 					free_building_slots = {
 						building = infrastructure
 						size > 0
@@ -1349,7 +1349,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					HMM_is_sov_claim = no
 					free_building_slots = {
 						building = infrastructure
 						size > 1
@@ -1393,7 +1392,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 100
+			factor = 2
 		}
 
 		bypass = {
@@ -1421,7 +1420,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					HMM_is_sov_claim = no
 					free_building_slots = {
 						building = arms_factory
 						size > 0
@@ -1465,9 +1463,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -1497,7 +1492,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					HMM_is_sov_claim = no
 					free_building_slots = {
 						building = infrastructure
 						size > 0
@@ -1525,7 +1519,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					HMM_is_sov_claim = no
 					free_building_slots = {
 						building = infrastructure
 						size > 1
@@ -1569,7 +1562,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 100
+			factor = 2
 		}
 
 		bypass = {
@@ -1597,7 +1590,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					HMM_is_sov_claim = no
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -1773,6 +1765,16 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_government = neutrality
+					}
+					has_idea = neutrality_idea
+				}
+			}
 			modifier = {
 				factor = 20
 				has_idea = SOV_russian_political_influence
@@ -2001,14 +2003,20 @@ focus_tree = {
 				factor = 0
 				tag = AUS
 			}
+			modifier = {
+				factor = 0
+				tag = SAU
+				is_in_faction_with = SOV
+				SOV = { has_government = communism }
+			}
 		}
 
 		completion_reward = {
-			if = {
-				limit = { NOT = { has_idea = neutrality_idea } }
-				add_ideas = neutrality_idea
-			}
-			add_political_power = 150
+			if = { limit = { NOT = { has_idea = neutrality_idea }} add_ideas = neutrality_idea}
+			if = { limit = { NOT = { tag = NOR tag = FIN }} add_political_power = 150 }
+			if = { limit = { tag = NOR } NOR = { add_ideas = extensive_conscription }}
+			if = { limit = { tag = FIN } FIN = { add_ideas = extensive_conscription }}
+			add_ideas = military_youth_focus
 		}
 	}
 
@@ -2036,12 +2044,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}	
+			if = { limit = { has_idea = neutrality_idea } remove_ideas = neutrality_idea }
+			if = { limit = { NOT = { tag = NOR tag = FIN }} add_political_power = 150 }
+			if = { limit = { tag = NOR} NOR = { add_ideas = extensive_conscription }}
+			if = { limit = { tag = FIN} FIN = { add_ideas = extensive_conscription }}
 			set_rule = { can_send_volunteers = yes }
-			add_political_power = 150
+			add_ideas = military_youth_focus
 		}
 	}
 
@@ -2255,10 +2263,10 @@ focus_tree = {
 			set_rule = {
 				can_create_factions = yes
 			}
-			#hidden_effect = {
-			#	set_rule = { can_use_kamikaze_pilots = yes }
-			#}
-			#custom_effect_tooltip = kamikaze_focus_tooltip
+			hidden_effect = {
+				set_rule = { can_use_kamikaze_pilots = yes }
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
 		}
 	}
 	

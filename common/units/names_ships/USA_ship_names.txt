@@ -482,7 +482,10 @@ CSA_DD_CONFEDERATE = {
 
 	for_countries = { USA }
 	can_use = {
-		always = no
+		OR = {
+			tag = CSA
+			has_completed_focus = USA_honor_the_confederacy
+		}
 	}
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
@@ -513,7 +516,10 @@ CSA_CL_CONFEDERATE = {
 
 	for_countries = { USA }
 	can_use = {
-		always = no
+		OR = {
+			tag = CSA
+			has_completed_focus = USA_honor_the_confederacy
+		}
 	}
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
@@ -541,7 +547,10 @@ CSA_CA_CONFEDERATE = {
 
 	for_countries = { USA }
 	can_use = {
-		always = no
+		OR = {
+			tag = CSA
+			has_completed_focus = USA_honor_the_confederacy
+		}
 	}
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
@@ -565,7 +574,10 @@ USA_BB_CONFEDERATE = {
 
 	for_countries = { USA }
 	can_use = {
-		always = no
+		OR = {
+			tag = CSA
+			has_completed_focus = USA_honor_the_confederacy
+		}
 	}
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
@@ -585,7 +597,10 @@ USA_BC_CONFEDERATE = {
 
 	for_countries = { USA }
 	can_use = {
-		always = no
+		OR = {
+			tag = CSA
+			has_completed_focus = USA_honor_the_confederacy
+		}
 	}
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
@@ -605,7 +620,10 @@ USA_CV_CONFEDERATE = {
 
 	for_countries = { USA }
 	can_use = {
-		always = no
+		OR = {
+			tag = CSA
+			has_completed_focus = USA_honor_the_confederacy
+		}
 	}
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
@@ -626,7 +644,10 @@ CSA_SS_CONFEDERATE = {
 
 	for_countries = { USA }
 	can_use = {
-		always = no
+		OR = {
+			tag = CSA
+			has_completed_focus = USA_honor_the_confederacy
+		}
 	}
 	type = ship
 	ship_types = { ship_hull_submarine submarine }

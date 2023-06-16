@@ -1,0 +1,43 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {limit = {has_game_rule = {rule = hosttool_game_rule option = GER}} set_variable = {host = GER.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = ITA}} set_variable = {host = ITA.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = ROM}} set_variable = {host = ROM.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = HUN}} set_variable = {host = HUN.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = BUL}} set_variable = {host = BUL.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = FIN}} set_variable = {host = FIN.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = ENG}} set_variable = {host = ENG.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = USA}} set_variable = {host = USA.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = CAN}} set_variable = {host = CAN.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = SAF}} set_variable = {host = SAF.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = RAJ}} set_variable = {host = RAJ.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = AST}} set_variable = {host = AST.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = NZL}} set_variable = {host = NZL.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = JAP}} set_variable = {host = JAP.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = MAN}} set_variable = {host = MAN.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = SOV}} set_variable = {host = SOV.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = FRA}} set_variable = {host = FRA.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = BRA}} set_variable = {host = BRA.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = MEX}} set_variable = {host = MEX.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = IRE}} set_variable = {host = IRE.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = SPR}} set_variable = {host = SPR.id}}
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = NOR}} set_variable = {host = NOR.id}}	
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = MON}} set_variable = {host = MON.id}}
+
+			else_if = {limit = {has_game_rule = {rule = hosttool_game_rule option = OFF}}
+				if = {limit = {NOT = {NEU = {is_ai = yes }}} NEU = { news_event = { id = hosttool.10 }} set_variable = { host = GER.id}}}
+				else = { set_global_flag = ATARI_no_hosttool NEU = { news_event = { id = hosttool.9 }}}
+
+			if = {limit = {NOT = { has_global_flag = ATARI_no_hosttool }}
+				var:host = {
+					set_variable = { marked_states = 0 }
+					set_variable = { prod_effi = 30 }
+					set_variable = { prod_type = 0 }
+					set_variable = { host_comp = 30 }
+					set_country_flag = host
+				}
+			}
+		}
+	}
+}

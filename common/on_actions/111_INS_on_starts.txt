@@ -1,0 +1,17 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {limit = {INS = {is_ai = yes}}
+				INS = {			
+					delete_units = { division_template = "Infanterie Divisie" disband = yes }
+					delete_units = { division_template = "KNIL Koloniaal Garnizoen" disband = yes }
+					add_ideas = {
+					}
+					country_lock_all_division_template = yes
+					load_oob = 20_w_INS
+					add_manpower = -10000
+				}
+			}
+		}
+	}
+}

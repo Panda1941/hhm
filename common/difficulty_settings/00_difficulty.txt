@@ -1,8 +1,0 @@
-difficulty_settings = {
-	difficulty_setting = {
-		key = "https://discord.gg/3K3bA2q64J"
-		modifier = diff_strong_ai_generic
-		countries = { NEU }
-		multiplier = 0.0
-	}
-}

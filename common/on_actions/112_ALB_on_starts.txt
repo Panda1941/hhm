@@ -1,0 +1,16 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {limit = {ALB = {is_ai = yes}}
+				ALB = {			
+					delete_unit_template_and_units = { division_template = "Këmbësori Pjesëtim" disband = yes }		
+					add_ideas = {}
+					load_oob = 20_w_ALB
+					add_manpower = -10000
+					country_lock_all_division_template = yes
+
+				}
+			}
+		}
+	}
+}

@@ -54,13 +54,13 @@
 	focus = {
 		id = MAN_pacify_the_countryside
 		icon = GFX_goal_generic_major_war
-		x = 8
+		x = 6
 		y = 0
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 50
+			factor = 1
 		}
 
 		available = {
@@ -75,9 +75,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			unlock_decision_category_tooltip = MAN_banditry_category
@@ -97,7 +95,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 40
+			factor = 1
 		}
 
 		available = {
@@ -112,9 +110,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			army_experience = 30
@@ -147,9 +143,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 		
 		completion_reward = {
 			add_ideas = MAN_mukden_military_academy
@@ -248,9 +242,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -290,9 +282,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -320,6 +310,7 @@
 				all_state = {
 					OR = {
 						NOT = { is_core_of = CHI }
+						NOT = { is_core_of = PRC }
 						OR = {
 							is_controlled_by = ROOT
 							CONTROLLER = { is_in_faction_with = ROOT }
@@ -338,9 +329,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -359,7 +348,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 
 		available = {
@@ -374,9 +363,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -400,7 +387,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 120
+			factor = 4
 		}
 
 		available = {
@@ -455,14 +442,14 @@
 		id = MAN_obedience
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = MAN_army_modernization }
-		x = -2
-		y = 4
+		x = -1
+		y = 3
 		relative_position_id = MAN_army_modernization
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 60
+			factor = 6
 		}
 
 		available = {
@@ -477,9 +464,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -514,12 +499,23 @@
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_STABILITY }
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_stability = 0.1
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+					is_ai = no
+				}
+				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = yes
+				}
+				add_ideas = MAN_hoankyoku_idea
+			}
 		}
 	}
 
@@ -534,7 +530,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 60
+			factor = 1
 		}
 
 		available = {
@@ -549,9 +545,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -570,7 +564,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 4
 		}
 
 		available = {
@@ -665,9 +659,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -716,6 +708,38 @@
 					path = { 11771 846 9831 930 4633 4561 4506 7582 10433 }
 				}
 			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -730,7 +754,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 60
+			factor = 2
 		}
 
 		available = {
@@ -745,9 +769,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -778,7 +800,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 4
 		}
 
 		available = {
@@ -793,9 +815,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -837,9 +857,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -894,9 +912,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -930,9 +946,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -951,7 +965,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 60
+			factor = 1
 		}
 
 		available = {
@@ -966,9 +980,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1009,9 +1021,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -1047,9 +1057,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1089,9 +1097,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1116,10 +1122,15 @@
 		available = {
 			is_subject_of = JAP
 			NOT = { has_war_with = JAP }
+			NOT = { has_war_with = MEN }
+			MEN = {
+				exists = yes
+				is_subject_of = JAP
+			}
 		}
 
 		bypass = {
-			always = yes
+
 		}
 
 		cancel_if_invalid = yes
@@ -1127,11 +1138,10 @@
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
+			annex_country = { target = MEN transfer_troops = yes }
 		}
 	}
 
@@ -1161,9 +1171,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1177,7 +1185,8 @@
 	focus = {
 		id = MAN_the_two_emperors
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = MAN_vassalize_mengukuo focus = MAN_national_cooperation_government }
+		prerequisite = { focus = MAN_vassalize_mengukuo }
+		prerequisite = { focus = MAN_national_cooperation_government }
 		x = 0
 		y = 2
 		relative_position_id = MAN_chinese_leadership
@@ -1211,9 +1220,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1221,6 +1228,7 @@
 				value = 0.15
 				localization = MAN_the_two_emperors
 			}
+			MAN_low_legitimacy_level_down_twice = yes
 		}
 	}
 	shared_focus = CHI_invite_foreign_investors

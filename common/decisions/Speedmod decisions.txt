@@ -1,0 +1,299 @@
+#############################
+# remove effects =
+# complete_effects =
+# activation =
+# days_mission_timeout = 360
+# days_remove = 15
+# days_re_enable = 60
+#############################
+
+operations = {
+
+    Assume_Control_New_Zealand = {
+        # icon = generic_operation
+	allowed = {tag = AST}
+        fire_only_once = yes
+        ai_will_do = {factor = 1}
+	available = {NZL = { is_ai = yes }}
+	visible = {tag = AST NZL = { is_ai = yes }}
+	targets = {NZL}
+	complete_effect = {
+		NZL = {
+		delete_unit_template_and_units = { division_template = "District Force" disband = yes }
+		delete_unit_template_and_units = { division_template = "Armoured Division" disband = yes }
+		delete_unit_template_and_units = { division_template = "20 width Infantry" disband = yes }
+		}	
+		AST = {annex_country = {target = NZL transfer_troops = yes} add_research_slot = 1}
+		every_state = {limit = {is_core_of = NZL is_controlled_by = AST} add_core_of = AST remove_core_of = NZL}
+        }
+    }
+
+    Assume_Control_Indonesia = {
+        # icon = generic_operation
+	allowed = {tag = AST}
+        fire_only_once = yes
+        ai_will_do = {factor = 1}
+	available = {INS = { is_ai = yes }  HOL = { has_capitulated = yes }}
+#	available = {INS = { is_ai = yes } OR = { HOL = { has_capitulated = yes } NOT = {country_exists = HOL }}}
+	visible = {tag = AST INS = { is_ai = yes }}
+	targets = {INS}
+	complete_effect = {
+		INS = {
+			delete_units = { division_template = "Infanterie Divisie" disband = yes }
+			delete_units = { division_template = "KNIL Koloniaal Garnizoen" disband = yes }
+		}	
+	every_state = {limit = {is_core_of = INS }
+					remove_core_of = INS
+					add_core_of = AFA
+					transfer_state_to = AFA
+					transfer_state_to = AST					
+					set_garrison_strength = 1.0
+					set_compliance = 60
+				}
+	owner = {ENG = {transfer_state = 334}}
+	334 = { set_compliance = 60 add_core_of = AFA remove_core_of = INS}
+        }
+    }
+
+    Assume_Control_South_Africa = {
+        # icon = generic_operation
+	allowed = {tag = ENG}
+        fire_only_once = yes
+        ai_will_do = {factor = 0}
+	available = {SAF = { is_ai = yes }}
+	visible = {tag = ENG SAF = { is_ai = yes }}
+	targets = {SAF}
+	complete_effect = {ENG = {annex_country = {target = SAF transfer_troops = yes}}
+	every_state = {limit = {is_core_of = SAF is_controlled_by = ENG} set_compliance = 70 }
+        }
+    }
+
+    Assume_Control_British_Malaya = {
+        # icon = generic_operation
+	allowed = {tag = ENG}
+        fire_only_once = yes
+        ai_will_do = {factor = 1}
+	available = {MAL = { is_ai = yes }}
+	visible = {tag = ENG MAL = { is_ai = yes }}
+	targets = {MAL}
+	complete_effect = {
+		MAL = { delete_units = { division_template = "Malaya Infantry Brigade" disband = yes }}
+			every_state = {
+				limit = {is_core_of = MAL }
+					remove_core_of = MAL
+					add_core_of = AFA
+					transfer_state_to = AFA						
+					transfer_state_to = ENG					
+					set_garrison_strength = 1.0
+					set_compliance = 30
+				}
+		}
+   }
+
+    Assume_Control_Iceland = {
+        # icon = generic_operation
+	allowed = {tag = USA}
+        fire_only_once = yes
+        ai_will_do = {factor = 1}	
+	available = { OR = { DEN = { has_capitulated = yes } NOT = {country_exists = DEN }}}
+	visible = {tag = USA DEN = { is_ai = yes }}
+	targets = {DEN}
+	complete_effect = {
+			USA = {transfer_state = 100 }
+			USA = {transfer_state = 101 }
+			ENG = {transfer_state = 337 }
+		every_state = {limit = {is_core_of = DEN is_controlled_by = USA} set_compliance = 70}
+		every_state = {limit = {is_core_of = DEN is_controlled_by = ENG} set_compliance = 70}
+#				every_state = {limit = {is_core_of = DEN is_controlled_by = USA} remove_core_of = DEN}
+#				every_state = {limit = {is_core_of = DEN is_controlled_by = ENG} remove_core_of = DEN}
+        }
+    }
+
+
+    Assume_Control_Philippines = {
+        # icon = generic_operation
+	 allowed = {tag = USA}
+        fire_only_once = yes
+        ai_will_do = {factor = 1}
+	available = {PHI = { is_ai = yes }}
+	visible = {tag = USA PHI = { is_ai = yes }}
+	targets = {PHI}
+	complete_effect = {
+		PHI = {
+		delete_unit_template_and_units = { division_template = "Infantry Division" disband = yes }
+		}	
+	USA = {annex_country = {target = PHI transfer_troops = yes}}
+	every_state = {limit = {is_core_of = PHI is_controlled_by = USA} add_core_of = USA remove_core_of = PHI}
+		}
+    }
+
+
+    Benelux_join_allies = {
+        # icon = generic_operation
+	allowed = {tag = NEU}
+        fire_only_once = yes
+	ai_will_do = {factor = 1}
+        visible = {}
+	available = { HOL = { has_war = yes }}
+	targets = { HOL }
+	complete_effect = { 
+		ENG = {add_to_faction = HOL}
+		ENG = {add_to_war = {
+				targeted_alliance = HOL
+				enemy = GER}
+				}
+		FRA = {add_to_war = {
+				targeted_alliance = HOL
+				enemy = GER}				
+			}
+		}
+    }
+
+    France_join_allies = {
+        # icon = generic_operation
+	allowed = {tag = NEU}
+        fire_only_once = yes
+	ai_will_do = {factor = 1}
+        visible = {}
+	available = { FRA = { has_war = yes }}
+	targets = { FRA }
+	complete_effect = { 
+		ENG = {add_to_faction = FRA}	
+		ENG = {add_to_war = {
+				targeted_alliance = FRA
+				enemy = GER}
+			}		
+		}
+    }
+
+    Assume_Control_Benelux = {
+        # icon = generic_operation
+	allowed = {tag = NEU}
+        fire_only_once = yes
+	ai_will_do = {factor = 1}
+        visible = {}
+	available = { HOL = { has_capitulated = yes }}
+	targets = { HOL }
+	complete_effect = { 
+		FRA = {
+			transfer_state = 538
+			transfer_state = 718 
+			transfer_state = 890 
+			transfer_state = 769 
+			transfer_state = 889 
+			transfer_state = 888
+			transfer_state = 295 
+			transfer_state = 768
+
+			transfer_state = 309
+			transfer_state = 695
+
+			538 = { set_compliance = 30 } 
+			718 = { set_compliance = 30 }
+			890 = { set_compliance = 30 }
+			769 = { set_compliance = 30 }
+			889 = { set_compliance = 30 }
+			888 = { set_compliance = 30 }
+			295 = { set_compliance = 30 }
+			768 = { set_compliance = 30 }
+
+			309 = { set_compliance = 30}
+			695 = { set_compliance = 30}
+			}		
+		}
+    }
+
+    Assume_Control_Bulgaria = {
+        # icon = generic_operation
+	allowed = {tag = ITA}
+        fire_only_once = yes
+        ai_will_do = {factor = 0}
+	available = {BUL = { is_ai = yes }}
+	visible = {tag = ITA BUL = { is_ai = yes }}
+	targets = {BUL}
+	complete_effect = {ITA = {annex_country = {target = BUL transfer_troops = yes}}
+	every_state = {limit = {is_core_of = BUL is_controlled_by = ITA}
+		add_core_of = ITA
+		remove_core_of = BUL
+		    }
+        }
+    }
+
+    Assume_Control_Tannu_Tuva = {
+	#icon = generic_operation
+	icon = generic_formable_nations
+	allowed = {tag = SOV}
+	available = {TAN = { is_ai = yes }}
+	fire_only_once = yes
+        ai_will_do = {factor = 1}
+	visible = {tag = SOV TAN = { is_ai = yes }}
+	targets = {TAN}
+	complete_effect = {
+		TAN = {
+#			delete_units = { division_template = "Strelkovaya Polk" disband = yes }
+			delete_units = { division_template = "20 width Infantry" disband = yes }
+		}
+		SOV = { annex_country = {target = TAN transfer_troops = yes}}
+		every_state = {limit = {is_controlled_by = SOV is_core_of = TAN} remove_core_of = TAN add_core_of = SOV}
+        }
+    }
+
+    Assume_Control_Mongolia = {
+	#icon = generic_operation
+	icon = generic_formable_nations
+	allowed = {tag = SOV}
+	available = {MON = { is_ai = yes }}
+	fire_only_once = yes
+        ai_will_do = {factor = 1}
+	visible = {tag = SOV MON = { is_ai = yes }}
+	targets = {MON}
+	complete_effect = {
+		MON = {
+#			delete_units = { division_template = "Morit Diviziin" disband = yes }
+			delete_units = { division_template = "20 width Infantry" disband = yes }
+		}
+		SOV = {annex_country = {target = MON transfer_troops = yes}}
+		every_state = {limit = {is_controlled_by = SOV is_core_of = MON} remove_core_of = MON add_core_of = SOV}
+        }
+    }
+
+    Lock_division_template_Ethiopia = {
+	#icon = generic_operation
+	icon = generic_formable_nations
+	allowed = {tag = NEU}
+	available = {ETH = { is_ai = yes } ETH = { has_capitulated = yes }}
+	fire_only_once = yes
+        ai_will_do = {factor = 1}
+	visible = {tag = NEU ETH = { is_ai = yes }}
+	targets = {ETH}
+	complete_effect = {
+			ETH = {
+				country_lock_all_division_template = yes
+				delete_unit_template_and_units = { division_template = "Chitet Sefari" disband = no }
+				delete_unit_template_and_units = { division_template = "Kebur Zabagna" disband = no }
+				delete_unit_template_and_units = { division_template = "Infantry Division" disband = no }
+				delete_unit_template_and_units = { division_template = "Mountain Division" disband = no }
+				delete_unit_template_and_units = { division_template = "Mehal Sefari" disband = no }
+				delete_unit_template_and_units = { division_template = "Quafar Sefari" disband = no }
+			}
+		}
+	}
+
+    End_of_Spanish_Civil_War = {
+        # icon = generic_operation
+	allowed = {tag = NEU}
+        fire_only_once = yes
+	ai_will_do = {factor = 1}
+        visible = {}
+	available = {SPR = { has_global_flag = nationalist_victory }}
+	targets = { SPR }
+	complete_effect = { SPR = {
+		290 = { remove_core_of = SPD } 
+		297 = { remove_core_of = SPD } 
+		699 = { remove_core_of = SPD } 
+		783 = { remove_core_of = SPD } 
+			}
+		}		
+	}
+}
+

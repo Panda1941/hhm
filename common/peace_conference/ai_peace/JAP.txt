@@ -1,0 +1,20 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+
+    # don't create warlord or PRC puppets
+    JAP_avoid_puppeting_warlords_prc = {
+        peace_action_type = { puppet force_government }
+        enable = {
+            FROM = {
+                OR = {
+                    tag = PRC
+                    WTT_is_chinese_warlord = yes
+                }
+            }
+            ROOT = { original_tag = JAP }
+        }
+        ai_desire = -200
+    }
+}

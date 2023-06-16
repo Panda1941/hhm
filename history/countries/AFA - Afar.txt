@@ -1,0 +1,30 @@
+﻿capital = 908
+
+OOB = "AFA_1936"
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	elections_allowed = no
+}
+
+set_popularities = {neutrality = 100}
+
+country_lock_all_division_template = yes
+
+add_ideas = {
+	neutrality_idea
+	disarmed_nation
+	free_trade
+	undisturbed_isolation
+}
+
+set_country_flag = monroe_doctrine
+set_political_power = -0.0
+set_research_slots = 0
+set_stability = 0.0
+set_war_support = 0.0
+
+
+
+

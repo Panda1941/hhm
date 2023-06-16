@@ -1,0 +1,19 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		if = {limit = {LUX = {is_ai = yes}} BEL = {annex_country = {target = LUX transfer_troops = yes}}}
+		every_state = { limit = {is_core_of = LUX is_controlled_by = BEL} add_core_of = BEL remove_core_of = LUX }
+		if = {limit = {BEL = {is_ai = yes}} HOL = {annex_country = {target = BEL transfer_troops = yes}}}
+		every_state = { limit = {is_core_of = BEL is_controlled_by = HOL} add_core_of = HOL remove_core_of = BEL }
+
+
+		HOL = {
+			set_capital = {state = 6}
+			set_cosmetic_tag = HOL_benelux
+		if = {limit = {HOL = {is_ai = yes}}
+			country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+}

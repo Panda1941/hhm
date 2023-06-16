@@ -1,0 +1,21 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {limit = {NEP = {is_ai = yes}} RAJ = {annex_country = {target = NEP transfer_troops = no}}}
+			if = {limit = {BHU = {is_ai = yes}} RAJ = {annex_country = {target = BHU transfer_troops = no}}}
+	
+		every_state = { limit = {is_controlled_by = RAJ is_core_of = NEP}		
+			remove_core_of = NEP
+			set_state_category = pastoral
+#			remove_building = {type = arms_factory level = 20}
+#			remove_building = {type = industrial_complex level = 20}		
+
+		every_state = { limit = {is_controlled_by = RAJ is_core_of = BHU}		
+			remove_core_of = BHU
+			set_state_category = pastoral
+#			remove_building = {type = arms_factory level = 20}
+#			remove_building = {type = industrial_complex level = 20}
+			}	
+		}
+	}
+}

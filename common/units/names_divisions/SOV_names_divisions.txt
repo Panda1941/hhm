@@ -1551,8 +1551,13 @@ SOV_CAV_02 = #COSSACK CAVALRY
 	for_countries = { SOV }
 
 	can_use = {
-		tag = SOV
-		has_completed_focus = SOV_restore_cossack_units
+		OR = {
+			AND = {
+				tag = SOV
+				has_completed_focus = SOV_restore_cossack_units
+			}
+			tag = UKR
+		}
 	}
 
 	division_types = { "cavalry" }
@@ -1855,6 +1860,11 @@ SOV_INF_03 =
 	name = "Ruki"
 
 	for_countries = { SOV }
+
+	can_use = { 
+		has_completed_focus = SOV_the_eyes_fear
+		always = yes
+	}
 
 	division_types = { "infantry" }
 

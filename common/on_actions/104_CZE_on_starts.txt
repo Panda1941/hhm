@@ -1,0 +1,28 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {limit = {CZE = {is_ai = yes}}
+			CZE = {			
+					delete_unit_template_and_units = { division_template = "Pěší divize" disband = yes }
+					delete_unit_template_and_units = { division_template = "Horská divize" disband = yes }
+					delete_unit_template_and_units = { division_template = "Jezdecká brigáda" disband = yes }
+					delete_unit_template_and_units = { division_template = "Rychlá divize" disband = yes }
+
+				add_ideas = {
+					}
+
+				diplomatic_relation = {
+   					country = YUG
+   					relation = guarantee
+   					active = no
+				}
+
+				country_lock_all_division_template = yes
+				load_oob = 50_w_CZE
+				add_manpower = -25600
+
+				}
+			}
+		}
+	}
+}

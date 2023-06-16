@@ -1,0 +1,32 @@
+
+hosttool_game_rule = {
+	name = "TOOLBOX_GAME_RULE"
+	group = "Toolbox"
+	icon = "GFX_decision_category_military_operation"
+
+	option = {name = OFF text = "HOSTTOOL_NONE" desc = ""}
+	default = {name = GER text = "Germany" desc = "" allow_achievements = yes}
+	option = {name = ITA text = "Italy" desc = "" allow_achievements = yes}
+	option = {name = ROM text = "Romania" desc = "" allow_achievements = yes}
+	option = {name = HUN text = "Hungary" desc = "" allow_achievements = yes}
+	option = {name = BUL text = "Bulgaria" desc = "" allow_achievements = yes}
+	option = {name = FIN text = "Finland" desc = "" allow_achievements = yes}
+	option = {name = ENG text = "United Kingdom" desc = "" allow_achievements = yes}
+	option = {name = USA text = "United States" desc = "" allow_achievements = yes}
+	option = {name = CAN text = "Canada" desc = "" allow_achievements = yes}
+	option = {name = SAF text = "South Africa" desc = "" allow_achievements = yes}
+	option = {name = RAJ text = "British Raj" desc = "" allow_achievements = yes}
+	option = {name = AST text = "Australia" desc = "" allow_achievements = yes}
+	option = {name = NZL text = "New Zealand" desc = "" allow_achievements = yes}
+	option = {name = JAP text = "Japan" desc = "" allow_achievements = yes}
+	option = {name = MAN text = "Manchukuo" desc = "" allow_achievements = yes}
+	option = {name = SOV text = "Soviet Union" desc = "" allow_achievements = yes}
+	option = {name = FRA text = "France" desc = "" allow_achievements = yes}
+	option = {name = BRA text = "Brazil" desc = "" allow_achievements = yes}
+	option = {name = MEX text = "Mexico" desc = "" allow_achievements = yes}
+	option = {name = IRE text = "Ireland" desc = "" allow_achievements = yes}
+	option = {name = SPR text = "Spain" desc = "" allow_achievements = yes}
+	option = {name = NOR text = "Norway" desc = "" allow_achievements = yes}
+	option = {name = MON text = "Mongolia" desc = "" allow_achievements = yes}
+}
+

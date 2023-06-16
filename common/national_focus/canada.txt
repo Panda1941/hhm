@@ -233,6 +233,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			add_ideas = CAN_dollar_a_year_men
 			add_tech_bonus = {
 				name = CAN_dollar_a_year_men
 				bonus = 1.0
@@ -273,6 +274,37 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			build_railway = { #Vancouver - NW Canada
 				path = {
 					1408 1858 10273 4870 10548
@@ -324,6 +356,22 @@
 			build_railway = {
 				path = { 7433 12149 }
 			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -369,10 +417,10 @@
 				limit = {
 					has_state_flag = CAN_retool_angus_shops_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -468,7 +516,7 @@
 		x = 8
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -668,7 +716,7 @@
 		id = CAN_wartime_prices_and_trade_board
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = CAN_defence_of_canada_regulations }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -976,7 +1024,7 @@
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = CAN_mine_the_shield }
 		prerequisite = { focus = CAN_canada_wheat_board }		
-		x = 2
+		x = 1
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -1047,7 +1095,7 @@
 		id = CAN_commit_to_the_war
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = CAN_canada_wheat_board }
-		x = 4
+		x = 3
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -1334,7 +1382,6 @@
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_alberta_coal_towns }
-		mutually_exclusive = { focus = CAN_send_in_the_zombies }
 		x = 1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1436,7 +1483,6 @@
 		id = CAN_send_in_the_zombies
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = CAN_commit_to_the_war }
-		mutually_exclusive = { focus = CAN_national_steel_car }
 		x = 3
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1643,7 +1689,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 20
+			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = CAN_independent_command
 				cost_reduction = 0.5
@@ -1791,7 +1837,22 @@
 		}
 
 		completion_reward = {
-			remove_ideas = CAN_great_depression_2
+			if = {
+				limit = { 
+					OR = {
+						has_idea = CAN_great_depression_1
+						has_idea = CAN_great_depression_2
+					}
+				}
+				remove_ideas = CAN_great_depression_2
+				custom_effect_tooltip = if_no_depression_get_stuff_TT
+			}
+			else = {
+				add_timed_idea = {
+					idea = CAN_booming_economy
+					days = 1095
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -1877,7 +1938,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 5 
+			army_experience = 50 
 			add_doctrine_cost_reduction = {
 				name = CAN_army_modernization
 				cost_reduction = 0.5
@@ -2123,7 +2184,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 30
 			add_doctrine_cost_reduction = {
 				name = CAN_red_deer_training_camp
 				cost_reduction = 0.5
@@ -2538,7 +2599,7 @@
 	focus = {
 		id = CAN_camp_x
 		icon = GFX_goal_generic_intelligence_exchange 
-		prerequisite = { focus = CAN_montreal_laboratory_collaboration }
+		prerequisite = { focus = CAN_montreal_laboratory_collaboration}
 		x = 1
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
@@ -2646,7 +2707,7 @@
 
 		available = {
 			controls_state = 682
-			controls_state = 466
+			controls_state = 863
 			controls_state = 468
 		}
 		
@@ -2666,7 +2727,7 @@
 					amount = 20
 				}
 			}
-			466 = {
+			863 = {
 				add_resource = {
 					type = aluminium
 					amount = 8
@@ -2720,13 +2781,21 @@
 
 
 	############################
+	#### LEAVE COMMONWEALTH ####
+	############################
+
+	############################
+	#### GO FASCIST SECTION ####
+	############################
+
+	############################
 	####### AIR SECTION ########
 	############################
 
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 24
+		x = 25
 		y = 0
 
 		cost = 10
@@ -2825,10 +2894,7 @@
 				name = CAN_we_have_the_hurricane
 				bonus = 1.0
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				category = light_fighter
 			}
 		}
 	}
@@ -3226,7 +3292,6 @@
 		}
 	}
 
-
 	############################
 	###### NAVY SECTION ########
 	############################
@@ -3234,7 +3299,7 @@
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 28
+		x = 30
 		y = 0
 
 		cost = 10
@@ -3608,10 +3673,10 @@
 				limit = {
 					has_state_flag = CAN_united_shipyards_DY
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}

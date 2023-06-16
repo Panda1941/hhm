@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {limit = {PER = {is_ai = yes}}
+				PER = {
+					set_research_slots = 0
+					country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+}
