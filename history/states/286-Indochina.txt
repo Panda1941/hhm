@@ -6,6 +6,7 @@ state={
 	}
 
 	history={
+		add_core_of = NEU
 		owner = FRA
 		victory_points = {
 			4401 3 
@@ -16,11 +17,8 @@ state={
 			air_base = 2
 			4401 = {
 				naval_base = 4
-
 			}
-
 		}
-
 	}
 
 	provinces={

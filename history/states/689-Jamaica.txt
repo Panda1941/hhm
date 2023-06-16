@@ -3,9 +3,10 @@ state={
 	name="STATE_689"
 	manpower = 1075000
 	
-	state_category = town
+	state_category = wasteland 
 
 	history={
+add_core_of = NEU
 		owner = ENG
 		victory_points = {
 			12304 1 

@@ -2,10 +2,11 @@ state={
 	id=733
 	name="STATE_733"
 	manpower=29500
-	state_category = small_island
+	state_category = wasteland 
 	
 	history={
 		owner = ENG
+		add_core_of = NEU
 		buildings = {
 			infrastructure = 2
 			12251 = {

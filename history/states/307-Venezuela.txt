@@ -1,21 +1,22 @@
 
 state={
 	id=307
-	name="STATE_307" # Miranda
+	name="Venezuelas" # Miranda
 	
 	state_category = city
 	
 	manpower = 1335010
 	resources={
-		oil=41 # was: 58
+		oil=108 # was: 58
+		steel=3 # was: 4
+		chromium=90 # was: 160
+		tungsten=35 # was: 49
 	}
 
 	history={
-		owner = COL
+		owner = VEN
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 5
+			infrastructure = 3
 			air_base = 2
 			8113 = {
 				naval_base = 3
@@ -24,7 +25,8 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = COL
+		add_core_of = VEN
+		add_core_of = NEU
 		victory_points = {
 			8113 5 
 		}
@@ -33,6 +35,10 @@ state={
 
 	provinces={
 		4942 7968 8024 8080 8113 10767 10823 10912 5056 4892 5000
+		#488
+		1981 5317 7915 8050 10736 10849 10879
+		#489
+		1944 1997 2052 4526 5088 10855 12772
 	}
 
 	local_supplies=0.0 

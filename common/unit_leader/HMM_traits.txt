@@ -1,0 +1,35 @@
+
+leader_traits = {
+	hmm_exploiter = {
+		type = corps_commander
+		trait_type = status_trait
+
+		gain_xp = {
+			always = no # not gainable
+		}
+		modifier = {
+			cannot_use_abilities = 1
+			max_army_group_size = -23
+			skill_bonus_factor = -0.69
+		}
+		attack_skill = -2
+		defense_skill = -2
+		logistics_skill = -2
+		planning_skill = -2
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	HMM_BUL_entrenchment = { 
+        type = corps_commander
+		trait_type = status_trait
+        gain_xp = {
+			always = no # not gainable
+		}
+		modifier = {
+            max_dig_in = 5
+		}
+	}
+}

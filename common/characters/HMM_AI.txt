@@ -1,0 +1,1110 @@
+characters={
+	##################################### BEL #####################################
+
+	BEL_hubert_pierlot={
+		name=BEL_hubert_pierlot
+		portraits={
+			civilian={
+				large=GFX_portrait_BEL_hubert_pierlot
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BEL_leon_degrelle={
+		name=BEL_leon_degrelle
+		portraits={
+			army = {
+				large=GFX_portrait_BEL_leon_degrelle
+				small=GFX_portrait_BEL_leon_degrelle_small
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = BEL_leon_degrelle
+			allowed = {
+					original_tag = BEL
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	BEL_mcl_keyaerts={
+		name=BEL_mcl_keyaerts
+		portraits={
+			army={
+				large=GFX_portrait_BEL_mcl_keyaerts
+				small=GFX_portrait_BEL_mcl_keyaerts_small
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer hill_fighter }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	BEL_georges_timmermans={
+		name=BEL_georges_timmermans
+		portraits={
+			army={
+				large=GFX_portrait_BEL_georges_timmermans
+				small=GFX_portrait_BEL_georges_timmermans_small
+			}
+		}
+		navy_leader={
+			traits={ bold }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=-1
+		}
+	}
+
+	##################################### AUS #####################################
+	AUS_kurt_schuschnigg = {
+		name=AUS_kurt_schuschnigg
+		portraits={
+			civilian={
+				large=GFX_portrait_AUS_kurt_schuschnigg
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	AUS_karl_eglseer={
+		name=AUS_karl_eglseer
+		portraits={
+			army={
+				large=GFX_portrait_AUS_karl_eglseer
+				small=GFX_portrait_AUS_karl_eglseer_small
+			}
+		}
+		corps_commander={
+			traits={ trickster trait_mountaineer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	##################################### CHI #####################################
+	
+	CHI_chiang_kaishek={
+		name=CHI_chiang_kaishek
+		portraits={
+			civilian={
+				large=GFX_portrait_CHI_chiang_kaishek
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHI_tu_yuming={
+		name=CHI_tu_yuming
+		portraits={
+			army={
+				large="GFX_portrait_chi_du_yuming"
+				small="GFX_idea_CHI_du_yuming"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious harsh_leader armor_officer defensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	CHI_hsueh_yueh={
+		name=CHI_hsueh_yueh
+		portraits={
+			army={
+				large="GFX_portrait_chi_xue_yue"
+				small="GFX_idea_CHI_xue_yue"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist trait_reckless war_hero offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	CHI_tai_anlan={
+		name=CHI_tai_anlan
+		portraits={
+			army={
+				large="GFX_portrait_chi_tai_an_lan"
+				small="GFX_idea_CHI_tai_an_lan"
+			}
+		}
+		field_marshal={
+			traits={ career_officer trait_reckless offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	CHI_wang_yaowu={
+		name=CHI_wang_yaowu
+		portraits={
+			army={
+				large="GFX_portrait_chi_wang_yaowu"
+				small="GFX_idea_CHI_wang_yaowu"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious infantry_officer defensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	CHI_sun_li_jen={
+		name=CHI_sun_li_jen
+		portraits={
+			army={
+				large="GFX_portrait_chi_sun_li_jen"
+				small="GFX_idea_CHI_sun_li_jen"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	CHI_hu_zongnan={
+		name=CHI_hu_zongnan
+		portraits={
+			army={
+				large="GFX_portrait_chi_hu_zongnan"
+				small="GFX_idea_CHI_hu_zongnan"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	CHI_gu_zhutong={
+		name=CHI_gu_zhutong
+		portraits={
+			army={
+				large="GFX_portrait_chi_gu_zhutong"
+				small="GFX_idea_CHI_gu_zhutong"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	CHI_wei_lihuang={
+		name=CHI_wei_lihuang
+		portraits={
+			army={
+				large="GFX_portrait_chi_wei_lihuang"
+				small="GFX_idea_CHI_wei_lihuang"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	CHI_fu_zuoyi={
+		name=CHI_fu_zuoyi
+		portraits={
+			army={
+				large="GFX_portrait_chi_fu_zuoyi"
+				small="GFX_idea_CHI_fu_zuoyi"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	CHI_zhang_xueliang={
+		name=CHI_zhang_xueliang
+		portraits={
+			army={
+				large="GFX_portrait_chi_zhang_xueliang"
+				small="GFX_idea_CHI_zhang_xueliang"
+			}
+		}
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	### THEORISTS ###
+
+	#Claire Lee Chenault in shared file
+
+	CHI_bo_yibo={
+		name=CHI_bo_yibo
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = theorist
+			idea_token = CHI_bo_yibo
+			ledger = army
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	CHI_fang_zeyi={
+		name=CHI_fang_zeyi
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			cost = 100		
+			slot = theorist
+			idea_token = CHI_fang_zeyi
+			ledger = air
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+
+	CHI_huang_shen={
+		name=CHI_huang_shen
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = CHI_huang_shen
+			ledger = navy
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = {
+				naval_theorist
+			}
+		}
+	}
+	
+	CHI_li_zongren={
+		name = CHI_li_zongren
+		portraits={
+			army={
+				large="GFX_portrait_li_zongren"
+				small="GFX_idea_CHI_li_zongren"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CHI_li_zongren
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_he_yingqin={
+		name=CHI_he_yingqin
+		portraits={
+			army={
+				small="GFX_idea_CHI_he_yingqin"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CHI_he_yingqin
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	CHI_wang_shuming={
+		name=CHI_wang_shuming
+		portraits={
+			army={
+				small="GFX_idea_CHI_wang_shuming"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = CHI_wang_shuming
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+
+	### MILITARY HIGH COMMAND ###
+
+	CHI_gao_zhihang={
+		name=CHI_gao_zhihang
+		portraits={
+			army={
+				small="GFX_idea_CHI_gao_zihang"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = CHI_gao_zhihang
+			ledger = air
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				air_air_superiority_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 0.200
+			}
+		}
+	}
+
+	CHI_xiao_yisu={
+		name=CHI_xiao_yisu
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = CHI_xiao_yisu
+			ledger = army
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+
+	CHI_chen_cheng={
+		name=CHI_chen_cheng
+		portraits={
+			army={
+				small="GFX_idea_CHI_chen_cheng"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CHI_chen_cheng
+			ledger = army
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	CHI_yu_hanmou={
+		name=CHI_yu_hanmou
+		portraits={
+			army={
+				small="GFX_idea_CHI_yu_hanmou"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CHI_yu_hanmou
+			ledger = army
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+
+	CHI_soong_mei_ling={
+		name=CHI_soong_mei_ling
+		portraits={
+			civilian={
+				small="GFX_idea_CHI_soong_mei_ling"
+			}
+		}
+		gender = female
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_soong_mei_ling
+			available  = {
+				has_country_leader  = {
+					ruling_only  = yes 
+					character  = CHI_chiang_kaishek
+				}
+			}
+			allowed  = {
+				original_tag  = CHI
+				has_dlc = "Waking the Tiger"
+			}
+			traits  = {
+				first_lady 
+			}
+		}
+	}
+
+	##################################### CZE #####################################
+
+	CZE_edvard_benesh={
+		name="Edvard Beneš"
+		portraits={
+			civilian={
+				large=GFX_portrait_Edvard_Benes
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### DEN #####################################
+
+	DEN_thorvald_stauning={
+		name="Thorvald Stauning"
+		portraits={
+			civilian={
+				large=GFX_portrait_Thorvald_Stauning
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### EST #####################################
+
+	EST_konstantin_pats = {
+		name=EST_konstantin_pats
+		portraits={
+			civilian={
+				large="GFX_Portrait_estonia_konstantin_pats"
+			}
+			army = {
+				small = GFX_portrait_EST_konstantin_pats_small #Not ever used
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### ETH #####################################
+
+	ETH_haile_selassie={
+		name=ETH_haile_selassie
+		portraits={
+			civilian={
+				large=GFX_portrait_ETH_haile_selassie
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### GRE #####################################
+
+	GRE_konstantinos_demertzis={
+		name=GRE_konstantinos_demertzis
+		portraits={
+			civilian={
+				large="GFX_portrait_gre_konstantinos_demertzis"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### HOL #####################################
+
+	HOL_hendrikus_colijn={
+		name=HOL_hendrikus_colijn
+		portraits={
+			civilian={
+				large="GFX_portrait_holland_hendrikus_colijn"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### INS #####################################
+
+	INS_a_t_van_starkenborgh_stachouwer={
+		name=INS_a_t_van_starkenborgh_stachouwer
+		portraits={
+			civilian={
+				large="GFX_portrait_indonesia_at_van_starkenborgh"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	INS_hein_ter_poorten={
+		name =HOL_hein_ter_poorten
+		portraits={
+			army={
+				large="GFX_portrait_hol_hein_ter_poorten"
+				small="GFX_idea_HOL_hein_ter_poorten"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard inspirational_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	##################################### LAT #####################################
+
+	LAT_janis_balodis={
+		name=LAT_janis_balodis
+		portraits={
+			army={
+				large="GFX_portrait_LAT_janis_balodis"
+				small="GFX_idea_LAT_janis_balodis"
+			}
+			civilian={
+				large="GFX_portrait_LAT_janis_balodis"
+			}
+		}
+		field_marshal={
+			traits={ old_guard }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### LIT #####################################
+
+	LIT_antanas_smetona={
+		name=LIT_antanas_smetona
+		portraits={
+			civilian={
+				large="GFX_Portrait_lithuania_antanas_smetona"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### LUX #####################################
+
+	LUX_joseph_bech={
+		name="Joseph Bech"
+		portraits={
+			civilian={
+				large="GFX_portrait_luxembourg_joseph_bech"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### NOR #####################################
+	NOR_johan_nygaardsvold={
+		name="Tor Eckhoff"
+		portraits={
+			civilian={
+				large="gfx/leaders/NOR/Portrait_Norway_Johan_Nygaardsvold.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	NOR_carl_gustav_fleischer={
+		name="Carl Gustav Fleischer"
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster winter_specialist }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	##################################### POL #####################################
+	POL_ignacy_moscicki = {
+		name=POL_ignacy_moscicki
+		portraits = {
+			army={
+				small=GFX_portrait_POL_ignacy_moscicki_small
+			}
+			civilian = {
+				large="GFX_portrait_POL_ignacy_moscicki"
+			}
+		}
+		country_leader = {
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### VEN #####################################
+	VEN_eleazar_lópez_contreras={
+		name="Eleazar López Contreras"
+		portraits={
+			civilian={
+				large="gfx/leaders/VEN/Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
+			}
+		}
+		country_leader = {
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	##################################### YUG #####################################
+	YUG_prince_paul={
+		name=YUG_prince_paul
+		portraits={
+			civilian={
+				large=GFX_portrait_YUG_prince_paul
+			}
+		}
+		country_leader = {
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

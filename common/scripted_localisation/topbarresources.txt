@@ -10,9 +10,6 @@ defined_text = { # global
 		localization_key = "[?resource@steel|0Y]"
 	}
 	text = {
-		trigger = {
-			always=yes
-		}
 		localization_key = "[?resource@steel|0+]"
 	}
 
@@ -28,9 +25,6 @@ defined_text = { # global
 		localization_key = "[?resource@rubber|0Y]"
 	}
 	text = {
-		trigger = {
-			always=yes
-		}
 		localization_key = "[?resource@rubber|0+]"
 	}
 
@@ -46,9 +40,6 @@ defined_text = { # global
 		localization_key = "[?resource@aluminium|0Y]"
 	}
 	text = {
-		trigger = {
-			always=yes
-		}
 		localization_key = "[?resource@aluminium|0+]"
 	}
 
@@ -64,9 +55,6 @@ defined_text = { # global
 		localization_key = "[?resource@tungsten|0Y]"
 	}
 	text = {
-		trigger = {
-			always=yes
-		}
 		localization_key = "[?resource@tungsten|0+]"
 	}
 
@@ -82,9 +70,6 @@ defined_text = { # global
 		localization_key = "[?resource@chromium|0Y]"
 	}
 	text = {
-		trigger = {
-			always=yes
-		}
 		localization_key = "[?resource@chromium|0+]"
 	}
 

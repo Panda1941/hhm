@@ -1,0 +1,351 @@
+#	███████╗████████╗██╗  ██╗
+#	██╔════╝╚══██╔══╝██║  ██║
+#	█████╗     ██║   ███████║
+#	██╔══╝     ██║   ██╔══██║
+#	███████╗   ██║   ██║  ██║
+#	╚══════╝   ╚═╝   ╚═╝  ╚═╝
+
+ETH_defeat_italy_category = {
+
+	ETH_defeat_italy = {
+
+		allowed = { tag = ETH }
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		available = {
+			has_full_control_of_state = 550
+			has_full_control_of_state = 559
+			has_war_with = ITA
+			ITA = { is_in_faction = no }
+		}
+		is_good = yes
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					ITA = {
+						has_completed_focus = ITA_victoryinETH
+					}
+					NOT = { has_war_with = ITA }
+				}
+			}
+		}
+
+		visible = {
+			has_war_with = ITA
+		}
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				550 = { add_compliance = 50 }
+				559 = { add_compliance = 50 }
+			}
+			ITA = { country_event = ETH_events.1 }
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				transfer_state = 550
+				transfer_state = 559
+				white_peace = ITA
+			}
+		}
+
+		timeout_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 20000 #Ethiopia should be very into this idea
+		}
+	}
+}
+
+#	 ██████╗██╗  ██╗██╗
+#	██╔════╝██║  ██║██║
+#	██║     ███████║██║
+#	██║     ██╔══██║██║
+#	╚██████╗██║  ██║██║
+#	 ╚═════╝╚═╝  ╚═╝╚═╝
+
+
+CHI_army_reform = {
+	CHI_army_reform = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_army_experience > 99
+			has_completed_focus = CHI_army_reform
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 500
+		}
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_idea = CHI_army_corruption_1
+				has_idea = CHI_army_corruption_2
+				has_idea = CHI_army_corruption_3
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { has_idea = CHI_army_corruption_1 }
+				swap_ideas = {
+					remove_idea = CHI_army_corruption_1
+					add_idea = CHI_army_corruption_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = CHI_army_corruption_2 }
+				swap_ideas = {
+					remove_idea = CHI_army_corruption_2
+					add_idea = CHI_army_corruption_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = CHI_army_corruption_3 }
+				remove_ideas = CHI_army_corruption_3
+			}
+		}
+		complete_effect = {
+			army_experience = -100						
+		}		
+	}
+	CHI_lessons_of_war = {
+		icon = generic_army_support
+		available = {
+			has_army_experience > 199
+			has_idea = CHI_incompetent_officers
+			if = {
+				limit = { has_idea = CHI_army_corruption_1 }
+				NOT = { has_idea = CHI_army_corruption_1 }
+			}
+
+			if = {
+				limit = { has_idea = CHI_army_corruption_2 }
+				NOT = { has_idea = CHI_army_corruption_2 }
+			}
+
+			if = {
+				limit = { has_idea = CHI_army_corruption_3 }
+				NOT = { has_idea = CHI_army_corruption_3 }
+			}
+
+			if = {
+				limit = {
+					NOT = { has_idea = CHI_army_corruption_1 }
+					NOT = { has_idea = CHI_army_corruption_2 }
+					NOT = { has_idea = CHI_army_corruption_3 }
+				}
+				NOT = { has_idea = CHI_army_corruption_3 }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+
+		visible = {
+			has_idea = CHI_incompetent_officers
+			has_completed_focus = CHI_army_reform
+		}
+
+		complete_effect = {
+			army_experience = -200
+			remove_ideas = CHI_incompetent_officers
+			set_country_flag = CHI_lessons_of_war_completed
+		}		
+	}
+	CHI_60_divisions_plan = {
+
+		icon = generic_operation
+
+		available = { }
+
+		cost = 90
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CHI_60_divisions_plan
+		}
+
+		days_remove = 180
+
+		modifier = {
+			training_time_army_factor = -0.25
+		}
+
+		complete_effect = {
+			add_war_support = 0.1
+		}		
+	}
+}
+
+foreign_support = {
+	CHI_soviet_volunteer_group = {
+		icon = generic_air
+		available = {
+			has_equipment = { fighter_equipment > 99 }
+			has_equipment = { tac_bomber_equipment > 49 }
+		}
+		visible = {
+			has_country_flag = CHI_soviet_volunteer_group
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = -1
+		fire_only_once = yes
+		complete_effect = {
+			random_country = {
+				limit = {
+					has_completed_focus = CHI_the_soviet_volunteer_group
+				}
+				custom_effect_tooltip = soviet_volunteers_tt
+				hidden_effect = {
+					SOV = {
+						send_equipment = {
+							target = PREV
+							type = fighter_equipment
+							amount = 100
+						}
+					}
+					SOV = {
+						send_equipment = {
+							target = PREV
+							type = tac_bomber_equipment
+							amount = 50
+						}
+					}
+				}
+			}
+			add_war_support = 0.05	
+		}
+		modifier = {
+			air_volunteer_cap = 100
+		}
+	}
+}
+
+#	 █████╗ ██╗   ██╗███████╗
+#	██╔══██╗██║   ██║██╔════╝
+#	███████║██║   ██║███████╗
+#	██╔══██║██║   ██║╚════██║
+#	██║  ██║╚██████╔╝███████║
+#	╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+
+
+economy_decisions = {
+	AUS_development = {
+		#TOTAL STATS
+		#4 = {
+		#	infra + 1 # 1
+		#	civ + 2 # 2 3
+		#	slot + 2 # 2 3
+		#}
+
+		#152 = {
+		#	infra + 1 # 1 2
+		#	civ + 1 # 1
+		#	mils + 3 # 6 7 7
+		#	slot + 1 # 6
+		#}
+		#153 = {
+		#	infra + 2 # 4 4
+		#	civ + 2 # 5 5
+		#	mil + 1 # 6
+		#}
+		allowed = {
+			original_tag = AUS 
+		}
+
+		activation = {
+			NOT = { GER = { has_completed_focus = GER_anschluss } }
+			check_variable = { HMM_AUS_development < 8 } # from 0 to 7
+		}
+
+		available = { always = no }
+
+		icon = GFX_decision_ger_military_buildup
+
+
+		days_mission_timeout = 69 # so it always finishes b4 focus
+		
+		is_good = yes
+		fire_only_once = no
+
+		timeout_effect = {
+			add_to_variable = { HMM_AUS_development = 1 }
+			custom_effect_tooltip = "Amog [?HMM_AUS_development] // the shown effect lags behind mr tagswitcher"
+			if = {
+				limit = { check_variable = { HMM_AUS_development = 1 } }
+				4 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+				152 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			}
+			if = {
+				limit = { check_variable = { HMM_AUS_development = 2 } }
+				4 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = { check_variable = { HMM_AUS_development = 3 } }
+				4 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+				152 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = { check_variable = { HMM_AUS_development = 4 } }
+				153 = {
+					add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+				}
+			}
+			if = {
+				limit = { check_variable = { HMM_AUS_development = 5 } }
+				153 = {
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = { check_variable = { HMM_AUS_development = 6 } }
+				153 = {
+					add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+				152 = {
+					add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = { check_variable = { HMM_AUS_development = 7 } }
+				152 = {
+					add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+		}
+	}
+}

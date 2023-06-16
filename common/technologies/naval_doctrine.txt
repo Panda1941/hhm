@@ -9,13 +9,13 @@ technologies = {
 		
 		# EFFECT #############
 		battleship = {
-			max_organisation = 5			
+			max_organisation = 10			
 		}
 		battle_cruiser = {
-			max_organisation = 5			
+			max_organisation = 10			
 		}
 		heavy_cruiser = {
-			max_organisation = 5			
+			max_organisation = 10			
 		}
 		light_cruiser = {
 			surface_detection = 0.10
@@ -45,9 +45,9 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 0
+		xp_unlock_cost = 100
 		doctrine = yes	
-		research_cost = 0
+		research_cost = 3
 		
 		categories = {
 			naval_doctrine
@@ -74,13 +74,13 @@ technologies = {
 	battlefleet_concentration = {
 		# EFFECT #############
 		battleship = {
-			max_organisation = 5
+			max_organisation = 10
 		}
 		battle_cruiser = {
-			max_organisation = 5
+			max_organisation = 10
 		}
 		heavy_cruiser = {
-			max_organisation = 5
+			max_organisation = 10
 		}
 		strike_force_movement_org_loss = -0.2
 		########
@@ -91,7 +91,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -145,7 +145,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -197,11 +197,11 @@ technologies = {
 		
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 20
 			sub_detection = 0.1
 		}
 		light_cruiser = {
-			max_organisation = 5
+			max_organisation = 10
 			sub_detection = 0.2
 		}
 
@@ -214,7 +214,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -274,7 +274,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -323,7 +323,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -378,7 +378,7 @@ technologies = {
 		mines_planting_by_fleets_factor = 0.1
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -424,7 +424,7 @@ technologies = {
 		
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 10
 			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.05
@@ -436,7 +436,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -481,7 +481,7 @@ technologies = {
 		
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 10
 			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.1
@@ -493,7 +493,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -557,7 +557,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -610,7 +610,7 @@ technologies = {
 		
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 20
 			sub_detection = 0.1
 		}
 		light_cruiser = {
@@ -629,7 +629,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -694,7 +694,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -737,7 +737,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -788,7 +788,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -833,7 +833,7 @@ technologies = {
 		#######
 	
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -911,9 +911,9 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 0
+		xp_unlock_cost = 100
 		doctrine = yes	
-		research_cost = 0
+		research_cost = 3
 		
 		categories = {
 			naval_doctrine
@@ -968,7 +968,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1024,7 +1024,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1090,7 +1090,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1154,7 +1154,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1229,7 +1229,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1283,12 +1283,14 @@ technologies = {
 		# EFFECT ##############		
 		light_cruiser = {
 			max_organisation = 10
+			surface_visibility = -0.10
 			convoy_raiding_coordination = 0.15
 			surface_detection = 0.10
 		}
 
 		heavy_cruiser = {
 			max_organisation = 10
+			surface_visibility = -0.10
 			convoy_raiding_coordination = 0.15
 			surface_detection = 0.10
 		}
@@ -1301,7 +1303,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1333,12 +1335,14 @@ technologies = {
 		# EFFECT ##############		
 		battle_cruiser = {
 			max_organisation = 20
+			surface_visibility = -0.20
 			convoy_raiding_coordination = 0.15
 			surface_detection = 0.15
 		}
 
 		battleship = {
 			max_organisation = 20
+			surface_visibility = -0.25
 			convoy_raiding_coordination = 0.5
 			surface_detection = 0.25
 		}
@@ -1352,7 +1356,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1408,7 +1412,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1457,7 +1461,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1501,7 +1505,7 @@ technologies = {
 		########
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1553,7 +1557,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1591,7 +1595,7 @@ technologies = {
 		#same as convoy_sailing
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 10
 			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.05
@@ -1603,7 +1607,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1646,7 +1650,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1690,7 +1694,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1747,9 +1751,9 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 0
+		xp_unlock_cost = 100
 		doctrine = yes	
-		research_cost = 0
+		research_cost = 3
 		
 		categories = {
 			naval_doctrine
@@ -1806,7 +1810,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1875,7 +1879,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1945,7 +1949,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2022,7 +2026,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2096,7 +2100,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2159,7 +2163,7 @@ technologies = {
 		###########
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2234,7 +2238,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2286,7 +2290,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2348,7 +2352,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2403,7 +2407,7 @@ technologies = {
 		#######
 
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2452,7 +2456,7 @@ technologies = {
 		#same as convoy_escorts
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 10
 			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.1
@@ -2464,7 +2468,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2507,11 +2511,11 @@ technologies = {
 		
 		# EFFECT ##############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 10
 			sub_detection = 0.05
 		}
 		light_cruiser = {
-			max_organisation = 5
+			max_organisation = 10
 			sub_detection = 0.1
 		}
 		
@@ -2524,7 +2528,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2575,7 +2579,7 @@ technologies = {
 		#same as convoy_sailing
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 10
 			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.05
@@ -2587,7 +2591,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		
@@ -2638,11 +2642,11 @@ technologies = {
 		#same as integrated_convoy_defence
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 20
 			sub_detection = 0.10
 		}
 		light_cruiser = {
-			max_organisation = 5
+			max_organisation = 10
 			sub_detection = 0.15
 		}
 		carrier = {
@@ -2652,7 +2656,7 @@ technologies = {
 		#####
 	
 		xp_research_type = navy
-		xp_unlock_cost = 30
+		xp_unlock_cost = 100
 		doctrine = yes	
 		research_cost = 3
 		

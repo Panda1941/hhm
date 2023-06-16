@@ -27,7 +27,7 @@ guiTypes = {
 		show_position = { x=-6 y =-549 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0
+		animation_time = 300
 		orientation = lower_left
 		size = { width=436 height=496 }
 		
@@ -418,10 +418,19 @@ guiTypes = {
 
 		buttonType = {
 			name = "scorched_earth_state_button"
-			position = { x = -31 y = 135 }
+			position = { x = -15 y = 135 }
 			quadTextureSprite ="GFX_scorched_earth"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
+		}
+		iconType = {
+			name = "remove_infra_img"
+			position = { x = -10 y = 150 }
+			spriteType = "GFX_buildings_strip"
+			frame = 3
+			Orientation = "UPPER_RIGHT"
+			scale = 0.4
+			alwaystransparent = yes
 		}
 	}
 	
@@ -516,7 +525,8 @@ guiTypes = {
 			name = "remove"
 			position = { x = 40 y = 29 }
 			spriteType = "GFX_cancel_conversion_button"
-			scale = 0 
+			scale = 0.01
+			alwaystransparent = yes
 		}
 		
 		iconType = {

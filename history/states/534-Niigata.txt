@@ -15,9 +15,12 @@ state={
 			industrial_complex = 2
 			fuel_silo = 1
 		}
-		
 		victory_points = {
 			1117 10
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 
 

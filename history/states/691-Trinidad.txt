@@ -6,10 +6,11 @@ state={
 		oil=12 # was: 16
 	}
 	
-	state_category = rural
+	state_category = wasteland 
 
 
 	history={
+add_core_of = NEU
 		owner = ENG
 		victory_points = {
 			3284 1

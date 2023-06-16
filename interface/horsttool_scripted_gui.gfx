@@ -1,0 +1,53 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_button_transparent2"
+		texturefile = "gfx/interface/button_transparent2.dds"
+	}
+	spriteType = {
+		name = "GFX_fuel_progress_bar"
+		texturefile = "gfx/interface/navalrepairview/repair_progress_bar.dds"
+	}
+	spriteType = {
+		name = "GFX_fuel_progress_bar_bg"
+		texturefile = "gfx/interface/navalrepairview/repair_progress_bar_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_button_transparent"
+		texturefile = "gfx/interface/button_transparent.dds"
+	}
+    spriteType = {
+        name = "GFX_host_help2"
+        texturefile = "gfx/host_gui/hosttool/host_help.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+	spriteType = {
+        name = "GFX_host_civ_plus"
+        texturefile = "gfx/host_gui/hosttool/host_civ_plus.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }	
+		spriteType = {
+        name = "GFX_host_civ_pluss"
+        texturefile = "gfx/host_gui/hosttool/host_civ_pluss.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }	
+	spriteType = {
+        name = "GFX_host_addcheat"
+        texturefile = "gfx/host_gui/hosttool/host_addcheat.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+    spriteType = {
+        name = "GFX_host_help"
+        texturefile = "gfx/host_gui/hosttool/host_help.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+	spriteType = {
+        name = "GFX_host_addpp"
+        texturefile = "gfx/host_gui/hosttool/host_addpp.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+	spriteType = {
+		name = "GFX_host_pingtool"
+		texturefile = "gfx/host_gui/hosttool/host_pingtool.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+}

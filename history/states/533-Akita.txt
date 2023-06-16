@@ -20,16 +20,18 @@ state={
 			air_base = 6
 			9859 = {
 				naval_base = 6
-
 			}
 		}
-		
 		victory_points = {
 			6994 5
 		}
 		
 		victory_points = {
 			7169 15
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 
 	}

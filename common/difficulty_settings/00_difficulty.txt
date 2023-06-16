@@ -1,8 +1,8 @@
 difficulty_settings = {
 	difficulty_setting = {
-		key = "this is disabled because cheat engine exists"
+		key = "https://discord.gg/3K3bA2q64J"
 		modifier = diff_strong_ai_generic
-		countries = { AFG }
+		countries = { NEU }
 		multiplier = 0.0
 	}
 }

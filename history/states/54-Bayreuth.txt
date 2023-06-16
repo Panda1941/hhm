@@ -6,6 +6,10 @@ state={
 
 	state_category = city
 
+	resources = {
+		steel=100 #SWE
+	}
+
 	history={
 		owner = GER
 		buildings = {

@@ -6,7 +6,7 @@ guiTypes = {
 		size = { width = 320 height = 455}
 		Orientation = center
 		Origo = center		
-		fade_time = 1
+		fade_time = 500
 		fade_type = linear
 		show_sound = click_expand
 		
@@ -56,28 +56,26 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "menu_playthrough_stats_button_star"
-			position = { x = -37 y = 155 }
-			spriteType = "GFX_icon_best_in_career"
-			centerposition = yes
-			orientation = upper_right
-			alwaysTransparent = yes
+			name = "menu_playthrough_stats_button_icon"
+			position = { x = 16 y = 138}
+			quadTextureSprite ="GFX_main_lobby_button_highlight"
+			alwaystransparent = yes
 		}
 		
 		buttonType = {
-			name = "menu_wiki_button"
-			position = { x = 16 y = 178}
+			name = "menu_rules_button"
+			position = { x = 16 y = 138}
 			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "MENU_BAR_GAME_WIKI"
+			buttonText = "HMM Ruleset"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
-			web_link = ""
+			web_link = "https://docs.google.com/document/d/1qZ2jAclHfgz04WXwT1LC1Q9S36_U5GNAcYuNioIUP_w"
 		}
 		
 		buttonType = {
 			name = "menu_resign_button"
-			position = { x = 16 y = 218}
+			position = { x = 16 y = 178}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_GAME_RESIGN"
 			buttonFont = "hoi_24header"
@@ -87,7 +85,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "menu_quit_button"
-			position = {  x = 16 y = 258 }
+			position = {  x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_QUIT"
 			buttonFont = "hoi_24header"
@@ -106,67 +104,63 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 
-		## facebook etc.
+		positionType = {
+			name = "playthrough_stats_offset"
+			position = { x = 0 y = 40 }
+		}
 
+		## facebook etc.
 		ButtonType = {
 			name = "homepage_button"
-			position = { x=19 y=389 }
+			position = { x = 59 y = 389 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "MENU_HOMEPAGE"
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x=59 y=389 }
+			position = { x = 99 y = 389 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"
-			web_link = "http://forum.paradoxplaza.com/forum/forumdisplay.php?844-Hearts-of-Iron-IV"
+			web_link = "https://forum.paradoxplaza.com/forum/index.php?forums/hearts-of-iron-iv.844/"
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x=99 y=389 }
+			position = { x = 139 y = 389 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FACEBOOK"
 			web_link = "https://www.facebook.com/Heartsofiron"
-		}
+		}			
+		
 		ButtonType = {
 			name = "twitter_button"
-			position = { x=139 y=389 }
+			position = { x = 179 y = 389 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
 			web_link = "https://twitter.com/hoi_game"
 		}
-		ButtonType = {
-			name = "instagram_button"
-			position = { x=179 y=389 }
-			quadTextureSprite ="instagram"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_INSTAGRAM"
-			web_link = "https://www.instagram.com/hearts_of_iron_pdx"
-		}
-		ButtonType = {
-			name = "discord_button"
-			position = { x=219 y=389 }
-			quadTextureSprite ="discord"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_DISCORD"
-			web_link = "https://discord.gg/hoi4"
-		}
+		
 		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x=259 y=389 }
+			position = { x = 219 y = 389 }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
-		}	
-
+		}
+		buttonType = {
+			name = "menu_wiki_button"
+			position = { x = 219 y = 389 }
+			quadTextureSprite ="privacy"	
+			clicksound = click_default
+			web_link = "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_North_Macedonia.svg"
+		}
 
 		ButtonType = {
 			name = "achievements_button"
-			position = { x = 299 y = 389 }
+			position = { x = 259 y = 389 }
 			quadTextureSprite ="achievements"
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}
@@ -192,24 +186,10 @@ guiTypes = {
 				name = "Background"		
 				quadTextureSprite ="GFX_no_frame_special_bg"
 			}
-
-			instantTextBoxType={
-				position = { x = 0 y = 0 }
-				name = "disk_quota"
-				textureFile = ""
-				font = "hoi_16mbs"
-				borderSize = { x = 8 y = 5 }
-				maxWidth = 320
-				maxHeight = 10
-				text = ""
-				orientation = "UPPER_LEFT"
-				format = centre
-				fixedsize = yes
-			}
 			
 			gridBoxType = {
 				name = "games_grid"
-				position = { x=13 y =24}
+				position = { x=13 y =2}
 				size = { width =280 height = 400}
 				slotsize = { width = 280 height = 55 }
 				format = "UPPER_LEFT"
@@ -354,6 +334,18 @@ guiTypes = {
 			truncate = yes
 		}
 		
+		instantTextBoxType={
+			position = { x = 275 y = 379 }
+			name = "disk_quota"
+			font = "hoi_20bs"
+			borderSize = { x = 8 y = 0 }	
+			maxWidth = 188
+			maxHeight = 18
+			text = "MENU_BAR_DISK_QUOTA"	
+			orientation = "UPPER_LEFT"
+			format = centre
+		}
+		
 		checkboxType = {
 			name = "localgames_tab"
 			position = { x = 105  y = 84 }
@@ -395,10 +387,10 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			format = centre
 		}
-
+		
 		containerWindowType = {
 			name ="games"
-			position = { x = 75 y = 126 }
+			position = { x = 75 y = 126 }	
 			size = { width = 350 height = 320}
 			verticalScrollbar = "right_vertical_slider"
 			vertical_scroll_step = 5
@@ -407,30 +399,15 @@ guiTypes = {
 				name = "Background"		
 				quadTextureSprite ="GFX_no_frame_special_bg"
 			}
-
-			instantTextBoxType={
-				position = { x = 0 y = 0 }
-				name = "disk_quota"
-				textureFile = ""
-				font = "hoi_16mbs"
-				borderSize = { x = 8 y = 5 }
-				maxWidth = 320
-				maxHeight = 10
-				text = "REMOTE_STORAGE_USAGE"
-				orientation = "UPPER_LEFT"
-				format = centre
-				fixedsize = yes
-			}
 			
 			gridBoxType = {
 				name = "games_grid"
-				position = { x=13 y=24}
+				position = { x=13 y =15}
 				size = { width =280 height = 400}
 				slotsize = { width = 280 height = 55 }
 				format = "UPPER_LEFT"
 				max_slots_horizontal = 1
 			}
-
 		}
 		
 		instantTextBoxType={

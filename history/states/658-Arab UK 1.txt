@@ -11,13 +11,13 @@ state={
 
 
 	history={
-		#add_core_of = SAU
+add_core_of = NEU
 		owner = ENG
 		victory_points = {
 			7960 1 
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 			7960 = {
 				naval_base = 3
 			}

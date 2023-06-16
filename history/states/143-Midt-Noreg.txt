@@ -8,10 +8,12 @@ state={
 
 	history={
 		owner = NOR
+		add_extra_state_shared_building_slots = 1
 		buildings = {
 			infrastructure = 2
-			arms_factory = 0
+			arms_factory = 1
 			industrial_complex = 1
+			dockyard = 1
 			3022 = {
 				naval_base = 3
 				coastal_bunker = 2

@@ -19,11 +19,16 @@ state={
 			air_base = 3
 		}
 		add_core_of = MEX
+		add_core_of = NEU
 		victory_points = {
 			1965 25
 		}
 		victory_points = {
 			2008 10
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 	}
 

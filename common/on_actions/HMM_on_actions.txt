@@ -1,0 +1,922 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            NEU = { #remove clutter
+                country_event = { id = HMM.1937     days = 365 }
+                country_event = { id = HMM.19375    days = 515 }
+                country_event = { id = HMM.1938     days = 730 }
+                country_event = { id = HMM.1939     days = 1095 }
+                country_event = { id = HMM.1940     days = 1460 }
+            }
+
+            
+            #   ███████╗███████╗████████╗██╗   ██╗██████╗      █████╗ ██╗    ███╗   ██╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗
+            #   ██╔════╝██╔════╝╚══██╔══╝██║   ██║██╔══██╗    ██╔══██╗██║    ████╗  ██║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+            #   ███████╗█████╗     ██║   ██║   ██║██████╔╝    ███████║██║    ██╔██╗ ██║███████║   ██║   ██║██║   ██║██╔██╗ ██║███████╗
+            #   ╚════██║██╔══╝     ██║   ██║   ██║██╔═══╝     ██╔══██║██║    ██║╚██╗██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║
+            #   ███████║███████╗   ██║   ╚██████╔╝██║         ██║  ██║██║    ██║ ╚████║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║███████║
+            #   ╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝         ╚═╝  ╚═╝╚═╝    ╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+
+            every_country = {
+                if = {
+                    limit = {
+                        is_neutral_nation = yes
+                    }
+                    set_rule = { can_join_factions = no }
+                }
+                if = {
+                    limit = {
+                        is_neutral_nation = yes
+                        is_allies_member_ai = yes
+                    }
+                    country_lock_all_division_template = yes
+                }
+                if = {
+                    limit = {
+                        NOT = { tag = NEU }
+                    }
+                    add_opinion_modifier = {
+                        target = NEU
+                        modifier = HMM_embargo
+                    }
+                    reverse_add_opinion_modifier = {
+                        target = NEU
+                        modifier = HMM_embargo
+                    }
+                }
+            }
+            
+
+
+            #   ███████╗████████╗ ██████╗  ██████╗██╗  ██╗██████╗ ██╗██╗     ███████╗
+            #   ██╔════╝╚══██╔══╝██╔═══██╗██╔════╝██║ ██╔╝██╔══██╗██║██║     ██╔════╝
+            #   ███████╗   ██║   ██║   ██║██║     █████╔╝ ██████╔╝██║██║     █████╗  
+            #   ╚════██║   ██║   ██║   ██║██║     ██╔═██╗ ██╔═══╝ ██║██║     ██╔══╝  
+            #   ███████║   ██║   ╚██████╔╝╚██████╗██║  ██╗██║     ██║███████╗███████╗
+            #   ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝
+			LIT = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 30000 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 }
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 30
+				}
+			}
+            EST = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 30000 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 }
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 30
+				}
+			}
+            LAT = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 30000 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 }
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 30
+				}
+			}
+            GER = {
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 140
+				}
+			}
+			ITA = {
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 32
+				}
+			}
+			POL = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 800 }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 200 }
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 20
+				}
+			}
+			HOL = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 80000 }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 420 }
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 37
+				}
+				add_war_support = 0.05
+			}
+			DEN = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 1800 }
+				add_war_support = 0.05
+			}
+			NOR = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 28000 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 1500 }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 400 }
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 40
+				}
+				add_war_support = 0.05
+			}
+			BEL = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 80000 }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 2000 }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 }
+				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2200 }
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 50
+				}
+			}
+			LUX = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 16000 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 900 }
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 60
+				}
+			}
+			GRE = { #ANTI VMRO
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 4000 }
+			}
+			YUG = { #ANTI VMRO
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
+			}
+			SPR = {
+				add_equipment_to_stockpile = { type = fighter_equipment amount = 140} #air xp for allies/axis
+			}
+            CHI = {
+				add_equipment_to_stockpile = { type = fighter_equipment amount = 100} #air xp for japan
+			}
+            JAP = {
+				add_equipment_to_stockpile = { type = fighter_equipment amount = 100} #air xp for japan
+			}
+
+
+            #   ███╗   ██╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗    ███████╗████████╗██╗   ██╗███████╗███████╗
+            #   ████╗  ██║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║    ██╔════╝╚══██╔══╝██║   ██║██╔════╝██╔════╝
+            #   ██╔██╗ ██║███████║   ██║   ██║██║   ██║██╔██╗ ██║    ███████╗   ██║   ██║   ██║█████╗  █████╗  
+            #   ██║╚██╗██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║    ╚════██║   ██║   ██║   ██║██╔══╝  ██╔══╝  
+            #   ██║ ╚████║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║    ███████║   ██║   ╚██████╔╝██║     ██║     
+            #   ╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝     
+
+            NEU = { HMM_apply_intel = yes }
+
+            ENG = {
+                country_event = { id = DOD_yugoslavia.20 days = 740 } #yugo fighter
+
+                country_event = { id = britain.16 days = 20 } # george_v dies
+                country_event = { id =  mtg_britain.1 days = 180 } # abdication crisis, get george_vi
+
+                country_event = { id = britain.22 days = 542 } #baldwin resigns, get chamberlain
+                #you get churchill per on_action war
+            }
+            GER = {
+                country_event = { id = DOD_yugoslavia.20 days = 740 }
+            }
+            FRA = {
+                country_event = { id = DOD_yugoslavia.20 days = 740 }
+                country_event = { id = election.3 days = 155 } #mob up
+                
+            }
+            ITA = {
+                country_event = { id = DOD_yugoslavia.20 days = 740 }
+            }
+            SOV = {
+                country_event = {  id = HMM.4  days = 740 }
+                add_offsite_building = { type = industrial_complex level = 5 }
+            }
+            AUS = {
+                set_variable = { HMM_AUS_development = 0 }
+            }
+
+            #    ██████╗  █████╗ ███╗   ███╗███████╗██████╗ ██╗   ██╗██╗     ███████╗███████╗
+            #   ██╔════╝ ██╔══██╗████╗ ████║██╔════╝██╔══██╗██║   ██║██║     ██╔════╝██╔════╝
+            #   ██║  ███╗███████║██╔████╔██║█████╗  ██████╔╝██║   ██║██║     █████╗  ███████╗
+            #   ██║   ██║██╔══██║██║╚██╔╝██║██╔══╝  ██╔══██╗██║   ██║██║     ██╔══╝  ╚════██║
+            #   ╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗██║  ██║╚██████╔╝███████╗███████╗███████║
+            #    ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚══════╝
+			if = { 
+				limit = {
+					has_game_rule = { rule = no_tradeback option = yes }
+				}
+				every_country = {
+					add_timed_idea = { idea = no_tradeback  days = 1338 }
+				}
+				USA = {
+					add_timed_idea = { idea = USA_UK_civboost days = 1338 }
+				}
+                if = {
+                    limit = {
+                        NOT = { NEU = { is_noasia = yes } }
+                    }
+                    ENG = {
+                        add_offsite_building = { type = industrial_complex level = 8 }
+                    }
+                }
+			}
+
+            if = {
+                limit = {
+                    has_game_rule = { rule = no_tradeback option = NT_axis}
+                }
+                every_country = {
+                    limit = {
+                        is_axis_member = yes
+                    }
+                    add_timed_idea = { idea = no_tradeback days = 1338 }
+                }
+            }
+
+			if = {
+				limit = {
+					has_game_rule = { rule = sov_closed_eco option = yes }
+				}
+				SOV = { add_ideas = HMM_sov_closed_eco }
+				SOV = { add_offsite_building = { type = industrial_complex level = 7 } }
+                every_country = {
+                    limit = {
+                        is_allies_member = yes
+                    }
+                    add_ideas = SOV_cheap_trade
+                }
+			}
+
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_closed_eco option = yes }
+				}
+				JAP = { 
+                    add_ideas = HMM_jap_closed_eco 
+                    #add_ideas = JAP_Dont_Cap
+                }
+			}
+
+            if = {
+                limit = {
+                    has_game_rule = {rule = italy_pregrinded option = yes}
+                }
+                ITA = {
+                    annex_country = { target = ETH }
+                    ITA_giovanni_messe = { add_skill_level = 2 }
+                    ITA_giovanni_messe = { add_planning = 2 }
+                    ITA_giovanni_messe = { add_logistics = 1 }
+                    ITA_giovanni_messe = { add_attack = 1 }
+                    ITA_giovanni_messe = { add_defense = 1 }
+                    ITA_giovanni_messe = {
+                        add_unit_leader_trait = organizer
+                        add_unit_leader_trait = infantry_leader
+                        add_unit_leader_trait = trickster
+                        add_unit_leader_trait = cavalry_leader
+                        add_unit_leader_trait = panzer_leader
+                        add_unit_leader_trait = trait_engineer
+                        add_unit_leader_trait = trait_mountaineer
+                        add_unit_leader_trait = desert_fox
+                    } 
+                    ITA_sebastiano_visconti_prasca = { add_skill_level = 5}
+                    ITA_sebastiano_visconti_prasca = { add_attack = 2 }
+                    ITA_sebastiano_visconti_prasca = {
+                        add_unit_leader_trait = organizer
+                        add_unit_leader_trait = infantry_leader
+                        add_unit_leader_trait = panzer_leader
+                        add_unit_leader_trait = cavalry_leader
+                        add_unit_leader_trait = trait_mountaineer
+                    }
+                    ITA_angelo_iachino = {add_skill_level = 2}
+                    ITA_angelo_iachino = {
+                        add_unit_leader_trait = ironside
+                        add_unit_leader_trait = fleet_protector
+                    }
+                    uncomplete_national_focus = {
+                      focus = ITA_victoryinETH
+                      uncomplete_children = yes
+                      refund_political_power = no
+                    }
+                }
+            }
+
+            if = {
+                limit = {
+                    has_game_rule = {rule = japan_pregrinded option = yes}
+                }
+                JAP = { ###JAPAN PREGRIND
+                    JAP_tomoyuki_yamashita = {add_skill_level = 1}
+                    JAP_tomoyuki_yamashita = {add_planning = 2}
+                    JAP_tomoyuki_yamashita = {add_attack = 1}
+                    JAP_tomoyuki_yamashita = {
+                        add_unit_leader_trait = organizer
+                        add_unit_leader_trait = infantry_leader
+                        add_unit_leader_trait = trickster
+                        add_unit_leader_trait = cavalry_leader
+                        add_unit_leader_trait = trait_engineer
+                        add_unit_leader_trait = trait_mountaineer
+                        add_unit_leader_trait = ranger
+                    }
+
+                    JAP_shizuichi_tanaka = {add_skill_level = 2}
+                    JAP_shizuichi_tanaka = {add_planning = 2}
+                    JAP_shizuichi_tanaka = {add_attack = 2}
+                    JAP_shizuichi_tanaka = {
+                        add_unit_leader_trait = organizer
+                        add_unit_leader_trait = infantry_leader
+                        add_unit_leader_trait = trait_engineer
+                        add_unit_leader_trait = trait_mountaineer
+                        add_unit_leader_trait = ranger
+                        add_unit_leader_trait = commando
+                    }
+                }
+            }
+
+            #   ██████╗ ███████╗███╗   ███╗ ██████╗ ██╗   ██╗███████╗    ███╗   ██╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗
+            #   ██╔══██╗██╔════╝████╗ ████║██╔═══██╗██║   ██║██╔════╝    ████╗  ██║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+            #   ██████╔╝█████╗  ██╔████╔██║██║   ██║██║   ██║█████╗      ██╔██╗ ██║███████║   ██║   ██║██║   ██║██╔██╗ ██║███████╗
+            #   ██╔══██╗██╔══╝  ██║╚██╔╝██║██║   ██║╚██╗ ██╔╝██╔══╝      ██║╚██╗██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║
+            #   ██║  ██║███████╗██║ ╚═╝ ██║╚██████╔╝ ╚████╔╝ ███████╗    ██║ ╚████║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║███████║
+            #   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝   ╚═══╝  ╚══════╝    ╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+
+            if = {
+                limit = { has_game_rule = { rule = no_IRE option = yes } }
+                NEU = { HMM_no_IRE_effect = yes }
+            } else_if = {
+                limit = { IRE = { is_ai = yes } }
+                set_global_flag = HMM_check_for_AI
+            }
+            if = {
+                limit = { has_game_rule = { rule = no_MEX option = yes } }
+                NEU = { HMM_no_MEX_effect = yes }
+            } else_if = {
+                limit = { MEX = { is_ai = yes } }
+                set_global_flag = HMM_check_for_AI
+            }
+
+            if = {
+                limit = { has_game_rule = { rule = no_BRA option = yes } }
+                NEU = { HMM_no_BRA_effect = yes }
+            } else_if = {
+                limit = { BRA = { is_ai = yes } }
+                set_global_flag = HMM_check_for_AI
+            }
+
+            if = { #annex 
+                limit = { has_game_rule = { rule = no_NZL option = yes } }
+                NEU = { HMM_no_NZL_effect = yes }
+            } else_if = {
+                limit = { NZL = { is_ai = yes } }
+                set_global_flag = HMM_check_for_AI
+            }
+
+            if = { # RESERACH AND CLAIMS ARE ITALIAN DECISIONS, GER GETS GENERAL DESC
+                limit = { has_game_rule = { rule = no_BUL option = yes } }
+                NEU = { HMM_no_BUL_effect = yes }
+            }
+            else_if = { #GER GETS GENERAL DESC
+                limit = { has_game_rule = { rule = no_BUL option = no_ddaywall } }
+                NEU = { HMM_no_BUL_ddaywall_effect = yes }
+            } else_if = {
+                limit = { BUL = { is_ai = yes } }
+                set_global_flag = HMM_check_for_AI
+            }
+
+            if = {
+                limit = {  has_game_rule = { rule = no_FIN option = yes } }
+                NEU = { HMM_no_FIN_effect = yes }
+            } else_if = {
+                limit = { FIN = { is_ai = yes } }
+                set_global_flag = HMM_check_for_AI
+            }
+
+            #if = {
+			#	limit = {
+			#		has_game_rule = {
+			#			rule = HMM_ALLOW_ ###NATION x
+			#			option = HMM_ALLOW_ ###NATION X NO
+			#		}
+			#	}
+			#	NEU = { annex_country = { target = ARG transfer_troops = no } }
+			#	NEU = {
+			#		add_state_core = 
+			#		add_state_core = 
+			#		add_state_core = 
+			#		add_state_core = 
+			#		add_state_core = 
+			#		add_state_core = 
+			#	}
+			#} else = { set_global_flag = HMM_check_for_AI }
+
+            if = { # inform for not annexed AI nations
+                limit = {
+                    has_global_flag = HMM_check_for_AI
+                    NOT = { has_global_flag = HMM_no_hosttool }
+                    NEU = { is_sp = no }
+                }
+                var:host = { news_event = { id = HMM.7 } }
+            }
+
+            #   ██████╗  █████╗ ██╗      █████╗ ███╗   ██╗ ██████╗███████╗██████╗     ███╗   ███╗ ██████╗ ██████╗ ███████╗
+            #   ██╔══██╗██╔══██╗██║     ██╔══██╗████╗  ██║██╔════╝██╔════╝██╔══██╗    ████╗ ████║██╔═══██╗██╔══██╗██╔════╝
+            #   ██████╔╝███████║██║     ███████║██╔██╗ ██║██║     █████╗  ██║  ██║    ██╔████╔██║██║   ██║██║  ██║█████╗  
+            #   ██╔══██╗██╔══██║██║     ██╔══██║██║╚██╗██║██║     ██╔══╝  ██║  ██║    ██║╚██╔╝██║██║   ██║██║  ██║██╔══╝  
+            #   ██████╔╝██║  ██║███████╗██║  ██║██║ ╚████║╚██████╗███████╗██████╔╝    ██║ ╚═╝ ██║╚██████╔╝██████╔╝███████╗
+            #   ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝╚═════╝     ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝
+        
+			if = {
+				limit = {
+					has_game_rule = { rule = balanced_mode option = yes }
+				}
+
+                every_country = {
+                    add_ideas = { peacetime_training HMM_i_love_printers }
+                    if = {
+                        limit = {
+                            NOT = { OR = { original_tag = SPR original_tag = FIN } }
+                        }
+                        add_ideas = HMM_gamerules_bal
+                    }
+                    if = {
+                        limit = {
+                            OR = { original_tag = JAP original_tag = USA }
+                        }
+                        add_ideas = HMM_gamerules_pacific 
+                    }
+                }
+
+                #    █████╗ ██╗  ██╗██╗███████╗
+                #   ██╔══██╗╚██╗██╔╝██║██╔════╝
+                #   ███████║ ╚███╔╝ ██║███████╗
+                #   ██╔══██║ ██╔██╗ ██║╚════██║
+                #   ██║  ██║██╔╝ ██╗██║███████║
+                #   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
+
+                GER = {
+					add_offsite_building = { type = industrial_complex level = 10 }
+                    add_tech_bonus = {
+                        name = "Panzerabwehrkanone Research Program"
+                        bonus = 1.00
+                        uses = 1
+                        technology = antitank3
+                    }
+                    add_tech_bonus = {
+                        name = "Panzerabwehrkanone Research Program"
+                        bonus = 1.00
+                        uses = 1
+                        technology = antitank4
+                    }
+                    add_tech_bonus = {
+                        name = "PaK 44 Research Program"
+                        bonus = 1.00
+                        uses = 1
+                        technology = antitank5
+                    }
+				}
+                ITA = {
+                    add_offsite_building = { type = industrial_complex level = 5 }
+                }
+                JAP = {
+					add_offsite_building = { type = industrial_complex level = 2 }
+                    537 = { add_resource = { type = oil amount = 50 } }
+                }
+                FIN = {
+                    add_ideas = FIN_axis_voln_agreement
+                }
+                BUL = {
+                    country_lock_all_division_template = no
+                }
+
+
+
+                #    █████╗ ██╗     ██╗     ██╗███████╗███████╗
+                #   ██╔══██╗██║     ██║     ██║██╔════╝██╔════╝
+                #   ███████║██║     ██║     ██║█████╗  ███████╗
+                #   ██╔══██║██║     ██║     ██║██╔══╝  ╚════██║
+                #   ██║  ██║███████╗███████╗██║███████╗███████║
+                #   ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚══════╝╚══════╝
+
+                SOV = {
+                    complete_national_focus = SOV_transpolar_flights 
+                    complete_national_focus = SOV_foster_flying_clubs
+                    #complete_national_focus = SOV_expand_aviation_institutes
+                    SOV_nikolay_voznesensky = { #captain of industry
+                        set_character_flag = SOV_safe_from_purge_flag 
+                    }
+                }
+                
+                #ANTI SEALION
+                CAN = { set_major = yes }
+                
+                SAF = { add_research_slot = 1 }
+
+
+                #   ██████╗ ██████╗ ███████╗ ██████╗ ██████╗ ██╗███╗   ██╗██████╗ 
+                #   ██╔══██╗██╔══██╗██╔════╝██╔════╝ ██╔══██╗██║████╗  ██║██╔══██╗
+                #   ██████╔╝██████╔╝█████╗  ██║  ███╗██████╔╝██║██╔██╗ ██║██║  ██║
+                #   ██╔═══╝ ██╔══██╗██╔══╝  ██║   ██║██╔══██╗██║██║╚██╗██║██║  ██║
+                #   ██║     ██║  ██║███████╗╚██████╔╝██║  ██║██║██║ ╚████║██████╔╝
+                #   ╚═╝     ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═════╝ 
+
+                ##########
+                # ALLIES #
+                ##########
+
+                FRA = {
+                    #FRA_jean_de_lattre_de_tassigny = { add_unit_leader_trait = cavalry_leader }
+                    FRA_charles_de_gaulle = { add_unit_leader_trait = panzer_leader }
+                }
+
+                SAF = { 
+                    SAF_george_edwin_brink = { add_unit_leader_trait = panzer_leader }
+                    SAF_george_edwin_brink = { add_logistics = 3 }
+                    SAF_george_edwin_brink = { add_attack = 2 }
+                }
+
+                #AST = {
+                #    AST_thomas_blamey = {
+                #        add_unit_leader_trait = infantry_leader
+                #        add_unit_leader_trait = naval_invader
+                #    }
+                #}
+
+
+                ##########
+                ## AXIS ##
+                ##########
+
+                GER = {
+                    GER_sepp_dietrich = { add_skill_level = 2 }
+                    GER_sepp_dietrich = { add_planning = -2 }
+                    #GER_sepp_dietrich = { add_defense = -1 }
+                    GER_sepp_dietrich = { add_attack = 3 }
+                    GER_sepp_dietrich = {
+                        add_unit_leader_trait = panzer_leader
+                        add_unit_leader_trait = cavalry_leader
+                        add_unit_leader_trait = organizer
+                        add_unit_leader_trait = trait_engineer
+                        add_unit_leader_trait = trickster
+                        add_unit_leader_trait = ranger
+                    }
+                    GER_hasso_von_manteuffel = { add_attack = 2 }
+                    GER_hasso_von_manteuffel = { add_skill_level = 2 }     
+                    GER_hasso_von_manteuffel = { add_logistics = 3 }      
+                    GER_hasso_von_manteuffel = {
+                        add_unit_leader_trait = panzer_leader
+                        add_unit_leader_trait = cavalry_leader
+                        add_unit_leader_trait = organizer
+                        add_unit_leader_trait = trait_engineer
+                        add_unit_leader_trait = trickster
+                        add_unit_leader_trait = ranger
+                        add_unit_leader_trait = commando
+                    }
+                    GER_erwin_rommel = {
+                        add_unit_leader_trait = organizer
+                        add_unit_leader_trait = infantry_leader
+                    }
+                    GER_erwin_rommel = { add_logistics = 3 }
+                }
+                
+
+                #ROM = {
+                #    ROM_gheorghe_avramescu = {
+                #        add_unit_leader_trait = infantry_leader
+                #        add_unit_leader_trait = naval_invader
+                #    }
+                #}
+
+                HUN = {
+                    HUN_ivan_hindy = {
+                        add_unit_leader_trait = panzer_leader
+                        add_unit_leader_trait = ranger
+                        add_attack = 1
+                    }
+                }
+
+                ##########
+                # SOVIET #
+                ##########
+
+                SOV = {
+                    SOV_konstantin_rokossovsky = { add_skill_level = 2 }
+                    SOV_konstantin_rokossovsky = { add_attack = 1 }
+                    SOV_konstantin_rokossovsky = { add_defense = 1 }
+                    SOV_konstantin_rokossovsky = { add_logistics = 1 }
+                    SOV_konstantin_rokossovsky = {
+                        add_unit_leader_trait = panzer_leader
+                        add_unit_leader_trait = organizer
+                        add_unit_leader_trait = trickster
+                        add_unit_leader_trait = ranger
+                        add_unit_leader_trait = trait_engineer
+                    }
+                    SOV_georgy_zhukov = { add_skill_level = 1 }
+                    SOV_georgy_zhukov = { add_attack = 2 }
+                    SOV_georgy_zhukov = { add_defense = 1 }
+                    SOV_georgy_zhukov = { add_logistics = 1 }
+                    SOV_georgy_zhukov = {          
+                        add_unit_leader_trait = panzer_leader
+                        add_unit_leader_trait = cavalry_leader
+                        add_unit_leader_trait = trait_engineer
+                        add_unit_leader_trait = trickster
+                        add_unit_leader_trait = ranger
+                    }
+                    SOV_aleksandr_vasilevsky = {
+                        add_unit_leader_trait = organizer
+                        add_unit_leader_trait = infantry_leader
+                    }
+                    SOV_aleksandr_vasilevsky = { add_logistics = 4 }
+                    SOV_aleksandr_vasilevsky = { add_planning = -1 }
+	            }
+			}
+        }
+
+        
+    }
+
+    on_peace = {
+        effect = {
+            THIS = {add_ideas = peacetime_training}        
+        } 
+    }
+    on_war = {
+        effect = {
+            if = {
+                limit = {
+                    THIS = { original_tag = ENG }
+                }
+                ENG = { 
+                    #country_event = { id = britain.9 days = 10 } #HMMTODO country event doesnt work, therefore this solution
+                    promote_character = ENG_winston_churchill
+                    retire_character = ENG_neville_chamberlain
+                    add_stability = 0.1
+                    add_war_support = 0.1
+                }
+            }
+        }  
+    }
+
+    on_capitulation_immediate = {
+        effect = {
+            # JAP delete EQ
+            if = {
+                limit = { ROOT = { tag = JAP } }
+                set_equipment_fraction = 0.00
+            }
+        }
+    }
+
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    original_tag = FRA
+                }
+                add_offsite_building = { type = industrial_complex level = 5} # maybe france players wont leave in 1940 if they can properly trade for ressources
+            }
+            if = {
+                limit = { 
+                    tag = BEL
+                }
+                FRA = { transfer_state = 538 }
+                FRA = { transfer_state = 295 }
+                FRA = { transfer_state = 718 }
+                FRA = { transfer_state = 729 }
+                FRA = { transfer_state = 721 }
+                538 = { set_compliance = 100 }
+                295 = { set_compliance = 100 }
+                768 = { set_compliance = 100 }
+                729 = { set_compliance = 100 }
+                721 = { set_compliance = 100 }
+            }
+            if = {
+                limit = { tag = HOL }
+                ENG = { transfer_state = 309 }
+                309 = { set_compliance = 100 }
+            }
+            if = {
+                limit = {
+                    tag = POL
+                }
+                SOV = {
+                    transfer_state = 96
+                    transfer_state = 702
+                    transfer_state = 95
+                    transfer_state = 94
+                    transfer_state = 93
+                    transfer_state = 91
+                    transfer_state = 89
+                    transfer_state = 97
+                }
+            }
+            if = {
+                limit = {
+                    is_allies_member_ai = yes
+                }
+                delete_unit_template_and_units = {
+                    division_template = "Inf Division"
+                    disband = no
+                }
+            }
+        }
+    }
+
+    #FROM = target
+    # flag is bcs daily trigger
+    on_justifying_wargoal_pulse = {
+        effect = {
+            if = {
+                limit = {
+                    NOT = { has_global_flag = HMM_units_YUG }
+                    FROM = { tag = YUG }
+                }
+                set_global_flag = HMM_units_YUG
+                set_temp_variable = { unitamnt = 34 }
+                107 = {
+                    while_loop_effect = {
+                        limit = {
+                            check_variable = { unitamnt > 0 }
+                        }
+                        create_unit = {
+                            division = "division_template = \"Inf Division\" start_experience_factor = 0.4 start_equipment_factor = 1.0" 
+                            owner = YUG
+                        }
+                        subtract_from_temp_variable = { unitamnt = 1 }
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = HMM_units_GRE }
+                    FROM = { tag = GRE }
+                }
+                set_global_flag = HMM_units_GRE
+                set_temp_variable = { unitamnt = 18 }
+                47 = {
+                    while_loop_effect = {
+                        limit = {
+                            check_variable = { unitamnt > 0 }
+                        }
+                        create_unit = {
+                            division = "division_template = \"Inf Division\" start_experience_factor = 0.4 start_equipment_factor = 1.0" 
+                            owner = GRE
+                        }
+                        subtract_from_temp_variable = { unitamnt = 1 }
+                    }
+                }
+            }
+        }
+    }
+
+    on_weekly = {
+        effect = { HMM_apply_intel = yes }
+    }
+
+    on_declare_war = {
+        effect = {
+            if = { # Autoadd AI nations to Allies
+                limit = {
+                    FROM = {
+                        is_allies_member_ai = yes
+                    }
+                }
+                ENG = {
+                    add_to_faction = FROM
+                }
+            }
+            if = {
+                limit = {
+                    FROM = { original_tag = HOL }
+                    ROOT = { is_axis_member = yes }
+                }
+                GER = {
+                    declare_war_on = {
+                        target = INS
+                        type = annex_everything
+                    }
+                }
+            }
+        }
+    }
+
+
+    #   ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗███████╗██████╗     ██████╗ ███████╗ █████╗  ██████╗███████╗██████╗ ███████╗ █████╗ ██╗     ███████╗
+    #   ██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗    ██╔══██╗██╔════╝██╔══██╗██╔════╝██╔════╝██╔══██╗██╔════╝██╔══██╗██║     ██╔════╝
+    #   ███████╗██║     ██████╔╝██║██████╔╝   ██║   █████╗  ██║  ██║    ██████╔╝█████╗  ███████║██║     █████╗  ██║  ██║█████╗  ███████║██║     ███████╗
+    #   ╚════██║██║     ██╔══██╗██║██╔═══╝    ██║   ██╔══╝  ██║  ██║    ██╔═══╝ ██╔══╝  ██╔══██║██║     ██╔══╝  ██║  ██║██╔══╝  ██╔══██║██║     ╚════██║
+    #   ███████║╚██████╗██║  ██║██║██║        ██║   ███████╗██████╔╝    ██║     ███████╗██║  ██║╚██████╗███████╗██████╔╝███████╗██║  ██║███████╗███████║
+    #   ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   ╚══════╝╚═════╝     ╚═╝     ╚══════╝╚═╝  ╚═╝ ╚═════╝╚══════╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
+
+	on_capitulation = {
+		effect = { 
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = scripted_peace
+						option = yes
+					}
+				}
+				# Yugoslavia
+                if = {
+                    limit = { 
+                        original_tag = YUG 
+                        ITA = { has_war_with = YUG }
+                    }
+                    ITA = {
+                        add_named_threat = { 
+                            threat = 6.3
+                            name = HMM_yug
+                        }
+                        transfer_state = 103
+                        transfer_state = 102
+                        transfer_state = 104
+                        transfer_state = 105
+                        transfer_state = 109
+                        transfer_state = 107
+                        transfer_state = 108
+                        transfer_state = 322
+                        transfer_state = 324
+                    }
+                    if = {
+                        limit = { HMM_no_BUL = no }
+                        BUL = {
+                            transfer_state = 106
+                            transfer_state = 323
+                        }
+                    }
+                    else = {
+                        ITA = {
+                            transfer_state = 106
+                            transfer_state = 323
+                        }
+                    }
+                    
+                    HUN = {
+                        transfer_state = 141
+                        transfer_state = 45
+                    }
+                } 
+                # Greece
+                if = {
+                    limit = { 
+                        original_tag = GRE 
+                        ITA = { has_war_with = GRE }
+                    } 
+                    
+                    ITA = {
+                        add_named_threat = { 
+                            threat = 3.7 
+                            name = HMM_gre
+                        }
+                        transfer_state = 182
+                        transfer_state = 187
+                    }
+                    if = {
+                        limit = { HMM_no_BUL = no }
+                        BUL = {
+                            transfer_state = 184
+                            transfer_state = 731
+                            transfer_state = 77
+                            transfer_state = 185
+                            transfer_state = 47
+                            transfer_state = 186
+                        }
+                    }
+                    else = {
+                        ITA = {
+                            transfer_state = 184
+                            transfer_state = 731
+                            transfer_state = 77
+                            transfer_state = 185
+                            transfer_state = 47
+                            transfer_state = 186
+                        }
+                    }
+                } 
+                # China
+                if = {
+                    limit = { 
+                        original_tag = CHI
+                        JAP = { has_war_with = CHI }
+                    } 
+                    
+                    JAP = {
+                        add_named_threat = { 
+                            threat = 11.9
+                            name = HMM_chi
+                        }
+                        annex_country = {
+                            target = CHI
+                            transfer_troops = no
+                        }
+                    }
+                }
+			}
+		}
+	}
+
+    
+}
+
+
+

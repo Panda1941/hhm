@@ -21,37 +21,52 @@ state=
 			11401 3
 		}
 		owner = CZE
+		add_extra_state_shared_building_slots = 2
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			industrial_complex = 4
 			anti_air_building = 1
-			424 =
-			{
-				bunker = 1
+			557 = {
+				bunker = 7
 			}
-			469 =
-			{
-				bunker = 1
+			11525 = {
+				bunker = 7
 			}
-			3585 =
-			{
-				bunker = 1
+			543 = {
+				bunker = 7
 			}
-			5283 =
-			{
-				bunker = 1
+			5283 = {
+				bunker = 7
 			}
-			6470 =
-			{
-				bunker = 1
+			7857 = {
+				bunker = 7
 			}
-			9555 =
-			{
-				bunker = 1
+			9555 = {
+				bunker = 7
 			}
-			11432 =
-			{
-				bunker = 1
+			424 = {
+				bunker = 7
+			}
+			3585 = {
+				bunker = 7
+			}
+			6470 = {
+				bunker = 7
+			}
+			3418 = {
+				bunker = 7
+			}
+			11432 = {
+				bunker = 7
+			}
+			469 = {
+				bunker = 7
+			}
+			11401 = {
+				bunker = 7
+			}
+			11414 = {
+				bunker = 7
 			}
 
 		}

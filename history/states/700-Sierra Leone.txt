@@ -8,11 +8,12 @@ state={
 	history=
 	{
 		owner = ENG
+add_core_of = NEU
 		victory_points = {
 			2038 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 			2038 = {
 				naval_base = 3
 			}

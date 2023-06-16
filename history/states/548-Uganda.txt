@@ -2,7 +2,7 @@ state={
 	id=548
 	name="STATE_548"
 
-	state_category = rural
+	state_category = wasteland
 	resources={
 		rubber=3 # was: 4
 	}
@@ -12,6 +12,7 @@ state={
 			infrastructure = 2
 
 		}
+add_core_of = NEU
 		victory_points = {
 			12989 1
 		}

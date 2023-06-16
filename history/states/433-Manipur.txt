@@ -20,6 +20,10 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = ENG
+		}
 
 	}
 

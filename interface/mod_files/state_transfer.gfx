@@ -1,8 +1,0 @@
-spriteTypes = {	
-
-	spriteType = {
-		name = "GFX_state_transfer_169"
-		texturefile = "gfx/interface/state_transfer_169.dds"
-	}
-	
-}

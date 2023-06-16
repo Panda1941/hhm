@@ -5,10 +5,11 @@ state=
 	name="STATE_134"
 	manpower = 667100
 	
-	state_category = city
+	state_category = town
 
 	history= {
 		owner = IRE
+		add_core_of = NEU
 		victory_points = {
 			9303 3 #Galway
 		}
@@ -19,6 +20,10 @@ state=
 			infrastructure = 3 #was: 6
 		}
 		add_core_of = IRE
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
+		}
 	}
 
 	provinces=

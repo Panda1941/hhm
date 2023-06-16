@@ -19,6 +19,7 @@ state={
 			}
 		}
 		add_core_of = MEX
+		add_core_of = NEU
 		#victory_points = {
 		#	12715 3
 		#}
@@ -28,6 +29,10 @@ state={
 		#victory_points = {
 		#	4965 5
 		#}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
+		}
 	}
 
 	provinces={

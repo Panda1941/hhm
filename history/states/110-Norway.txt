@@ -14,12 +14,12 @@ state={
 		victory_points = {
 			6115 15 
 		}
-		
 		owner = NOR
+		add_extra_state_shared_building_slots = 4
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
-			industrial_complex = 3
+			industrial_complex = 7
 			dockyard = 1
 			air_base = 4
 			6115 = {

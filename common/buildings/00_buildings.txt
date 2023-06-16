@@ -6,7 +6,7 @@ buildings = {
 
 
 	infrastructure = {
-		base_cost = 3000
+		base_cost = 6000
 		icon_frame = 3
 		infrastructure = yes
 		max_level = 5
@@ -57,7 +57,7 @@ buildings = {
 
 	supply_node = {
 		show_on_map = 1
-		base_cost = 8000
+		base_cost = 20000
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 15
@@ -84,7 +84,7 @@ buildings = {
 		show_on_map = 1
 		show_on_map_meshes = 3
 		always_shown = yes
-		base_cost = 3000
+		base_cost = 5000
 		per_level_extra_cost = 1000
 		provincial = yes
 		only_costal = yes
@@ -142,7 +142,7 @@ buildings = {
 	
 	anti_air_building = {
 		show_on_map = 3
-		base_cost = 1500
+		base_cost = 2500
 		icon_frame = 9
 		anti_air = yes
 		disabled_in_dmz = yes
@@ -155,7 +155,7 @@ buildings = {
 
 	synthetic_refinery = {
 		show_on_map = 1
-		base_cost = 12500
+		base_cost = 14500
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
@@ -164,9 +164,9 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		
+		damage_factor = 0.0001
 		show_modifier = yes
-		fuel_gain_from_states = 6.0 #per hour
+		fuel_gain_from_states = 2.0 #per hour
 	}
 
 	fuel_silo = {
@@ -185,7 +185,7 @@ buildings = {
 
 	radar_station = {
 		show_on_map = 1
-		base_cost = 2000
+		base_cost = 3375
 		icon_frame = 11
 		radar = yes
 		#max_level = 0 # max: 5

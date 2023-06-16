@@ -1,0 +1,170 @@
+GER = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 24900 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 891 }
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 607 }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 349 }
+	
+					add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 720 producer = GER variant_name = "Panzer II Ausf. a" }
+
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 82
+					}
+					set_oob = a_GER
+				}
+				FRA = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 14400 }
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 31300 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 766 }
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 217 }
+				
+					add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 480 producer = FRA variant_name = "FT mod. 31" }
+					add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 240 producer = FRA variant_name = "FT Char Cannon" }
+					add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 480 producer = FRA variant_name = "H-35" }
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 85
+					}
+				}
+				JAP = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 7700 }
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 31700 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 801 }
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 880 }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 25 }
+
+					add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = JAP variant_name = "Type 95 Ha-Go" }
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 49
+					}
+					set_oob = "a_JAP"
+				}
+				SOV = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 22000 }
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 65000 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 443 }
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1600 }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 814 }
+
+					add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 1300 producer = SOV variant_name = "T-26TU mod. 1933" }
+					add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 1000 producer = SOV variant_name = "BT-5" }
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 317
+					}
+				}
+				ITA = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3500 }
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20300 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 819 }
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 212 }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 60 }
+				
+					add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = ITA variant_name = "L3/35" }
+				}
+				USA = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 }
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 11100 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 380 }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 106 }
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 124
+					}
+				}
+				ENG = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 13200 }
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 259 }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 }
+
+					add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = ENG variant_name = "Light Tank Mk. VI" }
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 87
+					}
+				}
+				HUN = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4700 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 11 }
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 1
+					}
+				}	
+				ROM = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 303 }
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 70 }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 87 }
+
+					add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 72 producer = ROM variant_name = "FT Char Cannon" }
+
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 18
+					}
+				}
+				BUL = {
+					#
+				}
+				SIA = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1800 }
+				}
+				MAN = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3900 }
+				}
+				BRA = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2900 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 75 }
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 3
+					}
+				}
+				ARG = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3200 }
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 2
+					}
+				}
+				MEX = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5605 }
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 900 }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 55 }
+				}
+				IRE = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 276 }
+				}
+				CAN = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2700 }
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 8
+					}
+				}
+
+				RAJ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3600 }
+				}
+				AST = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2300 }
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 7
+					}
+				}
+				NZL = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 699 }
+				}
+				
+				SAF = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 815 }
+				}
+				FIN = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 156 }
+				}

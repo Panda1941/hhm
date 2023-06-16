@@ -4,7 +4,7 @@ state={
 	name="STATE_497"
 	manpower = 2950100
 	
-	state_category = town
+	state_category = rural
 	
 	resources={
 		rubber=23 # was: 30
@@ -21,6 +21,7 @@ state={
 			}
 		}
 		add_core_of = BRA
+		add_core_of = NEU
 		victory_points = {
 			12853 1 
 		}

@@ -1,22 +1,6 @@
 ﻿capital = 43
 
 oob = "HUN_1936"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "HUN_1936_air_bba"
-		set_technology = {
-			iw_small_airframe = 1
-			engines_1 = 1
-			early_bombs = 1
-		}
-	else = {
-		set_air_oob = "HUN_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
-}
 
 set_research_slots = 3
 set_stability = 0.7
@@ -28,7 +12,9 @@ set_technology = {
 	tech_support = 1		
 	tech_recon = 1
 	gw_artillery = 1
-	motorised_infantry = 1
+
+	early_fighter = 1
+	CAS1 = 1
 	fuel_silos = 1
 	basic_train = 1
 }
@@ -45,7 +31,9 @@ if = {
 }
 if = {
 	limit = {
+		
 		has_dlc = "No Step Back"
+		
 	}
 	set_technology = {
 		gwtank_chassis = 1
@@ -59,20 +47,6 @@ if = {
 	add_ideas = {
 		disarmed_nation
 		HUN_treaty_of_triannon
-	}
-}
-if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	create_equipment_variant = {
-		name = "WM-16"
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
 	}
 }
 
@@ -148,6 +122,9 @@ if = {
 	}
 	
 	set_technology = {
+		fighter1 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
 		interwar_antiair = 1
@@ -181,18 +158,6 @@ if = {
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 		fuel_refining = 1
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "HUN_1939_air_bba"
-		else = {
-			set_air_oob = "HUN_1939_air_legacy"
-			set_technology = {
-				fighter1 = 1
-				early_bomber = 1
-				tactical_bomber1 = 1
-			}
-		}
 	}
 	if = {
 		limit = {
@@ -273,13 +238,10 @@ recruit_character = HUN_shvoy_kalman
 recruit_character = HUN_sandor_magyarossy
 recruit_character = HUN_bela_rakosi
 recruit_character = HUN_kalman_kanya
-recruit_character = HUN_jozsef_szell
 recruit_character = HUN_vilmos_roder
 recruit_character = HUN_zoltan_tildy
-recruit_character = HUN_laszlo_rajk
 recruit_character = HUN_kalman_daranyi
 recruit_character = HUN_lajos_remenyi_schneller
-recruit_character = HUN_gusztav_gratz
 recruit_character = HUN_gyula_gombos_de_jakfa
 recruit_character = HUN_otto_von_habsburg
 recruit_character = HUN_franz_friedrich

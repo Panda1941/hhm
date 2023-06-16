@@ -1,0 +1,134 @@
+#   ███╗   ██╗ ██████╗        █████╗ ███████╗██╗ █████╗ 
+#   ████╗  ██║██╔═══██╗      ██╔══██╗██╔════╝██║██╔══██╗
+#   ██╔██╗ ██║██║   ██║█████╗███████║███████╗██║███████║
+#   ██║╚██╗██║██║   ██║╚════╝██╔══██║╚════██║██║██╔══██║
+#   ██║ ╚████║╚██████╔╝      ██║  ██║███████║██║██║  ██║
+#   ╚═╝  ╚═══╝ ╚═════╝       ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝
+
+on_actions = {
+    on_startup = {
+        effect = {
+            if = {
+                limit = {
+                    NEU = { is_noasia = yes }
+                }
+                
+                ENG = {
+                    country_event = { # US GENERALS IN 41
+                        id = noasia.1
+                        days = 1825
+                    }
+                    country_event = { # JAPAN WAR
+                        id = noasia.2
+                        days = 730
+                    }
+                    country_event = { # JAPAN WAR FINISH
+                        id = noasia.3
+                        days = 1095
+                    }
+                    set_variable = { HMM_noasia_US_fabs = 0 }
+                    add_ideas = UK_Dont_Cap
+                    add_research_slot = 2
+                    add_offsite_building = { type = industrial_complex level = 8 }
+                    add_tech_bonus = {
+                        name = "Australian F2"
+                        ahead_reduction = 2
+                        bonus = 0.5 #instead of 100 for balance
+                        uses = 1
+                        technology = fighter2
+                    }
+                }
+
+                NEU = {
+                    give_resource_rights = { receiver = ENG state = 372 } #USA resources to ENG
+                    give_resource_rights = { receiver = ENG state = 368 }
+                    give_resource_rights = { receiver = ENG state = 261 }
+                    give_resource_rights = { receiver = ENG state = 373 }
+                    give_resource_rights = { receiver = ENG state = 376 }
+                    give_resource_rights = { receiver = ENG state = 379 }
+                    give_resource_rights = { receiver = ENG state = 387 }
+                    give_resource_rights = { receiver = ENG state = 388 }
+                    give_resource_rights = { receiver = ENG state = 389 }
+                    give_resource_rights = { receiver = ENG state = 391 }
+                    give_resource_rights = { receiver = ENG state = 394 }
+                    give_resource_rights = { receiver = ENG state = 393 }
+                    give_resource_rights = { receiver = ENG state = 380 }
+                    give_resource_rights = { receiver = ENG state = 423 }
+                    give_resource_rights = { receiver = ENG state = 426 }
+                    give_resource_rights = { receiver = ENG state = 425 }
+                    give_resource_rights = { receiver = ENG state = 427 }
+                    give_resource_rights = { receiver = ENG state = 436 }
+
+                    give_resource_rights = { receiver = ENG state = 375 } #USA oil to ENG aswell man
+                    give_resource_rights = { receiver = ENG state = 378 }
+                    give_resource_rights = { receiver = ENG state = 371 }
+                    give_resource_rights = { receiver = ENG state = 374 }
+                    give_resource_rights = { receiver = ENG state = 383 }
+                    give_resource_rights = { receiver = ENG state = 382 }
+                }
+
+                NEU = {
+                    give_resource_rights = { receiver = GER state = 724 } #Siam rubber from trade to GER
+                    give_resource_rights = { receiver = GER state = 287 }
+                }
+                261 = { add_resource = { type = aluminium amount = 80 } } #Compensate UK for missing aluminium decisions
+                368 = { add_resource = { type = aluminium amount = 80 } }
+                387 = { add_resource = { type = aluminium amount = 50 } }
+                377 = { add_resource = { type = aluminium amount = 30 } }
+
+                NEU = {
+					set_technology = {
+		   				fighter2 = 1
+		   				tactical_bomber2 = 1
+					}
+					create_equipment_variant = {
+						name = "American Fighters"
+						type = fighter_equipment_2
+						upgrades = {
+							plane_gun_upgrade = 0
+							plane_range_upgrade = 5
+							plane_engine_upgrade = 6 # +1 as compensation for missing designer
+							plane_reliability_upgrade = 0
+						}
+					}
+					create_equipment_variant = {
+						name = "American Tactical Bombers"
+						type = tac_bomber_equipment_2
+						upgrades = {
+							plane_tac_bomb_upgrade = 0
+							plane_range_upgrade = 5
+							plane_engine_upgrade = 0
+							plane_reliability_upgrade = 0
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_2
+						amount = 6000
+						producer = NEU
+					}
+					add_equipment_to_stockpile = {
+						type = tac_bomber_equipment_2
+						amount = 1000
+						producer = NEU
+					}
+				}
+            }
+        }
+    }
+    
+    on_war = {
+        effect = {
+            if = {
+                limit = {
+                    is_noasia = yes
+                    THIS = { original_tag = ENG }
+                }
+                ENG = { 
+                    add_ideas = UK_noasia_consumer_goods 
+                    add_timed_idea = { idea = UK_noasia_plane_production days = 365 }
+                    add_offsite_building = { type = industrial_complex level = 15 }
+                }
+            }
+        } 
+    }
+}

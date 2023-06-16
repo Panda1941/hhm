@@ -1,0 +1,183 @@
+on_actions = { 
+	on_startup = { ### AUSTRIA AND CZECH HAVE NO ARMIES TO SPEED UP THE GAME
+		effect = { ### ADD EQUIPMENT FOR COMPETITIVE x GAME RULE
+			IF = {
+				limit = {
+					has_game_rule = {
+						rule = balanced_mode
+						option = yes
+					}
+				}
+				#	delete_unit_template_and_units = { division_template = "x" disband = yes }
+				GER = {
+					delete_unit_template_and_units = { division_template = "Infanterie-Division" disband = yes }
+					delete_unit_template_and_units = { division_template = "Panzer-Division" disband = yes }
+					delete_unit_template_and_units = { division_template = "Infanterie-Division (mot.)" disband = yes }
+					delete_unit_template_and_units = { division_template = "Gebirgs-Brigade" disband = yes }
+					delete_unit_template_and_units = { division_template = "Kavallerie-Brigade" disband = yes }
+					load_oob = a_GER
+				}
+				AST = {
+					delete_unit_template_and_units = { division_template = "Infantry Division" disband = yes }
+					delete_unit_template_and_units = { division_template = "Cavalry Division" disband = yes }
+					delete_unit_template_and_units = { division_template = "Armoured Division" disband = yes }
+					load_oob = a_AST
+				}
+				BUL = {
+					if = {
+						limit = {
+							OR = {
+								has_game_rule = { rule = no_BUL option = no }
+								has_game_rule = { rule = no_BUL option = no_ddaywall }
+							}
+							
+						}
+						delete_unit_template_and_units = { division_template = "Konna Divizija" disband = yes }
+						delete_unit_template_and_units = { division_template = "Pekhotna Divizija" disband = yes }
+						load_oob = a_BUL
+					}
+				}
+				ITA = {
+					if = {
+						limit = {
+							has_game_rule = { rule = italy_pregrinded option = yes }
+						}
+						delete_unit_template_and_units = { division_template = "Divisione di Fanteria" disband = yes }
+						delete_unit_template_and_units = { division_template = "Divisione Alpina" disband = yes }
+						delete_unit_template_and_units = { division_template = "Divisione Coloniale" disband = yes }
+						delete_unit_template_and_units = { division_template = "Divisione Celere" disband = yes }
+						delete_unit_template_and_units = { division_template = "Reggimento di Cavalleria" disband = yes }
+						load_oob = a_ITA
+					}
+				}
+				BRA = {
+					delete_unit_template_and_units = { division_template = "Divisão de Infantaria" disband = yes }
+					delete_unit_template_and_units = { division_template = "Divisão de Cavalaria" disband = yes }
+					load_oob = a_BRA
+				}
+				CAN = {
+					delete_unit_template_and_units = { division_template = "District Militia" disband = yes }
+					delete_unit_template_and_units = { division_template = "Cavalry Militia" disband = yes }
+					delete_unit_template_and_units = { division_template = "Armored-Division" disband = yes }
+					load_oob = a_CAN
+				}
+				ENG = {
+					delete_unit_template_and_units = { division_template = "Motorised Division" disband = yes }
+					delete_unit_template_and_units = { division_template = "Infantry Division" disband = yes }
+					delete_unit_template_and_units = { division_template = "Cavalry Brigade" disband = yes }
+					delete_unit_template_and_units = { division_template = "Tank Brigade" disband = yes }
+					delete_unit_template_and_units = { division_template = "Colonial Garrison" disband = yes }
+					load_oob = a_ENG
+				}
+				FRA = {
+					delete_unit_template_and_units = { division_template = "Division d'Infanterie" disband = yes }
+					delete_unit_template_and_units = { division_template = "Division Coloniale" disband = yes }
+					delete_unit_template_and_units = { division_template = "Division d'Infanterie Motorisée" disband = yes }
+					delete_unit_template_and_units = { division_template = "Division d'Infanterie Alpine" disband = yes }
+					delete_unit_template_and_units = { division_template = "Division de Cavalerie" disband = yes }
+					delete_unit_template_and_units = { division_template = "Division Légère Mécanique" disband = yes }
+					delete_unit_template_and_units = { division_template = "Brigade de Chars de Combat" disband = yes }
+					delete_unit_template_and_units = { division_template = "Brigade Coloniale" disband = yes }
+					load_oob = a_FRA
+				}
+				HUN = {
+					delete_unit_template_and_units = { division_template = "Gyalogdandár" disband = yes }
+					delete_unit_template_and_units = { division_template = "Huszár Dandár" disband = yes }
+					load_oob = a_HUN
+				}
+				IRE = {
+					if = {
+						limit = {
+							has_game_rule = { rule = no_IRE option = no }
+						}
+						delete_unit_template_and_units = { division_template = "Infantry Division" disband = yes }
+						load_oob = a_IRE
+					}
+				}
+				JAP = {
+					delete_unit_template_and_units = { division_template = "Hohei Shidan" disband = yes }
+					delete_unit_template_and_units = { division_template = "Dokuritsu Konsei Ryodan" disband = yes }
+					delete_unit_template_and_units = { division_template = "Kihei Shidan" disband = yes }
+					delete_unit_template_and_units = { division_template = "Jidousha Shidan" disband = yes }
+					delete_unit_template_and_units = { division_template = "Rikusentai" disband = yes }
+					delete_unit_template_and_units = { division_template = "Chuton-chi Shidan" disband = yes }
+					load_oob = a_JAP
+				}
+				MAN = {
+					delete_unit_template_and_units = { division_template = "Bubing Shi" disband = yes }
+					delete_unit_template_and_units = { division_template = "Qu Jun" disband = yes }
+					delete_unit_template_and_units = { division_template = "Qibing Shi" disband = yes }
+					load_oob = a_MAN
+				}
+				MEX = {
+					if = {
+						limit = {
+							has_game_rule = { rule = no_MEX option = no }
+						}
+						delete_unit_template_and_units = { division_template = "División de Infanteria" disband = yes }
+						delete_unit_template_and_units = { division_template = "Brigada Agrarista" disband = yes }
+						delete_unit_template_and_units = { division_template = "División de Caballería" disband = yes }
+						load_oob = a_MEX
+					}
+				}
+				NZL = {
+					if = {
+						limit = {
+							has_game_rule = { rule = no_NZL option = no }
+						}
+						delete_unit_template_and_units = { division_template = "District Force" disband = yes }
+						delete_unit_template_and_units = { division_template = "Armoured Division" disband = yes }
+						load_oob = a_NZL
+					}
+				}
+				RAJ = {
+					delete_unit_template_and_units = { division_template = "Infantry Division" disband = yes }
+					delete_unit_template_and_units = { division_template = "District Garrison" disband = yes }
+					delete_unit_template_and_units = { division_template = "Armored-Division" disband = yes }
+					load_oob = a_RAJ
+				}
+				ROM = {
+					delete_unit_template_and_units = { division_template = "Divizia de Infanterie" disband = yes }
+					delete_unit_template_and_units = { division_template = "Brigada de Munte" disband = yes }
+					delete_unit_template_and_units = { division_template = "Brigada de Cavalerie" disband = yes }
+					delete_unit_template_and_units = { division_template = "Regimentul de Blindate" disband = yes }					
+					load_oob = a_ROM
+				}
+				SAF = {
+					delete_unit_template_and_units = { division_template = "District Force" disband = yes }
+					delete_unit_template_and_units = { division_template = "District Brigade" disband = yes }
+					delete_unit_template_and_units = { division_template = "Armored-Division" disband = yes }
+					load_oob = a_SAF
+				}
+				SIA = {
+					delete_unit_template_and_units = { division_template = "Infantry Division" disband = yes }
+					load_oob = a_SIA
+				}
+				FIN = {
+					delete_unit_template_and_units = { division_template = "Jalkaväkidivisioona" disband = yes }
+					delete_unit_template_and_units = { division_template = "Erillinen Prikaati" disband = yes }
+					delete_unit_template_and_units = { division_template = "Ratsuväkiprikaati" disband = yes }
+					load_oob = a_FIN
+				}
+				SOV = {
+					delete_unit_template_and_units = { division_template = "Strelkovaya Diviziya" disband = yes }
+					delete_unit_template_and_units = { division_template = "Gornostrelkovaya Diviziya" disband = yes }
+					delete_unit_template_and_units = { division_template = "Motostrelkovaya Diviziya" disband = yes }
+					delete_unit_template_and_units = { division_template = "Kavaleriyskaya Diviziya" disband = yes }
+					delete_unit_template_and_units = { division_template = "Mekhanizirovaniy Korpus" disband = yes }
+					delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" disband = yes }
+					delete_unit_template_and_units = { division_template = "NKVD Pogranichnaya Diviziya" disband = yes }
+					load_oob = a_SOV
+				}
+				USA = {
+					delete_unit_template_and_units = { division_template = "Infantry Division" disband = yes }
+					delete_unit_template_and_units = { division_template = "National Guard Division" disband = yes }
+					delete_unit_template_and_units = { division_template = "Cavalry Division" disband = yes }
+					delete_unit_template_and_units = { division_template = "Garrison Brigade" disband = yes }
+					delete_unit_template_and_units = { division_template = "Marine Brigade" disband = yes }
+					load_oob = a_USA
+				}
+			}
+		}
+	}
+}

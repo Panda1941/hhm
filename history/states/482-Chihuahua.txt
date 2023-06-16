@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = MEX
+		add_core_of = NEU
 		buildings = {
 			infrastructure = 2
 		}
@@ -18,6 +19,10 @@ state={
 		}
 		victory_points = {
 			10830 10
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 	}
 

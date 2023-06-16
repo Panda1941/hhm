@@ -1,0 +1,185 @@
+debug_decisions = {
+	decryption_tech_1 = {
+		days_remove = 100
+		modifier = {
+			decryption = 1
+		}
+	}
+
+	encryption_tech_1 = {
+		days_remove = 100
+		modifier = {
+			encryption = 1
+		}
+	}
+	
+	check_noasia = {
+		icon = generic_research
+
+		available = {
+			is_noasia = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = { }
+	}
+	check_debug = {
+		icon = generic_research
+
+		available = {
+			has_global_flag = debug1
+			has_global_flag = debug2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+		}
+	}
+	remove_ai_nation = {
+		icon = generic_research
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			every_country = {
+				remove_ideas = HMM_dont_produce
+			}
+		}
+	}
+	try_spawn_YUG = {
+		icon = generic_research
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_temp_variable = { unitamnt = 34 }
+			107 = {
+				while_loop_effect = {
+					limit = {
+						check_variable = { unitamnt > 0 }
+					}
+					create_unit = {
+						division = "division_template = \"Inf Division\" start_experience_factor = 0.4 start_equipment_factor = 1.0" 
+						owner = YUG
+					}
+					subtract_from_temp_variable = { unitamnt = 1 }
+				}
+			}
+		}
+	}
+	i_hate_spr = {
+		icon = generic_research
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_global_flag = HMM_nationalists_dead
+		}
+	}
+
+	i_love_volns = {
+		icon = generic_research
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+	is_sp = {
+		icon = generic_research
+
+		fire_only_once = no
+		cost = 0
+
+		available = {
+			is_sp = yes
+		}
+
+		complete_effect = {
+			add_political_power = 1
+		}
+	}
+		
+	insta_agency = {
+		icon = generic_research
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			create_intelligence_agency = {
+				name = "A.G.E.N.C.Y"
+				icon = GFX_intelligence_agency_logo_agency
+			}
+		}
+	}
+	insta_agency_1 = {
+		icon = generic_research
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			upgrade_intelligence_agency = upgrade_economy_civilian
+			upgrade_intelligence_agency = upgrade_army_department
+			upgrade_intelligence_agency = upgrade_naval_department
+			upgrade_intelligence_agency = upgrade_airforce_department
+		}
+	}
+	insta_agency_2 = {
+		icon = generic_research
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			upgrade_intelligence_agency = upgrade_blueprint_stealing
+			upgrade_intelligence_agency = upgrade_portable_radios
+			upgrade_intelligence_agency = upgrade_invisible_ink
+			upgrade_intelligence_agency = upgrade_plastic_explosives
+			upgrade_intelligence_agency = upgrade_suicide_pills
+		}
+	}
+	slot_machine = { # we pegi 18 now
+		days_remove = 777
+
+		modifier = {
+			operative_slot = 99
+		}
+	}
+
+	no_asians = {
+		complete_effect = {
+			add_political_power = -150
+		}
+	}
+
+	test_free_france = {
+		allowed = { original_tag = FRA }
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			load_focus_tree = free_french_focus
+		}
+	}
+}

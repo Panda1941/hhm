@@ -8,6 +8,7 @@ state=
 	{
 		owner = JAP
 		add_core_of = JAP
+		add_core_of = NEU
 		buildings = {
 			infrastructure = 2
 			air_base = 3
@@ -21,7 +22,11 @@ state=
 		}	
 		victory_points = {
 			3995 1
-		 }
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
+		}
 
 	}
 	provinces={

@@ -11,14 +11,15 @@ state=
 		buildings = {
 			infrastructure = 2
 			air_base = 3
-			
 			arms_factory = 1
 			industrial_complex = 2
-
 		}
-		
 		victory_points = {
 			7197 10
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 	}
 	provinces={

@@ -2,7 +2,7 @@ state={
 	id=546
 	name="STATE_546"
 	
-	state_category = rural
+	state_category = wasteland
 	resources={
 		rubber=2 # was: 2
 	}
@@ -19,6 +19,7 @@ state={
 			}
 
 		}
+add_core_of = NEU
 	}
 
 	provinces={

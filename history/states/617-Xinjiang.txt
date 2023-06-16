@@ -8,10 +8,13 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
-
 		}
 		victory_points = {
 			4709 5
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 
 	}

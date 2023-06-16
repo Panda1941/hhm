@@ -20,11 +20,16 @@ state={
 			}
 		}
 		add_core_of = MEX
+		add_core_of = NEU
 		victory_points = {
 			12810 5
 		}
 		victory_points = {
 			8089 10
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 	}
 

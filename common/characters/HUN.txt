@@ -381,10 +381,6 @@ characters={
 		}
 	}
 
-
-
-	### MILITARY HIGH COMMAND ###
-
 	HUN_sandor_magyarossy={
 		name=HUN_sandor_magyarossy
 		portraits={
@@ -393,7 +389,7 @@ characters={
 			}
 		}
 		advisor={
-			slot = high_command
+			slot = air_chief
 			idea_token = HUN_sandor_magyarossy
 			allowed = {
 				original_tag = HUN
@@ -407,6 +403,9 @@ characters={
 			}
 		}
 	}
+
+
+	### MILITARY HIGH COMMAND ###
 
 	HUN_gusztav_jany={
 		name=HUN_gusztav_jany
@@ -564,41 +563,6 @@ characters={
 		}
 	}
 
-	HUN_gusztav_gratz={
-		name=HUN_gusztav_gratz
-		portraits={
-			army={
-				small="GFX_idea_HUN_gusztav_gratz"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_gusztav_gratz
-			allowed = {
-				original_tag = HUN
-				has_dlc = "Death or Dishonor"
-			}
-			visible = {
-				NOT = {
-					has_cosmetic_tag = vojvodina
-				}
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				staunch_monarchist 
-			}
-		}
-	}
-
 	HUN_kalman_daranyi={
 		name=HUN_kalman_daranyi
 		portraits={
@@ -633,77 +597,6 @@ characters={
 			}
 			traits = {
 				silent_workhorse 
-			}
-		}
-	}
-
-	HUN_laszlo_rajk={
-		name=HUN_laszlo_rajk
-		portraits={
-			army={
-				small="GFX_idea_HUN_laszlo_rajk"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_laszlo_rajk
-			allowed = {
-				original_tag = HUN
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				communist_revolutionary 
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 100
-					OR = {
-						has_country_flag = HUN_AI_RANDOM_COMMUNIST
-						has_game_rule = {
-							rule = HUN_ai_behavior
-							option = RANDOM
-						}
-					}
-				}
-			}
-		}
-	}
-
-	HUN_jozsef_szell={
-		name=HUN_jozsef_szell
-		portraits={
-			army={
-				small="GFX_idea_HUN_jozsef_szell"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_jozsef_szell
-			allowed = {
-				original_tag = HUN
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				democratic_reformer 
 			}
 		}
 	}

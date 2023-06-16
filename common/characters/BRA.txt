@@ -72,141 +72,59 @@ characters={
 		}
 	}
 
-	BRA_arturo_rawson={
-		name="Arturo Rawson"
+	BRA_eurico_gaspar_dutra={
+		name=BRA_eurico_gaspar_dutra
 		portraits={
 			army={
-				large=GFX_portrait_Arturo_Rawson
-				small=GFX_portrait_Arturo_Rawson_small
+				large=GFX_portrait_BRA_eurico_gaspar_dutra
+				small=GFX_portrait_BRA_eurico_gaspar_dutra_small
 			}
 		}
-		field_marshal={
-			traits={ inflexible_strategist organizer }
+		corps_commander={
+			traits={ ranger }
 			skill=3
-			attack_skill=4
+			attack_skill=2
 			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-	
-	BRA_pedro_perez={
-		name="Pedro Perez"
-		portraits={
-			army={
-				large=GFX_portrait_Juan_Pistarini
-				small=GFX_portrait_Juan_Pistarini_small
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = pedroperez
-			ledger = army
-			allowed = {
-				original_tag = BRA
-			}
-			traits = {
-				army_infantry_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 2.000
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	BRA_gitler={
-		name="Adolfus Gitlerus"
-		portraits={
-			army={
-				large=GFX_portrait_Juan_Pistarini
-				small=GFX_portrait_Juan_Pistarini_small
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = gitler
-			ledger = army
-			allowed = {
-				original_tag = BRA
-			}
-			traits = {
-				army_armored_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 8.000
-			}
-		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	
-	BRA_juan_pistarini={
-		name="Juan Pistarini"
-		portraits={
-			army={
-				large=GFX_portrait_Juan_Pistarini
-				small=GFX_portrait_Juan_Pistarini_small
-			}
-		}
-		corps_commander={
-			traits={ }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
+			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
 		}
 	}
 
-	BRA_abdu={
-		name="Abduzavehk"
+	BRA_mascarenhas_de_morais={
+		name=BRA_mascarenhas_de_morais
 		portraits={
 			army={
-				large=GFX_portrait_Juan_Pistarini
-				small=GFX_portrait_Juan_Pistarini_small
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = abduzavehk
-			ledger = army
-			allowed = {
-				original_tag = BRA
-			}
-			traits = {
-				army_commando_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+				large=GFX_portrait_BRA_mascarenhas_de_morais
+				small=GFX_portrait_BRA_mascarenhas_de_morais_small
 			}
 		}
 		corps_commander={
-			traits={ commando bearer_of_artillery substance_abuser }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			traits={ jungle_rat }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	BRA_augusto_rademaker={
+		name=BRA_augusto_rademaker
+		portraits={
+			army={
+				large=GFX_portrait_BRA_augusto_rademaker
+				small=GFX_portrait_BRA_augusto_rademaker_small
+			}
+		}
+		navy_leader={
+			traits = {navy_career_officer}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
 			legacy_id=-1
 		}
 	}
@@ -260,59 +178,6 @@ characters={
 
 
 	### ARMY CHIEFS ###
-
-	BRA_manuel_a_rodriguez={
-		advisor={
-			
-			
-			slot = army_chief
-			idea_token = ARG_manuel_a_rodriguez
-			allowed = {
-					original_tag = BRA
-				}
-				traits = {
-					army_chief_offensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Manuel A. Rodriguez"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_south_america_3"
-			}
-		}
-	}
-
-	BRA_francisco_m_velez={
-		advisor={
-			
-			
-			slot = high_command
-			idea_token = ARG_francisco_m_velez
-			ledger = army
-				allowed = {
-					original_tag = BRA
-				}
-				traits = {
-					army_regrouping_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Francisco M. Velez"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_south_america_1"
-			}
-		}
-	}
 
 	BRA_joao_neves_da_fontoura={
 		name=BRA_joao_neves_da_fontoura
@@ -472,7 +337,7 @@ characters={
 				original_tag = BRA
 			}
 			traits = {
-				air_chief_reform_2
+				air_chief_night_operations_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -571,7 +436,7 @@ characters={
 				original_tag = BRA
 			}
 			traits = {
-				air_tactical_bombing_2
+				air_air_superiority_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -638,47 +503,5 @@ characters={
 				popular_figurehead 
 			}
 		}		
-	}
-	BRA_war_industrialist={
-		name=BRA_war_industrialist
-		portraits={
-			army={
-				small="GFX_idea_takuo_godo"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ARG_war_industrialist
-			allowed = {
-				original_tag = BRA
-			}
-			traits = {
-				war_industrialist 
-			}
-			ai_will_do = {
-				factor = 3.000
-			}
-		}
-	}
-	BRA_captain_of_industry={
-		name=BRA_captain_of_industry
-		portraits={
-			army={
-				small="GFX_idea_takuo_godo"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ARG_captain_of_industry
-			allowed = {
-				original_tag = BRA
-			}
-			traits = {
-				captain_of_industry
-			}
-			ai_will_do = {
-				factor = 3.000
-			}
-		}
 	}
 }

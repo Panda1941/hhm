@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = AST
+		add_core_of = NEU
 		buildings = {
 			infrastructure = 1
 			1269 = {
@@ -26,6 +27,11 @@ state={
 		victory_points = {
 			4226 1 
 		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
+		}
+		
 
 	}
 

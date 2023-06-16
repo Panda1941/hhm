@@ -1,0 +1,116 @@
+#    ██████╗  █████╗ ███╗   ███╗███████╗██████╗ ██╗   ██╗██╗     ███████╗███████╗
+#   ██╔════╝ ██╔══██╗████╗ ████║██╔════╝██╔══██╗██║   ██║██║     ██╔════╝██╔════╝
+#   ██║  ███╗███████║██╔████╔██║█████╗  ██████╔╝██║   ██║██║     █████╗  ███████╗
+#   ██║   ██║██╔══██║██║╚██╔╝██║██╔══╝  ██╔══██╗██║   ██║██║     ██╔══╝  ╚════██║
+#   ╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗██║  ██║╚██████╔╝███████╗███████╗███████║
+#    ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚══════╝
+
+HMM_no_BUL = {
+    has_global_flag = HMM_HOST_no_BUL
+}
+HMM_no_BUL_ddaywall = {
+    has_global_flag = HMM_HOST_no_BUL_ddaywall
+}
+
+HMM_no_FIN = {
+    has_global_flag = HMM_HOST_no_FIN
+}
+
+HMM_no_BRA = {
+    has_global_flag = HMM_HOST_no_BRA
+}
+
+HMM_no_IRE = {
+    has_global_flag = HMM_HOST_no_IRE
+}
+
+HMM_no_NZL = {
+    has_global_flag = HMM_HOST_no_NZL
+}
+
+HMM_no_MEX = {
+    has_global_flag = HMM_HOST_no_MEX
+}
+
+#    ██████╗ ████████╗██╗  ██╗███████╗██████╗ 
+#   ██╔═══██╗╚══██╔══╝██║  ██║██╔════╝██╔══██╗
+#   ██║   ██║   ██║   ███████║█████╗  ██████╔╝
+#   ██║   ██║   ██║   ██╔══██║██╔══╝  ██╔══██╗
+#   ╚██████╔╝   ██║   ██║  ██║███████╗██║  ██║
+#    ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+
+
+is_axis_member = {
+	OR = {
+        original_tag = GER
+        original_tag = ITA
+        original_tag = HUN
+        original_tag = ROM
+        original_tag = SPR
+        original_tag = BUL
+        original_tag = FIN
+        original_tag = JAP
+        original_tag = SIA 
+        original_tag = MAN
+    }
+}
+is_allies_member = {
+	OR = {
+        original_tag = USA
+        original_tag = ENG
+        original_tag = CAN
+        original_tag = FRA
+        original_tag = RAJ
+        original_tag = AST
+        original_tag = SAF
+        
+        original_tag = BRA
+        original_tag = IRE
+        original_tag = MEX
+    }
+}
+is_allies_member_ai = {
+    OR = {
+        tag = HOL
+        tag = BEL
+        tag = LUX
+        tag = DEN
+        tag = NOR
+        tag = POL
+        tag = INS
+    }
+}
+is_geacps_member = {
+    OR = {
+        original_tag = JAP
+        original_tag = MAN
+    }
+}
+is_neutral_nation = {
+    OR = {
+        original_tag = NEU
+        original_tag = VEN
+        original_tag = ETH
+    }
+}
+
+is_noasia = {
+    has_start_date > 1936.01.01.12 # NOASIA
+}
+
+is_sp = {
+    count_triggers = {
+        amount = 2
+        GER = { is_ai = yes }
+        SOV = { is_ai = yes }
+        ENG = { is_ai = yes }
+    }
+}
+
+HMM_is_sov_claim = { #for fin focustree
+    OR = {
+        state = 146
+        state = 147
+        state = 722
+    }
+}

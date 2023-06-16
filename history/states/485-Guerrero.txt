@@ -13,6 +13,7 @@ state={
 
 	history={
 		owner = MEX
+		add_core_of = NEU
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -29,6 +30,10 @@ state={
 		}
 		victory_points = {
 			8032 1
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 	}
 

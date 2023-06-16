@@ -15,33 +15,21 @@ state={
 		
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 4
+			arms_factory = 2
+			industrial_complex = 2
 			air_base = 3
 			1047 = {
 				naval_base = 5
 				coastal_bunker = 1
 				bunker = 1
 			}
-
 		}
 		victory_points = {
 			1047 5
 		}
-
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				remove_core_of = GXC
-				CHI = { transfer_state = PREV }
-			}
-			JAP = {
-				set_province_controller = 1047
-				set_province_controller = 7152
-				set_province_controller = 11938
-				set_province_controller = 11941
-			} 			
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 	}
 

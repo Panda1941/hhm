@@ -14,9 +14,11 @@ state={
 			infrastructure = 2
 			1399 = {
 				naval_base = 3
-
 			}
-
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 
 	}

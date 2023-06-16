@@ -16,6 +16,10 @@ state={
 		victory_points = {
 			2086 15 
 		}
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = ENG
+		}
 
 	}
 

@@ -8,11 +8,16 @@ state={
 
 	history={
 		owner = USA
+		add_core_of = NEU
 		buildings = {
 			infrastructure = 2
 			13050 = {
 				naval_base = 1
 			}
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 	}
 

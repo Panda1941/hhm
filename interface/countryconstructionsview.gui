@@ -6,7 +6,7 @@ guiTypes = {
 		show_position = { x=-9 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0	
+		animation_time = 300	
 		size = { width=550 height=100%% }
 		clipping = no
 		
@@ -337,7 +337,7 @@ guiTypes = {
 		
 		iconType ={
 			name ="tutorial_glow"
-			spriteType = "GFX_tutorial_building_icon_glow"
+			spriteType = ""
 			position = { x= 491 y = 247 }
 			Orientation = "UPPER_LEFT"
 			hide = yes
@@ -361,7 +361,7 @@ guiTypes = {
 		iconType = {
 			name = "start_construction_overlay"
 			position = { x = -1 y = 0 }
-			quadTextureSprite = "GFX_construction_glow_overlay"
+			quadTextureSprite = ""
 		}
 	}
 	

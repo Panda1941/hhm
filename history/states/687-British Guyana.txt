@@ -3,13 +3,14 @@ state={
 	name="STATE_687"
 	manpower = 309000
 	
-	state_category = pastoral
+	state_category = wasteland
 	
 	resources={
 		aluminium=64 # was: 112
 	}
 
 	history={
+add_core_of = NEU
 		owner = ENG
 		victory_points = {
 			4982 1

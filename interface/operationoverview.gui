@@ -12,7 +12,7 @@ guiTypes = {
 		#show_position = { x= 535 y = 78 }
 		#show_animation_type = decelerated
 		#hide_animation_type = accelerated
-		animation_time = 0
+		animation_time = 300
 		click_to_front = yes
 		moveable = yes 
 

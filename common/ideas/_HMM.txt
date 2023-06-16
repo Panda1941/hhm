@@ -1,0 +1,291 @@
+ideas = {
+	hidden_ideas = {
+		HMM_gamerules_pacific = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				special_forces_min = 336
+			}
+		}
+
+		HMM_gamerules_bal = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				send_volunteer_size = -69420
+			}
+		}
+
+		HMM_war_prop = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				war_support_weekly = 0.01
+			}
+		}
+        HMM_dont_produce = { # ai_limiter
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_factory_max_efficiency_factor = -1
+                production_factory_start_efficiency_factor = -1
+                production_factory_efficiency_gain_factor = -1
+                consumer_goods_factor = 1
+				political_power_gain = -5
+				training_time_factor = 1000
+			}
+		}
+        fixer_for_greece_e = { # equalizer of pp for greece so it can click the decisions for pp
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				political_power_gain = 4
+			}
+		}
+
+		HMM_i_love_printers = { #HMMTODO remove if fixed
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				equipment_conversion_speed = -20.00 #supposedly this doesnt affect navy, pog
+			}
+		}
+
+	}
+    country = {
+		HMM_spectator = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = received_attache
+			
+			modifier = {
+				air_volunteer_cap = -69420
+			}
+		}
+		HMM_JAP_spymaster = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_spy_political
+			
+			modifier = {
+				operative_slot = 1
+			}
+		}
+		SOV_cheap_trade = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = can_wartime_prices_and_trade_board
+			
+			targeted_modifier = {
+				tag = SOV
+				trade_cost_for_target_factor = -0.5  #16 ressources for 1 civ 
+			}
+		}
+		no_tradeback = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				GER = {has_completed_focus = GER_danzig_or_war}
+			}
+
+			removal_cost = -1
+
+			picture = generic_flexible_foreign_policy #FRA_market_dynamism #generic_political_support #generic_build_infrastructure
+
+			modifier = {
+				production_lack_of_resource_penalty_factor = -1
+				min_export = -1
+				air_fuel_consumption_factor = -0.99
+				navy_fuel_consumption_factor = -0.99
+			}
+		}
+
+		peacetime_training = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				training_time_army_factor = -0.70
+				air_accidents_factor = -1.25
+				naval_accidents_chance = -1
+				air_fuel_consumption_factor = -0.99
+				navy_fuel_consumption_factor = -0.99
+				mobilization_speed = 2.0
+			}
+		}
+
+		#	 █████╗ ██╗     ██╗     ██╗███████╗███████╗
+		#	██╔══██╗██║     ██║     ██║██╔════╝██╔════╝
+		#	███████║██║     ██║     ██║█████╗  ███████╗
+		#	██╔══██║██║     ██║     ██║██╔══╝  ╚════██║
+		#	██║  ██║███████╗███████╗██║███████╗███████║
+		#	╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚══════╝╚══════╝
+		                                           
+
+		USA_UK_civboost = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1 
+
+			picture = can_wartime_prices_and_trade_board
+
+			modifier = {
+				consumer_goods_factor = 0.06
+			}
+		}
+		UK_Dont_Cap = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_caved_to_the_british
+
+			modifier = {
+				army_core_defence_factor = 0.4
+				army_core_attack_factor = 0.4
+			}
+		}
+		JAP_Dont_Cap = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus #imperial_glory_idea
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+			}
+		}
+		UK_noasia_consumer_goods = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		UK_noasia_plane_production = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_air
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.25 instant = yes
+				}
+			}
+		}
+
+		#	 █████╗ ██╗  ██╗██╗███████╗
+		#	██╔══██╗╚██╗██╔╝██║██╔════╝
+		#	███████║ ╚███╔╝ ██║███████╗
+		#	██╔══██║ ██╔██╗ ██║╚════██║
+		#	██║  ██║██╔╝ ██╗██║███████║
+		#	╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝  
+		
+		FIN_axis_voln_agreement = {
+			picture = tur_sub_zero_survival_training
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_size = 24
+			}
+		}
+
+    }
+}

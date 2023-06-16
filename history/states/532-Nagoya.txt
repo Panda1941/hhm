@@ -22,11 +22,9 @@ state={
 		victory_points = {
 			10125 25
 		}
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-				industrial_complex = 3
-			}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 
 	}

@@ -1,0 +1,41 @@
+HMM_menu = {
+	priority = 1000
+	icon = GFX_decision_category_military_operation
+
+	allowed = { }
+}
+HMM_wargoals = {
+	priority = 1000
+	icon = GFX_decision_category_ger_reichskommissariats
+}
+HMM_war_in_asia = {
+	priority = 1000
+	icon = GFX_decision_category_jap_intervene_in_china
+}
+HMM_templates = {
+	priority = -1
+	icon = GFX_decision_category_military_operation
+
+	allowed = {
+		always = yes
+	}
+}
+HMM_host = {
+	icon = GFX_decision_category_hol_obtain_foreign_colonial_investments
+	priority = -1000
+
+	visible = {
+		has_country_flag = host
+	}
+}
+HMM_noasia = {
+	icon = GFX_decision_category_hol_obtain_foreign_colonial_investments
+	priority = 10
+
+	allowed = {
+		is_noasia = yes
+	}
+	visible = {
+		is_noasia = yes
+	}
+}

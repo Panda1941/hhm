@@ -4,10 +4,11 @@ state={
 	name="STATE_135"
 	manpower = 941400
 
-	state_category = city
+	state_category = town
 
 	history={
 		owner = IRE
+		add_core_of = NEU
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
@@ -19,6 +20,9 @@ state={
 			6313 1 #Limerick
 		}
 		add_core_of = IRE
+		1936.1.1.13 = {
+			owner = NEU
+		}
 	}
 
 	provinces={

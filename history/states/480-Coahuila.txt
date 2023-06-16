@@ -19,6 +19,7 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = MEX
+		add_core_of = NEU
 		victory_points = {
 			12835 10
 		}
@@ -31,6 +32,10 @@ state={
 		#victory_points = {
 		#	12811 1
 		#}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
+		}
 
 	}
 

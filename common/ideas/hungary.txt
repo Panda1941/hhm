@@ -2,944 +2,6 @@ ideas = {
 
 	country = {
 
-		HUN_socialist_revolution = {
-			
-			picture = gre_agricultural_communes
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				war_support_factor = 0.1
-				production_speed_buildings_factor = 0.12
-				consumer_goods_factor = 0.03
-				communism_drift = 0.16
-			}
-		}
-		
-		HUN_socialist_revolution2 = {
-			
-			picture = gre_agricultural_communes
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				war_support_factor = 0.15
-				production_speed_buildings_factor = 0.06
-				consumer_goods_factor = 0.03
-				communism_drift = 0.04
-			}
-		}
-		
-		HUN_socialist_revolution3 = {
-			
-			picture = gre_agricultural_communes
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				war_support_factor = 0.05
-				production_speed_buildings_factor = 0.06
-				consumer_goods_factor = 0.02
-				communism_drift = 0.08
-			}
-		}
-		
-		HUN_corrupt_techocracy = {
-			
-			picture = ETH_corrupt_bureaucracy
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				research_speed_factor = -0.25
-			}
-		}
-		
-
-		HUN_red_army = {
-			
-			picture = por_nation_in_arms
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				army_org_factor = 0.05
-				experience_loss_factor = -0.2
-				conscription = 0.05
-				conscription_factor = 0.1
-			}
-		}
-
-		
-		HUN_stablizing_the_government = {
-			
-			picture = por_nation_in_arms
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_weekly = 0.004
-				political_power_cost = 0.25
-			}
-		}
-
-
-		HUN_red_hungary = {
-			
-			picture = tur_kemalism_with_socialist_characteristics
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				justify_war_goal_time = -0.20
-			}
-		}
-		
-		
-		
-		
-
-		HUN_balanced_budget = {
-			
-			picture = generic_goods_red_bonus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				political_power_factor = 0.1
-				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = -0.05
-			}
-		}
-
-		HUN_memories_of_the_empire = {
-
-			picture = eng_imperial_conscription
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.20
-				neutrality_drift = 0.08
-			}
-		}
-
-		HUN_memories_of_the_empire_2 = {
-
-			picture = eng_imperial_conscription
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.10
-				neutrality_drift = 0.08
-			}
-		}
-
-		HUN_memories_of_the_empire_3 = {
-
-			picture = eng_imperial_conscription
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				#stability_factor = 0.00
-				neutrality_drift = 0.08
-			}
-		}
-
-		HUN_memories_of_the_empire_4 = {
-
-			picture = eng_imperial_conscription
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				#stability_weekly = 0.005
-				stability_factor = 0.05
-				political_power_cost = 0.3
-				neutrality_drift = 0.12
-				production_speed_buildings_factor = 0.075
-			}
-		}
-
-		HUN_memories_of_the_empire_5 = {
-
-			picture = eng_imperial_conscription
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = 0.05
-				political_power_factor = 0.1
-				neutrality_drift = 0.08
-			}
-		}
-
-		HUN_memories_of_the_empire_6 = {
-
-			picture = eng_imperial_conscription
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				political_power_factor = -0.1
-				neutrality_drift = 0.08
-			}
-		}
-
-
-
-
-
-		HUN_the_two_monarchs = {
-
-			picture = hun_hungarian_monarchy_habsburg
-
-			allowed = {
-				always = yes
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = 0.05
-				consumer_goods_factor = -0.04
-			}
-		}
-
-
-
-
-
-
-		HUN_low_popular_support = {
-
-			picture = ast_classify_aliens
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.05
-				consumer_goods_factor = 0.04
-			}
-		}
-
-		HUN_low_popular_support_2 = {
-
-			picture = ast_classify_aliens
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.02
-				consumer_goods_factor = 0.00
-			}
-		}
-
-		HUN_low_popular_support_3 = {
-
-			picture = ast_classify_aliens
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = 0.03
-				consumer_goods_factor = -0.03
-			}
-		}
-
-
-		HUN_saddest_day_in_hungary = {
-
-			picture = usa_great_depression_3
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.20
-				political_power_factor = -0.5
-				consumer_goods_factor = 0.20
-			}
-		}
-
-		HUN_saddest_day_in_hungary_2 = {
-
-			picture = usa_great_depression
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.10
-				political_power_factor = -0.25
-				consumer_goods_factor = 0.1
-			}
-		}
-
-		HUN_saddest_day_in_hungary_3 = {
-
-			picture = general_staff
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = 0.05
-				political_power_factor = 0.1
-				consumer_goods_factor = -0.03
-			}
-		}
-
-
-
-
-
-
-
-		HUN_noble_opposition = {
-
-			picture = generic_king_handled
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.15
-				political_power_factor = -0.10
-				consumer_goods_factor = 0.08
-				production_speed_buildings_factor = -0.20
-			}
-		}
-
-		HUN_noble_opposition_2 = {
-
-			picture = generic_king_handled
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.075
-				political_power_factor = -0.05
-				consumer_goods_factor = 0.04
-				production_speed_buildings_factor = -0.10
-			}
-		}
-
-		HUN_noble_opposition_3 = {
-
-			picture = generic_king_handled
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				#stability_factor = 0.05
-				political_power_factor = 0.1
-				production_speed_buildings_factor = 0.05
-			}
-		}
-
-		HUN_popular_support = {
-
-			picture = generic_production_bonus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				#stability_factor = 0.01
-				production_factory_max_efficiency_factor = -0.05
-				#industrial_capacity_factory = 0.1
-				consumer_goods_factor = 0.01
-			}
-		}
-
-		HUN_popular_support_2 = {
-
-			picture = generic_production_bonus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = 0.05
-				production_factory_max_efficiency_factor = -0.05
-				industrial_capacity_factory = 0.15
-				consumer_goods_factor = 0.02
-			}
-		}
-
-		HUN_popular_support_3 = {
-
-			picture = generic_production_bonus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = 0.10
-				production_factory_max_efficiency_factor = -0.1
-				industrial_capacity_factory = 0.2
-				consumer_goods_factor = 0.05
-			}
-		}
-
-		HUN_true_hungary = {
-
-			picture = ast_abandon_the_westminster_system_fascism
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				war_support_factor = 0.25
-				stability_factor = 0.10
-				consumer_goods_factor = -0.03
-				production_factory_max_efficiency_factor = -0.05
-			}
-		}
-
-		HUN_hungarian_nationalism = {
-
-			picture = FRA_scw_intervention_nationalists_focus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				conscription = 0.03
-				conscription_factor = 0.09
-				mobilization_speed = 0.25
-				non_core_manpower = -0.8
-				#intelligence_agency_defense = 1.0
-				army_core_defence_factor = 0.1
-				required_garrison_factor = 0.1
-				compliance_growth_on_our_occupied_states = -0.5
-			}
-		}
-
-
-
-
-
-
-
-
-		HUN_interventionism_pan = {
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			picture = FRA_scw_intervention_republicans_focus
-
-			modifier = {
-				stability_factor = 0.05
-				production_speed_buildings_factor = 0.10
-				consumer_goods_factor = -0.05
-			}
-		}
-
-		HUN_interventionism_pan_2 = {
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			picture = FRA_scw_intervention_republicans_focus
-
-			modifier = {
-				stability_factor = 0.05
-				consumer_goods_factor = -0.05
-				production_speed_buildings_factor = 0.15
-			}
-		}
-
-
-
-
-
-
-
-		
-
-		HUN_hungarian_ss = {
-
-			picture = FRA_scw_intervention_nationalists_focus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				conscription = 0.04
-				conscription_factor = 0.10
-				army_core_attack_factor = 0.10
-				army_core_defence_factor = 0.10
-				coordination_bonus = 0.02
-			}
-		}
-
-
-
-
-
-		HUN_diplomatic_revision = {
-
-			picture = FRA_scw_intervention_nationalists_focus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				political_power_factor = -0.15
-				research_speed_factor = -0.3
-			}
-		}
-
-		HUN_diplomatic_revision_2 = {
-
-			picture = FRA_scw_intervention_nationalists_focus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = 0.05
-				research_speed_factor = -0.1
-			}
-		}
-
-		HUN_greater_hungary_idea = {
-
-			picture = man_five_year_plan_industry
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				production_speed_arms_factory_factor = 0.10
-				industrial_capacity_factory = 0.10
-			}
-		}
-
-
-
-
-
-
-
-		HUN_german_scientists = {
-
-			picture = man_five_year_plan_tank
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				political_power_factor = -0.15
-				research_speed_factor = 0.06
-				experience_gain_army  = 0.04
-			}
-		}
-
-		HUN_german_factories = {
-
-			picture = man_five_year_plan_tank
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			equipment_bonus = {
-				light_tank_chassis = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				medium_tank_chassis = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				heavy_tank_chassis = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-
-			#modifier = {
-			#	industrial_capacity_factory = 0.05
-			#}
-		}
-
-		HUN_no_free_man = {
-
-			picture = hol_liberation
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				political_power_factor = -0.20
-				#industrial_capacity_factory = 0.05
-				license_tech_difference_speed = 0.15
-				weekly_manpower = 600
-			}
-		}
-
-		HUN_hungarian_exports = {
-
-			picture = man_five_year_plan_industry
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				industry_repair_factor = 0.10
-				industrial_capacity_factory = 0.025
-				license_tech_difference_speed = 0.1
-			}
-		}
-
-		HUN_german_hungarian_unity = {	
-
-			picture = man_five_year_plan_industry
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				production_speed_infrastructure_factor = 0.15
-				industrial_capacity_factory = 0.05
-			}
-		}
-
-		HUN_concentration_camps = {
-
-			picture = generic_production_bonus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.1
-				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.10
-			}
-		}
-
-		HUN_concentration_camps_2 = {
-
-			picture = generic_production_bonus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.15
-				production_speed_buildings_factor = 0.1
-				industrial_capacity_factory = 0.15
-			}
-		}
-
-		HUN_concentration_camps_3 = { #large
-
-			picture = generic_production_bonus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.20
-				production_speed_buildings_factor = 0.1
-				production_speed_arms_factory_factor = 0.10
-				industrial_capacity_factory = 0.05
-			}
-		}
-
-		HUN_concentration_camps_4 = { #efficient
-
-			picture = generic_production_bonus
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				stability_factor = -0.20
-				#production_speed_buildings_factor = 0.04
-				industrial_capacity_factory = 0.15
-				production_factory_max_efficiency_factor = 0.1
-			}
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-		HUN_payment_for_gyori_program = {
-
-			picture = ast_all_in
-
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				
-			}
-
-			modifier = {
-				production_speed_buildings_factor = -0.05
-				political_power_factor = -0.1
-				consumer_goods_factor = 0.02
-			}
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		HUN_treaty_of_triannon = {
 			allowed = {
 				original_tag = HUN
@@ -1029,7 +91,26 @@ ideas = {
 			
 			modifier = {
 				neutrality_drift = 0.02
-				stability_factor = -0.1
+				stability_factor = 0.1
+			}
+		}
+
+		HUN_hungarian_monarchy_democratic = {			
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			available = {
+				always = no
+			}
+			
+			modifier = {
+				democratic_drift = 0.02
+				stability_factor = 0.1
 			}
 		}
 
@@ -1053,9 +134,8 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = -0.05
-				fascism_drift = 0.04
-				neutrality_drift = 0.06
+				fascism_drift = 0.034
+				stability_factor = 0.1
 			}
 		}
 
@@ -1078,6 +158,7 @@ ideas = {
 				democratic_drift = 0.02
 				fascism_drift = -0.01
 				communism_drift = -0.01
+				stability_factor = 0.1
 			}
 		}
 
@@ -1097,10 +178,10 @@ ideas = {
 			}
 			
 			modifier = {
-				neutrality_drift = 0.04
+				neutrality_drift = 0.02
+				stability_factor = 0.1
 				political_power_factor = 0.2
 				generate_wargoal_tension = -0.4
-				stability_factor = -0.05
 			}
 		}
 
@@ -1140,7 +221,7 @@ ideas = {
 			picture = generic_fascism_drift_2
 			
 			modifier = {
-				fascism_drift = 0.11
+				fascism_drift = 0.03
 			}
 		}
 
@@ -1169,6 +250,31 @@ ideas = {
 			}
 		}
 
+		HUN_interventionism_communism = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			picture = FRA_scw_intervention_nationalists_focus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				communism_drift = 0.02
+			}
+		}
+
+		HUN_the_hungarian_red_army = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			picture = generic_communist_army
+
+			modifier = {
+				conscription = 0.05
+			}
+		}
+
 		HUN_secret_rearmament = {
 			allowed = {
 				original_tag = HUN
@@ -1179,9 +285,6 @@ ideas = {
 					has_idea = disarmed_nation 
 					has_idea = volunteer_only 
 				}
-				NOT = {
-					date > 1939.01.01
-				}
 			}
 
 			allowed_civil_war = {
@@ -1189,8 +292,8 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription = 0.01
-				industrial_capacity_factory = 0.1
+				conscription = 0.0025
+				industrial_capacity_factory = 0.05
 				custom_modifier_tooltip = HUN_secret_rearmament_tt_2
 			}
 		}
@@ -1209,7 +312,6 @@ ideas = {
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
-				research_speed_factor = 0.1
 			}
 		}
 
@@ -1273,13 +375,13 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				light_tank_artillery_chassis = {
+				light_tank_artillery_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				medium_tank_artillery_chassis = {
+				medium_tank_artillery_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				heavy_tank_artillery_chassis = {
+				heavy_tank_artillery_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -1308,7 +410,7 @@ ideas = {
 			# made light bombers Weiss WM-21
 						
 			ai_will_do = {
-				factor = 10
+				factor = 1
 			}
 		}
 	}
@@ -1361,30 +463,6 @@ ideas = {
 			}
 			
 			traits = { industrial_concern }
-		}
-
-		HUN_gyori = {
-			
-			picture = generic_industrial_concern_2
-
-			allowed = {
-				original_tag = HUN
-			}
-
-			available = {
-				NOT = { 
-					has_idea = HUN_treaty_of_triannon
-				}
-			}
-			
-			cost = 600
-			removal_cost = 10
-			
-			research_bonus = {
-				industry = 0.20
-			}
-			
-			traits = { gyori_program }
 		}
 	}
 

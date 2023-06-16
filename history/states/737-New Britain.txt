@@ -3,6 +3,7 @@ state={
 	name="STATE_737"
 
 	history={
+		add_core_of = NEU
 		owner = AST
 		buildings = {
 			infrastructure = 1
@@ -24,6 +25,10 @@ state={
 		
 		victory_points = {
 			7251 5 
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 		
 	}

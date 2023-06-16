@@ -13,8 +13,10 @@ state={
 
 	history={
 		owner = NOR
+		add_extra_state_shared_building_slots = 1
 		buildings = {
 			infrastructure = 2
+			arms_factory = 2
 			air_base = 1
 			192 = {
 				naval_base = 3
@@ -25,15 +27,6 @@ state={
 			11050 = {
 				naval_base = 2
 			}
-		}
-		victory_points = {
-			192 1
-		}
-		victory_points = {
-			9116 1
-		}
-		victory_points = {
-			11050 1
 		}
 		add_core_of = NOR
 	}

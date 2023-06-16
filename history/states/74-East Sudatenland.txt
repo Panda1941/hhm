@@ -15,7 +15,19 @@ state=
 		owner = CZE
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
+			arms_factory = 2
+			421 = {
+				bunker = 7
+			}
+			6485 = {
+				bunker = 7
+			}
+			3414 = {
+				bunker = 7
+			}
+			3583 = {
+				bunker = 7
+			}
 		}
 		add_core_of = CZE
 

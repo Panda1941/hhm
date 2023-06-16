@@ -1,0 +1,39 @@
+E_token_airforce = {
+	name = E_OPERATION_TOKEN_AIRFORCE
+	desc = E_OPERATION_TOKEN_AIRFORCE_DESC
+	icon = GFX_infiltrate_air_bg
+	text_icon = GFX_text_infiltrate_air_token
+	
+	intel_source = airforce
+	intel_gain = 100
+}
+
+E_token_army = {
+	name = E_OPERATION_TOKEN_ARMY
+	desc = E_OPERATION_TOKEN_DESC
+	icon = GFX_infiltrate_army_bg
+	text_icon = GFX_text_infiltrate_army_token
+	
+	intel_source = army
+	intel_gain = 100
+}
+
+E_token_civilian = {
+	name = E_OPERATION_TOKEN_CIVILIAN
+	desc = E_OPERATION_TOKEN_CIVILIAN_DESC
+	icon = GFX_infiltrate_civilian_bg
+	text_icon = GFX_text_infiltrate_civilian_token
+	
+	intel_source = civilian
+	intel_gain = 100
+}
+
+E_token_navy = {
+	name = E_OPERATION_TOKEN_NAVY
+	desc = E_OPERATION_TOKEN_NAVY_DESC
+	icon = GFX_infiltrate_navy_bg
+	text_icon = GFX_text_infiltrate_navy_token
+	
+	intel_source = navy
+	intel_gain = 100
+}

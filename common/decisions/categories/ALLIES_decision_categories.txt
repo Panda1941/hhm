@@ -1,0 +1,96 @@
+################
+##### ENG ######
+################
+
+ENG_imperial_conference_decision = {
+	icon = eng_imperial_conference
+
+	allowed = {
+		original_tag = ENG
+	}
+}
+
+ENG_enforce_the_naval_treaties = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = ENG
+	}
+}
+
+################
+##### USA ######
+################
+
+################
+##### USA ######
+################
+
+USA_war_measures = {
+	allowed = {
+		original_tag = USA
+	}
+}
+USA_aid_britain = {
+
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		ENG = {
+			has_war = yes
+			has_government = ROOT
+		}
+	}
+}
+USA_congress = {
+	icon = usa_congress
+	allowed = {
+		original_tag = USA
+	}
+
+	scripted_gui = usa_congress_decision_ui	
+
+	priority = 85
+}
+USA_war_plans = {
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		has_completed_focus = USA_war_plans_division
+	}
+}
+
+################
+##### FRA ######
+################
+
+FRA_civil_unrest_category = {
+	icon = power_struggle
+	allowed = {
+		original_tag = FRA
+	}
+}
+
+FRA_spanish_intervention_category = {
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_intervention_in_spain
+		SPR_scw_in_progress = yes
+	}
+}
+
+FRA_weapons_purchases_category = {
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_country_flag = FRA_arms_purchases_permitted
+		NOT = {
+			has_war_with = USA
+		}
+	}
+}

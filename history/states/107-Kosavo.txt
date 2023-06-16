@@ -1,13 +1,13 @@
 
 state={
 	id=107
-	name="STATE_107"
+	name="Serbia (strong)"
 
 	history={
 		owner = YUG
 		buildings = {
 			infrastructure = 3
-			arms_factory = 3
+			arms_factory = 6
 			industrial_complex = 4
 			air_base = 5
 

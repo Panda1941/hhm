@@ -8,7 +8,7 @@ guiTypes = {
 		size = { width=435 height=60 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0
+		animation_time = 300
 		Orientation = center_down
 		clipping = no
 
@@ -20,13 +20,13 @@ guiTypes = {
 		iconType = {
 			name = "background_button"
 			spriteType = "GFX_NVM_bg"
-			position = {x=68 y=-8}
+			position = {x=0 y=0}
 			alwaystransparent = yes
 		}
 
 		instantTextboxType = {
 			name = "taskforces_selected"
-			position = {x=80 y=-1}
+			position = {x=22 y=7}
 			font = "hoi_18mbs"
 			maxWidth = 290
 			maxHeight = 23
@@ -51,8 +51,8 @@ guiTypes = {
 			spacing = 8.0
 		}
 
-		@nv_mission_btn_training_x=78
-		@nv_mission_btn_y=20
+		@nv_mission_btn_training_x=10
+		@nv_mission_btn_y=28
 
 		buttonType = {
 			name = "btn_mission7"
@@ -87,14 +87,14 @@ guiTypes = {
 
 		buttonType = {
 			name = "btn_mission1"
-			position = {x=128 y=@nv_mission_btn_y}
+			position = {x=60 y=@nv_mission_btn_y}
 			spriteType = "GFX_NV_btn_patrol"
 			shortcut = "z"
 			clicksound = click_default
 		}
 		iconType = {
 			name = "hint_highlight_mission_1"
-			position = {x=128 y=@nv_mission_btn_y}
+			position = {x=60 y=@nv_mission_btn_y}
 			spriteType = "GFX_naval_mission_btn_highlight"
 			alwaystransparent = yes
 			hide = yes
@@ -102,20 +102,20 @@ guiTypes = {
 		iconType = {
 			name ="btn_mission1_warn"
 			spriteType = "GFX_btn_yellow_glow"
-			position = {x=128 y=@nv_mission_btn_y}
+			position = {x=60 y=@nv_mission_btn_y}
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "btn_mission2"
-			position = {x=178 y=@nv_mission_btn_y}
+			position = {x=110 y=@nv_mission_btn_y}
 			spriteType = "GFX_NV_btn_strike_force"
 			shortcut = "x"
 			clicksound = click_default
 		}
 		iconType = {
 			name = "hint_highlight_mission_2"
-			position = {x=178 y=@nv_mission_btn_y}
+			position = {x=110 y=@nv_mission_btn_y}
 			spriteType = "GFX_naval_mission_btn_highlight"
 			alwaystransparent = yes
 			hide = yes
@@ -123,20 +123,20 @@ guiTypes = {
 		iconType = {
 			name ="btn_mission2_warn"
 			spriteType = "GFX_btn_yellow_glow"
-			position = {x=178 y=@nv_mission_btn_y}
+			position = {x=110 y=@nv_mission_btn_y}
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "btn_mission3"
-			position = {x=228 y=@nv_mission_btn_y}
+			position = {x=160 y=@nv_mission_btn_y}
 			spriteType = "GFX_NV_btn_convoy_raid"
 			shortcut = "c"
 			clicksound = click_default
 		}
 		iconType = {
 			name = "hint_highlight_mission_3"
-			position = {x=228 y=@nv_mission_btn_y}
+			position = {x=160 y=@nv_mission_btn_y}
 			spriteType = "GFX_naval_mission_btn_highlight"
 			alwaystransparent = yes
 			hide = yes
@@ -144,20 +144,20 @@ guiTypes = {
 		iconType = {
 			name ="btn_mission3_warn"
 			spriteType = "GFX_btn_yellow_glow"
-			position = {x=228 y=@nv_mission_btn_y}
+			position = {x=160 y=@nv_mission_btn_y}
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "btn_mission4"
-			position = {x=278 y=@nv_mission_btn_y}
+			position = {x=210 y=@nv_mission_btn_y}
 			spriteType = "GFX_NV_btn_convoy_escort"
 			shortcut = "v"
 			clicksound = click_default
 		}
 		iconType = {
 			name = "hint_highlight_mission_4"
-			position = {x=278 y=@nv_mission_btn_y}
+			position = {x=210 y=@nv_mission_btn_y}
 			spriteType = "GFX_naval_mission_btn_highlight"
 			alwaystransparent = yes
 			hide = yes
@@ -165,19 +165,19 @@ guiTypes = {
 		iconType = {
 			name ="btn_mission4_warn"
 			spriteType = "GFX_btn_yellow_glow"
-			position = {x=278 y=@nv_mission_btn_y}
+			position = {x=210 y=@nv_mission_btn_y}
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "btn_mission5"
-			position = {x=10000 y=@nv_mission_btn_y}
+			position = {x=0 y=10000}
 			spriteType = "GFX_NV_btn_mines_planting"
 			clicksound = click_default
 		}
 		iconType = {
 			name = "hint_highlight_mission_5"
-			position = {x=10000 y=@nv_mission_btn_y}
+			position = {x=0 y=10000}
 			spriteType = "GFX_naval_mission_btn_highlight"
 			alwaystransparent = yes
 			hide = yes
@@ -185,19 +185,19 @@ guiTypes = {
 		iconType = {
 			name ="btn_mission5_warn"
 			spriteType = "GFX_btn_yellow_glow"
-			position = {x=10000 y=@nv_mission_btn_y}
+			position = {x=0 y=10000}
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "btn_mission6"
-			position = {x=10000 y=@nv_mission_btn_y}
+			position = {x=0 y=10000}
 			spriteType = "GFX_NV_btn_mines_sweeping"
 			clicksound = click_default
 		}
 		iconType = {
 			name = "hint_highlight_mission_6"
-			position = {x=10000 y=@nv_mission_btn_y}
+			position = {x=0 y=10000}
 			spriteType = "GFX_naval_mission_btn_highlight"
 			alwaystransparent = yes
 			hide = yes
@@ -205,20 +205,20 @@ guiTypes = {
 		iconType = {
 			name ="btn_mission6_warn"
 			spriteType = "GFX_btn_yellow_glow"
-			position = {x=10000 y=@nv_mission_btn_y}
+			position = {x=0 y=10000}
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "btn_mission9"
-			position = {x=328 y=@nv_mission_btn_y}
+			position = {x=360 y=@nv_mission_btn_y}
 			spriteType = "GFX_NV_btn_naval_invasion_support"
 			shortcut = "a"
 			clicksound = click_default
 		}
 		iconType = {
 			name = "hint_highlight_mission_9"
-			position = {x=328 y=@nv_mission_btn_y}
+			position = {x=360 y=@nv_mission_btn_y}
 			spriteType = "GFX_naval_mission_btn_highlight"
 			alwaystransparent = yes
 			hide = yes
@@ -226,21 +226,21 @@ guiTypes = {
 		iconType = {
 			name ="btn_mission9_warn"
 			spriteType = "GFX_btn_yellow_glow"
-			position = {x=328 y=@nv_mission_btn_y}
+			position = {x=360 y=@nv_mission_btn_y}
 			alwaystransparent = yes
 		}
 
 
 		buttonType = {
 			name = "btn_mission0"
-			position = {x=383 y=26}
+			position = {x=466 y=34}
 			spriteType = "GFX_NV_btn_hold"
 			clicksound = click_default
 		}
 
 		buttonType = {
 			name = "btn_remove_regions"
-			position = {x=413 y=26}
+			position = {x=496 y=34}
 			spriteType = "GFX_NV_btn_remove_regions"
 			clicksound = click_default
 			shortcut = "DEL"
@@ -271,7 +271,7 @@ guiTypes = {
 		size = { width=500 height=86%% }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0
+		animation_time = 300
 		Orientation = upper_left
 		clipping = no
 
@@ -1349,7 +1349,7 @@ guiTypes = {
 		size = { width=535 height=58 } # The height is actually not the height since that is dynamic, the height is this value + number of entries (up to maximum size of "ships" window below)
 		orientation = center
 		moveable = yes
-		fade_time = 1
+		fade_time = 300
 		fade_type = linear
 
 		background = {
@@ -1413,7 +1413,7 @@ guiTypes = {
 		size = { width=524 height=161 } # The height is actually not the height since that is dynamic, the height is this value + number of entries (up to maximum size of "ships" window below)
 		orientation = center
 		moveable = yes
-		fade_time = 1
+		fade_time = 300
 		fade_type = linear
 		clipping = no
 
@@ -1584,7 +1584,7 @@ guiTypes = {
 				show_position = { x = 10 y = 27 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 0
+				animation_time = 150
 				size = { width=332 height=325 }
 				verticalScrollbar = "right_vertical_slider"
 				margin = { top = 7 bottom = 7 right = 6 }
@@ -1981,7 +1981,7 @@ guiTypes = {
 		show_position = { x=500 y=78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0
+		animation_time = 300
 		size = { width=375 height=70%% }
 
 		background = {
@@ -2031,7 +2031,7 @@ guiTypes = {
 		show_position = { x=510 y =81 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0
+		animation_time = 300
 		size = { width=495 height=50%% }
 		click_to_front = yes
 

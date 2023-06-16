@@ -8,11 +8,11 @@ state=
 		oil=12 # was: 18
 	}
 	
-	state_category = rural
+	state_category = wasteland 
 
 	history=
 	{
-		owner = ENG
+owner = ENG
 		victory_points = {
 			7371 1
 		}
@@ -28,6 +28,7 @@ state=
 				naval_base = 2
 			}
 		}
+add_core_of = NEU
 	}
 
 	provinces={

@@ -25,7 +25,10 @@ state={
 			7798 20 
 		}
 		add_core_of = AST
-
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
+		}
 	}
 
 	provinces={

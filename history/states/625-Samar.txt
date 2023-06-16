@@ -11,6 +11,11 @@ state=
 		buildings = {
 			infrastructure = 2
 		}
+		add_core_of = NEU
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
+		}
 	}
 	provinces={
 		1224 1311 1340 4269 4373 

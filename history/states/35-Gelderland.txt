@@ -5,10 +5,11 @@ state={
 	history={
 		owner = HOL
 		add_core_of = HOL
+		add_extra_state_shared_building_slots = 4
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 5
-
+			arms_factory = 4
 		}
 		victory_points = {
 			3262 5 

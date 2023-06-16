@@ -282,7 +282,7 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		fade_time = 1
+		fade_time = 200
 		fade_type = linear
 		
 		background = {

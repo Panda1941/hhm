@@ -11,12 +11,17 @@ state={
 
 
 	history={
-		owner = JAP
+		owner = SIA
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {
 			7236 1 
+		}
+		add_core_of = SIA
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 	}
 	

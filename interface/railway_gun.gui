@@ -284,10 +284,10 @@ containerWindowType = {
 		size = { width = 557 height = 407 }
 		Orientation = center
 		clipping = no
-		fade_time = 1
+		fade_time = 300
 		fade_type = linear
 
-		show_sound = pop_up
+		#show_sound = pop_up
 
 		Background = {
 			name = "railway_gun_stats_bg"

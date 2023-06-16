@@ -18,7 +18,11 @@ state={
 		 }
 		victory_points = {
 			12021 3
-		 }
+		}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
+		}
 	}
 
 	provinces={

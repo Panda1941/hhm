@@ -154,13 +154,13 @@ CHI_dont_waste_on_offensive_air_early = {
 
 	ai_strategy = {
 		type = equipment_variant_production_factor
-		id = medium_plane_airframe
+		id = tac_bomber_equipment
 		value = -100
 	}
 	
 	ai_strategy = {
 		type = equipment_variant_production_factor
-		id = large_plane_airframe
+		id = strat_bomber_equipment
 		value = -100
 	}
 }
@@ -172,22 +172,6 @@ CHI_armored_production = {
 	}
 	abort = {
 		ai_wants_divisions < 1 #Decreasing the amount of tanks the AI wants
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 0
-	}
-}
-
-CHI_highered_armored_production = {
-	allowed = { original_tag = CHI }
-	enable = {
-		num_of_military_factories > 109
-	}
-	abort = {
-		num_of_military_factories < 110
 	}
 
 	ai_strategy = {
@@ -226,6 +210,11 @@ CHI_dont_mess_with_the_soviets = {
 		id = "SOV"			
 		value = -200
 	}
+	ai_strategy = {
+		type = contain
+		id = "RAJ"			
+		value = -200
+	}
 }
 
 CHI_some_safer_places_to_build = {
@@ -254,6 +243,7 @@ CHI_some_safer_places_to_build = {
 CHI_you_should_be_prepared_for_war = {
 	allowed = { 
 		is_literally_china = yes
+		num_divisions < 100
 	}
 	enable = {
 		always = yes
@@ -266,32 +256,28 @@ CHI_you_should_be_prepared_for_war = {
     }
 }
 
-CHI_hunker_down_now  = {
+CHI_buffer_in_mainland = {
 	allowed = {
-		original_tag = CHI
+		is_literally_china = yes
 	}
-
 	enable = {
-		date < 1945.1.1 #We accept our fate after this point
-		has_war_with = JAP
-		is_historical_focus_on = yes
-		surrender_progress > 0.5
+		date < 1941.1.1
 	}
-
-	abort = {
-		date > 1945.1.1 #We accept our fate after this point
-	}
-
+	abort_when_not_enabled = yes
+	
 	ai_strategy = {
-		type = front_control
-
-		tag = JAP
-
-		ratio = 0.6
-
-		priority = 100
-		ordertype = front
-		execution_type = careful
+		type = put_unit_buffers
+		states = {
+			620 #Mainland china, without coast. This should slow down japanese advance due to tendency for china to retreat in disarray.
+			602
+			600
+			603
+			353
+			605
+		}
+		ratio = 0.15
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
 	}
-
 }

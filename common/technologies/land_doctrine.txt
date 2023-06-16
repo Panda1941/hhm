@@ -24,7 +24,7 @@ technologies = {
 		org_loss_when_moving = -0.1
 
 		doctrine = yes	
-		research_cost = 0
+		research_cost = 2.25
 
 		folder = {
 			name = land_doctrine_folder
@@ -161,7 +161,9 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 	
-		
+		xor={
+			armored_spearhead
+		}
 		motorized = {
 			maximum_speed = 0.1
 			default_morale = 0.2
@@ -376,7 +378,9 @@ technologies = {
 		enable_tactic = tactic_blitz
 		
 	
-	
+		xor = {
+			mobile_infantry
+		}
 	
 		path = {
 			leads_to_tech = schwerpunk 
@@ -614,7 +618,9 @@ technologies = {
 	firebrigades = { #Branch focused on mobile warfares
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
+		xor={
+			volkssturm
+		}
 		
 		category_all_infantry = {
 			max_organisation = 10
@@ -770,8 +776,10 @@ technologies = {
 	volkssturm = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
-	
+		xor={
+			firebrigades
+		}
+
 		
 		conscription = 0.02
 		
@@ -924,7 +932,7 @@ technologies = {
 		enable_tactic = tactic_barrage
 			
 		doctrine = yes	
-		research_cost = 0
+		research_cost = 2.25
 		
 		categories = {
 			land_doctrine
@@ -1046,7 +1054,10 @@ technologies = {
 	intergrated_support = { #This Branch is focused on boosting stuff in the support column 
 		xp_research_type = army
 		xp_unlock_cost = 100
-	
+		xor={
+			dispersed_support
+		}
+
 	
 		category_support_battalions = {
 			max_organisation = 10
@@ -1151,7 +1162,10 @@ technologies = {
 	dispersed_support = { # Branch is focused on support units as part of the regular brigades
 		xp_research_type = army
 		xp_unlock_cost = 100
-	
+		xor = {
+			intergrated_support
+		}
+		
 		category_line_artillery = {
 			default_morale = 0.2
 		}
@@ -1312,7 +1326,9 @@ technologies = {
 	concentrated_fire_plans = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-
+		xor = {
+			centralized_fire_control
+		}
 
 		category_army = {
 			hard_attack = 0.10
@@ -1515,7 +1531,10 @@ technologies = {
 	centralized_fire_control = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
+		xor = {
+			concentrated_fire_plans
+		}
+
 		category_all_infantry = { 
 			soft_attack = 0.05 
 		}
@@ -1756,7 +1775,7 @@ technologies = {
 		}
 
 		doctrine = yes	
-		research_cost = 0
+		research_cost = 2.25
 		
 		categories = {
 			land_doctrine
@@ -1938,7 +1957,10 @@ technologies = {
 	grand_mechanized_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-
+		xor = {
+			infantry_offensive
+		}
+	
 		motorized = {
 			max_organisation = 5
 		}
@@ -2266,7 +2288,9 @@ technologies = {
 	infantry_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
+		xor = {
+			grand_mechanized_offensive
+		}
 		category_light_infantry = {
 			max_organisation = 5
 			breakthrough = 0.1
@@ -2596,11 +2620,10 @@ technologies = {
 		}
 		
 		land_reinforce_rate = 0.02
-		minimum_training_level = -0.1
-		weekly_casualties_war_support = 0.001
+		minimum_training_level = -0.1		
 
 		doctrine = yes	
-		research_cost = 0
+		research_cost = 2.25
 		
 		categories = {
 			land_doctrine
@@ -2721,7 +2744,9 @@ technologies = {
 	large_front_operations = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
+		xor = {
+			peoples_army
+		}
 
 
 
@@ -2766,12 +2791,6 @@ technologies = {
 
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 			modifier = {
@@ -2900,7 +2919,7 @@ technologies = {
 		supply_consumption_factor = -0.10
 		
 		infantry = {
-			combat_width = -0.25
+			combat_width = -0.4
 		}
 
 		
@@ -3125,7 +3144,10 @@ technologies = {
 	
 	peoples_army = {
 	
-		
+		xor = {
+			large_front_operations
+		}
+
 		xp_research_type = army
 		xp_unlock_cost = 100
 		
@@ -3177,12 +3199,6 @@ technologies = {
 
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 
@@ -3289,7 +3305,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		infantry = {
-			combat_width = -0.25
+			combat_width = -0.4
 		}
 
 		land_reinforce_rate = 0.15		

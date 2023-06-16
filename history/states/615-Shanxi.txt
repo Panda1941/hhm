@@ -6,8 +6,7 @@ state=
 	
 	state_category = town
 	
-	history=
-	{
+	history = {
 		owner = CHI
 		add_core_of = CHI
 		victory_points = {
@@ -18,17 +17,9 @@ state=
 			arms_factory = 2
 			industrial_complex = 2
 		}
-
-		1938.10.25 = {
-			#remove_core_of = SHX
-			owner = PRC
-			controller = JAP
-			PRC = {
-				set_province_controller = 1034
-				set_province_controller = 1531
-				set_province_controller = 4074
-				set_province_controller = 10367
-			}
+		1936.1.1.13 = {
+			owner = NEU
+			add_core_of = NEU
 		}
 	}
 	provinces={

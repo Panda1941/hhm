@@ -24,7 +24,7 @@ state={
 
 		}
 		add_core_of = SOV
-		add_core_of = BYA
+add_core_of = NEU
 	}
 
 	provinces={

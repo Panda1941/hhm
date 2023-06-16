@@ -4,13 +4,13 @@ state={
 	name="STATE_498"
 	manpower = 7746000
 
-	state_category = large_city
+	state_category = city
 
 	history={
 		owner = BRA
 		buildings = {
 			infrastructure = 3 #was: 5
-			dockyard = 5
+			industrial_complex = 6
 			air_base = 2
 			5107 = {
 				naval_base = 3
@@ -20,6 +20,7 @@ state={
 			}
 		}
 		add_core_of = BRA
+		add_core_of = NEU
 		victory_points = {
 			5107 3 
 		}

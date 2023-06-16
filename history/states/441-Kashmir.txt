@@ -12,8 +12,12 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = RAJ
-		add_claim_by = PAK
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = ENG
+		}
 	}
+
 
 	provinces={
 		5042 7273 7316 8005 10905 12754 12884 

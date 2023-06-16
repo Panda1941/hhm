@@ -1,8 +1,0 @@
-# All global modifiers are here. They are applied from certain rt56 mod-features.
-# Effects are fully scriptable here.
-# These names can NOT be removed or changes, as the code uses them....
-
-resource_rights_given_opmod = {
-	valid_relation_trigger = {
-	}
-}
