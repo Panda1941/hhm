@@ -879,7 +879,10 @@ technologies = {
 		#Increased Partisan effect on your land occupied by others
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 
 
-		enable_tactic = tactic_guerrilla_tactics
+		path = {
+			leads_to_tech = gurilla_tatics_mw 
+			research_cost_coeff = 1
+		}
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -893,6 +896,51 @@ technologies = {
 		folder = {
 			name = land_doctrine_folder
 			position = { x = -2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			armor = 2.0
+		}
+	}
+
+	gurilla_tatics_mw = {
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+
+		enable_tactic = tactic_guerrilla_tactics
+
+		allow = {
+			has_game_rule = {
+				rule = elwolf_guerrilla_tactics
+				option = ALLOWED
+			}
+		}
+		
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			cat_mobile_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -3368,7 +3416,14 @@ technologies = {
 		
 		resistance_growth_on_our_occupied_states = 0.25 
 		
-		enable_tactic = tactic_guerrilla_tactics
+		path = {
+			leads_to_tech = gurilla_tatics_ma
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = gurilla_tatics_disabled
+			research_cost_coeff = 1
+		}
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -3381,6 +3436,92 @@ technologies = {
 		folder = {
 			name = land_doctrine_folder
 			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	gurilla_tatics_ma = {
+		xp_research_type = army
+		xp_unlock_cost = 0
+		xor = {
+			gurilla_tatics_disabled
+		}
+		
+		enable_tactic = tactic_guerrilla_tactics
+		
+		doctrine = yes	
+		research_cost = 4.5
+		
+		allow = {
+			has_game_rule = {
+				rule = elwolf_guerrilla_tactics
+				option = ALLOWED
+			}
+		}
+		
+		categories = {
+			land_doctrine
+			cat_mass_assault
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 1 y = 16 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	gurilla_tatics_disabled = {
+		xp_research_type = army
+		xp_unlock_cost = 0
+		xor = {
+			gurilla_tatics_ma
+		}
+		
+		doctrine = yes	
+		research_cost = 4.5
+		
+		allow = {
+			has_game_rule = {
+				rule = elwolf_guerrilla_tactics
+				option = ALLOWED
+			}
+		}
+		
+		categories = {
+			land_doctrine
+			cat_mass_assault
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 3 y = 16 }
 		}
 		
 		ai_will_do = {

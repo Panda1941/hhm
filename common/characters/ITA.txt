@@ -357,12 +357,12 @@ characters = {
 		}
 	}
 
-	ITA_giovanni_messe = {
-		name = ITA_giovanni_messe
+	ITA_sebastiano_visconti_prasca = {
+		name = ITA_sebastiano_visconti_prasca
 		portraits = {
 			army = {
-				small = GFX_idea_giovanni_messe
-				large = GFX_portrait_ITA_giovanni_messe
+				large = GFX_portrait_ITA_sebastiano_visconti_prasca
+				small = GFX_portrait_ITA_sebastiano_visconti_prasca_small
 			}
 		}
 
@@ -370,28 +370,6 @@ characters = {
 			ITA_is_appropriate_cw_side_for_character_split = yes
 		}
 
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = giovanni_messe
-			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				if = {
-					limit = { has_dlc = "By Blood Alone" }
-					OR = {
-						NOT = { has_government = communism }
-						has_completed_focus = ITA_common_ground
-					}
-				}
-			}
-			traits = {
-				mobile_warfare_expert
-			}
-		}
-		
 		corps_commander={
 			traits = {  cavalry_leader armor_officer war_hero panzer_leader trait_engineer infantry_leader trickster organizer desert_fox trait_mountaineer }
 			skill=6
@@ -442,12 +420,12 @@ characters = {
 		}
 	}
 
-	ITA_sebastiano_visconti_prasca = {
-		name = ITA_sebastiano_visconti_prasca
+	ITA_giovanni_messe = {
+		name = ITA_giovanni_messe
 		portraits = {
 			army = {
-				large = GFX_portrait_ITA_sebastiano_visconti_prasca
-				small = GFX_portrait_ITA_sebastiano_visconti_prasca_small
+				small = GFX_idea_giovanni_messe
+				large = GFX_portrait_ITA_giovanni_messe
 			}
 		}
 
@@ -455,6 +433,28 @@ characters = {
 			ITA_is_appropriate_cw_side_for_character_split = yes
 		}
 
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = giovanni_messe
+			ledger = army
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			available = {
+				if = {
+					limit = { has_dlc = "By Blood Alone" }
+					OR = {
+						NOT = { has_government = communism }
+						has_completed_focus = ITA_common_ground
+					}
+				}
+			}
+			traits = {
+				mobile_warfare_expert
+			}
+		}
+		
 		corps_commander = {
 			traits = { inflexible_strategist career_officer }
 			skill = 1

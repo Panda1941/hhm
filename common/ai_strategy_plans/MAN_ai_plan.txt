@@ -14,7 +14,7 @@ MAN_historical = {
 		MAN_pacify_the_countryside
 		MAN_trade_delegation
 		MAN_expand_the_textile_industry
-		MAN_invite_japanese_investors			
+		MAN_invite_japanese_settlers			
 	}
 
 	

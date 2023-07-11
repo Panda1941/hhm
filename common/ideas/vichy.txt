@@ -1253,7 +1253,7 @@ ideas = {
 			}
 		}
 
-		FRA_motorized_focus = {
+		VIC_motorized_focus = {
 		
 			allowed = {
 				original_tag = VIC

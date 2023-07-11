@@ -14,7 +14,7 @@
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 50 y = 1200 }
 
 #	focus = {
 #		id = ROM_
@@ -201,7 +201,7 @@
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = ROM_trade_treaty_with_germany }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 10
@@ -246,7 +246,7 @@
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_invite_german_advisors }
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 10
@@ -284,7 +284,7 @@
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = ROM_invite_german_advisors }
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 10
@@ -335,8 +335,8 @@
 		id = ROM_german_romanian_oil_exploitation_company
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_join_axis }
-		x = -1
-		y = 5
+		x = 0
+		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
 
 
@@ -396,7 +396,7 @@
 		id = ROM_civil_works
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = 5
+		x = 4
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
@@ -739,7 +739,7 @@
 		id = ROM_invest_in_the_iar
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ROM_invite_foreign_motor_companies focus = ROM_malaxa }
-		x = 2
+		x = 1
 		y = 4
 		relative_position_id = ROM_civil_works
 
@@ -906,7 +906,7 @@
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 14
+		x = 12
 		y = 0
 
 		cost = 10
@@ -1064,7 +1064,7 @@
 		id = ROM_crack_down_on_extremism
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
@@ -1622,7 +1622,7 @@
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 26
+		x = 20
 		y = 0
 
 		cost = 10
@@ -2276,7 +2276,7 @@ focus = {
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 34
+		x = 28
 		y = 0
 
 		cost = 10
@@ -2954,7 +2954,7 @@ focus = {
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 42
+		x = 36
 		y = 0
 
 		cost = 10

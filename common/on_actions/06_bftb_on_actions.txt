@@ -1139,7 +1139,7 @@ on_actions = {
 					NOT = { has_completed_focus = BUL_the_fatherland_front }
 					date > 1941.6.1 #Previously date > 1940.1.1 but it felt too punishing
 				}
-				BUL_communists_try_to_form_ff_effect = yes
+				# BUL_communists_try_to_form_ff_effect = yes
 			}
 			else_if = {
 				limit = {

@@ -2742,7 +2742,7 @@
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 35
+		x = 24
 		y = 0
 
 		cost = 10
@@ -3250,7 +3250,7 @@
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 39
+		x = 28
 		y = 0
 
 		cost = 10

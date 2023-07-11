@@ -527,6 +527,24 @@ elwolfmod_capitulations_on_actions = {
 			}
 		}
 	}
+
+	# Soviet Union
+	if = {
+		limit = { 
+			original_tag = SOV
+			GER = { has_war_with = SOV }
+		} 
+		SOV = {
+			transfer_navy = { target = USA }
+		}
+		GER = {
+			annex_country = {
+				target = SOV
+				transfer_troops = no
+			}
+		}
+	}
+
 }
 elwolfmod_capitulations_on_actions_collab = {
 

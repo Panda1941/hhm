@@ -123,6 +123,7 @@ on_actions = {
 						tag = NZL
 						tag = IRE
 						tag = SOV
+						tag = PHI
 					}
 				}
 				if = {
@@ -421,6 +422,29 @@ on_actions = {
 					}
 					add_operation_token = {
 						tag = NZL
+						token = team_airforce
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							tag = PHI
+						}
+					}
+					add_operation_token = {
+						tag = PHI
+						token = team_civilian
+					}
+					add_operation_token = {
+						tag = PHI
+						token = team_army
+					}
+					add_operation_token = {
+						tag = PHI
+						token = team_navy
+					}
+					add_operation_token = {
+						tag = PHI
 						token = team_airforce
 					}
 				}

@@ -104,6 +104,7 @@ scripted_gui = {
 						if={limit={check_variable={Root.selected_cheat=18}} capital_scope = { add_resource = { type = steel amount = 5}} }
 						if={limit={check_variable={Root.selected_cheat=19}} capital_scope = { add_resource = { type = chrominum amount = 5}} }
 						if={limit={check_variable={Root.selected_cheat=20}} capital_scope = { add_resource = { type = oil amount = 5}} }
+						if={limit={check_variable={Root.selected_cheat=21}} set_country_flag = elwolf_eff_flag }
 						}
 					}
 					GER={
@@ -195,6 +196,7 @@ scripted_gui = {
 					cheat18_click={set_variable={Root.selected_cheat=18} ROOT={clr_country_flag=cheating}}
 					cheat19_click={set_variable={Root.selected_cheat=19} ROOT={clr_country_flag=cheating}}
 					cheat20_click={set_variable={Root.selected_cheat=20} ROOT={clr_country_flag=cheating}}
+					cheat21_click={set_variable={Root.selected_cheat=21} ROOT={clr_country_flag=cheating}}
 				}
 				properties = {
 					toogle_mark={ frame = mark_status }
@@ -235,6 +237,7 @@ scripted_gui = {
 				cheat18_visible={ROOT={has_country_flag=cheating}}
 				cheat19_visible={ROOT={has_country_flag=cheating}}
 				cheat20_visible={ROOT={has_country_flag=cheating}}
+				cheat21_visible={ROOT={has_country_flag=cheating}}
 				cheat10_text_visible={ROOT={has_country_flag=cheating}}
 				cheat11_text_visible={ROOT={has_country_flag=cheating}}
 				cheat12_text_visible={ROOT={has_country_flag=cheating}}
@@ -246,6 +249,7 @@ scripted_gui = {
 				cheat18_text_visible={ROOT={has_country_flag=cheating}}
 				cheat19_text_visible={ROOT={has_country_flag=cheating}}
 				cheat20_text_visible={ROOT={has_country_flag=cheating}}
+				cheat21_text_visible={ROOT={has_country_flag=cheating}}
 				clear_all_markings_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }	
 			}
 			

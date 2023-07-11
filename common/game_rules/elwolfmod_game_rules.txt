@@ -241,3 +241,19 @@ vichy_france = {
 		desc = "Germany can't make Vichy (Reccomended)"
 	}
 }
+
+elwolf_guerrilla_tactics = {
+	name = "Guerilla Tactics"
+	group = "elwolfmod Rules"
+	icon = "GFX_decision_hol_war_on_pacifism"
+	default = {
+		name = ALLOWED
+		text = "GAllowed"
+		desc = "Gurilla Tatics are able to be Selected"
+	}
+	option = {
+		name = BLOCKED
+		text = "RBanned"
+		desc = "Gurilla Tatics are not able to be Selected"
+	}
+}

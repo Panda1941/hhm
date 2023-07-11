@@ -66,6 +66,7 @@ transfer_states_off:0 "Horst Tool: £trigger_yes"
  CHEAT18:0   "Add 5 Steel"
  CHEAT19:0   "Add 5 Chrominum"
  CHEAT20:0   "Add 5 Oil"
+ CHEAT21:0   "Efficeny Tool"
 
   
  mark_status_marked:0   "     Unmark State "

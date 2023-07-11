@@ -841,7 +841,7 @@
 
 		completion_reward = {
 			army_experience = 5
-			add_ideas = VIC_infantry_focus
+			add_ideas = FRA_infantry_focus
 		}
 	}
 	focus = {
