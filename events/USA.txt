@@ -239,8 +239,12 @@ country_event = {
 				has_dlc = "Man the Guns"
 				factor = 0
 			}
-		}		
-		add_ideas = new_deal
+		}
+		
+		add_timed_idea = {
+			idea = new_deal
+			days = 730
+		}
 		if = {
 			limit = {
 				OR = {
@@ -280,7 +284,6 @@ country_event = {
 		USA_election_house = yes
 		USA_flip_support = yes
 		custom_effect_tooltip = usa_congress_elections_tt_good
-		add_political_power = 120
 		if = {
 			limit = {
 				has_idea = standard_oil_california
@@ -292,6 +295,10 @@ country_event = {
 				NOT = { has_idea = standard_oil_california }
 			}
 			add_ideas = standard_oil_california
+		}
+		add_timed_idea = {
+			idea = landons_new_deal
+			days = 730
 		}
 		create_country_leader = {
 			name = "Alf Landon"

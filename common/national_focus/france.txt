@@ -27,7 +27,7 @@
 		}
 		prerequisite = {}
 		mutually_exclusive = { }
-		cost = 10
+		cost = 5
 			ai_will_do = {
 			factor = 1
 		}
@@ -61,7 +61,7 @@
 		prerequisite = { focus = FRA_devalue_the_franc }
 		mutually_exclusive = { }
 		relative_position_id = FRA_devalue_the_franc
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -151,7 +151,7 @@
 			prerequisite = { focus = FRA_devalue_the_franc }
 			mutually_exclusive = { }
 			relative_position_id = FRA_devalue_the_franc
-			cost = 10
+			cost = 5
 	
 			ai_will_do = {
 				factor = 1
@@ -189,7 +189,7 @@
 		}
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}		
@@ -246,7 +246,7 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_metropolitan_france
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -297,7 +297,7 @@
 		x = 2
 		y = 1
 		relative_position_id = FRA_industrial_expansion
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -369,7 +369,7 @@
 		}
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.2
 		}
@@ -449,7 +449,7 @@
 		prerequisite = { focus = FRA_devalue_the_franc }
 		mutually_exclusive = { }
 		relative_position_id = FRA_devalue_the_franc
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -493,7 +493,7 @@
 		prerequisite = {focus = FRA_invest_in_the_colonies }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -560,7 +560,7 @@
 		prerequisite = {focus = FRA_invest_in_the_colonies }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -616,7 +616,7 @@
 		x = 2
 		y = 1
 		relative_position_id = FRA_algerie_france
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -710,7 +710,7 @@
 		prerequisite = {focus = FRA_colonial_industry }
 		mutually_exclusive = { }
 		relative_position_id = FRA_colonial_industry
-		cost = 10
+		cost = 5
 	
 		ai_will_do = {
 			factor = 1
@@ -746,7 +746,7 @@
 		}
 		prerequisite = {}
 		mutually_exclusive = { }
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -797,7 +797,7 @@
 		mutually_exclusive = { focus = FRA_aggressive_focus }
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = FRA_begin_rearmament }
 		available_if_capitulated = yes
 		relative_position_id = FRA_begin_rearmament
@@ -805,6 +805,7 @@
 			factor = 1
 		}
 		completion_reward = {
+			army_experience = 25
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maxime_weygand
 		}
@@ -819,7 +820,6 @@
 			y = 0
 		}
 		prerequisite = { focus = FRA_defensive_focus }
-		mutually_exclusive = { focus = FRA_methodical_battle }
 		relative_position_id = FRA_defensive_focus
 		cost = 10
 
@@ -853,7 +853,6 @@
 			y = 0
 		}
 		prerequisite = { focus = FRA_defensive_focus }
-		mutually_exclusive = { focus = FRA_firepower_kills }
 		relative_position_id = FRA_defensive_focus
 		cost = 10
 
@@ -1212,7 +1211,7 @@
 		mutually_exclusive = { focus = FRA_defensive_focus }
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_begin_rearmament
 		available_if_capitulated = yes
 		prerequisite = { focus = FRA_begin_rearmament }
@@ -1220,9 +1219,9 @@
 			factor = 0.2
 		}
 		completion_reward = {
+			army_experience = 25
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maurice_gamelin
-			army_experience = 25
 		}
 	}
 	focus = {
@@ -1235,7 +1234,6 @@
 			y = 0
 		}
 		prerequisite = { focus = FRA_aggressive_focus }
-		mutually_exclusive = { focus = FRA_air_dominance }
 		relative_position_id = FRA_aggressive_focus
 		cost = 10
 
@@ -1326,7 +1324,6 @@
 			y = 0
 		}
 		prerequisite = { focus = FRA_aggressive_focus }
-		mutually_exclusive = { focus = FRA_battle_of_maneuver }
 		relative_position_id = FRA_aggressive_focus
 		cost = 10
 
