@@ -22,6 +22,18 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
 	country = {
 		elwolfmod_novols = {
 			picture = air_support_focus
@@ -150,6 +162,34 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 100
 				conversion_cost_mil_to_civ_factor = 100
 				enemy_operative_detection_chance = -2
+			}
+		}
+
+
+
+
+
+
+
+
+		AXIS_blitzkrieg = {
+			removal_cost = -1
+			picture = ETH_conservative_high_command
+			modifier = {
+				army_attack_factor = 0.1
+				breakthrough_factor = 0.1
+				army_speed_factor  = 0.1
+			}
+		}
+
+
+		ALLIES_take_back_africa = {
+			removal_cost = -1
+			picture = generic_org_of_african_unity
+			modifier = {
+				army_attack_factor = 0.1
+				breakthrough_factor = 0.1
+				army_morale_factor = 0.1
 			}
 		}
 	}
