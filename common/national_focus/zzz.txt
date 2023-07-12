@@ -8,19 +8,11 @@ focus_tree = {
 		}
 		modifier = {
 			add = 10
-			tag = EST
-		}
-		modifier = {
-			add = 10
-			tag = LAT
-		}
-		modifier = {
-			add = 10
-			tag = LIT
-		}
-		modifier = {
-			add = 10
 			tag = YUG
+		}
+		modifier = {
+			add = 20
+			tag = VEN
 		}
 		modifier = {
 			add = 10
