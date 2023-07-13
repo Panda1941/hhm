@@ -10,21 +10,15 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5                          -- Defau
 
 
 -- QOL
-NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.10
-NDefines.NMilitary.RELIABILTY_RECOVERY = 0.0 -- WAS 0.1 factor affecting how much equipment is returned "from the dead"
-NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 -- WAS 1 aka TRAINED | Since the above was changed there is no point to not allowing divs to be trained to regular considering that its only 10% stats now.
-NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
+
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                           -- Up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
-NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0
-NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0
-NDefines.NGame.GAME_SPEED_SECONDS = { 1000.0, 0.5, 0.15, 0.04, 0.0 }
+NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.3, 0.13, 0.04, 0.0 }
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 720
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 							    -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	    -- WAS 60 | less messages lying around at the top of your screen
-
-NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP = "hhmod"
-NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP_NAME = "hhmod"
+NDefines.NCountry.EVENT_PROCESS_OFFSET = 25
+NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0                     -- Removed for game stability/reducing chance of desync
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 9999						    -- Unlimited special forces
@@ -32,7 +26,7 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.00                        -- Unlim
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.5			    -- Volunteer shit to prevent 2w spam
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.5				    -- Volunteer shit to prevent 2w spam
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 1				    -- Volunteer shit to prevent 2w spam
-NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 5				        -- Number of factories used to create an intelligence agency
+NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0				        -- was 5 Number of factories used to create an intelligence agency
 
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000                            -- WAS 500 || XP Cap
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000			                 -- WAS 500 || XP Cap
@@ -41,6 +35,19 @@ NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2000		                     -- WAS 500 |
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0					-- Free license
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                        -- Free license
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0						    -- Base IC cost for lended license
+
+NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
+    90.0/360.0, 0.95, 0.86,
+    60.0/360.0, 0.95, 0.86,
+    30.0/360.0, 0.95, 0.86,
+    00.0/360.0, 0.95, 0.86,
+    330.0/360.0, 0.95, 0.86,
+    300.0/360.0, 0.95, 0.86,
+    270.0/360.0, 0.95, 0.86,
+    240.0/360.0, 0.95, 0.86,
+    210.0/360.0, 0.95, 0.86,
+    180.0/360.0, 0.95, 0.86
+}
 
 -- Free Templates
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
@@ -54,6 +61,34 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
 
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1							-- Max number of mines that can be layed by the ships. The value should be hidden from the user, as we present % so it's an abstract value that should be used for balancing.
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0						-- Value used to overall balance of the speed of planting naval mines
+
+-- Army Balance
+
+NDefines.NMilitary.TRAINING_ATTRITION = 0  -- vanilla 0.06
+NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 72							-- base hours needed to prepare an invasion
+NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.10
+NDefines.NMilitary.RELIABILTY_RECOVERY = 0.0 -- WAS 0.1 factor affecting how much equipment is returned "from the dead"
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 -- WAS 1 aka TRAINED | Since the above was changed there is no point to not allowing divs to be trained to regular considering that its only 10% stats now.
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
+
+-- Navy Balance
+
+NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.4
+NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0
+
+-- Air Balance
+
+NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 200
+NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 200
+NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 200
+NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200
+NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 1200
+
+---- Dockyards
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 14
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 40
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 100
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3
 
 -- Anti-Autism
 NDefines.NOperatives.BOOST_IDEOLOGY_NATIONAL_COVERAGE_FACTOR = 0
@@ -75,11 +110,13 @@ NDefines.NOperatives.OPERATIVE_BASE_DIPLOMATIC_PRESSURE_AI_ACCEPTANCE_SCORE_DRIF
 NDefines.NOperatives.DIPLOMATIC_PRESSURE_MAX_AI_ACCEPTANCE_SCORE_INCREASE = 0
 NDefines.NOperatives.DIPLOMATIC_PRESSURE_MAX_TENSION_REQUIREMENTS_DECREASE = 0
 NDefines.NOperatives.DIPLOMATIC_PRESSURE_DAILY_XP_GAIN = 0
+
+-- Attache
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0
-NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0
-NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 50
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 10.0
 
 --THANKS THRASHY
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                       -- biggest bonus we can get from having a small wing with an ace on

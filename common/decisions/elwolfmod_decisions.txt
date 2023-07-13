@@ -109,6 +109,11 @@ operations = {
 			ETH
 		}
 		complete_effect = {
+			IF = {
+				limit = { date < 1936.01.07 }
+
+				army_experience = 60
+			}
 			ETH = {
 				transfer_units_fraction = {
 					target = ITA
@@ -296,6 +301,51 @@ operations = {
 					is_controlled_by = AST
 				}
 				add_core_of = AST
+			}
+		}
+	}
+	annex_brazil = {
+		# icon = generic_operation
+		allowed = {
+			tag = CAN
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			BRA = {
+				is_ai = yes
+			}
+		}
+		targets = {
+			BRA
+		}
+		complete_effect = {
+			BRA = {
+				transfer_units_fraction = {
+					target = CAN
+					size = 1
+					stockpile_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			CAN = {
+				annex_country = {
+					target = BRA
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BRA
+					is_controlled_by = CAN
+				}
+				add_compliance = 50
 			}
 		}
 	}
