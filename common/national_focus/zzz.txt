@@ -54,6 +54,10 @@ focus_tree = {
 			add = 10
 			tag = IRQ
 		}
+		modifier = {
+			add = 20
+			tag = ETH
+		}
 	}
 
 	default = no

@@ -1985,7 +1985,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2022,10 +2022,10 @@ focus_tree = {
 			}
 		}
 		relative_position_id = uk_empire_focus
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 5
+			army_experience = 25
 			navy_experience = 25
 			air_experience = 25
 			add_ideas = ENG_service_overseas_idea
@@ -4090,107 +4090,8 @@ focus_tree = {
 			has_dlc = "Man the Guns"
 		}
 		available = {
-			OR = {
-				CAN = {
-					OR = {
-						AND = {
-							is_subject_of = ENG
-							has_government = ROOT
-						}
-						exists = no
-					}
-				}
-				SAF = {
-					OR = {
-						AND = {
-							is_subject_of = ENG
-							has_government = ROOT
-						}
-						exists = no
-					}
-				}
-				AST = {
-					OR = {
-						AND = {
-							is_subject_of = ENG
-							has_government = ROOT
-						}
-						exists = no
-					}
-				}
-				NZL = {
-					OR = {
-						AND = {
-							is_subject_of = ENG
-							has_government = ROOT
-						}
-						exists = no
-					}
-				}
-				NOT = {
-					any_state = {
-						OR = {
-							is_core_of = ENG
-							is_core_of = CAN
-							is_core_of = SAF
-							is_core_of = AST
-							is_core_of = NZL
-						}
-						NOT = {
-							state = 331
-						}
-						OWNER = {
-							NOT = {
-								OR = {
-									tag = ENG
-									tag = CAN
-									tag = SAF
-									tag = AST
-									tag = NZL
-								}
-							}
-						}
-					}
-				}
-			}
 		}
 		bypass = {
-			CAN = {
-				exists = no
-			}
-			SAF = {
-				exists = no
-			}
-			RAJ = {
-				OR = {
-					exists = no
-					NOT = {
-						is_subject_of = ENG
-					}
-				}
-			}
-			AST = {
-				exists = no
-			}
-			NZL = {
-				exists = no
-			}
-			NOT = {
-				any_state = {
-					OR = {
-						is_core_of = ENG
-						is_core_of = CAN
-						is_core_of = SAF
-						is_core_of = AST
-						is_core_of = NZL
-					}
-					OWNER = {
-						NOT = {
-							tag = ENG
-						}
-					}
-				}
-			}
 		}
 		continue_if_invalid = no
 		icon = GFX_goal_generic_national_unity
@@ -4209,45 +4110,49 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 120
-			every_country = {
-				limit = {
-					OR = {
-						tag = ENG
-						AND = {
-							is_subject_of = ENG
-							tag = CAN
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = RAJ
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
-					}
-				}
-				country_event = {
-					id = mtg_britain.82
-					hours = 6
+			
+			IF = {
+				limit = { CAN = { exists = yes } }
+				CAN = {
+					add_ideas = ENG_imperial_conference_defense_2
+					add_ideas = ENG_imperial_conference_economy_2
 				}
 			}
-			hidden_effect = {
-				news_event = {
-					id = mtg_news.13
-					days = 1
+			IF = {
+				limit = { SAF = { exists = yes } }
+				SAF = {
+					add_ideas = ENG_imperial_conference_defense_2
+					add_ideas = ENG_imperial_conference_economy_2
 				}
 			}
-			custom_effect_tooltip = ENG_imperial_conference_tt
-			custom_effect_tooltip = ENG_indian_autonomy_tt
+			IF = {
+				limit = { AST = { exists = yes } }
+				AST = {
+					add_ideas = ENG_imperial_conference_defense_2
+					add_ideas = ENG_imperial_conference_economy_2
+				}
+			}
+			IF = {
+				limit = { RAJ = { exists = yes } }
+				RAJ = {
+					add_ideas = ENG_imperial_conference_defense_2
+					add_ideas = ENG_imperial_conference_economy_2
+				}
+			}
+			IF = {
+				limit = { FRA = { exists = yes } }
+				FRA = {
+					add_ideas = ENG_imperial_conference_defense_2
+					add_ideas = ENG_imperial_conference_economy_2
+				}
+			}
+			IF = {
+				limit = { ENG = { exists = yes } }
+				ENG = {
+					add_ideas = ENG_imperial_conference_defense_1
+					add_ideas = ENG_imperial_conference_economy_1
+				}
+			}
 		}
 	}
 	### DEMOCRATIC BRANCH - STEADY AS SHE GOES ###
@@ -4318,7 +4223,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_steady_as_she_goes
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}

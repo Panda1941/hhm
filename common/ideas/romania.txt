@@ -469,8 +469,8 @@ ideas = {
 
 			
 			modifier = {
-				guarantee_tension = -1.0
-				guarantee_cost = -0.5
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 

@@ -63,10 +63,6 @@ focus_tree = {
 		}
 		modifier = {
 			add = 20
-			tag = ETH
-		}
-		modifier = {
-			add = 20
 			tag = BEL
 		}
 		modifier = {

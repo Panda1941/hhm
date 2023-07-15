@@ -38,6 +38,57 @@ political_actions = {
 }
 
 operations = {
+	
+	japanese_invasion_of_china = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			JAP = {
+				exists = no
+			}
+			date > 1937.09.01
+		}
+		complete_effect = {
+			add_named_threat = {
+			    threat = 20
+			    name = "Japaneese Invasion of China"
+			}
+		}
+	}
+	japanese_invasion_of_china2 = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			JAP = {
+				exists = no
+			}
+			date > 1938.06.01
+		}
+		complete_effect = {
+			add_named_threat = {
+			    threat = 10
+			    name = "Japaneese Invasion of China 2"
+			}
+		}
+	}
+
+
+
+
 	FRA_take_north_africa = {
 		visible = {
 			has_completed_focus = FRA_intervention_in_north_africa
@@ -257,6 +308,53 @@ operations = {
 			}
 		}
 	}
+	annex_bulgaria = {
+		# icon = generic_operation
+		allowed = {
+			tag = ROM
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			BUL = {
+				is_ai = yes
+			}
+		}
+		targets = {
+			BUL
+		}
+		complete_effect = {
+			BUL = {
+				transfer_units_fraction = {
+					target = ROM
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			ROM = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BUL
+					is_controlled_by = ROM
+				}
+				add_core_of = ROM
+			}
+		}
+	}
 	annex_new_zealand = {
 		# icon = generic_operation
 		allowed = {
@@ -304,7 +402,7 @@ operations = {
 			}
 		}
 	}
-	annex_brazil = {
+	annex_saf_can = {
 		# icon = generic_operation
 		allowed = {
 			tag = CAN
@@ -315,15 +413,15 @@ operations = {
 			factor = 0
 		}
 		available = {
-			BRA = {
+			SAF = {
 				is_ai = yes
 			}
 		}
 		targets = {
-			BRA
+			SAF
 		}
 		complete_effect = {
-			BRA = {
+			SAF = {
 				transfer_units_fraction = {
 					target = CAN
 					size = 1
@@ -337,13 +435,58 @@ operations = {
 			}
 			CAN = {
 				annex_country = {
-					target = BRA
+					target = SAF
 				}
 			}
 			every_state = {
 				limit = {
-					is_core_of = BRA
+					is_core_of = SAF
 					is_controlled_by = CAN
+				}
+				add_compliance = 50
+			}
+		}
+	}
+	annex_can_saf = {
+		# icon = generic_operation
+		allowed = {
+			tag = SAF
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			CAN = {
+				is_ai = yes
+			}
+		}
+		targets = {
+			CAN
+		}
+		complete_effect = {
+			SAF = {
+				transfer_units_fraction = {
+					target = CAN
+					size = 1
+					stockpile_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			SAF = {
+				annex_country = {
+					target = CAN
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = CAN
+					is_controlled_by = SAF
 				}
 				add_compliance = 50
 			}

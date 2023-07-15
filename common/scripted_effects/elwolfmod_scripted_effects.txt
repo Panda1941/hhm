@@ -1,5 +1,4 @@
 elwolfmod_vichy_france = {
-
 	GER = {
 		diplomatic_relation = {   
 			country = VIC    

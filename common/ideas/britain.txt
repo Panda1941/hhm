@@ -190,7 +190,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.07
+				research_speed_factor = 0.1
 			}
 		}
 		
@@ -1281,7 +1281,9 @@ ideas = {
 			removal_cost = -1
 		}
 
-		ENG_imperial_conference_defense_dominion = {
+		ENG_imperial_conference_defense_1 = {
+
+			name = ENG_imperial_conference_defense_dominion
 
 			allowed = {
 				always = no
@@ -1300,29 +1302,6 @@ ideas = {
 
 			removal_cost = -1
 		}
-
-		ENG_imperial_conference_defense_1 = {
-
-			name = ENG_imperial_conference_defense_dominion
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
-			}
-
-			picture = generic_war_preparation
-
-			removal_cost = -1
-		}
-
 		ENG_imperial_conference_defense_2 = {
 
 			name = ENG_imperial_conference_defense_dominion
@@ -1345,93 +1324,6 @@ ideas = {
 			removal_cost = -1
 		}
 
-		ENG_imperial_conference_defense_3 = {
-
-			name = ENG_imperial_conference_defense_dominion
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				industrial_capacity_factory = 0.09
-				industrial_capacity_dockyard = 0.09
-			}
-
-			picture = generic_war_preparation
-
-			removal_cost = -1
-		}
-
-		ENG_imperial_conference_defense_4 = {
-
-			name = ENG_imperial_conference_defense_dominion
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				industrial_capacity_factory = 0.12
-				industrial_capacity_dockyard = 0.12
-			}
-
-			picture = generic_war_preparation
-
-			removal_cost = -1
-		}
-
-		ENG_imperial_conference_defense_5 = {
-
-			name = ENG_imperial_conference_defense_dominion
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
-			}
-
-			picture = generic_war_preparation
-
-			removal_cost = -1
-		}
-
-		ENG_imperial_conference_economy_dominion = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
-			}
-
-			picture = generic_exploit_mines
-
-			removal_cost = -1
-		}
-
 		ENG_imperial_conference_economy_1 = {
 
 			name = ENG_imperial_conference_economy_dominion
@@ -1445,9 +1337,9 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.03
-				production_speed_arms_factory_factor = 0.03
-				production_speed_dockyard_factor = 0.03
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
 			}
 
 			picture = generic_exploit_mines
@@ -1476,73 +1368,7 @@ ideas = {
 
 			removal_cost = -1
 		}
-		ENG_imperial_conference_economy_3 = {
 
-			name = ENG_imperial_conference_economy_dominion
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				production_speed_industrial_complex_factor = 0.09
-				production_speed_arms_factory_factor = 0.09
-				production_speed_dockyard_factor = 0.09
-			}
-
-			picture = generic_exploit_mines
-
-			removal_cost = -1
-		}
-		ENG_imperial_conference_economy_4 = {
-
-			name = ENG_imperial_conference_economy_dominion
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				production_speed_industrial_complex_factor = 0.12
-				production_speed_arms_factory_factor = 0.12
-				production_speed_dockyard_factor = 0.12
-			}
-
-			picture = generic_exploit_mines
-
-			removal_cost = -1
-		}
-
-		ENG_imperial_conference_economy_5 = {
-
-			name = ENG_imperial_conference_economy_dominion
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				production_speed_industrial_complex_factor = 0.15
-				production_speed_arms_factory_factor = 0.15
-				production_speed_dockyard_factor = 0.15
-			}
-
-			picture = generic_exploit_mines
-
-			removal_cost = -1
-		}
 
 		ENG_federal_integration = {
 

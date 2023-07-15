@@ -9567,7 +9567,7 @@ ideas = {
 			traits = { industrial_concern }
 
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.045
 			}
 		}
 
@@ -9622,7 +9622,9 @@ ideas = {
 			traits = { electronics_concern }
 
 			modifier = {
-				supply_consumption_factor = -0.02
+				supply_consumption_factor = -0.08
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.04
 			}
 		}
 
@@ -9693,7 +9695,8 @@ ideas = {
 			traits = { railway_company }
 
 			modifier = {
-				mobilization_speed = 0.02
+				mobilization_speed = 0.08
+				production_speed_buildings_factor = 0.04
 			}
 		}
 

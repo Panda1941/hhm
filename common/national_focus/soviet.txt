@@ -6009,6 +6009,7 @@ focus_tree = {
 
 		available = {
 			NOT = { has_idea = SOV_desperate_measures_ns }
+			#has_war_with = GER
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -6588,7 +6589,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_centre
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6716,7 +6717,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_zinovyevite_terrorist_center
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6744,7 +6745,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_socialism_in_one_country
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -7004,7 +7005,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_the_anti_soviet_trotskyist_center
-		cost = 10
+		cost = 5
 
 		available = {
 

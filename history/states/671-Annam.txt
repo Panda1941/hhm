@@ -13,6 +13,7 @@ state={
 
 
 	history={
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 		add_core_of = SWE
 		owner = FRA
 		victory_points = {

@@ -4,10 +4,11 @@ state={
 	name="STATE_46" # Muntenia
 	manpower = 4461400
 	resources={
-		oil=44 # was: 70
+		oil=68 # was: 70
+		rubber = 18
 	}
 
-	state_category = city
+	state_category = megalopolis
 
 	history={
 		owner = ROM

@@ -118,6 +118,27 @@ equipments = {
 			module = tank_buster_1
 			count < 3
 		}
+		
+		module_count_limit = {
+			module = aircraft_cannon_1_1x
+			count < 2
+		}
+		module_count_limit = {
+			module = aircraft_cannon_1_2x
+			count < 2
+		}
+		module_count_limit = {
+			module = aircraft_cannon_2_1x
+			count < 2
+		}
+		module_count_limit = {
+			module = aircraft_cannon_2_2x
+			count < 2
+		}
+		
+
+
+
 
 		module_count_limit = {
 			module = tank_buster_2

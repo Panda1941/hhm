@@ -8,7 +8,7 @@ state={
 		aluminium=40 # was: 194
 	}
 	
-	state_category = large_city
+	state_category = megalopolis
 
 	history={
 		owner = HUN

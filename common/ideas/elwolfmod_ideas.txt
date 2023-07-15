@@ -149,6 +149,7 @@ ideas = {
 				consumer_goods_factor = 100
 				conversion_cost_civ_to_mil_factor = 100
 				conversion_cost_mil_to_civ_factor = 100
+				min_export = -1
 			}
 		}
 		artificial_intelligence = {

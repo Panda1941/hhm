@@ -5,6 +5,10 @@ state={
 	manpower = 131732
 	state_category = wasteland
 
+	resources = {
+		oil = 8
+	}
+	
 	history={
 		owner = ENG
 		buildings = {

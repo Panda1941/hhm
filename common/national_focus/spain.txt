@@ -1571,7 +1571,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SPA_extol_the_martyrs_of_the_war
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
@@ -1625,7 +1625,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1707,7 +1707,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SPA_consolidate_the_north
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_SPA_CARLIST_UPRISING}
@@ -1782,7 +1782,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SPA_tackle_the_vulnerable_fronts
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
@@ -1861,7 +1861,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_extol_the_martyrs_of_the_war
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CARLIST_UPRISING}
@@ -2033,7 +2033,6 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_adopt_the_26_points }
-		mutually_exclusive = { focus = SPA_restore_the_monarchy }
 		
 		icon = GFX_goal_generic_political_pressure
 		x = 1
@@ -2088,7 +2087,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
+		prerequisite = { focus = SPA_dictator_for_life }
 		
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = -2
@@ -2280,7 +2279,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
+		prerequisite = { focus = SPA_dictator_for_life }
 		
 		icon = GFX_goal_rhineland
 		x = 0
@@ -2351,52 +2350,13 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = SPA_restore_the_monarchy
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_adopt_the_26_points }
-		mutually_exclusive = { focus = SPA_dictator_for_life }
-		
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 3
-		y = 1
-		relative_position_id = SPA_adopt_the_26_points
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = SPA_supremacy_of_the_communion
-				}
-				custom_effect_tooltip = SPA_restore_the_monarchy_tt
-				hidden_effect = {
-					drop_cosmetic_tag = yes
-					set_cosmetic_tag = SPB_kingdom
-				}
-				news_event = { id = lar_news.17 hours = 6 }
-			}
-			if = {
-				limit = {
-					NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
-				}
-				news_event = { id = lar_news.18 hours = 6 }
-			}
-		}
-	}
-
 	focus = {
 		id = SPA_stamp_out_the_maquis
 		available = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
+		prerequisite = { focus = SPA_dictator_for_life }
 		
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 2
