@@ -121,7 +121,7 @@ equipments = {
 		
 		module_count_limit = {
 			module = aircraft_cannon_1_1x
-			count < 2
+			count < 1
 		}
 		module_count_limit = {
 			module = aircraft_cannon_1_2x
@@ -129,7 +129,7 @@ equipments = {
 		}
 		module_count_limit = {
 			module = aircraft_cannon_2_1x
-			count < 2
+			count < 1
 		}
 		module_count_limit = {
 			module = aircraft_cannon_2_2x

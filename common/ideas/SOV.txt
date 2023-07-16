@@ -1546,7 +1546,7 @@ ideas = {
 			}
 
 			modifier = {
-				research_speed_factor = 0.01
+				research_speed_factor = 0.08
 			}
 		}
 
@@ -1560,7 +1560,7 @@ ideas = {
 			}
 
 			modifier = {
-				research_speed_factor = 0.01
+				research_speed_factor = 0.08
 			}
 		}
 
