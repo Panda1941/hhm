@@ -717,3 +717,4 @@
  gurilla_tatics_disabled:0 "Guerrilla Tactics Disabled"
  gurilla_tatics_disabled_desc:0 "Disables Guerrilla Tactics\n\n"
 
+ fighting_with_enough_units_mod:0 "Commanding at least 20 units"

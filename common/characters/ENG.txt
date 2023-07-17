@@ -364,12 +364,13 @@ characters={
 				small=GFX_portrait_ENG_richard_oconnor_small
 			}
 		}
+		traits = { infantry_leader desert_fox }
 		corps_commander={
 			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
+			attack_skill=1
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=5
 			legacy_id=999
 		}
 	}

@@ -71,6 +71,9 @@ NDefines.NMilitary.RELIABILTY_RECOVERY = 0.0 -- WAS 0.1 factor affecting how muc
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 -- WAS 1 aka TRAINED | Since the above was changed there is no point to not allowing divs to be trained to regular considering that its only 10% stats now.
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
 
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 40				--base is 24
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 40				--base is 24
+NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1
 -- Navy Balance
 
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.4
