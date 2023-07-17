@@ -1,6 +1,5 @@
 
 --Convoy Prio
-
 NDefines.NNavy.NAVAL_INVASION_PRIORITY = 1								-- Default convoy priority for naval invasions
 NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 1								-- Default convoy priority for naval transports
 NDefines.NNavy.SUPPLY_PRIORITY = 2								    	-- Default convoy priority for supplying units via sea
@@ -10,7 +9,6 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5                          -- Defau
 
 
 -- QOL
-
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                           -- Up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
 NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.3, 0.13, 0.04, 0.0 }
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 720
@@ -19,6 +17,8 @@ NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 							    -- WAS 48 | drastically cut
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	    -- WAS 60 | less messages lying around at the top of your screen
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 25
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3
+
+NDefines.NInterface.MINIMAP_PING_DELAY_BETWEEN_PINGS = 1
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0                     -- Removed for game stability/reducing chance of desync
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 9999						    -- Unlimited special forces
@@ -37,22 +37,22 @@ NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                        -- Free 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0						    -- Base IC cost for lended license
 
 NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
-    90.0/360.0, 0.95, 0.86,
-    60.0/360.0, 0.95, 0.86,
-    30.0/360.0, 0.95, 0.86,
-    00.0/360.0, 0.95, 0.86,
-    330.0/360.0, 0.95, 0.86,
-    300.0/360.0, 0.95, 0.86,
-    270.0/360.0, 0.95, 0.86,
-    240.0/360.0, 0.95, 0.86,
-    210.0/360.0, 0.95, 0.86,
-    180.0/360.0, 0.95, 0.86
+	0.0/360.0, 1.0, 1.0,	--red
+	10.0/360.0, 1.0, 1.0,	--orange
+	60.0/360.0, 1.0, 1.0,	--yellow
+	120.0/360.0, 0.75, 1.0,	--green
+	180.0/360.0, 1.0, 1.0,	--turq
+	235.0/360.0, 1.0, 1.0,	--blue
+	260.0/360.0, 1.0, 1.0,	--dark purple
+	300.0/360.0, 1.0, 1.0,	--light purple
+	330.0/360.0, 0, 1.0		--white
 }
 
 -- Free Templates
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 	--Base cost to unlock a support slot
+
 -- Free Designs
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0				    -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
@@ -63,7 +63,6 @@ NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1							-- Max number of mines that c
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0						-- Value used to overall balance of the speed of planting naval mines
 
 -- Army Balance
-
 NDefines.NMilitary.TRAINING_ATTRITION = 0  -- vanilla 0.06
 NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 72							-- base hours needed to prepare an invasion
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.10
@@ -74,13 +73,106 @@ NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 40				--base is 24
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 40				--base is 24
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1
--- Navy Balance
 
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.20
+
+NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+		1.00,
+		0.99,
+		0.98,
+		0.97,
+		0.96,
+		0.95,
+		0.9,
+		0.85,
+		0.80,
+		0.75,
+		0.65,
+		0.6,
+		0.55,
+		0.50,
+		0.40,
+		0.30,
+		0.20,
+		0.10,
+		0.00, --there isn't much point setting this higher than 0
+	}
+NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.00,
+		0.95,
+		0.929,
+		0.913,
+		0.90,
+		0.888,
+		0.84,
+		0.806,
+		0.776,
+		0.75,
+		0.726,
+		0.704,
+		0.684,
+		0.665,
+		0.646,
+		0.61,
+		0.58,
+		0.55,
+		0.53,
+		0.50,
+	}
+
+-- Navy Balance
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.4
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0
 
--- Air Balance
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR    = 0.5 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.66  -- maximum penalty to get from larger fleets
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS = 0.0  -- the accumulated penalty from new ships will be clamped to this value
+NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.75    -- damage penalty at 0% positioning
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.5   -- screening efficiency (screen to capital ratio) at 0% positioning
+NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING    = 0.1  -- AA penalty at 0% positioning
 
+NDefines.NNavy.CARRIER_STACK_PENALTY = 6 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
+NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.1 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
+
+NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
+		80.0,	-- big guns
+		160.0,	-- torpedos
+		45,	-- small guns
+	}
+NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
+		1.0,	-- big guns
+		2.0,	-- torpedos
+		1.0,	-- small guns
+	}
+
+NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
+    0.2, -- HOLD
+    0.2, -- PATROL		
+    0.2, -- STRIKE FORCE 
+    0.2, -- CONVOY RAIDING
+    0.2, -- CONVOY ESCORT
+    0.2, -- MINES PLANTING	
+    0.2, -- MINES SWEEPING	
+    0.2, -- TRAIN
+    0.2, -- RESERVE_FLEET
+    0.2, -- NAVAL_INVASION_SUPPORT
+}
+NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
+    0.0, -- HOLD
+    1.0, -- PATROL		
+    0.5, -- STRIKE FORCE 
+    0.5, -- CONVOY RAIDING
+    0.5, -- CONVOY ESCORT
+    0.3, -- MINES PLANTING	
+    0.3, -- MINES SWEEPING	
+    0.0, -- TRAIN
+    0.0, -- RESERVE_FLEET
+    1.0, -- NAVAL_INVASION_SUPPORT
+}
+
+NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
+
+-- Air Balance
 NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 200
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 200
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 200
