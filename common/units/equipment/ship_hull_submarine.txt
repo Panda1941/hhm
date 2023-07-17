@@ -71,12 +71,12 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 25
-		naval_speed = 13
+		naval_speed = 12
 		reliability = 0.60
 		
 		naval_range = 2500
 		
-		max_strength = 8
+		max_strength = 10
 		
 
 		fuel_consumption = 1
@@ -127,12 +127,12 @@ equipments = {
 			fixed_ship_engine_slot = sub_ship_engine_2
 		}
 		sub_visibility = 22
-		naval_speed = 17
+		naval_speed = 16
 		reliability = 0.70
 
 		naval_range = 4000
 		reliability = 0.70
-		max_strength = 16
+		max_strength = 20
 		
 
 		
