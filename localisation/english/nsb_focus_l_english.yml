@@ -1388,7 +1388,7 @@
  SOV_modify_fyp_ns_intro_default_ns_name:0 "$SOV_third_five_year_plan_dynamic_modifier$"
  SOV_modify_fyp_ns_intro_alt_ns_name:0 "$SOV_third_five_year_plan_dynamic_modifier_alt$"
  SOV_third_five_year_plan_ns_alt_tt:0 "Replace §Y$SOV_third_five_year_plan_dynamic_modifier$§! by §Y$SOV_third_five_year_plan_dynamic_modifier_alt$§!\n Effective change: \n£prod_eff Production Efficiency growth: §G+5.00%§! \nIndustrial Concern Cost: §G-15%§! \nConsumer Goods Factories: §Y+5.0%§!\n\n"
- SOV_third_five_year_plan_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \n£prod_eff Production Efficiency growth: §G+5.00%§! \nIndustrial Concern Cost: §G-15%§!\n\n"
+ SOV_third_five_year_plan_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \n£prod_eff Production Efficiency growth: §G+5.00%§! \nIndustrial Concern Cost: §G-15%§!\n\n \nConsumer Goods Factories: §Y+5.0%§!"
  SOV_reorganize_the_pc_of_heavy_industry_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \nConsumer Goods Factories: §Y-2.0%§! \n\n"
  SOV_industrial_modernization_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \n£prod_eff_cap Production Efficiency Cap: §G+5.00%§! \nProduction Efficiency Retention: §G+10.00%§! \n\n"
  SOV_increase_state_reserves_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \nResource Gain Efficiency: §G+10%§!"
