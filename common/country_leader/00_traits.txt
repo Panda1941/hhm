@@ -3893,6 +3893,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	technocrat = {
 		sprite = 13
 
@@ -3982,9 +3983,9 @@ leader_traits = {
 	war_industrialist = {
 		sprite = 10
 		random = yes
-		production_speed_arms_factory_factor = 0.1
-		production_speed_dockyard_factor = 0.1
-		production_speed_fuel_silo_factor = 0.1
+		production_speed_arms_factory_factor = 0.15
+		production_speed_dockyard_factor = 0.15
+		production_speed_fuel_silo_factor = 0.15
 
 		ai_will_do = {
 			factor = 2
@@ -3994,10 +3995,10 @@ leader_traits = {
 	captain_of_industry = {
 		sprite = 10
 		random = yes
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_infrastructure_factor = 0.1
-		production_speed_rail_way_factor = 0.1
-		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_industrial_complex_factor = 0.15
+		production_speed_infrastructure_factor = 0.15
+		production_speed_rail_way_factor = 0.15
+		production_speed_synthetic_refinery_factor = 0.15
 
 		ai_will_do = {
 			factor = 1
@@ -5802,6 +5803,8 @@ leader_traits = {
 	industrial_concern = {
 		random = no
 
+		production_speed_buildings_factor = 0.04
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -5837,6 +5840,8 @@ leader_traits = {
 	refinery_concern = {
 		random = no
 
+		fuel_gain_factor = 0.06
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -5844,6 +5849,8 @@ leader_traits = {
 
 	electronics_concern = {
 		random = no
+
+		research_speed_factor = 0.04
 
 		ai_will_do = {
 			factor = 1

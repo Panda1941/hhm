@@ -76,6 +76,8 @@ NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1
 
 NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.20
 
+NDefines.NMilitary.BASE_FORT_PENALTY = -0.2
+
 NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
 		1.00,
 		0.99,

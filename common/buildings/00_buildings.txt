@@ -6,14 +6,14 @@ buildings = {
 
 
 	infrastructure = {
-		base_cost = 6000
+		base_cost = 4000
 		icon_frame = 3
 		infrastructure = yes
 		max_level = 5
 		value = 1
 
 		show_modifier = yes
-		max_fuel_building = 1.5 #k
+		max_fuel_building = 2.5 #k
 		allied_build = yes
 
 		infrastructure_construction_effect = yes
@@ -21,7 +21,7 @@ buildings = {
 
 	arms_factory = {
 		show_on_map = 6
-		base_cost = 7200
+		base_cost = 7500
 		base_cost_conversion = 4000
 		military_production = 1
 		icon_frame = 2
@@ -33,7 +33,7 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 10800
+		base_cost = 11000
 		base_cost_conversion = 9000
 		general_production = 1
 		icon_frame = 1
@@ -45,7 +45,8 @@ buildings = {
 
 	air_base = {
 		show_on_map = 1
-		base_cost = 1250
+		base_cost = 1000
+		per_level_extra_cost = 100
 		icon_frame = 5
 		air_base = yes
 		max_level = 10
@@ -57,7 +58,7 @@ buildings = {
 
 	supply_node = {
 		show_on_map = 1
-		base_cost = 20000
+		base_cost = 7500
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 15
@@ -71,8 +72,8 @@ buildings = {
 	}	
 	
 	rail_way = {
-		base_cost = 170
-		per_level_extra_cost = 130
+		base_cost = 160
+		per_level_extra_cost = 110
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 16
@@ -84,8 +85,8 @@ buildings = {
 		show_on_map = 1
 		show_on_map_meshes = 3
 		always_shown = yes
-		base_cost = 5000
-		per_level_extra_cost = 1000
+		base_cost = 6000
+		per_level_extra_cost = 500
 		provincial = yes
 		only_costal = yes
 		is_port = yes
@@ -99,13 +100,13 @@ buildings = {
 	bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
-		base_cost = 500
+		base_cost = 800
 		per_level_extra_cost = 500
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 7
 		land_fort = 1
-		max_level = 10
+		max_level = 5
 		value = 1
 		infrastructure_construction_effect = yes
 	}
@@ -113,14 +114,14 @@ buildings = {
 	coastal_bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
-		base_cost = 500
+		base_cost = 800
 		per_level_extra_cost = 500
 		provincial = yes
 		disabled_in_dmz = yes
 		only_costal = yes
 		icon_frame = 8
 		naval_fort = 1
-		max_level = 10
+		max_level = 5
 		value = 1
 		infrastructure_construction_effect = yes
 	}
@@ -142,7 +143,8 @@ buildings = {
 	
 	anti_air_building = {
 		show_on_map = 3
-		base_cost = 2500
+		base_cost = 2000
+		per_level_extra_cost = 200
 		icon_frame = 9
 		anti_air = yes
 		disabled_in_dmz = yes
@@ -155,7 +157,7 @@ buildings = {
 
 	synthetic_refinery = {
 		show_on_map = 1
-		base_cost = 14500
+		base_cost = 11000
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
@@ -166,12 +168,12 @@ buildings = {
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
-		fuel_gain_from_states = 2.0 #per hour
+		fuel_gain_from_states = 2.4 #per hour
 	}
 
 	fuel_silo = {
 		show_on_map = 1
-		base_cost = 5000
+		base_cost = 4000
 		icon_frame = 14
 		#max_level = 1
 		shares_slots = yes
@@ -185,7 +187,8 @@ buildings = {
 
 	radar_station = {
 		show_on_map = 1
-		base_cost = 3375
+		base_cost = 3000
+		per_level_extra_cost = 200
 		icon_frame = 11
 		radar = yes
 		#max_level = 0 # max: 5
@@ -199,11 +202,11 @@ buildings = {
 
 	rocket_site = {
 		show_on_map = 1
-		base_cost = 6400
+		base_cost = 6000
 		icon_frame = 12
 		rocket_production = 5
 		rocket_launch_capacity = 1
-		max_level = 5
+		max_level = 2
 		shares_slots = yes
 		value = 1
 		infrastructure_construction_effect = yes
@@ -211,7 +214,7 @@ buildings = {
 
 	nuclear_reactor = {
 		show_on_map = 1
-		base_cost = 30000
+		base_cost = 25000
 		icon_frame = 13
 		nuclear_reactor = yes
 		nuclear_production_factor = 1
