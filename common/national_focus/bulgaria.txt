@@ -1896,7 +1896,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_support_macedonian_organizations }
 
 		available = {
-
+			is_ai = no
 		}
 		
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1945,7 +1945,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_condemn_macedonian_organizations }
 
 		available = {
-
+			is_ai = no
 		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -2028,6 +2028,7 @@ focus_tree = {
 			hidden_trigger = {
 				NOT = { has_country_flag = BUL_zveno_coup_flag } #Zveno CW has not started
 			}
+			is_ai = no
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -2060,6 +2061,7 @@ focus_tree = {
 				NOT = { has_active_mission = BUL_impending_zveno_coup }	#Zveno coup mission is not ongoing
 				NOT = { has_country_flag = BUL_zveno_coup_flag } #Zveno CW has not started
 			}
+			is_ai = no
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -2088,7 +2090,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_appoint_right_wing_ministers }
 
 		available = {
-
+			is_ai = no
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -3304,7 +3306,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_the_tsars_regime }
 
 		available = {
-
+			is_ai = no
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}

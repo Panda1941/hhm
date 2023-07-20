@@ -55,6 +55,10 @@ focus_tree = {
 		}
 		modifier = {
 			add = 20
+			tag = CZE
+		}
+		modifier = {
+			add = 20
 			tag = IRQ
 		}
 		modifier = {

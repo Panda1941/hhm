@@ -4437,7 +4437,10 @@ focus_tree = {
 	focus = {
 		id = uk_iraq_focus
 		available = {
-
+			OR = {
+				date > 1940.06.01
+				has_war_with = ITA
+			}
 		} #UK at war with fascist/commie. iraq is fascist/commie
 
 		bypass = {
@@ -4459,7 +4462,7 @@ focus_tree = {
 		relative_position_id = ENG_home_defence
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			
 		}	
 		completion_reward = {
 			create_wargoal = {
