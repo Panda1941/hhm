@@ -2796,6 +2796,7 @@ focus_tree = {
 		prerequisite = { focus = GER_mol_rib_pact }
 		will_lead_to_war_with = POL
 		available = {
+			date > 1939.06.30
 			is_subject = no	
 			#Make custom trigger tooltip here
 			85 = {
@@ -2805,27 +2806,6 @@ focus_tree = {
 				controller = {
 					original_tag = POL
 				}
-			}
-			OR = {
-				POL = {
-					has_civil_war = no
-				}
-				#custom_trigger_tooltip = {
-					#tooltip = GER_danzig_trigger_polish_civil_war
-					AND = {
-						any_other_country = {
-							original_tag = POL
-							has_civil_war = yes
-							OR = {
-								is_in_faction_with = ROOT
-								has_volunteers_amount_from = {
-									tag = GER
-									count > 0
-								}
-							}
-						}
-					}
-				#}
 			}
 		}
 

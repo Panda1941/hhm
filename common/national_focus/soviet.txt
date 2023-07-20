@@ -1720,13 +1720,19 @@ focus_tree = {
 		}
 
 		available = {
-
+			date > 1938.01.01
 		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
 			air_experience = 50
+			add_tech_bonus = {
+				name = SOV_increase_aircraft_production
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
 		}
 	}
 
@@ -1915,7 +1921,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SOV_increase_aircraft_production
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = light_air
 			}
 		}
