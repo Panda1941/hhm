@@ -47,6 +47,8 @@ NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
 	300.0/360.0, 1.0, 1.0,	--light purple
 	330.0/360.0, 0, 1.0		--white
 }
+-- Slots
+NDefines.NBuildings.MAX_SHARED_SLOTS = 28
 
 -- Free Templates
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,

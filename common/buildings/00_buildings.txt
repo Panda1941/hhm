@@ -155,6 +155,24 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
+	#synthetic_refinery = {
+	#	show_on_map = 1
+	#	base_cost = 11000
+	#	icon_frame = 10
+	#	#local_resources_oil = 1 # May use local_resources_ + any resource name
+	#	local_resources_rubber = 1 # May use local_resources_ + any resource name
+	#	refinery = yes
+	#	max_level = 3 # This is the max unlock level
+	#	shares_slots = yes
+	#	value = 5
+	#	infrastructure_construction_effect = yes
+	#	
+	#	show_modifier = yes
+	#	fuel_gain_from_states = 2.4 #per hour
+	#}
+
+	
+
 	synthetic_refinery = {
 		show_on_map = 1
 		base_cost = 11000
@@ -163,12 +181,55 @@ buildings = {
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 3 # This is the max unlock level
-		shares_slots = yes
+		shares_slots = no
 		value = 5
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
-		fuel_gain_from_states = 2.4 #per hour
+		fuel_gain_from_states = 3.4 #per hour
+	}
+
+	steel_refinery = {
+		show_on_map = 1
+		base_cost = 11000
+		icon_frame = 17
+		local_resources_steel = 4 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 3 # This is the max unlock level
+		shares_slots = no
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+	}
+
+	aluminium_refinery = {
+		show_on_map = 1
+		base_cost = 11000
+		icon_frame = 19
+		local_resources_aluminium = 2 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 3 # This is the max unlock level
+		shares_slots = no
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+	}
+
+	advanced_steel_refinery = {
+		show_on_map = 1
+		base_cost = 11000
+		icon_frame = 18
+		local_resources_chromium = 1 # May use local_resources_ + any resource name
+		local_resources_tungsten = 1 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 3 # This is the max unlock level
+		shares_slots = no
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
 	}
 
 	fuel_silo = {

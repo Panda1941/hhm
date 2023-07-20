@@ -1113,7 +1113,7 @@ technologies = {
 
 		enable_building = {
 			building = synthetic_refinery
-			level = 2.5
+			level = 3
 		}
 				
 		path = {
@@ -1649,6 +1649,15 @@ technologies = {
 		
 		local_resources_factor = 0.10
 		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_refinery
+				resource = steel
+				amount = 2
+			}
+		}
+		show_effect_as_desc = yes
+
 		path = {
 			research_cost_coeff = 1
 		}
@@ -1739,6 +1748,15 @@ technologies = {
 		path = {
 			research_cost_coeff = 1
 		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = aluminium_refinery
+				resource = aluminium
+				amount = 2
+			}
+		}
+		show_effect_as_desc = yes
 		
 		research_cost = 2
 		start_year = 1937
@@ -1839,6 +1857,20 @@ technologies = {
 		path = {
 			research_cost_coeff = 1
 		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = advanced_steel_refinery
+				resource = tungsten
+				amount = 1
+			}
+			modify_building_resources = {
+				building = advanced_steel_refinery
+				resource = chromium
+				amount = 1
+			}
+		}
+		show_effect_as_desc = yes
 		
 		research_cost = 2
 		start_year = 1939
@@ -1927,6 +1959,19 @@ technologies = {
 		path = {
 			research_cost_coeff = 1
 		}
+		on_research_complete = {
+			modify_building_resources = {
+				building = advanced_steel_refinery
+				resource = tungsten
+				amount = 1
+			}
+			modify_building_resources = {
+				building = advanced_steel_refinery
+				resource = chromium
+				amount = 1
+			}
+		}
+		show_effect_as_desc = yes
 		
 		research_cost = 2
 		start_year = 1941
@@ -2022,6 +2067,30 @@ technologies = {
 			construction_tech
 			excavation_tech
 		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_refinery
+				resource = steel
+				amount = 1
+			}
+			modify_building_resources = {
+				building = aluminium_refinery
+				resource = aluminium
+				amount = 1
+			}
+			modify_building_resources = {
+				building = advanced_steel_refinery
+				resource = tungsten
+				amount = 1
+			}
+			modify_building_resources = {
+				building = advanced_steel_refinery
+				resource = chromium
+				amount = 1
+			}
+		}
+		show_effect_as_desc = yes
 		
 		folder = {
 			name = industry_folder
