@@ -608,7 +608,7 @@
 		x = 10
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -1073,7 +1073,7 @@
 	focus = {
 		id = SAF_special_service_battalion
 		icon = GFX_goal_generic_army_doctrines
-		x = 16
+		x = 15
 		y = 0
 
 		cost = 10
