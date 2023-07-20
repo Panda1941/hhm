@@ -81,10 +81,10 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.35
-				production_speed_industrial_complex_factor = -0.3
-				production_speed_arms_factory_factor = -0.3
-				conversion_cost_civ_to_mil_factor= 0.15
-				conversion_cost_mil_to_civ_factor = 0.45
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.45
+				conversion_cost_civ_to_mil_factor= 0.3
+				conversion_cost_mil_to_civ_factor = 0.3
 				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.4
 			}
