@@ -93,6 +93,12 @@
  SOV_assist_republican_spain:0 "Assist Republican Spain"
  SOV_steal_gold_reserves:0 "Steal Spanish Gold Reserves"
 
+ AXIS_spain:0 "The Spanish Civil War"
+ AXIS_assist_nationalist_spain:0 "Assist Nationalist Spain"
+
+ SPR_the_tank_research:0 "Tank Research"
+ SPR_the_tank_research_desc:0 " "
+
  # Vichy shit
  GER_vichy_alu:0 "Seize French Aluminium"
  VIC_fascism:2 "Vichy France"

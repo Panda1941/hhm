@@ -7,6 +7,22 @@ SOV_spain = {
 	}
 }
 
+AXIS_spain = {
+	allowed = {
+		OR = {
+			original_tag = GER
+			original_tag = ITA
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = SPR
+		}
+	}
+	visible = {
+		has_global_flag = spanish_civil_war
+	}
+}
+
 elwolfmod_gamerules = {
 	
 	icon = GFX_decision_category_generic

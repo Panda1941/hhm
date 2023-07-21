@@ -1,0 +1,1458 @@
+SPR_the_inevitable_civil_war = {
+
+	SPA_military_plot_nationalists = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 250
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			country_event = lar_spain.2
+			if = {
+				limit = {
+					has_idea = SPA_awaiting_the_rebellion
+				}
+				remove_ideas = SPA_awaiting_the_rebellion
+			}
+		}
+	}
+
+	SPR_military_plot_republicans = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 250
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		timeout_effect = {
+			country_event = lar_spain.2
+		}
+	}
+
+###  ###  ###     ##  ### #   # ### #       #   #  ##  ###      ### #  #  ##      ##  ###    #   #  ##  ###  
+#  # #  # #      #  #  #  #   #  #  #       #   # #  # #  #      #  #  # #       #  # #      #   # #  # #  # 
+###  ###  ##  ## #     #   # #   #  #       # # # #### ###       #  #  # # ## ## #  # ##  ## # # # #### ###  
+#    #  # #      #  #  #   # #   #  #       # # # #  # #  #      #  #  # #  #    #  # #      # # # #  # #  # 
+#    #  # ###     ##  ###   #   ### ###      # #  #  # #  #      #   ##   ##      ##  #       # #  #  # #  # 
+
+	SPA_primo_de_rivera_speech = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SPA_primo_de_rivera_imprisoned
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			always = no
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = SPA_military_plot_nationalists
+				days = -36
+			}
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			if = {
+				limit = {
+					NOT = { has_country_flag = SPR_primo_de_rivera_first_speech }
+				}
+				set_country_flag = SPR_primo_de_rivera_first_speech
+			}
+		}
+
+	}
+
+	SPR_imprison_primo_de_rivera = {
+
+		icon = generic_independence
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			has_country_flag = SPR_primo_de_rivera_first_speech
+			NOT = {
+				has_country_flag = SPA_primo_de_rivera_imprisoned
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+		}
+
+		cost = 15
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			always = no
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_stability = 0.05
+			add_political_power = 25
+			add_days_mission_timeout = {
+				mission = SPR_military_plot_republicans
+				days = 37
+			}
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			set_country_flag = SPA_primo_de_rivera_imprisoned
+			custom_effect_tooltip = SPR_imprison_primo_de_rivera_tt
+		}
+
+	}
+
+	SPA_political_assassination = {
+
+		icon = spr_political_assassination
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			always = no
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_stability = -0.05
+			add_war_support = 0.1
+			add_days_mission_timeout = {
+				mission = SPA_military_plot_nationalists
+				days = -36
+			}
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			set_country_flag = SPA_political_assassination_flag
+		}
+
+	}
+
+	SPR_political_arrest = {
+
+		icon = generic_independence
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			has_country_flag = SPA_political_assassination_flag
+			NOT = {
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+		}
+
+		cost = 10
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 800
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			always = no
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_political_power = 25
+			add_stability = 0.05
+			add_days_mission_timeout = {
+				mission = SPR_military_plot_republicans
+				days = 37
+			}
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			clr_country_flag = SPA_political_assassination_flag
+		}
+
+	}
+
+	SPA_sway_leader_loyalty = {
+
+		icon = generic_army_support
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			always = no
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SPA_military_plot_nationalists
+				days = -36
+			}
+			random_unit_leader = {
+				limit = {
+					NOT = { has_trait = trait_SPA_nationalist_sympathies }
+					NOT = { has_id = 1108 }
+					NOT = { has_character_flag = SPR_do_not_align_me_flag }
+				}
+				add_unit_leader_trait = trait_SPA_nationalist_sympathies
+				set_unit_leader_flag = SPA_swayed_leader_loyalty_flag
+			}
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+	}
+
+	SPR_secure_leader_loyalty = {
+
+		icon = generic_army_support
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+			any_army_leader = {
+				has_unit_leader_flag = SPA_swayed_leader_loyalty_flag
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			always = no
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SPR_military_plot_republicans
+				days = 37
+			}
+			random_unit_leader = {
+				limit = {
+					has_trait = trait_SPA_nationalist_sympathies
+					has_unit_leader_flag = SPA_swayed_leader_loyalty_flag
+				}
+				remove_unit_leader_trait = trait_SPA_nationalist_sympathies
+				clr_unit_leader_flag = SPA_swayed_leader_loyalty_flag
+			}
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+	}
+
+	SPR_reassign_disloyal_leader = {
+
+		icon = generic_army_support
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+			any_army_leader = {
+				has_trait = trait_SPA_nationalist_sympathies
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			always = no
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SPR_military_plot_republicans
+				days = 37
+			}
+			random_army_leader = {
+				limit = {
+					has_trait = trait_SPA_nationalist_sympathies
+					NOT = {
+						has_unit_leader_flag = SPA_swayed_leader_loyalty_flag
+						has_unit_leader_flag = SPR_reassigned_flag
+					}
+				}
+				custom_effect_tooltip = SPR_reassign_disloyal_leader_tt
+				set_unit_leader_flag = SPR_reassigned_flag # Generates trait upon SCW start that makes them useless for 60 days.
+			}
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+	}
+
+	SPA_suppress_the_strikes = {
+
+		icon = oppression
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = SPA_suppress_the_strikes_tt
+					has_idea = SPR_national_strikes_1
+				}
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			always = no
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SPA_military_plot_nationalists
+				days = -36
+			}
+			SPR_suppress_the_strikes_increase = yes
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+	}
+
+	SPR_concessions_to_the_left = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = SPA_suppress_the_strikes_tt
+					has_idea = SPR_national_strikes_9
+				}
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 500
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			always = no
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SPR_military_plot_republicans
+				days = 37
+			}
+			SPR_concessions_to_the_left_increase = yes
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+	}
+}
+
+
+SPR_opposition_civil_war_preparations = {
+
+###  ##   ##  #  #  ##     #  #  ##  ### ### ### ###  ##   ##  ### ###  ##  #  #     #   # ###  ##  ## ###  ##  #  #  ## 
+#   #  # #  # #  # #       ## # #  #  #   #  #    #  #  # #  #  #   #  #  # ## #     ## ##  #  #   #    #  #  # ## # #   
+##  #  # #    #  #  #      # ## #  #  #   #  ##   #  #    ####  #   #  #  # # ##     # # #  #   #   #   #  #  # # ##  #  
+#   #  # #  # #  #   #     #  # #  #  #   #  #    #  #  # #  #  #   #  #  # #  #     #   #  #    #   #  #  #  # #  #   # 
+#    ##   ##   ##  ##      #  #  ##   #  ### #   ###  ##  #  #  #  ###  ##  #  #     #   # ### ##  ##  ###  ##  #  # ##  
+
+	SPA_hand_over_the_ceda_campaign_chest_mission = {
+
+		priority = 10
+
+		name = SPA_hand_over_the_ceda_campaign_chest
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 23
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			set_country_flag = SPA_hand_over_the_ceda_campaign_chest_flag
+			hidden_effect = { activate_mission = SPA_negotiate_carlist_support_mission }
+		}
+	}
+
+	SPA_negotiate_carlist_support_mission = {
+
+		priority = 10
+
+		name = SPA_negotiate_carlist_support
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 28
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			if = {
+				limit = {
+					difficulty > 1
+					is_ai = no
+				}
+				custom_effect_tooltip = SPA_negotiate_carlist_support_mission_tt_2
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = 10 }
+			}
+			else = {
+				custom_effect_tooltip = SPA_negotiate_carlist_support_mission_tt
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = 5 }
+			}
+			set_country_flag = SPA_negotiate_carlist_support_flag
+			hidden_effect = { activate_mission = SPA_the_army_of_africa_mission }
+		}
+	}
+
+	SPA_the_army_of_africa_mission = {
+
+		priority = 10
+
+		name = SPA_the_army_of_africa
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 35
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = SPA_the_army_of_africa_mission_tt
+			set_country_flag = SPA_the_army_of_africa_flag
+			add_to_variable = { var = spa_civil_war_divisions_counter_var value = 5 }
+			hidden_effect = { activate_mission = SPA_secure_the_northern_garrisons_mission }
+		}
+	}
+
+	SPA_sin_paquito_mission = {
+
+		priority = 10
+
+		name = SPA_sin_paquito
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 28
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			set_country_flag = SPA_sin_paquito_flag
+			set_global_flag = SPR_sin_paquito
+		}
+	}
+
+	SPA_con_paquito_mission = {
+
+		priority = 10
+
+		name = SPA_con_paquito
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 28
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			random_unit_leader = {
+				limit = {
+					has_id = 1108
+				}
+				add_unit_leader_trait = trait_SPA_nationalist_sympathies
+			}
+			set_country_flag = SPA_con_paquito_flag
+		}
+	}
+
+	SPR_secure_the_guardia_de_asalto_mission = {
+
+		priority = 10
+
+		name = SPR_secure_the_guardia_de_asalto
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 58
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			if = {
+				limit = {
+					difficulty > 1
+					is_ai = no
+				}
+				custom_effect_tooltip = SPR_secure_the_guardia_de_asalto_mission_tt_2
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -5 }
+				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 5 }
+			}
+			else = {
+				custom_effect_tooltip = SPR_secure_the_guardia_de_asalto_mission_tt
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -3 }
+				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 3 }
+			}
+			custom_effect_tooltip = SPR_remove_after_civil_war_tt
+			hidden_effect = { activate_mission = SPR_train_the_union_youth_mission }
+			set_country_flag = SPR_secure_the_guardia_de_asalto_flag
+		}
+	}
+
+	SPR_secure_the_guardia_civil_mission = {
+
+		priority = 10
+
+		name = SPR_secure_the_guardia_civil
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 58
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			if = {
+				limit = {
+					difficulty > 1
+					is_ai = no
+				}
+				custom_effect_tooltip = SPR_secure_the_guardia_civil_mission_tt_2
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -10 }
+				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 10 }
+			}
+			else = {
+				custom_effect_tooltip = SPR_secure_the_guardia_civil_mission_tt
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -6 }
+				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 6 }
+			}
+			custom_effect_tooltip = SPR_remove_after_civil_war_tt
+			hidden_effect = { activate_mission = SPR_train_the_union_youth_mission }
+			set_country_flag = SPR_secure_the_guardia_civil_flag
+		}
+	}
+
+	SPR_train_the_union_youth_mission = {
+
+		priority = 10
+
+		name = SPR_train_the_union_youth
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			if = {
+				limit = {
+					difficulty > 1
+					is_ai = no
+				}
+				custom_effect_tooltip = SPR_train_the_union_youth_mission_tt_2
+				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 10 }
+			}
+			else = {
+				custom_effect_tooltip = SPR_train_the_union_youth_mission_tt
+				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 5 }
+			}
+			hidden_effect = { activate_mission = SPR_enlarge_the_weapon_caches_mission }
+			set_country_flag = SPR_train_the_union_youth_flag
+		}
+	}
+
+	SPR_enlarge_the_weapon_caches_mission = {
+
+		priority = 10
+
+		name = SPR_enlarge_the_weapon_caches
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = SPR_enlarge_the_weapon_caches_mission_tt
+			hidden_effect = { activate_mission = SPR_distribute_arms_to_the_people_mission }
+			set_country_flag = SPR_enlarge_the_weapon_caches_flag
+		}
+	}
+
+	SPR_distribute_arms_to_the_people_mission = {
+
+		priority = 10
+
+		name = SPR_distribute_arms_to_the_people
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = SPR_distribute_arms_to_the_people_mission_tt
+			hidden_effect = { activate_mission = SPR_disband_the_army_mission }
+			add_to_variable = { var = spr_civil_war_divisions_counter_var value = 10 }
+			set_country_flag = SPR_distribute_arms_to_the_people_flag
+		}
+	}
+
+	SPR_disband_the_army_mission = {
+
+		priority = 10
+
+		name = SPR_disband_the_army
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = SPR_disband_the_army_mission_tt
+			set_country_flag = SPR_disband_the_army_flag
+			if = {
+				limit = {
+					has_idea = SPA_awaiting_the_rebellion
+				}
+				remove_ideas = SPA_awaiting_the_rebellion
+			}
+			hidden_effect = {
+				country_event = lar_spain.2
+			}
+		}
+	}
+
+	SPR_primo_de_rivera_speech_mission = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = no
+
+		days_mission_timeout = 38
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_days_mission_timeout = {
+				mission = SPR_military_plot_republicans
+				days = -25
+			}
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.05
+			}
+			add_stability = -0.05
+			add_political_power = -15
+			if = {
+				limit = {
+					NOT = { has_country_flag = SPR_primo_de_rivera_first_speech }
+				}
+				set_country_flag = SPR_primo_de_rivera_first_speech
+			}
+			hidden_effect = {
+				country_event = { id = lar_spain.4 }
+			}
+		}
+
+	}
+
+	SPA_imprison_primo_de_rivera_mission = {
+
+		icon = generic_independence
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = yes
+
+		days_mission_timeout = 38
+
+		is_good = yes
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_days_mission_timeout = {
+				mission = SPA_military_plot_nationalists
+				days = 15
+			}
+			add_stability = -0.05
+			custom_effect_tooltip = SPR_imprison_primo_de_rivera_tt
+			set_country_flag = SPA_primo_de_rivera_imprisoned
+			hidden_effect = {
+				country_event = { id = lar_spain.3 }
+			}
+		}
+
+	}
+
+	SPR_political_assassination_mission = {
+
+		icon = spr_political_assassination
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = no
+
+		days_mission_timeout = 38
+
+		is_good = yes
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_stability = -0.1
+			add_days_mission_timeout = {
+				mission = SPR_military_plot_republicans
+				days = -25
+			}
+			set_country_flag = SPA_political_assassination_flag
+			hidden_effect = {
+				country_event = { id = lar_spain.4 }
+			}
+		}
+
+	}
+
+	SPA_political_arrest_mission = {
+
+		icon = generic_independence
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = no
+
+		days_mission_timeout = 38
+
+		is_good = yes
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_days_mission_timeout = {
+				mission = SPA_military_plot_nationalists
+				days = 15
+			}
+			add_popularity = {
+			    ideology = communism
+			    popularity = 0.05
+			}
+			clr_country_flag = SPA_political_assassination_flag
+			hidden_effect = {
+				country_event = { id = lar_spain.3 }
+			}
+		}
+
+	}
+
+	SPR_sway_leader_loyalty_mission = {
+
+		icon = generic_army_support
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = no
+
+		days_mission_timeout = 38
+
+		is_good = yes
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_days_mission_timeout = {
+				mission = SPR_military_plot_republicans
+				days = -25
+			}
+			random_unit_leader = {
+				limit = {
+					NOT = { has_trait = trait_SPA_nationalist_sympathies }
+					NOT = { has_id = 1108 }
+					NOT = { has_character_flag = SPR_do_not_align_me_flag }
+				}
+				add_unit_leader_trait = trait_SPA_nationalist_sympathies
+				set_unit_leader_flag = SPA_swayed_leader_loyalty_flag
+			}
+			hidden_effect = {
+				country_event = { id = lar_spain.4 }
+			}
+		}
+
+	}
+
+	SPA_reassign_disloyal_leader_mission = {
+
+		icon = generic_army_support
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = no
+
+		days_mission_timeout = 38
+
+		is_good = yes
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_days_mission_timeout = {
+				mission = SPA_military_plot_nationalists
+				days = 15
+			}
+			random_army_leader = {
+				limit = {
+					has_trait = trait_SPA_nationalist_sympathies
+					NOT = {
+						has_unit_leader_flag = SPA_swayed_leader_loyalty_flag
+						has_unit_leader_flag = SPR_reassigned_flag
+					}
+				}
+				custom_effect_tooltip = SPR_reassign_disloyal_leader_tt
+				set_unit_leader_flag = SPR_reassigned_flag #make them pop up in the civil war with some delay, or require a decision to be taken before they're available (like Franco in the Canarias)
+			}
+			hidden_effect = {
+				country_event = { id = lar_spain.3 }
+			}
+		}
+
+	}
+
+	SPR_suppress_the_strikes_mission = {
+
+		icon = oppression
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = no
+
+		days_mission_timeout = 38
+
+		is_good = yes
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_days_mission_timeout = {
+				mission = SPR_military_plot_republicans
+				days = -25
+			}
+			SPR_suppress_the_strikes_increase = yes
+			hidden_effect = {
+				country_event = { id = lar_spain.4 }
+			}
+		}
+
+	}
+
+	SPA_concessions_to_the_left_mission = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = SPR
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = no
+
+		days_mission_timeout = 38
+
+		is_good = yes
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_days_mission_timeout = {
+				mission = SPA_military_plot_nationalists
+				days = 15
+			}
+			SPR_concessions_to_the_left_increase = yes
+			hidden_effect = {
+				country_event = { id = lar_spain.3 }
+			}
+		}
+
+	}
+}
+
+SPR_recovering_from_civil_war = {
+
+	SPR_eliminate_guerrillas = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SPR
+		}
+
+		available = {
+			FROM = {
+				compliance > 35
+			}
+		}
+
+		state_target = yes
+
+		targets = { 41 165 166 167 168 169 170 171 172 173 174 175 176 177 178 788 789 790 791 792 793 794 }
+
+		target_trigger = {
+			OR = {
+				has_completed_focus = SPA_strengthen_the_supreme_reality_of_spain
+				has_completed_focus = SPA_stamp_out_the_maquis
+				has_completed_focus = SPR_the_inevitable_counterblow
+				has_completed_focus = SPR_all_must_do_their_part
+				has_completed_focus = SPR_red_bulwark_in_the_west
+				has_completed_focus = SPR_stabilize_the_nation
+			}
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		cost = 40
+
+		fire_only_once = yes
+
+		days_remove = 70
+
+		ai_will_do = {
+			base = 200
+		}
+
+		modifier = {
+			weekly_manpower = -300
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = SPA_strengthen_the_supreme_reality_of_spain
+				has_completed_focus = SPA_stamp_out_the_maquis
+				has_completed_focus = SPR_the_inevitable_counterblow
+				has_completed_focus = SPR_all_must_do_their_part
+				has_completed_focus = SPR_red_bulwark_in_the_west
+				has_completed_focus = SPR_stabilize_the_nation
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+	}
+
+}
