@@ -1447,7 +1447,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 2
 			}
 		}
 
@@ -1567,7 +1567,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 2
 			}
 		}
 		
@@ -2072,12 +2072,12 @@ technologies = {
 			modify_building_resources = {
 				building = steel_refinery
 				resource = steel
-				amount = 1
+				amount = 2
 			}
 			modify_building_resources = {
 				building = aluminium_refinery
 				resource = aluminium
-				amount = 1
+				amount = 2
 			}
 			modify_building_resources = {
 				building = advanced_steel_refinery

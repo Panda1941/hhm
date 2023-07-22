@@ -3400,19 +3400,13 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ITA_solid_progress
-		cost = 10
+		cost = 5
 		available = {
 		}
 
 		search_filters = {}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				ETH_deescalate_the_war_effect = yes
-			}
 			
 			if = {
 				limit = {
