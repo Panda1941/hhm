@@ -826,7 +826,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.03
 				supply_node_range = 0.1
 				supply_consumption_factor = -0.1
 			}
@@ -1001,6 +1001,7 @@ ideas = {
 					
 			modifier = {
 				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.08
 				political_power_factor = 0.1
 			}
 		}
@@ -1199,6 +1200,18 @@ ideas = {
 				mechanized_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
+				}
+				light_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				medium_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				heavy_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
 				}
 			}
 
