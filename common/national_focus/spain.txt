@@ -285,6 +285,11 @@ focus_tree = {
 				add_idea = SPR_national_strikes_2
 			}
 
+			set_politics = {
+				ruling_party = fascism
+			    elections_allowed = no
+			}
+
 			#Done to simulate attache
 			hidden_effect = {
 				every_country = {
