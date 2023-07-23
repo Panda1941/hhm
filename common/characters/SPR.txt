@@ -111,11 +111,7 @@ characters={
 				}
 			}
 			available = {
-				has_completed_focus = SPA_primo_de_rivera_prisoner_exchange
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
-				}
+				
 			}
 			traits = {
 				falangist_figurehead 
@@ -3719,16 +3715,6 @@ characters={
 				}
 			}
 			available = {
-				NOT = {
-					has_completed_focus = SPR_masters_of_our_own_fate 
-					has_completed_focus = SPR_communists_in_the_government 
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPR_not_nationalist_spain_tt
-					NOT = {
-						tag = SPA 
-					}
-				}
 			}
 			traits = {
 				gran_carabinero 
@@ -3772,15 +3758,6 @@ characters={
 				}
 			}
 			available = {
-				NOT = {
-					has_completed_focus = SPR_crush_the_revolution 
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPR_not_nationalist_spain_tt
-					NOT = {
-						tag = SPA 
-					}
-				}
 			}
 			traits = {
 				captain_of_industry 
@@ -3820,15 +3797,6 @@ characters={
 				}
 			}
 			available = {
-				NOT = {
-					has_completed_focus = SPR_crush_the_revolution 
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPR_not_nationalist_spain_tt
-					NOT = {
-						tag = SPA 
-					}
-				}
 			}
 			traits = {
 				war_industrialist 
@@ -3872,17 +3840,6 @@ characters={
 					}
 				}
 				available = {
-					NOT = {
-						has_completed_focus = SPR_masters_of_our_own_fate 
-						has_completed_focus = SPR_communists_in_the_government 
-					}
-					custom_trigger_tooltip = {
-						tooltip = SPR_not_nationalist_spain_tt
-						NOT = {
-							tag = SPA 
-							tag = SPB 
-						}
-					}
 				}
 				traits = {
 					silent_workhorse 
@@ -3999,16 +3956,7 @@ characters={
 				}
 			}
 			available = {
-				has_completed_focus = SPR_masters_of_our_own_fate 
-				NOT = {
-					has_completed_focus = SPR_regional_defense_council_of_aragon 
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPR_not_nationalist_spain_tt
-					NOT = {
-						tag = SPA 
-					}
-				}
+				has_global_flag = scw_over
 			}
 			traits = {
 				collectivization_specialist 
@@ -4098,19 +4046,7 @@ characters={
 				}
 			}
 			available = {
-				OR = {
-					has_completed_focus = SPR_demand_ministerial_positions 
-					has_completed_focus = SPR_new_leadership 
-				}
-				NOT = {
-					has_completed_focus = SPR_crush_the_revolution 
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPR_not_nationalist_spain_tt
-					NOT = {
-						tag = SPA 
-					}
-				}
+				has_global_flag = scw_over
 			}
 			traits = {
 				education_reformer 
@@ -4360,14 +4296,7 @@ characters={
 
 			available = {
 				NOT = {
-					has_completed_focus = SPA_no_compromise_on_carlist_ideals
-				}
-				NOT = {
 					has_completed_focus = SPA_banish_the_party_leaders
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
 				}
 			}
 			traits = {
@@ -4631,11 +4560,7 @@ characters={
 			}
 
 			available = {
-				has_completed_focus = SPA_supremacy_of_the_communion
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
-				}
+				has_global_flag = scw_over
 			}
 			traits = {
 				regional_traditionalist_leader 

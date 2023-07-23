@@ -98,6 +98,7 @@
 
  SPR_the_tank_research:0 "Tank Research"
  SPR_the_tank_research_desc:0 " "
+ SPA_fuse_the_parties_mod_tt:0 "Finishing this focus will §Rend§! the §YSpanish Civil War§!\n\n"
 
  # Vichy shit
  GER_vichy_alu:0 "Seize French Aluminium"

@@ -469,8 +469,58 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SPR_the_tank_research
 				bonus = 1.0
+				ahead_reduction = 1.0
 				uses = 1
 				category = armor
+			}
+		}
+	}
+	
+
+	focus = {
+		id = SPA_mandatory_pre_military_training
+		available = {
+			NOT = { has_global_flag = scw_over }
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_expand_conscription }
+		
+		icon = GFX_focus_generic_military_academy
+		x = -1
+		y = 2
+		relative_position_id = SPA_expand_conscription
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = SPA_mandatory_pre_military_training_1
+		}
+	}
+
+	focus = {
+		id = SPA_all_shall_serve
+		available = {
+			NOT = { has_global_flag = scw_over }
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_mandatory_pre_military_training }
+		
+		icon = GFX_focus_generic_military_mission
+		x = 0
+		y = 1
+		relative_position_id = SPA_mandatory_pre_military_training
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_war_support = 0.1
+			swap_ideas = {
+				remove_idea = SPA_mandatory_pre_military_training_1
+				add_idea = SPA_mandatory_pre_military_training_2
 			}
 		}
 	}
@@ -803,16 +853,18 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			set_party_name = { ideology = fascism long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
-			set_party_name = { ideology = neutrality long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
-			
-			set_global_flag = nationalist_victory
-			set_global_flag = scw_over
-			country_event = { id = lar_news.1 hours = 6 }
+			custom_effect_tooltip = SPA_fuse_the_parties_mod_tt
 
 			remove_ideas = SPR_national_strikes_1
+			add_ideas = SPA_recovering_from_civil_war
 
 			hidden_effect = {
+				set_global_flag = nationalist_victory
+				set_global_flag = scw_over
+				country_event = { id = lar_news.1 hours = 6 }
+
+				set_party_name = { ideology = fascism long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
+				set_party_name = { ideology = neutrality long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
 				if = { limit = { NOT = { SOV = { has_idea = SPR_seized_spanish_gold_reserves } } } SOV = { add_timed_idea = { idea = SPR_seized_spanish_gold_reserves days = 365 } } }
 			}
 		}
@@ -1340,6 +1392,1038 @@ focus_tree = {
 						limit_to_naval_base = yes
 					}
 					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_the_national_and_popular_army_of_spain
+		available = {
+			has_global_flag = scw_over
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_adopt_the_26_points }
+		
+		icon = GFX_goal_generic_army_doctrines
+		x = 5
+		y = 1
+		relative_position_id = SPA_adopt_the_26_points
+		cost = 10
+
+		available_if_capitulated = yes
+		complete_tooltip = {
+			every_state = {
+				limit	= {	has_state_flag = SPA_the_national_and_popular_army_of_spain_2mil }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			army_experience = 10
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				set_state_flag = SPA_the_national_and_popular_army_of_spain_2mil
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_the_army_of_africa_model
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_the_national_and_popular_army_of_spain }
+		
+		icon = GFX_goal_generic_army_artillery
+		x = 0
+		y = 1
+		relative_position_id = SPA_the_national_and_popular_army_of_spain
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = SPA_the_army_of_africa_model
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_equipment_modernization
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_the_army_of_africa_model }
+		
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 2
+		relative_position_id = SPA_the_army_of_africa_model
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_equipment_modernization
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_artillery_modernization
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_equipment_modernization }
+		
+		icon = GFX_goal_generic_army_artillery2
+		x = -1
+		y = 1
+		relative_position_id = SPA_equipment_modernization
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_artillery_modernization
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_expand_the_air_branch
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_equipment_modernization }
+		
+		icon = GFX_goal_generic_air_doctrine
+		x = 0
+		y = 2
+		relative_position_id = SPA_equipment_modernization
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				name = SPA_expand_the_air_branch
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = SPA_expand_the_air_branch
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_expand_the_special_forces
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_equipment_modernization }
+		
+		icon = GFX_goal_generic_special_forces
+		x = 1
+		y = 1
+		relative_position_id = SPA_equipment_modernization
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_expand_the_special_forces
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				name = SPA_expand_the_special_forces
+				bonus = 1.0
+				uses = 1
+				category = mountaineers_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_motorization
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_the_army_of_africa_model }
+		
+		icon = GFX_goal_generic_army_motorized
+		x = 1
+		y = 1
+		relative_position_id = SPA_the_army_of_africa_model
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_equipment_modernization
+				bonus = 2.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_an_armored_corps
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_motorization }
+		prerequisite = { focus = SPA_join_the_axis }
+		
+		icon = GFX_goal_generic_army_tanks
+		x = 1
+		y = 1
+		relative_position_id = SPA_motorization
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_an_armored_corps
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_join_the_axis
+		available = {
+			has_global_flag = scw_over
+			is_in_faction = no
+			OR = {
+				AND = {
+					GER = {
+						has_government = fascism
+						is_faction_leader = yes
+					}
+				}
+				AND = {
+					ITA = {
+						has_government = fascism
+						is_faction_leader = yes
+					}
+				}
+			}
+			NOT = { has_completed_focus = SPA_the_latin_bloc }
+			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
+		}
+		bypass = {
+			OR = {
+				AND = {
+					NOT = { GER = { has_government = fascism } }
+					NOT = { ITA = { has_government = fascism } }
+				}
+				is_in_faction_with = GER
+				is_in_faction_with = ITA
+			}
+		}
+		prerequisite = { focus = SPA_adopt_the_26_points }
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		icon = GFX_goal_support_fascism
+		x = 7
+		y = 1
+		relative_position_id = SPA_adopt_the_26_points
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					GER = {
+						has_government = fascism
+						is_faction_leader = yes
+					}
+				}
+				GER = { country_event = generic.2 }
+			}
+			if = {
+				limit = {
+					ITA = {
+						has_government = fascism
+						is_faction_leader = yes
+					}
+				}
+				ITA = { country_event = generic.2 }
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_fascist_economic_aid
+		available = {
+			any_country = {
+				is_in_faction_with = ROOT
+				has_government = fascism
+				is_major = yes
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_join_the_axis }
+		prerequisite = { focus = SPA_national_recovery }
+		mutually_exclusive = { focus = SPA_autarky }
+		
+		icon = GFX_goal_generic_construction
+		x = 1
+		y = 1
+		relative_position_id = SPA_join_the_axis
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_ideas = SPA_fascist_economic_aid
+			swap_ideas = {
+				remove_idea = SPA_recovering_from_civil_war
+				add_idea = SPA_recovering_from_civil_war_2
+			}
+			add_tech_bonus = {
+				name = SPA_fascist_economic_aid
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_facilitate_pyrenees_freight_transports
+		available = {
+			has_full_control_of_state = 793
+			has_full_control_of_state = 794
+			has_full_control_of_state = 165
+			has_full_control_of_state = 176
+			has_full_control_of_state = 792
+			has_full_control_of_state = 41
+			any_allied_country = {
+				is_major = yes
+				has_government = fascism
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_fascist_economic_aid }
+		
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		relative_position_id = SPA_fascist_economic_aid
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			custom_effect_tooltip = SPA_facilitate_pyrenees_freight_transports_tt
+			hidden_effect = {
+				793 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				794 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				165 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				176 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				792 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				41 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			build_railway = { #Madrid - Zaragoza - Pyrinnes
+				path = {
+					3938 9767 6993 9785 11766 813 3816 9813 11821 915
+				}
+			}
+			build_railway = { #Zaragoza - Barcelona - French Border
+				path = {
+					3816 3954 13223 6966 6812 9764 854 9824 
+				}
+			}
+			build_railway = { #Madrid - Valladolid - Burgos - Bilbao - French Border
+				path = {
+					3938 3794 9800 9846 11825 6936 903 885 11852 13233 740 6756
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_improve_cross_country_railways
+		available = {
+			any_allied_country = {
+				is_major = yes
+				has_government = fascism
+			}
+			has_full_control_of_state = 169
+			has_full_control_of_state = 789
+			has_full_control_of_state = 175
+			has_full_control_of_state = 170
+			has_full_control_of_state = 173
+			has_full_control_of_state = 168
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_fascist_economic_aid focus = SPA_spanish_austerity }
+		
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 2
+		relative_position_id = SPA_fascist_economic_aid
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			build_railway = { #Madrid - Crodoba - Sevilla
+				path = {
+					3938 13224 13229 6800 6832 6948 3810 3871 875 1178 7183
+				}
+			}
+			build_railway = { #Madrid - Granada
+				path = {
+					13229 9778 9828 12083 4095 1176
+				}
+			}
+			build_railway = { #Madrid - Murcia - Valencia
+				path = {
+					3938 6914 9757 942 832 9903 1093 10024 4098 9889 6959 6906
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_support_the_war_industry
+		available = {
+			any_country = {
+				is_in_faction_with = ROOT
+				has_government = fascism
+				is_major = yes
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
+		prerequisite = { focus = SPA_improve_cross_country_railways }
+		
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 2
+		relative_position_id = SPA_facilitate_pyrenees_freight_transports
+		cost = 10
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit	= {	has_state_flag = SPA_support_the_war_industry_1civ }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPA_recovering_from_civil_war_2
+				add_idea = SPA_recovering_from_civil_war_3
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+					}
+					is_core_of = ROOT
+				}
+				set_state_flag = SPA_support_the_war_industry_1civ
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+					}
+					is_core_of = ROOT
+					NOT = { has_state_flag = SPA_support_the_war_industry_1civ }
+				}
+				set_state_flag = SPA_support_the_war_industry_1civ
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+					}
+					is_core_of = ROOT
+					NOT = { has_state_flag = SPA_support_the_war_industry_1civ }
+				}
+				set_state_flag = SPA_support_the_war_industry_1civ
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = SPA_reduce_reliance_on_foreign_resources_tt
+		}
+	}
+
+	focus = {
+		id = SPA_italian_shipbuilding_expertise
+		available = {
+			is_in_faction_with = ITA
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_support_the_war_industry }
+		
+		icon = GFX_focus_generic_navy_battleship2
+		x = -1
+		y = 1
+		relative_position_id = SPA_support_the_war_industry
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_ideas = SPA_italian_shipbuilding_expertise
+			add_tech_bonus = {
+				name = SPA_italian_shipbuilding_expertise
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_the_duty_to_work
+		available = {
+			any_country = {
+				is_in_faction_with = ROOT
+				has_government = fascism
+				is_major = yes
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_support_the_war_industry }
+		
+		icon = GFX_goal_generic_construct_military
+		x = 0
+		y = 2
+		relative_position_id = SPA_support_the_war_industry
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			add_ideas = SPA_the_duty_to_work
+		}
+	}
+
+	focus = {
+		id = SPA_expand_the_war_industry
+		available = {
+			any_country = {
+				is_in_faction_with = ROOT
+				has_government = fascism
+				is_major = yes
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_support_the_war_industry focus = SPA_expand_the_axis_gold_trade }
+		
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+		relative_position_id = SPA_support_the_war_industry
+		cost = 10
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit	= {	has_state_flag = SPA_expand_the_war_industry_2mil }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				set_state_flag = SPA_expand_the_war_industry_2mil
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+					}
+					is_core_of = ROOT
+					NOT = { has_state_flag = SPA_expand_the_war_industry_2mil }
+				}
+				set_state_flag = SPA_expand_the_war_industry_2mil
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_national_recovery
+		available = {
+			has_global_flag = scw_over
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_adopt_the_26_points }
+		
+		icon = GFX_goal_generic_consumer_goods
+		x = 9
+		y = 1
+		relative_position_id = SPA_adopt_the_26_points
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		complete_tooltip = {
+			every_state = {
+				limit	= {	has_state_flag = SPA_national_recovery_2civ }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = SPA_national_recovery_1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				set_state_flag = SPA_national_recovery_2civ
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_autarky
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_national_recovery }
+		mutually_exclusive = { focus = SPA_fascist_economic_aid }
+		
+		icon = GFX_goal_generic_oil_refinery
+		x = 1
+		y = 1
+		relative_position_id = SPA_national_recovery
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = SPA_national_recovery_1
+				add_idea = SPA_national_recovery_2
+			}
+			add_tech_bonus = {
+				name = HOL_make_use_of_our_riches
+				bonus = 1.0
+				uses = 2
+				category = excavation_tech
+			}
+			add_tech_bonus = {
+				name = HOL_expand_curacao_oil_refineries
+				bonus = 1.0
+				uses = 1
+				category = synth_resources
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_spanish_austerity
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_autarky }
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		relative_position_id = SPA_autarky
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPA_national_recovery_2
+				add_idea = SPA_national_recovery_3
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = SPA_recovering_from_civil_war
+						has_idea = SPA_recovering_from_civil_war_2
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SPA_recovering_from_civil_war
+						add_idea = SPA_recovering_from_civil_war_2
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = SPA_recovering_from_civil_war
+				}
+				swap_ideas = {
+					remove_idea = SPA_recovering_from_civil_war
+					add_idea = SPA_recovering_from_civil_war_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = SPA_recovering_from_civil_war_2
+				}
+				swap_ideas = {
+					remove_idea = SPA_recovering_from_civil_war_2
+					add_idea = SPA_recovering_from_civil_war_3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_reduce_reliance_on_foreign_resources
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_spanish_austerity }
+		
+		icon = GFX_goal_generic_construction2
+		x = 1
+		y = 1
+		relative_position_id = SPA_spanish_austerity
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_reduce_reliance_on_foreign_resources
+				bonus = 1.5
+				uses = 2
+				category = excavation_tech
+			}
+			custom_effect_tooltip = SPA_reduce_reliance_on_foreign_resources_tt
+		}
+	}
+
+	focus = {
+		id = SPA_expand_the_axis_gold_trade
+		available = {
+			NOT = { has_completed_focus = SPA_the_stabilization_plan }
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_spanish_austerity }
+		mutually_exclusive = { focus = SPA_capitalist_economic_aid }
+		
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 0
+		y = 2
+		relative_position_id = SPA_spanish_austerity
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = SPA_expand_the_axis_gold_trade
+		}
+	}
+
+	focus = {
+		id = SPA_ensure_agricultural_self_sufficiency
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_expand_the_axis_gold_trade }
+		
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 2
+		relative_position_id = SPA_expand_the_axis_gold_trade
+		cost = 10
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit	= {	has_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			remove_ideas = SPA_recovering_from_civil_war_3
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				set_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					is_core_of = ROOT
+					NOT = { has_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ }
+				}
+				set_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
 					instant_build = yes
 				}
 			}
