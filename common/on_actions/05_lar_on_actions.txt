@@ -275,7 +275,7 @@ on_actions = {
 						date < 1936.1.2
 						has_dlc = "La Resistance"
 					}
-					country_lock_all_division_template = yes
+					#country_lock_all_division_template = yes
 					every_state = {
 						limit = {
 							is_core_of = SPR
