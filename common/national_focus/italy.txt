@@ -2562,7 +2562,7 @@ focus_tree = {
 		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
 		available = {
-			date > 1938.06.1
+			date > 1936.06.1
 		}
 
 		search_filters = {FOCUS_FILTER_NAVY_XP}
