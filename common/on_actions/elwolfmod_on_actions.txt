@@ -528,16 +528,16 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
-			every_country = {
-				every_army_leader = {
-					limit = {
-						NOT = { 
-							has_trait = no_grind
-						}
-					}
-					add_unit_leader_trait = no_grind
-				}
-			}
+			#every_country = {
+			#	every_army_leader = {
+			#		limit = {
+			#			NOT = { 
+			#				has_trait = no_grind
+			#			}
+			#		}
+			#		add_unit_leader_trait = no_grind
+			#	}
+			#}
 			ENG = {
 				remove_resource_rights = 676
 				remove_resource_rights = 291
@@ -566,18 +566,19 @@ on_actions = {
 				}
 				remove_ideas = MTG_naval_treaty_adherent
 			}
-			every_country = {
-				limit = {
-					AND = {
-						is_playable_country = yes
-						NOT = {
-							original_tag = SPR
-							original_tag = FIN
-						}
-					}
-				}
-				add_ideas = elwolfmod_novols
-			}
+			#every_country = {
+			#	limit = {
+			#		AND = {
+			#			is_playable_country = yes
+			#			NOT = {
+			#				original_tag = SPR
+			#				original_tag = FIN
+			#			}
+			#		}
+			#	}
+			#	add_ideas = elwolfmod_novols
+			#}
+			# ALLOWS FOR FOW OF TEAM
 			every_country = {
 				limit = {
 					OR = {
