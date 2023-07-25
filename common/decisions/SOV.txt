@@ -4250,7 +4250,7 @@ SOV_gosproyektstroy_decision_category = {
 				limit = {
 					FROM = { tag = USA }
 				}
-				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA
+				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 2 } #USA
 				swap_ideas = {
 					remove_idea = SOV_gosproyektstroy_1
 					add_idea = SOV_gosproyektstroy_2_eng
@@ -4260,7 +4260,7 @@ SOV_gosproyektstroy_decision_category = {
 				limit = {
 					FROM = { tag = ENG }
 				}
-				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 2 } #ENG
+				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #ENG
 				swap_ideas = {
 					remove_idea = SOV_gosproyektstroy_1
 					add_idea = SOV_gosproyektstroy_2_usa
