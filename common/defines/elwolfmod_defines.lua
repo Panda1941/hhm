@@ -183,6 +183,13 @@ NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 200
 NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 1200
 
+
+-- Flicker Bombing
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.14    -- How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.14    -- How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 0.5
+
+
 ---- Dockyards
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 14
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 40

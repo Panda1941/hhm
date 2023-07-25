@@ -628,6 +628,12 @@ if = {
 		}
 		icon = "GFX_GER_improved_light_tank_medium"
 	}
+
+	add_equipment_to_stockpile = {
+	    type = light_tank_chassis_2
+	    amount = 720
+	    variant_name = "Panzer II Ausf. a"
+	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
