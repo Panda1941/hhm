@@ -3,6 +3,8 @@
  NO_ASIA_NAME:0 "The War in the West"
  NO_ASIA_DESC:0 "No asia. Takes out USA, AST, NZL, MEX, RAJ, MAN, SIA, JAP, East Indies, Malaysia, Philipines, The Islands, etc. UK has resources rights to USA resources, UK civ boosted to 49 civs 24 mils, AST, NZL, and RAJ guns added to UK, UK 300 more convoys 100 more trains, 1 research slot, and research discount on guns and artillery."
 
+ industry_late:0 "Late Game Industry"
+
  elwolfmod_gamerules:0 "Check Gamerules"
  elwolfmod_gamerules_two:0 "Check Gamerules Continued"
  sov_boost_status:0 "[GetSovBoostStatus]"

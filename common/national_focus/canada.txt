@@ -237,8 +237,8 @@
 			add_tech_bonus = {
 				name = CAN_dollar_a_year_men
 				bonus = 1.0
-				uses = 1
-				category = industry
+				uses = 2
+				category = industry_late
 			}
 		}
 	}
@@ -1986,7 +1986,7 @@
 			add_tech_bonus = {
 				name = CAN_cmp_truck
 				ahead_reduction = 3
-				bonus = 4.0
+				bonus = 3.0
 				uses = 1
 				category = motorized_equipment
 			}

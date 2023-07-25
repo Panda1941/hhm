@@ -1093,7 +1093,7 @@ focus_tree = {
 				name = HUN_industrial_revitalization
 				bonus = 1.0
 				uses = 1
-				category = industry
+				category = industry_late
 			}
 		}
 	}
@@ -1398,7 +1398,7 @@ focus_tree = {
 				name = HUN_announce_the_gyor_program
 				bonus = 1.0
 				uses = 2
-				category = industry
+				category = industry_late
 			}
 		}
 	}

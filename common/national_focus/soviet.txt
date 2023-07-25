@@ -473,7 +473,7 @@ focus_tree = {
 					name = SOV_reorganize_the_pc_of_heavy_industry_name_default
 					bonus = 1.0
 					uses = 2
-					category = industry
+					category = industry_late
 					category = electronics
 				}
 			}
@@ -488,7 +488,7 @@ focus_tree = {
 					name = SOV_reorganize_the_pc_of_heavy_industry_name_alt
 					bonus = 1.0
 					uses = 2
-					category = industry
+					category = industry_late
 					category = electronics
 				}
 			}
@@ -526,7 +526,7 @@ focus_tree = {
 				ahead_reduction = 2
 				bonus = 1.0
 				uses = 1
-				category = industry
+				category = industry_late
 			}
 		}
 	}

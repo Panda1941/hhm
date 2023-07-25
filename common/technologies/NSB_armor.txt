@@ -1144,7 +1144,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			armor_module
 		}
 	}
 
@@ -1199,7 +1199,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			armor_module
 		}
 	}
 
@@ -1252,7 +1252,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			armor_module
 		}
 	}
 
@@ -1299,7 +1299,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			armor_module
 		}
 	}
 
@@ -1350,7 +1350,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			armor_module
 		}
 	}
 
@@ -1403,7 +1403,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			armor_module
 		}
 	}
 
@@ -1454,7 +1454,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			armor_module
 		}
 	}
 
@@ -1499,7 +1499,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			armor_module
 		}
 	}
 }

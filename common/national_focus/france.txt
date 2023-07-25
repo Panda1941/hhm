@@ -2590,7 +2590,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_laissez_faire
-				category = industry
+				category = industry_late
 				uses = 3
 				bonus = 1.5
 			}

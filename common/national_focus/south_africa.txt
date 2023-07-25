@@ -753,8 +753,8 @@
 			add_tech_bonus = {
 				name = SAF_heavy_engineering
 				bonus = 1.0
-				uses = 1
-				category = industry
+				uses = 2
+				category = industry_late
 			}
 		}
 	}
