@@ -1,3 +1,154 @@
+templates_retards_ai = {
+
+	inf_templates = {
+	
+		allowed = {  }
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			division_template = {
+				name = "15w infantry"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 }
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } 
+					infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 }
+					artillery_brigade = { x = 0 y = 3 }
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+			}
+			division_template = {
+				name = "30w infantry + arty"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
+					infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
+					artillery_brigade = { x = 0 y = 3 } artillery_brigade = { x = 1 y = 3 }
+					artillery_brigade = { x = 0 y = 4 }	artillery_brigade = { x = 1 y = 4 }
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+			}
+			division_template = {
+				name = "30w pure infantry"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
+					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
+					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } infantry = { x = 2 y = 3 }
+					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 } infantry = { x = 2 y = 4 } 
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+			}
+		}
+	}
+		
+	sf_templates_30w = {
+		allowed = {  }
+		
+		fire_only_once = yes
+		
+		complete_effect = {	
+			division_template = {
+				name = "30w mountaineers"
+				regiments = {
+					mountaineers = { x = 0 y = 0 } mountaineers = { x = 1 y = 0 } mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 0 y = 1 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 2 y = 1 } 
+					mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 2 } mountaineers = { x = 2 y = 2 }
+					rocket_artillery_brigade = { x = 0 y = 3 } rocket_artillery_brigade = { x = 1 y = 3 }
+					rocket_artillery_brigade = { x = 0 y = 4 } rocket_artillery_brigade = { x = 1 y = 4 }
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
+			}
+			division_template = {
+				name = "30w marines"
+				regiments = {
+					marine = { x = 0 y = 0 } marine = { x = 1 y = 0 } marine = { x = 2 y = 0 }
+					marine = { x = 0 y = 1 } marine = { x = 1 y = 1 } marine = { x = 2 y = 1 } 
+					marine = { x = 0 y = 2 } marine = { x = 1 y = 2 } marine = { x = 2 y = 2 }
+					rocket_artillery_brigade = { x = 0 y = 3 } rocket_artillery_brigade = { x = 1 y = 3 }
+					rocket_artillery_brigade = { x = 0 y = 4 } rocket_artillery_brigade = { x = 1 y = 4 }
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
+			}
+			division_template = {
+				name = "30w paratroopers"
+				regiments = {
+					paratrooper = { x = 0 y = 0 } paratrooper = { x = 1 y = 0 } paratrooper = { x = 2 y = 0 }
+					paratrooper = { x = 0 y = 1 } paratrooper = { x = 1 y = 1 } paratrooper = { x = 2 y = 1 } 
+					paratrooper = { x = 0 y = 2 } paratrooper = { x = 1 y = 2 } paratrooper = { x = 2 y = 2 }
+					paratrooper = { x = 0 y = 3 } paratrooper = { x = 1 y = 3 } paratrooper = { x = 2 y = 3 }
+					paratrooper = { x = 0 y = 4 } paratrooper = { x = 1 y = 4 } paratrooper = { x = 2 y = 4 } 
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
+			}					
+		}
+	}
+
+	tank_templates_30w = {
+		allowed = {  }
+		
+		fire_only_once = yes
+		
+		complete_effect = { 
+			division_template = {
+				name = "tank motorised"
+				regiments = {
+					medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } medium_armor = { x = 2 y = 0 } motorized = { x = 3 y = 0 }	motorized = { x = 4 y = 0 }
+					medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } medium_armor = { x = 2 y = 1 } motorized = { x = 3 y = 1 }	motorized = { x = 4 y = 1 }
+					medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } medium_armor = { x = 2 y = 2 } motorized = { x = 3 y = 2 }	motorized = { x = 4 y = 2 }
+					}											
+				support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+			}
+			division_template = {
+				name = "tank mechanised"
+				regiments = {
+					medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } medium_armor = { x = 2 y = 0 } mechanized = { x = 3 y = 0 }	mechanized = { x = 4 y = 0 }
+					medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } medium_armor = { x = 2 y = 1 } mechanized = { x = 3 y = 1 }	mechanized = { x = 4 y = 1 }
+					medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } medium_armor = { x = 2 y = 2 } mechanized = { x = 3 y = 2 }	mechanized = { x = 4 y = 2 }
+					}											
+				support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+			}
+		}
+	}
+	
+	mp_template = {
+	
+		allowed = {  }
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			if = {
+			limit = { has_tech = tech_military_police }
+				division_template = {
+					name = "mp"
+					regiments = {
+						cavalry = { x = 0 y = 0 } cavalry = { x = 1 y = 0 } cavalry = { x = 2 y = 0 } cavalry = { x = 3 y = 0 } cavalry = { x = 4 y = 0 }
+						cavalry = { x = 0 y = 1 } cavalry = { x = 1 y = 1 } cavalry = { x = 2 y = 1 } cavalry = { x = 3 y = 1 } cavalry = { x = 4 y = 1 }
+						cavalry = { x = 0 y = 2 } cavalry = { x = 1 y = 2 } cavalry = { x = 2 y = 2 } cavalry = { x = 3 y = 2 } cavalry = { x = 4 y = 2 }
+						cavalry = { x = 0 y = 3 } cavalry = { x = 1 y = 3 } cavalry = { x = 2 y = 3 } cavalry = { x = 3 y = 3 } cavalry = { x = 4 y = 3 }
+						cavalry = { x = 0 y = 4 } cavalry = { x = 1 y = 4 } cavalry = { x = 2 y = 4 } cavalry = { x = 3 y = 4 } cavalry = { x = 4 y = 4 }
+					}
+					support = { military_police = {x = 0 y = 0 } }
+				}
+			}
+			else = {
+				division_template = {
+					name = "mp"
+					regiments = {
+						cavalry = { x = 0 y = 0 } cavalry = { x = 1 y = 0 } cavalry = { x = 2 y = 0 } cavalry = { x = 3 y = 0 } cavalry = { x = 4 y = 0 }
+						cavalry = { x = 0 y = 1 } cavalry = { x = 1 y = 1 } cavalry = { x = 2 y = 1 } cavalry = { x = 3 y = 1 } cavalry = { x = 4 y = 1 }
+						cavalry = { x = 0 y = 2 } cavalry = { x = 1 y = 2 } cavalry = { x = 2 y = 2 } cavalry = { x = 3 y = 2 } cavalry = { x = 4 y = 2 }
+						cavalry = { x = 0 y = 3 } cavalry = { x = 1 y = 3 } cavalry = { x = 2 y = 3 } cavalry = { x = 3 y = 3 } cavalry = { x = 4 y = 3 }
+						cavalry = { x = 0 y = 4 } cavalry = { x = 1 y = 4 } cavalry = { x = 2 y = 4 } cavalry = { x = 3 y = 4 } cavalry = { x = 4 y = 4 }
+					}
+					support = { }
+				}
+			}
+		}
+	}
+}
+
 political_actions = {
 
 	move_capital_to_cascablanca = {

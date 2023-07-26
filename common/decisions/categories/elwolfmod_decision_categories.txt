@@ -1,3 +1,9 @@
+templates_retards_ai = {
+	icon = GFX_decision_category_military_operation
+	visible = { }
+	allowed = { }
+}
+
 SOV_spain = {
 	allowed = {
 		original_tag = SOV
