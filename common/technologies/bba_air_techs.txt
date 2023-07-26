@@ -814,6 +814,22 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+
+		#path = {
+		#	leads_to_tech = armor_piercing_bombs
+		#	research_cost_coeff = 1
+		#}
+
+		#path = {
+		#	leads_to_tech = heavy_bombs
+		#	research_cost_coeff = 1
+		#}
+		
+		#path = {
+		#	leads_to_tech = air_torpedoe_2
+		#	research_cost_coeff = 1
+		#}
+		
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -822,16 +838,112 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				OR = {
-					has_tech = iw_small_airframe
-					has_tech = iw_medium_airframe
-					has_tech = iw_large_airframe
-				}
-				factor = 5
-			}
 		}
 	}
+	
+
+#	heavy_bombs = {
+#		enable_equipment_modules = {
+#			heavy_bomb_locks
+#		}
+#			
+#		research_cost = 1
+#		start_year = 1940
+#
+#		folder = {
+#			name = bba_air_techs_folder
+#			position = { x = 0 y = 6 }
+#		}
+#		
+#		categories = {
+#			air_equipment
+#			plane_modules_tech
+#			cat_air_bombs
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#
+#	armor_piercing_bombs = {
+#		enable_equipment_modules = {
+#			armor_piercing_bomb_locks
+#		}
+#			
+#		research_cost = 1
+#		start_year = 1936
+#
+#		folder = {
+#			name = bba_air_techs_folder
+#			position = { x = 2 y = 2 }
+#		}
+#		
+#		categories = {
+#			air_equipment
+#			plane_modules_tech
+#			cat_air_bombs
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+
+
+#	air_torpedoe_2 = {
+#		enable_equipment_modules = {
+#			torpedo_mounting_2
+#		}
+#			
+#		research_cost = 1
+#		start_year = 1940
+#
+#		folder = {
+#			name = bba_air_techs_folder
+#			position = { x = 0 y = 6 }
+#		}
+#
+#		path = {
+#			leads_to_tech = air_torpedoe_3
+#			research_cost_coeff = 1
+#		}
+#		
+#		categories = {
+#			air_equipment
+#			plane_modules_tech
+#			cat_air_bombs
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	air_torpedoe_3 = {
+#		enable_equipment_modules = {
+#			torpedo_mounting_3
+#		}
+#			
+#		research_cost = 1
+#		start_year = 1944
+#
+#		folder = {
+#			name = bba_air_techs_folder
+#			position = { x = 0 y = 10 }
+#		}
+#
+#		categories = {
+#			air_equipment
+#			plane_modules_tech
+#			cat_air_bombs
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
 
 	photo_reconnaisance = {
 		enable_equipment_modules = {
