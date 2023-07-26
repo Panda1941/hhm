@@ -5,6 +5,12 @@
 
  industry_late:0 "Late Game Industry"
 
+ torpedo_mounting_2:0 "Improved Torpedo Mounting"
+ torpedo_mounting_3:0 "Advanced Torpedo Mounting"
+
+ heavy_bomb_locks:0 "Heavy Bomb Locks"
+ armor_piercing_bomb_locks:0 "Armor Pirecing Bomb Locks"
+
  elwolfmod_gamerules:0 "Check Gamerules"
  elwolfmod_gamerules_two:0 "Check Gamerules Continued"
  sov_boost_status:0 "[GetSovBoostStatus]"
