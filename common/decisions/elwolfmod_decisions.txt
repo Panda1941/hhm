@@ -13,7 +13,7 @@ templates_retards_ai = {
 					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 }
 					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } 
 					infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 }
-					artillery_brigade = { x = 0 y = 3 }
+					artillery_brigade = { x = 2 y = 0 }
 				}
 				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
 			}
@@ -23,8 +23,8 @@ templates_retards_ai = {
 					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
 					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
 					infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
-					artillery_brigade = { x = 0 y = 3 } artillery_brigade = { x = 1 y = 3 }
-					artillery_brigade = { x = 0 y = 4 }	artillery_brigade = { x = 1 y = 4 }
+					artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }	artillery_brigade = { x = 4 y = 1 }
 				}
 				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
 			}
@@ -43,44 +43,59 @@ templates_retards_ai = {
 	}
 		
 	sf_templates_30w = {
-		allowed = {  }
+		available = { 
+			OR = {
+				has_tech = marines
+				has_tech = tech_mountaineers
+				has_tech = paratroopers
+			}
+		}
 		
 		fire_only_once = yes
 		
 		complete_effect = {	
-			division_template = {
-				name = "30w mountaineers"
-				regiments = {
-					mountaineers = { x = 0 y = 0 } mountaineers = { x = 1 y = 0 } mountaineers = { x = 2 y = 0 }
-					mountaineers = { x = 0 y = 1 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 2 y = 1 } 
-					mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 2 } mountaineers = { x = 2 y = 2 }
-					rocket_artillery_brigade = { x = 0 y = 3 } rocket_artillery_brigade = { x = 1 y = 3 }
-					rocket_artillery_brigade = { x = 0 y = 4 } rocket_artillery_brigade = { x = 1 y = 4 }
+			if = {
+			limit = { has_tech = tech_mountaineers }
+				division_template = {
+					name = "30w mountaineers"
+					regiments = {
+						mountaineers = { x = 0 y = 0 } mountaineers = { x = 1 y = 0 } mountaineers = { x = 2 y = 0 }
+						mountaineers = { x = 0 y = 1 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 2 y = 1 } 
+						mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 2 } mountaineers = { x = 2 y = 2 }
+						rocket_artillery_brigade = { x = 3 y = 0 } rocket_artillery_brigade = { x = 4 y = 0 }
+						rocket_artillery_brigade = { x = 3 y = 1 } rocket_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
 				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
 			}
-			division_template = {
-				name = "30w marines"
-				regiments = {
-					marine = { x = 0 y = 0 } marine = { x = 1 y = 0 } marine = { x = 2 y = 0 }
-					marine = { x = 0 y = 1 } marine = { x = 1 y = 1 } marine = { x = 2 y = 1 } 
-					marine = { x = 0 y = 2 } marine = { x = 1 y = 2 } marine = { x = 2 y = 2 }
-					rocket_artillery_brigade = { x = 0 y = 3 } rocket_artillery_brigade = { x = 1 y = 3 }
-					rocket_artillery_brigade = { x = 0 y = 4 } rocket_artillery_brigade = { x = 1 y = 4 }
+			if = {
+			limit = { has_tech = marines }
+				division_template = {
+					name = "30w marines"
+					regiments = {
+						marine = { x = 0 y = 0 } marine = { x = 1 y = 0 } marine = { x = 2 y = 0 }
+						marine = { x = 0 y = 1 } marine = { x = 1 y = 1 } marine = { x = 2 y = 1 } 
+						marine = { x = 0 y = 2 } marine = { x = 1 y = 2 } marine = { x = 2 y = 2 }
+						rocket_artillery_brigade = { x = 3 y = 0 } rocket_artillery_brigade = { x = 4 y = 0 }
+						rocket_artillery_brigade = { x = 3 y = 1 } rocket_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
 				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
 			}
-			division_template = {
-				name = "30w paratroopers"	# Arty can't be paradropped so there is no point adding it in
-				regiments = {
-					paratrooper = { x = 0 y = 0 } paratrooper = { x = 1 y = 0 } paratrooper = { x = 2 y = 0 }
-					paratrooper = { x = 0 y = 1 } paratrooper = { x = 1 y = 1 } paratrooper = { x = 2 y = 1 } 
-					paratrooper = { x = 0 y = 2 } paratrooper = { x = 1 y = 2 } paratrooper = { x = 2 y = 2 }
-					paratrooper = { x = 0 y = 3 } paratrooper = { x = 1 y = 3 } paratrooper = { x = 2 y = 3 }
-					paratrooper = { x = 0 y = 4 } paratrooper = { x = 1 y = 4 } paratrooper = { x = 2 y = 4 } 
-				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
-			}					
+			if = {
+			limit = { has_tech = paratroopers }
+				division_template = {
+					name = "30w paratroopers"	# Arty can't be paradropped so there is no point adding it in
+					regiments = {
+						paratrooper = { x = 0 y = 0 } paratrooper = { x = 1 y = 0 } paratrooper = { x = 2 y = 0 }
+						paratrooper = { x = 0 y = 1 } paratrooper = { x = 1 y = 1 } paratrooper = { x = 2 y = 1 } 
+						paratrooper = { x = 0 y = 2 } paratrooper = { x = 1 y = 2 } paratrooper = { x = 2 y = 2 }
+						paratrooper = { x = 0 y = 3 } paratrooper = { x = 1 y = 3 } paratrooper = { x = 2 y = 3 }
+						paratrooper = { x = 0 y = 4 } paratrooper = { x = 1 y = 4 } paratrooper = { x = 2 y = 4 } 
+					}
+					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
+				}	
+			}				
 		}
 	}
 
@@ -90,23 +105,28 @@ templates_retards_ai = {
 		fire_only_once = yes
 		
 		complete_effect = { 
-			division_template = {
-				name = "tank motorised"
-				regiments = {
-					medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } medium_armor = { x = 2 y = 0 } motorized = { x = 3 y = 0 }	motorized = { x = 4 y = 0 }
-					medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } medium_armor = { x = 2 y = 1 } motorized = { x = 3 y = 1 }	motorized = { x = 4 y = 1 }
-					medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } medium_armor = { x = 2 y = 2 } motorized = { x = 3 y = 2 }	motorized = { x = 4 y = 2 }
-					}											
-				support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+			if = {
+			limit = { has_tech = mechanised_infantry }
+				division_template = {
+					name = "tanks"
+					regiments = {
+						medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } medium_armor = { x = 2 y = 0 } mechanized = { x = 3 y = 0 }	mechanized = { x = 4 y = 0 }
+						medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } medium_armor = { x = 2 y = 1 } mechanized = { x = 3 y = 1 }	mechanized = { x = 4 y = 1 }
+						medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } medium_armor = { x = 2 y = 2 } mechanized = { x = 3 y = 2 }	mechanized = { x = 4 y = 2 }
+						}											
+					support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+				}
 			}
-			division_template = {
-				name = "tank mechanised"
-				regiments = {
-					medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } medium_armor = { x = 2 y = 0 } mechanized = { x = 3 y = 0 }	mechanized = { x = 4 y = 0 }
-					medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } medium_armor = { x = 2 y = 1 } mechanized = { x = 3 y = 1 }	mechanized = { x = 4 y = 1 }
-					medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } medium_armor = { x = 2 y = 2 } mechanized = { x = 3 y = 2 }	mechanized = { x = 4 y = 2 }
-					}											
-				support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+			else = {
+				division_template = {
+					name = "tanks"
+					regiments = {
+						medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } medium_armor = { x = 2 y = 0 } motorized = { x = 3 y = 0 }	motorized = { x = 4 y = 0 }
+						medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } medium_armor = { x = 2 y = 1 } motorized = { x = 3 y = 1 }	motorized = { x = 4 y = 1 }
+						medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } medium_armor = { x = 2 y = 2 } motorized = { x = 3 y = 2 }	motorized = { x = 4 y = 2 }
+						}											
+					support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+				}
 			}
 		}
 	}
