@@ -490,15 +490,15 @@ set_variable = { SOV_national_academy_of_sciences_construction_time = 90 } #The 
 set_variable = { SOV_academies_required_for_atomic_bomb_project = 7 } #Number of academies of sciences required to pick focus Soviet Atomic Bomb Project
 
 #THIRD FIVE YEAR PLAN FACTORY REQUIREMENTS
-set_variable = { SOV_fyp_factory_requirement_tier_1 = 100 }
-set_variable = { SOV_fyp_factory_requirement_tier_2 = 120 }
-set_variable = { SOV_fyp_factory_requirement_tier_3 = 130 }
-set_variable = { SOV_fyp_factory_requirement_tier_4 = 150 }
+set_variable = { SOV_fyp_factory_requirement_tier_1 = 120 }
+set_variable = { SOV_fyp_factory_requirement_tier_2 = 140 }
+set_variable = { SOV_fyp_factory_requirement_tier_3 = 160 }
+set_variable = { SOV_fyp_factory_requirement_tier_4 = 180 }
 set_variable = { SOV_fyp_factory_requirement_tier_5 = 200 }
 
 #THIRD FIVE YEAR PLAN NATIONAL SPIRIT VARS
 set_variable = { SOV_fyp_production_factory_efficiency_gain_factor = -0.15 }
-set_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 }
+set_variable = { SOV_fyp_production_factory_max_efficiency_factor = -0.05 }
 set_variable = { SOV_fyp_consumer_goods_factor = 0.05 }
 set_variable = { SOV_fyp_production_speed_industrial_complex_factor = 0.05 }
 

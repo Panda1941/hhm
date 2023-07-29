@@ -3461,33 +3461,33 @@ focus_tree = {
 				}
 			}
 
-			if = {
-				limit = {
-					has_any_power_balance = no
-				}
-				if = {
-					limit = {
-						NOT = { has_completed_focus = ITA_defy_the_duce	}
-					}
-					ITA_initiate_balance_of_power_effect = yes
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = ITA_triumph_in_africa_bba }
-				}
-				ITA_bop_very_low_increase_effect = yes
-			}
-			else = {
-				effect_tooltip = {
-					set_power_balance = {
-						id = ITA_power_balance
-						left_side = ITA_grand_council_side # will keep the last set side if not specified
-						right_side = ITA_mussolini_side # will keep the last set side if not specified
-						set_default = yes # whether or not to reset the power balance to the initial value, default = no
-					}
-				}
-			}
+			#if = {
+			#	limit = {
+			#		has_any_power_balance = no
+			#	}
+			#	if = {
+			#		limit = {
+			#			NOT = { has_completed_focus = ITA_defy_the_duce	}
+			#		}
+			#		ITA_initiate_balance_of_power_effect = yes
+			#	}
+			#}
+			#else_if = {
+			#	limit = {
+			#		NOT = { has_completed_focus = ITA_triumph_in_africa_bba }
+			#	}
+			#	ITA_bop_very_low_increase_effect = yes
+			#}
+			#else = {
+			#	effect_tooltip = {
+			#		set_power_balance = {
+			#			id = ITA_power_balance
+			#			left_side = ITA_grand_council_side # will keep the last set side if not specified
+			#			right_side = ITA_mussolini_side # will keep the last set side if not specified
+			#			set_default = yes # whether or not to reset the power balance to the initial value, default = no
+			#		}
+			#	}
+			#}
 
 			if = {
 				limit = {
@@ -3585,8 +3585,6 @@ focus_tree = {
 			has_full_control_of_state = 836
 			has_full_control_of_state = 837
 			has_full_control_of_state = 838
-			NOT = { has_global_flag = ITA_antifascist_civil_war_triggered_flag }
-			hidden_trigger = { has_completed_focus = ITA_defy_the_duce }
 		}
 
 		search_filters = {}

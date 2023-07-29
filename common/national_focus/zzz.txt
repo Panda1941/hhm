@@ -15,6 +15,14 @@ focus_tree = {
 			tag = VEN
 		}
 		modifier = {
+			add = 20
+			tag = YUG
+		}
+		modifier = {
+			add = 20
+			tag = GRE
+		}
+		modifier = {
 			add = 10
 			tag = GRE
 		}

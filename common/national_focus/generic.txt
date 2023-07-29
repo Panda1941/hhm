@@ -43,14 +43,6 @@ focus_tree = {
 		}
 		modifier = {
 			add = 20
-			tag = YUG
-		}
-		modifier = {
-			add = 20
-			tag = GRE
-		}
-		modifier = {
-			add = 20
 			tag = ALB
 		}
 		modifier = {

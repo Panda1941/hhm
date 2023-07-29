@@ -3802,7 +3802,7 @@ focus_tree = {
 				add_tech_bonus = {
 					name = SOV_pc_of_mechanical_engineering_name_default
 					bonus = 1
-					uses = 2
+					uses = 1
 					category = motorized_equipment
 					category = infantry_weapons
 				}
@@ -3811,27 +3811,9 @@ focus_tree = {
 				add_tech_bonus = {
 					name = SOV_pc_of_mechanical_engineering_name_alt
 					bonus = 1
-					uses = 2
+					uses = 1
 					category = motorized_equipment
 					category = infantry_weapons
-				}
-			}
-			
-			219 = {
-				if = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
 				}
 			}
 		}
@@ -3859,106 +3841,9 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_superior_war_machines
-				bonus = 0.75
-				uses = 2
+				bonus = 0.5
+				uses = 1
 				category = armor
-			}
-
-			#T-34 tank template
-			if = {
-				limit = {
-					OR = {
-						has_tech = artillery3
-						has_tech = antitank3
-					}
-				}
-				create_equipment_variant = {
-					name = "T-34"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon_2
-						turret_type_slot = tank_medium_two_man_tank_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/SOV_imp_main_tank.dds"
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						has_tech = artillery1
-						has_tech = antitank1
-					}
-				}
-				create_equipment_variant = {
-					name = "T-34"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon
-						turret_type_slot = tank_medium_two_man_tank_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/SOV_imp_main_tank.dds"
-				}
-			}
-			else_if = { #Why? You ruined your T-34
-				limit = {
-					has_tech = interwar_artillery
-				}
-				create_equipment_variant = {
-					name = "T-34"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_small_cannon_2
-						turret_type_slot = tank_medium_two_man_tank_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/SOV_imp_main_tank.dds"
-				}
-			}
-			else = { #Don't do this to yourself dude
-				create_equipment_variant = {
-					name = "T-34"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_small_cannon
-						turret_type_slot = tank_medium_two_man_tank_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/SOV_imp_main_tank.dds"
-				}
 			}
 		}
 	}
@@ -3985,8 +3870,8 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_the_means_to_wage_war
-				bonus = 0.75
-				uses = 2
+				bonus = 0.5
+				uses = 1
 				category = support_tech
 			}
 		}
@@ -4014,8 +3899,8 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = SOV_soviet_artillery_tech_bonus_name_default
-					bonus = 0.75
-					uses = 2
+					bonus = 0.5
+					uses = 1
 					ahead_reduction = 2
 					category = artillery
 				}
@@ -4023,213 +3908,15 @@ focus_tree = {
 			else  ={
 				add_tech_bonus = {
 					name = SOV_soviet_artillery_tech_bonus_name_alt
-					bonus = 0.75
-					uses = 2
+					bonus = 0.5
+					uses = 1
 					ahead_reduction = 2
 					category = artillery
-				}
-			}
-			
-			if = { # 2 Mils in Chelyabinsk
-				limit = {
-					has_full_control_of_state = 572
-					572 = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				572 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			else = { # If Chelyabinsk not available, then 1 Mil elsewhere
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-						arms_factory > 1
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
 				}
 			}
 
 			add_ideas = SOV_defense_industry_artillery_bonus
 
-			#SU-85/100 tank template (AT)
-			if = {
-				limit = {
-					has_tech = antitank5
-				}
-				create_equipment_variant = {
-					name = "SU-100"
-					type = medium_tank_destroyer_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_high_velocity_cannon_3
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_advanced_medium_tank_destroyer.dds"
-				}
-			}
-			else_if = {
-				limit = {
-					has_tech = antitank2
-				}
-				create_equipment_variant = {
-					name = "SU-100"
-					type = medium_tank_destroyer_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_high_velocity_cannon_2
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_advanced_medium_tank_destroyer.dds"
-				}
-			}
-			else_if = { #You really should invest some time in research AT...
-				limit = {
-					has_tech = interwar_antitank
-				}
-				create_equipment_variant = {
-					name = "SU-85"
-					type = medium_tank_destroyer_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_high_velocity_cannon
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_destroyer.dds"
-				}
-			}
-			else = { #This is just blasphemy
-				create_equipment_variant = {
-					name = "SU-85"
-					type = medium_tank_destroyer_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_heavy_cannon
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_destroyer.dds"
-				}
-			}
-
-			#SU-122 tank template (SPG)
-			if = {
-				limit = {
-					has_tech = artillery4
-				}
-				create_equipment_variant = {
-					name = "SU-122"
-					type = medium_tank_artillery_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_heavy_howitzer
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_riveted_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_artillery.dds"
-				}
-			}
-			else_if = {
-				limit = {
-					has_tech = artillery1
-				}
-				create_equipment_variant = {
-					name = "SU-122"
-					type = medium_tank_artillery_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_howitzer_2
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_riveted_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_artillery.dds"
-				}
-			}
-			else = { #You really need some arty research
-				create_equipment_variant = {
-					name = "SU-122"
-					type = medium_tank_artillery_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_howitzer
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_riveted_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_artillery.dds"
-				}
-			}
 		}
 	}
 
@@ -4260,35 +3947,17 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = SOV_pc_of_mortar_armament_name_default
-					bonus = 0.75
-					uses = 2
+					bonus = 0.5
+					uses = 1
 					category = artillery
 				}
 			}
 			else = { #ALT IDEOLOGY
 				add_tech_bonus = {
 					name = SOV_pc_of_mortar_armament_name_alt
-					bonus = 0.75
-					uses = 2
+					bonus = 0.5
+					uses = 1
 					category = artillery
-				}
-			}
-
-			219 = {
-				if = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
 				}
 			}
 		}
@@ -4344,7 +4013,7 @@ focus_tree = {
 			set_temp_variable = { temp_targets_index = 0 }
 			while_loop_effect = {
 				limit = {
-					check_variable = { temp_targets_index = 10 compare = less_than }
+					check_variable = { temp_targets_index = 20 compare = less_than }
 				}
 				hidden_effect = {
 					random_owned_state = {
@@ -6627,7 +6296,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.02 }
-			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.05 } 
 			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
 

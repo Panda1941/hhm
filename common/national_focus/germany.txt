@@ -2066,6 +2066,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {
 			air_experience = 25
+			add_tech_bonus = {
+				name = GER_air_innovation
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
 			add_doctrine_cost_reduction = {
 				name = air_sup_bonus
 				cost_reduction = 0.25
@@ -2549,7 +2555,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		x = 25
 		y = 0
-		cost = 10
+		cost = 5
 		available = {
 			is_subject = no
 		}
@@ -2750,7 +2756,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 5
 		bypass = {
 			188 = { is_owned_by = GER }
 			85 = { is_owned_by = GER }
@@ -3112,7 +3118,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
