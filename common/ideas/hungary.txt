@@ -230,6 +230,19 @@ ideas = {
 				fascism_drift = 0.03
 			}
 		}
+		
+		HUN_balanced_budget = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				consumer_goods_factor = -0.025
+			}
+		}
 
 		HUN_interventionism = {
 			allowed = {
@@ -239,8 +252,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				political_power_factor = -0.25
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.075
 			}
 		}
 

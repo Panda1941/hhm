@@ -1411,7 +1411,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = SPA_adopt_the_26_points
-		cost = 8
+		cost = 10
 
 		available_if_capitulated = yes
 		complete_tooltip = {
@@ -2162,7 +2162,7 @@ focus_tree = {
 		x = 9
 		y = 1
 		relative_position_id = SPA_adopt_the_26_points
-		cost = 10
+		cost = 15
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}

@@ -260,6 +260,10 @@ NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 50
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 10.0
 
+--- Embargos
+NDefines.NDiplomacy.EMBARGO_COST = 0 -- 100
+NDefines.NDiplomacy.EMBARGO_THREAT_THRESHOLD = -1 -- 30
+
 --All of this AI stuff doesn't affect strategy, just used to increase performance
 NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 30  --7 the ai will check what the best doctrine they can have is once every month
 NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 30  --7 the ai will check what the best division template they can have is once every month

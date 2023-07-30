@@ -106,7 +106,7 @@ ideas = {
 			}
 			
 			modifier = {
-				improve_relations_maintain_cost_factor = -0.5
+				political_power_gain = 0.25
 			}
 		}
 
@@ -129,8 +129,8 @@ ideas = {
 			}
 			
 			modifier = {
-				join_faction_tension = -1.0
-				improve_relations_maintain_cost_factor = -0.5
+				political_power_gain = 0.25
+				production_speed_buildings_factor = 0.1
 			}
 		}
 
@@ -374,8 +374,9 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.15
-				political_power_gain = -0.25
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.1
+				political_power_gain = -0.6
 			}
 		}
 
@@ -429,8 +430,7 @@ ideas = {
 			}
 			
 			modifier = {				
-				resistance_damage_to_garrison = -0.2 
-				foreign_subversive_activites = -0.2
+				conscription = 0.05
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
 			}

@@ -178,7 +178,7 @@
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -196,7 +196,7 @@
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_national_housing_act_IC
@@ -237,7 +237,7 @@
 			add_tech_bonus = {
 				name = CAN_dollar_a_year_men
 				bonus = 1.0
-				uses = 2
+				uses = 3
 				category = industry_late
 			}
 		}
@@ -335,12 +335,12 @@
 					}
 				}
 
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 2
 			}
 		}
 	}
@@ -597,10 +597,10 @@
 				limit = {
 					has_state_flag = CAN_department_of_munitions_and_supply_AF1
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -608,10 +608,10 @@
 				limit = {
 					has_state_flag = CAN_department_of_munitions_and_supply_AF2
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -626,10 +626,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_department_of_munitions_and_supply_AF1
@@ -642,10 +642,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_department_of_munitions_and_supply_AF2
@@ -957,10 +957,10 @@
 				limit = {
 					has_state_flag = CAN_victory_aircraft_limited_AF2
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -993,10 +993,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_victory_aircraft_limited_AF2
@@ -1164,10 +1164,10 @@
 				limit = {
 					has_state_flag = CAN_john_inglis_and_company_AF2
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1200,10 +1200,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_john_inglis_and_company_AF2
@@ -1986,7 +1986,7 @@
 			add_tech_bonus = {
 				name = CAN_cmp_truck
 				ahead_reduction = 3
-				bonus = 3.0
+				bonus = 2.0
 				uses = 1
 				category = motorized_equipment
 			}
@@ -2001,7 +2001,7 @@
 		y = 3
 		relative_position_id = CAN_army_modernization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2038,7 +2038,7 @@
 		y = 3
 		relative_position_id = CAN_army_modernization 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2060,7 +2060,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_a_motorized_army
-				bonus = 1.0
+				bonus = 2.0
 				uses = 1
 				category = motorized_equipment
 			}
@@ -2084,7 +2084,7 @@
 		y = 4
 		relative_position_id = CAN_army_modernization 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

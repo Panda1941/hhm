@@ -4131,7 +4131,7 @@ country_event = {
 				}		
 			}
 			BUL = {
-				transfer_state = PREV
+				##transfer_state = PREV
 				hidden_effect = {
 					set_state_controller = PREV
 				}
@@ -4282,7 +4282,7 @@ country_event = {
 		add_political_power = 25
 		#FROM.FROM is the state targeted by the decision
 		FROM = {
-			transfer_state = FROM.FROM
+			##transfer_state = FROM.FROM
 			set_state_controller = FROM.FROM
 			country_event = bftb_bulgarian_claims.8
 		}
@@ -4343,7 +4343,7 @@ country_event = {
 
 		effect_tooltip = {
 			#FROM.FROM is the state targeted by the decision
-			transfer_state = FROM.FROM
+			##transfer_state = FROM.FROM
 			set_state_controller = FROM.FROM
 		}
 	}
@@ -7783,7 +7783,7 @@ country_event = {
 						country_exists = BUL
 					}
 					BUL = {
-						transfer_state = PREV
+						#transfer_state = PREV
 					}
 				}
 				else_if = { #Initial Balkan countries are prioritized before releasables 
@@ -7792,7 +7792,7 @@ country_event = {
 						country_exists = YUG
 					}
 					YUG = {
-						transfer_state = PREV
+						#transfer_state = PREV
 					}
 				}
 				else_if = {
@@ -7801,7 +7801,7 @@ country_event = {
 						country_exists = GRE
 					}
 					GRE = {
-						transfer_state = PREV
+						#transfer_state = PREV
 					}
 				}
 				else_if = {
@@ -7810,7 +7810,7 @@ country_event = {
 						country_exists = ROM
 					}
 					ROM = {
-						transfer_state = PREV
+						#transfer_state = PREV
 					}
 				}
 				else_if = {
@@ -7819,7 +7819,7 @@ country_event = {
 						country_exists = ALB
 					}
 					ALB = {
-						transfer_state = PREV
+						#transfer_state = PREV
 					}
 				}
 				else_if = {
@@ -7828,7 +7828,7 @@ country_event = {
 						country_exists = TUR
 					}
 					TUR = {
-						transfer_state = PREV
+						#transfer_state = PREV
 					}
 				}
 				else_if = { # Check for releasables
@@ -7845,12 +7845,12 @@ country_event = {
 							exists = yes
 							PREV = { is_core_of = THIS }
 						}
-						transfer_state = PREV
+						#transfer_state = PREV
 					}
 				}
 				else = { # Fallback is BUL
 					BUL = {
-						transfer_state = PREV
+						#transfer_state = PREV
 					}
 				}
 				set_state_flag = BUL_italy_yields_state_flag
@@ -8239,7 +8239,7 @@ country_event = {
 						BUL_is_balkan_state = yes
 					}
 					ROOT = {
-						transfer_state = PREV
+						#transfer_state = PREV
 						hidden_effect = {
 							set_state_controller = PREV
 						}
@@ -8483,7 +8483,7 @@ country_event = {
 		add_political_power = 50
 		effect_tooltip = {
 			FROM = {
-				transfer_state = FROM.FROM
+				#transfer_state = FROM.FROM
 				hidden_effect = {
 					set_state_controller = FROM.FROM
 				}
@@ -8531,7 +8531,7 @@ country_event = {
 	option = {
 		name = bftb_bulgaria_fate_of_the_balkans.5.a
 
-		transfer_state = FROM.FROM.FROM
+		#transfer_state = FROM.FROM.FROM
 		hidden_effect = {
 			set_state_controller = FROM.FROM.FROM
 		}
@@ -9654,7 +9654,7 @@ country_event = {
 			}
 			hidden_effect = {
 				BUL = {
-					transfer_state = PREV
+					#transfer_state = PREV
 					set_state_controller = PREV
 				}
 			}

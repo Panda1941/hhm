@@ -1263,7 +1263,7 @@
 		id = SAF_mechanization_effort
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = SAF_sa_engineer_corps }
-		x = -1
+		x = 0
 		y = 4
 		relative_position_id = SAF_special_service_battalion
 
@@ -1299,10 +1299,10 @@
 	focus = {
 		id = SAF_armor_effort
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = SAF_sa_engineer_corps }
+		prerequisite = { focus = SAF_q_services_corps }
 		x = 1
-		y = 4
-		relative_position_id = SAF_special_service_battalion
+		y = 1
+		relative_position_id = SAF_q_services_corps
 
 		cost = 10
 
