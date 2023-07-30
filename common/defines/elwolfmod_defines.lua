@@ -80,6 +80,10 @@ NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.20
 
 NDefines.NMilitary.BASE_FORT_PENALTY = -0.2
 
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0007 -- 0.0015
+NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 -- 0.5
+
+
 NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
 		1.00,
 		0.99,
@@ -183,6 +187,8 @@ NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 200
 NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 1200
 
+NDefines.NAir.MAX_QUICK_WING_SELECTION = 4 -- 3
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 3 -- 7.0
 
 NDefines.NAir.DETECT_CHANCE_FROM_OCCUPATION = 0.5 -- 0.1
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 1 -- 0.8

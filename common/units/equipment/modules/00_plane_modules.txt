@@ -1800,7 +1800,7 @@ equipment_modules = {
 
 		add_stats = {
 			air_attack = 6
-			air_defence = 2
+			air_defence = 1.5
 			air_agility = -3
 			build_cost_ic = 2
 			weight = 1
@@ -1856,7 +1856,7 @@ equipment_modules = {
 
 		add_stats = {
 			air_attack = 10
-			air_defence = 2.5
+			air_defence = 2
 			air_agility = -6
 			build_cost_ic = 4
 			weight = 4
