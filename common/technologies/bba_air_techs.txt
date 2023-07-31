@@ -876,8 +876,8 @@ technologies = {
 			tank_buster_2
 		}
 		
-		research_cost = 1
-		start_year = 1940
+		research_cost = 2.5
+		start_year = 1941
 
 		folder = {
 			name = bba_air_techs_folder
@@ -921,8 +921,8 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 1
-		start_year = 1942
+		research_cost = 1.5
+		start_year = 1945
 
 		folder = {
 			name = bba_air_techs_folder

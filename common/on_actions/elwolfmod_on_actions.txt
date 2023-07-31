@@ -982,9 +982,14 @@ on_actions = {
 			}
 			# Greece dockyards
 			47 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
 					level = 3
 					instant_build = yes
 				}
@@ -1002,12 +1007,12 @@ on_actions = {
 					level = 9
 					instant_build = yes
 				}
-				# add_building_construction = {
-				# 	type = arms_factory
-				# 	level = 3
-				# 	instant_build = yes
-				# }
-				add_extra_state_shared_building_slots = 9
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 12
 			}
 			808 = {
 				add_building_construction = {
@@ -1022,19 +1027,19 @@ on_actions = {
 				}
 				add_extra_state_shared_building_slots = 6
 			}
-			# 11 = {
-			# 	add_building_construction = {
-			# 		type = industrial_complex
-			# 		level = 4
-			# 		instant_build = yes
-			# 	}
-			# 	add_building_construction = {
-			# 		type = arms_factory
-			# 		level = 3
-			# 		instant_build = yes
-			# 	}
-			# 	add_extra_state_shared_building_slots = 7
-			# }
+			11 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 7
+			}
 			107 = {
 				add_building_construction = {
 					type = industrial_complex
@@ -1281,118 +1286,52 @@ on_actions = {
 						amount = 8000
 					}
 					add_research_slot = 1
-					add_offsite_building = { type = industrial_complex level = 20 }
+					add_offsite_building = { type = industrial_complex level = 26 }
+					add_offsite_building = { type = arms_factory level = 4 }
+				}
+
+				CAN = {
+					add_offsite_building = { type = industrial_complex level = 4 }
+					add_offsite_building = { type = arms_factory level = 2 }
+				}
+				SAF = {
+					add_offsite_building = { type = industrial_complex level = 6 }
+					add_offsite_building = { type = arms_factory level = 2 }
 				}
 
 
 				WST = {
 					give_resource_rights = {
-						receiver = FRA
-						state = 635
+						receiver = ENG
+						state = 375	#TEXAS
 					}
 					give_resource_rights = {
 						receiver = ENG
-						state = 375
+						state = 378	#CALIFORNIA
 					}
 					give_resource_rights = {
 						receiver = ENG
-						state = 376
+						state = 391	#MINESOTA
 					}
 					give_resource_rights = {
 						receiver = ENG
-						state = 378
+						state = 336	#SINGAPORE
 					}
 					give_resource_rights = {
 						receiver = ENG
-						state = 391
+						state = 379	#NEVADA
 					}
 					give_resource_rights = {
 						receiver = ENG
-						state = 336
+						state = 371	#LUSIANA
 					}
 					give_resource_rights = {
 						receiver = ENG
-						state = 672
+						state = 393	#MICHIGAN
 					}
 					give_resource_rights = {
 						receiver = ENG
-						state = 379
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 380
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 387
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 382
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 371
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 372
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 373
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 383
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 366
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 373
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 388
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 389
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 368
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 394
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 393
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 261
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 360
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 358
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 357
-					}
-					give_resource_rights = {
-						receiver = ENG
-						state = 374
+						state = 374	#OKLAHOMA
 					}
 				}
 				649 = {
@@ -1539,15 +1478,15 @@ on_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 9600
+					amount = 12600
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
-					amount = 259
+					amount = 659
 				}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
-					amount = 100
+					amount = 400
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
@@ -1557,7 +1496,7 @@ on_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = train_equipment
-					amount = 300
+					amount = 500
 				}
 				country_event = {
 					id = DOD_yugoslavia.20
@@ -1581,7 +1520,7 @@ on_actions = {
 			GER = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 24900
+					amount = 29400
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
@@ -1613,11 +1552,11 @@ on_actions = {
 			FRA = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 14400
+					amount = 24400
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 31300
+					amount = 26300
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
@@ -1718,17 +1657,17 @@ on_actions = {
 			HUN = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 4700
+					amount = 8700
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
-					amount = 11
+					amount = 268
 				}
 			}
 			ROM = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 9600
+					amount = 12600
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
@@ -1752,11 +1691,11 @@ on_actions = {
 			ITA = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 4900
+					amount = 14900
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 20500
+					amount = 10500
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
@@ -1822,7 +1761,7 @@ on_actions = {
 			BUL = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 3138
+					amount = 9138
 				}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_1
@@ -1878,7 +1817,11 @@ on_actions = {
 			CAN = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 2700
+					amount = 4700
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 156
 				}
 			}
 			RAJ = {
@@ -1902,10 +1845,64 @@ on_actions = {
 			SAF = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 815
+					amount = 2815
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 156
 				}
 			}
 			FIN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 2571
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 156
+				}
+			}
+			GRE = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 9571
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 156
+				}
+			}
+			YUG = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 12571
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 456
+				}
+			}
+			HOL = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 8571
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 156
+				}
+			}
+			BEL = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 8571
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 156
+				}
+			}
+			LUX = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
 					amount = 2571

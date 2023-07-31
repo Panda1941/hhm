@@ -214,8 +214,6 @@ if = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 4 }
-			add_ideas = extensive_conscription
-			add_ideas = low_economic_mobilisation
 		}
 	}
 
