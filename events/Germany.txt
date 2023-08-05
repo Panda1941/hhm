@@ -4266,7 +4266,7 @@ country_event = {
 		SOV = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.8
+				bonus = 0.75
 				uses = 2
 				category = armor
 			}
