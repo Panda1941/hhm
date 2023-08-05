@@ -14,9 +14,14 @@
  tank_templates_30w:0 "Tank templates"
  mp_template:0 "Suppression template"
 
+ generic_medium_tank_manufacturer:0 "Medium Tank Manufacturer"
+ generic_heavy_tank_manufacturer:0 "Heavy Tank Manufacturer"
 
+ generic_support_equipment_manufacturer:0 "Support Equipment Manufacturer"
 
-
+ GER_heavy_tank_manufacturer:0 "Heavy Tank Designer"
+ GER_medium_tank_manufacturer:0 "Medium Tank Designer"
+ GER_modular_tank_manufacturer:0 "Modular Tank Deisgner"
 
 
 

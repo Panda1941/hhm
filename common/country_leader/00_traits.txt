@@ -1,14 +1,14 @@
-@tier1 = 30
-@tier2 = 20
-@tier3 = 10
+@tier1 = 25
+@tier2 = 15
+@tier3 = 5
 
 @experience_gain_low = 0.03
 @experience_gain_medium = 0.06
 @experience_gain_high = 0.08
 
-@chief_experience_gain_low = 0.20
-@chief_experience_gain_medium = 0.30
-@chief_experience_gain_high = 0.40
+@chief_experience_gain_low = 0.12
+@chief_experience_gain_medium = 0.20
+@chief_experience_gain_high = 0.30
 
 ###Todo remove commented advisor experience gains
 
@@ -5470,6 +5470,56 @@ leader_traits = {
 		}
 	}
 
+	
+
+	GER_heavy_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				armor_value = 0.1
+				hardness = 0.08
+
+				reliability = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	GER_medium_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				breakthrough = 0.1
+				hardness = 0.04
+
+				reliability = 0.10
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	GER_modular_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				hardness = -0.04
+				build_cost_ic = -0.05
+
+				reliability = 0.10
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	infantry_tank_manufacturer = {
 		random = no
 		equipment_bonus = {
@@ -5516,7 +5566,7 @@ leader_traits = {
 
 		equipment_bonus = {
 			armor = {
-				reliability = 0.05
+				reliability = 0.1
 			}
 		}
 
@@ -5770,6 +5820,32 @@ leader_traits = {
 
 	artillery_manufacturer = {
 		random = no
+		
+		equipment_bonus = {
+			rocket_artillery_equipment = {
+				instant = yes
+				soft_attack = 0.1
+				breakthrough = 0.1
+			}
+			artillery_equipment = {
+				instant = yes
+				soft_attack = 0.05
+				breakthrough = 0.05
+				reliability = 0.05
+			}
+			anti_tank_equipment = {
+				instant = yes
+				hard_attack = 0.05
+				ap_attack = 0.05
+				reliability = 0.05
+			}
+			anti_air_equipment = {
+				instant = yes
+				air_attack = 0.05
+				reliability = 0.05
+				build_cost_ic = -0.1
+			}
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -5779,6 +5855,18 @@ leader_traits = {
 	infantry_equipment_manufacturer = {
 		random = no
 
+		equipment_bonus = {
+			infantry_equipment = {
+				instant = yes
+				soft_attack = 0.05
+				hard_attack = 0.05
+
+
+				reliability = 0.1
+				build_cost_ic = -0.05
+			}
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -5786,6 +5874,14 @@ leader_traits = {
 
 	support_equipment_manufacturer = {
 		random = no
+
+		equipment_bonus = {
+			support_equipment = {
+				instant = yes
+				reliability = 0.1
+				build_cost_ic = -0.05
+			}
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -5795,6 +5891,20 @@ leader_traits = {
 	motorized_equipment_manufacturer = {
 		random = no
 
+		equipment_bonus = {
+			motorized_equipment = {
+				instant = yes
+				reliability = 0.1
+				build_cost_ic = -0.05
+			}
+			mechanized_equipment = {
+				instant = yes
+				reliability = 0.05
+				hardness = 0.05
+				build_cost_ic = -0.05
+			}
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -5803,7 +5913,7 @@ leader_traits = {
 	industrial_concern = {
 		random = no
 
-		production_speed_buildings_factor = 0.04
+		industrial_capacity_factory = 0.1
 
 		ai_will_do = {
 			factor = 1
@@ -5850,7 +5960,7 @@ leader_traits = {
 	electronics_concern = {
 		random = no
 
-		research_speed_factor = 0.04
+		research_speed_factor = 0.06
 
 		ai_will_do = {
 			factor = 1

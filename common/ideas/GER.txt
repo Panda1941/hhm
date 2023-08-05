@@ -1628,7 +1628,7 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { heavy_tank_manufacturer }
+			traits = { GER_heavy_tank_manufacturer }
 
 			ai_will_do = {
 				factor = 5
@@ -1647,7 +1647,7 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { fast_tank_manufacturer }
+			traits = { GER_modular_tank_manufacturer }
 			
 			ai_will_do = {
 				factor = 1
@@ -1667,7 +1667,7 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { medium_tank_manufacturer }
+			traits = { GER_medium_tank_manufacturer }
 
 			ai_will_do = {
 				factor = 1
