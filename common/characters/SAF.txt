@@ -30,7 +30,7 @@ characters={
 				original_tag = SAF
 			}
 			traits = {
-				backroom_backstabber 
+				war_industrialist 
 			}
 			ai_will_do = {
 				factor = 0.000
@@ -157,23 +157,9 @@ characters={
 				original_tag = SAF
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = SAF_support_the_afrikaner_broederbond 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
 			}
 			traits = {
-				fascist_demagogue 
+				technocrat 
 			}
 			do_effect = {
 				NOT = {
@@ -420,7 +406,7 @@ characters={
 				original_tag = SAF
 			}
 			traits = {
-				air_naval_strike_2
+				army_CombinedArms_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -444,7 +430,7 @@ characters={
 				original_tag = SAF
 			}
 			traits = {
-				navy_screen_2
+				army_logistics_2
 			}
 			cost = 100
 			ai_will_do = {

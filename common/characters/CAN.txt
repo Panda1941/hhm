@@ -408,7 +408,7 @@ characters={
 				has_dlc = "Together for Victory"
 			}
 			traits = {
-				navy_anti_submarine_2
+				army_CombinedArms_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -434,7 +434,7 @@ characters={
 				original_tag = CAN
 			}
 			traits = {
-				air_air_superiority_2
+				army_logistics_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -556,7 +556,7 @@ characters={
 				original_tag = CAN
 			}
 			traits = {
-				air_air_superiority_2
+				army_concealment_2
 			}
 			cost = 100
 			ai_will_do = {

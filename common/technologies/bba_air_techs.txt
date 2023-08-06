@@ -876,7 +876,7 @@ technologies = {
 			tank_buster_2
 		}
 		
-		research_cost = 2.5
+		research_cost = 3.0
 		start_year = 1941
 
 		folder = {

@@ -446,7 +446,7 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				air_strategic_bombing_2
+				army_concealment_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -470,7 +470,7 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				air_airborne_2
+				army_logistics_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -601,7 +601,7 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				backroom_backstabber 
+				war_industrialist 
 			}
 			ai_will_do = {
 				factor = 0.000
