@@ -520,6 +520,7 @@ technologies = {
 			tank_medium_howitzer
 			tank_medium_cannon
 			tank_high_velocity_cannon
+			tank_anti_air_cannon
 		}
 
 		on_research_complete_limit = {
@@ -621,6 +622,7 @@ technologies = {
 			tank_rocket_launcher
 			stabilizer
 			squeezebore_adaptor
+			tank_anti_air_cannon_2
 		}
 
 		path = {
@@ -715,6 +717,8 @@ technologies = {
 			tank_heavy_howitzer
 			tank_rocket_launcher_2
 			tank_high_velocity_cannon_3
+			tank_medium_cannon_3
+			tank_anti_air_cannon_3
 		}
 
 		path = {
@@ -991,6 +995,8 @@ technologies = {
 		
 		enable_equipment_modules = {
 			tank_heavy_cannon_3
+			tank_high_velocity_cannon_3
+			auto_loader
 		}
 
 		path = {
