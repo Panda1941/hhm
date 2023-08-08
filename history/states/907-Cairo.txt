@@ -1,11 +1,9 @@
+
 state={
 	id=907
 	name="STATE_907"
-	manpower = 6454865
-	state_category=town
-
-	resources = {
-		oil = 12
+	resources={
+		oil=12.000
 	}
 
 	history={
@@ -14,25 +12,26 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 5
+
 		}
 		victory_points = {
 			7011 20 
 		}
-		
 		victory_points = {
 			3996 5 
 		}
-		
 		victory_points = {
 			1068 3 
 		}
 		add_core_of = SWE
 
 	}
+
 	provinces={
-		992 1068 3996 4055 4143 7011 7117 7188 10005 10031 12004 10127
+		992 1068 4055 4143 7117 10031 10127 12004 12816 12816 
 	}
-	
+	manpower=6454865
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

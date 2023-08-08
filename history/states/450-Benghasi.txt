@@ -2,13 +2,9 @@
 state={
 	id=450
 	name="STATE_450"
-	manpower = 82535
-	
-	state_category = wasteland
 
 	history={
 		owner = ITA
-		
 		victory_points = {
 			11954 3 
 		}
@@ -17,14 +13,19 @@ state={
 			air_base = 1
 			11954 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = SWE
+
 	}
 
 	provinces={
-		1127 4120 10123 11954 
+		1062 1127 1198 4063 4120 4151 4200 7063 7139 10123 11954 12094 
 	}
-
-	local_supplies=0.0 
+	manpower=82535
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }
