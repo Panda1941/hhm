@@ -5,6 +5,9 @@ state={
 	manpower = 932000
 	
 	state_category = rural
+	resources={
+		oil=6.000
+	}
 
 	history={
 		owner = ENG
