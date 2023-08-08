@@ -5,7 +5,7 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = BEL
+		owner = WST
 		add_core_of = SWE
 		victory_points = {
 			2220 1
