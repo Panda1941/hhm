@@ -94,7 +94,7 @@
 		x = -1
 		y = 1
 		relative_position_id = SOV_finish_five_year_plan
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -104,7 +104,9 @@
 		}
 
 		available = {
-			has_war = yes
+			POL = {
+				exists = no
+			}
 			573 = {
 				is_owned_and_controlled_by = SOV
 			}
@@ -112,18 +114,183 @@
 				is_owned_and_controlled_by = SOV
 			} 
 		}
-
-		bypass = {
-			NOT = { 219 = { is_owned_and_controlled_by = ROOT } }
-			NOT = { 195 = { is_owned_and_controlled_by = ROOT } }
-			NOT = { 242 = { is_owned_and_controlled_by = ROOT } }
+		
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 60
+				producer = SOV
+			}
+			#Factories are removed immediately to keep consistency with how decisions work
+			219 = { #Moscow
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 195
+				}
+				195 = { #Leningrad
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 202
+				}
+				202 = { #Kiev
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
 		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 
-		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			unlock_decision_tooltip = SOV_relocate_industry_from_moscow
-			unlock_decision_tooltip = SOV_relocate_industry_from_leningrad
-			unlock_decision_tooltip = SOV_relocate_industry_from_smolensk			
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 60
+					producer = SOV
+				}
+			}
+			custom_effect_tooltip = SOV_focus_select_effect_tt
+			effect_tooltip = {
+				219 = { #Moscow
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 195
+					}
+					195 = { #Leningrad
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 202
+					}
+					202 = { #Kiev
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = SOV_move_industry_to_the_urals_trains_tt
+
+			custom_effect_tooltip = SOV_focus_complete_effect_tt
+			unlock_decision_category_tooltip = SOV_industry_relocation
+
+			random_controlled_state = {
+				limit = {
+					SOV_is_industrial_relocation_destiny_state = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			
+				hidden_effect = {
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { has_full_control_of_state = 195 } #Leningrad
+				}
+				random_controlled_state = { #Different State please thanks
+					limit = {
+						NOT = { state = PREV }
+						SOV_is_industrial_relocation_destiny_state = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				
+					hidden_effect = {
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { has_full_control_of_state = 202 } #Leningrad
+				}
+				random_controlled_state = { #Different State please thanks
+					limit = {
+						NOT = { state = PREV }
+						SOV_is_industrial_relocation_destiny_state = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				
+					hidden_effect = {
+					}
+				}
+			}
 		}
 	}
 
@@ -432,44 +599,10 @@
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					all_owned_state = {
-						NOT = { infrastructure < 5 }
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes						
-					}
-					set_state_flag = SOV_infrastructure_effort_3Inf
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-					set_state_flag = SOV_infrastructure_effort_3Inf
-				}				
-			}
 			random_owned_controlled_state = {
 				limit = {
 					infrastructure < 5
+					is_on_continent = asia
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -481,6 +614,7 @@
 			random_owned_controlled_state = {
 				limit = {
 					infrastructure < 5
+					is_on_continent = asia
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -492,6 +626,7 @@
 			random_owned_controlled_state = {
 				limit = {
 					infrastructure < 5
+					is_on_continent = asia
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -503,6 +638,7 @@
 			random_owned_controlled_state = {
 				limit = {
 					infrastructure < 5
+					is_on_continent = asia
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -546,7 +682,7 @@
 		icon = GFX_goal_support_communism
 		x = 6
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -555,7 +691,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_political_power = 160
+			add_political_power = 80
 		}
 	}
 
@@ -577,7 +713,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_political_power = 120
-			add_ideas = SOV_collectivist_propaganda
+			add_ideas = SOV_collectivist_propaganda_ns
 		}
 	}
 
@@ -598,6 +734,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = militarized_schools
+			add_ideas = SOV_socialist_emulation_1_ns
 		}
 	}
 
@@ -618,6 +755,10 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = workers_culture
+			swap_ideas = {
+				remove_idea = SOV_socialist_emulation_1_ns
+				add_idea = SOV_socialist_emulation_2_ns
+			}
 		}
 	}
 
@@ -637,18 +778,9 @@
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			air_experience = 25
+			air_experience = 100
 			set_rule = {
 				can_generate_female_aces = yes
-			}
-			if = {
-				limit = {
-					SOV = { has_full_control_of_state = 219 }
-				}
-				custom_effect_tooltip = SOV_night_witches_tt
-				hidden_effect = {
-					load_oob = "SOV_night_witches"
-				}
 			}
 		}
 	}
@@ -674,6 +806,8 @@
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = georgy_zhukov
 			# REVISIT Might want to add more
+
+			add_ideas = SOV_stakhanovite_movement
 		}
 	}
 
@@ -694,6 +828,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = progress_cult_focus
+			add_ideas = SOV_war_heroes_ns
 		}
 	}
 
@@ -818,7 +953,7 @@
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 11
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -837,47 +972,26 @@
 			}
 		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { 
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-					state_population > 1000000
-				}
+			218 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_improve_railway_3Inf
 			}
-			random_owned_controlled_state = {
-				limit = { 
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-					state_population > 1000000
-				}
+			234 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_improve_railway_3Inf
 			}
-			random_owned_controlled_state = {
-				limit = { 
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-					state_population > 1000000
-				}
+			252 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_improve_railway_3Inf
@@ -890,7 +1004,7 @@
 		icon = GFX_goal_generic_air_fighter2
 		x = 13
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -912,7 +1026,7 @@
 		icon = GFX_goal_generic_navy_battleship
 		x = 15
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -923,7 +1037,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = bb_tech
 			}
 		}
@@ -969,10 +1083,7 @@
 			}	
 		}
 		
-		available = {
-			has_civil_war = no
-			has_completed_focus = SOV_the_centre
-			
+		available = {			
 			NOT = { has_global_flag = scw_over }
 			has_global_flag = spanish_civil_war
 
@@ -991,7 +1102,7 @@
 		id = SOV_anti_fascist_diplomacy
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = SOV_peoples_commissariat }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
 		cost = 30
@@ -1067,7 +1178,7 @@
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
-						level = 6
+						level = 5
 						province = 415
 						instant_build = yes
 					}
@@ -1102,24 +1213,24 @@
 					add_building_construction = {
 						type = bunker
 						level = 4
-						province = 6371
+						province = 11241
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
 						level = 4
-						province = 6220
+						province = 11220
 						instant_build = yes
 					}
 				}
 			}
-			206 = {
+			242 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 4
-						province = 11370
+						province = 306
 						instant_build = yes
 					}
 				}
@@ -1129,49 +1240,32 @@
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
-						level = 7
+						level = 5
 						province = 525
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 7
+						level = 5
 						province = 3494
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 489
 						instant_build = yes
 					}
 				}
 
 			}
-			203 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 7
-						province = 11409
-						instant_build = yes
-					}
-				}
-			}
-			192 = {
+			226 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 5
-						province = 754
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province = 741
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province = 11670
+						province = 11437
 						instant_build = yes
 					}
 				}
@@ -1340,6 +1434,48 @@
 			add_named_threat = { threat = 1 name = SOV_baltic_security }
 		}
 	}
+	focus = {
+		id = SOV_secure_leningrad
+		icon = GFX_focus_generic_attack_finland
+		prerequisite = { focus = SOV_baltic_security }
+		x = 2
+		y = 1
+		relative_position_id = SOV_baltic_security
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_civil_war = yes
+			}	
+		}
+		dynamic = yes 
+
+		available = {
+			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
+			is_subject = no
+		}
+
+		bypass = {
+			has_full_control_of_state = 146
+		}
+		
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			army_experience = 50
+			transfer_state = 146
+			transfer_state = 147
+
+			
+			hidden_effect = {
+				SOV = {
+					country_event = { days = 1 id = news.12 }				
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = SOV_claims_on_poland
@@ -1424,192 +1560,10 @@
 	}
 
 	focus = {
-		id = SOV_demand_eastern_poland
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = SOV_claims_on_poland }
-		mutually_exclusive = { focus = SOV_offer_poland_protection }
-		x = 0
-		y = 1
-		relative_position_id = SOV_claims_on_poland
-		cost = 10
-		available = {
-			is_puppet = no
-			NOT =  { is_in_faction_with = POL }
-			NOT = { has_war_with = POL }
-			POL = {
-				OR = {
-					96 = { is_owned_and_controlled_by = POL }
-					95 = { is_owned_and_controlled_by = POL }
-					94 = { is_owned_and_controlled_by = POL }
-					93 = { is_owned_and_controlled_by = POL }
-					91 = { is_owned_and_controlled_by = POL }
-					89 = { is_owned_and_controlled_by = POL }
-					784 = { is_owned_and_controlled_by = POL }
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-			}
-
-			modifier = {
-				factor = 0.5
-				ai_irrationality > 20
-			}
-			modifier = {
-				factor = 0.5
-				ai_irrationality > 25
-			}
-			modifier = {
-				factor = 0.5
-				ai_irrationality > 30
-			}
-			modifier = {
-				factor = 0.1
-				ai_irrationality > 35
-			}
-		}
-		
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			POL = {
-				country_event = { id = poland.2 }
-				custom_effect_tooltip = needs_approval
-			}
-			effect_tooltip = {
-				SOV = {
-					if = {
-						limit = { POL = { owns_state = 96 controls_state = 96 } }
-						transfer_state = 96
-					}
-					if = {
-						limit = { POL = { owns_state = 95 controls_state = 95 } }
-						transfer_state = 95
-					}
-					if = {
-						limit = { POL = { owns_state = 94 controls_state = 94 } }
-						transfer_state = 94
-					}
-					if = {
-						limit = { POL = { owns_state = 93 controls_state = 93 } }
-						transfer_state = 93
-					}
-					if = {
-						limit = { POL = { owns_state = 91 controls_state = 91 } }
-						transfer_state = 91
-					}
-					if = {
-						limit = { POL = { owns_state = 89 controls_state = 89 } }
-						transfer_state = 89
-					}
-					if = {
-						limit = { POL = { owns_state = 784 controls_state = 784 } }
-						transfer_state = 784
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_offer_poland_protection
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = SOV_claims_on_poland }
-		mutually_exclusive = { focus = SOV_demand_eastern_poland }
-		available = {
-			POL = {
-				country_exists = POL
-				has_war = no
-				is_puppet = no
-			}
-		}
-		x = 2
-		y = 1
-		relative_position_id = SOV_claims_on_poland
-		cost = 10
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-			}
-
-			modifier = {
-				factor = 0.5
-				ai_irrationality < 24
-			}
-			modifier = {
-				factor = 0.5
-				ai_irrationality < 20
-			}
-			modifier = {
-				factor = 0.5
-				ai_irrationality < 15
-			}
-			modifier = {
-				factor = 0.1
-				ai_irrationality < 10
-			}
-		}
-		
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			POL = {
-				country_event = { id = poland.5 }
-				custom_effect_tooltip = needs_approval
-				effect_tooltip = {
-					add_state_claim = 5
-					add_state_claim = 63
-					add_state_claim = 68
-					add_state_claim = 66
-					add_state_claim = 67
-					custom_effect_tooltip = SOV_offer_poland_protection_tt
-				}
-			}
-			effect_tooltip = {
-				SOV = {
-					if = {
-						limit = { POL = { owns_state = 96 controls_state = 96 } }
-						transfer_state = 96
-					}
-					if = {
-						limit = { POL = { owns_state = 95 controls_state = 95 } }
-						transfer_state = 95
-					}
-					if = {
-						limit = { POL = { owns_state = 94 controls_state = 94 } }
-						transfer_state = 94
-					}
-					if = {
-						limit = { POL = { owns_state = 93 controls_state = 93 } }
-						transfer_state = 93
-					}
-					if = {
-						limit = { POL = { owns_state = 91 controls_state = 91 } }
-						transfer_state = 91
-					}
-					if = {
-						limit = { POL = { owns_state = 89 controls_state = 89 } }
-						transfer_state = 89
-					}
-					if = {
-						limit = { POL = { owns_state = 784 controls_state = 784 } }
-						transfer_state = 784
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = SOV_claim_bessarabia
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_claims_on_poland }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = SOV_claims_on_poland
 		cost = 10
@@ -1636,7 +1590,7 @@
 		}
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
+		completion_reward = { #This is now generic and will target any potential (multiple) controllers for these states.
 			if = {
 				limit = { 78 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
 				add_state_claim = 78
@@ -1649,47 +1603,25 @@
 				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
 				add_state_claim = 80
 			}
-			add_named_threat = { threat = 1 name = SOV_claim_bessarabia }
+			add_named_threat = { threat = 1 name = SOV_claim_on_bessarabia }
 			random_other_country = {
 				limit = { owns_state = 78 }
 				add_opinion_modifier = { target = SOV modifier = claimed_bessarabia }
 				set_country_flag = SOV_added_claimed_bessarabia
+				set_country_flag = bessarabia_ceded
 			}
-			if = {
-				limit = {
-					any_other_country = {
-						owns_state = 78
-						NOT = {	owns_state = 80 }
-					}
-				}
-				random_other_country = {
-					limit = { 
-						owns_state = 80 
-						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
-				}
+
+			SOV = {
+				transfer_state = 78
+				transfer_state = 80
+				transfer_state = 766
 			}
-			if = {
-				limit = {
-					AND = {
-						any_other_country = {
-							owns_state = 78
-							NOT = {	owns_state = 766 }
-						}
-						any_other_country = {
-							owns_state = 80
-							NOT = {	owns_state = 766 }
-						}
-					}
+
+			hidden_effect = {
+				SOV = {
+					country_event = { days = 1 id = news.10 }
 				}
-				random_other_country = {
-					limit = { 
-						owns_state = 766
-						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
-				}
+				news_event = { id = news.199 }
 			}
 		}
 	}
@@ -1783,7 +1715,7 @@
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = SOV_peoples_commissariat }
 		available = { has_offensive_war = no }
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
 		cost = 10
@@ -1867,7 +1799,6 @@
 		id = SOV_great_purge
 		icon = GFX_goal_generic_war_with_comintern
 		available = {
-			NOT = { has_country_flag = counter_purge }
 			has_government = communism
 		}
 		x = 20
@@ -1875,18 +1806,10 @@
 		cost = 30
 		ai_will_do = {
 			factor = 10
-			modifier = {
-				factor = 0
-				any_claim = yes
-				has_war = yes
-			}
 		}
 
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_great_purge_bypass_tt
-				has_country_flag = counter_purge
-			}
+
 		}
 
 		select_effect = {
@@ -1896,17 +1819,16 @@
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = officers_purged
-				add_idea = officers_purged_6
-			}
+			
+			custom_effect_tooltip = SOV_great_purge_tt
+			custom_effect_tooltip = SOV_great_purge_tt2
 
-			hidden_effect = {
-				remove_ideas = officers_purged_6
-				add_timed_idea = {
-					idea = officers_purged_6
-					days = 730
-				}
+
+			add_war_support = 0.1
+
+			add_timed_idea = {
+				idea = officers_purged_6
+				days = 885
 			}
 
 
@@ -1914,6 +1836,8 @@
 				remove_idea = trotskyite_plot
 				add_idea = trotskyite_plot_purged
 			}
+
+			
 		}
 	}
 
@@ -2023,6 +1947,79 @@
 			swap_ideas = {
 				remove_idea = nkvd
 				add_idea = nkvd_2
+			}
+		}
+	}
+
+	
+	focus = {
+		id = SOV_development_of_tankograd
+
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = SOV_military_reorganization focus = SOV_nkvd_divisions }
+		x = -1
+		y = 1
+		relative_position_id = SOV_military_reorganization
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_development_of_tankograd_factories_tt
+			#This is just for tooltip purposes
+			effect_tooltip = {
+				every_owned_state = {
+					limit = {
+						is_on_continent = asia
+						arms_factory > 2
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			#Actual effects
+			set_temp_variable = { temp_targets_index = 0 }
+			while_loop_effect = {
+				limit = {
+					check_variable = { temp_targets_index = 20 compare = less_than }
+				}
+				hidden_effect = {
+					random_owned_state = {
+						limit = {
+							is_on_continent = asia
+							arms_factory > 2
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							NOT = { has_state_flag = SOV_development_of_tankograd_flag }
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = SOV_development_of_tankograd_flag
+						add_to_temp_variable = { SOV.temp_targets_index = 1 }
+						log = "Round [?SOV.temp_targets_index]"
+					}
+				}
 			}
 		}
 	}

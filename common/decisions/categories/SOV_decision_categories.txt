@@ -13,7 +13,7 @@ SOV_industry_relocation = {
 	}
 
 	visible = {
-		has_war = yes
+		has_completed_focus = SOV_move_industry_to_urals
 	}
 }
 
@@ -25,4 +25,24 @@ SOV_great_patriotic_war = {
 		has_war = yes
 	}
 		
+}
+
+SOV_diplomacy_baltic_decision_category = {
+	priority = 26
+
+	icon = generic_foreign_policy
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		has_completed_focus = SOV_baltic_security
+		OR = {
+			country_exists = EST
+			country_exists = LAT
+			country_exists = LIT
+		}
+		is_subject = no
+	}
 }

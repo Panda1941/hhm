@@ -1478,7 +1478,7 @@
  SOV_soviet_atomic_bomb_project_tech_bonus_name:0 "National Atomic Bomb Project"
  NSB_soviet_soviet_german_trade_agreement_tech_bonus_name:0 "Soviet-German Trade Agreement"
  NSB_soviet_soviet_german_trade_agreement_tech_bonus_name_alt:0 "Russo-German Trade Agreement"
- SOV_move_industry_to_the_urals_trains_tt:0 "§R[?SOV_industrial_relocation_trains_focus] $train_equipment$s§! will be used for the duration of this focus.\n\n"
+ SOV_move_industry_to_the_urals_trains_tt:0 "§R60 $train_equipment$s§! will be used for the duration of this focus.\n\n"
 
  SOV_modify_the_red_army_ns_intro:0 "Modify §Y[GetAppropriateRedArmyNsName]§! by"
  SOV_modify_the_red_army_ns_name_default:0 "$SOV_the_red_army_dynamic_modifier$"
@@ -1518,7 +1518,7 @@
  SOV_reinforce_western_naval_bases_radar_tt:0 "If §Y$radio_detection$§! technology has been researched: Adds §Y1 Radar Station§!\n"
  SOV_expand_shipbuilding_plants_tt:0 "Add §Y1 building slot§! and §Y1 Dockyard§! in every state in which naval bases have been reinforced by previous focuses."
 
- SOV_development_of_tankograd_factories_tt:1 "Adds §G1§! Building Slot and §Y1 Military Factory§! in every state in the Urals or in the Far East with at least 3 military factories. (Max. 10)"
+ SOV_development_of_tankograd_factories_tt:1 "Adds §G1§! Building Slot and §Y1 Military Factory§! in every state in the Urals or in the Far East with at least 3 military factories. (Max. 20)"
 
  SOV_far_east_fortification_forts_4:0 "Add §Y4 Land Forts§! on the Japanese border.\n"
  SOV_far_east_fortification_forts_10:0 "Add §Y10 Land Forts§! on the Japanese border.\n"

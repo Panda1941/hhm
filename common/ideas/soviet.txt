@@ -180,6 +180,7 @@ ideas = {
 
 			modifier = {
 				conversion_cost_civ_to_mil_factor= -0.2
+				production_speed_buildings_factor = 0.05
 			}
 		}
 
@@ -395,17 +396,14 @@ ideas = {
 				has_government = communism
 			}
 			
-			research_bonus = {
-				land_doctrine = -0.05
-				naval_doctrine = -0.05
-				air_doctrine = -0.05
-			}
 
 			modifier = {
+				land_doctrine_cost_factor = 0.15
+				experience_gain_army_factor = -0.15
+
 				army_org_factor = -0.25
-				send_volunteer_factor = -0.5
-				industrial_capacity_factory = -0.10
 				training_time_factor = 0.25
+				industrial_capacity_factory = -0.10
 			}
 		}
 		officers_purged_7 = {
