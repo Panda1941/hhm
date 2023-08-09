@@ -555,7 +555,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_timed_idea = { idea = ITA_foggia_farm_fields days = 730 }
+			add_timed_idea = { idea = ITA_foggia_farm_fields days = 365 }
 		}
 	}
 
@@ -3822,14 +3822,6 @@ focus_tree = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
 			}
-			power_balance_value = {
-				id = ITA_power_balance
-				value > 0.499
-			}
-			custom_trigger_tooltip = {
-				tooltip = "Requires 50+ value towards Mussolini in the Balance of Power"
-				always = yes
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
@@ -3868,10 +3860,6 @@ focus_tree = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
-			}
-			power_balance_value = {
-				id = ITA_power_balance
-				value > 0.649
 			}
 		}
 
@@ -4005,7 +3993,7 @@ focus_tree = {
 	focus = {
 		id = ITA_devotion
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = ITA_to_live_as_a_lion focus = ITA_boost_the_grand_council_of_fascism }
+		prerequisite = { focus = ITA_to_live_as_a_lion }
 		prerequisite = { focus = ITA_strengthen_the_regime }
 
 		x = -2
@@ -4016,10 +4004,6 @@ focus_tree = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
-			}
-			power_balance_value = {
-				id = ITA_power_balance
-				value > 0.799
 			}
 		}
 
@@ -4040,7 +4024,7 @@ focus_tree = {
 	focus = {
 		id = ITA_ministero_della_cultura_popolare #Alt name would be Ministry of Popular Culture (1937-1943)
 		icon = GFX_focus_generic_italy_propaganda
-		prerequisite = { focus = ITA_culto_del_duce focus = ITA_convene_the_grand_council }
+		prerequisite = { focus = ITA_culto_del_duce }
 
 		x = 3
 		y = 1
@@ -4082,7 +4066,7 @@ focus_tree = {
 	focus = {
 		id = ITA_security_militias
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = ITA_culto_del_duce focus = ITA_convene_the_grand_council }
+		prerequisite = { focus = ITA_culto_del_duce }
 
 		x = 2
 		y = 2
@@ -4382,10 +4366,6 @@ focus_tree = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
-			}
-			power_balance_value = {
-				id = ITA_power_balance
-				value > 0.949
 			}
 		}
 

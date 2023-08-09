@@ -552,7 +552,7 @@ equipment_modules = {
 
 		add_stats = {
 			air_attack = 8
-			build_cost_ic = 6
+			build_cost_ic = 5
 			weight = 1
 		}
 		xp_cost = 0
@@ -591,8 +591,8 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 12
-			build_cost_ic = 10
+			air_attack = 14
+			build_cost_ic = 8
 			weight = 2
 		}
 		xp_cost = 0
@@ -641,7 +641,7 @@ equipment_modules = {
 
 		add_stats = {
 			air_attack = 22
-			build_cost_ic = 14
+			build_cost_ic = 12
 			air_agility = -4
 			weight = 8
 		}
@@ -691,7 +691,7 @@ equipment_modules = {
 		add_equipment_type = fighter
 		add_stats = {
 			air_attack = 28
-			build_cost_ic = 18
+			build_cost_ic = 16
 			air_agility = -4
 			weight = 10
 		}

@@ -12,6 +12,11 @@ equipments = {
 		}
 		group_by = archetype
 		
+		upgrades = {
+			tank_reliability_upgrade
+			mech_cost_upgrade
+		}
+
 		interface_category = interface_category_land
 		
 		maximum_speed = 12
@@ -23,7 +28,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 5
 
-		build_cost_ic = 2.5
+		build_cost_ic = 6.5
 		resources = {
 			#oil = 1
 			rubber = 1

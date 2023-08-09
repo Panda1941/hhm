@@ -363,14 +363,14 @@ elwolfmod_capitulations_on_actions = {
 			}
 		}
 		BEL = {
-			transfer_state = 889
-			transfer_state = 888
-			transfer_state = 295
-			transfer_state = 890
-			transfer_state = 538
-			transfer_state = 718
-			transfer_state = 768
-			transfer_state = 769
+			#transfer_state = 889
+			#transfer_state = 888
+			#transfer_state = 295
+			#transfer_state = 890
+			#transfer_state = 538
+			#transfer_state = 718
+			#transfer_state = 768
+			#transfer_state = 769
 		}
 	}
 	if = {
@@ -389,7 +389,7 @@ elwolfmod_capitulations_on_actions = {
 		}
 
 		WST = {
-			add_threat = 40
+			#add_threat = 40
 		}
 	}
 
@@ -410,7 +410,7 @@ elwolfmod_capitulations_on_actions = {
 						has_idea = elwolfmod_noasia_research
 					}
 				}
-				WST = { add_threat = 40 }
+				#WST = { add_threat = 40 }
 				add_named_threat = { 
 					threat = 6.3 
 					name = elwolf_yug
@@ -563,7 +563,7 @@ elwolfmod_capitulations_on_actions_collab = {
 						has_idea = elwolfmod_noasia_research
 					}
 				}
-				WST = { add_threat = 40 }
+				#WST = { add_threat = 40 }
 				add_named_threat = { 
 					threat = 6.3 
 					name = elwolf_yug

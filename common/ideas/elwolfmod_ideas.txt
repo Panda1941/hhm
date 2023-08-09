@@ -9,12 +9,11 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				min_export = 0
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
-				production_speed_buildings_factor = 0.15
-				research_speed_factor = 0.1
-				civilian_intel_to_others = 40
-				navy_intel_to_others = 20
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.075
+				civilian_intel_to_others = 0
 			}
 			allowed_to_remove = {
 				always = no
@@ -35,6 +34,37 @@ ideas = {
 
 
 	country = {
+
+		africa_bonus = {
+			removal_cost = -1
+			picture = generic_org_of_african_unity
+			name = "Africa Bonus"
+			modifier = {  
+				army_strength_factor = 0.75
+				supply_consumption_factor = -0.05
+				army_org_regain = 0.1
+				supply_node_range = 0.25
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		elwolfmod_novols = {
 			picture = air_support_focus
 			allowed_civil_war = {

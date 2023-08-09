@@ -489,7 +489,7 @@ country_event = {
 		has_completed_focus = FRA_form_the_popular_front
 		NOT = { has_country_flag = FRA_popular_front_cooldown }
 		tag = FRA
-		date > 1936.4.1
+		date > 1936.6.1
 		date < 1938.1.1
 	}
 
@@ -502,10 +502,10 @@ country_event = {
 			base = 15
 		}
 		name = france.21.a
-		add_timed_idea = {
-			idea = FRA_factory_strikes
-			days = 360
-		}
+		#add_timed_idea = {
+		#	idea = FRA_factory_strikes
+		#	days = 360
+		#}
 	}
 }
 
@@ -523,10 +523,10 @@ country_event = {
 			base = 15
 		}
 		name = france.21.a
-		add_timed_idea = {
-			idea = FRA_factory_strikes
-			days = 60
-		}
+		#add_timed_idea = {
+		#	idea = FRA_factory_strikes
+		#	days = 60
+		#}
 		hidden_effect = {
 			country_event = { id = france.23 days = 60 }
 		}

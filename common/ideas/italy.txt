@@ -828,6 +828,8 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.03
 				supply_node_range = 0.1
+				production_speed_rail_way_factor = 0.2
+				production_speed_supply_node_factor = 0.2
 				supply_consumption_factor = -0.1
 			}
 		}

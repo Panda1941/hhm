@@ -548,7 +548,7 @@ if = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-		add_state_core = 539 add_state_core = 459 add_state_core = 460 add_state_core = 513 add_state_core = 273 add_state_core = 607
+		add_state_core = 539 add_state_core = 459 add_state_core = 460 add_state_core = 513 add_state_core = 273
 		}
 	}
 	focus = {
@@ -646,35 +646,14 @@ if = {
 		x = 19
 		y = 4
 		cost = 5
-		available = { NOT = { 16 = { is_owned_by = FRA } } }
+		available = { NOT = { 16 = { is_controlled_by = FRA } } }
 		
 		available_if_capitulated = yes
 		completion_reward = {
-				add_manpower = 100000
-				if = { limit  = { check_variable = {  FRA_legitimacy < 20  }    }  add_to_variable = { var = FRA_legitimacy value = 5  }   }
-				if = { limit  = { check_variable = {  FRA_legitimacy < 40  }    }  add_to_variable = { var = FRA_legitimacy value = 5  }   }
-				if = { limit  = { check_variable = {  FRA_legitimacy < 60  }    }  add_to_variable = { var = FRA_legitimacy value = 5  }   }
+			add_manpower = 100000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 				amount = 5000
-			} 
-		ENG = { 
-					add_relation_modifier = {
-				target = FRA
-				modifier = stahlpakt5
-			}
-			}
-					USA = { 
-					add_relation_modifier = {
-				target = FRA
-				modifier = stahlpakt5
-			}
-			}
-					SAF = { 
-					add_relation_modifier = {
-				target = FRA
-				modifier = stahlpakt5
-			}
 			}			
 		}
 	}
@@ -712,22 +691,13 @@ if = {
 		cost = 5
 
 		available = {
-	OR = {
-check_variable = {  FRA_legitimacy > 39  }    		date > 1940.8.5
-		}			
-				custom_trigger_tooltip = {
-					tooltip = "Has at least 40 legitimacy"
-					check_variable = { FRA_legitimacy > 39 }
-				}
+			date > 1940.8.5
 		}
-		
-
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-add_offsite_building = { type = arms_factory level = 3 } 
-	
+			add_offsite_building = { type = arms_factory level = 3 } 
 		}
 	}
 	focus = {
@@ -743,21 +713,13 @@ add_offsite_building = { type = arms_factory level = 3 }
 		cost = 5
 
 		available = {
-		OR = {
-check_variable = {  FRA_legitimacy > 79  }
-		date > 1941.8.5
+			date > 1941.8.5
 		}
-					custom_trigger_tooltip = {
-					tooltip = "Has at least 80 legitimacy"
-					check_variable = { FRA_legitimacy > 79 }
-				}
-}		
-		
-		
+
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-add_offsite_building = { type = arms_factory level = 3 }
+			add_offsite_building = { type = arms_factory level = 3 }
 		}
 	}
 	focus = {
@@ -772,26 +734,13 @@ add_offsite_building = { type = arms_factory level = 3 }
 		
 		cost = 5
 
-		available = {
-				ENG = { controls_state = 455 }
-				OR = { date > 1941.1.1 
-				AND = { 
-						check_variable = {  FRA_legitimacy > 99  }
-							custom_trigger_tooltip = {
-					tooltip = "Has 100 legitimacy"
-					check_variable = { FRA_legitimacy > 99 }
-				}
-						date > 1940.7.1 
-						}
-					}
-								
-				}
+		available = { date > 1941.1.1 }
 		
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-		add_offsite_building = { type = arms_factory level = 2 }  
+			add_offsite_building = { type = arms_factory level = 2 }  
 		}
 	}
 
@@ -808,16 +757,13 @@ add_offsite_building = { type = arms_factory level = 3 }
 		
 		cost = 5
 
-		available = {
-		OR = { check_variable = {  FRA_legitimacy > 19  } date > 1940.3.5 }		
-		custom_trigger_tooltip = {	tooltip = "Has at least 20 legitimacy" check_variable = { FRA_legitimacy > 19 } }
-		}
+		available = {date > 1940.3.5 }
 		
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
- add_offsite_building = { type = arms_factory level = 3 } 
+ 			add_offsite_building = { type = arms_factory level = 3 } 
 
 		}
 	}
@@ -834,23 +780,13 @@ add_offsite_building = { type = arms_factory level = 3 }
 		
 		cost = 5
 
-		available = {
-		ENG = { controls_state = 549}
-		OR = {
-		check_variable = {  FRA_legitimacy > 59  } 
-		date > 1941.5.5
-		}
-						custom_trigger_tooltip = {
-					tooltip = "Has at least 60 legitimacy"
-					check_variable = { FRA_legitimacy > 59 }
-				}
-		}
+		available = { date > 1941.5.5 }
 		
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-		add_offsite_building = { type = arms_factory level = 3 } 
+			add_offsite_building = { type = arms_factory level = 3 } 
 		}
 	}
 	
@@ -868,13 +804,7 @@ add_offsite_building = { type = arms_factory level = 3 }
 
 		cost = 5
 
-		available = {
-		EFR = { has_country_flag = vichy_france_established }
-						custom_trigger_tooltip = {
-					tooltip = "Has at least 40 legitimacy"
-					check_variable = { FRA_legitimacy > 39 }
-				}
-		}
+		available = { NOT = { 16 = { is_controlled_by = FRA } } date > 1940.06.01 }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1051,11 +981,8 @@ add_offsite_building = { type = arms_factory level = 3 }
 		
 		cost = 10
 
-		available = { check_variable = {  FRA_legitimacy > 89  } 
-						custom_trigger_tooltip = {
-					tooltip = "Has at least 90 legitimacy"
-					check_variable = { FRA_legitimacy > 89 }
-				}
+		available = { 
+
 		}
 		
 		available_if_capitulated = yes
@@ -1080,12 +1007,7 @@ add_offsite_building = { type = arms_factory level = 3 }
 		cost = 10
 
 		available = {
-				EFR = { has_country_flag = EFR_torch_declared }
-				check_variable = {  FRA_legitimacy > 99  }
-								custom_trigger_tooltip = {
-					tooltip = "Has 100 legitimacy"
-					check_variable = { FRA_legitimacy > 99 }
-				}
+	
 		}
 		
 
@@ -1107,7 +1029,7 @@ add_offsite_building = { type = arms_factory level = 3 }
 		}
 		relative_position_id = FRA_appeal_to_the_french_nation
 		
-		available = { EFR = { has_country_flag = vichy_france_established }  }
+		available = {  }
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1207,5 +1129,358 @@ add_offsite_building = { type = arms_factory level = 3 }
 	
 	
 	
+	
+	focus = {
+		id = FRA_naval_rearmament
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 24
+		y = 0
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_offsite_building = { type = dockyard level = 5 }
+			if = { 
+				limit = { has_dlc = "Man the Guns" }
+				set_technology = { coastal_defense_ships = 1 } 
+			}
+		}
+	}
+
+
+	focus = {
+		id = FRA_colonial_naval_bases
+		icon = GFX_goal_generic_build_navy
+	 	prerequisite = { focus = FRA_naval_rearmament }
+
+		x = -3
+		y = 1
+		relative_position_id = FRA_naval_rearmament
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_offsite_building = { type = dockyard level = 2 }
+		}
+	}
+	focus = {
+		id = FRA_develop_colonial_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+	 	prerequisite = { focus = FRA_colonial_naval_bases }
+		x = 0
+		y = 1
+		relative_position_id = FRA_colonial_naval_bases
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_offsite_building = { type = dockyard level = 2 }
+		}
+	}
+	focus = {
+		id = FRA_the_old_school
+		icon = GFX_focus_generic_navy_battleship2
+	 	prerequisite = { focus = FRA_naval_rearmament }
+	 	mutually_exclusive = { focus = FRA_the_young_school }
+		x = 0
+		y = 1
+		relative_position_id = FRA_naval_rearmament
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			779 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_capital_ship_focus
+		icon = GFX_goal_generic_navy_battleship
+	 	mutually_exclusive = { focus = FRA_carrier_focus }
+	 	prerequisite = { focus = FRA_the_old_school }
+		x = -1
+		y = 1
+		relative_position_id = FRA_the_old_school
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_capital_ship_focus
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+				category = bc_tech
+			}
+		}
+	}
+	focus = {
+		id = FRA_carrier_focus
+		icon = GFX_goal_generic_navy_carrier
+	 	mutually_exclusive = { focus = FRA_capital_ship_focus }
+	 	prerequisite = { focus = FRA_the_old_school }
+		x = 1
+		y = 1
+		relative_position_id = FRA_the_old_school
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_carrier_focus
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = FRA_carrier_planes
+		icon = GFX_goal_generic_air_fighter
+
+	 	prerequisite = { focus = FRA_carrier_focus }
+		x = -1
+		y = 1
+		relative_position_id = FRA_carrier_focus
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = FRA_carrier_planes
+			}
+		}
+	
+	focus = {
+		id = FRA_rush_the_richelieus
+		icon = GFX_focus_generic_cruiser2
+
+	 	prerequisite = { focus = FRA_capital_ship_focus }
+		x = 0
+		y = 2
+		relative_position_id = FRA_capital_ship_focus
+		cost = 5
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "FRA" 
+						version_name = "Richelieu Class"
+					}
+					requested_factories = 1
+					progress = 0.50
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "FRA" 
+						version_name = "Richelieu Class"
+					}
+					requested_factories = 1
+					progress = 0.35
+					amount = 1
+				}
+			}
+			else = {
+				add_equipment_production = {
+					equipment = {
+						type = battleship_2
+						creator = "FRA" 
+					}
+					requested_factories = 1
+					progress = 0.50
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = battleship_2
+						creator = "FRA" 
+					}
+					requested_factories = 1
+					progress = 0.35
+					amount = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_prioritize_the_joffre
+		icon = GFX_goal_generic_navy_carrier
+
+	 	prerequisite = { focus = FRA_carrier_focus }
+		x = 0
+		y = 2
+		relative_position_id = FRA_carrier_focus
+		cost = 5
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = { basic_ship_hull_carrier = 1 }
+				custom_effect_tooltip = FRA_prioritize_the_joffre_tt
+				hidden_effect = {
+					create_equipment_variant = {
+						name = "Joffre Class"
+						type = ship_hull_carrier_1
+						name_group = FRA_CV_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_2
+							fixed_ship_secondaries_slot = dp_ship_secondaries_2
+							front_1_custom_slot = empty
+						}
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_1
+							creator = "FRA" 
+							version_name = "Joffre Class"
+						}
+						requested_factories = 1
+						progress = 0.40
+						amount = 1
+					}
+				}	
+			}
+			else = {
+				add_equipment_production = {
+					equipment = {
+						type = carrier_2
+						creator = "FRA" 
+					}
+					requested_factories = 1
+					progress = 0.40
+					amount = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_the_young_school
+		icon = GFX_goal_generic_navy_cruiser
+	 	prerequisite = { focus = FRA_naval_rearmament }
+	 	mutually_exclusive = { focus = FRA_the_old_school }
+		x = 4
+		y = 1
+		relative_position_id = FRA_naval_rearmament
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = FRA_the_young_school
+		}
+	}
+	focus = {
+		id = FRA_undersea_combat
+		icon = GFX_goal_generic_occupy_states_coastal
+	 	prerequisite = { focus = FRA_the_young_school }
+		x = -1
+		y = 1
+		relative_position_id = FRA_the_young_school
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_undersea_combat
+				bonus = 1.0
+				uses = 2
+				category = cat_ship_medium_battery
+				category = cat_ship_heavy_battery
+			}
+		}
+	}
+	focus = {
+		id = FRA_surface_combat
+		icon = GFX_focus_generic_destroyer
+	 	prerequisite = { focus = FRA_the_young_school }
+		x = 1
+		y = 1
+		relative_position_id = FRA_the_young_school
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_surface_combat
+				bonus = 2.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = FRA_improved_screen_ships
+		icon = GFX_goal_generic_navy_cruiser
+	 	prerequisite = { focus = FRA_surface_combat }
+	 	prerequisite = { focus = FRA_undersea_combat }
+		x = 0
+		y = 2
+		relative_position_id = FRA_surface_combat
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_improved_screen_ships
+				bonus = 2.0
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+	focus = {
+		id = FRA_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+	 	prerequisite = { 
+	 		focus = FRA_prioritize_the_joffre
+	 		focus = FRA_rush_the_richelieus
+	 		focus = FRA_improved_screen_ships
+	 	}
+		x = 3
+		y = 1
+		relative_position_id = FRA_rush_the_richelieus
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_ideas = FRA_naval_doctrine
+		}
+	}
 	
 }
