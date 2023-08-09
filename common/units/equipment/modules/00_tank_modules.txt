@@ -1192,12 +1192,12 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 55
-			hard_attack = 55
-			ap_attack = 200
+			soft_attack = 65
+			hard_attack = 65
+			ap_attack = 220
 			build_cost_ic = 15
-			maximum_speed = -0.6
-			reliability = -0.35
+			maximum_speed = -0.2
+			reliability = -0.30
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
