@@ -404,581 +404,6 @@ SOV_industry_relocation = {
 	}
 }
 
-#Category only allowed for SOV
-SOV_great_patriotic_war = {
-
-	SOV_order_227 = {
-
-		icon = generic_army_support
-
-		available = {
-			has_war = yes
-			any_enemy_country = {
-				is_major = yes
-			}
-			has_civil_war = no
-			surrender_progress > 0.15
-		}
-
-		cost = 50
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			any_enemy_country = {
-				is_major = yes
-			}
-			#surrender_progress > 0
-		}
-
-		days_remove = 720
-
-		modifier = {
-			army_core_defence_factor = 0.25
-			mobilization_speed = 0.15
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				surrender_progress > 0.25
-				factor = 10
-			}
-		}
-	}
-	SOV_scorched_earth = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			any_enemy_country = {
-				is_major = yes
-			}
-			surrender_progress > 0
-		}
-
-		cost = 50
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			any_enemy_country = {
-				is_major = yes
-			}
-			surrender_progress > 0
-		}
-
-		complete_effect = {
-			set_country_flag = SOV_scorched_earth
-			unlock_decision_tooltip = SOV_scorched_earth_baltics
-			unlock_decision_tooltip = SOV_scorched_earth_byelorussia
-			unlock_decision_tooltip = SOV_scorched_earth_ukraine
-			unlock_decision_tooltip = SOV_scorched_earth_stalingrad
-			unlock_decision_tooltip = SOV_scorched_earth_caucasus
-			unlock_decision_tooltip = SOV_scorched_earth_moscow
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 0
-				SOV_save_pp_for_manpower_trouble = yes
-			}
-		}
-	}
-	SOV_scorched_earth_baltics = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 24
-			}
-		}
-
-		cost = 50
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			OR = {
-				controls_state = 189
-				controls_state = 11
-				controls_state = 190
-				controls_state = 12
-				controls_state = 191
-				controls_state = 13
-			}
-			has_country_flag = SOV_scorched_earth
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -25
-			}
-			if = {
-				limit = {
-					controls_state = 189
-				}
-				189 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 11
-				}
-				11 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 190
-				}
-				190 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 12
-				}
-				12 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 191
-				}
-				191 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 13
-				}
-				13 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_scorched_earth_byelorussia = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			any_of = {
-				array = BLR.core_states
-				var:v = { is_controlled_by = SOV }
-			}
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
-			every_state = {
-				limit = {
-					is_core_of = BLR
-					is_controlled_by = SOV
-				}
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_scorched_earth_ukraine = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 74
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			any_of = {
-				array = UKR.core_states
-				var:v = { is_controlled_by = SOV }
-			}
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -75
-			}
-			every_state = {
-				limit = {
-					is_core_of = UKR
-					is_controlled_by = SOV
-				}
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_scorched_earth_caucasus = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			OR = {
-				420 = { CONTROLLER = { has_war_with = SOV } }
-				419 = { CONTROLLER = { has_war_with = SOV } }
-				353 = { CONTROLLER = { has_war_with = SOV } }
-				354 = { CONTROLLER = { has_war_with = SOV } }
-				137 = { CONTROLLER = { has_war_with = SOV } }
-				218 = { CONTROLLER = { has_war_with = SOV } }
-				238 = { CONTROLLER = { has_war_with = SOV } }
-				237 = { CONTROLLER = { has_war_with = SOV } }
-				236 = { CONTROLLER = { has_war_with = SOV } }
-				231 = { CONTROLLER = { has_war_with = SOV } }#sneaky QA naval invasion check
-				233 = { CONTROLLER = { has_war_with = SOV } }
-				234 = { CONTROLLER = { has_war_with = SOV } }
-			}
-			has_country_flag = SOV_scorched_earth
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
-			if = {
-				limit = {
-					229 = { is_controlled_by = SOV}
-				}
-				229 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					230 = { is_controlled_by = SOV}
-				}
-				230 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					231 = { is_controlled_by = SOV}
-				}
-				231 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					232 = { is_controlled_by = SOV}
-				}
-				232 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					233 = { is_controlled_by = SOV}
-				}
-				233 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					234 = { is_controlled_by = SOV}
-				}
-				234 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					235 = { is_controlled_by = SOV}
-				}
-				235 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_scorched_earth_stalingrad = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			OR = {
-				227 = { CONTROLLER = { has_war_with = SOV } }
-				228 = { CONTROLLER = { has_war_with = SOV } }
-				218 = { CONTROLLER = { has_war_with = SOV } }
-				245 = { CONTROLLER = { has_war_with = SOV } }
-				237 = { CONTROLLER = { has_war_with = SOV } }
-				236 = { CONTROLLER = { has_war_with = SOV } }
-				231 = { CONTROLLER = { has_war_with = SOV } }#sneaky QA naval invasion check
-				238 = { CONTROLLER = { has_war_with = SOV } }
-				260 = { CONTROLLER = { has_war_with = SOV } }
-				239 = { CONTROLLER = { has_war_with = SOV } }
-			}
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
-			if = {
-				limit = {
-					245 = { is_controlled_by = SOV}
-				}
-				245 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					217 = { is_controlled_by = SOV}
-				}
-				217 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					218 = { is_controlled_by = SOV}
-				}
-				218 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					238 = { is_controlled_by = SOV}
-				}
-				238 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					237 = { is_controlled_by = SOV}
-				}
-				237 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					236 = { is_controlled_by = SOV}
-				}
-				236 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					265 = { is_controlled_by = SOV}
-				}
-				265 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_scorched_earth_moscow = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			OR = {
-				207 = { CONTROLLER = { has_war_with = SOV } }
-				210 = { CONTROLLER = { has_war_with = SOV } }
-				241 = { CONTROLLER = { has_war_with = SOV } }
-				193 = { CONTROLLER = { has_war_with = SOV } }
-				225 = { CONTROLLER = { has_war_with = SOV } }
-				240 = { CONTROLLER = { has_war_with = SOV } }
-			}
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
-			every_state = {
-				limit = {
-					OR = {
-						state = 220
-						state = 222
-						state = 224
-						state = 243
-						state = 205
-						state = 242
-						state = 246
-						state = 219
-					}
-					is_controlled_by = SOV
-				}
-				damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-			}
-			
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-}
-
 SOV_great_patriotic_war = {
 
 
@@ -1468,5 +893,811 @@ political_actions = {
 			factor = 0
 		}
 	}
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SOV_propaganda_campaigns = {
+	SOV_propaganda_motherland_calls = { # ID = 3
+		priority = 2
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 0
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+
+			date > 1941.01.01
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = SOV_great_purge
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+			}
+		}
+
+		days_remove = 180
+
+		days_re_enable = 180
+
+		cost = 50
+
+		modifier = {
+			weekly_manpower = 1000
+			training_time_factor = -0.1
+			minimum_training_level = -0.1
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 3 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 3 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+
+	SOV_propaganda_hit_of_hammer = { # ID = 7
+		priority = 6
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 10
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+			date > 1940.01.01
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = SOV_great_purge
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+			}
+		}
+
+		days_remove = 180
+
+		days_re_enable = 180
+
+		cost = 50
+
+		modifier = {
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 7 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 7 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+
+	SOV_propaganda_transport = { # ID = 8
+		priority = 7
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 0.7
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+			date > 1939.01.01
+			has_war = no
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = SOV_great_purge
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+			}
+		}
+
+		days_remove = 180
+
+		days_re_enable = 180
+
+		cost = 50
+
+		modifier = {
+			production_speed_supply_node_factor = 0.15
+			production_speed_rail_way_factor = 0.15
+			supply_consumption_factor = -0.1
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 8 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 8 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+
+	SOV_propaganda_high_yield = { # ID = 11
+		priority = 10
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 10
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+
+			date > 1938.01.01
+			has_war = no
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = SOV_great_purge
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+			}
+		}
+
+		days_remove = 180
+
+		days_re_enable = 180
+
+		cost = 100
+
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 11 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 11 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	
+
+	SOV_propaganda_knowledge = { # ID = 19
+		priority = 18
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 10
+				has_war = no
+			}
+			modifier = {
+				factor = 0.1
+				check_variable = { SOV_propaganda_knowledge_cost > 30 } #Less likely to do it a third time
+			}
+			modifier = {
+				factor = 0.1
+				check_variable = { SOV_propaganda_knowledge_cost > 45 } #Even less likely to do it a fourth time
+			}
+			modifier = {
+				factor = 0
+				check_variable = { SOV_propaganda_knowledge_cost > 90 } #Shouldn't even considered doing it a fifth time
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+			has_war = no
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = SOV_great_purge
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+			}
+		}
+
+		days_remove = 180
+
+		days_re_enable = 180
+
+		cost = 50
+
+		modifier = {
+			research_speed_factor = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 19 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 19 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+
+	SOV_propaganda_rebuild_to_glory = { # ID = 24
+		priority = 23
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 3
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+			OR = {
+				date < 1942.01.01
+				has_war = no
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = SOV_great_purge
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+			}
+		}
+
+		days_remove = 180
+
+		days_re_enable = 180
+
+		cost = 75
+
+		modifier = {
+			production_speed_buildings_factor = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 24 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 24 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+
+	SOV_propaganda_stalin = { # ID = 23
+		priority = 22
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 5
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+			date < 1940.01.01
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = SOV_great_purge
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+			}
+		}
+
+		days_remove = 180
+
+		days_re_enable = 180
+
+		cost = 75
+
+		modifier = {
+			political_power_factor = 0.1
+			war_support_weekly = 0.002
+			stability_weekly = 0.001
+			communism_drift = 0.1
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 23 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 23 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+
+	SOV_propaganda_for_the_motherland = { # ID = 12
+		priority = 11
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+
+			has_war = yes
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = SOV_great_purge
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+			}
+		}
+
+		days_remove = 90
+
+		days_re_enable = 90
+
+		cost = 100
+
+		modifier = {
+			experience_gain_army_factor = 0.1
+			command_power_gain_mult = 0.10
+			breakthrough_factor = 0.1
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 12 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 12 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+
+	SOV_propaganda_heroes_forward = { # ID = 13
+		priority = 12
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 10
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+
+			has_war = yes
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = SOV_great_purge
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+			}
+		}
+
+		days_remove = 180
+
+		days_re_enable = 180
+
+		cost = 75
+
+		modifier = {
+			army_morale_factor = 0.1
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 13 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 13 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+}
+
+SOV_great_patriotic_war = {
+
+	SOV_raise_penal_units = {
+		priority = 21
+
+		icon = GFX_decision_generic_arrest
+
+		ai_will_do = {
+			base = 5
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+
+		days_remove = 365
+
+		complete_effect = {
+			division_template = {
+				name = "Shtrafnaya Chast"
+				division_names_group = SOV_PEN_01
+				is_locked = yes
+
+				regiments = {
+					penal_battalion = { x = 0 y = 0 }
+					penal_battalion = { x = 0 y = 1 }
+					penal_battalion = { x = 0 y = 2 }
+					penal_battalion = { x = 0 y = 3 }
+					penal_battalion = { x = 0 y = 4 }
+					penal_battalion = { x = 1 y = 0 }
+					penal_battalion = { x = 1 y = 1 }
+					penal_battalion = { x = 1 y = 2 }
+					penal_battalion = { x = 1 y = 3 }
+					penal_battalion = { x = 1 y = 4 }
+					penal_battalion = { x = 2 y = 0 }
+					penal_battalion = { x = 2 y = 1 }
+					penal_battalion = { x = 2 y = 2 }
+					penal_battalion = { x = 2 y = 3 }
+					penal_battalion = { x = 2 y = 4 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Shtrafnaya Chast\" start_experience_factor = 0.0 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 20
+				}
+			}
+		}
+
+		remove_effect = {
+		}
+	}
+
+	SOV_factory_worker_militias = {
+		priority = 20
+
+		icon = generic_prepare_civil_war
+
+		ai_will_do = {
+			base = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_core_of = ROOT
+				OR = {
+					industrial_complex > 0
+					arms_factory > 0
+					dockyard > 0
+				}
+				is_on_continent = europe
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			FROM = {
+				NOT = { has_dynamic_modifier = { modifier = SOV_civilian_labor_in_defense_mod } }
+			}
+		}
+
+		visible = {
+			#always = yes
+			FROM = {
+				is_controlled_by = ROOT
+				any_neighbor_state = {
+					controller = { has_war_with = ROOT }
+				}
+			}
+		}
+
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+
+		days_remove = 90
+
+		cancel_if_not_visible = yes
+
+		cancel_effect = {
+			FROM = {
+				remove_dynamic_modifier = { modifier = SOV_factory_worker_militias_raised }
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				#Cost
+				add_command_power = -25
+				add_political_power = -25
+
+				FROM = {
+					add_dynamic_modifier = {
+						modifier = SOV_factory_worker_militias_raised
+						scope = SOV
+					}
+				}
+			}
+			custom_effect_tooltip = SOV_factory_worker_militias_state_modifier_tt
+		}
+
+		remove_effect = {
+			FROM = {
+				remove_dynamic_modifier = { modifier = SOV_factory_worker_militias_raised }
+			}
+		}
+	}
+
+	SOV_civilian_labor_in_defense = {
+		priority = 10
+
+		icon = POL_organize_strike_two
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_core_of = ROOT
+				OR = {
+					has_state_category = town
+					has_state_category = large_town
+					has_state_category = city
+					has_state_category = large_city
+					has_state_category = megalopolis
+					has_state_category = metropolis
+				}
+				is_on_continent = europe
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			FROM = {
+				NOT = { has_dynamic_modifier = { modifier = SOV_factory_worker_militias_raised } }
+			}
+		}
+
+		visible = {
+			FROM = {
+				is_controlled_by = ROOT
+				any_neighbor_state = {
+					controller = { has_war_with = ROOT }
+				}
+			}
+		}
+
+		ai_hint_pp_cost = 25
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+
+		days_remove = 90
+
+		cancel_if_not_visible = yes
+
+		cancel_trigger = {
+			FROM = {
+				OR = {
+					NOT = { is_controlled_by = ROOT }
+					NOT = {
+						any_neighbor_state = {
+							controller = { has_war_with = ROOT }
+						}
+					}
+				}
+			}
+		}
+
+		cancel_effect = {
+			FROM = {
+				remove_dynamic_modifier = { modifier = SOV_civilian_labor_in_defense_mod }
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				#Cost
+				add_command_power = -25
+				add_political_power = -25
+
+				FROM = {
+					add_dynamic_modifier = {
+						modifier = SOV_civilian_labor_in_defense_mod
+						scope = SOV
+					}
+				}
+			}
+			custom_effect_tooltip = SOV_civilian_labor_in_defense_state_modifier_tt
+		}
+
+		remove_effect = {
+			FROM = {
+				remove_dynamic_modifier = { modifier = SOV_civilian_labor_in_defense_mod }
+			}
+		}
+	}
+
+	SOV_staggered_retreat = {
+		priority = 31
+
+		icon = GFX_decision_generic_military
+
+		ai_will_do = {
+			base = 0.5
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			surrender_progress > 0.08
+		}
+
+		visible = {
+			
+		}
+		cost = 75
+
+		days_remove = 90
+
+		cancel_trigger = {
+			surrender_progress < 0.04
+		}
+
+		complete_effect = {
+			
+		}
+
+		modifier = {
+			army_speed_factor = 0.05
+			army_defence_factor = 0.05
+			org_loss_when_moving = -0.1
+		}
+	}
+
+	SOV_order_227 = {
+		priority = 50
+
+		icon = generic_army_support
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			surrender_progress > 0.15
+		}
+		
+		visible = {
+			
+		}
+		
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 720
+
+		modifier = {
+			army_core_defence_factor = 0.25
+			mobilization_speed = 0.15
+		}
+
+		complete_effect = {
+			
+			set_country_flag = SOV_order_227_flag
+			custom_effect_tooltip = SOV_order_227_decisions_tt
+		}
+	}
 }

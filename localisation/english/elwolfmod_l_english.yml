@@ -1,14 +1,9 @@
 ﻿l_english:
  industry_late:0 "Late Game Industry"
 
- torpedo_mounting_2:0 "Improved Torpedo Mounting"
- torpedo_mounting_3:0 "Advanced Torpedo Mounting"
-
- heavy_bomb_locks:0 "Heavy Bomb Locks"
- armor_piercing_bomb_locks:0 "Armor Pirecing Bomb Locks"
-
  tank_medium_cannon_3:0 "Advanced Medium Cannon"
-
+ 
+ #TEMPLATES
  templates_retards_ai:0 "Templates for retards"
  templates_retards_ai_desc:0 "These decisions can only be clicked once."
  inf_templates:0 "Infantry templates"
@@ -16,6 +11,7 @@
  tank_templates_30w:0 "Tank templates"
  mp_template:0 "Suppression template"
 
+ #MANUFACTURERS
  generic_medium_tank_manufacturer:0 "Medium Tank Manufacturer"
  generic_heavy_tank_manufacturer:0 "Heavy Tank Manufacturer"
 
@@ -26,14 +22,25 @@
  GER_modular_tank_manufacturer:0 "Modular Tank Deisgner"
 
 
+
+ #SOVIETS
  SOV_finish_five_year_plan:0 "Finish the Five Year Plan"
  SOV_improve_railway:0 "Imrpoved Infrastructure"
+ SOV_industrial_expansion:0 "Industrial Expansion"
+ SOV_t34:0 "T-34"
+ SOV_kv:0 "KV"
+
+ SOV_stalins_constitution:0 "Stalin Constitution"
+ SOV_t34_programe:0 "The T-34 Program"
+ SOV_kv_programe:0 "The KV Program"
+ 
+ SOV_great_purge_tt3:0 "\nSelecting this Focus will add §G+10%§! §YWar Support§! Instantly.\n\nCompleting this focus will allow you to do powerful propaganda campaigns \n\n"
 
 
 
 
 
-
+ #ELWOLF
  steal_soviet_anti_tank_research:0 "Steal Soviet Anti-Tank Research"
  NO_ASIA_NAME:0 "The War in the West"
  NO_ASIA_DESC:0 "No asia. Takes out USA, AST, NZL, MEX, RAJ, MAN, SIA, JAP, East Indies, Malaysia, Philipines, The Islands, etc. UK has resources rights to USA resources, UK civ boosted to 49 civs 24 mils, AST, NZL, and RAJ guns added to UK, UK 300 more convoys 100 more trains, 1 research slot, and research discount on guns and artillery."
