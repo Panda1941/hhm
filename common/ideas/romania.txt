@@ -430,7 +430,7 @@ ideas = {
 			}
 			
 			modifier = {				
-				conscription = 0.05
+				conscription = 0.02
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
 			}
@@ -469,7 +469,7 @@ ideas = {
 
 			
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
@@ -814,6 +814,7 @@ ideas = {
 
 			}
 			modifier = {
+				production_speed_buildings_factor = 0.05
 				consumer_goods_factor = -0.05
 			}
 		}

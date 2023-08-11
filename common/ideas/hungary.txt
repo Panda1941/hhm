@@ -239,8 +239,8 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.15
-				consumer_goods_factor = -0.025
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.03
 			}
 		}
 
@@ -252,7 +252,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				consumer_goods_factor = -0.075
+				consumer_goods_factor = -0.08
 			}
 		}
 
@@ -264,7 +264,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.08
 			}
 		}
 
@@ -310,8 +310,8 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription = 0.0025
-				industrial_capacity_factory = 0.05
+				conscription = 0.002
+				industrial_capacity_factory = 0.075
 				custom_modifier_tooltip = HUN_secret_rearmament_tt_2
 			}
 		}

@@ -3409,6 +3409,7 @@ focus_tree = {
 		}
 	}
 
+
 	
 	focus = {
 		id = GER_naval_rearmament
@@ -3419,6 +3420,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		mutually_exclusive = { focus = GER_accept_british_naval_dominance }
 
 		available_if_capitulated = yes
 
@@ -3493,6 +3495,28 @@ focus_tree = {
 				}
 				set_state_flag = GER_naval_rearmament_1dockyard
 			}
+		}
+	}
+
+	focus = {
+		id = GER_accept_british_naval_dominance
+		icon = GFX_focus_ger_accept_british_naval_dominance
+		mutually_exclusive = { focus = GER_naval_rearmament }
+		available = {
+
+		}
+		cancel_if_invalid = yes
+		x = 2
+		y = 0
+		relative_position_id = GER_naval_rearmament
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+			add_ideas = GER_redirecting_naval_production
 		}
 	}
 	

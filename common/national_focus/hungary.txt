@@ -662,25 +662,11 @@ focus_tree = {
 				controls_state = 83
 				controls_state = 84
 			}
-			is_puppet = no
-			NOT = {
-				is_in_faction_with = ROM
-			}
-			NOT = {
-				has_war_with = ROM
-			}
-			strength_ratio = { tag = ROM ratio > 0.66 }
-			has_army_manpower = { size > 200000 }
 		
 		}
 
 		bypass = {
 			OR = {
-				664 = {
-					OWNER = {
-						has_war_with = ROOT
-					}
-				}
 				NOT = {
 					ROM = {
 						controls_state = 76
@@ -1091,7 +1077,7 @@ focus_tree = {
 				name = HUN_industrial_revitalization
 				bonus = 1.0
 				uses = 1
-				category = industry_late
+				category = industry
 			}
 		}
 	}
@@ -2031,11 +2017,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = HUN_theoretical_air_efforts
-				cost_reduction = 0.5
+			
+			add_tech_bonus = {
+				name = HUN_the_botond
+				bonus = 1.0
 				uses = 1
-				category = air_doctrine
+				category = motorized_equipment
 			}
 		}
 	}
