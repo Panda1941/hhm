@@ -620,6 +620,7 @@ technologies = {
 			tank_medium_cannon_2
 			tank_high_velocity_cannon_2
 			tank_rocket_launcher
+			tank_medium_howitzer
 			stabilizer
 			squeezebore_adaptor
 			tank_anti_air_cannon_2
@@ -714,7 +715,7 @@ technologies = {
 		
 		enable_equipment_modules = {
 			auto_loader
-			tank_heavy_howitzer
+			tank_medium_howitzer_2
 			tank_rocket_launcher_2
 			tank_high_velocity_cannon_3
 			tank_medium_cannon_3

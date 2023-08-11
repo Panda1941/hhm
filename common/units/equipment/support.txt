@@ -20,6 +20,14 @@ equipments = {
 		
 		reliability = 0.8
 
+		#Shovels to dig a hole
+		defense = 3
+		breakthrough = 3
+
+		#Mines and shit :kekw:
+		hard_attack = 1.0
+		ap_attack = 3
+
 		#Space taken in convoy
 		lend_lease_cost = 1
 
