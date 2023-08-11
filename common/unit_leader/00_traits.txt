@@ -838,7 +838,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			supply_consumption_factor = -0.15
+			supply_consumption_factor = -0.12
 		}
 		enable_ability = extra_suplies
 		ai_will_do = {
@@ -856,6 +856,7 @@ leader_traits = {
 		cost = 1000
 		field_marshal_modifier = {
 			org_loss_when_moving = -0.3
+			breakthrough_factor = 0.06
 		}
 		attack_skill = 1
 		slot = army_chief
@@ -876,7 +877,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			max_dig_in_factor = 0.3
+			max_dig_in_factor = 0.12
 		}
 		slot = army_chief
 		specialist_advisor_trait = army_chief_entrenchment_1
@@ -917,7 +918,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			max_planning = 0.1
+			max_planning = 0.08
 		}
 		slot = army_chief
 		specialist_advisor_trait = army_chief_planning_1
@@ -941,7 +942,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			defence = 0.1
+			defence = 0.08
 		}
 		custom_effect_tooltip = INCREASED_COUNTERATTACK_CHANCE
 		slot = army_chief
@@ -965,7 +966,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			breakthrough_factor = 0.1
+			breakthrough_factor = 0.12
 		}
 		custom_effect_tooltip = INCREASED_ASSAULT_AND_SHOCK_CHANCE
 		slot = army_chief
@@ -987,6 +988,7 @@ leader_traits = {
 		cost = 1000
 		field_marshal_modifier = {
 			land_reinforce_rate = 0.02
+			army_org_factor = 0.05
 		}
 		slot = army_chief
 		specialist_advisor_trait = army_chief_organizational_1
@@ -1006,6 +1008,7 @@ leader_traits = {
 		cost = 1000
 		field_marshal_modifier = {
 			army_morale_factor = 0.1
+			army_strength_factor = 0.05
 		}
 		slot = army_chief
 		specialist_advisor_trait = army_chief_morale_1
