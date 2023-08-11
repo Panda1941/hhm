@@ -84,6 +84,24 @@
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
+
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 0
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_finish_five_year_plan_2IC
+			}
 		}
 	}
 
@@ -431,109 +449,32 @@
 
 		completion_reward = {
 			army_experience = 10
-			if = {
-				limit = {
-					653 = {
-						OR = {
-							NOT = { is_controlled_by = SOV }
-							AND = {
-								is_controlled_by = SOV
-								free_building_slots = {
-									building = arms_factory
-									size < 2
-									include_locked = yes
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = { 
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}	
-					set_state_flag = SOV_production_effort_2AF
-				}
-			}
 			653 = {
-				if = {
-					limit = { 
-						is_controlled_by = SOV
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = SOV_production_effort_2AF
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
-			}
-			if = {
-				limit = {
-					572 = {
-						OR = {
-							NOT = { is_controlled_by = SOV }
-							AND = {
-								is_controlled_by = SOV
-								free_building_slots = {
-									building = arms_factory
-									size < 2
-									include_locked = yes
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = { 
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}							
-					set_state_flag = SOV_production_effort_2AF
-				}
+				set_state_flag = SOV_production_effort_2AF
 			}
 			572 = {
-				if = {
-					limit = { 
-						is_controlled_by = SOV
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = SOV_production_effort_2AF
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
+				set_state_flag = SOV_production_effort_2AF
+			}
+			137 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_production_effort_2AF
 			}
 		}
 	}
@@ -1098,7 +1039,7 @@
 		search_filters = {}
 
 		completion_reward = {
-			add_timed_idea = { idea = SOV_military_advisors_in_spain days = 1000 }	
+			army_experience = 100
 		}
 	}
 
@@ -1396,8 +1337,7 @@
 		dynamic = yes 
 
 		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-			is_subject = no
+			
 		}
 
 		bypass = {
@@ -1441,20 +1381,7 @@
 		}
 
 		bypass = {
-			OR = {
-				has_idea = SOV_molotov_ribbentrop_pact
-
-				NOT = { country_exists = POL }
-
-				AND = {
-					owns_state = 91
-					owns_state = 93
-					owns_state = 94
-					owns_state = 95
-					owns_state = 96
-					owns_state = 89
-				}
-			}			
+					
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1512,14 +1439,7 @@
 			}		
 		}
 		bypass = {
-			OR = { 
-				owns_state = 78
-				78 = { is_claimed_by = ROOT }
-			}
-			OR = { 
-				owns_state = 80
-				80 = { is_claimed_by = ROOT }
-			}
+			
 		}
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1643,7 +1563,7 @@
 		x = -2
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1664,7 +1584,7 @@
 			add_tech_bonus = {
 				name = ships_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = naval_equipment
 			}			
 		}
@@ -1708,7 +1628,7 @@
 			add_tech_bonus = {
 				name = ships_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = naval_equipment
 			}
 		}
@@ -1748,14 +1668,24 @@
 			custom_effect_tooltip = SOV_great_purge_tt
 			custom_effect_tooltip = SOV_great_purge_tt3
 
-			add_timed_idea = {
-				idea = officers_purged_6
-				days = 885
+			
+			add_ideas = officers_purged_6
+
+
+			
+			if = {
+				limit = { has_idea = trotskyite_plot }
+				
+				swap_ideas = {
+					remove_idea = trotskyite_plot
+					add_idea = trotskyite_plot_purged
+				}
 			}
 
-			swap_ideas = {
-				remove_idea = trotskyite_plot
-				add_idea = trotskyite_plot_purged
+			unlock_decision_category_tooltip = SOV_propaganda_campaigns
+			hidden_effect = {
+				SOV_unlock_propaganda_campaign_slot_effect = yes
+				SOV_unlock_propaganda_campaign_slot_effect = yes
 			}
 		}
 	}
@@ -1807,8 +1737,9 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1972,8 +1903,8 @@
 		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_military_reorganization }
 		available = {
 			OR = {
-				date > 1941.1.1
-				has_country_flag = SOV_war_since_purge
+				date > 1941.6.1
+				has_War_with = GER
 			}
 		}
 		x = -1
@@ -2000,9 +1931,9 @@
 				uses = 1
 				category = armor
 			}
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
 				uses = 2
 				category = land_doctrine
 			}
@@ -2026,8 +1957,8 @@
 
 
 	focus = {
-		id = SOV_research_city_experiment
-		icon = GFX_focus_wonderweapons
+		id = SOV_closed_city_network
+		icon = GFX_focus_research
 		prerequisite = { focus = SOV_lessons_of_war }
 		available = {
 
@@ -2044,10 +1975,34 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+
+	focus = {
+		id = SOV_research_city_experiment
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = SOV_closed_city_network }
+		available = {
+
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_closed_city_network
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 2.0
+				uses = 2
 				category = nuclear
 			}
 		}
@@ -2075,34 +2030,10 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret
-				bonus = 1.0
-				uses = 2
+				bonus = 1.5
+				uses = 3
 				category = rocketry
 			}
-		}
-	}
-
-
-	focus = {
-		id = SOV_closed_city_network
-		icon = GFX_focus_research
-		prerequisite = { focus = SOV_diversify_the_programme }
-		available = {
-
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_diversify_the_programme
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_research_slot = 1
 		}
 	}
 

@@ -65,10 +65,15 @@ SOV_diplomacy_baltic_decision_category = {
 				target = FROM
 				transfer_troops = yes
 			}
-			every_state = {
-				add_core_of = SOV
+			FROM = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+					}
+					add_core_of = SOV
+				}
 			}
-			
+
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 35911 }
 			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 4450 }	
 
@@ -1701,7 +1706,6 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			
 			set_country_flag = SOV_order_227_flag
-			custom_effect_tooltip = SOV_order_227_decisions_tt
 		}
 	}
 }
