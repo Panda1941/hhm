@@ -90,23 +90,23 @@ on_actions = {
 	}
 	on_monthly = {
 		effect = {
-			if = {
-				limit = {
-					GER = {
-						has_war = no
-					}
-				}
-				every_country = {
-					every_army_leader = {
-						limit = {
-							NOT = { 
-								has_trait = no_grind
-							}
-						}
-						add_unit_leader_trait = no_grind
-					}
-				}
-			}
+			#if = {
+			#	limit = {
+			#		GER = {
+			#			has_war = no
+			#		}
+			#	}
+			#	every_country = {
+			#		every_army_leader = {
+			#			limit = {
+			#				NOT = { 
+			#					has_trait = no_grind
+			#				}
+			#			}
+			#			add_unit_leader_trait = no_grind
+			#		}
+			#	}
+			#}
 			every_country = {
 				limit = {
 					OR = {
