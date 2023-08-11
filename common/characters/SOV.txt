@@ -2498,7 +2498,7 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_policy_of_individual_security
+				
 			}
 			traits = {
 				pc_for_foreign_affairs_molotov 
@@ -2529,7 +2529,7 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_policy_of_collective_security 
+				
 			}
 			traits = {
 				pc_for_foreign_affairs_litvinov 
@@ -3326,10 +3326,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				OR = {
-					has_completed_focus = SOV_patriarch_of_all_russia
-					has_completed_focus = SOV_the_declaration
-				}
+				date > 1940.01.01
 			}
 			traits = {
 				patriarch_of_moscow_and_all_russia 

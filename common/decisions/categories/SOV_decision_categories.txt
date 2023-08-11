@@ -20,10 +20,10 @@ SOV_industry_relocation = {
 SOV_great_patriotic_war = {
 	priority = 101
 	allowed = {
-		original_tag = SOV
+		has_war_with = GER
 	}
 	visible = {
-		#has_war = yes
+		has_war = yes
 	}
 		
 }

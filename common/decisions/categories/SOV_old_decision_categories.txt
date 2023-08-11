@@ -106,21 +106,6 @@ SOV_soviet_aid_to_poum_decision_category = { #Dec cat for aiding the POUM
 	}
 }
 
-SOV_great_patriotic_war = {
-	priority = 200
-
-	icon = sov_great_patriotic_war
-	
-	allowed = {
-		original_tag = SOV
-	}
-	visible = {
-		any_enemy_country = {
-			SOV_is_major_not_original_sov = yes
-		}
-	}	
-}
-
 SOV_diplomacy_baltic_decision_category = {
 	priority = 26
 

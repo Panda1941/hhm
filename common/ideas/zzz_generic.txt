@@ -1338,7 +1338,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 
-			modifier = { aircraft_manufacturer_cost_factor = -1 }
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			
 			traits = { naval_manufacturer }
 		}

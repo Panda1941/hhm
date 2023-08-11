@@ -1678,6 +1678,9 @@ SOV_great_patriotic_war = {
 		available = {
 			surrender_progress > 0.15
 		}
+		cancel_trigger = {
+			surrender_progress < 0.10
+		}
 		
 		visible = {
 			
@@ -1697,7 +1700,6 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			
 			set_country_flag = SOV_order_227_flag
-			custom_effect_tooltip = SOV_order_227_decisions_tt
 		}
 	}
 }
