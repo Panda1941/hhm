@@ -82,6 +82,14 @@ NDefines.NMilitary.BASE_FORT_PENALTY = -0.2
 
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0007 -- 0.0015
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 -- 0.5
+NDefines.NMilitary.UNIT_DIGIN_CAP = 0
+NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 0
+NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0
+NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_MALUS = -0.5
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.25                 -- vanilla -0.30 | small river crossing
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.425          -- vanilla -0.6 | large river crossing
+ 
+
 
 
 NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
@@ -218,7 +226,7 @@ NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 
 
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.035   -- 0.032
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.035   -- 0.032
-NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 3 -- how many CAS/TAC can enter a combat depending on enemy width there
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.56 -- how many CAS/TAC can enter a combat depending on enemy width there
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.70	-- 0.75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001		-- 0.01 Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.	
