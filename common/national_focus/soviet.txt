@@ -2100,5 +2100,67 @@
 			add_ideas = partisan_suppression_focus
 		}
 	}
+	
+	#####################################################################OPERATIONS
+	focus = {
+		id = SOV_winter_offensive
+		icon = GFX_focus_attack_germany
+		relative_position_id = SOV_war_with_germany
+		available = {date > 1941.11.01 date < 1942.03.1 }
+		x = 0
+		y = 1
+		prerequisite = { focus = SOV_war_with_germany }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_timed_idea= {idea = SOV_winter_offensive days = 60}
+		}
+	}
+	
+	focus = {
+		id = SOV_uranus
+		icon = GFX_focus_SOV_protect_the_east
+		prerequisite = { focus = SOV_war_with_germany }
+
+		available = {
+			date > 1942.08.15
+			date < 1942.11.23
+		}
+		x = 2
+		y = 1
+		relative_position_id = SOV_war_with_germany
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea= {idea=SOV_uranus days=60}
+		}
+	}
+	
+	focus = {
+		id = SOV_bagration
+		icon = GFX_focus_SOV_red_army
+		prerequisite = { focus = SOV_war_with_germany }
+		available = {
+			NOT = {has_idea = SOV_uranus}
+			date > 1943.08.01
+		}
+		x = -2
+		y = 1
+		relative_position_id = SOV_war_with_germany
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea= {idea= SOV_bagration days=100}
+		}
+	}
 
 }

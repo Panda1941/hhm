@@ -1241,7 +1241,7 @@ frontline_state = {
 
 	icon = GFX_modifiers_SOV_capital_of_the_tsars
 
-	army_core_defence_factor = -0.20
+	army_core_defence_factor = -0.10
 
 }
 
@@ -1269,5 +1269,13 @@ lastline_state = {
 	icon = GFX_modifiers_SOV_capital_of_the_tsars
 
 	army_core_defence_factor = 0.1
+
+}
+JAP_attack = {
+    enable = { always = yes }
+	
+	icon = GFX_modifiers_generic_military_plans
+	
+	max_dig_in_factor = -0.20
 
 }

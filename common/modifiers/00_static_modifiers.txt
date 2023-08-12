@@ -698,3 +698,8 @@ ETH_support_spain_static_modifier = {
 	send_volunteer_divisions_required = -0.75
 	send_volunteer_factor = 0.5
 }
+
+german_OWK_plan = { 
+	army_attack_factor = 0.05
+	army_defence_factor = -0.1
+}

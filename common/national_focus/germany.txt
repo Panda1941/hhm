@@ -2708,7 +2708,7 @@ focus_tree = {
 			date > 1941.6.14
 			is_subject = no
 		}
-		x = -2
+		x = 12
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 1
@@ -2731,6 +2731,12 @@ focus_tree = {
 					target = SOV
 					expire = 0
 				}
+				GER = {add_timed_idea={ idea = GER_barbarossa days = 120}}
+ 				ROM = {add_timed_idea={ idea = GER_barbarossa days = 120}}
+ 				HUN = {add_timed_idea={ idea = GER_barbarossa days = 120}}
+ 				BUL = {add_timed_idea={ idea = GER_barbarossa days = 120}}
+ 				SPR = {add_timed_idea={ idea = GER_barbarossa days = 120}}
+ 				
 			}
 			ELSE = {
 				every_country = {
@@ -4650,6 +4656,340 @@ focus_tree = {
 			add_ideas = GER_modular_construction
 		}
 	}
+	
+	#########################################################################OPERATIONS
+	
+	focus = {
+ 		id = GER_leningrad
+ 		mutually_exclusive = { focus = GER_moscow focus = GER_stalingrad}
+ 		prerequisite = { focus = GER_ussr_war_goal }
+ 		icon = GFX_focus_GER_leningrad
+ 		available = {
+ 		}
+ 		relative_position_id = GER_ussr_war_goal
+ 		x = -4
+ 		y = 5
+ 		cost = 1
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+ 			195 = {
+ 				add_province_modifier = {
+ 					static_modifiers = { german_OWK_plan }
+ 					province = {
+ 						id =3151
+ 						id =149
+ 						id =6174
+ 						id =79
+ 						id =11068
+ 					}
+ 				}
+ 			}
+		}
+ 	}
+ 	focus = {
+ 		id = GER_moscow
+ 		mutually_exclusive = { focus = GER_leningrad focus = GER_stalingrad}
+ 		prerequisite = { focus = GER_ussr_war_goal }
+ 		icon = GFX_focus_GER_moscow
+ 		available = {
+ 		}
+ 		relative_position_id = GER_ussr_war_goal
+ 		x = -1
+ 		y = 5
+ 		cost = 1
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+ 			219 = {
+ 				add_province_modifier = {
+ 					static_modifiers = { german_OWK_plan }
+ 					province = {
+ 						id =401
+ 						id =3327
+ 						id =3391
+ 						id =6348
+ 						id =6414
+ 						id =9348
+ 						id =6290
+ 						id =9282
+ 						id =11268
+ 						id =9395
+ 						id =350
+ 						id =11330
+ 						id =11217
+ 						id =9235
+ 						id =3290
+ 						id =301
+ 						id =6380
+ 						id =9378
+ 						id =6283
+ 						id =11236
+ 						id =3259
+ 						id =11282
+ 						id =3358
+ 						id =9302
+ 						id =366
+ 					}
+ 				}
+			}
+		}
+ 	}
+ 	focus = {
+ 		id = GER_stalingrad
+ 		mutually_exclusive = { focus = GER_moscow focus = GER_leningrad}
+ 		prerequisite = { focus = GER_ussr_war_goal }
+ 		icon = GFX_focus_GER_Manstein
+ 		available = {
+ 		}
+ 		relative_position_id = GER_ussr_war_goal
+ 		x = 2
+ 		y = 5
+ 		cost = 1
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+ 			217 = {
+ 				add_province_modifier = {
+ 					static_modifiers = { german_OWK_plan }
+ 					province = {
+ 						id =6541 id =9530 id =3503 id =11484 id =520 id =11474 id =3555 id =9504 id =3529 id =6527 id =498 id =6527 id =11447 id =9474 id =9459 id =6503
+ 					}
+ 				}
+			}
+		}
+ 	}
+	
+	focus = {
+ 		id = GER_winter_attack
+ 		mutually_exclusive = { focus = GER_winter_defense }
+ 		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
+ 		icon = GFX_focus_ger_final_crusade
+ 		available = {
+ 			NOT = {has_idea = GER_barbarossa}
+ 			has_war_with = SOV
+ 		}
+ 		relative_position_id = GER_moscow
+ 		x = -1
+ 		y = 1
+ 		cost = 1
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+ 			add_timed_idea={ idea = GER_barbarossa_2 days = 30}
+ 			ROM = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+ 			HUN = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+ 			BUL = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+ 			SPR = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+ 		}
+ 	}
+ 	focus = {
+ 		id = GER_winter_defense
+ 		mutually_exclusive = { focus = GER_winter_attack }
+ 		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
+ 		icon = GFX_focus_GER_winter_of_1941
+ 		available = {
+ 			NOT = {has_idea = GER_barbarossa}
+ 			has_war_with = SOV
+ 		}
+ 		relative_position_id = GER_moscow
+ 		x = 1
+ 		y = 1
+ 		cost = 1
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+ 			add_timed_idea={ idea = GER_barbarossa_3 days = 60}
+ 				ROM = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+ 				HUN = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+ 				BUL = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+ 				SPR = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+ 		}
+ 	}
+	
+	focus = {
+ 		id = GER_blau
+ 		prerequisite = { focus = GER_winter_attack focus = GER_winter_defense }
+ 		icon = GFX_focus_ger_reichskommisariats
+ 		available = {
+ 			Date > 1942.5.1
+ 			NOT={has_idea=GER_barbarossa}
+ 			NOT={has_idea=GER_barbarossa_2}
+ 			NOT={has_idea=GER_barbarossa_3}
+ 		}
+ 		relative_position_id = GER_moscow
+ 		x = 0
+ 		y = 2
+ 		cost = 1
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+ 			GER = {
+ 				add_timed_idea = { idea = GER_blau days = 100 }
+ 			}  
+			    ROM = {
+ 					add_timed_idea = { idea = GER_blau_minor days = 100 }
+ 				}
+ 				HUN = {
+ 					add_timed_idea = { idea = GER_blau_minor days = 100 }
+ 				}
+ 				BUL = {
+ 					add_timed_idea = { idea = GER_blau_minor days = 100 }
+ 				}
+ 				ITA = {
+ 					add_timed_idea = { idea = GER_blau_minor days = 100 }
+ 				}
+ 				SPR = {
+ 					add_timed_idea = { idea = GER_blau_minor days = 100 }
+ 				}
+ 			
+ 		}
+ 	}
+ 	focus = {
+ 		id = GER_north
+ 		mutually_exclusive = { focus = GER_south }
+ 		prerequisite = { focus = GER_blau}
+ 		icon = GFX_focus_ger_reichskommisariats
+ 		available = {
+ 		}
+ 		relative_position_id = GER_blau
+ 		x = -1
+ 		y = 1
+ 		cost = 1
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+ 			every_state = {
+ 				limit={OR={state=808 state=810 state=207 state=809 state=12 state=96 state=206 state=210 state =96 state=242 }}
+ 				add_dynamic_modifier = { modifier = JAP_attack days=90  }
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = GER_south
+ 		icon = GFX_focus_GER_south
+ 		mutually_exclusive = { focus = GER_north }
+ 		prerequisite = { focus = GER_blau}
+ 		icon = GFX_focus_ger_reichskommisariats
+ 		available = {
+ 		}
+ 		relative_position_id = GER_blau
+ 		x = 1
+ 		y = 1
+ 		cost = 1
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+ 			every_state = {
+ 				limit={OR={state=241 state=193 state=202 state=203 state=259 state=226 state=200 state=196 state=194 }}
+ 				add_dynamic_modifier = { modifier = JAP_attack days=90  }
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = GER_unternehmen_zitadelle
+ 		icon = GFX_focus_GER_unternehmen_zitadelle
+ 		prerequisite = { focus = GER_north focus = GER_south}
+ 		icon = GFX_focus_ger_reichskommisariats
+ 		available = {
+ 			date > 1943.5.15
+ 			NOT={has_idea=GER_blau}
+ 		}
+ 		x = 1
+ 		y = 1
+ 		relative_position_id = GER_north
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+ 			add_timed_idea = { idea = GER_zitadelle days = 90 }
+                ROM = {
+ 					add_timed_idea = { idea = GER_zitadelle days = 90 }
+ 				}
+ 				HUN = {
+ 					add_timed_idea = { idea = GER_zitadelle days = 90 }
+ 				}
+ 				BUL = {
+ 					add_timed_idea = { idea = GER_zitadelle days = 90 }
+ 				}
+ 				ITA = {
+ 					add_timed_idea = { idea = GER_zitadelle days = 90 }
+ 				}
+ 				SPR = {
+ 					add_timed_idea = { idea = GER_zitadelle days = 90 }
+ 				}
+ 		}
+ 	}
+	
+	focus = {
+ 		id = GER_ardennenoffensive
+ 		icon = GFX_focus_GER_ardennenoffensive
+ 		prerequisite = { focus = GER_atlantikwall }
+ 		available = {
+ 			Date > 1941.10.1
+ 			NOT={has_idea=GER_barbarossa}
+ 			count_triggers={
+ 				amount=4
+ 				6= {is_controlled_by_ROOT_or_ally=no}
+ 				34= {is_controlled_by_ROOT_or_ally=no}
+ 				35= {is_controlled_by_ROOT_or_ally=no}
+ 				7= {is_controlled_by_ROOT_or_ally=no}
+ 				36= {is_controlled_by_ROOT_or_ally=no}
+ 				29= {is_controlled_by_ROOT_or_ally=no}
+ 				8= {is_controlled_by_ROOT_or_ally=no}
+ 				785= {is_controlled_by_ROOT_or_ally=no}
+ 			}
+ 		}
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = GER_atlantikwall
+ 		cost = 2
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+ 			GER = {
+ 				add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+ 			}
+                ROM = {
+ 					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+ 				}
+ 				HUN = {
+ 					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+ 				}
+ 				BUL = {
+ 					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+ 				}
+ 				FIN = {
+ 					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+ 				}
+ 				ITA = {
+ 					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+ 				}
+ 				SPR = {
+ 					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+ 				}
+ 			}
+		}
 
 	
 }

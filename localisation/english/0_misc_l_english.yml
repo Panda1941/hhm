@@ -772,3 +772,36 @@
  2ndline_state:0 "Second line of defense"
  3rdline_state:0 "Third line of defense"
  lastline_state:0 "Last line of defense"
+ 
+ #Soviet Focuses and ideas
+ 
+ SOV_winter_offensive_focus:0 "Winter Offensive"
+ SOV_winter_offensive_focus_desc:0 "Winter Offensive"
+ SOV_uranus_focus:0 "Uranus"
+ SOV_uranus_focus_desc:0 "Uranus"
+ SOV_bagration_focus:0 "Bagration"
+ SOV_bagration_focus_desc:0 "Bagration"
+ 
+ SOV_winter_offensive:0 "Winter Offensive"
+ SOV_uranus:0 "Operation Uranus"
+ SOV_bagration:0 "Operation Bagration"
+ 
+ german_OWK_plan:0 "OWK Plans"
+ 
+ JAP_attack:0 "Main Front"
+ GER_barbarossa_2:0 "Winter Attack"
+ GER_barbarossa_3:0 "Winter Defense"
+ GER_blau:0 "Operation Fall Blau"
+ GER_blau_minor:0 "Faull Blau Minors"
+ GER_zitadelle:0 "Operation Zitadelle"
+ GER_zitadelle_minor:0 "Operation Zitadelle Minors"
+ GER_ardennenoffensive:0 "Ardennenoffensive"
+ GER_leningrad:0 "Focus Leningrad"
+ GER_moscow:0 "Focus Moscow"
+ GER_stalingrad:0 "Focus Stalingrad"
+ GER_north:0 "Focus North"
+ GER_south:0 "Focus South"
+ GER_unternehmen_zitadelle:0 "Operation Citadelle"
+ GER_winter_attack:0 "Wannabe Napoleon"
+ GER_winter_defense:0 "Real Napoleon"
+ 
