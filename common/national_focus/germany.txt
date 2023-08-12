@@ -2607,7 +2607,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
-		x = 25
+		x = 23
 		y = 0
 		cost = 5
 		available = {
@@ -2658,7 +2658,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_rhineland
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2708,8 +2708,8 @@ focus_tree = {
 			date > 1941.6.14
 			is_subject = no
 		}
-		x = 12
-		y = 1
+		x = 4
+		y = 2
 		relative_position_id = GER_rhineland
 		cost = 1
 		historical_ai = {
@@ -3639,7 +3639,7 @@ focus_tree = {
 		prerequisite = { focus = GER_mol_rib_pact }
 		will_lead_to_war_with = POL
 		available = {
-			date > 1939.06.30
+			date > 1939.01.01
 			is_subject = no	
 			#Make custom trigger tooltip here
 			85 = {
@@ -4204,7 +4204,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 30
+		x = 33
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -4667,8 +4667,8 @@ focus_tree = {
  		available = {
  		}
  		relative_position_id = GER_ussr_war_goal
- 		x = -4
- 		y = 5
+ 		x = -2
+ 		y = 1
  		cost = 1
  		ai_will_do = {
  			factor = 1
@@ -4697,8 +4697,8 @@ focus_tree = {
  		available = {
  		}
  		relative_position_id = GER_ussr_war_goal
- 		x = -1
- 		y = 5
+ 		x = 0
+ 		y = 1
  		cost = 1
  		ai_will_do = {
  			factor = 1
@@ -4748,7 +4748,7 @@ focus_tree = {
  		}
  		relative_position_id = GER_ussr_war_goal
  		x = 2
- 		y = 5
+ 		y = 1
  		cost = 1
  		ai_will_do = {
  			factor = 1
