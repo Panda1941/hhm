@@ -392,5 +392,151 @@ ideas = {
 			}
 		}
 		
+		########################################################################ITALY MODIFIERS
+		
+		desert_fox = {
+			picture = chi_incompetent_officers
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_armor_attack_factor = 0.1
+			}
+		}
+		desert_fox_2 = {
+			picture = chi_incompetent_officers
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_defence_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		###################################################################################ENGLAND MODIFIERS
+		
+		ENG_compass = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture =  eng_the_sun_never_sets
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		ENG_crusader = {
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			picture = eng_the_sun_never_sets
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+		}
+		ENG_market_garden = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = eng_the_sun_never_sets
+			modifier = {
+				terrain_penalty_reduction = 0.10
+				invasion_preparation = -0.15
+			}
+		}
+		ENG_lose_in_africa = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+			}
+		}
+		USA_overlord = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			targeted_modifier = { tag = JAP attack_bonus_against = -0.2 defense_bonus_against = -0.2 }
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+			}
+		}
+		USA_island_hopping = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				invasion_preparation = -0.5
+			}
+		}
+		USA_homeland_defense = {
+			picture = YUG_federal_defense_council
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+			}
+		}
+		
+		###################################################AFRIKA
+		
+		speed3_africa={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_attack_factor =-0.5
+			
+			}
+			equipment_bonus = {
+				medium_plane_airframe = {
+					instant = yes
+					air_defence = -0.5
+				}
+				large_plane_airframe = {
+					instant = yes
+					air_defence = -0.5
+				}
+			}
+		}
+		
 	}
 }

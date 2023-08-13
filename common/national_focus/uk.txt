@@ -4473,4 +4473,115 @@ focus_tree = {
 			}
 		}
 	}
+	
+	###################################################################OPERATIONS
+	
+	focus = {
+		id = ENG_compass
+		available = {
+		AND ={
+ 				NOT = { ENG ={controls_state =451 }}
+				NOT = { ENG ={controls_state =450 }}
+ 				date > 1940.6.1
+ 			}
+		}
+		prerequisite = {
+			focus = ENG_home_defence
+		}
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 1
+		
+		relative_position_id = ENG_home_defence
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = ENG_compass  days = 90 }
+		}
+	}
+	focus = {
+		id = ENG_crusader
+		available = {
+		AND ={
+ 				NOT = { ENG ={controls_state =451 }}
+ 				date > 1941.1.1
+ 			}
+		}
+		prerequisite = {
+			focus = ENG_home_defence
+		}
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 1
+		
+		relative_position_id = ENG_home_defence
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = ENG_crusader  days = 90 }
+		}
+	}
+	focus = {
+		id = ENG_market_garden
+		available = {
+		AND ={
+ 				NOT = { ENG ={controls_state = 35 }}
+				NOT = { ENG ={controls_state = 7 }}
+				NOT = { ENG ={controls_state = 15 }}
+				NOT = { ENG ={controls_state = 29 }}
+				NOT = { ENG ={controls_state = 14 }}
+				NOT = { ENG ={controls_state = 36 }}
+ 				date > 1941.9.1
+ 			}
+		}
+		prerequisite = {
+			focus = ENG_home_defence
+		}
+		icon = GFX_goal_generic_construction
+		x = 5
+		y = 2
+		
+		relative_position_id = ENG_home_defence
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = ENG_market_garden  days = 90 }
+		}
+	}
+	focus = {
+		id = ENG_lose_in_africa
+		available = {
+		AND ={
+ 				NOT = { ENG ={controls_state =447 }}
+ 				NOT = { ENG ={controls_state =907 }}
+				NOT = { ENG ={controls_state =446 }}
+ 			}
+		}
+		
+		prerequisite = {
+			focus = ENG_home_defence
+		}
+		icon = GFX_goal_generic_construction
+		x = 6
+		y = 1
+		
+		relative_position_id = ENG_home_defence
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = ENG_lose_in_africa  days = 365 }
+		}
+	}
 }
