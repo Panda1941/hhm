@@ -3793,7 +3793,7 @@ spriteTypes = {
 		name = "GFX_focus_SWI_spirit_of_resistance"
 		texturefile = "gfx/interface/goals/focus_SWI_spirit_of_resistance.dds"
 	}
-	#######################################################################################NEW SOVIET/GERMAN FOCUSES
+	#######################################################################################NEW FOCUSES
 	
 	SpriteType = {
 		name = "GFX_focus_SOV_protect_the_east"
@@ -3827,5 +3827,67 @@ spriteTypes = {
 		name = "GFX_focus_GER_winter_of_1941"
 		texturefile = "gfx/interface/goals/GER_winter_of_1941.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_GER_ostwall"
+		texturefile = "gfx/interface/goals/focus_GER_ostwall.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_westwall"
+		texturefile = "gfx/interface/goals/focus_GER_westwall.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_unternehmen_zitadelle"
+		texturefile = "gfx/interface/goals/GER_unternehmen_zitadelle.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_ussr_war_goal"
+		texturefile = "gfx/interface/goals/GER_ussr_war_goal.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_blau"
+		texturefile = "gfx/interface/goals/GER_blau.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_unternehmen_fruhlingserwachen"
+		texturefile = "gfx/interface/goals/GER_unternehmen_fruhlingserwachen.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_winter_defense"
+		texturefile = "gfx/interface/goals/GER_winter_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_danzig"
+		texturefile = "gfx/interface/goals/GER_danzig.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_atlantikwall_a"
+		texturefile = "gfx/interface/goals/GER_festung_europa.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_atlantikwall_b"
+		texturefile = "gfx/interface/goals/GER_festung_europa.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_atlantikwall_c"
+		texturefile = "gfx/interface/goals/GER_festung_europa.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_atlantikwall_d"
+		texturefile = "gfx/interface/goals/GER_festung_europa.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_atlantikwall_e"
+		texturefile = "gfx/interface/goals/GER_festung_europa.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_air_defence"
+		texturefile = "gfx/interface/goals/GER_air_defence.dds"
+	}
+	
+	
+	
+
+	
+	
 
 }

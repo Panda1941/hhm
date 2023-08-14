@@ -159,7 +159,7 @@ ideas = {
 			picture = generic_fortify_the_borders
 
 			modifier = {
-				production_speed_coastal_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.10
 			}
 		}
 
@@ -831,8 +831,8 @@ ideas = {
 			picture = generic_wall_line
 
 			modifier = {
-				production_speed_coastal_bunker_factor = 0.2
-				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.05
+				production_speed_bunker_factor = 0.10
 			}
 		}
 		GER_dismantle_czechoslovakian_forts = {
@@ -849,8 +849,8 @@ ideas = {
 			picture = generic_wall_line
 
 			modifier = {
-				production_speed_coastal_bunker_factor = 0.2
-				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.05
+				production_speed_bunker_factor = 0.10
 			}
 		}
 		GER_jaegernotprogramm = {

@@ -52,12 +52,13 @@ division_template = { #Blackshirts
 	# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
 	# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
 	regiments = { 
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 2 y = 0 }
-		militia = { x = 2 y = 1 }
+		            militia = { x = 0 y = 0 } militia = { x = 1 y = 0 } militia = { x = 2 y = 0 } militia = { x = 3 y = 0 }   
+					militia = { x = 0 y = 1 } militia = { x = 1 y = 1 } militia = { x = 2 y = 1 } militia = { x = 3 y = 1 } 
+					militia = { x = 0 y = 2 } militia = { x = 1 y = 2 } militia = { x = 2 y = 2 } militia = { x = 3 y = 2 }  
+					militia = { x = 0 y = 3 } militia = { x = 1 y = 3 } militia = { x = 2 y = 3 } 
+					 	
+						
+		
 	}
 	support = { 
 		engineer = { x = 0 y = 0 }
@@ -198,12 +199,16 @@ division_template = {
 	is_locked = yes
 	template_counter = 66
 	# Note: Represents irregular infantry from the colonies (daskalian, dubats and other "bands")
-	regiments = {
-		irregular_infantry = { x = 0 y = 0 }
-		irregular_infantry = { x = 0 y = 1 }
-		irregular_infantry = { x = 1 y = 0 }
-		irregular_infantry = { x = 1 y = 1 }
+	regiments = { 
+		            irregular_infantry = { x = 0 y = 0 } irregular_infantry = { x = 1 y = 0 } irregular_infantry = { x = 2 y = 0 } irregular_infantry = { x = 3 y = 0 }   
+					irregular_infantry = { x = 0 y = 1 } irregular_infantry = { x = 1 y = 1 } irregular_infantry = { x = 2 y = 1 } irregular_infantry = { x = 3 y = 1 } 
+					irregular_infantry = { x = 0 y = 2 } irregular_infantry = { x = 1 y = 2 } irregular_infantry = { x = 2 y = 2 } irregular_infantry = { x = 3 y = 2 }  
+					irregular_infantry = { x = 0 y = 3 } irregular_infantry = { x = 1 y = 3 } irregular_infantry = { x = 2 y = 3 } 
+					 	
+						
+		
 	}
+	
 	priority = 0 
 }
 

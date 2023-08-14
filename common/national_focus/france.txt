@@ -648,8 +648,12 @@ if = {
 		icon = GFX_focus_focus_fra_third_empire
 		x = 19
 		y = 4
-		cost = 5
-		available = { NOT = { 16 = { is_controlled_by = FRA } } }
+		cost = 0
+		available = {
+		16 = { 
+					NOT = { is_controlled_by = ROOT }
+				}
+		 }
 		
 		available_if_capitulated = yes
 		completion_reward = {
@@ -657,7 +661,26 @@ if = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 				amount = 5000
-			}			
+			}
+    	
+	ITA = { 
+					transfer_state = 665
+					transfer_state = 458
+		}
+	GER = { 
+					transfer_state = 513
+					transfer_state = 460
+					transfer_state = 459
+					transfer_state = 461
+					transfer_state = 462
+		}
+513 = { set_demilitarized_zone = yes }
+460 = { set_demilitarized_zone = yes }	
+461 = { set_demilitarized_zone = yes set_building_level = { type = air_base level = 10 } }
+462 = { set_demilitarized_zone = yes }
+459 = { set_demilitarized_zone = yes }
+458 = { set_building_level = { type = air_base level = 10 }}
+					
 		}
 	}
 	focus = {

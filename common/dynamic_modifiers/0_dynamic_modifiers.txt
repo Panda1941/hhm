@@ -1276,6 +1276,18 @@ JAP_attack = {
 	
 	icon = GFX_modifiers_generic_military_plans
 	
-	max_dig_in_factor = -0.20
+	max_dig_in = -5
+	army_defence_factor = -0.05
+
+}
+
+Atlantikwall_improvement = {
+    enable = { always = yes }
+	
+	icon = GFX_modifiers_generic_military_plans
+	
+	dig_in_speed_factor = 0.25
+	max_dig_in = 5
+	army_morale_factor = 0.05
 
 }

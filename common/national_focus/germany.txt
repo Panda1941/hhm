@@ -23,7 +23,7 @@ focus_tree = {
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
-		x = 6
+		x = 10
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -134,7 +134,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_atlantikwall
-		icon = GFX_focus_generic_coastal_fort
+		icon = GFX_focus_GER_westwall
 		prerequisite = { focus = GER_west_wall }
 		available = {
 			OR = {
@@ -167,8 +167,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
+		
+		16 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 16 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 1
+					}
+				
+			}
+		
 			add_ideas = GER_atlantikwall_idea
 			custom_effect_tooltip = atlantikwall_tooltip
 			custom_effect_tooltip = atlantikwall_tooltip_2
@@ -191,7 +205,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -223,7 +237,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -255,7 +269,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -287,7 +301,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -319,7 +333,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 3
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -351,7 +365,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 	
@@ -362,7 +376,7 @@ focus_tree = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 2
+            	    	    level = 1
             	    	    instant_build = yes
             	    	}
             	    	#Biggest fortifications on Calais itself
@@ -372,7 +386,7 @@ focus_tree = {
             	    	        all_provinces = yes
             	    	        limit_to_victory_point = yes
             	    	    }
-            	    	    level = 3
+            	    	    level = 1
             	    	    instant_build = yes
             	    	}
 					}
@@ -395,7 +409,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -427,7 +441,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 3
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -459,7 +473,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -491,7 +505,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -523,7 +537,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -555,7 +569,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -587,7 +601,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -619,7 +633,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -651,7 +665,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -683,7 +697,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -715,7 +729,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -747,7 +761,7 @@ focus_tree = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -767,7 +781,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_ostwall
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_GER_ostwall
 		prerequisite = { focus = GER_west_wall }
 		available = {
 			any_country = {
@@ -2104,7 +2118,7 @@ focus_tree = {
 		id = GER_air_innovation
 		text = air_innovation
 		icon = GFX_goal_generic_build_airforce
-		x = 16
+		x = 20
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -2350,7 +2364,7 @@ focus_tree = {
 	focus = {
 		id = GER_army_innovation
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 19
+		x = 23
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -2607,7 +2621,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
-		x = 23
+		x = 28
 		y = 0
 		cost = 5
 		available = {
@@ -2700,7 +2714,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_ussr_war_goal
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_GER_ussr_war_goal
 		prerequisite = { focus = GER_rhineland }
 		will_lead_to_war_with = SOV
 		
@@ -2724,32 +2738,22 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			IF = {
-				limit = { SOV = { has_civil_war = no } }
-				create_wargoal = {
-					type = annex_everything
-					target = SOV
-					expire = 0
-				}
+			
+				declare_war_on = {
+				target = SOV 
+				type = annex_everything
+			}
+			if = { limit = { country_exists = HUN }	HUN = { add_to_war = { targeted_alliance = GER enemy = SOV } } }
+			if = { limit = { country_exists = BUL }	BUL = { add_to_war = { targeted_alliance = GER enemy = SOV } } }
+			if = { limit = { country_exists = ROM }	ROM = { add_to_war = { targeted_alliance = GER enemy = SOV } } }
 				GER = {add_timed_idea={ idea = GER_barbarossa days = 120}}
  				ROM = {add_timed_idea={ idea = GER_barbarossa days = 120}}
  				HUN = {add_timed_idea={ idea = GER_barbarossa days = 120}}
  				BUL = {add_timed_idea={ idea = GER_barbarossa days = 120}}
  				SPR = {add_timed_idea={ idea = GER_barbarossa days = 120}}
- 				
-			}
-			ELSE = {
-				every_country = {
-					limit = { original_tag = SOV }
-					GER = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-							expire = 0
-						}
-					}
-				}
-			}
+				
+			add_ideas = { GER_winterdebuff }
+
 		hidden_effect = {
 			####################################frontline modifier		
 			766 = {
@@ -3634,7 +3638,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_danzig_or_war
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_GER_danzig
 		prerequisite = { focus = GER_demand_memel }
 		prerequisite = { focus = GER_mol_rib_pact }
 		will_lead_to_war_with = POL
@@ -3672,17 +3676,19 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_demand_memel
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 0
 		}	
 		completion_reward = {
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
-			create_wargoal = {
-				type = take_state
-				generator = { 85 807 }
-				target = POL
+			declare_war_on = {
+				target = POL 
+				type = annex_everything
 			}
+			if = { limit = { country_exists = HUN }	HUN = { add_to_war = { targeted_alliance = GER enemy = POL } } }
+			if = { limit = { country_exists = ROM }	ROM = { add_to_war = { targeted_alliance = GER enemy = POL } } }
+			if = { limit = { country_exists = BUL }	BUL = { add_to_war = { targeted_alliance = GER enemy = POL } } }
 			add_state_core = 85
 			add_state_core = 807
 			add_state_core = 86
@@ -4204,7 +4210,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 33
+		x = 37
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -4770,7 +4776,7 @@ focus_tree = {
  		id = GER_winter_attack
  		mutually_exclusive = { focus = GER_winter_defense }
  		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
- 		icon = GFX_focus_ger_final_crusade
+ 		icon = GFX_focus_GER_unternehmen_fruhlingserwachen
  		available = {
  			NOT = {has_idea = GER_barbarossa}
  			has_war_with = SOV
@@ -4795,7 +4801,7 @@ focus_tree = {
  		id = GER_winter_defense
  		mutually_exclusive = { focus = GER_winter_attack }
  		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
- 		icon = GFX_focus_GER_winter_of_1941
+ 		icon = GFX_focus_GER_winter_defense
  		available = {
  			NOT = {has_idea = GER_barbarossa}
  			has_war_with = SOV
@@ -4810,17 +4816,17 @@ focus_tree = {
  		available_if_capitulated = no
  		completion_reward = {
  			add_timed_idea={ idea = GER_barbarossa_3 days = 60}
- 				ROM = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
- 				HUN = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
- 				BUL = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
- 				SPR = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+ 				ROM = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
+ 				HUN = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
+ 				BUL = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
+ 				SPR = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
  		}
  	}
 	
 	focus = {
  		id = GER_blau
  		prerequisite = { focus = GER_winter_attack focus = GER_winter_defense }
- 		icon = GFX_focus_ger_reichskommisariats
+ 		icon = GFX_focus_GER_blau
  		available = {
  			Date > 1942.5.1
  			NOT={has_idea=GER_barbarossa}
@@ -4906,7 +4912,7 @@ focus_tree = {
  		id = GER_unternehmen_zitadelle
  		icon = GFX_focus_GER_unternehmen_zitadelle
  		prerequisite = { focus = GER_north focus = GER_south}
- 		icon = GFX_focus_ger_reichskommisariats
+ 		icon = GFX_focus_GER_unternehmen_zitadelle
  		available = {
  			date > 1943.5.15
  			NOT={has_idea=GER_blau}
@@ -4942,7 +4948,7 @@ focus_tree = {
 	focus = {
  		id = GER_ardennenoffensive
  		icon = GFX_focus_GER_ardennenoffensive
- 		prerequisite = { focus = GER_atlantikwall }
+ 		prerequisite = { focus = GER_ussr_war_goal }
  		available = {
  			Date > 1941.10.1
  			NOT={has_idea=GER_barbarossa}
@@ -4958,9 +4964,9 @@ focus_tree = {
  				785= {is_controlled_by_ROOT_or_ally=no}
  			}
  		}
- 		x = 0
- 		y = 1
- 		relative_position_id = GER_atlantikwall
+ 		x = 3
+ 		y = 2
+ 		relative_position_id = GER_ussr_war_goal
  		cost = 2
  		ai_will_do = {
  			factor = 1
@@ -4990,6 +4996,1131 @@ focus_tree = {
  				}
  			}
 		}
+		
+	focus = {
+ 		id = GER_atlantikwall_a
+ 		icon = GFX_focus_GER_atlantikwall_a
+ 		prerequisite = { focus = GER_atlantikwall }
+ 		available = {
+		has_manpower > 3000
+		has_equipment = { train_equipment > 29 }
+		has_equipment = { infantry_equipment > 2999 }
+		has_equipment = { support_equipment > 299 }
+		has_equipment = { anti_air_equipment > 299 }
+		has_equipment = { artillery_equipment > 99 }
+		has_equipment = { anti_tank_equipment > 99 }
+ 		}
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = GER_atlantikwall
+ 		cost = 4.5
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+		
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = -30
+				producer = GER
+			}
+			add_ideas = Fuel_the_atlantik_construction
+		}
+		
+ 		completion_reward = {
+		
+		
+					
+				14 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 14 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				
+			}
+					
+					
+		
+		hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 30
+					producer = GER
+				}
+			add_manpower = -3000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -3000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -300
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -300
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = -100
+			}
+				remove_ideas = Fuel_the_atlantik_construction
+			}
+		every_state = {
+ 				limit={
+				OR = {state=15 state=14 state=30 }
+			    }  
+			
+ 				add_dynamic_modifier = { modifier = Atlantikwall_improvement } 
+				
+ 		}
+			15 = { 
+				 
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+			14 = { 
+				 
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+            30 = { 
+				
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+            		
+			
+		}
+		}
+		
+		focus = {
+ 		id = GER_atlantikwall_b
+ 		icon = GFX_focus_GER_atlantikwall_b
+ 		prerequisite = { focus = GER_atlantikwall }
+ 		available = {
+		has_manpower > 3000
+		has_equipment = { train_equipment > 29 }
+		has_equipment = { infantry_equipment > 2999 }
+		has_equipment = { support_equipment > 299 }
+		has_equipment = { anti_air_equipment > 299 }
+		has_equipment = { artillery_equipment > 99 }
+		has_equipment = { anti_tank_equipment > 99 }
+ 		}
+ 		x = -2
+ 		y = 1
+ 		relative_position_id = GER_atlantikwall
+ 		cost = 4.5
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+		
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = -30
+				producer = GER
+			}
+			add_ideas = Fuel_the_atlantik_construction
+		}
+ 		completion_reward = {
+		
+		23 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 23 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				
+			}
+		
+		hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 30
+					producer = GER
+				}
+			add_manpower = -3000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -3000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -300
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -300
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = -100
+			}
+				remove_ideas = Fuel_the_atlantik_construction
+			}
+		every_state = {
+ 				limit={
+				OR = {state=806 state=19 state=23 }
+			    }  
+			
+ 				add_dynamic_modifier = { modifier = Atlantikwall_improvement } 
+ 		}
+			23 = { 
+				 
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+			19 = { 
+				 
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+            806 = { 
+				
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+            		
+			
+		}
+		}
+		
+		focus = {
+ 		id = GER_atlantikwall_c
+ 		icon = GFX_focus_GER_atlantikwall_c
+ 		prerequisite = { focus = GER_atlantikwall }
+ 		available = {
+		has_manpower > 6000
+		has_equipment = { train_equipment > 59 }
+		has_equipment = { infantry_equipment > 5999 }
+		has_equipment = { support_equipment > 599 }
+		has_equipment = { anti_air_equipment > 599 }
+		has_equipment = { artillery_equipment > 199 }
+		has_equipment = { anti_tank_equipment > 199 }
+ 		}
+ 		x = -4
+ 		y = 1
+ 		relative_position_id = GER_atlantikwall
+ 		cost = 4.5
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+		
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = -60
+				producer = GER
+			}
+			add_ideas = Fuel_the_atlantik_construction
+		}
+ 		completion_reward = {
+		
+		29 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 29 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 6
+					}
+				
+			}
+		
+		hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 60
+					producer = GER
+				}
+			add_manpower = -6000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -6000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -600
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -600
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -200
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = -200
+			}
+				remove_ideas = Fuel_the_atlantik_construction
+			}
+		
+		every_state = {
+ 				limit={
+				OR = {state=36 state=7 state=35 state=6 state=785 state=29 }
+			    }  
+			
+ 				add_dynamic_modifier = { modifier = Atlantikwall_improvement } 
+ 		}
+			29 = { 
+				 
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+			785 = { 
+				 
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+            6 = { 
+				
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+				35 = { 
+				
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+				7 = { 
+				
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+				36 = { 
+				
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+            		
+			
+		}
+		}
+		
+		focus = {
+ 		id = GER_atlantikwall_d
+ 		icon = GFX_focus_GER_atlantikwall_d
+ 		prerequisite = { focus = GER_atlantikwall }
+ 		available = {
+		
+		has_manpower > 3000
+		has_equipment = { train_equipment > 29 }
+		has_equipment = { infantry_equipment > 2999 }
+		has_equipment = { support_equipment > 299 }
+		has_equipment = { anti_air_equipment > 299 }
+		has_equipment = { artillery_equipment > 99 }
+		has_equipment = { anti_tank_equipment > 99 }
+ 		}
+ 		x = -3
+ 		y = 2
+ 		relative_position_id = GER_atlantikwall
+ 		cost = 4.5
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+		
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = -30
+				producer = GER
+			}
+			add_ideas = Fuel_the_atlantik_construction
+		}
+		
+ 		completion_reward = {
+		
+		56 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 56 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 4
+					}
+				
+			}
+		
+		
+		hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 30
+					producer = GER
+				}
+			add_manpower = -3000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -3000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -300
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -300
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = -100
+			}
+				remove_ideas = Fuel_the_atlantik_construction
+			}
+		
+		every_state = {
+ 				limit={
+				OR = {state=99 state=58 state=59 state=56 }
+			    }  
+			
+ 				add_dynamic_modifier = { modifier = Atlantikwall_improvement } 
+ 		}
+			56 = { 
+				 
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+			59 = { 
+				 
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+            58 = { 
+				
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+				99 = { 
+				
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+            		
+			
+		}
+		}
+		focus = {
+ 		id = GER_atlantikwall_e
+ 		icon = GFX_focus_GER_atlantikwall_e
+ 		prerequisite = { focus = GER_atlantikwall }
+ 		available = {
+		has_manpower > 3000
+		has_equipment = { train_equipment > 29 }
+		has_equipment = { infantry_equipment > 2999 }
+		has_equipment = { support_equipment > 299 }
+		has_equipment = { anti_air_equipment > 299 }
+		has_equipment = { artillery_equipment > 99 }
+		has_equipment = { anti_tank_equipment > 99 }
+ 		}
+ 		x = -1
+ 		y = 2
+ 		relative_position_id = GER_atlantikwall
+ 		cost = 4.5
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+		
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = -30
+				producer = GER
+			}
+			add_ideas = Fuel_the_atlantik_construction
+		}
+ 		completion_reward = {
+		
+		110 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 110 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				
+			}
+		
+		hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 30
+					producer = GER
+				}
+			add_manpower = -3000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -3000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -300
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -300
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = -100
+			}
+				remove_ideas = Fuel_the_atlantik_construction
+			}
+		
+		every_state = {
+ 				limit={
+				OR = {state=143 state=142 state=110 }
+			    }  
+			
+ 				add_dynamic_modifier = { modifier = Atlantikwall_improvement } 
+ 		}
+			110 = { 
+				 
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+			142 = { 
+				 
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+            143 = { 
+				
+
+				set_building_level = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 5
+						}
+					}
+				set_building_level = {
+						type = anti_air_building
+						level = 2
+					}
+add_building_construction = {
+            	    	    type = bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}							
+				}
+            		
+			
+		}
+		}
+		
+		focus = {
+		id = GER_air_shield
+		icon = GFX_focus_GER_air_defence
+		prerequisite = { focus = GER_air_innovation_2  }
+		x = 0
+		y = 1
+		relative_position_id = GER_air_innovation_2
+		cost = 10
+		available = { FRA = { has_capitulated = yes }
+		has_manpower > 6000
+		has_equipment = { train_equipment > 99 }
+		has_equipment = { support_equipment > 999 }
+		has_equipment = { anti_air_equipment > 1999 }
+		}
+	
+		available_if_capitulated = yes
+		
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = -100
+				producer = GER
+			}
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 100
+					producer = GER
+				}
+			add_manpower = -6000
+			
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -2000
+			}
+			
+				
+			}
+			if =  { limit = { 
+			NOT = { has_completed_focus = GER_atlantikwall } }
+			every_owned_state = { 
+				add_building_construction = { 
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			}
+			else = {
+							every_owned_state = { 
+							
+				add_building_construction = { 
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			}
+		}
+	}
+		
+		focus = {
+ 		id = GER_rommel
+ 		icon = GFX_focus_GER_army_inno_1
+
+		available = {
+ 
+ 				ITA={controls_state =448}
+ 				date > 1940.5.1
+				ITA = { has_completed_focus = ITA_rommel }	   
+ 			
+ 		}
+ 			
+ 		
+ 		
+ 		x = 8
+ 		y = 4
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+		GER_erwin_rommel = {
+					add_unit_leader_trait = commando 
+					add_unit_leader_trait = panzer_leader
+					add_unit_leader_trait = panzer_expert
+					add_unit_leader_trait = desert_fox
+					add_unit_leader_trait = trait_engineer
+					add_unit_leader_trait = hill_fighter
+					add_skill_level  = 1
+					add_logistics = 3  
+					
+				}
+
+			
+ 			
+			}
+		}
+		
+		focus = {
+ 		id = GER_rommel_back
+ 		icon = GFX_focus_GER_army_inno_1
+
+		available = {
+		    AND = {
+ 			date > 1941.6.1
+			447 = { 
+			NOT = { is_controlled_by = ROOT }
+				}
+				}
+ 		}
+ 			
+ 		
+ 		relative_position_id = GER_rommel
+ 		prerequisite= {focus = GER_rommel}
+ 		x = 0
+ 		y = 1
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+		
+		GER_erwin_rommel = {
+			remove_unit_leader_trait = trait_reckless
+			add_unit_leader_trait = militias_officer
+			add_unit_leader_trait = inspirational_leader
+			add_unit_leader_trait = expert_delegator
+			add_field_marshal_role
+			add_timed_unit_leader_trait = {trait = wounded days = 90
+			}
+			
+			
+			
+}
+	
+		
+
+			
+ 			
+			}
+		}
+		
+		focus = {
+ 		id = GER_rommel_atlantikwall
+ 		icon = GFX_focus_GER_army_inno_1
+
+		available = {
+		    AND = {
+ 			date > 1941.6.1
+			447 = { 
+			NOT = { is_controlled_by = ROOT }
+				}
+				}
+ 		}
+ 			
+ 		
+ 		relative_position_id = GER_rommel_back
+ 		prerequisite= {focus = GER_rommel_back }
+		prerequisite= {focus = GER_atlantikwall_a }
+		prerequisite= {focus = GER_atlantikwall_b }
+		prerequisite= {focus = GER_atlantikwall_c }
+ 		x = -6
+ 		y = 1
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+		
+	
+		
+
+			
+ 			
+			}
+		}
 
 	
 }
+
+			

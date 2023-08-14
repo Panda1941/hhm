@@ -6640,22 +6640,8 @@ focus_tree = {
  			factor = 10
  		}
  		completion_reward = {
-
-			
- 			GER = {remove_unit_leader = 4}
- 			ITA={
- 				create_corps_commander = {
- 					name = "Erwin Rommel"
- 					picture = "Portrait_Germany_Erwin_Rommel.dds"
- 					traits = { commando panzer_leader panzer_expert desert_fox trait_engineer hill_fighter}
- 					skill = 5
- 					id =1771
- 					attack_skill = 6
- 					defense_skill = 3
- 					planning_skill = 3
- 					logistics_skill = 6
- 					}
-				}
+ 			
+ 			
 			}
 		}
 	focus = {

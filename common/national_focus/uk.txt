@@ -4560,6 +4560,7 @@ focus_tree = {
 	focus = {
 		id = ENG_lose_in_africa
 		available = {
+		always = no
 		AND ={
  				NOT = { ENG ={controls_state =447 }}
  				NOT = { ENG ={controls_state =907 }}

@@ -195,6 +195,9 @@ set_war_support = 0.3
 		target = POL
 		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
 	}
+	
+############# MILITIA CAP ###############
+set_variable = { GER_militias_cap = 20 } #WARNING THIS VALUE NEEDS TOP MATCH THE division_cap value for the blackshirt template in the OOB
 
 #Trade
 	create_import = {

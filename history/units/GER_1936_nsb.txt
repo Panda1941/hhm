@@ -63,6 +63,30 @@ division_template = {
         artillery = { x = 0 y = 2 }
 	}
 }
+division_template = { #Volkssturm
+	name = "Volkssturm" 
+	division_names_group = GER_ALTINF_01
+	template_counter = 103
+	is_locked = yes
+	
+	division_cap = 20 #WARNING THIS VALUE NEEDS TOP MATCH THE value in var GER_militias_cap set in history file
+
+	# Represents nearly all infantry divisions
+	# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
+	# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
+	regiments = { 
+		            militia = { x = 0 y = 0 } militia = { x = 1 y = 0 } militia = { x = 2 y = 0 } militia = { x = 3 y = 0 }   
+					militia = { x = 0 y = 1 } militia = { x = 1 y = 1 } militia = { x = 2 y = 1 } militia = { x = 3 y = 1 } 
+					militia = { x = 0 y = 2 } militia = { x = 1 y = 2 } militia = { x = 2 y = 2 } militia = { x = 3 y = 2 }  
+					artillery_brigade = { x = 0 y = 3 } anti_air_brigade = { x = 1 y = 3 } militia = { x = 2 y = 3 } 
+					 	
+						
+		
+	}
+	support = { 
+		engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } anti_tank = { x = 0 y = 2 } anti_air = { x = 0 y = 3 } recon= { x = 0 y = 4 }  
+	}
+}
 division_template = {
 	name = "Gebirgs-Brigade"		# Gebirgsbrigade
 	#Note: precursor to Gebirgs-Divisions
