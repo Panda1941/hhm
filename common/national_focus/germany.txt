@@ -2116,8 +2116,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_air_innovation
-		text = air_innovation
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_focus_GER_fighter_focus
 		x = 20
 		y = 0
 		cost = 10
@@ -2392,7 +2391,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_soviet_treaty
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_focus_Ger_sov_treaty
 		prerequisite = { focus = GER_army_innovation }
 		available = {
 
@@ -2446,7 +2445,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_air_innovation_2
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_focus_GER_radar
 		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort focus = GER_soviet_treaty }
 		x = 0
 		y = 2
@@ -3812,7 +3811,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_around_maginot
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_GER_around_maginot
 		prerequisite = { focus = GER_danzig_or_war }
 		
 		available = {
@@ -5004,6 +5003,7 @@ focus_tree = {
  		available = {
 		has_manpower > 3000
 		has_equipment = { train_equipment > 29 }
+		has_equipment = { motorized_equipment > 899 }
 		has_equipment = { infantry_equipment > 2999 }
 		has_equipment = { support_equipment > 299 }
 		has_equipment = { anti_air_equipment > 299 }
@@ -5025,25 +5025,20 @@ focus_tree = {
 				amount = -30
 				producer = GER
 			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -900
+				producer = GER
+			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
 		
  		completion_reward = {
+		add_command_power = -10
 		
 		
 					
-				14 = { #Recruit Volkssturm divisions 
 				
-				prioritize = { 14 }
-				
-				
-					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
-						owner = GER
-						count = 3
-					}
-				
-			}
 					
 					
 		
@@ -5053,6 +5048,11 @@ focus_tree = {
 					amount = 30
 					producer = GER
 				}
+				add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 900
+				producer = GER
+			}
 			add_manpower = -3000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5163,6 +5163,18 @@ add_building_construction = {
             	    	}							
 				}
             		
+		14 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 14 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				
+			}
 			
 		}
 		}
@@ -5174,6 +5186,7 @@ add_building_construction = {
  		available = {
 		has_manpower > 3000
 		has_equipment = { train_equipment > 29 }
+		has_equipment = { motorized_equipment > 899 }
 		has_equipment = { infantry_equipment > 2999 }
 		has_equipment = { support_equipment > 299 }
 		has_equipment = { anti_air_equipment > 299 }
@@ -5195,22 +5208,17 @@ add_building_construction = {
 				amount = -30
 				producer = GER
 			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -900
+				producer = GER
+			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
+		add_command_power = -10
 		
-		23 = { #Recruit Volkssturm divisions 
-				
-				prioritize = { 23 }
-				
-				
-					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
-						owner = GER
-						count = 3
-					}
-				
-			}
+		
 		
 		hidden_effect = {
 				add_equipment_to_stockpile = {
@@ -5218,6 +5226,11 @@ add_building_construction = {
 					amount = 30
 					producer = GER
 				}
+				add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 900
+				producer = GER
+			}
 			add_manpower = -3000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5327,6 +5340,18 @@ add_building_construction = {
             	    	}							
 				}
             		
+		23 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 23 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				
+			}
 			
 		}
 		}
@@ -5338,6 +5363,7 @@ add_building_construction = {
  		available = {
 		has_manpower > 6000
 		has_equipment = { train_equipment > 59 }
+		has_equipment = { motorized_equipment > 1799 }
 		has_equipment = { infantry_equipment > 5999 }
 		has_equipment = { support_equipment > 599 }
 		has_equipment = { anti_air_equipment > 599 }
@@ -5359,22 +5385,17 @@ add_building_construction = {
 				amount = -60
 				producer = GER
 			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -1800
+				producer = GER
+			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
+		add_command_power = -10
 		
-		29 = { #Recruit Volkssturm divisions 
-				
-				prioritize = { 29 }
-				
-				
-					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
-						owner = GER
-						count = 6
-					}
-				
-			}
+		
 		
 		hidden_effect = {
 				add_equipment_to_stockpile = {
@@ -5382,6 +5403,11 @@ add_building_construction = {
 					amount = 60
 					producer = GER
 				}
+				add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1800
+				producer = GER
+			}
 			add_manpower = -6000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5570,6 +5596,18 @@ add_building_construction = {
             	    	}							
 				}
             		
+		29 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 29 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 6
+					}
+				
+			}
 			
 		}
 		}
@@ -5582,6 +5620,7 @@ add_building_construction = {
 		
 		has_manpower > 3000
 		has_equipment = { train_equipment > 29 }
+		has_equipment = { motorized_equipment > 1199 }
 		has_equipment = { infantry_equipment > 2999 }
 		has_equipment = { support_equipment > 299 }
 		has_equipment = { anti_air_equipment > 299 }
@@ -5603,23 +5642,18 @@ add_building_construction = {
 				amount = -30
 				producer = GER
 			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -1200
+				producer = GER
+			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
 		
  		completion_reward = {
+		add_command_power = -10
 		
-		56 = { #Recruit Volkssturm divisions 
-				
-				prioritize = { 56 }
-				
-				
-					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
-						owner = GER
-						count = 4
-					}
-				
-			}
+		
 		
 		
 		hidden_effect = {
@@ -5628,6 +5662,11 @@ add_building_construction = {
 					amount = 30
 					producer = GER
 				}
+				add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1200
+				producer = GER
+			}
 			add_manpower = -3000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5764,6 +5803,18 @@ add_building_construction = {
             	    	}							
 				}
             		
+		56 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 56 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 4
+					}
+				
+			}
 			
 		}
 		}
@@ -5774,6 +5825,7 @@ add_building_construction = {
  		available = {
 		has_manpower > 3000
 		has_equipment = { train_equipment > 29 }
+		has_equipment = { motorized_equipment > 899 }
 		has_equipment = { infantry_equipment > 2999 }
 		has_equipment = { support_equipment > 299 }
 		has_equipment = { anti_air_equipment > 299 }
@@ -5795,22 +5847,17 @@ add_building_construction = {
 				amount = -30
 				producer = GER
 			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -900
+				producer = GER
+			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
+		add_command_power = -10
 		
-		110 = { #Recruit Volkssturm divisions 
-				
-				prioritize = { 110 }
-				
-				
-					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
-						owner = GER
-						count = 3
-					}
-				
-			}
+		
 		
 		hidden_effect = {
 				add_equipment_to_stockpile = {
@@ -5818,6 +5865,11 @@ add_building_construction = {
 					amount = 30
 					producer = GER
 				}
+				add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 900
+				producer = GER
+			}
 			add_manpower = -3000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5928,6 +5980,18 @@ add_building_construction = {
             	    	}							
 				}
             		
+		110 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 110 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				
+			}
 			
 		}
 		}
@@ -6005,7 +6069,7 @@ add_building_construction = {
 		
 		focus = {
  		id = GER_rommel
- 		icon = GFX_focus_GER_army_inno_1
+ 		icon = GFX_focus_GER_afrikakorps
 
 		available = {
  
@@ -6024,8 +6088,8 @@ add_building_construction = {
  			factor = 10
  		}
  		completion_reward = {
-		GER_erwin_rommel = {
-					add_unit_leader_trait = commando 
+		add_command_power = -50
+		GER_erwin_rommel = { 
 					add_unit_leader_trait = panzer_leader
 					add_unit_leader_trait = panzer_expert
 					add_unit_leader_trait = desert_fox
@@ -6064,30 +6128,23 @@ add_building_construction = {
  			factor = 10
  		}
  		completion_reward = {
+		add_stability = -0.05
 		
 		GER_erwin_rommel = {
 			remove_unit_leader_trait = trait_reckless
-			add_unit_leader_trait = militias_officer
-			add_unit_leader_trait = inspirational_leader
-			add_unit_leader_trait = expert_delegator
-			add_field_marshal_role
-			add_timed_unit_leader_trait = {trait = wounded days = 90
-			}
 			
 			
-			
-}
+        }
+		GER_erwin_rommel = {
+		add_timed_unit_leader_trait = {trait = wounded days = 90}
+		}
 	
-		
-
-			
- 			
-			}
+		}
 		}
 		
 		focus = {
  		id = GER_rommel_atlantikwall
- 		icon = GFX_focus_GER_army_inno_1
+ 		icon = GFX_focus_GER_rommel_atlantikwall
 
 		available = {
 		    AND = {
@@ -6101,9 +6158,9 @@ add_building_construction = {
  		
  		relative_position_id = GER_rommel_back
  		prerequisite= {focus = GER_rommel_back }
-		prerequisite= {focus = GER_atlantikwall_a }
-		prerequisite= {focus = GER_atlantikwall_b }
-		prerequisite= {focus = GER_atlantikwall_c }
+		prerequisite= {focus = GER_atlantikwall_a focus = GER_atlantikwall_b focus = GER_atlantikwall_c focus = GER_atlantikwall_d focus = GER_atlantikwall_e }
+
+
  		x = -6
  		y = 1
  		cost = 5
@@ -6111,6 +6168,40 @@ add_building_construction = {
  			factor = 10
  		}
  		completion_reward = {
+		
+		add_political_power = 50
+		add_war_support = 0.1
+		add_command_power = 25
+		
+		GER_erwin_rommel = {
+			add_unit_leader_trait = inspirational_leader
+			add_unit_leader_trait = expert_delegator
+			add_unit_leader_trait = skilled_staffer
+			add_field_marshal_role	
+        }
+		15 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					}
+
+		
 		
 	
 		

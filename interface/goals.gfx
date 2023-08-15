@@ -583,13 +583,7 @@ spriteTypes = {
 	name = "GFX_goal_generic_build_tank"
 	texturefile = "gfx/interface/goals/goal_generic_build_tank.dds"
 			
-	}	
-	
-	SpriteType = {
-	name = "GFX_goal_generic_build_airforce"
-	texturefile = "gfx/interface/goals/goal_generic_build_airforce.dds"
-			
-	}		
+	}			
 	
 	SpriteType = {
 	name = "GFX_goal_generic_axis_build_infantry"
@@ -739,7 +733,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_molotov_ribbentrop_pact"
-		texturefile = "gfx/interface/goals/goal_molotov_ribbentrop_pact.dds"
+		texturefile = "gfx/interface/goals/GER_molotov.dds"
 				
 	}
 
@@ -3883,6 +3877,34 @@ spriteTypes = {
 		name = "GFX_focus_GER_air_defence"
 		texturefile = "gfx/interface/goals/GER_air_defence.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_GER_afrikakorps"
+		texturefile = "gfx/interface/goals/GER_afrikakorps.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_rommel_atlantikwall"
+		texturefile = "gfx/interface/goals/GER_rommel_atlantikwall.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_around_maginot"
+		texturefile = "gfx/interface/goals/GER_around_maginot.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_fighter_focus"
+		texturefile = "gfx/interface/goals/GER/GER_air_innovation.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_radar"
+		texturefile = "gfx/interface/goals/GER_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_Ger_sov_treaty"
+		texturefile = "gfx/interface/goals/Ger_sov_treaty.dds"
+	}
+	
+	
+	
+	
 	
 	
 	

@@ -805,4 +805,23 @@
  GER_winter_attack:0 "Wannabe Napoleon"
  GER_winter_defense:0 "Real Napoleon"
  
- #############################################Tooltips
+ GER_atlantikwall_a:0 "Western France Fortifications"
+ GER_atlantikwall_a_desc:0 "Western France Fortifications along Normandy, Loire and Britanny"
+ GER_atlantikwall_b:0 "La Rochelle Fortifications"
+ GER_atlantikwall_b_desc:0 "South-Western France Fortifications along Poitou, Aquitaine and Pyrénées Atlantiques"
+ GER_atlantikwall_c:0 "Benelux Fortifications"
+ GER_atlantikwall_c_desc:0 "Western France Fortifications along Nord Pas de Calais, Picardy, Vlaanderen, Brabant Holland and Friesland"
+ GER_atlantikwall_d:0 "Kiel Fortifications"
+ GER_atlantikwall_d_desc:0 "Kiel Fortifications along Weser-ems, Hannover, Schleswig-Holstein and Jutland"
+ GER_atlantikwall_e:0 "Oslo Fortifications"
+ GER_atlantikwall_e_desc:0 "Oslo Fortifications along Ostlandet, Vestlandet and Trondelag"
+ GER_rommel:0 "Establish the Afrikakorps"
+ GER_rommel_desc:0 "Send Rommel to crush the Allied defenses in Afrika "
+ GER_rommel_back:0 "Call Rommel Back"
+ GER_rommel_back_desc:0 "He is sick and wounded, our objective has failed, GET HIM BACK AT ALL COST"
+ GER_rommel_atlantikwall:0 "Appoint Rommel as Fieldmarshall"
+ GER_rommel_atlantikwall_desc:0 "Let him use his charisma to create a propagandafilm about the dday defenses. Give him full command and provide him with the required resources and manpower."
+ GER_air_shield:0 "Hermann Meyer"
+ GER_air_shield_desc:0 ""No enemy bomber can reach the Ruhr. If one reaches the Ruhr, my name is not Hermann Goering. You may call me Hermann Meyer.-Hermann Göring, September, 1939""
+
+
