@@ -848,8 +848,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.1
 				conscription = 0.005
 			}
 		}
@@ -870,8 +869,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.1
 				conscription = 0.005
 
 				communism_drift = 0.05

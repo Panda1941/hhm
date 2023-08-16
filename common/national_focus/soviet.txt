@@ -635,11 +635,10 @@
 		id = SOV_collectivist_propaganda
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_positive_heroism }
 		x = -2
 		y = 1
 		relative_position_id = SOV_stalin_constitution
-		cost = 10
+		cost = 15
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -728,11 +727,10 @@
 		id = SOV_positive_heroism
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_collectivist_propaganda }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SOV_stalin_constitution
-		cost = 10
+		cost = 15
 		ai_will_do = {
 			factor = 1
 		}
@@ -792,34 +790,13 @@
 	}
 
 	focus = {
-		id = SOV_extra_tech_slot
-		icon = GFX_focus_research
-		text = extra_tech_slot
-		prerequisite = { focus = SOV_socialist_science }
-		x = 0
-		y = 1
-		relative_position_id = SOV_socialist_science
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
-	focus = {
 		id = SOV_t34
 		icon = GFX_focus_generic_tank_production
-		prerequisite = { focus = SOV_extra_tech_slot }
+		prerequisite = { focus = SOV_socialist_science }
 		mutually_exclusive = { focus = SOV_kv }
 		x = -1
 		y = 1
-		relative_position_id = SOV_extra_tech_slot
+		relative_position_id = SOV_socialist_science
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -843,11 +820,11 @@
 	focus = {
 		id = SOV_kv
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = SOV_extra_tech_slot }
+		prerequisite = { focus = SOV_socialist_science }
 		mutually_exclusive = { focus = SOV_t34 }
 		x = 1
 		y = 1
-		relative_position_id = SOV_extra_tech_slot
+		relative_position_id = SOV_socialist_science
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -872,7 +849,7 @@
 		id = SOV_socialist_realism
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SOV_stalin_constitution }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = SOV_stalin_constitution
 		cost = 10
