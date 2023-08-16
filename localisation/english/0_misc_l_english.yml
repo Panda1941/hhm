@@ -791,7 +791,7 @@
  JAP_attack:0 "Main Front"
  GER_barbarossa_2:0 "Winter Attack"
  GER_barbarossa_3:0 "Winter Defense"
- GER_blau:0 "Operation Fall Blau"
+ GER_blau:0 "Fall Blau"
  GER_blau_minor:0 "Faull Blau Minors"
  GER_zitadelle:0 "Operation Zitadelle"
  GER_zitadelle_minor:0 "Operation Zitadelle Minors"
@@ -804,7 +804,6 @@
  GER_unternehmen_zitadelle:0 "Operation Citadelle"
  GER_winter_attack:0 "Wannabe Napoleon"
  GER_winter_defense:0 "Real Napoleon"
- 
  GER_atlantikwall_a:0 "Western France Fortifications"
  GER_atlantikwall_a_desc:0 "Western France Fortifications along Normandy, Loire and Britanny"
  GER_atlantikwall_b:0 "La Rochelle Fortifications"
@@ -823,5 +822,31 @@
  GER_rommel_atlantikwall_desc:0 "Let him use his charisma to create a propagandafilm about the dday defenses. Give him full command and provide him with the required resources and manpower."
  GER_air_shield:0 "Hermann Meyer"
  GER_air_shield_desc:0 ""No enemy bomber can reach the Ruhr. If one reaches the Ruhr, my name is not Hermann Goering. You may call me Hermann Meyer.-Hermann Göring, September, 1939""
+ GER_air_innovation:0 "Develop New Fighter"
+ GER_air_innovation_desc:0 "BF 109 developments"
+ GER_winterdebuff:0 "Summer Uniforms"
+ AXIS_blitzkrieg:0 "Blitzkrieg"
+ Atlantikwall_improvement:0 "Atlantikwall fortifications"
+ 
+ ENG_compass:0 "Operation Compass"
+ ENG_crusader:0 "Operation Crusader"
+ ENG_lose_in_africa:0 "Crushed in Alamein"
+ ENG_market_garden:0 "Operation Market Garden"
+ ENG_compass_focus:0 "Compass"
+ ENG_crusader_focus:0 "Crusader"
+ ENG_market_garden_focus:0 "Market Garden"
+ ENG_lose_in_africa_focus:0 "Defeat in Alamein"
+ 
+ ITA_desert_fox_defense:0 "Hold the line"
+ ITA_desert_fox_attack:0 " Go on the offense"
+ ITA_desert_fox_defense_desc:0 "Hold the line"
+ ITA_desert_fox_attack_desc:0 " Go on the offense"
+ ITA_desert_fox_defense_idea:0 "Empty barrels"
+ ITA_desert_fox_attack_idea:0 "Full barrels"
+ ITA_german_help_needed:0 "Screams in sand"
+ ITA_german_help_needed_desc:0 "Screams in sand"
+ 
+ Fuel_the_atlantik_construction:0 "Atlantikwall construction"
+ 
 
 

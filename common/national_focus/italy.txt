@@ -6623,7 +6623,7 @@ focus_tree = {
 	
 	
 	focus = {
- 		id = ITA_rommel
+ 		id = ITA_german_help_needed
  		icon = GFX_focus_GER_army_inno_1
  		available = {
  			AND ={
@@ -6632,10 +6632,9 @@ focus_tree = {
 				command_power > 50
  			}
  		}
- 		relative_position_id = ITA_pact_of_steel
- 		prerequisite= {focus = ITA_pact_of_steel}
- 		x = 5
- 		y = 1
+ 		
+ 		x = 25
+ 		y = 6
  		cost = 5
  		ai_will_do = {
  			factor = 10
@@ -6646,35 +6645,35 @@ focus_tree = {
 			}
 		}
 	focus = {
- 		id = ITA_desert_fox
+ 		id = ITA_desert_fox_defense
  		icon = GFX_focus_ger_osttruppen
- 		mutually_exclusive = { focus = ITA_desert_fox_2}
- 		prerequisite = { focus = ITA_rommel }
+ 		mutually_exclusive = { focus = ITA_desert_fox_attack}
+ 		prerequisite = { focus = ITA_german_help_needed }
  		x = 1
  		y = 1
- 		relative_position_id = ITA_rommel
- 		cost = 0
+ 		relative_position_id = ITA_german_help_needed
+ 		cost = 5
  		ai_will_do = {
  			factor = 10
  		}
  		completion_reward = {
- 			add_timed_idea = { idea = desert_fox  days = 90 }
+ 			add_timed_idea = { idea = desert_fox_defense_idea  days = 90 }
  		}
  	}
  	focus = {
- 		id = ITA_desert_fox_2
+ 		id = ITA_desert_fox_attack
  		icon = GFX_ITA_appoint_ambrosio
- 		mutually_exclusive = { focus = ITA_desert_fox}
- 		prerequisite = { focus = ITA_rommel }
+ 		mutually_exclusive = { focus = ITA_desert_fox_defense}
+ 		prerequisite = { focus = ITA_german_help_needed }
  		x = -1
  		y = 1
- 		relative_position_id = ITA_rommel
- 		cost = 0
+ 		relative_position_id = ITA_german_help_needed
+ 		cost = 5
  		ai_will_do = {
  			factor = 10
  		}
  		completion_reward = {
- 			add_timed_idea = { idea = desert_fox_2  days = 120 }
+ 			add_timed_idea = { idea = desert_fox_attack_idea  days = 120 }
  		}
  	}
 

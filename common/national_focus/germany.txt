@@ -178,7 +178,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 1
+						count = 2
 					}
 				
 			}
@@ -2116,7 +2116,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_air_innovation
-		icon = GFX_focus_GER_fighter_focus
+		icon = GFX_focus_BF_109
 		x = 20
 		y = 0
 		cost = 10
@@ -2571,7 +2571,7 @@ focus_tree = {
 	
 	focus = { #should already be signed in 39
 		id = GER_mol_rib_pact
-		icon = GFX_goal_molotov_ribbentrop_pact
+		icon = GFX_focus_The_polish_arent_feeling_good
 		prerequisite = { focus = GER_soviet_treaty }
 		available = {
 			is_subject = no
@@ -2594,7 +2594,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_soviet_treaty
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2650,66 +2650,7 @@ focus_tree = {
 		}		
 	}
 
-	focus = {
-		id = GER_japan_friend
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = GER_rhineland }
-		available = {
-			is_subject = no
-			AND = {
-				country_exists = JAP
-				JAP = { is_subject = no }
-				NOT = { has_war_with = JAP }
-				JAP = {
-					custom_trigger_tooltip = {
-						tooltip = GER_alone_or_peace_faction_tt
-						is_alone_or_in_faction_at_peace_with_GER = yes
-					}
-				}
-			}
-		}
-		x = 2
-		y = 1
-		relative_position_id = GER_rhineland
-		cost = 5
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_in_faction_with = JAP
-				factor = 0 #GER-sempai has already noticed you!
-			}
-		}	
-		completion_reward = {
-			JAP = {
-				add_opinion_modifier = { target = GER modifier = ger_jap_diplomacy_focus }
-			}
-			event_target:WTT_current_china_leader = {
-				add_opinion_modifier = { target = GER modifier = withdrew_advisors }
-				country_event = { id = china.3 hours = 6 }
-			}
-			custom_effect_tooltip = GER_japan_friend_tt
-			set_global_flag = falkenhausen_recalled
-			if = {
-				limit = {
-					has_dlc = "Waking the Tiger"
-				}
-				create_corps_commander = {
-					name = "Alexander von Falkenhausen"
-					gfx = GFX_portrait_chi_alexander_von_falkenhausen
-					skill = 3
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 3
-					logistics_skill = 3
-					legacy_id = 603
-					traits = { infantry_officer }
-				}
-			}
-		}
-	}
+	
 
 	focus = {
 		id = GER_ussr_war_goal
@@ -4109,18 +4050,14 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
 		available = {
-			is_subject = no			
-			NOT = { is_in_faction_with = FRA }
+			date > 1939.9.01
 		}
 		x = 1
 		y = 1
 		relative_position_id = GER_around_maginot
-		cost = 10
+		cost = 1
 		bypass = {
-			OR = {
-				NOT = { country_exists = FRA }
-				has_war_with = FRA
-			}
+			
 		}
 		historical_ai = {
 			date > 1939.1.1
@@ -4139,12 +4076,11 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_named_threat = { threat = 5 name = GER_war_with_france_threat }
- 			create_wargoal = {
- 				type = take_state_focus
- 				target = FRA
- 				expire = 0
- 				generator = { 28 }
- 			}
+ 			declare_war_on = {
+				target = FRA 
+				type = annex_everything
+			}
+			add_timed_idea = { idea = AXIS_blitzkrieg days = 30 }
 		}
 	}	
 
@@ -4183,7 +4119,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_war_with_france
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -4678,7 +4614,7 @@ focus_tree = {
  		relative_position_id = GER_ussr_war_goal
  		x = -2
  		y = 1
- 		cost = 1
+ 		cost = 2
  		ai_will_do = {
  			factor = 1
  		}
@@ -4708,7 +4644,7 @@ focus_tree = {
  		relative_position_id = GER_ussr_war_goal
  		x = 0
  		y = 1
- 		cost = 1
+ 		cost = 2
  		ai_will_do = {
  			factor = 1
  		}
@@ -4758,7 +4694,7 @@ focus_tree = {
  		relative_position_id = GER_ussr_war_goal
  		x = 2
  		y = 1
- 		cost = 1
+ 		cost = 2
  		ai_will_do = {
  			factor = 1
  		}
@@ -4787,7 +4723,7 @@ focus_tree = {
  		relative_position_id = GER_moscow
  		x = -1
  		y = 1
- 		cost = 1
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
@@ -4812,7 +4748,7 @@ focus_tree = {
  		relative_position_id = GER_moscow
  		x = 1
  		y = 1
- 		cost = 1
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
@@ -4839,29 +4775,29 @@ focus_tree = {
  		relative_position_id = GER_moscow
  		x = 0
  		y = 2
- 		cost = 1
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
  		available_if_capitulated = no
  		completion_reward = {
  			GER = {
- 				add_timed_idea = { idea = GER_blau days = 100 }
+ 				add_timed_idea = { idea = GER_blau days = 120 }
  			}  
 			    ROM = {
- 					add_timed_idea = { idea = GER_blau_minor days = 100 }
+ 					add_timed_idea = { idea = GER_blau_minor days = 120 }
  				}
  				HUN = {
- 					add_timed_idea = { idea = GER_blau_minor days = 100 }
+ 					add_timed_idea = { idea = GER_blau_minor days = 120 }
  				}
  				BUL = {
- 					add_timed_idea = { idea = GER_blau_minor days = 100 }
+ 					add_timed_idea = { idea = GER_blau_minor days = 120 }
  				}
  				ITA = {
- 					add_timed_idea = { idea = GER_blau_minor days = 100 }
+ 					add_timed_idea = { idea = GER_blau_minor days = 120 }
  				}
  				SPR = {
- 					add_timed_idea = { idea = GER_blau_minor days = 100 }
+ 					add_timed_idea = { idea = GER_blau_minor days = 120 }
  				}
  			
  		}
@@ -4876,7 +4812,7 @@ focus_tree = {
  		relative_position_id = GER_blau
  		x = -1
  		y = 1
- 		cost = 1
+ 		cost = 2
  		ai_will_do = {
  			factor = 1
  		}
@@ -4899,7 +4835,7 @@ focus_tree = {
  		relative_position_id = GER_blau
  		x = 1
  		y = 1
- 		cost = 1
+ 		cost = 2
  		ai_will_do = {
  			factor = 1
  		}
@@ -4970,7 +4906,7 @@ focus_tree = {
  		x = 3
  		y = 2
  		relative_position_id = GER_ussr_war_goal
- 		cost = 2
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
@@ -5017,7 +4953,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = GER_atlantikwall
- 		cost = 4.5
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
@@ -5038,6 +4974,7 @@ focus_tree = {
 		}
 		
  		completion_reward = {
+		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume the amount of trains and trucks listed above. Besides those all other equipment and manpower will be taken away. Trains and trucks will be returned back once the focus is over."
 		add_command_power = -10
 		
 		
@@ -5200,7 +5137,7 @@ add_building_construction = {
  		x = -2
  		y = 1
  		relative_position_id = GER_atlantikwall
- 		cost = 4.5
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
@@ -5220,6 +5157,7 @@ add_building_construction = {
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
+		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume the amount of trains and trucks listed above. Besides those all other equipment and manpower will be taken away. Trains and trucks will be returned back once the focus is over."
 		add_command_power = -10
 		
 		
@@ -5377,7 +5315,7 @@ add_building_construction = {
  		x = -4
  		y = 1
  		relative_position_id = GER_atlantikwall
- 		cost = 4.5
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
@@ -5397,6 +5335,7 @@ add_building_construction = {
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
+		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume the amount of trains and trucks listed above. Besides those all other equipment and manpower will be taken away. Trains and trucks will be returned back once the focus is over."
 		add_command_power = -10
 		
 		
@@ -5634,7 +5573,7 @@ add_building_construction = {
  		x = -3
  		y = 2
  		relative_position_id = GER_atlantikwall
- 		cost = 4.5
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
@@ -5655,6 +5594,7 @@ add_building_construction = {
 		}
 		
  		completion_reward = {
+		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume the amount of trains and trucks listed above. Besides those all other equipment and manpower will be taken away. Trains and trucks will be returned back once the focus is over."
 		add_command_power = -10
 		
 		
@@ -5839,7 +5779,7 @@ add_building_construction = {
  		x = -1
  		y = 2
  		relative_position_id = GER_atlantikwall
- 		cost = 4.5
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
@@ -5859,6 +5799,7 @@ add_building_construction = {
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
+		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume the amount of trains and trucks listed above. Besides those all other equipment and manpower will be taken away. Trains and trucks will be returned back once the focus is over."
 		add_command_power = -10
 		
 		
@@ -6073,13 +6014,13 @@ add_building_construction = {
 		
 		focus = {
  		id = GER_rommel
- 		icon = GFX_focus_GER_afrikakorps
+ 		icon = GFX_focus_GER_AFRIKA
 
 		available = {
  
  				ITA={controls_state =448}
  				date > 1940.5.1
-				ITA = { has_completed_focus = ITA_rommel }	   
+				ITA = { has_completed_focus = ITA_german_help_needed }	   
  			
  		}
  			
@@ -6087,7 +6028,7 @@ add_building_construction = {
  		
  		x = 8
  		y = 4
- 		cost = 5
+ 		cost = 2
  		ai_will_do = {
  			factor = 10
  		}
@@ -6111,7 +6052,7 @@ add_building_construction = {
 		
 		focus = {
  		id = GER_rommel_back
- 		icon = GFX_focus_GER_army_inno_1
+ 		icon = GFX_focus_GER_afrikakorps
 
 		available = {
 		    AND = {
@@ -6127,7 +6068,7 @@ add_building_construction = {
  		prerequisite= {focus = GER_rommel}
  		x = 0
  		y = 1
- 		cost = 5
+ 		cost = 2
  		ai_will_do = {
  			factor = 10
  		}
@@ -6161,18 +6102,24 @@ add_building_construction = {
  			
  		
  		relative_position_id = GER_rommel_back
- 		prerequisite= {focus = GER_rommel_back }
-		prerequisite= {focus = GER_atlantikwall_a focus = GER_atlantikwall_b focus = GER_atlantikwall_c focus = GER_atlantikwall_d focus = GER_atlantikwall_e }
+		
+		prerequisite= {focus = GER_rommel_back }
+ 		prerequisite= {focus = GER_atlantikwall_a }
+		prerequisite= {focus = GER_atlantikwall_b }
+		prerequisite= {focus = GER_atlantikwall_c }
+		prerequisite= {focus = GER_atlantikwall_d }
+		prerequisite= {focus = GER_atlantikwall_e }
+		
 
 
  		x = -6
  		y = 1
- 		cost = 5
+ 		cost = 13
  		ai_will_do = {
  			factor = 10
  		}
  		completion_reward = {
-		
+		custom_effect_tooltip = "The listed states will be improved in the following way: all coastal provinces with a port receives a lvl 1 coastal fort and a regular fort as well as all victory points will receive an extra level of forts. "
 		add_political_power = 50
 		add_war_support = 0.1
 		add_command_power = 25
@@ -6203,7 +6150,111 @@ add_building_construction = {
 							level = 1
 							instant_build = yes
 						}
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_victory_point = yes
+							}
+							level = 1
+							instant_build = yes
+						}
 					}
+					
+					
+		14 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_victory_point = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					}
+					
+					14 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 14 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				
+			}
+			23 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 15 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				
+			}
+			29 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 15 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 6
+					}
+				
+			}
+			56 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 15 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 4
+					}
+				
+			}
+			110 = { #Recruit Volkssturm divisions 
+				
+				prioritize = { 15 }
+				
+				
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				
+			}
+			
+			
 
 		
 		

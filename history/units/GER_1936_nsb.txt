@@ -69,7 +69,7 @@ division_template = { #Volkssturm
 	template_counter = 103
 	is_locked = yes
 	
-	division_cap = 20 #WARNING THIS VALUE NEEDS TOP MATCH THE value in var GER_militias_cap set in history file
+	division_cap = 40 #WARNING THIS VALUE NEEDS TOP MATCH THE value in var GER_militias_cap set in history file
 
 	# Represents nearly all infantry divisions
 	# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)

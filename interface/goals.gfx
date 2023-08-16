@@ -733,7 +733,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_molotov_ribbentrop_pact"
-		texturefile = "gfx/interface/goals/GER_molotov.dds"
+		texturefile = "gfx/interface/goals/goal_molotov_ribbentrop_pact.dds"
 				
 	}
 
@@ -3818,10 +3818,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GER_moscow.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_GER_winter_of_1941"
-		texturefile = "gfx/interface/goals/GER_winter_of_1941.dds"
-	}
-	spriteType = {
 		name = "GFX_focus_GER_ostwall"
 		texturefile = "gfx/interface/goals/focus_GER_ostwall.dds"
 	}
@@ -3890,10 +3886,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GER_around_maginot.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_GER_fighter_focus"
-		texturefile = "gfx/interface/goals/GER/GER_air_innovation.dds"
-	}
-	spriteType = {
 		name = "GFX_focus_GER_radar"
 		texturefile = "gfx/interface/goals/GER_radar.dds"
 	}
@@ -3901,6 +3893,27 @@ spriteTypes = {
 		name = "GFX_focus_Ger_sov_treaty"
 		texturefile = "gfx/interface/goals/Ger_sov_treaty.dds"
 	}
+	SpriteType = {
+	name = "GFX_goal_generic_build_airforce"
+	texturefile = "gfx/interface/goals/goal_generic_build_airforce.dds"		
+	}
+	spriteType = {
+		name = "GFX_focus_GER_air_innovation_fighter"
+		texturefile = "gfx/interface/goals/GER/GER_air_innovation_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_AFRIKA"
+		texturefile = "gfx/interface/goals/GER_AFRIKA.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_The_polish_arent_feeling_good"
+		texturefile = "gfx/interface/goals/GER/The_polish_arent_feeling_good.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_BF_109"
+		texturefile = "gfx/interface/goals/BF_109.dds"
+	}
+	
 	
 	
 	
