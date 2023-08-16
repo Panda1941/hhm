@@ -1,11 +1,11 @@
 state={
 	id=898
 	name="STATE_898"
-	manpower = 498718
+	manpower = 1
 	state_category = wasteland
 
 	history={
-		owner = FRA
+		owner = WST
 		add_core_of = SWE
 		
 		buildings = {

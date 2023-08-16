@@ -288,7 +288,7 @@
 	focus = {
 		id = SAF_support_the_policy_of_appeasement
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 5
+		x = 3
 		y = 0
 
 		cost = 5
@@ -326,7 +326,7 @@
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = SAF_war_measures_act }
 		prerequisite = { focus = SAF_support_the_policy_of_appeasement }
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
@@ -363,7 +363,7 @@
 		id = SAF_police_windhoek
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = SAF_support_the_policy_of_appeasement }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
@@ -399,7 +399,7 @@
 		id = SAF_joint_air_training_scheme
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = SAF_csir }
-		x = -3
+		x = -1
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
@@ -430,7 +430,7 @@
 		id = SAF_desert_equipment
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = SAF_joint_air_training_scheme }
-		x = -4
+		x = -2
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
@@ -462,7 +462,7 @@
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = SAF_joint_air_training_scheme }
 		prerequisite = { focus = SAF_police_windhoek }
-		x = -2
+		x = 0
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
@@ -495,7 +495,7 @@
 		icon = GFX_goal_tfv_saf_secure_interests_in_africa
 		prerequisite = { focus = SAF_suppress_the_stormjaers }
 		prerequisite = { focus = SAF_desert_equipment }
-		x = -3
+		x = -1
 		y = 4
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
@@ -535,7 +535,7 @@
 		id = SAF_native_laws_amendment_act
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SAF_police_windhoek }
-		x = 0
+		x = 1
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
@@ -567,7 +567,7 @@
 		id = SAF_work_for_all_poor
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = SAF_native_laws_amendment_act }
-		x = 0
+		x = 1
 		y = 4
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
@@ -605,10 +605,10 @@
 	focus = {
 		id = SAF_south_african_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 10
+		x = 8
 		y = 0
 
-		cost = 5
+		cost = 6
 
 		ai_will_do = {
 			factor = 15
@@ -633,7 +633,7 @@
 			show_ideas_tooltip = SAF_south_african_railways
 
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -641,7 +641,15 @@
 				}
 			}
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -683,10 +691,10 @@
 				limit = {
 					has_state_flag = SAF_expand_the_mining_industry_IC
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -701,17 +709,17 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_expand_the_mining_industry_IC
 			}
 			add_tech_bonus = {
 				name = SAF_expand_the_mining_industry
-				bonus = 1.0
+				bonus = 2.0
 				uses = 1
 				technology = excavation1
 				technology = excavation2
@@ -752,7 +760,7 @@
 		completion_reward = {			
 			add_tech_bonus = {
 				name = SAF_heavy_engineering
-				bonus = 1.0
+				bonus = 0.75
 				uses = 2
 				category = industry_late
 			}
@@ -911,7 +919,7 @@
 		y = 3
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -934,7 +942,13 @@
 			275 = {
 				add_resource = {
 					type = steel
-					amount = 16
+					amount = 24
+				}
+			}
+			275 = {
+				add_resource = {
+					type = tungsten
+					amount = 8
 				}
 			}
 		}
@@ -943,8 +957,7 @@
 	focus = {
 		id = SAF_pretoria_arms
 		icon = GFX_goal_generic_production2
-		prerequisite = { focus = SAF_armament_effort }
-		prerequisite = { focus = SAF_south_african_steel }
+		prerequisite = { focus = SAF_armament_effort focus = SAF_south_african_steel }
 		x = -1
 		y = 4
 		relative_position_id = SAF_south_african_railways
@@ -1005,7 +1018,7 @@
 	focus = {
 		id = SAF_expand_the_rand_mines
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = SAF_south_african_steel }
+		prerequisite = { focus = SAF_armament_effort focus = SAF_south_african_steel }
 		x = 1
 		y = 4
 		relative_position_id = SAF_south_african_railways
@@ -1037,7 +1050,8 @@
 	focus = {
 		id = SAF_fund_the_university_of_south_africa
 		icon = GFX_focus_research
-		prerequisite = { focus = SAF_pretoria_arms focus = SAF_expand_the_rand_mines }
+		prerequisite = { focus = SAF_pretoria_arms }
+		prerequisite = { focus = SAF_expand_the_rand_mines }
 		x = 0
 		y = 5
 		relative_position_id = SAF_south_african_railways
@@ -1073,7 +1087,7 @@
 	focus = {
 		id = SAF_special_service_battalion
 		icon = GFX_goal_generic_army_doctrines
-		x = 15
+		x = 13
 		y = 0
 
 		cost = 10
@@ -1340,10 +1354,10 @@
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 20
+		x = 18
 		y = 0		
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1415,7 +1429,7 @@
 		y = 1
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 0.8
@@ -1453,7 +1467,7 @@
 		y = 1
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 0.2
@@ -1494,7 +1508,7 @@
 		y = 2
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 5
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -1580,7 +1594,7 @@
 		y = 3
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1618,7 +1632,7 @@
 		y = 3
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1661,7 +1675,7 @@
 		y = 4
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1706,7 +1720,7 @@
 		y = 4
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
