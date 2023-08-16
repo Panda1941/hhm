@@ -3564,14 +3564,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_to_variable = { var = GER_mefo_bill_counter value = -10 }
 			custom_effect_tooltip = anschluss_mefo_bills_tt
-			AUS = {
-				every_unit_leader = {
-					set_nationality = GER
-				}
-			}
-			USA = {
-				set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
-			}
+			
 			GER = {
 				annex_country = {
 					target = AUS
@@ -3581,10 +3574,21 @@ focus_tree = {
 				add_state_core = 152
 				add_state_core = 153
 				add_state_core = 848
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 15161 }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 549 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 26161 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 949 }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 449 }
 			}
-			
+
+			hidden_effect = {
+				AUS = {
+					every_unit_leader = {
+						set_nationality = GER
+					}
+				}
+				USA = {
+					set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
+				}
+			}
 		}
 	}
 
@@ -4071,24 +4075,24 @@ focus_tree = {
 				type = light_tank_chassis_2
 				parent_version = 1
 				modules = {
-					main_armament_slot = tank_high_velocity_cannon
-					turret_type_slot = tank_light_two_man_tank_turret
-					suspension_type_slot = tank_bogie_suspension
+					main_armament_slot = tank_small_cannon_2
+					turret_type_slot = tank_light_three_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
 					armor_type_slot = tank_riveted_armor
 					engine_type_slot = tank_gasoline_engine
 					special_type_slot_1 = tank_radio_1
 					special_type_slot_2 = smoke_launchers
-					special_type_slot_3 = empty
+					special_type_slot_3 = stabilizer
 					special_type_slot_4 = empty
 				}
 				upgrades = {
-					tank_nsb_engine_upgrade = 3
+					tank_nsb_engine_upgrade = 7
 					tank_nsb_armor_upgrade = 3
 				}
 				
 				icon = "gfx/interface/technologies/cze_basic_main_tank.dds"
 			}
-			add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 2900 producer = GER variant_name = "Panzer 38(t)" }
+			add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 3500 producer = GER variant_name = "Panzer 38(t)" }
 			hidden_effect = {
 				country_event = { hours = 6 id = news.60 }
 				add_to_variable = { var = GER_mefo_bill_counter value = -5 }
