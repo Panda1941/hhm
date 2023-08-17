@@ -65,6 +65,8 @@ NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1							-- Max number of mines that c
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0						-- Value used to overall balance of the speed of planting naval mines
 
 -- Army Balance
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6
+
 NDefines.NMilitary.TRAINING_ATTRITION = 0  -- vanilla 0.06
 NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 72							-- base hours needed to prepare an invasion
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.10

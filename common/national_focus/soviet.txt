@@ -25,16 +25,6 @@
 		available_if_capitulated = yes
 
 		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 2
-						include_locked = yes
-					}
-				}
-			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -45,6 +35,11 @@
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -59,27 +54,38 @@
 						include_locked = yes
 					}
 				}
+				prioritize = { 217 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
 			random_owned_controlled_state = {
 				limit = {
-					industrial_complex > 0
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
 					}
 				}
+				prioritize = { 137 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -94,10 +100,16 @@
 						include_locked = yes
 					}
 				}
+				prioritize = { 219 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -862,6 +874,153 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = SOV_eastern_development
+
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SOV_socialist_realism }
+		x = 0
+		y = 1
+		relative_position_id = SOV_socialist_realism
+		cost = 5
+
+		bypass = {
+		}
+
+		available = {
+			OR = {
+				408 = { #VLADIVOSTOK
+					is_fully_controlled_by = ROOT
+				}
+				409 = { #KHABAROVSK
+					is_fully_controlled_by = ROOT
+				}
+				566 = { #IRKUTSK
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			408 = { #VLADIVOSTOK
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			566 = { #IRKUTSK
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			409 = { #KHABAROVSK
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_develop_the_urals
+
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SOV_eastern_development }
+		x = 0
+		y = 1
+		relative_position_id = SOV_eastern_development
+		cost = 5
+
+		bypass = {
+
+		}
+
+		available = {
+			OR = {
+				572 = { #CHELYABISNK
+					is_fully_controlled_by = ROOT
+				}
+				573 = { #ZLATOUST
+					is_fully_controlled_by = ROOT
+				}
+				582 = { #MAGNITOGORSK
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			572 = { #CHELYABISNK
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			582 = { #MAGNITOGORSK
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			573 = { #ZLATOUST
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 

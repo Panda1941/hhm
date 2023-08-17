@@ -279,7 +279,7 @@ guiTypes = {
 				name = "support_grid"
 				position = { x = 23 y = 57 }
 				size = { width = 85 height = 100%% }
-				slotsize = { width = 82 height = 51 }
+				slotsize = { width = 82 height = 40 }
 				format = "UPPER_LEFT"
 			}
 			

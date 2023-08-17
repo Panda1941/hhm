@@ -974,7 +974,7 @@ technologies = {
 		}
 		
 		category_front_line = {
-			 soft_attack = 0.1
+			 soft_attack = 0.15
 		}
 		
 		enable_tactic = tactic_barrage
@@ -1012,7 +1012,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_light_infantry = {
-			max_organisation = 10
+			max_organisation = 12
 		}
 		
 		enable_tactic = tactic_delay
@@ -1055,6 +1055,7 @@ technologies = {
 		xp_unlock_cost = 100
 		category_all_infantry = {
 			defense = 0.10
+			max_organisation = 3
 		}
 		
 		enable_tactic = tactic_elastic_defense
@@ -1216,6 +1217,7 @@ technologies = {
 		
 		category_line_artillery = {
 			default_morale = 0.2
+			soft_attack = 0.05
 		}
 		
 		path = {
@@ -1265,7 +1267,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_line_artillery = {
-			soft_attack = 0.10
+			soft_attack = 0.15
 		}
 		coordination_bonus = 0.05
 		enable_tactic = tactic_overwhelming_fire
@@ -1318,6 +1320,8 @@ technologies = {
 		xp_unlock_cost = 100
 		category_all_armor = {
 			breakthrough = 0.10
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 		
 		
@@ -1813,7 +1817,7 @@ technologies = {
 		
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
-		max_dig_in = 10
+		max_dig_in = 8
 		dig_in_speed_factor = 0.25 #25% bonus
 		
 		
@@ -2667,7 +2671,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		land_reinforce_rate = 0.02
+		land_reinforce_rate = 0.025
 		minimum_training_level = -0.1
 		weekly_casualties_war_support = 0.001
 
@@ -2705,7 +2709,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		#reduced pocketed combat penalty and/or reduces the out of supply penalty or increases time before moving to worse penalty
-		no_supply_grace = 48 # more hours before supply penalty changes
+		no_supply_grace = 72 # more hours before supply penalty changes
 		out_of_supply_factor = -0.10
 				
 		path = {
@@ -2748,7 +2752,7 @@ technologies = {
 		max_dig_in = 5
 
 		category_light_infantry = {
-			max_organisation = 5
+			max_organisation = 6
 		}
 		
 		
@@ -2865,10 +2869,10 @@ technologies = {
 	
 	deep_operations = {
 		category_tanks = {
-			max_organisation = 2
+			max_organisation = 4
 		}
 		armored_car = {
-			max_organisation = 2
+			max_organisation = 4
 		}
 
 		xp_research_type = army
@@ -2974,7 +2978,7 @@ technologies = {
 		supply_consumption_factor = -0.10
 		
 		infantry = {
-			combat_width = -0.4
+			combat_width = -0.5
 		}
 
 		
@@ -3027,15 +3031,15 @@ technologies = {
 		xp_unlock_cost = 100
 		category_tanks = {
 			max_organisation = 1
-			breakthrough = 0.10
+			breakthrough = 0.15
 		}
 		category_all_infantry = {
 			max_organisation = 5
-			breakthrough = 0.10
+			breakthrough = 0.15
 		}
 		armored_car = {
 			max_organisation = 1
-			breakthrough = 0.10
+			breakthrough = 0.15
 		}
 		
 		enable_tactic = tactic_breakthrough
@@ -3084,7 +3088,7 @@ technologies = {
 	
 	mechanized_wave = {
 		category_tanks = {
-			max_organisation = 2
+			max_organisation = 3
 		}
 		xp_research_type = army
 		xp_unlock_cost = 100
@@ -3092,20 +3096,20 @@ technologies = {
 			default_morale = 0.1
 		}
 		armored_car = {
-			max_organisation = 3
+			max_organisation = 5
 			default_morale = 0.1
 		}	
 
 		mechanized = {
-			max_organisation = 10
+			max_organisation = 15
 			default_morale = 0.1
 		}
 		motorized = {
-			max_organisation = 10
+			max_organisation = 15
 			default_morale = 0.1
 		}	
 		amphibious_mechanized = {
-			max_organisation = 10
+			max_organisation = 15
 			default_morale = 0.1
 		}	
 		
@@ -3156,7 +3160,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		org_loss_when_moving = -0.25
-		land_reinforce_rate = 0.05
+		land_reinforce_rate = 0.08
 		
 		enable_tactic = tactic_backhand_blow
 
@@ -3207,7 +3211,7 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		#Increased Partisan effect on your land occupied by others
-		resistance_damage_to_garrison_on_our_occupied_states = 0.1 #10% more partisan effects 
+		resistance_damage_to_garrison_on_our_occupied_states = 0.25 #10% more partisan effects 
 		#Land Units take less attrition
 		attrition = -0.1 #take 10% less attrition losses
 		
@@ -3316,13 +3320,13 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 12
 		}
 		category_tanks = {
-			max_organisation = 2
+			max_organisation = 4
 		}
 		armored_car = {
-			max_organisation = 2
+			max_organisation = 4
 		}
 		
 		
@@ -3362,11 +3366,11 @@ technologies = {
 	
 	human_wave_offensive = {
 
-		conscription = 0.05
+		conscription = 0.08
 		xp_research_type = army
 		xp_unlock_cost = 100
 		infantry = {
-			combat_width = -0.4
+			combat_width = -0.5
 		}
 
 		land_reinforce_rate = 0.15		
@@ -3414,7 +3418,7 @@ technologies = {
 			default_morale = 0.2
 		}
 		
-		resistance_growth_on_our_occupied_states = 0.25 
+		resistance_growth_on_our_occupied_states = 0.35 
 		
 		path = {
 			leads_to_tech = gurilla_tatics_ma
