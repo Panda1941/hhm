@@ -960,7 +960,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 		}
-		xp_cost = 2
+		xp_cost = 0
 		allow_mission_type = {
 			naval_bomber
 			port_strike
@@ -992,7 +992,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 6
 		}
-		xp_cost = 2
+		xp_cost = 0
 		allow_mission_type = {
 			naval_bomber
 			port_strike
@@ -1024,7 +1024,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 8
 		}
-		xp_cost = 2
+		xp_cost = 0
 		allow_mission_type = {
 			naval_bomber
 			port_strike
