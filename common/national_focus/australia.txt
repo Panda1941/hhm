@@ -127,8 +127,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_royal_australian_artillery
-				bonus = 1.0
-				uses = 1
+				bonus = 0.75
+				uses = 2
 				category = artillery
 			}
 		}
@@ -214,7 +214,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 1.00
+				bonus = 1.5
 				category = motorized_equipment
 			}
 		}
@@ -258,7 +258,7 @@
 			add_tech_bonus = {
 				name = AST_hmas_assault
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = marine_tech
 			}
 		}
@@ -294,8 +294,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_specialize_equipment
-				bonus = 1.0
-				uses = 1
+				bonus = 0.75
+				uses = 3
 				category = infantry_weapons
 				category = artillery
 			}
@@ -366,7 +366,7 @@
 			add_tech_bonus = {
 				name = AST_fund_owen_gun_research
 				bonus = 3.0
-				uses = 1
+				uses = 2
 				technology = tech_logistics_company
 				technology = tech_logistics_company2
 				technology = tech_logistics_company3
@@ -407,8 +407,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_fund_owen_gun_research
-				bonus = 1.0
-				uses = 1
+				bonus = 0.75
+				uses = 2
 				category = infantry_weapons
 			}
 		}
@@ -444,8 +444,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_sentinel_tank_project
-				bonus = 1.0
-				uses = 2
+				bonus = 2.0
+				uses = 1
 				category = armor
 			}
 		}
@@ -482,7 +482,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_airborne_defence
-				bonus = 3.0
+				bonus = 2.0
 				uses = 1
 				category = para_tech
 			}
@@ -652,782 +652,6 @@
 	}
 
 	############################
-	####### AIR SECTION ########
-	############################
-
-
-	focus = {
-		id = AST_expand_the_raaf
-		icon = GFX_goal_generic_build_airforce
-		x = 7
-		y = 0
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-
-		complete_tooltip = {
-			air_experience = 25
-			random_state = {				
-				limit = {
-					has_state_flag = AST_expand_the_raaf_AB
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = AST_expand_the_raaf
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-
-		completion_reward = {
-			air_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = AST_expand_the_raaf_AB
-			}
-			add_doctrine_cost_reduction = {
-				name = AST_expand_the_raaf
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = AST_cac_boomerang
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = AST_expand_the_raaf }
-		x = -1
-		y = 1
-		relative_position_id = AST_expand_the_raaf
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
-				}
-				add_tech_bonus = {
-					name = AST_cac_boomerang
-					bonus = 1.0
-					ahead_reduction = 2
-					uses = 1
-					category = light_fighter
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = AST_cac_boomerang
-					bonus = 0.75
-					uses = 1
-					category = light_fighter
-				}
-				create_equipment_variant = {
-					name = "CAC Boomerang" #
-					type = small_plane_airframe_1
-					modules = {
-						fixed_main_weapon_slot = light_mg_4x
-						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-						engine_type_slot = engine_2_1x
-						special_type_slot_1 = drop_tanks
-					}
-				}	
-			}
-		}
-	}
-
-	focus = {
-		id = AST_expand_northern_presence
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = AST_expand_the_raaf }
-		x = 0
-		y = 2
-		relative_position_id = AST_expand_the_raaf
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-
-		complete_tooltip = {
-			air_experience = 25
-			random_state = {				
-				limit = {
-					has_state_flag = AST_expand_northern_presence_AB
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = AST_expand_northern_presence
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-
-		completion_reward = {
-			air_experience = 25
-			random_owned_controlled_state = {
-				prioritize = { 521 520 872}
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = AST_expand_the_raaf_AB
-			}
-			add_doctrine_cost_reduction = {
-				name = AST_expand_northern_presence
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = AST_cac_woomera
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = AST_expand_the_raaf }
-		relative_position_id = AST_expand_the_raaf
-
-		x = 1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
-				}
-				add_tech_bonus = {
-					name = AST_cac_woomera
-					bonus = 3.0
-					uses = 1
-					category = cat_strategic_bomber
-					category = tactical_bomber
-					category = naval_air
-				}
-				add_tech_bonus = {
-					name = AST_cac_woomera
-					bonus = 1.0
-					uses = 1
-					category = cat_strategic_bomber
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = AST_cac_woomera
-					bonus = 2
-					uses = 2
-					category = tactical_bomber
-					category = naval_air
-				}
-				create_equipment_variant = {
-					name = "CAC Woomera" #
-					type = medium_plane_airframe_1
-					modules = {
-						fixed_main_weapon_slot = medium_bomb_bay
-						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-						fixed_auxiliary_weapon_slot_2 = torpedo_mounting
-						fixed_auxiliary_weapon_slot_3 = bomb_locks
-						engine_type_slot = engine_3_2x
-						special_type_slot_1 = lmg_defense_turret_2x
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = AST_volunteer_air_observers_corps
-		icon = GFX_goal_generic_radar
-		prerequisite = { focus = AST_cac_boomerang focus = AST_expand_northern_presence }
-		relative_position_id = AST_expand_the_raaf
-
-		x = -1
-		y = 3
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_tech = radio
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			add_tech_bonus = {
-				name = AST_volunteer_air_observers_corps
-				bonus = 1.0
-				uses = 1
-				category = radar_tech
-			}
-			random_state = {
-				limit = {
-					has_state_flag = AST_volunteer_air_observers_corps_radar1
-				}
-				add_building_construction = {
-					type = radar_station
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = AST_volunteer_air_observers_corps_radar2
-				}
-				add_building_construction = {
-					type = radar_station
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = AST_volunteer_air_observers_corps_radar3
-				}
-				add_building_construction = {
-					type = radar_station
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_volunteer_air_observers_corps
-				bonus = 1.0
-				uses = 1
-				category = radar_tech
-			}
-
-			if = {
-				limit = { has_tech = radio_detection }
-				random_owned_controlled_state = {
-					prioritize = { 521 872 }
-					limit = {
-						is_in_home_area = yes
-						free_building_slots = {
-							building = radar_station
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = AST_volunteer_air_observers_corps_radar1
-				}
-
-				random_owned_controlled_state = {
-					prioritize = { 285 }
-					limit = {
-						NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
-						is_in_home_area = yes
-						free_building_slots = {
-							building = radar_station
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = AST_volunteer_air_observers_corps_radar2
-				}
-
-				random_owned_controlled_state = {
-					prioritize = { 520 }
-					limit = {
-						NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
-						NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar2 }
-						is_in_home_area = yes
-						free_building_slots = {
-							building = radar_station
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = AST_volunteer_air_observers_corps_radar3
-				}
-				else = {
-					set_technology = {
-						radio_detection = 1
-					}
-					effect_tooltip = {
-						random_owned_controlled_state = {
-							prioritize = { 521 872 }
-							limit = {
-								is_in_home_area = yes
-							}
-							add_building_construction = {
-								type = radar_station
-								level = 1
-								instant_build = yes
-							}
-						}
-
-						random_owned_controlled_state = {
-							prioritize = { 285 }
-							limit = {
-								NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
-								is_in_home_area = yes
-							}
-							add_building_construction = {
-								type = radar_station
-								level = 1
-								instant_build = yes
-							}
-						}
-					}
-					random_owned_controlled_state = {
-						prioritize = { 521 872 }
-						limit = {
-							is_in_home_area = yes
-							free_building_slots = {
-								building = radar_station
-								size > 0
-							}
-						}
-						add_building_construction = {
-							type = radar_station
-							level = 1
-							instant_build = yes
-						}
-						set_state_flag = AST_volunteer_air_observers_corps_radar1
-					}
-
-					random_owned_controlled_state = {
-						prioritize = { 285 }
-						limit = {
-							NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
-							is_in_home_area = yes
-							free_building_slots = {
-								building = radar_station
-								size > 0
-							}
-						}
-						add_building_construction = {
-							type = radar_station
-							level = 1
-							instant_build = yes
-						}
-						set_state_flag = AST_volunteer_air_observers_corps_radar2
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = AST_naval_bombers
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = AST_cac_woomera }
-		x = 1
-		y = 3
-		relative_position_id = AST_expand_the_raaf
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_naval_bombers
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = naval_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = AST_death_from_down_under
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = AST_volunteer_air_observers_corps }
-		x = -1
-		y = 5
-		relative_position_id = AST_expand_the_raaf
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-
-		complete_tooltip = {
-			air_experience = 25
-			random_state = {				
-				limit = {
-					has_state_flag = AST_death_from_down_under_AB
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {				
-				limit = {
-					has_state_flag = AST_death_from_down_under_AA1
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {				
-				limit = {
-					has_state_flag = AST_death_from_down_under_AA2
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {				
-				limit = {
-					has_state_flag = AST_death_from_down_under_AA3
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = AST_death_from_down_under
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-
-		completion_reward = {
-			air_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-					NOT = { state = 674 }
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = AST_death_from_down_under_AB
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = anti_air_building
-						size > 1
-					}
-					NOT = { state = 674 }
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = AST_death_from_down_under_AA1
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = anti_air_building
-						size > 1
-					}
-					NOT = { state = 674 }
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = AST_death_from_down_under_AA2
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = anti_air_building
-						size > 1
-					}
-					NOT = { state = 674 }
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = AST_death_from_down_under_AA3
-			}
-
-			add_doctrine_cost_reduction = {
-				name = AST_death_from_down_under
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = AST_womens_auxilliary_australian_air_force
-		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = AST_volunteer_air_observers_corps focus = AST_naval_bombers }
-		x = 0
-		y = 4
-		relative_position_id = AST_expand_the_raaf
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {  }
-
-		completion_reward = {
-			air_experience = 50
-			set_rule = {
-				can_generate_female_aces = yes
-			}
-		}
-	}
-
-	focus = {
-		id = AST_dominate_the_skies
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = AST_womens_auxilliary_australian_air_force }
-		x = 1
-		y = 5
-		relative_position_id = AST_expand_the_raaf
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-
-		complete_tooltip = {
-			air_experience = 25
-			random_state = {				
-				limit = {
-					has_state_flag = AST_dominate_the_skies_AB
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = AST_dominate_the_skies
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-
-		completion_reward = {
-			air_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-					NOT = { state = 674 }
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = AST_dominate_the_skies_AB
-			}
-			add_doctrine_cost_reduction = {
-				name = AST_expand_the_raaf
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-
-	############################
 	###### NAVY SECTION ########
 	############################
 
@@ -1435,7 +659,7 @@
 	focus = {
 		id = AST_cockatoo_island_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 10
+		x = 7
 		y = 0
 
 		cost = 5
@@ -1848,7 +1072,7 @@
 		x = 14
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1901,9 +1125,9 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
+				bonus = 0.75
+				uses = 2
+				category = industry_late
 			}			
 		}
 	}
@@ -1917,7 +1141,7 @@
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 5
@@ -2041,10 +1265,10 @@
 				limit = {
 					has_state_flag = AST_department_of_supply_and_development_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2061,10 +1285,10 @@
 					}
 					NOT = { state = 674 }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_department_of_supply_and_development_AF
@@ -2236,7 +1460,7 @@
 		y = 4
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -2343,7 +1567,7 @@
 		x = 22
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -2366,7 +1590,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 80
 		}
 	}
 
@@ -2567,149 +1791,6 @@
 	}
 
 	focus = {
-		id = AST_rats_of_tobruk
-		icon = GFX_focus_AST_rats_tobruk
-		prerequisite = { focus = AST_volunteer_defence_corps }
-		prerequisite = { focus = AST_strengthen_ties_with_uk }
-		x = 4
-		y = 2
-		relative_position_id = AST_establish_advisory_war_council
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			#Requires UK at war in Africa
-			any_country = {
-				has_war_with = ENG
-				any_state = {
-					is_controlled_by = PREV
-					is_on_continent = africa
-				}
-			}
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			#Starts with recon and engineers
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = tech_logistics_company
-					}
-					division_template = {
-						name = "Rats of Tobruk"
-						division_names_group = AST_INF_01
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-							infantry = { x = 3 y = 0 }
-							infantry = { x = 3 y = 1 }
-						}
-						support = {
-					        recon = { x = 0 y = 0 }
-					        engineer = { x = 0 y = 1 }
-					        logistics_company = { x = 0 y = 2 }
-						}
-					}
-					else = {
-						division_template = {
-							name = "Rats of Tobruk"
-							division_names_group = AST_INF_01
-							regiments = {
-								infantry = { x = 0 y = 0 }
-								infantry = { x = 0 y = 1 }
-								infantry = { x = 0 y = 2 }
-								infantry = { x = 1 y = 0 }
-								infantry = { x = 1 y = 1 }
-								infantry = { x = 1 y = 2 }
-								infantry = { x = 2 y = 0 }
-								infantry = { x = 2 y = 1 }
-								infantry = { x = 2 y = 2 }
-								infantry = { x = 3 y = 0 }
-								infantry = { x = 3 y = 1 }
-							}
-							support = {
-						        recon = { x = 0 y = 0 }
-						        engineer = { x = 0 y = 1 }
-							}
-						}
-					}
-				}
-
-				#Spawn unit in Africa
-				if = {
-					limit = {
-						any_country = {
-							is_in_faction_with = AST
-							controls_state = 273
-						}
-						any_country = {
-							is_in_faction_with = AST
-							controls_state = 552
-						}
-					}
-					load_oob = "AST_TFV_rats_africa"					
-					else = {
-						if = {
-							limit = {
-								controls_state = 285
-							}
-							load_oob = "AST_TFV_rats_australia"
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						is_in_faction_with = AST
-						controls_state = 273
-					}
-					any_country = {
-						is_in_faction_with = AST
-						controls_state = 552
-					}
-				}
-				custom_effect_tooltip = AST_rats_of_tobruk_effect_1
-				else = {
-					if = {
-						limit = {
-							controls_state = 285
-						}
-					}
-					custom_effect_tooltip = AST_rats_of_tobruk_effect_2
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = AST_fight_work_or_perish
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = AST_civil_construction_corps }
@@ -2776,7 +1857,6 @@
 		}
 
 		available = {
-			is_subject = no
 			has_war = yes
 			is_in_faction = yes
 			OR = {
@@ -2873,6 +1953,12 @@
 			}
 			518 = {
 				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+			518 = {
+				add_resource = {
 					type = oil
 					amount = 12
 				}
@@ -2884,6 +1970,12 @@
 				add_resource = {
 					type = aluminium
 					amount = 24
+				}
+			}
+			518 = {
+				add_resource = {
+					type = steel
+					amount = 16
 				}
 			}
 			518 = {
@@ -2981,7 +2073,7 @@
 		}
 
 		available = {
-			is_subject = no
+			
 		}
 		
 		bypass = {
@@ -3008,7 +2100,7 @@
 		x = 28
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3060,76 +2152,13 @@
 		}
 	}
 
-	focus = {
-		id = AST_strengthen_ties_with_uk
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		prerequisite = { focus = AST_support_the_policy_of_appeasement }
-		relative_position_id = AST_support_the_policy_of_appeasement
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				ENG = { NOT = { has_government = democratic } }
-				factor = 0
-			}
-		}
-
-		available = {
-			is_subject_of = ENG
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			OR = {
-				ENG = { has_idea = ENG_george_vi }
-				ENG = { has_country_flag = edward_viii_married_wallis_simpson }
-			}
-		}
-		
-		bypass = {
-			NOT = {
-				OR = {
-					is_subject_of = ENG
-					is_in_faction_with = ENG
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			if = { 
-				limit = {
-					ENG = { has_idea = ENG_george_vi }
-					}
-					country_event = { id = tfv_australia.90 }
-					}
-			if = { 
-				limit = {
-					ENG = { has_country_flag = edward_viii_married_wallis_simpson } 
-					}
-					country_event = { id = tfv_australia.92 } 
-				}
-			}
-		}
-
 
 	focus = {
 		id = AST_adopt_westminster
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = AST_strengthen_ties_with_uk }
+		prerequisite = { focus = AST_support_the_policy_of_appeasement }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = AST_support_the_policy_of_appeasement
 
 		cost = 10
@@ -3173,7 +2202,7 @@
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = AST_adopt_westminster }
 		x = -1
-		y = 3
+		y = 2
 		relative_position_id = AST_support_the_policy_of_appeasement
 
 		cost = 10
@@ -3217,7 +2246,7 @@
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = AST_adopt_westminster }
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = AST_support_the_policy_of_appeasement
 
 		cost = 10
@@ -3259,7 +2288,7 @@
 			336 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 
@@ -3354,82 +2383,6 @@
 					instant_build = yes
 				}
 			}
-		}
-	}
-
-	focus = {
-		id = AST_empire_air_training_scheme
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
-		x = -1
-		y = 4
-		relative_position_id = AST_support_the_policy_of_appeasement
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			add_ideas = AST_empire_air_training_scheme
-		}
-	}
-
-	focus = {
-		id = AST_commonwealth_aircraft_corporation
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
-		x = 1
-		y = 4
-		relative_position_id = AST_support_the_policy_of_appeasement
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = AST_commonwealth_aircraft_corporation
 		}
 	}
 

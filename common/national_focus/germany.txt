@@ -2679,19 +2679,25 @@ focus_tree = {
 		
 		completion_reward = {
 			
-				declare_war_on = {
+			declare_war_on = {
 				target = SOV 
 				type = annex_everything
 			}
+			
 			if = { limit = { country_exists = HUN }	HUN = { add_to_war = { targeted_alliance = GER enemy = SOV } } }
 			if = { limit = { country_exists = BUL }	BUL = { add_to_war = { targeted_alliance = GER enemy = SOV } } }
 			if = { limit = { country_exists = ROM }	ROM = { add_to_war = { targeted_alliance = GER enemy = SOV } } }
-				GER = {add_timed_idea={ idea = GER_barbarossa days = 120}}
- 				ROM = {add_timed_idea={ idea = GER_barbarossa days = 120}}
- 				HUN = {add_timed_idea={ idea = GER_barbarossa days = 120}}
- 				BUL = {add_timed_idea={ idea = GER_barbarossa days = 120}}
- 				SPR = {add_timed_idea={ idea = GER_barbarossa days = 120}}
-				
+
+			GER = {add_timed_idea={ idea = GER_barbarossa days = 120}}
+			custom_effect_tooltip = "This idea will be added to our allies fighting the soviets"
+
+ 			hidden_effect = {
+				ROM = {add_timed_idea={ idea = GER_barbarossa days = 120}}
+				HUN = {add_timed_idea={ idea = GER_barbarossa days = 120}}
+				BUL = {add_timed_idea={ idea = GER_barbarossa days = 120}}
+				SPR = {add_timed_idea={ idea = GER_barbarossa days = 120}}
+			}
+
 			add_ideas = { GER_winterdebuff }
 
 		hidden_effect = {
@@ -3598,6 +3604,7 @@ focus_tree = {
 					original_tag = POL
 				}
 			}
+			is_ai = no
 		}
 
 		bypass = {
@@ -4729,11 +4736,14 @@ focus_tree = {
  		}
  		available_if_capitulated = no
  		completion_reward = {
- 			add_timed_idea={ idea = GER_barbarossa_2 days = 30}
- 			ROM = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
- 			HUN = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
- 			BUL = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
- 			SPR = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+ 			add_timed_idea={ idea = GER_barbarossa_2 days = 45}
+			custom_effect_tooltip = "This idea will be added to our allies fighting the soviets"
+ 			hidden_effect = {
+				ROM = {add_timed_idea={ idea = GER_barbarossa_2 days = 45}}
+				HUN = {add_timed_idea={ idea = GER_barbarossa_2 days = 45}}
+				BUL = {add_timed_idea={ idea = GER_barbarossa_2 days = 45}}
+				SPR = {add_timed_idea={ idea = GER_barbarossa_2 days = 45}}
+			}
  		}
  	}
  	focus = {
@@ -4755,10 +4765,13 @@ focus_tree = {
  		available_if_capitulated = no
  		completion_reward = {
  			add_timed_idea={ idea = GER_barbarossa_3 days = 60}
- 				ROM = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
- 				HUN = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
- 				BUL = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
- 				SPR = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
+			custom_effect_tooltip = "This idea will be added to our allies fighting the soviets"
+ 			hidden_effect = {
+				ROM = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
+				HUN = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
+				BUL = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
+				SPR = {add_timed_idea={ idea = GER_barbarossa_3 days = 60}}
+			}
  		}
  	}
 	
@@ -4784,6 +4797,8 @@ focus_tree = {
  			GER = {
  				add_timed_idea = { idea = GER_blau days = 120 }
  			}  
+			custom_effect_tooltip = "This idea will be added to our allies fighting the soviets"
+			hidden_effect = {
 			    ROM = {
  					add_timed_idea = { idea = GER_blau_minor days = 120 }
  				}
@@ -4799,7 +4814,7 @@ focus_tree = {
  				SPR = {
  					add_timed_idea = { idea = GER_blau_minor days = 120 }
  				}
- 			
+			}
  		}
  	}
  	focus = {

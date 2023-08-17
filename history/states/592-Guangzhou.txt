@@ -5,8 +5,8 @@ state={
 	state_category = city
 	resources={
 		tungsten=8 # was: 10
-		steel= 15 # was: 20
-		chromium = 3 # was: 4
+		steel= 28 # was: 20
+		chromium = 12 # was: 4
 	}
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
