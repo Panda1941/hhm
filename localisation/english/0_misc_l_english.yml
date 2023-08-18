@@ -831,22 +831,31 @@
  ENG_compass:0 "Operation Compass"
  ENG_crusader:0 "Operation Crusader"
  ENG_lose_in_africa:0 "Crushed in Alamein"
+ ENG_lose_in_africa2:0 "Crushed in Cairo"
+ ENG_lose_in_africa3:0 "Crushed in Suez"
  ENG_market_garden:0 "Operation Market Garden"
  ENG_compass_focus:0 "Compass"
  ENG_crusader_focus:0 "Crusader"
  ENG_market_garden_focus:0 "Market Garden"
- ENG_lose_in_africa_focus:0 "Defeat in Alamein"
  
- ITA_desert_fox_defense:0 "Hold the line"
- ITA_desert_fox_attack:0 " Go on the offense"
- ITA_desert_fox_defense_desc:0 "Hold the line"
- ITA_desert_fox_attack_desc:0 " Go on the offense"
- ITA_desert_fox_defense_idea:0 "Empty barrels"
- ITA_desert_fox_attack_idea:0 "Full barrels"
+ 
+ ITA_desert_fox_defense:0 "Royal Nany Unrivaled"
+ ITA_desert_fox_attack:0 " Royal Navy Challanged"
+ ITA_desert_fox_defense_desc:0 "Royal Nany Unrivaled"
+ ITA_desert_fox_attack_desc:0 " Royal Navy Challanged"
+ ITA_desert_fox_defense_idea:0 "Royal Nany Unrivaled"
+ ITA_desert_fox_attack_idea:0 "Royal Navy Challanged"
  ITA_german_help_needed:0 "Screams in sand"
  ITA_german_help_needed_desc:0 "Screams in sand"
  
  Fuel_the_atlantik_construction:0 "Atlantikwall construction"
+ ITA_take_malta:0 "Malta Secured"
+ ITA_take_cyprus:0 "Cyprus Secured"
+ ITA_take_alexandria:0 "Alexandria Secured"
+ ITA_take_cairo:0 "Cairo Secured"
+ ITA_take_suez:0 "Suez Secured"
+ ITA_take_gibraltar:0 "Gibraltar Secured"
  
+ ENG_torch:0 "Operation Torch"
 
 

@@ -439,7 +439,7 @@ ideas = {
 		########################################################################ITALY MODIFIERS
 		
 		desert_fox_attack_idea = {
-			picture = chi_incompetent_officers
+			picture = generic_navy_bonus
 			allowed = {
 				original_tag = ITA
 			}
@@ -450,7 +450,7 @@ ideas = {
 			}
 		}
 		desert_fox_defense_idea = {
-			picture = chi_incompetent_officers
+			picture = generic_navy_bonus
 			allowed = {
 				original_tag = ITA
 			}
@@ -458,6 +458,79 @@ ideas = {
 			modifier = {
 				army_infantry_defence_factor = 0.1
 				army_morale_factor = 0.1
+			}
+		}
+		ITA_take_malta = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				air_cas_present_factor = 0.05
+				supply_node_range = 0.05
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+		ITA_take_cyprus = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				air_cas_present_factor = 0.05
+				supply_node_range = 0.05
+
+			}
+		}
+		ITA_take_alexandria = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.05
+				army_core_defence_factor = 0.02
+				army_core_attack_factor = 0.02
+			}
+		}
+		ITA_take_cairo = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.05
+				army_core_defence_factor = 0.02
+				army_core_attack_factor = 0.02
+			}
+		}
+		ITA_take_suez = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.05
+				army_core_defence_factor = 0.02
+				army_core_attack_factor = 0.02
+			}
+		}
+		ITA_take_gibraltar = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.15
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
 			}
 		}
 		
@@ -472,6 +545,8 @@ ideas = {
 			modifier = {
 				army_org_factor = 0.1
 				army_morale_factor = 0.1
+				army_speed_factor = 0.05
+				army_attack_speed_factor = -0.1
 			}
 		}
 		ENG_crusader = {
@@ -506,7 +581,48 @@ ideas = {
 			
 			picture = HUN_treaty_of_triannon
 			modifier = {
-				production_factory_max_efficiency_factor = -0.15
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		ENG_lose_in_africa2 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		ENG_lose_in_africa3 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		ENG_torch = {
+			picture = YUG_federal_defense_council
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				supply_consumption_factor = -0.1
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
+				land_reinforce_rate = 0.05
 			}
 		}
 		USA_overlord = {
@@ -518,13 +634,14 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			targeted_modifier = { tag = JAP attack_bonus_against = -0.2 defense_bonus_against = -0.2 }
+			
 			modifier = {
-				army_org_factor = 0.1
-				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
 				supply_consumption_factor = -0.1
-				special_forces_attack_factor = 0.1
-				special_forces_defence_factor = 0.1
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
+				land_reinforce_rate = 0.05
 			}
 		}
 		USA_island_hopping = {

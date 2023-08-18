@@ -3913,6 +3913,27 @@ spriteTypes = {
 		name = "GFX_focus_BF_109"
 		texturefile = "gfx/interface/goals/BF_109.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_Torch"
+		texturefile = "gfx/interface/goals/USA_american_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_desert_fox_attack"
+		texturefile = "gfx/interface/goals/ENG_burning.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_desert_fox_defense"
+		texturefile = "gfx/interface/goals/ENG_floating.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_german_help_needed"
+		texturefile = "gfx/interface/goals/MAF_Graveyard.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_WesternDesertBattle"
+		texturefile = "gfx/interface/goals/WesternDesertBattle.dds"
+	}
+	
 	
 	
 	
