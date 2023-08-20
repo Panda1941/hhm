@@ -127,7 +127,7 @@ ability = {
 		type = army_leader
 		
 		allowed = {
-			is_border_war = no
+			always = no
 		}
 		
 		cost = 0.12
