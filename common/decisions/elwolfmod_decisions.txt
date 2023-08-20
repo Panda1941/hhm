@@ -246,6 +246,57 @@ operations = {
 			}
 		}
 	}
+	ITA_joins_war = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			FRA = {surrender_progress > 0.95} 
+			}
+			
+		
+		complete_effect = {
+		ITA = {
+			declare_war_on = {
+				target = ENG 
+				type = annex_everything
+			}
+			}
+			if = { limit = { country_exists = ENG }	ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } } }
+		}
+	}
+	conquer_and_divide = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			FRA = {has_completed_focus = FRA_appeal_to_the_french_nation} 
+			}
+			
+		
+		complete_effect = {
+		ITA = { 
+				transfer_state = 32
+				transfer_state = 735
+				transfer_state = 851
+				transfer_state = 21
+				transfer_state = 458
+				transfer_state = 665
+			}
+		}
+	}
 	african_bonus_for_all = {
 		# icon = generic_operation
 		allowed = {
@@ -257,89 +308,88 @@ operations = {
 			factor = 100
 		}
 		available = {
-			OR = {
-				NOT = { 16 = { is_controlled_by = FRA } }
-				date > 1940.01.01
-			}
+			
+				ITA = { has_war_with = ENG }
+			
 		}
 		complete_effect = {
 			ENG = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			FRA = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			CAN = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			SAF = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			RAJ = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			AST = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			NZL = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 
 			GER = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			ITA = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			ROM = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			HUN = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			SPR = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 			BUL = {
 				add_timed_idea = {
 					idea = africa_bonus
-					days = 220
+					days = 240
 				}
 			}
 		}

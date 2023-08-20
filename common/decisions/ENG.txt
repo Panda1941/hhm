@@ -8984,12 +8984,7 @@ operations = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
-			IRE = { exists = yes }
-			NOT = { is_in_faction_with = IRE }
-			NOR = { has_capitulated = yes }
-			is_in_faction_with = NOR
-			FRA = { has_capitulated = yes }
-			is_in_faction_with = FRA
+			
 		}
 
 		cost = 50
@@ -9021,11 +9016,18 @@ operations = {
 		}
 		
 		complete_effect = {
-			add_state_claim = 113
-			add_state_claim = 134
-			add_state_claim = 135
-			declare_war_on = { target = IRE type = annex_everything }
-			add_popularity = { ideology = democratic popularity = -0.03 }
+		annex_country = {
+					target = IRE
+					transfer_troops = no
+				}
+			every_state = {
+				limit = {
+					is_core_of = IRE
+					is_controlled_by = ENG
+				}
+				add_compliance = 100
+			}
+			
 		}
 	}
 

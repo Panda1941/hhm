@@ -134,9 +134,7 @@
 		}
 
 		available = {
-			POL = {
-				exists = no
-			}
+			
 			573 = {
 				is_owned_and_controlled_by = SOV
 			}
@@ -520,7 +518,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_extra_tech_slot_early
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -716,7 +714,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_workers_culture
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -788,7 +786,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_progress_cult
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1837,7 +1835,7 @@
 		x = -2
 		y = 1
 		relative_position_id = SOV_great_purge
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1894,7 +1892,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_great_purge
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {

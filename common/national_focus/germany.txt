@@ -4962,8 +4962,6 @@ focus_tree = {
 		has_equipment = { infantry_equipment > 2999 }
 		has_equipment = { support_equipment > 299 }
 		has_equipment = { anti_air_equipment > 299 }
-		has_equipment = { artillery_equipment > 99 }
-		has_equipment = { anti_tank_equipment > 99 }
  		}
  		x = 0
  		y = 1
@@ -4978,12 +4976,10 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = -30
-				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = -900
-				producer = GER
 			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
@@ -5002,12 +4998,10 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
 					amount = 30
-					producer = GER
 				}
 				add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = 900
-				producer = GER
 			}
 			add_manpower = -3000
 			add_equipment_to_stockpile = {
@@ -5021,14 +5015,6 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment
 				amount = -300
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment
-				amount = -100
-			}
-			add_equipment_to_stockpile = {
-				type = anti_tank_equipment
-				amount = -100
 			}
 				remove_ideas = Fuel_the_atlantik_construction
 			}
@@ -5146,8 +5132,6 @@ add_building_construction = {
 		has_equipment = { infantry_equipment > 2999 }
 		has_equipment = { support_equipment > 299 }
 		has_equipment = { anti_air_equipment > 299 }
-		has_equipment = { artillery_equipment > 99 }
-		has_equipment = { anti_tank_equipment > 99 }
  		}
  		x = -2
  		y = 1
@@ -5162,12 +5146,10 @@ add_building_construction = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = -30
-				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = -900
-				producer = GER
 			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
@@ -5181,12 +5163,10 @@ add_building_construction = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
 					amount = 30
-					producer = GER
 				}
 				add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = 900
-				producer = GER
 			}
 			add_manpower = -3000
 			add_equipment_to_stockpile = {
@@ -5200,14 +5180,6 @@ add_building_construction = {
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment
 				amount = -300
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment
-				amount = -100
-			}
-			add_equipment_to_stockpile = {
-				type = anti_tank_equipment
-				amount = -100
 			}
 				remove_ideas = Fuel_the_atlantik_construction
 			}
@@ -5324,8 +5296,6 @@ add_building_construction = {
 		has_equipment = { infantry_equipment > 5999 }
 		has_equipment = { support_equipment > 599 }
 		has_equipment = { anti_air_equipment > 599 }
-		has_equipment = { artillery_equipment > 199 }
-		has_equipment = { anti_tank_equipment > 199 }
  		}
  		x = -4
  		y = 1
@@ -5340,12 +5310,10 @@ add_building_construction = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = -60
-				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = -1800
-				producer = GER
 			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
@@ -5359,12 +5327,10 @@ add_building_construction = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
 					amount = 60
-					producer = GER
 				}
 				add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = 1800
-				producer = GER
 			}
 			add_manpower = -6000
 			add_equipment_to_stockpile = {
@@ -5378,14 +5344,6 @@ add_building_construction = {
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment
 				amount = -600
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment
-				amount = -200
-			}
-			add_equipment_to_stockpile = {
-				type = anti_tank_equipment
-				amount = -200
 			}
 				remove_ideas = Fuel_the_atlantik_construction
 			}
@@ -5582,8 +5540,6 @@ add_building_construction = {
 		has_equipment = { infantry_equipment > 2999 }
 		has_equipment = { support_equipment > 299 }
 		has_equipment = { anti_air_equipment > 299 }
-		has_equipment = { artillery_equipment > 99 }
-		has_equipment = { anti_tank_equipment > 99 }
  		}
  		x = -3
  		y = 2
@@ -5598,12 +5554,10 @@ add_building_construction = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = -30
-				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = -1200
-				producer = GER
 			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
@@ -5619,12 +5573,10 @@ add_building_construction = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
 					amount = 30
-					producer = GER
 				}
 				add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = 1200
-				producer = GER
 			}
 			add_manpower = -3000
 			add_equipment_to_stockpile = {
@@ -5638,14 +5590,6 @@ add_building_construction = {
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment
 				amount = -300
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment
-				amount = -100
-			}
-			add_equipment_to_stockpile = {
-				type = anti_tank_equipment
-				amount = -100
 			}
 				remove_ideas = Fuel_the_atlantik_construction
 			}
@@ -5788,8 +5732,6 @@ add_building_construction = {
 		has_equipment = { infantry_equipment > 2999 }
 		has_equipment = { support_equipment > 299 }
 		has_equipment = { anti_air_equipment > 299 }
-		has_equipment = { artillery_equipment > 99 }
-		has_equipment = { anti_tank_equipment > 99 }
  		}
  		x = -1
  		y = 2
@@ -5804,12 +5746,10 @@ add_building_construction = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = -30
-				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = -900
-				producer = GER
 			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
@@ -5823,12 +5763,10 @@ add_building_construction = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
 					amount = 30
-					producer = GER
 				}
 				add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = 900
-				producer = GER
 			}
 			add_manpower = -3000
 			add_equipment_to_stockpile = {
@@ -5842,14 +5780,6 @@ add_building_construction = {
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment
 				amount = -300
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment
-				amount = -100
-			}
-			add_equipment_to_stockpile = {
-				type = anti_tank_equipment
-				amount = -100
 			}
 				remove_ideas = Fuel_the_atlantik_construction
 			}
@@ -5964,46 +5894,18 @@ add_building_construction = {
 		y = 1
 		relative_position_id = GER_air_innovation_2
 		cost = 10
-		available = { FRA = { has_capitulated = yes }
-		has_manpower > 6000
-		has_equipment = { train_equipment > 99 }
-		has_equipment = { support_equipment > 999 }
-		has_equipment = { anti_air_equipment > 1999 }
+		available = { NOT = { FRA ={ controls_state = 16 }}
+		
 		}
 	
 		available_if_capitulated = yes
 		
-		select_effect = {
-			add_equipment_to_stockpile = {
-				type = train_equipment
-				amount = -100
-				producer = GER
-			}
-			
-		}
+		
 
 		completion_reward = {
 			add_stability = 0.05
 			
-			hidden_effect = {
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 100
-					producer = GER
-				}
-			add_manpower = -6000
 			
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -1000
-			}
-			add_equipment_to_stockpile = {
-				type = anti_air_equipment
-				amount = -2000
-			}
-			
-				
-			}
 			if =  { limit = { 
 			NOT = { has_completed_focus = GER_atlantikwall } }
 			every_owned_state = { 
@@ -6127,7 +6029,7 @@ add_building_construction = {
 
  		x = -6
  		y = 1
- 		cost = 13
+ 		cost = 10
  		ai_will_do = {
  			factor = 10
  		}

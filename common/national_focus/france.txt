@@ -649,6 +649,9 @@ if = {
 		x = 19
 		y = 4
 		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
 		available = {
 			16 = { 
 				NOT = { is_controlled_by = ROOT }
@@ -663,10 +666,7 @@ if = {
 				amount = 5000
 			}
     	
-			ITA = { 
-				transfer_state = 665
-				transfer_state = 458
-			}
+			
 			GER = { 
 				transfer_state = 513
 				transfer_state = 460

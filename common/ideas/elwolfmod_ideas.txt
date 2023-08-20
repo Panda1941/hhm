@@ -44,17 +44,13 @@ ideas = {
 				army_strength_factor = 0.75
 				supply_consumption_factor = -0.05
 				army_org_regain = 0.1
-				supply_node_range = 0.25
+				supply_node_range = 0.15
 			}
 			modifier = {
 				air_attack_factor =-0.5
 			
 			}
 			equipment_bonus = {
-				medium_plane_airframe = {
-					instant = yes
-					air_defence = -0.5
-				}
 				large_plane_airframe = {
 					instant = yes
 					air_defence = -0.5
