@@ -10,7 +10,7 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5                          -- Defau
 
 -- QOL
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                           -- Up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
-NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.22, 0.14, 0.05, 0.0 }
+NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.20, 0.14, 0.05, 0.0 }
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 720
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 							    -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
