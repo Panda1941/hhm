@@ -65,7 +65,7 @@ NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1							-- Max number of mines that c
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0						-- Value used to overall balance of the speed of planting naval mines
 
 -- Army Balance
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5
 
 NDefines.NMilitary.TRAINING_ATTRITION = 0  -- vanilla 0.06
 NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 72							-- base hours needed to prepare an invasion
@@ -395,5 +395,6 @@ NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 6.0 	-- how much additional flow a rai
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
 NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 100.0     --How many trucks does it cost to fully motorize a hub
 
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2;
 
 -------------------------------------------------------------------------------------------
