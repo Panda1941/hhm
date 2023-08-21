@@ -200,6 +200,7 @@ ideas = {
 			picture = generic_morale_bonus
 			
 			modifier = {
+				army_org_factor = 0.05
 				land_reinforce_rate = 0.025
 				army_morale_factor = 0.10
 			}
@@ -735,7 +736,7 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.025
+				industrial_capacity_factory = 0.05
 			}
 		}
 
@@ -764,7 +765,7 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.025
+				industrial_capacity_factory = 0.05
 			}
 		}
 
@@ -898,6 +899,194 @@ ideas = {
 				winter_attrition_factor = -0.15
 				out_of_supply_factor = -0.1
 				supply_node_range = 0.1
+			}
+		}
+
+
+
+
+
+
+
+
+
+		SOV_defense_industry_artillery_bonus = {
+			name = "Soviet Artillery"
+
+			picture = generic_artillery_regiments
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				original_tag = SOV #Every SOV has this
+			}
+
+			equipment_bonus = {
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				rocket_artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		SOV_pcdi_idea = {
+			name = "Peoples Commisariat of Industry"
+
+			picture = SOV_the_road_of_life
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				tag = SOV #Main SOV
+			}
+
+			modifier = {
+				line_change_production_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.05 
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05 
+			}
+		}
+		SOV_pcdi_idea2 = {
+			name = "Peoples Commisariat of Industry"
+
+			picture = SOV_the_road_of_life
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				tag = SOV #Main SOV
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+
+			modifier = {
+				line_change_production_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1 
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05 
+			}
+		}
+		SOV_adaptable_army = {
+			name = "An Adaptable Army"
+
+			picture = SOV_the_road_of_life
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				tag = SOV #Main SOV
+			}
+
+			modifier = {
+				heat_attrition_factor = -0.1
+				winter_attrition_factor = -0.1
+				acclimatization_cold_climate_gain_factor = 0.15
+				acclimatization_hot_climate_gain_factor = 0.15
+				terrain_penalty_reduction = 0.05
+			}
+		}
+		SOV_lessons_of_war = {
+			name = "Lessons of War"
+
+			picture = SOV_the_road_of_life
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				tag = SOV #Main SOV
+			}
+
+			modifier = {
+				army_org_factor = 0.05
+				experience_gain_army_factor = 0.1
+				experience_loss_factor = -0.25
+			}
+		}
+		SOV_barrier_troops = {
+			name = "Barrier Troops"
+
+			picture = SOV_the_road_of_life
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				tag = SOV #Main SOV
+			}
+
+			modifier = {
+				army_org_regain = 0.1
+			}
+		}
+		SOV_expert_camouflage = {
+			name = "Experts In Camouflage"
+
+			picture = SOV_the_road_of_life
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				tag = SOV #Main SOV
+			}
+
+			modifier = {
+				max_dig_in = 5
+				dig_in_speed_factor = 0.05
+				cas_damage_reduction = 0.05
+			}
+		}
+		SOV_glory_of_red_army = {
+			name = "Glorious Red Army"
+
+			picture = SOV_the_road_of_life
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				tag = SOV #Main SOV
+			}
+
+			modifier = {
+				land_doctrine_cost_factor = -0.1
 			}
 		}
 	}

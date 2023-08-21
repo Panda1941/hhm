@@ -9,6 +9,7 @@
 			tag = SOV
 		}
 	}
+	continuous_focus_position = { x = 100 y = 750 }
 	
 	default = no
 
@@ -626,7 +627,7 @@
 	focus = {
 		id = SOV_stalin_constitution
 		icon = GFX_goal_support_communism
-		x = 6
+		x = 5
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -645,10 +646,10 @@
 		id = SOV_collectivist_propaganda
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SOV_stalin_constitution }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = SOV_stalin_constitution
-		cost = 15
+		cost = 10
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -737,10 +738,10 @@
 		id = SOV_positive_heroism
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = SOV_stalin_constitution }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SOV_stalin_constitution
-		cost = 15
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -800,67 +801,11 @@
 	}
 
 	focus = {
-		id = SOV_t34
-		icon = GFX_focus_generic_tank_production
-		prerequisite = { focus = SOV_socialist_science }
-		mutually_exclusive = { focus = SOV_kv }
-		x = -1
-		y = 1
-		relative_position_id = SOV_socialist_science
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_t34
-				bonus = 1.0
-				uses = 1
-				category = cat_medium_armor
-			}
-
-			add_ideas = SOV_t34_programe
-		}
-	}
-
-	focus = {
-		id = SOV_kv
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = SOV_socialist_science }
-		mutually_exclusive = { focus = SOV_t34 }
-		x = 1
-		y = 1
-		relative_position_id = SOV_socialist_science
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_t34
-				bonus = 1.0
-				uses = 1
-				category = cat_heavy_armor
-			}
-
-			add_ideas = SOV_kv_programe
-		}
-	}
-
-	focus = {
 		id = SOV_socialist_realism
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SOV_stalin_constitution }
-		x = 0
-		y = 1
+		#prerequisite = { focus = SOV_stalin_constitution }
+		x = 4
+		y = 0
 		relative_position_id = SOV_stalin_constitution
 		cost = 10
 		ai_will_do = {
@@ -879,10 +824,10 @@
 		id = SOV_eastern_development
 
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = SOV_socialist_realism }
-		x = 0
+		prerequisite = { focus = SOV_finish_five_year_plan }
+		x = -3
 		y = 1
-		relative_position_id = SOV_socialist_realism
+		relative_position_id = SOV_finish_five_year_plan
 		cost = 5
 
 		bypass = {
@@ -1785,7 +1730,7 @@
 		}
 		x = 20
 		y = 0
-		cost = 30
+		cost = 20
 		ai_will_do = {
 			factor = 10
 		}
@@ -2061,6 +2006,7 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			add_ideas = SOV_lessons_of_war
 			army_experience = 20
 			add_tech_bonus = {
 				name = armor_bonus
@@ -2100,7 +2046,7 @@
 		available = {
 
 		}
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SOV_lessons_of_war
 		cost = 10
@@ -2297,6 +2243,328 @@
 		available_if_capitulated = yes
 		completion_reward = {
 			add_timed_idea= {idea= SOV_bagration days=100}
+		}
+	}
+
+
+
+	focus = {
+		id = SOV_found_the_pcdi
+		
+		prerequisite = { focus = SOV_socialist_realism}
+		icon = GFX_goal_generic_defence
+		x = 0
+		y = 1
+		relative_position_id = SOV_socialist_realism
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_ideas = SOV_pcdi_idea
+		}
+	}
+
+	focus = {
+		id = SOV_pc_of_mechanical_engineering
+
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = SOV_found_the_pcdi }
+		x = 0
+		y = 1
+		relative_position_id = SOV_found_the_pcdi
+		cost = 10
+
+		available = {
+			has_full_control_of_state = 219 #MOSCOW
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_pcdi_idea2
+				remove_idea = SOV_pcdi_idea
+			}
+			
+
+			if = { #DEFAULT COMMIE
+				limit = {
+					has_government = communism
+				}
+				add_tech_bonus = {
+					name = SOV_pc_of_mechanical_engineering_name_default
+					bonus = 1
+					uses = 2
+					category = motorized_equipment
+					category = infantry_weapons
+				}
+			}
+			
+			219 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_superior_war_machines
+
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = SOV_pc_of_mechanical_engineering }
+		x = -1
+		y = 1
+		relative_position_id = SOV_pc_of_mechanical_engineering
+		cost = 10
+
+		available = {
+			
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_superior_war_machines
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_t34
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = SOV_superior_war_machines }
+		mutually_exclusive = { focus = SOV_kv }
+		x = -1
+		y = 1
+		relative_position_id = SOV_superior_war_machines
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_t34
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
+			}
+
+			add_ideas = SOV_t34_programe
+		}
+	}
+
+	focus = {
+		id = SOV_kv
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = SOV_superior_war_machines }
+		mutually_exclusive = { focus = SOV_t34 }
+		x = 1
+		y = 1
+		relative_position_id = SOV_superior_war_machines
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_t34
+				bonus = 1.0
+				uses = 1
+				category = cat_heavy_armor
+			}
+
+			add_ideas = SOV_kv_programe
+		}
+	}
+
+	focus = {
+		id = SOV_the_means_to_wage_war
+
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SOV_pc_of_mechanical_engineering }
+		x = 1
+		y = 1
+		relative_position_id = SOV_pc_of_mechanical_engineering
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_the_means_to_wage_war
+				bonus = 0.75
+				uses = 3
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_soviet_artillery
+
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = SOV_superior_war_machines focus = SOV_the_means_to_wage_war }
+		x = 2
+		y = 2
+		relative_position_id = SOV_pc_of_mechanical_engineering
+		cost = 10
+
+		available = {
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_tech_bonus = {
+					name = SOV_soviet_artillery_tech_bonus_name_default
+					bonus = 0.75
+					uses = 2
+					ahead_reduction = 2
+					category = artillery
+				}
+			}
+			
+			572 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			add_ideas = SOV_defense_industry_artillery_bonus
+		}
+	}
+
+	focus = {
+		id = SOV_barrier_troops
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = SOV_lessons_of_war }
+		x = 0
+		y = 1
+		relative_position_id = SOV_lessons_of_war
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = SOV_barrier_troops
+		}
+	}
+
+	focus = {
+		id = SOV_an_adaptable_army
+		icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = SOV_barrier_troops }
+		x = 0
+		y = 1
+		relative_position_id = SOV_barrier_troops
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = SOV_adaptable_army
+		}
+	}
+
+	focus = {
+		id = SOV_experts_in_camouflage
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = SOV_an_adaptable_army }
+		x = 0
+		y = 1
+		relative_position_id = SOV_an_adaptable_army
+		cost = 5
+
+		available = {
+
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = SOV_expert_camouflage
+		}
+	}
+
+	focus = {
+		id = SOV_the_glory_of_the_red_army
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = { focus = SOV_experts_in_camouflage }
+		x = 0
+		y = 1
+		relative_position_id = SOV_experts_in_camouflage
+		cost = 10
+
+		allow_branch = {
+			NOT = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			surrender_progress < 0.05
+		}
+		
+		search_filters = {FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			add_ideas = SOV_glory_of_red_army
+
+			army_experience = 75
+
+			#New
+			hidden_effect = {
+				set_technology = { masterful_blitz = 1 popup = no }
+			}
+			custom_effect_tooltip = SOV_the_glory_of_the_red_army_masterful_blitz_tactic_tt
 		}
 	}
 

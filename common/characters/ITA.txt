@@ -2429,12 +2429,10 @@ characters = {
 			}
 			available = {
 				has_government = fascism
-				NOT = { has_completed_focus = ITA_pact_of_steel }
 				if = {
 					limit = {
 						has_dlc = "By Blood Alone"
 					}
-					NOT = { has_completed_focus = ITA_revoke_the_acerbo_law }
 				}
 			}
 			traits = {

@@ -3743,9 +3743,7 @@ characters={
 			}
 
 			available = {
-				NOT = {
-					has_completed_focus = SPA_banish_the_party_leaders
-				}
+				
 			}
 			traits = {
 				falangist_syndicalist 
