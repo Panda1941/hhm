@@ -715,7 +715,7 @@ ideas = {
 		SOV_t34_programe = { 
 			removal_cost = -1
 			
-			picture = generic_communism_drift_bonus
+			picture = generic_acquire_tanks
 
 			allowed = {
 				always = no # Added via focus
@@ -729,7 +729,7 @@ ideas = {
 				medium_armor = {
 					instant = yes
 
-					build_cost_ic = -0.075
+					build_cost_ic = -0.1
 
 					reliability = -0.1
 				}
@@ -743,7 +743,7 @@ ideas = {
 		SOV_kv_programe = { 
 			removal_cost = -1
 			
-			picture = generic_communism_drift_bonus
+			picture = man_five_year_plan_tank
 
 			allowed = {
 				always = no # Added via focus
@@ -756,6 +756,8 @@ ideas = {
 			equipment_bonus = {
 				heavy_armor = {
 					instant = yes
+					
+					build_cost_ic = -0.04
 
 					hardness = 0.05
 					armor_value = 0.1
@@ -939,7 +941,7 @@ ideas = {
 		SOV_pcdi_idea = {
 			name = "Peoples Commisariat of Industry"
 
-			picture = SOV_the_road_of_life
+			picture = SOV_organize_wreckers
 
 			removal_cost = -1
 
@@ -961,7 +963,7 @@ ideas = {
 		SOV_pcdi_idea2 = {
 			name = "Peoples Commisariat of Industry"
 
-			picture = SOV_the_road_of_life
+			picture = SOV_organize_wreckers
 
 			removal_cost = -1
 
@@ -989,7 +991,7 @@ ideas = {
 		SOV_adaptable_army = {
 			name = "An Adaptable Army"
 
-			picture = SOV_the_road_of_life
+			picture = generic_communist_army
 
 			removal_cost = -1
 
@@ -1012,7 +1014,7 @@ ideas = {
 		SOV_lessons_of_war = {
 			name = "Lessons of War"
 
-			picture = SOV_the_road_of_life
+			picture = SOV_war_heroes
 
 			removal_cost = -1
 
@@ -1033,7 +1035,7 @@ ideas = {
 		SOV_barrier_troops = {
 			name = "Barrier Troops"
 
-			picture = SOV_the_road_of_life
+			picture = MEX_revolutionary_army
 
 			removal_cost = -1
 
@@ -1052,7 +1054,7 @@ ideas = {
 		SOV_expert_camouflage = {
 			name = "Experts In Camouflage"
 
-			picture = SOV_the_road_of_life
+			picture = hol_expand_the_colonial_army
 
 			removal_cost = -1
 
@@ -1073,7 +1075,7 @@ ideas = {
 		SOV_glory_of_red_army = {
 			name = "Glorious Red Army"
 
-			picture = SOV_the_road_of_life
+			picture = SOV_transformation_of_nature
 
 			removal_cost = -1
 

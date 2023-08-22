@@ -56,11 +56,8 @@ technologies = {
 		
 		category_all_infantry = {
 			max_organisation = 15
-		}
-		category_all_infantry = {
 			soft_attack = 0.05
-		}	
-		
+		}
 		
 		enable_tactic = tactic_delay
 		
@@ -440,9 +437,6 @@ technologies = {
 		coordination_bonus = 0.03
 		category_tanks = {
 			max_organisation = 2
-		}
-		
-		category_tanks = {
 			breakthrough = 0.15
 		}
 
@@ -504,15 +498,13 @@ technologies = {
 
 		category_all_armor = {
 			default_morale = 0.1
+			maximum_speed = 0.05
 		}
 		armored_car = {
 			default_morale = 0.1
 			max_organisation = 7
 		}
 		
-		category_all_armor = {
-			maximum_speed = 0.05
-		}
 		air_cas_present_factor = 0.05
 		army_bonus_air_superiority_factor = 0.20
 
@@ -584,11 +576,8 @@ technologies = {
 		planning_speed = 0.1
 		
 		category_support_battalions = {
-			max_organisation = 1
+			max_organisation = 2
 			soft_attack = 0.05
-		}
-		category_support_battalions = {
-			max_organisation = 1
 			hard_attack = 0.05
 		}
 		
