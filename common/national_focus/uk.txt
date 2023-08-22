@@ -1205,9 +1205,6 @@ focus_tree = {
 		prerequisite = {
 			focus = air_rearmament_focus
 		}
-		prerequisite = {
-			focus = naval_rearmament_focus
-		}
 		available = {
 		}
 		continue_if_invalid = yes
@@ -1440,13 +1437,13 @@ focus_tree = {
 	focus = {
 		id = naval_rearmament_focus
 		prerequisite = {
-			focus = general_rearmament_focus
+			#focus = general_rearmament_focus
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 2
-		y = 1
+		x = 4
+		y = -1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -1537,50 +1534,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ENG_anti_non_contact_committee
-		prerequisite = {
-			focus = naval_rearmament_focus
-		}
-		icon = GFX_goal_generic_occupy_states_coastal
-		x = 2
-		y = 1
-		relative_position_id = naval_rearmament_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-		available_if_capitulated = yes
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = ENG_anti_non_contact_committee
-				bonus = 1
-				uses = 1
-				category = naval_minelaying
-			}
-			add_tech_bonus = {
-				name = ENG_anti_non_contact_committee
-				bonus = 1
-				uses = 2
-				category = naval_minesweeping
-			}
-		}
-	}
-	focus = {
 		id = ENG_secure_the_imperial_shipping_routes
 		prerequisite = {
 			focus = naval_rearmament_focus
 		}
-		prerequisite = {
-			focus = uk_service_focus
-		}
 		icon = GFX_focus_generic_cruiser2
-		x = 4
+		x = 2
 		y = 1
 		offset = {
 			x = -1
@@ -1603,8 +1562,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_secure_the_imperial_shipping_routes
-				bonus = 1
-				uses = 2
+				bonus = 0.75
+				uses = 1
 				category = cl_tech
 			}
 			add_ideas = ENG_secure_the_imperial_shipping_routes
@@ -1630,8 +1589,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 1
-				uses = 2
+				bonus = 1.25
+				uses = 1
 				category = dd_tech
 			}
 		}
@@ -1645,7 +1604,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_destroyer_focus
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -1675,7 +1634,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_destroyer_focus
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -1702,7 +1661,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = uk_convoy_focus
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -1729,7 +1688,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -1741,7 +1700,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = uk_waves_focus
 				cost_reduction = 0.5
-				uses = 3
+				uses = 2
 				category = naval_doctrine
 			}
 		}
@@ -1770,8 +1729,8 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = uk_carrier_focus
-				bonus = 1
-				uses = 2
+				bonus = 1.5
+				uses = 1
 				category = cv_tech
 			}
 		}
@@ -1800,8 +1759,8 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = uk_battleship_focus
-				bonus = 1
-				uses = 2
+				bonus = 1.5
+				uses = 1
 				category = bb_tech
 			}
 		}
@@ -1832,8 +1791,8 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = uk_amphibious_focus
-				bonus = 1
-				uses = 2
+				bonus = 3
+				uses = 1
 				category = tp_tech
 			}
 		}
@@ -1888,6 +1847,24 @@ focus_tree = {
 				}
 				set_state_flag = ENG_expand_the_repair_yards_2dockyard
 			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_expand_the_repair_yards_2dockyard
+			}
 			add_ideas = ENG_expand_the_repair_yards
 		}
 	}
@@ -1908,7 +1885,7 @@ focus_tree = {
 			has_dlc = "Man the Guns"
 		}
 		available = {
-			date > 1944.1.1
+			date > 1943.1.1
 			has_tech = advanced_ship_hull_heavy
 			has_full_control_of_state = 133
 			#has_tech = improved_heavy_battery
