@@ -52,9 +52,9 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = BUL_acquire_modern_tools
-				bonus = 1.0
-				uses = 1
-				category = industry
+				bonus = 0.75
+				uses = 2
+				category = industry_late
 			}
 		}
 	}
@@ -482,10 +482,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = BUL_mineral_extraction_in_the_rhodopes
-				ahead_reduction = 2
-			    bonus = 1.0
+			    bonus = 0.75
 			    uses = 1
-			    category = industry
+			    category = industry_late
 			}
 			48 = {
 				add_resource = {
@@ -524,9 +523,10 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = BUL_mineral_extraction_in_the_rhodopes
-			    bonus = 1.0
+			    bonus = 0.75
+				ahead_reduction = 2.5
 			    uses = 1
-			    category = industry
+			    category = industry_late
 			}
 		}
 	}
@@ -1174,7 +1174,7 @@ focus_tree = {
 			set_country_flag = BUL_freedom_of_press_flag
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.05
+				popularity = 0.1
 			}
 			add_political_power = 120
 			add_stability = 0.1
@@ -1257,7 +1257,7 @@ focus_tree = {
 	focus = {
 		id = BUL_found_the_brannik
 
-		prerequisite = { focus = BUL_promote_bulgarian_nationalism }
+		prerequisite = { focus = BUL_illusions_of_a_non_partisan_system }
 
 		icon = GFX_focus_BUL_found_the_brannik
 		relative_position_id = BUL_promote_bulgarian_nationalism
@@ -1678,7 +1678,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-
+			num_of_factories > 15
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1698,7 +1698,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			num_of_factories > 20
+			num_of_factories > 30
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1721,7 +1721,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			num_of_factories > 30
+			num_of_factories > 45
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS}

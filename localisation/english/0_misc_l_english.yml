@@ -21,7 +21,9 @@
  GER_medium_tank_manufacturer:0 "Medium Tank Designer"
  GER_modular_tank_manufacturer:0 "Modular Tank Deisgner"
 
-
+ 
+ #BULGARIA
+ BUL_our_claims_tt:0 "We will take ownership of our neighbouring states, §Rhowever all resources and all factories will be given to Italy instead of us.§! §g(except Dobruja)§!" 
 
  #SOVIETS
  SOV_finish_five_year_plan:0 "Finish the Five Year Plan"
