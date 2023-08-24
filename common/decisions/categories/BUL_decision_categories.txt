@@ -1,0 +1,60 @@
+################
+#### BULGARIA ####
+################
+
+BUL_rearmament = {
+	priority = 6
+
+	visible = { always = yes }
+
+	icon = ger_military_buildup
+
+	allowed = {
+		original_tag = BUL
+		has_dlc = "Battle for the Bosporus"
+	}
+}
+
+BUL_foreign_agreements = {
+	priority = 100
+
+	icon = generic_political_actions
+
+	picture = GFX_decision_cat_picture_gateway_to_europe
+
+	visible = { always = yes }
+	allowed = {
+		original_tag = BUL
+		has_dlc = "Battle for the Bosporus"
+	}
+}
+
+BUL_negotiate_claims_in_the_balkans = {
+	priority = 8
+
+	icon = generic_fascism
+
+	allowed = {
+		original_tag = BUL
+		has_dlc = "Battle for the Bosporus"
+	}
+}
+
+BUL_align_bulgaria = {
+	icon = generic_fascism
+
+	allowed = {
+		original_tag = GER
+		has_dlc = "Battle for the Bosporus"
+	}
+
+	visible = {
+		OR = {
+			BUL = { has_government = ROOT }
+			AND = {
+				BUL = { has_government = neutrality }
+				ROOT = { has_government = fascism }
+			}
+		}
+	}
+}
