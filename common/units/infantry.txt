@@ -270,7 +270,7 @@ sub_units = {
 		weight = 0.5
 		supply_consumption = 0.05
 
-		can_be_parachuted = yes
+		can_be_parachuted = no
 
 		
 		urban = {

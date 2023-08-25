@@ -38,7 +38,7 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_claims_in_baltic
+			has_completed_focus = SOV_baltic_security
 			is_subject = no
 		}
 
@@ -160,7 +160,7 @@ SOV_industry_relocation = {
 
 		cancel_if_not_visible = no
 
-		cost = 25
+		cost = 20
 
 		days_remove = 30
 
@@ -328,7 +328,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 20
 		days_remove = SOV_industrial_relocation_days
 
 		modifier = {

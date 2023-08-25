@@ -46,16 +46,7 @@
 			}
 		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					industrial_complex > 0
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				prioritize = { 217 }
+			195 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -69,15 +60,7 @@
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				prioritize = { 137 }
+			137 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -92,16 +75,7 @@
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
 
-			random_owned_controlled_state = {
-				limit = {
-					industrial_complex > 0
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				prioritize = { 219 }
+			219 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -970,7 +944,7 @@
 	focus = {
 		id = SOV_improve_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 11
+		x = 12
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1021,7 +995,7 @@
 	focus = {
 		id = SOV_transpolar_flights
 		icon = GFX_goal_generic_air_fighter2
-		x = 13
+		x = 14
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1046,36 +1020,12 @@
 	}
 
 	focus = {
-		id = SOV_ocean_going_navy
-		icon = GFX_goal_generic_navy_battleship
-		x = 15
-		y = 0
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = bb_tech
-			}
-		}
-	}
-
-	focus = {
 		id = SOV_peoples_commissariat
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = SOV_improve_railway }
-		prerequisite = { focus = SOV_transpolar_flights }
-		prerequisite = { focus = SOV_ocean_going_navy }
-		x = 2
+		prerequisite = { focus = SOV_anti_fascist_diplomacy }
+		x = 0
 		y = 1
-		relative_position_id = SOV_improve_railway
+		relative_position_id = SOV_anti_fascist_diplomacy
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1094,7 +1044,7 @@
 		id = SOV_send_military_advisors_to_spain
 		icon = GFX_focus_intervention_spain_republic
 		prerequisite = { focus = SOV_peoples_commissariat }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
 		cost = 5
@@ -1125,10 +1075,11 @@
 	focus = {
 		id = SOV_anti_fascist_diplomacy
 		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = SOV_peoples_commissariat }
-		x = 0
+		prerequisite = { focus = SOV_improve_railway }
+		prerequisite = { focus = SOV_transpolar_flights }
+		x = 1
 		y = 1
-		relative_position_id = SOV_peoples_commissariat
+		relative_position_id = SOV_improve_railway
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1138,11 +1089,12 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_tech_bonus = {
+			add_tech_bonus = {	# Half as good as canada bonus
 				name = SOV_anti_fascist_diplomacy
-				bonus = 2
+				ahead_reduction = 1.5
+				bonus = 1
 				uses = 1
-				category = motorized_equipment
+				technology = mechanised_infantry
 			}
 		}
 	}
@@ -1150,12 +1102,12 @@
 	focus = {
 		id = SOV_improve_stalin_line
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SOV_anti_fascist_diplomacy }
+		prerequisite = { focus = SOV_peoples_commissariat }
 		available = { has_offensive_war = no }
 		x = 0
-		y = 1
-		relative_position_id = SOV_anti_fascist_diplomacy
-		cost = 10
+		y = 2
+		relative_position_id = SOV_peoples_commissariat
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1263,25 +1215,25 @@
 	}
 
 	focus = {
-		id = SOV_claims_on_baltic
-		icon = GFX_goal_generic_more_territorial_claims
+		id = SOV_baltic_security
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SOV_improve_stalin_line }
 		x = 0
 		y = 1
 		relative_position_id = SOV_improve_stalin_line
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
 				factor = 0
 				date < 1939.1.1
-				NOT = { 
-					GER = { has_completed_focus = GER_demand_memel }
-				}
-			}
+			}	
 		}
 		bypass = {
 
+		}
+		available = {
+		GER = { has_completed_focus = GER_mol_rib_pact } 
 		}
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1329,33 +1281,6 @@
 				}
 			}
 			add_named_threat = { threat = 1 name = SOV_claims_on_baltic }
-		}
-	}
-
-	focus = {
-		id = SOV_baltic_security
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SOV_claims_on_baltic }
-		x = 0
-		y = 1
-		relative_position_id = SOV_claims_on_baltic
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-			}	
-		}
-		bypass = {
-
-		}
-		available = {
-		GER = { has_completed_focus = GER_mol_rib_pact } 
-		}
-		
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
 			# Estonia
 			custom_effect_tooltip = SOV_estonian_claimed_states_tt
 			hidden_effect = {
@@ -1642,7 +1567,7 @@
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = SOV_peoples_commissariat }
 		available = { has_offensive_war = no }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
 		cost = 5
@@ -2008,15 +1933,9 @@
 		completion_reward = {
 			add_ideas = SOV_lessons_of_war
 			army_experience = 20
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = armor
-			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.25
+				cost_reduction = 0.35
 				uses = 2
 				category = land_doctrine
 			}
@@ -2363,13 +2282,6 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_t34
-				bonus = 1.0
-				uses = 1
-				category = cat_medium_armor
-			}
-
 			add_ideas = SOV_t34_programe
 		}
 	}
@@ -2391,13 +2303,6 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_t34
-				bonus = 1.0
-				uses = 1
-				category = cat_heavy_armor
-			}
-
 			add_ideas = SOV_kv_programe
 		}
 	}
@@ -2517,7 +2422,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_an_adaptable_army
-		cost = 5
+		cost = 10
 
 		available = {
 
