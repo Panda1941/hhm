@@ -67,7 +67,7 @@ focus_tree = {
 		relative_position_id = BUL_acquire_modern_tools
 		x = -6
 		y = 1
-		cost = 5
+		cost = 8
 
 		available = {
 
@@ -78,7 +78,6 @@ focus_tree = {
 			every_owned_state = {
 				limit = {
 					has_state_flag = BUL_initial_bulgarian_state_flag
-					NOT = { state = 48 }
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -88,12 +87,6 @@ focus_tree = {
 				}
 			}
 			48 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -109,9 +102,9 @@ focus_tree = {
 		prerequisite = { focus = BUL_improve_the_road_system }
 		icon = GFX_goal_generic_intelligence_exchange
 		relative_position_id = BUL_improve_the_road_system
-		x = -4
+		x = -3
 		y = 1
-		cost = 8
+		cost = 10
 		mutually_exclusive = { focus = BUL_invigorate_national_industry }
 
 		available = {
@@ -146,7 +139,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_improve_the_road_system }
 		icon = GFX_focus_generic_industry_1
 		relative_position_id = BUL_improve_the_road_system
-		x = -2
+		x = -1
 		y = 1
 		cost = 10
 		mutually_exclusive = { focus = BUL_attract_foreign_capitals }
@@ -207,8 +200,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = BUL_expand_sofia_university
 		x = -1
-		y = 2
-		cost = 8
+		y = 1
+		cost = 10
 
 		available = {
 
@@ -302,11 +295,11 @@ focus_tree = {
 	focus = {
 		id = BUL_utmost_optimization
 
-		prerequisite = { focus = BUL_increase_industry_investments focus = BUL_expand_the_tobacco_industry }
+		prerequisite = { focus = BUL_increase_industry_investments }
 		icon = GFX_focus_generic_industry_3
 		relative_position_id = BUL_increase_industry_investments
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 		mutually_exclusive = { focus = BUL_nationalization }
 
@@ -331,8 +324,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = BUL_improve_the_road_system
 		x = 1
-		y = 2
-		cost = 8
+		y = 1
+		cost = 4
 
 		available = {
 
@@ -340,13 +333,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			every_owned_state = {
-				limit = {
-					OR = {
-						has_state_flag = BUL_initial_bulgarian_state_flag
-						has_state_flag = BUL_historical_bulgarian_claim_flag
-					}
-				}
+			48 = {
 				add_extra_state_shared_building_slots = 1
 			}
 			if = {
@@ -463,12 +450,6 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
-				name = BUL_mineral_extraction_in_the_rhodopes
-			    bonus = 0.75
-			    uses = 1
-			    category = industry_late
-			}
 			48 = {
 				add_resource = {
 					type = steel
@@ -510,41 +491,6 @@ focus_tree = {
 				ahead_reduction = 2.5
 			    uses = 1
 			    category = industry_late
-			}
-		}
-	}
-
-	
-
-	focus = {
-		id = BUL_georgi_benkovski_aircraft_repair_facilities
-
-		prerequisite = { focus = BUL_acquire_modern_tools }
-		icon = GFX_goal_generic_air_production
-		relative_position_id = BUL_acquire_modern_tools
-		x = -3
-		y = 1
-		cost = 5
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			air_experience = 10
-			212 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
 			}
 		}
 	}
@@ -614,7 +560,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_reorganize_the_military_industry }
 		icon = GFX_goal_generic_construct_mil_factory
 		relative_position_id = BUL_reorganize_the_military_industry
-		x = -2
+		x = -1
 		y = 1
 		cost = 10
 
@@ -636,13 +582,18 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_darzhavna_voenna_fabrika
-			    bonus = 1.0
+			    bonus = 0.75
 			    uses = 2
 				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = BUL_darzhavna_voenna_fabrika
+			    bonus = 0.25
+			    uses = 2
 				category = support_tech
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = BUL_dvf
+			#custom_effect_tooltip = available_designer
+			#show_ideas_tooltip = BUL_dvf
 		}
 	}
 
@@ -675,11 +626,11 @@ focus_tree = {
 			add_tech_bonus = {
 				name = BUL_found_dvf_sopot
 			    bonus = 1.0
-			    uses = 2
+			    uses = 3
 				category = artillery
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = BUL_dvf_sopot
+			#custom_effect_tooltip = available_designer
+			#show_ideas_tooltip = BUL_dvf_sopot
 		}
 	}
 
@@ -690,7 +641,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_reorganize_the_military_industry }
 		icon = GFX_focus_generic_little_entente
 		relative_position_id = BUL_reorganize_the_military_industry
-		x = 2
+		x = 1
 		y = 1
 		cost = 10
 
@@ -806,8 +757,8 @@ focus_tree = {
 		prerequisite = { focus = BUL_negotiate_bulgarian_rearmament }
 		icon = GFX_focus_generic_military_academy
 		relative_position_id = BUL_negotiate_bulgarian_rearmament
-		x = 4
-		y = 1
+		x = 3
+		y = 2
 		cost = 5
 
 		available = {
@@ -846,7 +797,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		relative_position_id = BUL_national_military_academy
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 
 		available = {
@@ -877,7 +828,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_negotiate_bulgarian_rearmament }
 		icon = GFX_focus_generic_destroyer
 		relative_position_id = BUL_negotiate_bulgarian_rearmament
-		x = 6
+		x = 2
 		y = 1
 		cost = 10
 
@@ -900,65 +851,12 @@ focus_tree = {
 			    uses = 2
 				category = dd_tech
 			}
-			if = { 
-				limit = { has_dlc = "Man the Guns" }
-				set_technology = { coastal_defense_ships = 1 } 
-			}
-
-			effect_tooltip = {
-				if = {
-					limit = {
-						country_exists = ENG
-						NOT = { has_war_with = ENG }
-						ENG = { BUL_is_valid_subject = yes }
-					}
-					activate_targeted_decision = { target = ENG decision = BUL_naval_agreements }
-				}
-				if = {
-					limit = {
-						country_exists = SOV
-						NOT = { has_war_with = SOV }
-						SOV = { BUL_is_valid_subject = yes }
-					}
-					activate_targeted_decision = { target = SOV decision = BUL_naval_agreements }
-				}
-				if = {
-					limit = {
-						country_exists = ITA
-						NOT = { has_war_with = ITA }
-						ITA = { BUL_is_valid_subject = yes }
-					}
-					activate_targeted_decision = { target = ITA decision = BUL_naval_agreements }
-				}
-			}
-			hidden_effect = {
-				activate_targeted_decision = { target = ENG decision = BUL_naval_agreements }
-				activate_targeted_decision = { target = SOV decision = BUL_naval_agreements }
-				activate_targeted_decision = { target = ITA decision = BUL_naval_agreements }
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_bulgarian_shipping_chamber
-
-		prerequisite = { focus = BUL_a_black_sea_fleet }
-		icon = GFX_goal_generic_navy_cruiser
-		relative_position_id = BUL_a_black_sea_fleet
-		x = 0
-		y = 1
-		cost = 10
-
-		available = {
-			controls_state = 211
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
+			
 			211 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -975,6 +873,10 @@ focus_tree = {
 				type = convoy
 				amount = 50
 			}
+			if = { 
+				limit = { has_dlc = "Man the Guns" }
+				set_technology = { coastal_defense_ships = 1 } 
+			}
 			add_ideas = BUL_bulgarian_shipping_chamber
 		}
 	}
@@ -985,8 +887,8 @@ focus_tree = {
 		prerequisite = { focus = BUL_acquire_modern_tools }
 		icon = GFX_goal_generic_build_navy
 		relative_position_id = BUL_acquire_modern_tools
-		x = 8
-		y = 2
+		x = 4
+		y = 4
 		cost = 10
 
 		available = {
@@ -1020,7 +922,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = BUL_expand_varna_naval_base
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 
 		available = {
@@ -1064,7 +966,7 @@ focus_tree = {
 
 		icon = GFX_focus_BUL_power_to_the_tsar
 		relative_position_id = BUL_oppose_the_royal_dictatorship
-		x = 30
+		x = 26
 		y = 0
 		cost = 5
 		mutually_exclusive = { focus = BUL_oppose_the_royal_dictatorship }
