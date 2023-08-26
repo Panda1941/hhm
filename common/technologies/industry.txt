@@ -527,7 +527,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 		
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+		production_factory_start_efficiency_factor = 0.075
 		industry_air_damage_factor = -0.15
 		
 		path = {
@@ -603,7 +603,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+		production_factory_start_efficiency_factor = 0.075
 		industry_air_damage_factor = -0.15
 		
 		path = {
@@ -645,7 +645,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+		production_factory_start_efficiency_factor = 0.075
 		industry_air_damage_factor = -0.10
 		
 		path = {
@@ -686,7 +686,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+		production_factory_start_efficiency_factor = 0.075
 		industry_air_damage_factor = -0.10
 		
 		path = {
@@ -728,7 +728,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+		production_factory_start_efficiency_factor = 0.1
 		industry_air_damage_factor = -0.10
 		
 		
