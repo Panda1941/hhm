@@ -1700,7 +1700,7 @@ characters = {
 				original_tag = BUL
 			}
 			available = {
-				 
+				NOT = { has_character = BUL_aleksandar_tsankov }
 			}
 			traits = {
 				industry_reformer 
@@ -1916,7 +1916,7 @@ characters = {
 				original_tag = BUL
 			}
 			available = {
-				
+				NOT = { has_character = BUL_stefan_stefanov }
 			}
 			traits = {
 				statism_adept 

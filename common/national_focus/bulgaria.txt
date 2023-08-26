@@ -111,7 +111,7 @@ focus_tree = {
 		relative_position_id = BUL_improve_the_road_system
 		x = -4
 		y = 1
-		cost = 5
+		cost = 8
 		mutually_exclusive = { focus = BUL_invigorate_national_industry }
 
 		available = {
@@ -148,7 +148,7 @@ focus_tree = {
 		relative_position_id = BUL_improve_the_road_system
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		mutually_exclusive = { focus = BUL_attract_foreign_capitals }
 
 		available = {
@@ -187,7 +187,7 @@ focus_tree = {
 		relative_position_id = BUL_attract_foreign_capitals
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -208,7 +208,7 @@ focus_tree = {
 		relative_position_id = BUL_expand_sofia_university
 		x = -1
 		y = 2
-		cost = 5
+		cost = 8
 
 		available = {
 
@@ -223,27 +223,10 @@ focus_tree = {
 					}
 				} 
 				212 = { #PLOVDIV
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				random_owned_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -260,7 +243,7 @@ focus_tree = {
 		relative_position_id = BUL_expand_the_tobacco_industry
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		mutually_exclusive = { focus = BUL_utmost_optimization }
 
 		available = {
@@ -285,7 +268,7 @@ focus_tree = {
 		relative_position_id = BUL_expand_sofia_university
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 
 
 		available = {
@@ -324,7 +307,7 @@ focus_tree = {
 		relative_position_id = BUL_increase_industry_investments
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		mutually_exclusive = { focus = BUL_nationalization }
 
 		available = {
@@ -349,7 +332,7 @@ focus_tree = {
 		relative_position_id = BUL_improve_the_road_system
 		x = 1
 		y = 2
-		cost = 5
+		cost = 8
 
 		available = {
 
@@ -364,7 +347,7 @@ focus_tree = {
 						has_state_flag = BUL_historical_bulgarian_claim_flag
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 			}
 			if = {
 				limit = {
@@ -414,7 +397,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_light_metal_exploitation }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 8
 
 		available = {
 			controls_state = 48
@@ -422,12 +405,12 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			add_stability = 0.08
+			add_stability = 0.05
 			48 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -443,7 +426,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_all_that_glitters }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 8
 
 		available = {
 			controls_state = 48
@@ -458,7 +441,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 12 #At least one factory's worth
+					amount = 16 #At least one factory's worth
 				}
 			}
 		}
@@ -472,7 +455,7 @@ focus_tree = {
 		relative_position_id = BUL_national_railway_lines
 		x = 0
 		y = 2
-		cost = 5
+		cost = 8
 
 		available = {
 			controls_state = 48
@@ -509,7 +492,7 @@ focus_tree = {
 		relative_position_id = BUL_steel_plant_in_pernik
 		x = 0
 		y = 1
-		cost = 5
+		cost = 8
 
 		available = {
 			has_tech = excavation2
@@ -874,14 +857,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = BUL_war_logistics
-			    bonus = 0.5
+			    bonus = 0.25
 			    ahead_reduction = 2
-			    uses = 2
+			    uses = 3
 				category = support_tech
 			}
 			add_tech_bonus = {
 				name = BUL_war_logistics
-			    bonus = 1
+			    bonus = 2
 			    uses = 1
 				category = motorized_equipment
 			}
@@ -1292,7 +1275,8 @@ focus_tree = {
 	focus = {
 		id = BUL_bulgarian_irredentism
 
-		prerequisite = { focus = BUL_promote_bulgarian_nationalism focus = BUL_the_path_towards_a_greater_bulgaria }
+		prerequisite = { focus = BUL_promote_bulgarian_nationalism }
+		prerequisite = { focus = BUL_the_path_towards_a_greater_bulgaria }
 
 		icon = GFX_goal_generic_territory_or_war
 		relative_position_id = BUL_promote_bulgarian_nationalism
@@ -1691,10 +1675,11 @@ focus_tree = {
 		id = BUL_industrial_autarky
 
 		prerequisite = { focus = BUL_economic_protectionism }
+		prerequisite = { focus = BUL_depose_the_tsar }
 		icon = GFX_goal_reichsautobahn
 		relative_position_id = BUL_economic_protectionism
 		x = 0
-		y = 2
+		y = 3
 		cost = 10
 
 		available = {
@@ -1862,7 +1847,7 @@ focus_tree = {
 			threat > 0.35
 			OR = {
 				has_completed_focus = BUL_strengthen_the_royal_dictatorship
-				has_completed_focus = BUL_approach_germany
+				has_completed_focus = BUL_depose_the_tsar
 			}
 		}
 		
