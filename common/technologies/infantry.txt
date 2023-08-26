@@ -792,6 +792,7 @@ technologies = {
 			acclimatization_hot_climate_gain_factor = 0.1
 			acclimatization_cold_climate_gain_factor = 0.1
 		}
+        special_forces_min = 56
 		
 		#dependencies = {
 		#	OR = {
@@ -835,6 +836,7 @@ technologies = {
 		}
 
 		special_forces_training_time_factor = 0.1
+		special_forces_min = 56
 		
 		path = {
 			leads_to_tech = extreme_environment_training
@@ -870,6 +872,7 @@ technologies = {
 		
 		special_forces_no_supply_grace = 48
 		special_forces_out_of_supply_factor = -0.1
+		special_forces_min = 56
 		
 		path = {
 			leads_to_tech = elite_forces
@@ -904,6 +907,7 @@ technologies = {
 		}
 		
 		special_forces_no_supply_grace = 48
+		special_forces_min = 56
 
 		research_cost = 2
 		start_year = 1943

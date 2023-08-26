@@ -4049,6 +4049,76 @@ focus_tree = {
 			custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		}
 	}
+	
+	focus = {
+		id = GER_second_vienna_award
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = GER_danzig_or_war }
+		x = -3
+		y = 1
+		relative_position_id = GER_danzig_or_war
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		
+		}
+		bypass = {
+			OR = {
+				AND = {
+					OR = {
+						HUN = {
+							NOT = { has_government = fascism }
+							is_friend_or_potential_friend_of_GER = no
+						}
+						ROM = {
+							OR = {
+								AND = {
+									NOT = { controls_state = 76 }
+									NOT = { controls_state = 83 }
+									NOT = { controls_state = 84 }
+								}
+								has_war_with = HUN
+								AND = {
+									is_in_faction_with = GER
+									HUN = { NOT = { is_in_faction_with = GER } }#GER should not want to give territory to Hungary if Romania joined the axis early.
+								}
+							}
+						}
+					}
+					OR = {
+						BUL = { is_friend_or_potential_friend_of_GER = no }
+						ROM = {
+							OR = {
+								NOT = { controls_state = 77 }
+								has_war_with = BUL					
+							}
+						}					
+					}
+				}
+				HUN = { exists = no } 
+				ROM = { exists = no	}
+				HUN = { has_capitulated = yes }
+				ROM = { has_capitulated = yes }
+				HUN = { is_subject_of = ROM } #just rude
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					HUN = {
+						is_friend_or_potential_friend_of_GER = yes
+					}
+					ROM = {
+						controls_state = 76
+						NOT = { has_war_with = HUN }
+					}
+				}
+				country_event = { id = germany.20 }
+			}
+		}
+	}
 
 	focus = {
 		id = GER_war_with_france
@@ -4056,6 +4126,7 @@ focus_tree = {
 		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
 		available = {
 			date > 1939.9.01
+			date > 1939.12.01
 		}
 		x = 1
 		y = 1
@@ -4724,6 +4795,8 @@ focus_tree = {
  		available = {
  			NOT = {has_idea = GER_barbarossa}
  			has_war_with = SOV
+			date > 1941.11.01 date < 1942.03.1
+			date > 1942.11.01 date < 1943.03.1
  		}
  		relative_position_id = GER_moscow
  		x = -1
@@ -4752,6 +4825,8 @@ focus_tree = {
  		available = {
  			NOT = {has_idea = GER_barbarossa}
  			has_war_with = SOV
+			date > 1941.11.01 date < 1942.03.1
+			date > 1942.11.01 date < 1943.03.1
  		}
  		relative_position_id = GER_moscow
  		x = 1
@@ -4930,6 +5005,7 @@ focus_tree = {
  			GER = {
  				add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
  			}
+			hidden_effect = {
                 ROM = {
  					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
  				}
@@ -4948,6 +5024,7 @@ focus_tree = {
  				SPR = {
  					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
  				}
+				}
  			}
 		}
 		
@@ -4956,17 +5033,11 @@ focus_tree = {
  		icon = GFX_focus_GER_atlantikwall_a
  		prerequisite = { focus = GER_atlantikwall }
  		available = {
-		has_manpower > 3000
-		has_equipment = { train_equipment > 29 }
-		has_equipment = { motorized_equipment > 899 }
-		has_equipment = { infantry_equipment > 2999 }
-		has_equipment = { support_equipment > 299 }
-		has_equipment = { anti_air_equipment > 299 }
  		}
  		x = 0
  		y = 1
  		relative_position_id = GER_atlantikwall
- 		cost = 5
+ 		cost = 7
  		ai_will_do = {
  			factor = 1
  		}
@@ -4975,17 +5046,17 @@ focus_tree = {
 		select_effect = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
-				amount = -30
+				amount = -15
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
-				amount = -900
+				amount = -300
 			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
 		
  		completion_reward = {
-		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume the amount of trains and trucks listed above. Besides those all other equipment and manpower will be taken away. Trains and trucks will be returned back once the focus is over."
+		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume 15 trains and 300 trucks."
 		add_command_power = -10
 		
 		
@@ -4995,27 +5066,7 @@ focus_tree = {
 					
 		
 		hidden_effect = {
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 30
-				}
-				add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = 900
-			}
-			add_manpower = -3000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -3000
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -300
-			}
-			add_equipment_to_stockpile = {
-				type = anti_air_equipment
-				amount = -300
-			}
+				
 				remove_ideas = Fuel_the_atlantik_construction
 			}
 		every_state = {
@@ -5126,12 +5177,6 @@ add_building_construction = {
  		icon = GFX_focus_GER_atlantikwall_b
  		prerequisite = { focus = GER_atlantikwall }
  		available = {
-		has_manpower > 3000
-		has_equipment = { train_equipment > 29 }
-		has_equipment = { motorized_equipment > 899 }
-		has_equipment = { infantry_equipment > 2999 }
-		has_equipment = { support_equipment > 299 }
-		has_equipment = { anti_air_equipment > 299 }
  		}
  		x = -2
  		y = 1
@@ -5145,42 +5190,22 @@ add_building_construction = {
 		select_effect = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
-				amount = -30
+				amount = -15
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
-				amount = -900
+				amount = -300
 			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
-		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume the amount of trains and trucks listed above. Besides those all other equipment and manpower will be taken away. Trains and trucks will be returned back once the focus is over."
+		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume 15 trains and 300 trucks."
 		add_command_power = -10
 		
 		
 		
 		hidden_effect = {
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 30
-				}
-				add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = 900
-			}
-			add_manpower = -3000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -3000
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -300
-			}
-			add_equipment_to_stockpile = {
-				type = anti_air_equipment
-				amount = -300
-			}
+			
 				remove_ideas = Fuel_the_atlantik_construction
 			}
 		every_state = {
@@ -5290,12 +5315,6 @@ add_building_construction = {
  		icon = GFX_focus_GER_atlantikwall_c
  		prerequisite = { focus = GER_atlantikwall }
  		available = {
-		has_manpower > 6000
-		has_equipment = { train_equipment > 59 }
-		has_equipment = { motorized_equipment > 1799 }
-		has_equipment = { infantry_equipment > 5999 }
-		has_equipment = { support_equipment > 599 }
-		has_equipment = { anti_air_equipment > 599 }
  		}
  		x = -4
  		y = 1
@@ -5309,42 +5328,22 @@ add_building_construction = {
 		select_effect = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
-				amount = -60
+				amount = -30
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
-				amount = -1800
+				amount = -600
 			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
-		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume the amount of trains and trucks listed above. Besides those all other equipment and manpower will be taken away. Trains and trucks will be returned back once the focus is over."
+		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume 30 trains and 600 trucks."
 		add_command_power = -10
 		
 		
 		
 		hidden_effect = {
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 60
-				}
-				add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = 1800
-			}
-			add_manpower = -6000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -6000
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -600
-			}
-			add_equipment_to_stockpile = {
-				type = anti_air_equipment
-				amount = -600
-			}
+				
 				remove_ideas = Fuel_the_atlantik_construction
 			}
 		
@@ -5533,13 +5532,7 @@ add_building_construction = {
  		icon = GFX_focus_GER_atlantikwall_d
  		prerequisite = { focus = GER_atlantikwall }
  		available = {
-		
-		has_manpower > 3000
-		has_equipment = { train_equipment > 29 }
-		has_equipment = { motorized_equipment > 1199 }
-		has_equipment = { infantry_equipment > 2999 }
-		has_equipment = { support_equipment > 299 }
-		has_equipment = { anti_air_equipment > 299 }
+
  		}
  		x = -3
  		y = 2
@@ -5553,44 +5546,24 @@ add_building_construction = {
 		select_effect = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
-				amount = -30
+				amount = -20
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
-				amount = -1200
+				amount = -450
 			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
 		
  		completion_reward = {
-		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume the amount of trains and trucks listed above. Besides those all other equipment and manpower will be taken away. Trains and trucks will be returned back once the focus is over."
+		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume 20 trains and 450 trucks."
 		add_command_power = -10
 		
 		
 		
 		
 		hidden_effect = {
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 30
-				}
-				add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = 1200
-			}
-			add_manpower = -3000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -3000
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -300
-			}
-			add_equipment_to_stockpile = {
-				type = anti_air_equipment
-				amount = -300
-			}
+				
 				remove_ideas = Fuel_the_atlantik_construction
 			}
 		
@@ -5727,11 +5700,7 @@ add_building_construction = {
  		prerequisite = { focus = GER_atlantikwall }
  		available = {
 		has_manpower > 3000
-		has_equipment = { train_equipment > 29 }
-		has_equipment = { motorized_equipment > 899 }
-		has_equipment = { infantry_equipment > 2999 }
-		has_equipment = { support_equipment > 299 }
-		has_equipment = { anti_air_equipment > 299 }
+
  		}
  		x = -1
  		y = 2
@@ -5745,42 +5714,22 @@ add_building_construction = {
 		select_effect = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
-				amount = -30
+				amount = -15
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
-				amount = -900
+				amount = -300
 			}
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
-		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume the amount of trains and trucks listed above. Besides those all other equipment and manpower will be taken away. Trains and trucks will be returned back once the focus is over."
+		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume 15 trains and 300 trucks."
 		add_command_power = -10
 		
 		
 		
 		hidden_effect = {
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 30
-				}
-				add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = 900
-			}
-			add_manpower = -3000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -3000
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -300
-			}
-			add_equipment_to_stockpile = {
-				type = anti_air_equipment
-				amount = -300
-			}
+				
 				remove_ideas = Fuel_the_atlantik_construction
 			}
 		

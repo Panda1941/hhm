@@ -860,5 +860,9 @@
  ITA_take_gibraltar:0 "Gibraltar Secured"
  
  ENG_torch:0 "Operation Torch"
+ ROM_southern_refugees:0 "Dobrudja"
+ ROM_northern_refugees:0 "North Transylvania"
+ ROM_western_refugees:0 "Banat"
+ ROM_eastern_refugees:0 "Bessarabia"
 
 

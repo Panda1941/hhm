@@ -262,6 +262,13 @@ operations = {
 			
 		
 		complete_effect = {
+		WST = { 
+				transfer_state = 513
+				transfer_state = 460
+				transfer_state = 459
+				transfer_state = 461
+				transfer_state = 462
+			}
 		ITA = {
 			declare_war_on = {
 				target = ENG 
