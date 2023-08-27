@@ -39,11 +39,9 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#support unit nerf
-		soft_attack = -0.5
-		hard_attack = -0.5
-		air_attack = 0.05
-		breakthrough = -0.5
-		defense = -0.5
+		breakthrough = -0.6
+		defense = -0.50
+		armor_value = -0.75
 		same_support_type = anti_air
 	}
 	
@@ -82,11 +80,9 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#support unit nerf
-		soft_attack = -0.5
-		hard_attack = -0.5
-		air_attack = 0.10
-		breakthrough = -0.5
-		defense = -0.5
+		breakthrough = -0.6
+		defense = -0.50
+		armor_value = -0.75
 		same_support_type = anti_air
 	}
 	
@@ -125,11 +121,9 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#support unit nerf
-		soft_attack = -0.5
-		hard_attack = -0.5
-		air_attack = 0.15
-		breakthrough = -0.5
-		defense = -0.5
+		breakthrough = -0.6
+		defense = -0.50
+		armor_value = -0.75
 		same_support_type = anti_air
 	}
 	
@@ -167,11 +161,9 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#support unit nerf
-		soft_attack = -0.5
-		hard_attack = -0.5
-		air_attack = 0.20
-		breakthrough = -0.5
-		defense = -0.5
+		breakthrough = -0.6
+		defense = -0.50
+		armor_value = -0.75
 		same_support_type = anti_air
 	}
 	
@@ -210,11 +202,9 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#support unit nerf
-		soft_attack = -0.5
-		hard_attack = -0.5
-		air_attack = 0.25
-		breakthrough = -0.5
-		defense = -0.5
+		breakthrough = -0.6
+		defense = -0.50
+		armor_value = -0.75
 
 		same_support_type = anti_air
 	}

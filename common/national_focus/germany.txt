@@ -4125,8 +4125,10 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
 		available = {
+		AND = {
 			date > 1939.9.01
-			date > 1939.12.01
+			date < 1939.12.01
+			}
 		}
 		x = 1
 		y = 1
@@ -4795,8 +4797,17 @@ focus_tree = {
  		available = {
  			NOT = {has_idea = GER_barbarossa}
  			has_war_with = SOV
-			date > 1941.11.01 date < 1942.03.1
-			date > 1942.11.01 date < 1943.03.1
+			OR = {
+		    AND = {
+			date > 1941.11.01 
+			date < 1942.03.1
+			}
+			AND = {
+			date > 1942.11.01 
+			date < 1943.03.1
+			}
+			}
+			
  		}
  		relative_position_id = GER_moscow
  		x = -1
@@ -4825,8 +4836,17 @@ focus_tree = {
  		available = {
  			NOT = {has_idea = GER_barbarossa}
  			has_war_with = SOV
-			date > 1941.11.01 date < 1942.03.1
-			date > 1942.11.01 date < 1943.03.1
+			OR = {
+		    AND = {
+			date > 1941.11.01 
+			date < 1942.03.1
+			}
+			AND = {
+			date > 1942.11.01 
+			date < 1943.03.1
+			}
+			}
+			
  		}
  		relative_position_id = GER_moscow
  		x = 1

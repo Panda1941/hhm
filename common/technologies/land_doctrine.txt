@@ -915,7 +915,7 @@ technologies = {
 		cas_damage_reduction = 0.05
 
 		path = {
-			leads_to_tech = gurilla_tatics_mw 
+			leads_to_tech = mw_sum 
 			research_cost_coeff = 1
 		}
 		
@@ -950,12 +950,96 @@ technologies = {
 		}
 	}
 
-	gurilla_tatics_mw = {
+	mw_sum = {
 
-		xp_research_type = army
-		xp_unlock_cost = 0
+        org_loss_when_moving = -0.1
+		air_cas_present_factor = 0.05
+		army_bonus_air_superiority_factor = 0.20
+		land_night_attack = 0.10
+		max_dig_in = 3
+		dig_in_speed_factor = 0.15
+		conscription = 0.05
+		training_time_factor = -0.05
+		minimum_training_level = -0.05
+		resistance_damage_to_garrison_on_our_occupied_states = 0.1 
+		supply_consumption_factor = -0.10
+		land_reinforce_rate = 0.02
+		cas_damage_reduction = 0.05
+		army_speed_factor = 0.10
+		planning_speed = 0.1
+category_all_armor = {
+			breakthrough = 0.20
+			hard_attack = 0.05
+			soft_attack = 0.05
+			default_morale = 0.4
+			maximum_speed = 0.05		
+		}
+category_all_infantry = {
+			max_organisation = 45
+			soft_attack = 0.10
+			defense = 0.05
+			default_morale = 0.2
+		}
+category_tanks = {
+			max_organisation = 15
+			breakthrough = 0.4
+			hard_attack = 0.05
+		}
+		armored_car = {
+			max_organisation = 17
+			maximum_speed = 0.1
+			default_morale = 0.5
+			breakthrough = 0.20
+		}
+motorized = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+			max_organisation = 20
+		}
+mot_artillery_brigade = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+		}
+mot_anti_tank_brigade = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+		}
+mot_anti_air_brigade = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+		}
+mechanized = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+			max_organisation = 20
+		}
+amphibious_mechanized = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+			max_organisation = 20
+		}
+category_support_battalions = {
+			max_organisation = 2
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+category_line_artillery = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		dig_in_speed_factor = 0.3
+		doctrine = no
+		
+			
+		
 
-		enable_tactic = tactic_guerrilla_tactics
+		
+		path = {
+			research_cost_coeff = 10
+		}
+
+		research_cost = 60
+
 
 		allow = {
 			has_game_rule = {
@@ -964,8 +1048,6 @@ technologies = {
 			}
 		}
 		
-		doctrine = yes	
-		research_cost = 4.5
 		
 		categories = {
 			land_doctrine
@@ -975,7 +1057,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = -2 y = 20 }
+			position = { x = 0 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -1819,6 +1901,11 @@ technologies = {
 		doctrine = yes	
 		research_cost = 4.5
 		
+		path = {
+			leads_to_tech = superior_sum 
+			research_cost_coeff = 1
+		}
+		
 		categories = {
 			land_doctrine
 			cat_superior_firepower
@@ -1850,6 +1937,115 @@ technologies = {
 		
 		ai_research_weights = {
 			artillery = 1.0
+		}
+	}
+	
+		superior_sum = {
+
+        category_front_line = {
+			 soft_attack = 0.15
+			 max_organisation = 5
+		}
+		
+		max_planning = -0.20
+		supply_consumption_factor = 0.10
+		
+category_light_infantry = {
+			max_organisation = 12
+			defense = 0.05
+		}
+category_all_infantry = {
+			defense = 0.03
+			max_organisation = 13
+			soft_attack = 0.10
+			default_morale = 0.05 
+			hard_attack = 0.05
+		}
+category_support_battalions = {
+			max_organisation = 6
+			soft_attack = 0.16
+			air_attack = 0.1
+			hard_attack = 0.05
+		}
+category_line_artillery = {
+			default_morale = 0.2
+			hard_attack = 0.10
+			soft_attack = 0.10
+			breakthrough = 0.05
+		}
+category_all_armor = {
+			breakthrough = 0.20
+			soft_attack = 0.08
+			hard_attack = 0.08
+			default_morale = 0.05
+		}
+category_army = {
+			hard_attack = 0.10
+		}
+category_artillery = { 
+			soft_attack = 0.10
+			hard_attack = 0.05
+		}
+category_recon = {
+			recon = 1
+		}
+armored_car = {
+			max_organisation = 2
+			default_morale = 0.05
+		}
+category_tanks = {
+			max_organisation = 2
+		}
+coordination_bonus = 0.05
+land_reinforce_rate = 0.02
+air_cas_present_factor = 0.07
+army_bonus_air_superiority_factor = 0.20
+		doctrine = no
+		
+			
+		
+
+		
+		path = {
+			research_cost_coeff = 10
+		}
+
+		research_cost = 60
+
+
+		allow = {
+			has_game_rule = {
+				rule = elwolf_guerrilla_tactics
+				option = ALLOWED
+			}
+		}
+		
+		
+		categories = {
+			land_doctrine
+			cat_mobile_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			armor = 2.0
 		}
 	}
 	
@@ -2690,6 +2886,11 @@ technologies = {
 			position = { x = 2 y = 18 }
 		}
 		
+		path = {
+			leads_to_tech = gb_sum 
+			research_cost_coeff = 1
+		}
+		
 		ai_will_do = {
 			factor = 20
 			modifier = {
@@ -2711,6 +2912,112 @@ technologies = {
 		ai_research_weights = {
 			infantry_weapons = 1.5
 			motorized_equipment = 1.0
+		}
+	}
+	
+	gb_sum = {
+
+       max_dig_in = 8
+planning_speed = 0.35
+dig_in_speed_factor = 0.25 #25% bonus
+supply_consumption_factor = -0.15
+max_planning = 0.3
+command_power_gain = 0.25
+coordination_bonus = 0.1
+army_attack_factor = 0.05
+max_command_power = 30
+attrition = -0.15
+land_reinforce_rate = 0.04
+command_power_gain_mult = 0.15
+land_night_attack = 0.25 # negates half of base penalty
+	
+category_recon = { 
+			recon = 1 
+		} 
+category_all_infantry = {
+			defense = 0.15
+			max_organisation = 15
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+category_army = {
+			breakthrough = 0.20
+			soft_attack = 0.05
+			max_strength = 0.5
+		}
+motorized = {
+			max_organisation = 5
+		}
+armored_car = {
+			max_organisation = 11
+			default_morale = 0.1
+		}
+mechanized = {
+			max_organisation = 5
+		}
+amphibious_mechanized = {
+			max_organisation = 5
+		}
+
+category_tanks = {
+			max_organisation = 5
+			max_strength = 0.25
+		}
+category_light_infantry = {
+			max_organisation = 5
+			breakthrough = 0.1
+		}
+
+category_all_armor = {
+			default_morale = 0.1
+		}
+		
+		doctrine = no
+		
+			
+		
+
+		
+		path = {
+			research_cost_coeff = 10
+		}
+
+		research_cost = 60
+
+
+		allow = {
+			has_game_rule = {
+				rule = elwolf_guerrilla_tactics
+				option = ALLOWED
+			}
+		}
+		
+		
+		categories = {
+			land_doctrine
+			cat_mobile_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			armor = 2.0
 		}
 	}
 	
@@ -3491,7 +3798,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = gurilla_tatics_disabled
+			leads_to_tech = ma_sum
 			research_cost_coeff = 1
 		}
 		
@@ -3526,9 +3833,7 @@ technologies = {
 	gurilla_tatics_ma = {
 		xp_research_type = army
 		xp_unlock_cost = 0
-		xor = {
-			gurilla_tatics_disabled
-		}
+		
 		
 		enable_tactic = tactic_guerrilla_tactics
 		
@@ -3549,7 +3854,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 1 y = 16 }
+			position = { x = 2 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -3567,16 +3872,90 @@ technologies = {
 		}
 	}
 
-	gurilla_tatics_disabled = {
-		xp_research_type = army
-		xp_unlock_cost = 0
-		xor = {
-			gurilla_tatics_ma
+ma_sum = {
+
+		conscription = 0.11
+		land_reinforce_rate = 0.325
+		minimum_training_level = -0.1
+		weekly_casualties_war_support = 0.001
+		out_of_supply_factor = -0.15
+		pocket_penalty = -0.05
+		max_dig_in = 5
+		cas_damage_reduction = 0.05
+		supply_consumption_factor = -0.10
+		max_planning = 0.10
+		org_loss_when_moving = -0.25
+		no_supply_grace = 24
+		#Increased Partisan effect on your land occupied by others
+		resistance_damage_to_garrison_on_our_occupied_states = 0.25 #10% more partisan effects 
+		#Land Units take less attrition
+		attrition = -0.1 #take 10% less attrition losses
+		infantry = {
+			combat_width = -0.5
+		}
+				out_of_supply_factor = -0.30
+		category_army = {
+			default_morale = 0.2
 		}
 		
-		doctrine = yes	
-		research_cost = 4.5
+		resistance_growth_on_our_occupied_states = 0.35 
+
+category_light_infantry = {
+			max_organisation = 6
+		}
+
+armored_car = {
+			max_organisation = 14
+			default_morale = 0.1
+			breakthrough = 0.15
+		}
+infantry = {
+			combat_width = -0.5
+			default_morale = 0.30
+		}
 		
+category_line_artillery = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+category_tanks = {
+			max_organisation = 12
+			breakthrough = 0.15
+		}
+category_all_infantry = {
+			max_organisation = 20
+			max_strength = 0.05
+			breakthrough = 0.15
+		}
+category_all_armor = {
+			default_morale = 0.1
+		}
+
+mechanized = {
+			max_organisation = 15
+			default_morale = 0.1
+		}
+motorized = {
+			max_organisation = 15
+			default_morale = 0.1
+		}	
+amphibious_mechanized = {
+			max_organisation = 15
+			default_morale = 0.1
+		}	
+		doctrine = no
+		
+			
+		
+
+		
+		path = {
+			research_cost_coeff = 10
+		}
+
+		research_cost = 60
+
+
 		allow = {
 			has_game_rule = {
 				rule = elwolf_guerrilla_tactics
@@ -3584,28 +3963,32 @@ technologies = {
 			}
 		}
 		
+		
 		categories = {
 			land_doctrine
-			cat_mass_assault
+			cat_mobile_warfare
 		}
+
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 3 y = 16 }
+			position = { x = 0 y = 16 }
 		}
 		
 		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
 			factor = 20
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
-			industry = 2.0
+			armor = 2.0
 		}
 	}
 

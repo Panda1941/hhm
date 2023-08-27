@@ -38,10 +38,10 @@ sub_units = {
 		supply_consumption = 0.2
 		
 		#support unit nerf
-		soft_attack = 0.05	#Don't nerf this stat
-		hard_attack = -0.5
-		breakthrough = -0.5
-		defense = -0.5
+		defense = -0.50	#Don't nerf this stat
+		breakthrough = -0.6
+		armor_value = -0.75
+
 		
 		same_support_type = artillery
 	}
@@ -80,10 +80,9 @@ sub_units = {
 		supply_consumption = 0.22
 		
 		#support unit nerf
-		soft_attack = 0.10	#Don't nerf this stat
-		hard_attack = -0.5
-		breakthrough = -0.5
-		defense = -0.5
+		defense = -0.50	#Don't nerf this stat
+		breakthrough = -0.6
+		armor_value = -0.75
 		
 		same_support_type = artillery
 	}
@@ -123,10 +122,9 @@ sub_units = {
 		supply_consumption = 0.3
 		
 		#support unit nerf
-		soft_attack = 0.15	#Don't nerf this stat
-		hard_attack = -0.5
-		breakthrough = -0.5
-		defense = -0.5
+		defense = -0.50	#Don't nerf this stat
+		breakthrough = -0.6
+		armor_value = -0.75
 		
 		same_support_type = artillery
 	}
@@ -167,10 +165,9 @@ sub_units = {
 		supply_consumption = 0.5
 		
 		#support unit nerf
-		soft_attack = 0.20	#Don't nerf this stat
-		hard_attack = -0.5
-		breakthrough = -0.5
-		defense = -0.5
+		defense = -0.50	#Don't nerf this stat
+		breakthrough = -0.6
+		armor_value = -0.75
 		
 		same_support_type = artillery
 	}
@@ -210,10 +207,9 @@ sub_units = {
 		supply_consumption = 0.3
 		
 		#support unit nerf
-		soft_attack = 0.25	#Don't nerf this stat
-		hard_attack = -0.5
-		breakthrough = -0.5
-		defense = -0.5
+		defense = -0.50	#Don't nerf this stat
+		breakthrough = -0.6
+		armor_value = -0.75
 		
 		same_support_type = artillery
 	}

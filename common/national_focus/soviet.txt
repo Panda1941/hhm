@@ -2109,8 +2109,16 @@
 		icon = GFX_focus_attack_germany
 		relative_position_id = SOV_war_with_germany
 		available = {
+		OR = {
+		    AND = {
+			date > 1941.11.01 
+			date < 1942.03.1
+			}
+			AND = {
 			date > 1942.11.01 
 			date < 1943.03.1
+			}
+			}
 		}
 		x = 0
 		y = 1

@@ -177,6 +177,10 @@ categories =  {
 		match_value = 8
 		sound_type = desert
 		
+		units = {
+			movement = -0.25	
+		}
+		army_attack_speed_factor = -0.20
 		#sickness_chance = 1.0
 		
 		supply_flow_penalty_factor = 0.14
