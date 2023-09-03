@@ -1,0 +1,24 @@
+
+state={
+	id=911
+	name="STATE_911"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		992 1068 4055 7117 10031 10127 12816 13268 13271 13316 13317 13319 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

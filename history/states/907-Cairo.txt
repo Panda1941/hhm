@@ -18,10 +18,13 @@ state={
 			7011 25 
 		}
 		victory_points = {
-			3996 5 
+			13323 5 
 		}
 		victory_points = {
-			1068 3 
+			13321 5 
+		}
+		victory_points = {
+			13315 3 
 		}
 		victory_points = {
 			12816 1 
@@ -29,12 +32,18 @@ state={
 		victory_points = {
 			12004 5 
 		}
+		victory_points = {
+			13327 5 
+		}
+		victory_points = {
+			13318 5 
+		}
 		add_core_of = SWE
 
 	}
 
 	provinces={
-		992 1068 4055 4143 7117 10031 10127 12004 12816 
+		4143 7011 12004 13315 13318 13320 13321 13323 13327 
 	}
 	manpower=6454865
 	buildings_max_level_factor=1.000
