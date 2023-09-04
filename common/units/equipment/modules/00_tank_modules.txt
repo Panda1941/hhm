@@ -84,8 +84,9 @@ equipment_modules = {
 		add_stats = {
 			#soft_attack = 1 # that's when rivets shoot back because they got dislodged by the shock. That was in fact the first reactive armor.
 			
-			defense = 1
-			breakthrough = 1
+		hardness = -0.1
+		defense = -2
+		breakthrough = -2
 		}
 		xp_cost = 0
 		multiply_stats = {
@@ -101,8 +102,9 @@ equipment_modules = {
 		xp_cost = 0
 
 		add_stats = {
-			defense = 3
-			breakthrough = 3
+		    hardness = 0.05
+			defense = 2
+			breakthrough = 2
 		}
 		dismantle_cost_ic = 1
 		multiply_stats = {
@@ -116,8 +118,10 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			defense = 4
-			breakthrough = 7	
+		    hardness = 0.1
+			defense = 6
+			breakthrough = 6
+            reliability = 0.10			
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
@@ -1435,6 +1439,8 @@ equipment_modules = {
 		abbreviation = "dozer"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = { rocket amphibious anti_air anti_tank artillery}
+		forbid_equipment_type_exact_match = armor
 
 		add_stats = {
 			entrenchment = 1
