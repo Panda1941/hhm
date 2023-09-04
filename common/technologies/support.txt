@@ -738,8 +738,8 @@ technologies = {
 	tech_maintenance_company2 = {
 
 		maintenance_company = {
-			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			reliability_factor = 0.075
+			#equipment_capture_factor = 0.05
 		}
 		enable_equipment_modules = {
 			easy_maintenance
@@ -787,7 +787,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			#equipment_capture_factor = 0.05
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
@@ -829,7 +829,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			#equipment_capture_factor = 0.05
 		}
 
 		research_cost = 1.5

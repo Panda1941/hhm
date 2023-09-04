@@ -63,7 +63,7 @@ SOV_diplomacy_baltic_decision_category = {
 		remove_effect = {
 			annex_country = {
 				target = FROM
-				transfer_troops = yes
+				transfer_troops = no
 			}
 			FROM = {
 				every_state = {
@@ -74,7 +74,7 @@ SOV_diplomacy_baltic_decision_category = {
 				}
 			}
 
-			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 35911 }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 25911 }
 			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 4450 }	
 
 			custom_effect_tooltip = SOV_decision_will_be_locked_tt

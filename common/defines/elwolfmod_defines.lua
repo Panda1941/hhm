@@ -400,5 +400,8 @@ NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2;
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.01					-- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 112					-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 
+-- Removing equipment capture
+
+NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.0		-- 0.0 after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
 
 -------------------------------------------------------------------------------------------

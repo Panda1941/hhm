@@ -856,9 +856,8 @@ leader_traits = {
 		cost = 1000
 		field_marshal_modifier = {
 			org_loss_when_moving = -0.3
-			breakthrough_factor = 0.06
 		}
-		attack_skill = 1
+		attack_skill = 2
 		slot = army_chief
 		specialist_advisor_trait = army_chief_offensive_1
 		expert_advisor_trait = army_chief_offensive_2
@@ -1596,7 +1595,9 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			equipment_capture = 0.03
+			urban = {
+				attack = 0.025
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1630,7 +1631,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			max_dig_in = 5
+			max_dig_in = 2.5
 			recon_factor_while_entrenched = 0.25
 		}
 		ai_will_do = {
