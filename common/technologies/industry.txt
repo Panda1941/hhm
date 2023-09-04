@@ -88,7 +88,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = advanced_equipment_conversion
+			leads_to_tech = advanced_equipment_conversion0
 			research_cost_coeff = 1
 		}
 		path = {
@@ -289,7 +289,7 @@ technologies = {
 		}
 	}
 	
-	advanced_equipment_conversion = {
+	advanced_equipment_conversion0 = {
 		
 		
 		
@@ -432,7 +432,7 @@ technologies = {
 		}
 		
 		XOR = {
-			advanced_equipment_conversion
+			advanced_equipment_conversion0
 		}
 
 		research_cost = 2.5

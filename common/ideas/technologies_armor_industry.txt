@@ -70,7 +70,7 @@ ideas = {
 					instant = yes
 				}
 				small_plane_airframe = {
-					build_cost_ic = -0.02
+					build_cost_ic = -0.03
 					instant = yes
 				}
 				cv_small_plane_airframe = {

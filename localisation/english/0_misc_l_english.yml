@@ -869,7 +869,7 @@
  #new techs
  
  improved_equipment_conversion:0 "Heavy Industry I"
- advanced_equipment_conversion:0 "Heavy Industry II"
+ advanced_equipment_conversion0:0 "Heavy Industry II"
  advanced_equipment_conversion4:0 "Heavy Industry II"
  
  improved_equipment_conversion1:0 "Small Arms Industry I"
