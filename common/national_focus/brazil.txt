@@ -1,0 +1,1162 @@
+﻿focus_tree = {
+	id = brazilian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+#	focus = {
+#		id = BRA_
+#		icon = GFX_goal_generic_construction
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -1
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	############################
+	####### ARMY SECTION #######
+	############################
+
+	focus = {
+		id = BRA_military_council
+		icon = GFX_focus_generic_military_dictatorship
+		x = 2
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+
+	
+	focus = {
+		id = BRA_officer_training
+		icon = GFX_focus_generic_military_mission
+		x = 0
+		y = 1
+
+		cost = 5
+
+		prerequisite = { focus = BRA_military_council }
+		relative_position_id = BRA_military_council
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = BRA_additional_militia_training
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_inf_eq
+		icon = GFX_goal_generic_small_arms
+		x = -2
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = BRA_military_council }
+		relative_position_id = BRA_military_council
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_arty
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = BRA_inf_eq }
+		relative_position_id = BRA_inf_eq
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_mil_service
+		icon = GFX_focus_generic_military_academy
+		x = 1
+		y = 2
+
+		cost = 6
+
+		prerequisite = { focus = BRA_military_council }
+		relative_position_id = BRA_military_council
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			date > 1937.06.01
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = BRA_mil_service
+		}
+	}
+	
+	focus = {
+		id = BRA_basic_training
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+
+		cost = 6
+
+		prerequisite = { focus = BRA_mil_service }
+		relative_position_id = BRA_mil_service
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = BRA_basic_training
+		}
+	}
+	
+	focus = {
+		id = BRA_adv_inf_training
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		x = 0
+		y = 1
+
+		cost = 6
+
+		prerequisite = { focus = BRA_basic_training }
+		relative_position_id = BRA_basic_training
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_basic_training2
+				remove_idea = BRA_basic_training
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_inf_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		x = -2
+		y = 1
+
+		cost = 5
+
+		prerequisite = { focus = BRA_adv_inf_training }
+		relative_position_id = BRA_adv_inf_training
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = BRA_additional_militia_training
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_logistics
+		icon = GFX_focus_generic_truck
+		x = 0
+		y = 1
+
+		cost = 5
+
+		prerequisite = { focus = BRA_inf_doctrine }
+		relative_position_id = BRA_inf_doctrine
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = logistics_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_comb_arms
+		icon = GFX_goal_generic_army_motorized
+		x = 0
+		y = 1
+
+		cost = 7
+
+		prerequisite = { focus = BRA_adv_inf_training }
+		relative_position_id = BRA_adv_inf_training
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_sp_forces
+		icon = GFX_goal_generic_special_forces
+		x = 2
+		y = 1
+
+		cost = 7
+
+		prerequisite = { focus = BRA_adv_inf_training }
+		relative_position_id = BRA_adv_inf_training
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3				
+				category = marine_tech
+				category = para_tech
+				category = mountaineers_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_elite_inf
+		icon = GFX_focus_chi_army_reform
+		x = -1
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_sp_forces focus = BRA_comb_arms }
+		relative_position_id = BRA_sp_forces
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_basic_training3
+				remove_idea = BRA_basic_training2
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 1
+
+		cost = 7
+
+		prerequisite = { focus = BRA_military_council }
+		relative_position_id = BRA_military_council
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					infrastructure > 1
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_invest_in_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 8
+		y = 0
+
+		cost = 7
+
+		#prerequisite = { focus = BRA_military_council }
+		#relative_position_id = BRA_military_council
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					infrastructure < 5
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					infrastructure < 5
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					infrastructure < 5
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					infrastructure < 5
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_amazonian_resources
+		icon = GFX_focus_por_recover_brazil
+		x = -1
+		y = 1
+
+		cost = 7
+
+		prerequisite = { focus = BRA_invest_in_infrastructure }
+		relative_position_id = BRA_invest_in_infrastructure
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			495 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = oil
+				amount = 14
+				state = 495
+			}
+			add_resource = {
+				type = steel
+				amount = 26
+				state = 495
+			}
+			add_resource = {
+				type = tungsten
+				amount = 9
+				state = 495
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_sustainable_logging
+		icon = GFX_focus_ETH_restore_the_empire_of_axum
+		x = 0
+		y = 1
+
+		cost = 7
+
+		prerequisite = { focus = BRA_amazonian_resources }
+		relative_position_id = BRA_amazonian_resources
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = BRA_sustainable_logging
+		}
+	}
+
+	focus = {
+		id = BRA_hydro_electric_projects
+		icon = GFX_focus_generic_hydroelectric_energy
+		x = 1
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_invest_in_infrastructure }
+		relative_position_id = BRA_invest_in_infrastructure
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = BRA_hydro_electric_projects
+			random_owned_state = {
+				limit = {
+					infrastructure > 2
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_construction_projects
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_hydro_electric_projects }
+		relative_position_id = BRA_hydro_electric_projects
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					infrastructure > 2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_research_institute_of_brazil
+		icon = GFX_focus_research
+		x = -1
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_construction_projects }
+		prerequisite = { focus = BRA_sustainable_logging }
+		relative_position_id = BRA_construction_projects
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+
+
+	
+
+	focus = {
+		id = BRA_civil_liberties_act
+		icon = GFX_focus_por_the_fifth_empire
+		x = 12
+		y = 0
+
+		cost = 10
+
+		#prerequisite = { focus = BRA_construction_projects }
+		#relative_position_id = BRA_construction_projects
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_monke_politik2
+				remove_idea = BRA_monke_politik
+			}
+		}
+	}
+	focus = {
+		id = BRA_worker_liberties
+		icon = GFX_focus_ITA_workers_unions
+		x = 0
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_civil_liberties_act }
+		relative_position_id = BRA_civil_liberties_act
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				date > 1936.06.01
+				threat > 0.10
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_monke_politik3
+				remove_idea = BRA_monke_politik2
+			}
+		}
+	}
+	focus = {
+		id = BRA_land_reform
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 0
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_worker_liberties }
+		relative_position_id = BRA_worker_liberties
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				date > 1937.06.01
+				threat > 0.15
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_monke_politik4
+				remove_idea = BRA_monke_politik3
+			}
+		}
+	}
+	focus = {
+		id = BRA_social_reforms
+		icon = GFX_focus_ETH_reform_the_currency
+		x = 0
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_land_reform }
+		relative_position_id = BRA_land_reform
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				date > 1938.06.01
+				threat > 0.25
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_monke_politik5
+				remove_idea = BRA_monke_politik4
+			}
+		}
+	}
+	focus = {
+		id = BRA_come_to_brazil
+		icon = GFX_focus_por_concordat
+		x = 0
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_social_reforms }
+		relative_position_id = BRA_social_reforms
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				date > 1939.06.01
+				threat > 0.35
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = BRA_before_brazil_comes_to_you
+		icon = GFX_focus_por_recover_latin_america
+		x = 0
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_come_to_brazil }
+		relative_position_id = BRA_come_to_brazil
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			date > 1941.06.01
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = BRA_brazil_comes
+				days = 120
+			}
+		}
+	}
+
+
+	
+
+	focus = {
+		id = BRA_naval_expansion
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 15
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_destroyers
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = BRA_naval_expansion }
+		x = 0
+		y = 1
+		relative_position_id = BRA_naval_expansion
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = BRA_destroyers
+				bonus = 3.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_transport_ships
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = BRA_destroyers }
+		x = 0
+		y = 1
+		relative_position_id = BRA_destroyers
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = BRA_transport_ships
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
+			}
+		}
+	}
+}

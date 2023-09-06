@@ -1,0 +1,359 @@
+ideas = {
+
+	country = {
+		BRA_mil_service = {
+
+			name = "Military Service"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		BRA_basic_training = {
+
+			name = "Basic Military Training"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+		BRA_basic_training2 = {
+
+			name = "Advanced Military Training"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				army_org_factor = 0.075
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.05
+			}
+		}
+		BRA_basic_training3 = {
+
+			name = "Elite Military Training"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.075
+				army_attack_factor = 0.05
+			}
+		}
+
+		
+		BRA_sustainable_logging = {
+
+			name = "Sustainable Logging"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				local_resources_factor = 0.2
+			}
+		}
+		
+		BRA_hydro_electric_projects = {
+
+			name = "Hydroelectric Projects"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+
+
+
+		
+		BRA_monke_politik = {
+
+			name = "Monke-Politik"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_taxed_nobility
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				stability_factor = -0.35
+				political_power_factor = -0.4
+			}
+		}
+		BRA_monke_politik2 = {
+
+			name = "Less Monke-Politik"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_taxed_nobility
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				stability_factor = -0.20
+				political_power_factor = -0.15
+			}
+		}
+		BRA_monke_politik3 = {
+
+			name = "Less Monke-Politik"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_taxed_nobility
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = -0.20
+				political_power_factor = -0.15
+			}
+		}
+		BRA_monke_politik4 = {
+
+			name = "Less Monke-Politik"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_taxed_nobility
+
+			modifier = {
+				conscription = 0.015
+				consumer_goods_factor = 0.05
+				stability_factor = -0.20
+				political_power_factor = -0.15
+			}
+		}
+		BRA_monke_politik5 = {
+
+			name = "Less Monke-Politik"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_taxed_nobility
+
+			modifier = {
+				conscription = 0.015
+				stability_factor = -0.05
+				political_power_factor = -0.10
+			}
+		}
+		BRA_brazil_comes = {
+
+			name = "Brazil is Coming"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_taxed_nobility
+
+			modifier = {
+				army_attack_factor = 0.1
+				breakthrough_factor = 0.1
+				initiative_factor = 0.5
+			}
+		}
+	}
+
+	#industrial_concern = {
+
+	#	bhp_steel = {
+
+	#		picture = generic_industrial_concern_1
+
+	#		allowed = {
+	#			original_TAG = AST
+	#			has_dlc = "Together for Victory"
+	#		}
+
+
+
+	#		research_bonus = {
+	#			industry = 0.10
+	#		}
+
+	#		traits = { industrial_concern }
+
+	#		modifier = {
+	#		}
+	#	}
+
+	#	AST_jack_piddington = {
+
+	#		picture = generic_political_advisor_europe_2
+
+	#		allowed = {
+	#			original_tag = AST
+	#			has_dlc = "Together for Victory"
+	#		}
+
+	#		research_bonus = {
+	#			electronics = 0.10
+	#		}
+
+	#		cost = 75
+
+	#		traits = { electronics_developer }
+	#	}
+
+	#}
+
+	#materiel_manufacturer = {
+
+	#	designer = yes
+
+	#	lysaghts_works = {
+
+	#		picture = generic_infantry_equipment_manufacturer_2
+
+	#		allowed = {
+	#			original_TAG = AST
+	#			has_dlc = "Together for Victory"
+	#		}
+
+
+
+	#		research_bonus = {
+	#			support_tech = 0.10
+	#		}
+
+	#		traits = { support_equipment_manufacturer }
+
+
+	#	}
+
+	#	lithgow_saf = {
+
+	#		picture = generic_infantry_equipment_manufacturer_1
+
+	#		allowed = {
+	#			original_TAG = AST
+	#			has_dlc = "Together for Victory"
+	#		}
+
+
+
+	#		research_bonus = {
+	#			infantry_weapons = 0.15
+	#		}
+
+	#		traits = { infantry_equipment_manufacturer }
+
+	#	}
+	#}
+}

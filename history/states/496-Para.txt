@@ -2,7 +2,7 @@
 state={
 	id=496
 	name="STATE_496" # Minas Gerais
-	manpower = 1
+	manpower = 4603600
 	
 	state_category = town
 	
@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-        owner = WST
+        owner = BRA
 		victory_points = {
 			7476 3
 		}

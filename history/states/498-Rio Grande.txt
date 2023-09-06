@@ -2,12 +2,12 @@
 state={
 	id=498
 	name="STATE_498"
-	manpower = 1
+	manpower = 7746000
 
 	state_category = city
 
 	history={
-		owner = WST
+		owner = BRA
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 6

@@ -2,12 +2,12 @@
 state={
 	id=503
 	name="STATE_503"
-	manpower = 1
+	manpower = 1922700
 	
 	state_category = rural
 
 	history={
-		owner = WST
+		owner = BRA
 		buildings = {
 			infrastructure = 3 #was: 5
 			air_base = 1
