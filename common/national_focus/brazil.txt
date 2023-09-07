@@ -60,7 +60,7 @@
 		x = 2
 		y = 0
 
-		cost = 5
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -91,7 +91,7 @@
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = BRA_military_council }
 		relative_position_id = BRA_military_council
@@ -129,7 +129,7 @@
 		x = -2
 		y = 1
 
-		cost = 8
+		cost = 10
 
 		prerequisite = { focus = BRA_military_council }
 		relative_position_id = BRA_military_council
@@ -166,7 +166,7 @@
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 10
 
 		prerequisite = { focus = BRA_inf_eq }
 		relative_position_id = BRA_inf_eq
@@ -203,7 +203,7 @@
 		x = 1
 		y = 2
 
-		cost = 6
+		cost = 10
 
 		prerequisite = { focus = BRA_military_council }
 		relative_position_id = BRA_military_council
@@ -236,7 +236,7 @@
 		x = 0
 		y = 1
 
-		cost = 6
+		cost = 10
 
 		prerequisite = { focus = BRA_mil_service }
 		relative_position_id = BRA_mil_service
@@ -269,7 +269,7 @@
 		x = 0
 		y = 1
 
-		cost = 6
+		cost = 10
 
 		prerequisite = { focus = BRA_basic_training }
 		relative_position_id = BRA_basic_training
@@ -305,7 +305,7 @@
 		x = -2
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = BRA_adv_inf_training }
 		relative_position_id = BRA_adv_inf_training
@@ -343,7 +343,7 @@
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = BRA_inf_doctrine }
 		relative_position_id = BRA_inf_doctrine
@@ -380,7 +380,7 @@
 		x = 0
 		y = 1
 
-		cost = 7
+		cost = 10
 
 		prerequisite = { focus = BRA_adv_inf_training }
 		relative_position_id = BRA_adv_inf_training
@@ -417,7 +417,7 @@
 		x = 2
 		y = 1
 
-		cost = 7
+		cost = 10
 
 		prerequisite = { focus = BRA_adv_inf_training }
 		relative_position_id = BRA_adv_inf_training
@@ -466,7 +466,7 @@
 		}
 
 		available = {
-
+			has_war = yes
 		}
 		
 		bypass = {
@@ -492,7 +492,7 @@
 		x = 2
 		y = 1
 
-		cost = 7
+		cost = 10
 
 		prerequisite = { focus = BRA_military_council }
 		relative_position_id = BRA_military_council
@@ -535,7 +535,7 @@
 		x = 8
 		y = 0
 
-		cost = 7
+		cost = 8
 
 		#prerequisite = { focus = BRA_military_council }
 		#relative_position_id = BRA_military_council
@@ -611,7 +611,7 @@
 		x = -1
 		y = 1
 
-		cost = 7
+		cost = 10
 
 		prerequisite = { focus = BRA_invest_in_infrastructure }
 		relative_position_id = BRA_invest_in_infrastructure
@@ -666,7 +666,7 @@
 		x = 0
 		y = 1
 
-		cost = 7
+		cost = 10
 
 		prerequisite = { focus = BRA_amazonian_resources }
 		relative_position_id = BRA_amazonian_resources

@@ -15,7 +15,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_build_infrastructure
+			picture = eng_imperial_conscription
 
 			modifier = {
 				conscription_factor = 0.1
@@ -35,7 +35,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_build_infrastructure
+			picture = hol_expand_the_colonial_army
 
 			modifier = {
 				army_org_factor = 0.05
@@ -56,7 +56,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_build_infrastructure
+			picture = hol_expand_the_colonial_army
 
 			modifier = {
 				army_org_factor = 0.075
@@ -78,7 +78,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_build_infrastructure
+			picture = hol_expand_the_colonial_army
 
 			modifier = {
 				army_org_factor = 0.1
@@ -103,7 +103,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_build_infrastructure
+			picture = man_five_year_plan_industry
 
 			modifier = {
 				local_resources_factor = 0.2
@@ -124,7 +124,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_build_infrastructure
+			picture = por_hydroelectric_power
 
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -181,7 +181,7 @@ ideas = {
 		}
 		BRA_monke_politik3 = {
 
-			name = "Less Monke-Politik"
+			name = "Socialist Monke-Politik"
 
 			allowed = {
 				always = no
@@ -203,7 +203,7 @@ ideas = {
 		}
 		BRA_monke_politik4 = {
 
-			name = "Less Monke-Politik"
+			name = "Conservative Monke-Politik"
 
 			allowed = {
 				always = no
@@ -226,7 +226,7 @@ ideas = {
 		}
 		BRA_monke_politik5 = {
 
-			name = "Less Monke-Politik"
+			name = "Brazilian Constitution"
 
 			allowed = {
 				always = no
@@ -260,7 +260,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ETH_taxed_nobility
+			picture = chi_army_corruption3
 
 			modifier = {
 				army_attack_factor = 0.1

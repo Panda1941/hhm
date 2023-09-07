@@ -1053,22 +1053,20 @@ characters = {
 	}
 
 	SOV_rodion_malinovsky = {
-		name = SOV_rodion_malinovsky
+		name = "Alty"
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_rodion_malinovsky
-				small=GFX_portrait_SOV_rodion_malinovsky_small
+				large = "gfx/leaders/SOV/Alty.tga"
 			}
 		}
 		corps_commander = {
-			traits = { old_guard career_officer trait_cautious politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { trait_reckless trickster bearer_of_artillery }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
