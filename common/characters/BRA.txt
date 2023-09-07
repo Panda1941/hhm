@@ -100,7 +100,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ jungle_rat }
+			traits={ organizer }
 			skill=4
 			attack_skill=2
 			defense_skill=4
@@ -217,6 +217,52 @@ characters={
 			}
 			traits = {
 				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	BRA_Caio_Rocha_Serra={
+		name="Caio Rocha Serra"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = BRA_nero_fiuza_de_castro
+			allowed = {
+				original_tag = BRA
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	BRA_Rodolfo_Justo_Kimura={
+		name="Rodolfo Justo Kimura"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = BRA_nero_fiuza_de_castro
+			allowed = {
+				original_tag = BRA
+			}
+			traits = {
+				army_chief_reform_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -364,7 +410,7 @@ characters={
 				original_tag = BRA
 			}
 			traits = {
-				air_air_combat_training_2
+				army_concealment_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -388,7 +434,7 @@ characters={
 				original_tag = BRA
 			}
 			traits = {
-				navy_naval_air_defense_2
+				army_commando_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -436,7 +482,10 @@ characters={
 				original_tag = BRA
 			}
 			traits = {
-				air_air_superiority_2
+				army_logistics_3
+			}
+			available = {
+				has_completed_focus = BRA_logistics
 			}
 			cost = 100
 			ai_will_do = {
@@ -462,7 +511,7 @@ characters={
 				original_tag  = BRA
 			}
 			traits  = {
-				backroom_backstabber 
+				captain_of_industry 
 			}
 		}		
 	}
@@ -481,7 +530,7 @@ characters={
 				original_tag  = BRA
 			}
 			traits  = {
-				compassionate_gentleman 
+				war_industrialist 
 			}
 		}		
 	}
@@ -501,6 +550,44 @@ characters={
 			}
 			traits  = {
 				popular_figurehead 
+			}
+		}		
+	}
+	
+	BRA_breno_leite_hamada={
+		name="Breno Leite Hamada"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = BRA_afranio_de_mello_franco
+			allowed  = {
+				original_tag  = BRA
+			}
+			traits  = {
+				technocrat 
+			}
+		}		
+	}
+	
+	BRA_edgar_peres_lemos={
+		name="Edgar Peres Lemos"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = BRA_afranio_de_mello_franco
+			allowed  = {
+				original_tag  = BRA
+			}
+			traits  = {
+				silent_workhorse 
 			}
 		}		
 	}

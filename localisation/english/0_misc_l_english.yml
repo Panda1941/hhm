@@ -39,6 +39,40 @@
  
  SOV_great_purge_tt3:0 "\nSelecting this Focus will add §G+10%§! §YWar Support§! Instantly.\n\nCompleting this focus will allow you to do powerful propaganda campaigns \n\n"
 
+ #BRAZIL
+
+ BRA_military_council:0 "Establish the Military Council"
+ BRA_officer_training:0 "Expanded Officer Training"
+ BRA_inf_eq:0 "More Bullets"
+ BRA_arty:0 "Bigger Weapons"
+ BRA_mil_service:0 "Encouraged Military Service"
+ BRA_basic_training:0 "Basic Training"
+ BRA_adv_inf_training:0 "Advanced Training"
+ BRA_inf_doctrine:0 "Field Exercises"
+ BRA_logistics:0 "Efficient Logistics"
+ BRA_comb_arms:0 "Combined Arms Warfare"
+ BRA_sp_forces:0 "Special Operations Units"
+ BRA_elite_inf:0 "Elite Training"
+ BRA_arsenal:0 "Brazilian Military Arsenal"
+
+ BRA_invest_in_infrastructure:0 "Infrastructure Investments"
+ BRA_amazonian_resources:0 "Amazonian Resources"
+ BRA_sustainable_logging:0 "Sustainable Logging"
+ BRA_hydro_electric_projects:0 "Hydroelectric Projects"
+ BRA_construction_projects:0 "Construction Projects"
+ BRA_research_institute_of_brazil:0 "R.I.B."
+
+ BRA_civil_liberties_act:0 "Civil Liberties Act"
+ BRA_worker_liberties:0 "Worker Liberties Act"
+ BRA_land_reform:0 "Land Reforms"
+ BRA_social_reforms:0 "Social Reforms"
+ BRA_come_to_brazil:0 "Come to Brazil..."
+ BRA_before_brazil_comes_to_you:0 "..Before Brazil Comes to You!"
+
+ BRA_naval_expansion:0 "Naval Expansion"
+ BRA_destroyers:0 "New Destroyer Models"
+ BRA_transport_ships:0 "Naval Logistics"
+
 
 
 
