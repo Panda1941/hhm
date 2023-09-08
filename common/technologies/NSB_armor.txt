@@ -827,6 +827,7 @@ technologies = {
 		
 		enable_equipment_modules = {
 			tank_heavy_cannon
+			tank_anti_air_cannon
 		}
 
 		enable_subunits = {
@@ -926,6 +927,7 @@ technologies = {
 			tank_heavy_howitzer
 			stabilizer
 			squeezebore_adaptor
+			tank_anti_air_cannon_2
 		}
 
 		path = {
@@ -998,6 +1000,7 @@ technologies = {
 			tank_heavy_cannon_3
 			tank_high_velocity_cannon_3
 			auto_loader
+			tank_anti_air_cannon_3
 		}
 
 		path = {
