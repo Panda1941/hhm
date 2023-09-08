@@ -922,4 +922,17 @@
  ATT_tooltip_small_arms_industry_1:0 "Gives a §Y-3% production cost§! £production_cost  bonus to our §YGuns, Artillery.§!\n§RNOTE: This is done through a hidden National Spirit giving the buff to the equipment.§!"
  ATT_tooltip_small_arms_industry_2:0 "Gives a §Y-3% production cost§! £production_cost  bonus to our §YGuns, Artillery.§!\n§RNOTE: This is done through a hidden National Spirit giving the buff to the equipment.§!"
  ATT_tooltip_small_arms_industry_3:0 "Gives a §Y-5% production cost§! £production_cost  bonus to our §YGuns, Artillery.§!\n§RNOTE: This is done through a hidden National Spirit giving the buff to the equipment.§!"
+ 
+ ATT_tooltip_mobile_infantry:0 "\n§RNOTE: Germany specific doctrines after 1941.01.01.§!"
+ ATT_tooltip_volkssturm:0 "\n§RNOTE: Germany specific doctrines after 1942.01.01.§!"
+ ATT_tooltip_peoples_army:0 "\n§RNOTE: Soviet specific doctrines after 1942.01.01.§!"
+ ATT_tooltip_integrated_support:0 "\n§RNOTE: UK specific doctrines after 1941.07.01.§!"
+ ATT_tooltip_concentrated_fire_plans:0 "\n§RNOTE: UK specific doctrines after 1942.01.01.§!"
+ ATT_tooltip_grand_mechanized_offensive:0 "\n§RNOTE: Italy specific doctrines.§!"
+ 
+ spam_inf_tt:0 "Infantry and Leg Special Forces battalions require §G-20% Guns§! and §GArtillery equipment.§!"
+ spam_truck_tt:0 "Both Motorized and Mechanized batallions need §G-20% Motorized§! and §GMechanized equipment.§!"
+ spam_arty_tt:0 "Infantry and Leg Special Forces battalions require §R+20% Artillery equipment.§! (Rocket.A. and Artillery)."
+ spam_tank_tt:0 "Armor Support Companies will require §G-4 Flame Tank§! / §GSp. Artillery-chassis.§!"
+ spam_trench_tt:0 "Leg Special Forces battalions require §G-10% Support Equipments§!."
 
