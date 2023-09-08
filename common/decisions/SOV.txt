@@ -1042,8 +1042,8 @@ SOV_propaganda_campaigns = {
 
 		available = {
 			SOV_propaganda_poster_slot_available = yes
-			date > 1939.01.01
-			has_war = no
+			date > 1940.09.01
+			date < 1943.03.01
 		}
 
 		visible = {
