@@ -494,6 +494,33 @@ characters={
 		}		
 	}
 
+	BRA_lorenzo_clemente_de_campos={
+		name="Lorenzo Clemente de Campos"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BRA_moreira_lima
+			ledger = air
+			allowed = {
+				original_tag = BRA
+			}
+			traits = {
+				army_armored_2
+			}
+			available = {
+
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
 
 	### POLITICAL ADVISORS ###
 

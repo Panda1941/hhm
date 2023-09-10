@@ -106,6 +106,7 @@ recruit_character = BRA_edgar_peres_lemos
 
 recruit_character = BRA_Caio_Rocha_Serra
 recruit_character = BRA_Rodolfo_Justo_Kimura
+recruit_character = BRA_lorenzo_clemente_de_campos
 
 
 set_politics = {
