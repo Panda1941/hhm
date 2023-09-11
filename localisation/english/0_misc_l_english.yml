@@ -809,6 +809,7 @@
  2ndline_state:0 "Second line of defense"
  3rdline_state:0 "Third line of defense"
  lastline_state:0 "Last line of defense"
+ FRA_state:0 "French Trenches"
  
  #Soviet Focuses and ideas
  
@@ -929,6 +930,8 @@
  ATT_tooltip_integrated_support:0 "\n§RNOTE: UK specific doctrines after 1941.07.01.§!"
  ATT_tooltip_concentrated_fire_plans:0 "\n§RNOTE: UK specific doctrines after 1942.01.01.§!"
  ATT_tooltip_grand_mechanized_offensive:0 "\n§RNOTE: Italy specific doctrines.§!"
+ GER_found_wolfsburg_tt:0 "§GCreate Wolfsburg as the headquarter of KdF-Wagen.§!"
+ GER_hgw_tt:0 "§GWürttemberg and Hessen will become a Megalopos Region and gain 4 Extra Building slots.§!"
  
  spam_inf_tt:0 "Infantry and Leg Special Forces battalions require §G-20% Guns§! and §GArtillery equipment.§!"
  spam_truck_tt:0 "Both Motorized and Mechanized batallions need §G-20% Motorized§! and §GMechanized equipment.§!"

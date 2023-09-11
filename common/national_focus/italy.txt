@@ -4147,6 +4147,10 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+		
+		ITA = {
+		transfer_state = 846
+				}
 			#TODO_Manu: Need to do something here because it is super redundant with everything else
 
 			custom_effect_tooltip = form_greater_italy_tt

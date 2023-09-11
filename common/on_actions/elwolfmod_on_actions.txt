@@ -1914,4 +1914,16 @@ on_actions = {
 			}
 		}
 	}
+	on_state_control_changed = {
+	effect = {
+	if = {
+					limit = {
+						FROM = { tag = FRA }
+						FROM.FROM = { is_core_of = FRA }
+						FRA = { surrender_progress	> 0.75 } 	
+					}
+						tp_divs_out_of_france = yes
+	}
+	}
+	}
 }

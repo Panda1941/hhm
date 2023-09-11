@@ -1291,3 +1291,12 @@ Atlantikwall_improvement = {
 	army_morale_factor = 0.05
 
 }
+
+FRA_state = {
+	enable = { always = yes }
+
+	icon = GFX_generic_wall_line
+
+	max_dig_in = 5
+
+}

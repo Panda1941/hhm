@@ -1278,6 +1278,33 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2IC
 			}
+			
+			if = {
+				limit = { 42 = { is_demilitarized_zone = yes } }
+				custom_effect_tooltip = GER_west_wall_tt
+				custom_effect_tooltip = GER_hgw_tt
+				
+			}
+			if = {
+			limit = { 42 = { is_demilitarized_zone = no } }
+				55 = {
+						set_state_category = megalopolis	
+					
+				}
+				50 = {
+						set_state_category = megalopolis	
+					
+				}
+				42 = {
+				add_extra_state_shared_building_slots = 4	
+					
+				}
+				51 = {
+				add_extra_state_shared_building_slots = 4	
+					
+				}
+			}	
+						
 		}
 	}
 
@@ -1373,6 +1400,17 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
 			}
+			if = {
+				limit = { 42 = { is_demilitarized_zone = yes } }
+				custom_effect_tooltip = GER_west_wall_tt
+				custom_effect_tooltip = GER_found_wolfsburg_tt
+			}
+			if = {
+			limit = { 42 = { is_demilitarized_zone = no } }
+				custom_effect_tooltip = GER_found_wolfsburg_tt
+				hidden_effect = { set_province_name = { id = 9375 name = Wolfsburg } set_victory_points = { province = 9375 value = 10 } }
+			}
+			
 		}
 	}
 
@@ -4159,6 +4197,10 @@ focus_tree = {
 				type = annex_everything
 			}
 			add_timed_idea = { idea = AXIS_blitzkrieg days = 30 }
+			every_state = {
+ 				limit={OR={state=785 state=810 state=18 state=28 state=15 state=16 state=29 state=27 state =17 state=24 }}
+ 				add_dynamic_modifier = { modifier = FRA_state days=90  }
+ 			}
 		}
 	}	
 

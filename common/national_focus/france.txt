@@ -70,20 +70,31 @@
                         level = 1
                         instant_build = yes
                     }
-					    add_resource = {
+				add_resource = {
                     type = tungsten
                     amount = 16
                     }
-					                                    add_resource = {
+				add_resource = {
                     type = steel
-                    amount = 30
+                    amount = 40
                     }
-                  add_resource = {
+                add_resource = {
                     type = aluminium
-                    amount = 12
+                    amount = 16
                     }					
                 }
-								
+		773 = {
+						set_state_category = megalopolis	
+					
+				}
+		660 = {
+						set_state_category = large_city	
+					
+				}
+		774 = {
+						set_state_category = large_city	
+					
+				}		
 				
     }		
 	}
@@ -713,6 +724,7 @@ if = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 3 } 
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 	focus = {
@@ -735,6 +747,7 @@ if = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 3 }
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 	focus = {
@@ -756,6 +769,7 @@ if = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 2 }  
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 
@@ -778,7 +792,8 @@ if = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
- 			add_offsite_building = { type = arms_factory level = 3 } 
+ 			add_offsite_building = { type = arms_factory level = 3 }
+            add_offsite_building = { type = industrial_complex level = 1 }			
 
 		}
 	}
@@ -801,7 +816,8 @@ if = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 3 } 
+			add_offsite_building = { type = arms_factory level = 3 }
+            add_offsite_building = { type = industrial_complex level = 1 }			
 		}
 	}
 	

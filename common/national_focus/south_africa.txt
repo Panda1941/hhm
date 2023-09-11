@@ -815,6 +815,7 @@
 					instant_build = yes
 				}
 			}
+			
 		}
 
 		completion_reward = {
@@ -847,6 +848,10 @@
 					set_state_flag = SAF_infrastructure_effort_Inf2
 				}
 			}
+			681 = {
+				set_state_category = large_city	
+					
+				}
 		}
 	}
 
