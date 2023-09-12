@@ -1,4 +1,34 @@
 ﻿l_english:
+ ### Mod stuff
+
+ 
+ tank_auto_cannon_3:0 "Advanced Auto Cannon"
+ tank_small_cannon_3:0 "Advanced Small Cannon"
+ tank_close_support_gun_2:0 "Advanced Close Support Gun"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  ### EQUIPMENT MODULE ROLE PERMISSIONS ###
  MODULE_ALLOW_ROLE:1 "§GAllows§! the $ROLE|H$ role"
