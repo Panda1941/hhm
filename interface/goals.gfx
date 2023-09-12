@@ -3899,7 +3899,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_focus_GER_air_innovation_fighter"
-		texturefile = "gfx/interface/goals/GER/GER_air_innovation_fighter.dds"
+		texturefile = "gfx/interface/goals/GER/GER_air_innovation.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_GER_AFRIKA"
@@ -3908,10 +3908,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_The_polish_arent_feeling_good"
 		texturefile = "gfx/interface/goals/GER/The_polish_arent_feeling_good.dds"
-	}
-	spriteType = {
-		name = "GFX_focus_BF_109"
-		texturefile = "gfx/interface/goals/BF_109.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_Torch"
@@ -3933,6 +3929,210 @@ spriteTypes = {
 		name = "GFX_focus_ENG_WesternDesertBattle"
 		texturefile = "gfx/interface/goals/WesternDesertBattle.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_SAF_infantry_support"
+		texturefile = "gfx/interface/goals/SAF/goal_eng_tank_churchill.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SAF_crusader"
+		texturefile = "gfx/interface/goals/SAF/goal_eng_tank_crusader.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SAF_mechanization_effort"
+		texturefile = "gfx/interface/goals/SAF/goal_generic_army_mechanized.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SAF_sa_engineer_corps"
+		texturefile = "gfx/interface/goals/SAF/goal_generic_armored_car.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SAF_armored_warfare"
+		texturefile = "gfx/interface/goals/SAF/goal_doctrine_tank_warfare.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SAF_arty"
+		texturefile = "gfx/interface/goals/SAF/goal_artillery_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_rocketry_focus"
+		texturefile = "gfx/interface/goals/GER/GER_rocketry_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_small_arms"
+		texturefile = "gfx/interface/goals/SAF/goal_infantry_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_anschluss"
+		texturefile = "gfx/interface/goals/GER/GER_anschluss.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_rhineland"
+		texturefile = "gfx/interface/goals/GER/GER_rhineland.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_trade_interdiction"
+		texturefile = "gfx/interface/goals/GER/GER_trade_interdiction.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_u_boat"
+		texturefile = "gfx/interface/goals/GER/GER_u_boat_effort.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_war_with_france"
+		texturefile = "gfx/interface/goals/GER/GER_war_with_france.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_synthetic_rubber"
+		texturefile = "gfx/interface/goals/GER/GER_synthetic_rubber.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_the_mannheim_project"
+		texturefile = "gfx/interface/goals/GER/GER_the_mannheim_project.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_naval_effort"
+		texturefile = "gfx/interface/goals/GER/GER_naval_effort.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_naval_effort_2"
+		texturefile = "gfx/interface/goals/GER/GER_naval_effort2.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_naval_rearmament"
+		texturefile = "gfx/interface/goals/GER/GER_naval_rearmament.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_modular_construction"
+		texturefile = "gfx/interface/goals/GER/GER_modular_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_extra_tech_slot"
+		texturefile = "gfx/interface/goals/GER/GER_extra_tech_slot.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_four_year_plan"
+		texturefile = "gfx/interface/goals/GER/GER_four_year_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_grosraumwirtschaft"
+		texturefile = "gfx/interface/goals/GER/GER_grosraumwirtschaft.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_long_range_escorts"
+		texturefile = "gfx/interface/goals/GER/GER_long_range_escorts.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_naval_air_effort"
+		texturefile = "gfx/interface/goals/GER/GER_naval_air_effort.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_end_of_czechoslovakia"
+		texturefile = "gfx/interface/goals/GER/GER_end_of_czechoslovakia.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_army_innovation_2"
+		texturefile = "gfx/interface/goals/GER/GER_army_innovation_2.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_autobahn"
+		texturefile = "gfx/interface/goals/GER/GER_autobahn.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_autarky"
+		texturefile = "gfx/interface/goals/GER/GER_autarky.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_align_romania"
+		texturefile = "gfx/interface/goals/GER/GER_align_romania.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_kdf_wagen"
+		texturefile = "gfx/interface/goals/GER/GER_kdf_wagen.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_hermann_goring_werke"
+		texturefile = "gfx/interface/goals/GER/GER_hermann_goring_werke.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_integrate_war_economies"
+		texturefile = "gfx/interface/goals/GER/GER_integrate_war_economies.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_plan_z"
+		texturefile = "gfx/interface/goals/GER/GER_plan_z.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_tactical_air_effort"
+		texturefile = "gfx/interface/goals/GER/GER_tactical_air_effort.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_reintegrate_luxemburg_and_alsace_lorraine"
+		texturefile = "gfx/interface/goals/GER/GER_reintegrate_luxemburg_and_alsace_lorraine.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_form_the_reichskommissariats"
+		texturefile = "gfx/interface/goals/GER/GER_form_the_reichskommissariats.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_demand_sudetenland"
+		texturefile = "gfx/interface/goals/GER/GER_demand_sudetenland.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_second_vienna_award"
+		texturefile = "gfx/interface/goals/GER/GER_second_vienna_award.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_align_hungary"
+		texturefile = "gfx/interface/goals/GER/GER_align_hungary.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_demand_memel"
+		texturefile = "gfx/interface/goals/GER/GER_demand_memel.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_army_innovation"
+		texturefile = "gfx/interface/goals/GER/GER_army_innovation.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_west_wall"
+		texturefile = "gfx/interface/goals/GER/GER_west_wall.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_german_war_economy"
+		texturefile = "gfx/interface/goals/GER/GER_german_war_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_weserubung"
+		texturefile = "gfx/interface/goals/GER/GER_weserubung.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_strategic_air_effort"
+		texturefile = "gfx/interface/goals/GER/GER_strategic_air_effort.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_coal_liquidization"
+		texturefile = "gfx/interface/goals/GER/GER_coal_liquidization.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_first_vienna_award"
+		texturefile = "gfx/interface/goals/GER/GER_first_vienna_award.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_crossing_the_atlantic"
+		texturefile = "gfx/interface/goals/GER/GER_crossing_the_atlantic.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_support_tanks"
+		texturefile = "gfx/interface/goals/GER/mobile_artillery_medium.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_infantry_support_tanks_"
+		texturefile = "gfx/interface/goals/GER/mobile_artillery_light.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_Me262"
+		texturefile = "gfx/interface/goals/GER/GER_Me262.dds"
+	}
 	
 	
 	
@@ -3942,8 +4142,16 @@ spriteTypes = {
 	
 	
 	
-
 	
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

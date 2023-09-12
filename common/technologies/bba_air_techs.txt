@@ -881,7 +881,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 6 }
 		}
 		path = {
 			leads_to_tech = aa_cannon_2
@@ -926,7 +926,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 12 }
 		}
 
 		categories = {

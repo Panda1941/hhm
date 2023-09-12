@@ -938,4 +938,33 @@
  spam_arty_tt:0 "Infantry and Leg Special Forces battalions require §R+20% Artillery equipment.§! (Rocket.A. and Artillery)."
  spam_tank_tt:0 "Armor Support Companies will require §G-4 Flame Tank§! / §GSp. Artillery-chassis.§!"
  spam_trench_tt:0 "Leg Special Forces battalions require §G-10% Support Equipments§!."
+ 
+ ##########################################reworks can saf ger
+ 
+ GER_support_tanks:0 "Hummel"
+ GER_infantry_support_tanks:0 "Grille"
+ GER_me262:0 "Me 262 ""Schwalbe""
+ GER_assault_gun_focus:0 "Light Assault Guns"
+ GER_assault_gun_focus_b:0 "Medium Assault Guns"
+ GER_prepare_the_afrikakorps:0 "Prepare the Afrikakorps"
+ 
+ saf_expand_tank_production:0 "Expanded Tank Production"
+ saf_expand_armored_car_production:0 "Expanded Armored Car Production"
+ saf_expand_inf_production:0 "Expended Infantry Production"
+ SAF_military_complex_expansion:0 "Military Complex Expansion"
+ SAF_civilian_complex_expansion:0 "Civilian Complex Expansion"
+ SAF_armored_warfare:0 "Armored Warfare"
+ SAF_infantry_support:0 "Infantry Tank"
+ SAF_crusader:0 "Crusader Tank"
+ SAF_arty:0 "Artillery Development"
+ SAF_leg_infantry_max:0 "Infantry Effort"
+ SAF_r_arty:0 "Rocket Arty Development"
+ SAF_leg_infantry:0 "Special Forces Introduction"
+ SAF_heavy_guns:0 "Heavy Armament"
+ SAF_medium_cannons:0 "Medium Armament"
+ SAF_fast_rearmament:0 "Rearm Fast"
+ SAF_focus_on_resources:0 "Exavation First (Slow Rearmament)"
+ SAF_focus_on_resources_2:0 "Cape Worker Facilities"
+ SAF_focus_on_resources_3:0 "Natal Metal Factory"
+ SAF_focus_on_resources_4:0 "Transvaal Heavy Metal Factory"
 

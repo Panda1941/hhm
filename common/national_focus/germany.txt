@@ -22,7 +22,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_four_year_plan
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_GER_four_year_plan
 		x = 10
 		y = 0
 		cost = 10
@@ -45,7 +45,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_west_wall
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_focus_GER_west_wall
 		prerequisite = { focus = GER_four_year_plan }
 		x = -5
 		y = 1
@@ -1160,7 +1160,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_autarky
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_focus_GER_autarky
 		prerequisite = { focus = GER_four_year_plan }
 		x = 4
 		y = 1
@@ -1188,7 +1188,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_hermann_goring_werke
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_GER_hermann_goring_werke
 		dynamic = yes
 		prerequisite = { focus = GER_autarky }
 		x = 2
@@ -1310,7 +1310,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_kdf_wagen
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_GER_kdf_wagen
 		dynamic = yes
 		prerequisite = { focus = GER_hermann_goring_werke }
 		x = 0
@@ -1410,13 +1410,17 @@ focus_tree = {
 				custom_effect_tooltip = GER_found_wolfsburg_tt
 				hidden_effect = { set_province_name = { id = 9375 name = Wolfsburg } set_victory_points = { province = 9375 value = 10 } }
 			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1500
+			}
 			
 		}
 	}
 
 	focus = {
 		id = GER_coal_liquidization
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_focus_GER_coal_liquidization
 		prerequisite = { focus = GER_autarky }
 		x = 0
 		y = 1
@@ -1455,7 +1459,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_synthetic_rubber
-		icon = GFX_focus_generic_rubber
+		icon = GFX_focus_synthetic_rubber
 		prerequisite = { focus = GER_coal_liquidization }
 		x = 0
 		y = 1
@@ -1477,7 +1481,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_extra_tech_slot
-		icon = GFX_focus_research
+		icon = GFX_focus_GER_extra_tech_slot
 		text = extra_tech_slot
 		prerequisite = { focus = GER_kdf_wagen focus = GER_synthetic_rubber }
 		x = -1
@@ -1504,7 +1508,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_autobahn
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_GER_autobahn
 		prerequisite = { focus = GER_autarky }
 		x = -2
 		y = 1
@@ -1573,7 +1577,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_german_war_economy
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_GER_german_war_economy
 		prerequisite = { focus = GER_autobahn }
 		x = 0
 		y = 1
@@ -1676,7 +1680,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_grosraumwirtschaft
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_GER_grosraumwirtschaft
 		prerequisite = { focus = GER_four_year_plan }
 		x = 0
 		y = 1
@@ -1694,7 +1698,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_align_hungary
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_focus_GER_align_hungary
 		prerequisite = { focus = GER_grosraumwirtschaft }
 		x = 0
 		y = 1
@@ -1758,7 +1762,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_align_romania
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_focus_GER_align_romania
 		prerequisite = { focus = GER_grosraumwirtschaft }
 		x = -2
 		y = 1
@@ -1822,7 +1826,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_integrate_war_economies
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_GER_integrate_war_economies
 		prerequisite = { focus = GER_align_hungary }
 		prerequisite = { focus = GER_align_romania }
 		x = 0
@@ -2130,7 +2134,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_form_the_reichskommissariats
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_focus_GER_form_the_reichskommissariats
 		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
 		available = {
 			has_government = fascism
@@ -2154,7 +2158,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_air_innovation
-		icon = GFX_focus_BF_109
+		icon = GFX_focus_GER_air_innovation_fighter
 		x = 20
 		y = 0
 		cost = 10
@@ -2283,7 +2287,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_tactical_air_effort
-		icon = GFX_goal_generic_CAS
+		icon = GFX_focus_GER_tactical_air_effort
 		prerequisite = { focus = GER_air_innovation }
 		x = 1
 		y = 2
@@ -2319,7 +2323,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_long_range_escorts
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_focus_GER_long_range_escorts
 		prerequisite = { focus = GER_tactical_air_effort focus = GER_strategic_air_effort }
 		x = -1
 		y = 1
@@ -2345,7 +2349,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_air_effort
 		text = naval_air_effort
-		icon = GFX_goal_generic_air_naval_bomber
+		icon = GFX_focus_GER_naval_air_effort
 		prerequisite = { focus = GER_tactical_air_effort }
 		x = 0
 		y = 2
@@ -2369,7 +2373,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_strategic_air_effort
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_focus_GER_strategic_air_effort
 		prerequisite = { focus = GER_air_innovation }
 		x = -1
 		y = 2
@@ -2400,10 +2404,10 @@ focus_tree = {
 
 	focus = {
 		id = GER_army_innovation
-		icon = GFX_goal_generic_axis_build_infantry
-		x = 23
+		icon = GFX_focus_GER_army_innovation
+		x = 25
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2465,8 +2469,8 @@ focus_tree = {
 					
 					add_tech_bonus = {
 						name = armor_bonus
-						bonus = 0.75
-						uses = 2
+						bonus = 1.0
+						uses = 1
 						category = armor
 					}
 				}
@@ -2474,10 +2478,50 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.75
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = armor
 			}
+		}
+	}
+	
+	focus = {
+		id = GER_infantry_support_tanks
+
+		icon = GFX_focus_GER_infantry_support_tanks_
+		prerequisite = { focus = GER_army_innovation_2 }
+		relative_position_id = GER_army_innovation_2
+		mutually_exclusive = { focus = GER_support_tanks }
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = { ger_assault_gun_focus }
+			
+		}
+	}
+	
+	focus = {
+		id = GER_support_tanks
+
+		icon = GFX_focus_GER_support_tanks
+		prerequisite = { focus = GER_army_innovation_2 }
+		relative_position_id = GER_army_innovation_2
+		mutually_exclusive = { focus = GER_infantry_support_tanks }
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = { ger_assault_gun_focus_b }
+			
 		}
 	}
 
@@ -2520,7 +2564,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_army_innovation_2
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_GER_army_innovation_2
 		prerequisite = { focus = GER_soviet_treaty }
 		x = 0
 		y = 2
@@ -2542,17 +2586,38 @@ focus_tree = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {
+                name = medium_light_75			
+				bonus = 0.75
+				uses = 2
+				category = cat_medium_armor
+				category = cat_light_armor
+			}
+			add_tech_bonus = {
+                name = heavy_75			
+				bonus = 0.75
+				uses = 1
+				category = cat_heavy_armor
+			}
+			add_tech_bonus = {
+			    name = mech_150
 				bonus = 1.5
 				uses = 1
 				name = mech_army_bonus
 				technology = mechanised_infantry
 			}
+			add_tech_bonus = {
+				name = armored_car_100
+				bonus = 1.0
+				uses = 2
+				category = cat_armored_cars
+			}
+			add_ideas = {GER_prepare_the_afrikakorps}
 		}
 	}
 
 	focus = {
 		id = GER_rocketry_focus
-		icon = GFX_focus_rocketry
+		icon = GFX_focus_GER_rocketry_focus
 		prerequisite = { focus = GER_extra_tech_slot }
 		prerequisite = { focus = GER_air_innovation_2 }
 		x = 2
@@ -2569,22 +2634,23 @@ focus_tree = {
 			add_ideas = GER_rocketry_idea
 			add_tech_bonus = {
 				name = GER_rocketry_focus
+				ahead_reduction = 2.0
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = rocketry
 			}
 			add_tech_bonus = {
 				name = GER_rocketry_focus
-				bonus = 1.0
-				uses = 2
-				category = jet_technology
+				ahead_reduction = 0.5
+				uses = 1
+				technology = jet_engines
 			}
 		}
 	}
 
 	focus = {
 		id = GER_wunderwaffe
-		icon = GFX_focus_wonderweapons
+		icon = GFX_focus_GER_the_mannheim_project
 		prerequisite = { focus = GER_rocketry_focus }
 		x = 0
 		y = 1
@@ -2599,10 +2665,42 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 1.0
+				ahead_reduction = 1.5
+				bonus = 1
 				uses = 1
 				category = nuclear
-				category = rocketry
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_me262
+		icon = GFX_focus_GER_Me262
+		prerequisite = { focus = GER_wunderwaffe }
+		relative_position_id = GER_wunderwaffe
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes	
+
+		available = { 
+		OR = {
+			AND = {
+				has_tech = advanced_small_airframe
+				
+				DATE > 1943.01.01
+			}
+			has_tech = jet_engines
+		}
+		}
+		completion_reward = {
+			set_technology = {
+			    aa_cannon_2 = 1
+				jet_engines = 1
+				modern_small_airframe = 1
 			}
 		}
 	}
@@ -2657,8 +2755,8 @@ focus_tree = {
 	
 	focus = {
 		id = GER_rhineland
-		icon = GFX_goal_generic_military_sphere
-		x = 28
+		icon = GFX_focus_rhineland
+		x = 34
 		y = 0
 		cost = 5
 		available = {
@@ -3520,11 +3618,11 @@ focus_tree = {
 
 	focus = {
 		id = GER_anschluss
-		icon = GFX_goal_anschluss
+		icon = GFX_focus_anschluss
 		prerequisite = { focus = GER_rhineland }
 		cancel = {}
 		cancel_if_invalid = no
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 10
@@ -3579,7 +3677,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_demand_memel
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_GER_demand_memel
 		prerequisite = { focus = GER_anschluss }
 		available = { is_subject = no }
 		x = 1
@@ -3715,7 +3813,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_weserubung
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_focus_GER_weserubung
 		prerequisite = { focus = GER_danzig_or_war }
 
 		will_lead_to_war_with = DEN 
@@ -3929,7 +4027,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_demand_sudetenland
-		icon = GFX_goal_demand_sudetenland
+		icon = GFX_focus_GER_demand_sudetenland
 		prerequisite = { focus = GER_anschluss }
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = FRA
@@ -3982,10 +4080,45 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = GER_first_vienna_award
+		icon = GFX_focus_GER_first_vienna_award
+		prerequisite = { focus = GER_demand_sudetenland }
+		bypass = {
+			OR = {
+				AND = {
+					NOT = { CZE = { controls_state = 664 } }
+					NOT = { owns_state = 664 }
+				}
+				HUN = { is_friend_or_potential_friend_of_GER = no }
+				CZE = { is_puppet_of = GER }
+				CZE = { is_in_faction_with = GER }
+			}
+		}
+		available = {
+			is_subject = no
+			owns_state = 69
+		}
+		x = -1
+		y = 2
+		relative_position_id = GER_demand_sudetenland
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			HUN = {
+				country_event = { id = germany.51 }
+				
+			}
+		
+		}
+	}
 
 	focus = {
 		id = GER_end_of_czechoslovakia
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_GER_end_of_czechoslovakia
 		prerequisite = { focus = GER_demand_sudetenland }
 		available = {}
 
@@ -4090,7 +4223,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_second_vienna_award
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_GER_second_vienna_award
 		prerequisite = { focus = GER_danzig_or_war }
 		x = -3
 		y = 1
@@ -4160,7 +4293,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_war_with_france
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_GER_war_with_france
 		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
 		available = {
 		AND = {
@@ -4206,7 +4339,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_reintegrate_luxemburg_and_alsace_lorraine
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_GER_reintegrate_luxemburg_and_alsace_lorraine
 		prerequisite = { focus = GER_war_with_france }
 		available = {
 			is_subject = no
@@ -4268,8 +4401,8 @@ focus_tree = {
 	
 	focus = {
 		id = GER_naval_rearmament
-		icon = GFX_goal_generic_build_navy
-		x = 37
+		icon = GFX_focus_GER_naval_rearmament
+		x = 45
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -4379,7 +4512,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_effort
 		text = naval_effort
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_GER_naval_effort
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
 		y = 1
@@ -4454,7 +4587,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_naval_effort2
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_focus_GER_naval_effort_2
 		prerequisite = { focus = GER_naval_effort }
 		x = 0
 		y = 1
@@ -4520,7 +4653,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_plan_z
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_GER_plan_z
 		prerequisite = { focus = GER_naval_effort }
 		x = -1
 		y = 2
@@ -4604,10 +4737,116 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = GER_crossing_the_atlantic
+		icon = GFX_focus_GER_crossing_the_atlantic
+		prerequisite = { focus = GER_plan_z focus = GER_modular_construction }
+		available = {
+
+			AND = {
+					has_war_with = SOV
+                    date > 1941.12.11
+			}
+		}
+		cancel_if_invalid = yes
+		x = -2
+		y = 1
+		relative_position_id = GER_modular_construction
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_on_continent = europe
+					is_coastal = yes
+					arms_factory < 1
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				custom_effect_tooltip = GER_crossing_the_atlantic_2_factories_tt
+				hidden_effect = {
+					random_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							is_on_continent = europe
+							NOT = { is_coastal = yes }
+							arms_factory > 1
+						}
+						remove_building = {
+							type = arms_factory
+							level = 2
+						}
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_on_continent = europe
+					is_coastal = yes
+					AND = {
+						arms_factory < 2
+						arms_factory > 0
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				custom_effect_tooltip = GER_crossing_the_atlantic_1_factory_tt
+				hidden_effect = {
+					random_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							is_on_continent = europe
+							NOT = { is_coastal = yes }
+							arms_factory > 0
+						}
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_on_continent = europe
+					is_coastal = yes
+					arms_factory > 1
+				}
+				remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = GER_u_boat_effort
-		icon = GFX_goal_generic_navy_submarine
+		icon = GFX_focus_u_boat
 		prerequisite = { focus = GER_naval_effort }
 		x = 1
 		y = 2
@@ -4680,7 +4919,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_trade_interdiction
-		icon = GFX_goal_generic_wolf_pack
+		icon = GFX_focus_trade_interdiction
 		prerequisite = { focus = GER_u_boat_effort }
 		x = 0
 		y = 1
@@ -4705,7 +4944,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_modular_construction
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_focus_GER_modular_construction
 		prerequisite = { focus = GER_trade_interdiction }
 		x = 0
 		y = 1
