@@ -2287,6 +2287,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_tactical_air_effort
+		text = "Ground-Air Coordination"
 		icon = GFX_focus_GER_tactical_air_effort
 		prerequisite = { focus = GER_air_innovation }
 		x = 1
@@ -2300,23 +2301,25 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = op_dest_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = battlefield_support_tree
-			}
+		add_ideas = Luftwaffe_tac
+			
 			add_tech_bonus = {
-				name = bomber_bonus
+				name = GER_air_innovation
 				bonus = 1.0
 				uses = 1
-				category = cas_bomber			
+				category = light_air
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
 				category = tactical_bomber	
+			}
+			add_doctrine_cost_reduction = {
+				name = op_dest_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = battlefield_support_tree
 			}
 		}
 	}
@@ -2336,6 +2339,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+		add_ideas = Luftwaffe_interceptor
 			add_tech_bonus = {
 				name = GER_long_range_escorts
 				bonus = 2.0
@@ -2362,6 +2366,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+		add_ideas = Luftwaffe_marine
 			add_tech_bonus = {
 				name = nav_bomber_bonus
 				bonus = 1.0
@@ -2373,6 +2378,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_strategic_air_effort
+		text = "A War of Terror"
 		icon = GFX_focus_GER_strategic_air_effort
 		prerequisite = { focus = GER_air_innovation }
 		x = -1
@@ -2386,18 +2392,20 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+		add_ideas = Luftwaffe_strat
 			# Balance research bonus for 2 techs in battlefield_support_tree
-			add_doctrine_cost_reduction = {
-				name = strat_dest_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = battlefield_support_tree
-			}
+			
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 2
 				category = cat_strategic_bomber
+			}
+			add_doctrine_cost_reduction = {
+				name = strat_dest_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = battlefield_support_tree
 			}
 		}
 	}
@@ -2471,7 +2479,7 @@ focus_tree = {
 						name = armor_bonus
 						bonus = 1.0
 						uses = 1
-						category = armor
+						category = cat_medium_armor
 					}
 				}
 			}
@@ -2480,7 +2488,7 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 1.0
 				uses = 1
-				category = armor
+				category = cat_medium_armor
 			}
 		}
 	}
@@ -2488,7 +2496,7 @@ focus_tree = {
 	focus = {
 		id = GER_infantry_support_tanks
 
-		icon = GFX_focus_GER_infantry_support_tanks_
+		icon = GFX_focus_GER_infantry_support_tanks
 		prerequisite = { focus = GER_army_innovation_2 }
 		relative_position_id = GER_army_innovation_2
 		mutually_exclusive = { focus = GER_support_tanks }
@@ -2592,12 +2600,12 @@ focus_tree = {
 				category = cat_medium_armor
 				category = cat_light_armor
 			}
-			add_tech_bonus = {
-                name = heavy_75			
-				bonus = 0.75
-				uses = 1
-				category = cat_heavy_armor
-			}
+			#add_tech_bonus = {
+			#	bonus = 0.75
+			#	uses = 1
+			#	name = mech_army_bonus
+			#	technology = advanced_medium_tank
+			#}
 			add_tech_bonus = {
 			    name = mech_150
 				bonus = 1.5
@@ -2614,6 +2622,42 @@ focus_tree = {
 			add_ideas = {GER_prepare_the_afrikakorps}
 		}
 	}
+	
+	focus = {
+		id = GER_tiger
+		icon = GFX_focus_GER_tiger
+		
+		prerequisite = { focus = GER_army_innovation_2 }
+		available = {
+			
+		}
+		x = 3
+		y = 1
+		relative_position_id = GER_army_innovation_2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+
+			army_experience = 50
+			add_tech_bonus = {
+                name = GER_tiger			
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_tank
+			}
+			add_tech_bonus = {
+			    name = mech_100
+				ahead_reduction = 1.0
+				uses = 1
+				name = mech_army_bonus
+				technology = mechanised_infantry
+			}
+		}
+	}
+
 
 	focus = {
 		id = GER_rocketry_focus
@@ -2727,7 +2771,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 1
+		x = 3
 		y = 1
 		relative_position_id = GER_soviet_treaty
 		cost = 5
@@ -2755,6 +2799,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_rhineland
+		text = "Marsch auf den Rhein!"
 		icon = GFX_focus_rhineland
 		x = 34
 		y = 0
@@ -2798,7 +2843,7 @@ focus_tree = {
 			date > 1941.6.14
 			is_subject = no
 		}
-		x = 4
+		x = 6
 		y = 2
 		relative_position_id = GER_rhineland
 		cost = 1
@@ -3724,6 +3769,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_danzig_or_war
+		text = "Danzig ist Deutsch!"
 		icon = GFX_focus_GER_danzig
 		prerequisite = { focus = GER_demand_memel }
 		prerequisite = { focus = GER_mol_rib_pact }
@@ -4402,7 +4448,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearmament
-		x = 45
+		x = 50
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -4449,6 +4495,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+		navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -4655,7 +4702,7 @@ focus_tree = {
 		id = GER_plan_z
 		icon = GFX_focus_GER_plan_z
 		prerequisite = { focus = GER_naval_effort }
-		x = -1
+		x = -2
 		y = 2
 		relative_position_id = GER_naval_effort
 		cost = 5
@@ -4698,6 +4745,16 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+		hidden_effect = {
+				GER_upgrade_kriegsmarine_effect = yes
+				set_variable = {
+					GER_positioning = 0.1
+				}
+				set_variable = {
+					GER_screening_efficiency = 0.1
+				}
+			}
+			custom_effect_tooltip = GER_PLAN_Z_modify
 			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
@@ -4729,12 +4786,118 @@ focus_tree = {
 				category = bb_tech
 				category = shbb_tech
 			}
-			add_tech_bonus = {
-				name = cv_bonus
-				bonus = 1.0
-				uses = 1
-				category = cv_tech
+		}
+	}
+	
+	focus = {
+		id = GER_Graf_Zeppelin
+		icon = GFX_focus_GER_Graf_Zeppelin
+		relative_position_id = GER_plan_z
+
+		prerequisite = { focus = GER_plan_z }
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_tech = early_ship_hull_carrier
+		}
+		
+		completion_reward = {
+
+			create_equipment_variant = {
+					name = "Graf Zeppelin"
+					type = ship_hull_carrier_conversion_bb
+					name_group = GER_CV_HISTORICAL
+					parent_version = 0
+					allow_without_tech = yes
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						mid_1_custom_slot = ship_armor_carrier_deck
+					}
 			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_conversion_bb
+					creator = "GER"
+					version_name = "Graf Zeppelin"
+				}
+				name = "Graf Zeppelin"
+				requested_factories = 5
+				progress = 0.80
+				amount = 1
+			}	
+		}
+	}
+	
+	focus = {
+		id = GER_Bismarck
+		icon = GFX_focus_GER_Bismarck
+		prerequisite = { focus = GER_plan_z }
+		relative_position_id = GER_plan_z
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		date>1940.1.1
+			has_tech = improved_ship_hull_heavy
+		}
+		
+		completion_reward = {
+			
+			create_equipment_variant = {
+				name = "Bismarck Class"
+				type 	= ship_hull_heavy_3
+				name_group = GER_BB_HISTORICAL
+				allow_without_tech = yes
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_3
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_3
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_bb_2
+					front_1_custom_slot = ship_heavy_battery_3
+					mid_1_custom_slot = ship_heavy_battery_3
+					mid_2_custom_slot = ship_secondaries_2
+					mid_3_custom_slot = ship_secondaries_2
+					rear_1_custom_slot = ship_heavy_battery_3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "GER"
+					version_name = "Bismarck Class"
+				}
+				name = "Bismarck"
+				requested_factories = 5
+				progress = 0.75
+				amount = 1
+			}
+            add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "GER"
+					version_name = "Bismarck Class"
+				}
+				name = "Bismarck"
+				requested_factories = 5
+				progress = 0.50
+				amount = 1
+			}			
 		}
 	}
 	
@@ -4750,7 +4913,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = yes
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = GER_modular_construction
 		cost = 10

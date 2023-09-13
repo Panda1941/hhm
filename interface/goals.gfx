@@ -4126,12 +4126,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GER/mobile_artillery_medium.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_GER_infantry_support_tanks_"
+		name = "GFX_focus_GER_infantry_support_tanks"
 		texturefile = "gfx/interface/goals/GER/mobile_artillery_light.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_GER_Me262"
 		texturefile = "gfx/interface/goals/GER/GER_Me262.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_Graf_Zeppelin"
+		texturefile = "gfx/interface/goals/GER/GER_Graf_Zeppelin.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_Bismarck"
+		texturefile = "gfx/interface/goals/GER/GER_Bismarck.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_tiger"
+		texturefile = "gfx/interface/goals/GER/GER_tiger.dds"
 	}
 	
 	
