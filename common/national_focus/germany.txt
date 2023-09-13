@@ -3722,6 +3722,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_demand_memel
+		text = " Litauen-Ultimatum"
 		icon = GFX_focus_GER_demand_memel
 		prerequisite = { focus = GER_anschluss }
 		available = { is_subject = no }
@@ -3859,6 +3860,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_weserubung
+		text = "Unternehmen Weserübung"
 		icon = GFX_focus_GER_weserubung
 		prerequisite = { focus = GER_danzig_or_war }
 
@@ -3943,6 +3945,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_around_maginot
+		text = "Schlacht um Belgien"
 		icon = GFX_focus_GER_around_maginot
 		prerequisite = { focus = GER_danzig_or_war }
 		
@@ -4073,6 +4076,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_demand_sudetenland
+		text = "Münchner Abkommen"
 		icon = GFX_focus_GER_demand_sudetenland
 		prerequisite = { focus = GER_anschluss }
 		will_lead_to_war_with = CZE
@@ -4129,6 +4133,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_first_vienna_award
+		text = "Wiener Diktat"
 		icon = GFX_focus_GER_first_vienna_award
 		prerequisite = { focus = GER_demand_sudetenland }
 		bypass = {
@@ -4164,6 +4169,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_end_of_czechoslovakia
+		text = "Das Ende der Tschechoslowakei"
 		icon = GFX_focus_GER_end_of_czechoslovakia
 		prerequisite = { focus = GER_demand_sudetenland }
 		available = {}
@@ -4269,6 +4275,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_second_vienna_award
+		text = "Zweiten Wiener Schiedsspruch"
 		icon = GFX_focus_GER_second_vienna_award
 		prerequisite = { focus = GER_danzig_or_war }
 		x = -3
@@ -4339,6 +4346,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_war_with_france
+		text = "Westfeldzug"
 		icon = GFX_focus_GER_war_with_france
 		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
 		available = {
@@ -4385,6 +4393,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_reintegrate_luxemburg_and_alsace_lorraine
+		text = "Luxemburg und Elsass-Lothringen reintegrieren"
 		icon = GFX_focus_GER_reintegrate_luxemburg_and_alsace_lorraine
 		prerequisite = { focus = GER_war_with_france }
 		available = {
