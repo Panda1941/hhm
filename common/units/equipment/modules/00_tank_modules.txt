@@ -10,13 +10,13 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			build_cost_ic = 5
+			build_cost_ic = 3
 			fuel_consumption = 3.5
 			maximum_speed = 1.0
 		}
 		multiply_stats = {
 			maximum_speed = 0.15
-			build_cost_ic = 0.06
+			build_cost_ic = 0.02
 		}
 
 	}
@@ -27,13 +27,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			build_cost_ic = 5
+			build_cost_ic = 2
 			fuel_consumption = 2.25
 			reliability = 0.3
 			maximum_speed = 1.0
 		}
 		multiply_stats = { 
-			build_cost_ic = 0.06
 		}
 	}
 
@@ -44,7 +43,7 @@ equipment_modules = {
 
 		add_stats = {
 			fuel_consumption = 4.5
-			build_cost_ic = 7
+			build_cost_ic = 5
 			reliability = -0.15
 			breakthrough = 4
 			defense = 4
@@ -52,7 +51,7 @@ equipment_modules = {
 		multiply_stats = {
 			breakthrough = 0.10
 			defense = 0.10
-			build_cost_ic = 0.14
+			build_cost_ic = 0.06
 		}
 	}
 
@@ -62,7 +61,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			build_cost_ic = 8
+			build_cost_ic = 5
 			fuel_consumption = 8
 			reliability = -0.15
 			maximum_speed = 1.0
@@ -673,7 +672,7 @@ equipment_modules = {
 			soft_attack = 25
 			hard_attack = 20
 			ap_attack = 67.5
-			build_cost_ic = 4.0
+			build_cost_ic = 3
 			reliability = -0.15
 		}
 		dismantle_cost_ic = 1
@@ -696,7 +695,7 @@ equipment_modules = {
 			soft_attack = 32.5
 			hard_attack = 25
 			ap_attack = 90
-			build_cost_ic = 5.5
+			build_cost_ic = 3.5
 			reliability = -0.2
 		}
 		dismantle_cost_ic = 1
@@ -722,7 +721,7 @@ equipment_modules = {
 			hard_attack = 2.5
 			ap_attack = 10
 			air_attack = 12
-			build_cost_ic = 3
+			build_cost_ic = 2.5
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -745,7 +744,7 @@ equipment_modules = {
 			hard_attack = 5
 			ap_attack = 20
 			air_attack = 20
-			build_cost_ic = 4
+			build_cost_ic = 3.5
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -772,7 +771,7 @@ equipment_modules = {
 			hard_attack = 7.5
 			ap_attack = 30
 			air_attack = 32
-			build_cost_ic = 5
+			build_cost_ic = 4.5
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -796,7 +795,7 @@ equipment_modules = {
 			soft_attack = 22.5
 			hard_attack = 17.5
 			ap_attack = 45
-			build_cost_ic = 3
+			build_cost_ic = 2.5
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -816,7 +815,7 @@ equipment_modules = {
 			soft_attack = 27.5
 			hard_attack = 22.5
 			ap_attack = 75
-			build_cost_ic = 5
+			build_cost_ic = 4
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -840,7 +839,7 @@ equipment_modules = {
 			soft_attack = 35
 			hard_attack = 27.5
 			ap_attack = 110
-			build_cost_ic = 7
+			build_cost_ic = 5.5
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -886,7 +885,7 @@ equipment_modules = {
 			soft_attack = 45
 			hard_attack = 10
 			ap_attack = 20
-			build_cost_ic = 7
+			build_cost_ic = 5
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -911,7 +910,7 @@ equipment_modules = {
 			soft_attack = 27.5
 			hard_attack = 22.5
 			ap_attack = 65
-			build_cost_ic = 4
+			build_cost_ic = 2.5
 			reliability = -0.15
 			breakthrough = 2
 		}
@@ -938,7 +937,7 @@ equipment_modules = {
 			soft_attack = 12.5
 			hard_attack = 32.5
 			ap_attack = 85
-			build_cost_ic = 4
+			build_cost_ic = 2.5
 			reliability = -0.05
 		}
 		dismantle_cost_ic = 1
@@ -964,7 +963,7 @@ equipment_modules = {
 			soft_attack = 32.5
 			hard_attack = 25
 			ap_attack = 95
-			build_cost_ic = 5
+			build_cost_ic = 3.5
 			reliability = -0.15
 			breakthrough = 4
 		}
@@ -991,7 +990,7 @@ equipment_modules = {
 			soft_attack = 15
 			hard_attack = 37.5
 			ap_attack = 125
-			build_cost_ic = 5
+			build_cost_ic = 3.5
 			reliability = -0.175
 		}
 		dismantle_cost_ic = 1
@@ -1018,7 +1017,7 @@ equipment_modules = {
 			soft_attack = 37.5
 			hard_attack = 30
 			ap_attack = 125
-			build_cost_ic = 7
+			build_cost_ic = 5.5
 			reliability = -0.15
 			breakthrough = 4
 		}
@@ -1045,7 +1044,7 @@ equipment_modules = {
 			soft_attack = 17.5
 			hard_attack = 47.5
 			ap_attack = 225
-			build_cost_ic = 8
+			build_cost_ic = 5.5
 			reliability = -0.2
 		}
 		dismantle_cost_ic = 1
@@ -1094,7 +1093,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 57.5
 			ap_attack = 40
-			build_cost_ic = 6.0
+			build_cost_ic = 5
 			reliability = -0.2
 		}
 		dismantle_cost_ic = 1
@@ -1173,7 +1172,7 @@ equipment_modules = {
 			soft_attack = 35
 			hard_attack = 40
 			ap_attack = 100
-			build_cost_ic = 7
+			build_cost_ic = 5
 			maximum_speed = -0.5
 			reliability = -0.25
 		}
@@ -1200,7 +1199,7 @@ equipment_modules = {
 			soft_attack = 42.5
 			hard_attack = 50
 			ap_attack = 135
-			build_cost_ic = 8
+			build_cost_ic = 6
 			maximum_speed = -0.6
 			reliability = -0.25
 		}
@@ -1227,7 +1226,7 @@ equipment_modules = {
 			soft_attack = 45
 			hard_attack = 55
 			ap_attack = 180
-			build_cost_ic = 9
+			build_cost_ic = 7
 			maximum_speed = -0.7
 			reliability = -0.3
 		}
@@ -1253,7 +1252,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 62.5
 			hard_attack = 12.5
-			build_cost_ic = 7.5
+			build_cost_ic = 6
 			maximum_speed = -0.5
 			reliability = -0.3
 			breakthrough = 2
@@ -1282,7 +1281,7 @@ equipment_modules = {
 			soft_attack = 62.5
 			hard_attack = 62.5
 			ap_attack = 225
-			build_cost_ic = 13
+			build_cost_ic = 10
 			maximum_speed = -0.2
 			reliability = -0.30
 		}
@@ -1378,8 +1377,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 4
-			soft_attack = 4.5
+			build_cost_ic = 3.5
+			soft_attack = 4
 			reliability = -0.075
 		}
 		xp_cost = 0
@@ -1393,8 +1392,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 4
-			hard_attack = 4.5
+			build_cost_ic = 3.5
+			hard_attack = 4
 			reliability = -0.075
 		}
 		xp_cost = 0

@@ -393,7 +393,7 @@ NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 6.0 	-- how much additional flow a rai
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
 NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 100.0     --How many trucks does it cost to fully motorize a hub
 
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2;
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2
 
 -- SPECIAL FORCES
 
@@ -403,5 +403,11 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 112					-- You can have a minimum of 
 -- Removing equipment capture
 
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.0		-- 0.0 after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
+
+-- NERF TO INFRA
+
+NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 0.25
+NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_FROM = { 1, 0.125, 0.0, 0.1 }
+NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_TO = { 0.1, 0.9, 0.1, 0.6 }
 
 -------------------------------------------------------------------------------------------
