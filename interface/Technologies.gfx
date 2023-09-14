@@ -6849,4 +6849,19 @@ spriteTypes = {
 		name = "GFX_FRA_armored_car_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/FRA_armored_car_4.png"
 	}
+	
+	SpriteType = {
+		name = "GFX_shock_troops3_medium"
+		texturefile = "gfx/interface/technologies/shock_troops3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_shock_troops2_medium"
+		texturefile = "gfx/interface/technologies/shock_troops2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_shock_troops_medium"
+		texturefile = "gfx/interface/technologies/shock_troops.dds"
+	}
 }

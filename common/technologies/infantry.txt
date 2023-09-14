@@ -536,6 +536,9 @@ technologies = {
 
 		paratrooper = {
 			max_organisation = 5
+			soft_attack = 0.05
+			hard_attack = 0.05
+			recon = 1.0
 		}
 		
 
@@ -664,6 +667,9 @@ technologies = {
 
 		marine = {
 			max_organisation = 5
+			soft_attack = 0.05
+			hard_attack = 0.05
+			recon = 1.0
 		}
 
 		research_cost = 2.0
@@ -767,6 +773,9 @@ technologies = {
 	tech_mountaineers3 = {	
 		mountaineers = {
 			max_organisation = 5
+			soft_attack = 0.05
+			hard_attack = 0.05
+			recon = 1.0
 		}
 
 		research_cost = 2.0
@@ -784,6 +793,178 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0.7
+		}
+	}
+	
+	shock_troops = {
+
+		enable_subunits = {
+			shock_troops
+		}
+
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = shock_troops
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_shock_troops"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = shock_troops2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1936 }
+		}
+		
+		categories = {
+			infantry_tech
+			shock_troops_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	shock_troops2 = {
+
+		shock_troops = {
+			max_organisation = 5
+			soft_attack = 0.05
+
+
+		}
+		path = {
+			leads_to_tech = shock_troops3
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1939 }
+		}
+		
+		categories = {
+			infantry_tech
+			shock_troops_tech
+			cat_special_forces_generic
+		}
+	}
+	
+	shock_troops3 = {
+
+		shock_troops = {
+			max_organisation = 5
+			soft_attack = 0.05
+			hard_attack = 0.05
+			recon = 1.0
+		}
+
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1943 }
+		}
+		
+		categories = {
+			infantry_tech
+			shock_troops_tech
+			cat_special_forces_generic
+		}
+	}
+	
+	jaegers = {
+		enable_subunits = {
+			jaeger
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					NOT = {
+						has_template_containing_unit = jaeger
+					}
+				}
+				hidden_effect = {
+					load_oob = "unlock_jaegers"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}
+		}
+		path = {
+			leads_to_tech = jaegers2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		start_year = 1936
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1936 }
+		}
+		categories = {
+			jaeger_tech
+			infantry_tech
+			cat_special_forces_generic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	jaegers2 = {
+		jaeger = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = jaegers3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		start_year = 1939
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1939 }
+		}
+		categories = {
+			jaeger_tech
+			infantry_tech
+			cat_special_forces_generic
+		}
+	}
+	jaegers3 = {
+		jaeger = {
+			max_organisation = 5
+			soft_attack = 0.05
+			hard_attack = 0.05
+			recon = 1.0
+		}
+		research_cost = 1
+		start_year = 1943
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1943 }
+		}
+		categories = {
+			jaeger_tech
+			infantry_tech
+			cat_special_forces_generic
 		}
 	}
 

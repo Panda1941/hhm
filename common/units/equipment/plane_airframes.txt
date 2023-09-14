@@ -507,15 +507,16 @@ equipments = {
 
 		air_range = 2000
 		maximum_speed = 0
-		air_agility = 85
+		air_agility = 55
 		air_defence = 18
 		weight = 7
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 18
+		build_cost_ic = 32
 		resources = {
 			aluminium = 4
 			rubber = 1
+			tungsten = 1
 		}
 		module_slots = {
 			fixed_main_weapon_slot = {
@@ -1114,7 +1115,7 @@ equipments = {
 
 		air_range = 1700
 		maximum_speed = 0
-		air_agility = 80
+		air_agility = 55
 		air_defence = 18
 		weight = 9
 		naval_strike_attack = 1

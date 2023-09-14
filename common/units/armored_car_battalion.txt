@@ -55,8 +55,8 @@ sub_units = {
 		}
 		desert = {
 			movement = 0.15
-			attack = 0.05
-			defence = 0.1
+			attack = 0.10
+			defence = 0.10
 		}
 		urban = {
 			attack = -0.3

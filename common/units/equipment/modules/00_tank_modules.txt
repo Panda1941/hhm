@@ -316,7 +316,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			breakthrough = -0.10
+			breakthrough = -0.25
 			soft_attack = 0.10
 			hard_attack = 0.10
 		}
@@ -422,7 +422,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			breakthrough = -0.10
+			breakthrough = -0.25
 			soft_attack = 0.10
 			hard_attack = 0.10
 		}
@@ -515,7 +515,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			breakthrough = -0.10
+			breakthrough = -0.25
 		    soft_attack = 0.10
 			hard_attack = 0.10
 		}

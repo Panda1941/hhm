@@ -296,14 +296,29 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-
-
 			gridboxtype = {
-				name = "tech_special_forces_tree"
+				name = "shock_troops_tree"
 				position = { x = 140 y = 1140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
+			
+			gridboxtype = {
+				name = "jaegers_tree"
+				position = { x = 140 y = 1238 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "tech_special_forces_tree"
+				position = { x = 140 y = 1536 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+
+			
 		}
 
 		containerWindowType = {

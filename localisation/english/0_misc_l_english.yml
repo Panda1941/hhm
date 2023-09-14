@@ -992,4 +992,7 @@
  JAP_armored_car_equipment_3_short:0 "Hokoku"
  FRA_armored_car_equipment_3:0 "Panhard EBR"
  FRA_armored_car_equipment_3_short:0 "Panhard EBR"
+ 
+ shock_troops:0"Assault Troops"
+ shock_troops_desc:0"As it shows in history, you need a numerical advantage to win offensive battles. However, the best of the best have a different approach to this theory. Instead of strength by numbers, we have strength in skilled soldiers that can carry out the most daring assaults"
 
