@@ -27,13 +27,13 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 2.5
-		max_organisation = 20
+		max_organisation = 40
 		default_morale = 0.3
 		manpower = 350
 		training_time = 120
 
 		#Misc Abilities
-		weight = 0.1
+		weight = 0.025
 		supply_consumption = 0.02
 		
 		entrenchment  = 4
@@ -53,39 +53,40 @@ sub_units = {
 			infantry_equipment = 40
 			support_equipment = 30
 		}
+		
+		same_support_type = flame
 
 		can_be_parachuted = yes
 
 		forest = {
-			defence = 0.15
+			defence = 0.10
 			movement = 0.05
 		}
 
 		hills = {
-			defence = 0.05
+			defence = 0.10
 		}
 
 		jungle = {
-			defence = 0.15
+			defence = 0.10
 		}
 
 		marsh = {
-			defence = 0.15
 			movement = 0.2
 		}
 
 		fort = {
-			attack = 0.05
+			attack = 0.10
 			defence = 0.05
 		}
 
 		river = {
-			defence = 0.10
+			defence = 0.25
 			movement = 0.25
 		}
 
 		amphibious = {
-			attack = 0.15
+			attack = 0.25
 		}
 	}
 }

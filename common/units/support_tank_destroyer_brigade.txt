@@ -24,7 +24,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			light_tank_destroyer_chassis = 24
+			light_tank_destroyer_chassis = 20
 		}
 		
 		can_be_parachuted = yes
@@ -44,6 +44,10 @@ sub_units = {
 		hard_attack = 0.20
 		breakthrough = -0.6
 		armor_value = -0.75
+		
+		amphibious = {
+			attack = -0.5
+		}
 
 		
 		same_support_type = anti_tank
@@ -74,7 +78,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			medium_tank_destroyer_chassis = 20
+			medium_tank_destroyer_chassis = 15
 		}
 		manpower = 300
 		max_organisation = 0
@@ -90,6 +94,10 @@ sub_units = {
 		hard_attack = 0.20
 		breakthrough = -0.6
 		armor_value = -0.75
+		
+		amphibious = {
+			attack = -0.5
+		}
 		
 		same_support_type = anti_tank
 	}
@@ -119,7 +127,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			heavy_tank_destroyer_chassis = 16
+			heavy_tank_destroyer_chassis = 12
 		}
 		manpower = 300
 		max_organisation = 0
@@ -134,6 +142,10 @@ sub_units = {
 		hard_attack = 0.20
 		breakthrough = -0.6
 		armor_value = -0.75
+		
+		amphibious = {
+			attack = -0.5
+		}
 		
 		same_support_type = anti_tank
 	}
@@ -162,7 +174,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			super_heavy_tank_destroyer_chassis = 10
+			super_heavy_tank_destroyer_chassis = 8
 		}
 		manpower = 300
 		max_organisation = 0
@@ -178,6 +190,10 @@ sub_units = {
 		hard_attack = 0.20
 		breakthrough = -0.6
 		armor_value = -0.75
+		
+		amphibious = {
+			attack = -0.5
+		}
 		
 		same_support_type = anti_tank
 	}
@@ -206,7 +222,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			modern_tank_destroyer_chassis = 16
+			modern_tank_destroyer_chassis = 8
 		}
 		manpower = 300
 		max_organisation = 0
@@ -222,6 +238,10 @@ sub_units = {
 		hard_attack = 0.20
 		breakthrough = -0.6
 		armor_value = -0.75
+		
+		amphibious = {
+			attack = -0.5
+		}
 
 		same_support_type = anti_tank
 	}

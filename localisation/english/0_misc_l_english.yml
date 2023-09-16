@@ -905,7 +905,7 @@
  
  improved_equipment_conversion:0 "Heavy Industry I"
  advanced_equipment_conversion0:0 "Heavy Industry II"
- advanced_equipment_conversion4:0 "Heavy Industry II"
+ advanced_equipment_conversion4:0 "Heavy Industry III"
  
  improved_equipment_conversion1:0 "Small Arms Industry I"
  advanced_equipment_conversion2:0 "Small Arms Industry II"
@@ -995,4 +995,12 @@
  
  shock_troops:0"Assault Troops"
  shock_troops_desc:0"As it shows in history, you need a numerical advantage to win offensive battles. However, the best of the best have a different approach to this theory. Instead of strength by numbers, we have strength in skilled soldiers that can carry out the most daring assaults"
+ jaegers:0"Jäger I"
+jaegers_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+jaegers2:0"Jäger II"
+jaegers2_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+jaegers3:0"Jäger III"
+jaegers3_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+jaeger:0"Jäger"
+jaeger_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
 

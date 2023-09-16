@@ -514,7 +514,7 @@ sub_units = {
 		hard_attack = 4.0
 		
 		#Size Definitions
-		max_strength = 30
+		max_strength = 25
 		max_organisation = 60
 		default_morale = 0.3
 		manpower = 1200
@@ -536,7 +536,7 @@ sub_units = {
 		transport = mechanized_equipment
 
 		need = {
-			mechanized_equipment = 35
+			mechanized_equipment = 40
 			infantry_equipment = 100
 		}
 
