@@ -785,6 +785,9 @@ technologies = {
 		enable_subunits = {
 			modern_armor
 		}
+		enable_equipment_modules = {
+			tank_modern_cannon
+		}
 
 		research_cost = 2.5
 		start_year = 1945

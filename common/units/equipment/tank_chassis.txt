@@ -55,15 +55,6 @@ equipments = {
 					tank_engine_type
 				}
 			}
-
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -201,24 +192,6 @@ equipments = {
 					tank_engine_type
 				}
 			}
-
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-
-			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
 		}
 	}
 
@@ -277,24 +250,6 @@ equipments = {
 			}
 
 			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-
-			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-
-			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
@@ -376,24 +331,6 @@ equipments = {
 					tank_secondary_turret
 				}
 			}
-
-			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
 		}
 	}
 
@@ -449,15 +386,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_engine_type
-				}
-			}
-
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_radio_module
-					tank_special_module
-					tank_secondary_turret
 				}
 			}
 			
@@ -611,15 +539,6 @@ equipments = {
 					tank_secondary_turret
 				}
 			}
-
-			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
 			
 		}
 	}
@@ -687,15 +606,6 @@ equipments = {
 			}
 
 			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
-
-			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
@@ -779,15 +689,6 @@ equipments = {
 			}
 
 			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
-
-			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
@@ -897,6 +798,11 @@ equipments = {
 		}
 
 		module_count_limit = {
+			category = tank_secondary_turret
+			count < 3 #two secondary turrets only
+		}
+
+		module_count_limit = {
 			module = easy_maintenance
 			count < 2
 		}
@@ -918,7 +824,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 3.5
-		build_cost_ic = 7.2
+		build_cost_ic = 17.2
 		reliability = 1
 		armor_value = 25
 		hardness = 0.95
@@ -957,7 +863,7 @@ equipments = {
 		parent = heavy_tank_chassis_0
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 9
+		build_cost_ic = 19
 		armor_value = 35
 		
 		module_slots = {
@@ -1016,14 +922,6 @@ equipments = {
 					tank_radio_module
 				}
 			}
-			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
 
 		}
 	}
@@ -1037,7 +935,7 @@ equipments = {
 		parent = heavy_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 11
+		build_cost_ic = 21
 		maximum_speed = 4
 		reliability = 1.15
 		armor_value = 55
@@ -1111,15 +1009,6 @@ equipments = {
 					tank_radio_module
 				}
 			}
-
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
 		}
 	}
 
@@ -1132,7 +1021,7 @@ equipments = {
 		parent = heavy_tank_chassis_2
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 13
+		build_cost_ic = 23
 		maximum_speed = 4
 		reliability = 1.3
 		armor_value = 75
