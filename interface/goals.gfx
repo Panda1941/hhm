@@ -4145,6 +4145,10 @@ spriteTypes = {
 		name = "GFX_focus_GER_tiger"
 		texturefile = "gfx/interface/goals/GER/GER_tiger.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_SOV_kv1"
+		texturefile = "gfx/interface/goals/SOV/SOV_kv1.dds"
+	}
 	
 	
 	

@@ -778,7 +778,7 @@
 		id = SOV_socialist_realism
 		icon = GFX_goal_generic_forceful_treaty
 		#prerequisite = { focus = SOV_stalin_constitution }
-		x = 4
+		x = 5
 		y = 0
 		relative_position_id = SOV_stalin_constitution
 		cost = 10
@@ -944,7 +944,7 @@
 	focus = {
 		id = SOV_improve_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 12
+		x = 15
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -995,7 +995,7 @@
 	focus = {
 		id = SOV_transpolar_flights
 		icon = GFX_goal_generic_air_fighter2
-		x = 14
+		x = 17
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1653,7 +1653,7 @@
 		available = {
 			has_government = communism
 		}
-		x = 20
+		x = 25
 		y = 0
 		cost = 20
 		ai_will_do = {
@@ -2272,6 +2272,33 @@
 				bonus = 1.0
 				uses = 1
 				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_kv1
+
+		icon = GFX_focus_SOV_kv1
+		text = "KV 1"
+		prerequisite = { focus = SOV_pc_of_mechanical_engineering }
+		x = 3
+		y = 1
+		relative_position_id = SOV_pc_of_mechanical_engineering
+		cost = 10
+
+		available = {
+			
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_tech_bonus = {
+                name = SOV_kv1			
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_tank
 			}
 		}
 	}

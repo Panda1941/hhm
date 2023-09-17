@@ -2477,8 +2477,8 @@ focus_tree = {
 					
 					add_tech_bonus = {
 						name = armor_bonus
-						bonus = 1.0
-						uses = 1
+						bonus = 0.75
+						uses = 2
 						category = cat_medium_armor
 					}
 				}
