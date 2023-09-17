@@ -278,7 +278,7 @@ sub_units = {
 		initiative = 0.01
 		supply_consumption = 0.05
 
-		can_be_parachuted = no
+		can_be_parachuted = yes
 
 		
 		urban = {
@@ -286,8 +286,8 @@ sub_units = {
 		}
 
 		need = {
-			infantry_equipment = 200
-			support_equipment = 30
+			infantry_equipment = 220	# More expensive than any other sp force
+			support_equipment = 40
 		}
 		essential = {
 			support_equipment

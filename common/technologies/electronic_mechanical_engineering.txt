@@ -2,7 +2,7 @@ technologies = {
 	electronic_mechanical_engineering = {
 
 		# small boost to research speed
-		research_speed_factor = 0.04
+		research_speed_factor = 0.03
 		
 		path = {
 			leads_to_tech = radio 
@@ -401,7 +401,7 @@ technologies = {
 	computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.05
+		research_speed_factor = 0.06
 		
 		path = {
 			leads_to_tech = improved_computing_machine 
@@ -452,7 +452,7 @@ technologies = {
 	improved_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
+		research_speed_factor = 0.07
 		enable_equipment_modules = {
 			bomb_sights_2
 		}
@@ -512,7 +512,7 @@ technologies = {
 	advanced_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
+		research_speed_factor = 0.1
 		
 		path = {
 			leads_to_tech = advanced_encryption 
@@ -809,7 +809,7 @@ technologies = {
 			ship_fire_control_system_1
 		}
 		
-		research_cost = 1
+		research_cost = 0.75
 		
 		folder = {
 			name = electronics_folder
@@ -848,7 +848,7 @@ technologies = {
 			ship_fire_control_system_2
 		}
 		
-		research_cost = 1
+		research_cost = 0.75
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
@@ -892,7 +892,7 @@ technologies = {
 			has_dlc = "Man the Guns"
 		}
 		
-		research_cost = 1
+		research_cost = 0.75
 		
 		folder = {
 			name = electronics_folder
@@ -933,7 +933,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 1940
 		
 		folder = {
 			name = electronics_folder
@@ -991,7 +991,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1944
+		start_year = 1943
 		
 		folder = {
 			name = electronics_folder
@@ -1163,7 +1163,7 @@ technologies = {
 	
 	atomic_research = {
 
-		research_speed_factor = 0.06
+		research_speed_factor = 0.075
 		
 		path = {
 			leads_to_tech = nuclear_reactor 
@@ -1250,7 +1250,7 @@ technologies = {
 	nuclear_reactor = {
 
 		# can build reactors
-		research_speed_factor = 0.02
+		research_speed_factor = 0.025
 		
 		start_year = 1943
 		research_cost = 5
@@ -1288,7 +1288,7 @@ technologies = {
 		start_year = 1945
 		research_cost = 5
 
-		research_speed_factor = 0.02
+		research_speed_factor = 0.05
 		
 		folder = {
 			name = electronics_folder
