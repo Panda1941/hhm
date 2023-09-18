@@ -246,9 +246,11 @@ ideas = {
 	SOV_winter_offensive = {
 	picture = SOV_winter_offensive
 			modifier = {
-				army_armor_attack_factor = 0.05
+				army_armor_attack_factor = 0.10
 				army_infantry_attack_factor = 0.10
+				army_speed_factor = 0.05
 				winter_attrition_factor = -1
+				cas_damage_reduction = 0.10
 			}
 		}
 	SOV_uranus = {

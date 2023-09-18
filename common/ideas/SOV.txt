@@ -1089,6 +1089,34 @@ ideas = {
 
 			modifier = {
 				land_doctrine_cost_factor = -0.1
+				production_factory_max_efficiency_factor = 0.15
+				
+
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05 instant = yes 
+				}
+
+			}
+		}
+		SOV_five_year_plan_hhm = { 
+			name = SOV_five_year_plan_dynamic_modifier
+
+			removal_cost = -1
+
+			picture = SOV_second_five_year_plan
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.10
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = 0.03
+				production_speed_industrial_complex_factor = 0.10
+				industrial_concern_cost_factor = -0.15
 			}
 		}
 	}

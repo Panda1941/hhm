@@ -1300,3 +1300,10 @@ FRA_state = {
 	max_dig_in = 5
 
 }
+
+GER_ruhr_valley = {
+	enable = { always = yes }
+	icon = GFX_modifiers_ETH_state_development
+
+	state_production_speed_buildings_factor = 0.25
+}

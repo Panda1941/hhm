@@ -645,7 +645,7 @@ elwolfmod_capitulations_on_actions_collab = {
 	}
 }
 
-tp_divs_out_of_france = {    every_state = { limit = { OR = {  is_core_of = FRA is_core_of = BEL is_core_of = GER }}  teleport_armies = { limit= { is_in_faction_with = ENG } to_state = 5139 }   }  }
+tp_divs_out_of_france = {    every_state = { limit = { OR = {  is_core_of = FRA is_core_of = BEL is_core_of = GER }}  teleport_armies = { limit= { original_tag = FRA } to_state = 5139 }   }  }
 
 
 

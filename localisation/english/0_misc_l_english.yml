@@ -995,12 +995,17 @@
  
  shock_troops:0"Assault Troops"
  shock_troops_desc:0"As it shows in history, you need a numerical advantage to win offensive battles. However, the best of the best have a different approach to this theory. Instead of strength by numbers, we have strength in skilled soldiers that can carry out the most daring assaults"
+
  jaegers:0"Jäger I"
-jaegers_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
-jaegers2:0"Jäger II"
-jaegers2_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
-jaegers3:0"Jäger III"
-jaegers3_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
-jaeger:0"Jäger"
-jaeger_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+ jaegers_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+ jaegers2:0"Jäger II"
+ jaegers2_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+ jaegers3:0"Jäger III"
+ jaegers3_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+ jaeger:0"Jäger"
+ jaeger_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+ GER_ruhr_valley:0 "Ruhr Valley"
+ SOV_five_year_plan_hhm:0 "Five Year Plan"
+ SOV_five_year_plan_dynamic_modifier:0 "Five Year Plan Modifier"
+
 

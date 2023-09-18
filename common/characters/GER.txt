@@ -1418,6 +1418,7 @@ characters={
 			idea_token = speer
 			allowed = {
 				original_tag = GER
+				date > 1942.01.10
 			}
 			traits = {
 				armaments_organizer 

@@ -1920,7 +1920,8 @@ on_actions = {
 					limit = {
 						FROM = { tag = FRA }
 						FROM.FROM = { is_core_of = FRA }
-						FRA = { surrender_progress	> 0.75 } 	
+						FRA = { surrender_progress	> 0.65 } 
+                        date < 1940.01.01						
 					}
 						tp_divs_out_of_france = yes
 	}

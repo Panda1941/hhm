@@ -1496,7 +1496,7 @@
  SOV_the_glory_of_the_red_army_ns_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nSpecial Forces Capacity Multiplier: §G+10.0%§! \nLand Doctrine Cost: §G-10.00%§! \n\n"
  SOV_military_reorganization_ns_tt:0 "\n$SOV_modify_the_red_army_ns_intro$ \nInfantry Unit Design Cost: §G-10.00%§! \nArtillery Unit Design Cost: §G-10.00%§! \n\n"
  SOV_restore_cossack_units_spawn_tt:0 "§Y4 Cavalry Divisions§! and §Y1 Infantry Division§! will be created in §Y[ROOT.Capital.GetName]§!."
- SOV_penal_battalions_spawn_tt:0 "§Y4 Penal Divisions§! will be created in §Y[ROOT.Capital.GetName]§!. Unlocks decision §Y$SOV_raise_penal_units$§!, allowing to raise §Y4 Penal Divisions§! yearly."
+ SOV_penal_battalions_spawn_tt:0 "§Y10 Penal Divisions§! will be created in §Y[ROOT.Capital.GetName]§!. Unlocks decision §Y$SOV_raise_penal_units$§!, allowing to raise §Y10 Penal Divisions§! yearly."
  SOV_penal_units_raised_flag:1 "Last time Penal Units were raised"
 
  SOV_modify_the_politburo_ns_intro:0 "Modify §Y$SOV_the_politburo_good_dynamic_modifier$§! by"
