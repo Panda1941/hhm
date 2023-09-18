@@ -4364,7 +4364,6 @@ hidden_effect = {
 		available = {
 		AND = {
 			date > 1939.9.01
-			date < 1939.12.01
 			}
 		}
 		x = 1
@@ -4372,7 +4371,9 @@ hidden_effect = {
 		relative_position_id = GER_around_maginot
 		cost = 1
 		bypass = {
-			
+		FRA = {
+                NOT = { controls_state = 16 }	
+						}	
 		}
 		historical_ai = {
 			date > 1939.1.1
@@ -5392,7 +5393,7 @@ hidden_effect = {
  		available_if_capitulated = no
  		completion_reward = {
  			every_state = {
- 				limit={OR={state=808 state=810 state=207 state=809 state=12 state=96 state=206 state=210 state =96 state=242 }}
+ 				limit={OR={state=808 state=810 state=207 state=809 state=12 state=96 state=206 state=210 state =96 state=242 state=209 state=208 state=813 state=191 state=13 state=811 state=812 state=263 }}
  				add_dynamic_modifier = { modifier = JAP_attack days=90  }
  			}
  		}
@@ -5415,7 +5416,7 @@ hidden_effect = {
  		available_if_capitulated = no
  		completion_reward = {
  			every_state = {
- 				limit={OR={state=241 state=193 state=202 state=203 state=259 state=226 state=200 state=196 state=194 }}
+ 				limit={OR={state=241 state=193 state=202 state=203 state=259 state=226 state=200 state=196 state=194 state=225 state=220 state=221 state=222 state=240 state=227 state=258 state=228 state=218 state=245 state=260 state=265 }}
  				add_dynamic_modifier = { modifier = JAP_attack days=90  }
  			}
  		}

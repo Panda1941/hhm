@@ -435,7 +435,7 @@ NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.1
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.7 -- min required intel to focus tree with taken focuses
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4  -- min required intel to show currently focus
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS_PROGRESS = 0.5  -- min required intel to show current focus progress
-NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.75                  -- VANILLA 3
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.26							-- Higher value = more shot down planes
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5                  -- VANILLA 3
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.50							-- Higher value = more shot down planes
 
 -------------------------------------------------------------------------------------------

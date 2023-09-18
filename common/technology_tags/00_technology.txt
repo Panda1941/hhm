@@ -168,6 +168,10 @@ technology_folders = {
 		ledger = army
 		doctrine = yes
 	}
+	land_doctrine_folder_2 = {
+		ledger = army
+		doctrine = yes
+	}
 	naval_doctrine_folder = {
 		ledger = navy
 		doctrine = yes
