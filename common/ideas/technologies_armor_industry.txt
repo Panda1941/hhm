@@ -194,6 +194,22 @@ ideas = {
 					build_cost_ic = -0.02
 					instant = yes
 				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.02
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.02
+					instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.02
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.02
+					instant = yes
+				}
 			}		
 		}
 		
@@ -214,6 +230,22 @@ ideas = {
 					instant = yes
 				}
 				artillery_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				support_equipment = {
 					build_cost_ic = -0.03
 					instant = yes
 				}
@@ -240,6 +272,22 @@ ideas = {
 					build_cost_ic = -0.03
 					instant = yes
 				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
 			}		
 		}
 		
@@ -260,6 +308,22 @@ ideas = {
 					instant = yes
 				}
 				artillery_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				support_equipment = {
 					build_cost_ic = -0.05
 					instant = yes
 				}

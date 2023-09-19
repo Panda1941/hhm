@@ -21,6 +21,10 @@
  GER_medium_tank_manufacturer:0 "Medium Tank Designer"
  GER_modular_tank_manufacturer:0 "Modular Tank Deisgner"
 
+ #GERMANY
+ GER_mp_38:0 "MP 38"
+ GER_high_caliber_arty:0 "High Caliber Artillery"
+
  
  #BULGARIA
  BUL_our_claims_tt:0 "We will take ownership of our neighbouring states, §Rhowever all resources and all factories will be given to Italy instead of us.§! §g(except Dobruja)§!" 

@@ -2438,6 +2438,60 @@ focus_tree = {
 			show_ideas_tooltip = walther_von_brauchitsch			
 		}
 	}
+
+	focus = {
+		id = GER_mp_38
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = GER_soviet_treaty }
+		relative_position_id = GER_soviet_treaty
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {			
+			army_experience = 10
+
+			add_tech_bonus = {
+				name = GER_mp_38
+				bonus = 1.0
+				uses = 1
+				technology = improved_infantry_weapons
+			}		
+		}
+	}
+
+	focus = {
+		id = GER_high_caliber_arty
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = GER_soviet_treaty }
+		relative_position_id = GER_soviet_treaty
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {			
+			army_experience = 10
+
+			add_tech_bonus = {
+				name = GER_mp_38
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}		
+		}
+	}
 	
 	focus = {
 		id = GER_soviet_treaty
