@@ -17,6 +17,25 @@ guiTypes = {
 			name = "Background"
 			spriteType ="GFX_ship_designer_popup_bg"
 		}
+		
+		iconType ={
+			name ="experience_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x = 298 y = 507 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "experience"
+			position = { x = 295 y = 510 }
+			font = "hoi_18mbs"
+			maxWidth = 70
+			maxHeight = 20
+			format = centre
+			text = "DESIGNER_EXPERIENCE"
+			pdx_tooltip = "CURRENT_EXPERIENCE"
+		}
 
 		iconType = {
 			name = "select_model"
@@ -1319,6 +1338,18 @@ guiTypes = {
 			font = "hoi_18mbs"
 			maxWidth = 155
 			maxHeight = 22
+			multiline = no
+			format = left
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "cost"
+			position = { x=85 y=39 }
+			font = "hoi_16mbs"
+			text = "Too much"
+			maxWidth = 150
+			maxHeight = 20
 			multiline = no
 			format = left
 			alwaystransparent = yes

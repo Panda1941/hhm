@@ -16,7 +16,24 @@ guiTypes = {
 			name = "Background"
 			spriteType ="GFX_plane_designer_popup_bg"
 		}
+		
+		iconType ={
+			name ="experience_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x = 298 y = 507 }
+			alwaystransparent = yes
+		}
 
+		instantTextboxType = {
+			name = "experience"
+			position = { x = 295 y = 510 }
+			font = "hoi_18mbs"
+			maxWidth = 70
+			maxHeight = 20
+			format = centre
+			text = "DESIGNER_EXPERIENCE"
+			pdx_tooltip = "CURRENT_EXPERIENCE"
+		}
 
 		iconType = {
 			name = "select_model"

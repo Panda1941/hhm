@@ -338,6 +338,11 @@ technologies = {
 		
 		static_anti_air_hit_chance_factor = 0.2
 		
+		path = {
+			leads_to_tech = modern_centimetric_radar 
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 1.25
 		start_year = 1942
 		
@@ -360,6 +365,56 @@ technologies = {
 		categories = {
 			electronics
 			radar_tech
+		}
+	}
+	
+	modern_centimetric_radar = {
+
+		#radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 7
+		}
+		coordination_bonus = 0.01
+
+		static_anti_air_hit_chance_factor = 0.1
+		
+		path = {
+			leads_to_tech = improved_modern_centimetric_radar 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		start_year = 1943
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 4
+			}
+			modifier = {
+				date < "1943.1.1"
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+		
+		enable_equipment_modules = { 
+			air_ground_radar_3
+			radio_navigation_3
 		}
 	}
 	
@@ -474,6 +529,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		
 		research_cost = 2.5
 		start_year = 1940
 		
@@ -522,6 +578,14 @@ technologies = {
 			leads_to_tech = advanced_decryption 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = modern_computing_machine 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = modern_fire_control_system
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2.5
 		start_year = 1942
@@ -529,6 +593,54 @@ technologies = {
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1943.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	modern_computing_machine = {
+
+		# small boost to research speed
+		research_speed_factor = 0.10
+		
+		path = {
+			leads_to_tech = modern_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = modern_decryption 
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			bomb_sights_3
+		}
+		
+		research_cost = 3
+		start_year = 1944
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -1330,5 +1442,92 @@ technologies = {
 			factor = 0
 		}
 		################
+	}
+	
+	improved_modern_centimetric_radar = {
+
+		#radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 8
+		}
+		coordination_bonus = 0.01
+
+		static_anti_air_hit_chance_factor = 0.1
+		
+		research_cost = 1.25
+		start_year = 1944
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 4
+			}
+			modifier = {
+				date < "1944.1.1"
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+		
+		enable_equipment_modules = { 
+			ship_radar_5
+			air_air_radar_3
+			tank_radio_4
+		}
+	}
+	
+	modern_fire_control_system = {
+
+		enable_equipment_modules = { 
+			
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1
+		
+		critical_receive_chance = -0.10
+		naval_light_gun_hit_chance_factor = 0.15
+		naval_heavy_gun_hit_chance_factor = 0.15
+		
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
 	}
 }

@@ -1,0 +1,68 @@
+﻿l_english:
+
+ modern_fire_control_system:0 "Modern Fire Control System"
+ modern_fire_control_system_desc:0 "By entering course, speed and distance of a target, a modern mechanical computer can more accurately predict where the target will be when the next salvo is ready to fire."
+ 
+ 
+ 
+ concentrated_industry6:0 "Concentrated Industry VI"
+ concentrated_industry6_desc:0 "There have been major leaps forward in automation and production efficiency. With cutting-edge technologies and refined processes, it is able to significantly reduce costs and increase output. This new level of automation allows for streamlined and efficient operations, giving your industry a competitive edge in the global marketplace."
+ 
+ dispersed_industry6:0 "Dispersed Industry VI"
+ dispersed_industry6_desc:0 "Integration of advanced tech and secure communication improves industry protection, making it impossible to locate and destroy through aerial attacks, ensuring successful operations."
+ 
+ 
+
+ improved_modern_oil_processing:0 "Improved Modern Oil Processing"
+ improved_modern_oil_processing_desc:1 "Our oil refinineries can be modernized using advanced techniques, including thermal cracking and solvent deasphalting, to boost yields and increase efficiency."
+ 
+ flexible_line2:0 "Improved Flexible Line"
+ flexible_line2_desc:0 "Advanced automation and robotics enhance human adaptability in production, providing increased efficiency and quick response to changes. A significant boost to industrial competitiveness is achieved."
+ 
+ streamlined_line2:0 "Improved Streamlined Line"
+ streamlined_line2_desc:0 "Cutting-edge automation and robotics increase standardization, structure, safety, and efficiency in production, resulting in a significant boost to competitiveness."
+ 
+ construction6:0 "Construction VI"
+ construction6_desc:0 "The construction process is streamlined with the latest technology and advances in project planning, resulting in faster, more reliable, and efficient outcomes with reduced waste."
+
+ excavation6:0 "Excavation VI"
+ excavation6_desc:0 "Resource extraction becomes more efficient and sustainable with the use of advanced automation and robotics technologies, yielding greater quantities with less waste and environmental impact."
+ 
+ improved_modern_rubber_processing:0 "Improved Modern Rubber Processing"
+ improved_modern_rubber_processing_desc:1 "Polymerization processes are optimized with the latest technology, reducing costs and increasing output, resulting in a more efficient and effective rubber processing industry."
+ 
+ fuel_refining6:0 "Fuel Refining VI"
+ fuel_refining6_desc:0 "Fuel refining becomes even more efficient with innovative designs and advanced technologies, increasing throughput and reducing wastage."
+
+ modern_centimetric_radar:0 "Modern Centimetric Radar"
+ modern_centimetric_radar_desc:0 "Limitations in current radar technology are overcome with advanced techniques such as FMCW and pulse-compression, resulting in a more advanced and effective system."
+ 
+ improved_modern_centimetric_radar:0 "Improved Modern Centimetric Radar"
+ improved_modern_centimetric_radar_desc:0 "Advanced Centimetric Radar technology utilizes plan position indicator (PPI) and moving target indicator (MTI) techniques to greatly improve target detection and tracking."
+ 
+ modern_computing_machine:0 "Modern Computing Machine"
+ modern_computing_machine_desc:0 "Improvements in computer design and functionality by utilizing new technologies such as vacuum tubes, magnetic drum memory, and assembly languages. This leads to greater capabilities and more efficient use in various industries."
+ 
+ ship_fire_control_system_4:0 "Mark 37 Gun Fire Control System"
+ ship_fire_control_system_4_desc:0 "A modern mechanical computer can track the course, speed, and distance of a target which allows increased target engagement and weapon accuracy."
+ 
+ infantry_at3:0 "Infantry Anti-Tank III"
+ advanced_infantry_weapons3:0 "Improved Infantry Equipment IV"
+ advanced_infantry_weapons4:0 "Improved Infantry Equipment V"
+ advanced_infantry_weapons5:0 "Improved Infantry Equipment VI"
+ infantry_at3_desc:0 "Equipping our infantry with smaller and lighter high-explosive anti-tank weapons will provide them with the necessary firepower to engage heavier armored units, while maintaining their mobility and effectiveness on the battlefield."
+ advanced_infantry_weapons3_desc:0 "Continued advancements in infantry weaponry and equipment result in even more effective and versatile tools for modern warfare. Enhanced personal Assault Rifles, anti-tank rockets, and improved gear further enhance the capabilities of our infantry units."
+ advanced_infantry_weapons4_desc:0 "Cutting-edge advancements in infantry gear provide our soldiers with state-of-the-art weaponry and equipment. Advanced Assault Rifles, anti-tank rockets, and expanded availability of previously limited weapons give our infantry the edge in the battlefield."
+ advanced_infantry_weapons5_desc:0 "Unprecedented advancements in infantry technology revolutionize the capabilities of our soldiers. Advanced Assault Rifles, anti-tank rockets, and widespread access to cutting-edge weaponry and equipment ensure our infantry units are equipped for success in any combat scenario."
+ GER_infantry_at3:0 "Improved Panzerschreck"
+ SOV_infantry_at3:0 "RPG-6"
+ ENG_infantry_at3:0 "Improved PIAT"
+ USA_infantry_at3:0 "Wire Guided Missiles"
+ JAP_infantry_at3:0 "Type 5 AT Rocket Launcher"
+ MAN_infantry_at3:0 "Type 5 AT Rocket Launcher"
+ POL_infantry_at3:0 "Filipinka"
+ CAN_infantry_at3:0 "Improved PIAT"
+ AST_infantry_at3:0 "Improved PIAT"
+ SAF_infantry_at3:0 "Improved PIAT"
+ RAJ_infantry_at3:0 "Improved PIAT"
+ NZL_infantry_at3:0 "Improved PIAT"

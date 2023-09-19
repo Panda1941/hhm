@@ -172,7 +172,7 @@ characters={
 				has_completed_focus = GER_army_innovation
 			}
 			traits = {
-				army_armored_3
+				army_armored_3 great_war_hero
 			}
 			cost = 200
 			ai_will_do = {

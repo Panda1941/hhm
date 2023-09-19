@@ -1,0 +1,175 @@
+spriteTypes = {
+
+	### engineering TECH ###
+
+	SpriteType = {
+		name = "GFX_modern_centimetric_radar_medium"
+		texturefile = "gfx/interface/technologies/modern_centimetric_radar.png"
+	}
+
+	SpriteType = {
+		name = "GFX_improved_modern_centimetric_radar_medium"
+		texturefile = "gfx/interface/technologies/improved_modern_centimetric_radar.png"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_computing_machine_medium"
+		texturefile = "gfx/interface/technologies/modern_computing_machine.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_modern_fire_control_system_medium"
+		texturefile = "gfx/interface/technologies/modern_fire_control_system.png"
+	}
+	
+	### INDUSRTY TECH ###
+	
+	SpriteType = {
+		name = "GFX_excavation6_medium"
+		texturefile = "gfx/interface/technologies/excavation6.png"
+	}
+
+	SpriteType = {
+		name = "GFX_flexible_line_medium"
+		texturefile = "gfx/interface/technologies/flexible_line1.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_flexible_line2_medium"
+		texturefile = "gfx/interface/technologies/flexible_line2.png"
+	}
+
+	SpriteType = {
+		name = "GFX_streamlined_line_medium"
+		texturefile = "gfx/interface/technologies/streamlined_line1.png"
+	}
+
+	SpriteType = {
+		name = "GFX_streamlined_line2_medium"
+		texturefile = "gfx/interface/technologies/streamlined_line2.png"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_concentrated_industry6_medium"
+		texturefile = "gfx/interface/technologies/concentrated_industry6.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_dispersed_industry6_medium"
+		texturefile = "gfx/interface/technologies/dispersed_industry6.png"
+	}	
+	
+	SpriteType = {
+		name = "GFX_fuel_refining6_medium"
+		texturefile = "gfx/interface/technologies/fuel_refining6.png"
+	}	
+
+	SpriteType = {
+		name = "GFX_improved_modern_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/improved_modern_oil_processing.png"
+	}
+
+	SpriteType = {
+		name = "GFX_improved_modern_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/improved_modern_rubber_processing.png"
+	}
+
+	SpriteType = {
+		name = "GFX_construction6_medium"
+		texturefile = "gfx/interface/technologies/advanced_conversion2.png"
+	}
+	
+	### infantry TECH ###
+
+	SpriteType = {
+		name = "GFX_infantry_at3_medium"
+		texturefile = "gfx/interface/technologies/infantry_at3.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_advanced_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_weapons4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_advanced_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/infantry_weapons5.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_advanced_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/infantry_weapons6.png"
+	}
+	################################### cars ###
+	
+	SpriteType = {
+		name = "GFX_SOV_armored_car4_medium"
+		texturefile = "gfx/interface/technologies/SOV_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_armored_car_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/SOV_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_armored_car4_medium"
+		texturefile = "gfx/interface/technologies/ITA_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_armored_car_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/ITA_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_armored_car4_medium"
+		texturefile = "gfx/interface/technologies/GER_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_armored_car_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/GER_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_armored_car4_medium"
+		texturefile = "gfx/interface/technologies/ENG_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_armored_car_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/ENG_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_armored_car4_medium"
+		texturefile = "gfx/interface/technologies/JAP_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_armored_car_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/JAP_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_armored_car4_medium"
+		texturefile = "gfx/interface/technologies/FRA_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_armored_car_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/FRA_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_armored_car4_medium"
+		texturefile = "gfx/interface/technologies/generic_armored_car_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_armored_car_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/generic_armored_car_4.png"
+	}
+}

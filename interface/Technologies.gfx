@@ -6790,65 +6790,7 @@ spriteTypes = {
 		name = "GFX_advanced_equipment_conversion3_medium"
 		texturefile = "gfx/interface/technologies/equipment_conversion33.dds"
 	}
-	SpriteType = {
-		name = "GFX_SOV_armored_car4_medium"
-		texturefile = "gfx/interface/technologies/SOV_armored_car_4.png"
-	}
 	
-	SpriteType = {
-		name = "GFX_SOV_armored_car_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/SOV_armored_car_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_ITA_armored_car4_medium"
-		texturefile = "gfx/interface/technologies/ITA_armored_car_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_ITA_armored_car_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/ITA_armored_car_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_GER_armored_car4_medium"
-		texturefile = "gfx/interface/technologies/GER_armored_car_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_GER_armored_car_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/GER_armored_car_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_ENG_armored_car4_medium"
-		texturefile = "gfx/interface/technologies/ENG_armored_car_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_ENG_armored_car_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/ENG_armored_car_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_JAP_armored_car4_medium"
-		texturefile = "gfx/interface/technologies/JAP_armored_car_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_JAP_armored_car_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/JAP_armored_car_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_FRA_armored_car4_medium"
-		texturefile = "gfx/interface/technologies/FRA_armored_car_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_FRA_armored_car_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/FRA_armored_car_4.png"
-	}
 	
 	SpriteType = {
 		name = "GFX_shock_troops3_medium"
