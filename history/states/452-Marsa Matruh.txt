@@ -13,9 +13,6 @@ state={
 
 		}
 		victory_points = {
-			13264 2 
-		}
-		victory_points = {
 			9989 1 
 		}
 		add_core_of = SWE
@@ -23,9 +20,9 @@ state={
 	}
 
 	provinces={
-		5078 7079 9989 10061 11910 11967 13259 13260 13261 13262 13263 13264 13265 13273 13275 13276 13277 13278 13279 13280 13286 13291 13292 13293 13295 
+		5078 7079 9989 13260 13262 13263 13265 13273 13278 13280 13292 13293 13295 
 	}
-	manpower=52556
+	manpower=22556
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=9.000

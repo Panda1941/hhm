@@ -1589,7 +1589,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		available = {
-			has_war_support > 0.49
+			has_war_support > 0.60
 		}
 		complete_tooltip = {
 			every_state = {
@@ -2441,7 +2441,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_mp_38
-		icon = GFX_
+		icon = GFX_focus_GER_mp_38
 		x = 1
 		y = 1
 		cost = 5
@@ -2468,7 +2468,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_high_caliber_arty
-		icon = GFX_
+		icon = GFX_focus_GER_high_caliber_arty
 		x = -1
 		y = 1
 		cost = 5

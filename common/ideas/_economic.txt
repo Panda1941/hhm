@@ -81,10 +81,11 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.35
-				production_speed_industrial_complex_factor = -0.15
-				production_speed_arms_factory_factor = -0.45
-				conversion_cost_civ_to_mil_factor= 0.3
-				conversion_cost_mil_to_civ_factor = 0.3
+				production_speed_industrial_complex_factor = -0.20
+				production_speed_arms_factory_factor = -0.35
+				conversion_cost_mil_to_civ_factor = -0.05
+				conversion_cost_civ_to_mil_factor = 0.3
+				production_factory_max_efficiency_factor = -0.05
 				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.4
 			}
@@ -97,7 +98,7 @@ ideas = {
 		low_economic_mobilisation = {
 
 			available = {
-				has_war_support > 0.15
+				has_war_support > 0.25
 				if = {
 					limit = {
 						original_tag = HUN
@@ -143,8 +144,10 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.3
-				production_speed_industrial_complex_factor = 0.0
-				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.20
+				conversion_cost_mil_to_civ_factor = -0.025
+				conversion_cost_civ_to_mil_factor = 0.15
 				fuel_gain_factor = -0.25
 			}
 
@@ -174,7 +177,7 @@ ideas = {
 		partial_economic_mobilisation = {
 
 			available = {
-				has_war_support > 0.25
+				
 
 				if = {
 					limit = {
@@ -185,6 +188,17 @@ ideas = {
 						has_completed_focus = HUN_secret_rearmament
 						NOT = { has_idea = HUN_treaty_of_triannon }
 					}
+				}
+				OR = {
+					has_government = fascism
+					has_government = communism
+					has_war = yes
+					AND = { NOT = { tag = USA } threat > 0.45 }
+					AND = { tag = USA threat > 0.85 }
+				}
+				OR = { 
+				has_war_support > 0.50
+				AND = { has_war_support > 0.45 has_war = yes } 
 				}
 				if = {
 					limit = {
@@ -214,9 +228,9 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.25
-				production_speed_arms_factory_factor = 0.1
-				conversion_cost_civ_to_mil_factor= -0.1
-				conversion_cost_mil_to_civ_factor = -0.1
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.1
+				industrial_capacity_factory = 0.025
 				fuel_gain_factor = -0.1
 			}
 
@@ -246,7 +260,7 @@ ideas = {
 
 
 			available = {
-				has_war_support > 0.5
+				has_war_support > 0.60
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -260,6 +274,11 @@ ideas = {
 							}
 						}
 					}
+				}
+				OR = {
+					has_war = yes
+					has_completed_focus = GER_end_of_czechoslovakia
+					GER = { has_war_with = ENG }
 				}
 
 				if = {
@@ -297,9 +316,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.2
-				production_speed_arms_factory_factor = 0.2
-				conversion_cost_civ_to_mil_factor= -0.2
-				conversion_cost_mil_to_civ_factor = -0.2
+				production_speed_arms_factory_factor = 0.0
+				industrial_capacity_factory = 0.05
 			}
 
 			cancel_if_invalid = no
@@ -456,9 +474,9 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.15
 				conscription = -0.025
-				production_speed_arms_factory_factor = 0.25
-				conversion_cost_civ_to_mil_factor= -0.2
-				conversion_cost_mil_to_civ_factor = -0.2
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.075
 			}
 
 			cancel_if_invalid = no

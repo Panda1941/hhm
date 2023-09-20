@@ -4149,6 +4149,14 @@ spriteTypes = {
 		name = "GFX_focus_SOV_kv1"
 		texturefile = "gfx/interface/goals/SOV/SOV_kv1.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_GER_high_caliber_arty"
+		texturefile = "gfx/interface/goals/GER/ger_artillery_expansion.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_mp_38"
+		texturefile = "gfx/interface/goals/GER/GER_infantry_weapons_2.dds"
+	}
 	
 	
 	

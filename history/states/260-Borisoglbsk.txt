@@ -14,7 +14,7 @@ state={
 			synthetic_refinery = 1 #NSB
 		}
 		victory_points = {
-			413 5
+			413 20
 		}
 		add_core_of = SOV
 	}
