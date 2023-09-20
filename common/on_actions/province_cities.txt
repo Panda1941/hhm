@@ -191,17 +191,17 @@ on_actions = {
 			}
 			116 = { #Malta
 				add_province_modifier = {
-					static_modifiers = { terrain_gibraltar }
+					static_modifiers = { terrain_malta }
 					province = { id = 12003 }
 				}
 			}
 			183 = { #Cyprus
 				add_province_modifier = {
-					static_modifiers = { terrain_gibraltar }
+					static_modifiers = { terrain_cyprus }
 					province = { id = 7193 }
 				}
 				add_province_modifier = {
-					static_modifiers = { terrain_gibraltar }
+					static_modifiers = { terrain_cyprus }
 					province = { id = 11984 }
 				}
 			}
