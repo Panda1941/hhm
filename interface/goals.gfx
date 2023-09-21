@@ -4157,6 +4157,185 @@ spriteTypes = {
 		name = "GFX_focus_GER_mp_38"
 		texturefile = "gfx/interface/goals/GER/GER_infantry_weapons_2.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_HUN_assault_gun_focus"
+		texturefile = "gfx/interface/goals/HUN/hungaryhetzer2.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_zrinyl"
+		texturefile = "gfx/interface/goals/HUN/zyrinltank.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_stop_gap_light_tank"
+		texturefile = "gfx/interface/goals/HUN/stopgaphungary2.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_turan"
+		texturefile = "gfx/interface/goals/HUN/hungaryturantank2.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_form_mechanized_battalions"
+		texturefile = "gfx/interface/goals/HUN/HUN_motorize_our_armed_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_proclaim_greater_hungary"
+		texturefile = "gfx/interface/goals/HUN/HUN_greater_hungary.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_mobile_focus"
+		texturefile = "gfx/interface/goals/HUN/HUN_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_home_defense"
+		texturefile = "gfx/interface/goals/HUN/HUN_army.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_armored_warfare"
+		texturefile = "gfx/interface/goals/HUN/HUN_modernize_our_armed_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_form_shock_troops_battalions"
+		texturefile = "gfx/interface/goals/HUN/HUN_grenadier_training.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_demand_transylvania"
+		texturefile = "gfx/interface/goals/HUN/HUN_conquer_transylvania.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_german_anti_tank"
+		texturefile = "gfx/interface/goals/HUN/germanantitankv4.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_the_botond"
+		texturefile = "gfx/interface/goals/HUN/generic_mobile_trucks.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_weiss_metal_works_expansion"
+		texturefile = "gfx/interface/goals/HUN/expandweissmetalworks.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_gyorshadtest"
+		texturefile = "gfx/interface/goals/HUN/mobile_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_bled_agreement"
+		texturefile = "gfx/interface/goals/HUN/bleedagreementpaper.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_44m_buzo"
+		texturefile = "gfx/interface/goals/HUN/GER_consolidation_of_production_lines.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_institute_for_industrial_techniques"
+		texturefile = "gfx/interface/goals/HUN/HUN_institute_for_industrial_techniques.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_renounce_the_treaty_of_trianon"
+		texturefile = "gfx/interface/goals/HUN/HUN_renounce_the_treaty_of_trianon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_demand_southern_slovakia"
+		texturefile = "gfx/interface/goals/HUN/HUN_claim_overlordship_over_slovakia.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_support_urbanization"
+		texturefile = "gfx/interface/goals/HUN/HUN_support_urbanization.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_reintegrate_the_railroads"
+		texturefile = "gfx/interface/goals/HUN/HUN_reintegrate_the_railroads.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_synthetic_industry"
+		texturefile = "gfx/interface/goals/HUN/HUN_joint_oil_exploitation_company.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_strengthen_fascists"
+		texturefile = "gfx/interface/goals/HUN/HUN_strengthen_fascists.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_autarky"
+		texturefile = "gfx/interface/goals/HUN/HUN_autarky.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_support_domestic_industry"
+		texturefile = "gfx/interface/goals/HUN/HUN_support_domestic_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_aeronautic_technology_institute"
+		texturefile = "gfx/interface/goals/HUN/HUN_aeronautic_technology_institute.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_announce_the_gyor_program"
+		texturefile = "gfx/interface/goals/HUN/HUN_announce_the_gyor_program.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_civilian_industry"
+		texturefile = "gfx/interface/goals/HUN/HUN_civilian_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_boost_hungarian_aviation_industry"
+		texturefile = "gfx/interface/goals/HUN/HUN_boost_hungarian_aviation_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_domestic_arms_industry"
+		texturefile = "gfx/interface/goals/HUN/HUN_domestic_arms_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_industrial_revitalization"
+		texturefile = "gfx/interface/goals/HUN/HUN_industrial_revitalization.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_expand_the_aluminum_industry"
+		texturefile = "gfx/interface/goals/HUN/HUN_expand_the_aluminum_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_economic_intervention"
+		texturefile = "gfx/interface/goals/HUN/HUN_economic_intervention.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_joint_aluminum_mining_company"
+		texturefile = "gfx/interface/goals/HUN/HUN_joint_aluminum_mining_company.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_expand_the_technical_university_of_budapest"
+		texturefile = "gfx/interface/goals/HUN/HUN_expand_the_technical_university_of_budapest.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_reaffirm_territorial_claims"
+		texturefile = "gfx/interface/goals/HUN/HUN_reaffirm_territorial_claims.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_trade_deal_with_germany"
+		texturefile = "gfx/interface/goals/HUN/HUN_trade_deal_with_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_strengthen_the_monarchists"
+		texturefile = "gfx/interface/goals/HUN/HUN_strengthen_the_monarchists.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_elect_a_fascist_king"
+		texturefile = "gfx/interface/goals/HUN/HUN_elect_a_fascist_king.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_motorized_logistics"
+		texturefile = "gfx/interface/goals/HUN/FRA_motorized_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_heavy_infantry_divisions_doctrine"
+		texturefile = "gfx/interface/goals/HUN/GER_modern_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_HUN_light_infantry_divisions_doctrine"
+		texturefile = "gfx/interface/goals/HUN/r56_goal_generic_infantry_flames.dds"
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

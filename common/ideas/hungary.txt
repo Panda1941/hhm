@@ -405,6 +405,110 @@ ideas = {
 				}
 			}
 		}
+		HUN_hidden_officer_school_idea = {
+		
+			picture = generic_army_war_college
+				 
+			available = {
+				has_war = no
+			}
+
+			modifier = {
+				training_time_factor = -0.1
+				non_core_manpower = 0.02
+				max_command_power = 25
+			}
+		}
+		HUN_hungaro_german_trade_agreement = {
+		
+			available = {
+				has_war = no
+			}
+
+			picture = HUN_hungaro_german_trade_treaty
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.025
+			}
+		}
+		HUN_hungaro_german_trade_agreement_two = {
+
+		picture = HUN_hungaro_german_trade_treaty
+		
+		
+		
+			available = {
+				has_war = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		HUN_overeliance_german_trade = {
+			picture = generic_license_production
+			
+		
+			modifier = {
+			   production_factory_efficiency_gain_factor = -0.4
+			}
+		}
+		
+		HUN_agricul_society = {
+			picture = HUN_agricultural_society
+			name = HUN_agricul_society
+		
+			modifier = {
+			  research_speed_factor = -0.07
+			  mobilization_speed = -0.5
+			  industrial_capacity_factory = -0.1
+			  local_resources_factor = -0.1
+			  
+			}
+		}
+		HUN_agricul_society_2 = {
+			picture = HUN_agricultural_society
+			name = HUN_agricul_society
+			
+		
+			modifier = {
+			  research_speed_factor = -0.07
+			  mobilization_speed = -0.5
+			  industrial_capacity_factory = -0.1
+			}
+		}
+		HUN_agricul_society_3 = {
+			picture = HUN_agricultural_society
+			name = HUN_agricul_society
+		
+			modifier = {
+			  research_speed_factor = -0.07
+			  industrial_capacity_factory = -0.025
+			}
+		}
+		HUN_grenadier_training_idea = {
+			picture = generic_infantry_bonus
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+
+				special_forces_attack_factor = 0.05
+				motorized_attack_factor = 0.05
+				mechanized_attack_factor = 0.05
+
+			}
+		}
 	}
 	
 	aircraft_manufacturer = {

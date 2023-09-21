@@ -937,6 +937,9 @@
  GER_found_wolfsburg_tt:0 "§GCreate Wolfsburg as the headquarter of KdF-Wagen.§!"
  GER_hgw_tt:0 "§GWürttemberg and Hessen will become a Megalopos Region and gain 4 Extra Building slots.§!"
  
+ HUN_light_infantry_divisions_doctrine_tech_tt_2:0 "Enables §HLight Infantry Divisions Doctrine§!\n§HInfantry\n   §HForest§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n"
+ HUN_light_infantry_divisions_doctrine_tech_tt_3:0 "Enables §HHeavy Infantry Divisions Doctrine§!\n§HInfantry\n   §HUrban§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n"
+ 
  spam_inf_tt:0 "Infantry and Leg Special Forces battalions require §G-20% Guns§! and §GArtillery equipment.§!"
  spam_truck_tt:0 "Both Motorized and Mechanized batallions need §G-20% Motorized§! and §GMechanized equipment.§!"
  spam_arty_tt:0 "Infantry and Leg Special Forces battalions require §R+20% Artillery equipment.§! (Rocket.A. and Artillery)."
@@ -1011,5 +1014,15 @@
  GER_ruhr_valley:0 "Ruhr Valley"
  SOV_five_year_plan_hhm:0 "Five Year Plan"
  SOV_five_year_plan_dynamic_modifier:0 "Five Year Plan Modifier"
+ 
+ HUN_heavy_infantry_tech:0 "Heavy Infantry Division Doctrine"
+ HUN_increased_inf_at_attack:0 "Enables §HInfantry Anti-Tank I§!\n§HInfantry\n   §HHard Attack§!\n       §G+12%§!\n      Piercing: §G+30%§!\n"
+ HUN_hungaro_german_trade_agreement:0 "Hungaro-German Trade Agreement"
+ HUN_hungaro_german_trade_agreement_two:0 "Second Hungaro-German Trade Agreement"
+ HUN_overeliance_german_trade:0 "Dependent on German Trade"
+ HUN_agricul_society:0 "Agricultural Society"
+ HUN_agricul_society_2:0 "Agricultural Society"
+ HUN_agricul_society_3:0 "Agricultural Society"
+ HUN_grenadier_training_idea:0 "Grenadier Training"
 
 

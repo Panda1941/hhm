@@ -7220,6 +7220,15 @@ spriteTypes = {
 		name = "GFX_idea_SOV_winter_offensive"
 		texturefile = "gfx/interface/ideas/idea_SOV_winter_offensive.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_HUN_agricultural_society"
+		texturefile = "gfx/interface/ideas/HUN/HUN_agrarian_society.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_hungaro_german_trade_treaty"
+		texturefile = "gfx/interface/ideas/HUN/HUN_german_hungaro_trade.dds"
+	}
+	
 	
 	
 			

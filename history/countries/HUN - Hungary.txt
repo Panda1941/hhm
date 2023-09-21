@@ -59,6 +59,7 @@ if = {
 	add_ideas = {
 		disarmed_nation
 		HUN_treaty_of_triannon
+		HUN_agricul_society
 	}
 }
 if = {
