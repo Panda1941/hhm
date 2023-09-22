@@ -4105,7 +4105,15 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		every_army_leader = {
+		
+		custom_effect_tooltip = "Minors will also benefit from the operation buff"
+			add_timed_idea = { idea = ENG_compass  days = 90 }
+			hidden_effect = {
+			CAN = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+			SAF = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+			FRA = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+			}
+			every_army_leader = {
 				add_logistics = 1
 			}
 			every_army_leader = {
@@ -4115,12 +4123,30 @@ focus_tree = {
 				add_unit_leader_trait = panzer_leader
                 add_unit_leader_trait = desert_fox				
 			}
-		custom_effect_tooltip = "Minors will also benefit from the operation buff"
-			add_timed_idea = { idea = ENG_compass  days = 90 }
-			hidden_effect = {
-			CAN = {add_timed_idea = { idea = ENG_compass  days = 90 }}
-			SAF = {add_timed_idea = { idea = ENG_compass  days = 90 }}
-			FRA = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+			SAF = {
+			every_army_leader = {
+				add_logistics = 1
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = armor_officer
+				}
+				add_unit_leader_trait = panzer_leader				
+			}
+			}
+			CAN = {
+			every_army_leader = {
+				limit = {
+					has_trait = armor_officer
+				}
+				add_unit_leader_trait = panzer_leader				
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = commando
+				}
+				add_unit_leader_trait = panzer_leader				
+			}
 			}
 		}
 	}
@@ -4146,6 +4172,15 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			
+			
+		custom_effect_tooltip = "Minors will also benefit from the operation buff"
+			add_timed_idea = { idea = ENG_crusader  days = 90 }
+			hidden_effect = {
+			CAN = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+			SAF = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+			FRA = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+			}
 			every_army_leader = {
 				limit = {
 					has_trait = infantry_officer
@@ -4153,12 +4188,22 @@ focus_tree = {
 				add_unit_leader_trait = infantry_leader 
 				add_unit_leader_trait = desert_fox
 			}
-		custom_effect_tooltip = "Minors will also benefit from the operation buff"
-			add_timed_idea = { idea = ENG_crusader  days = 90 }
-			hidden_effect = {
-			CAN = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
-			SAF = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
-			FRA = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+			CAN = {
+			every_army_leader = {
+				limit = {
+					has_trait = infantry_officer
+				}
+				add_unit_leader_trait = infantry_leader
+                add_unit_leader_trait = desert_fox					
+			}
+			}
+			SAF = {
+			every_army_leader = {
+				limit = {
+					has_trait = desert_fox
+				}
+				add_unit_leader_trait = infantry_leader					
+			}
 			}
 		}
 	}
@@ -4189,19 +4234,28 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		every_army_leader = {
-				limit = {
-					has_trait = infantry_officer
-				}
-				add_unit_leader_trait = commando 
-				add_unit_leader_trait = naval_invader
-			}
+		
 		custom_effect_tooltip = "Minors will also benefit from the operation buff"
 			add_timed_idea = { idea = ENG_market_garden  days = 90 }
 			hidden_effect = {
 			CAN = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
 			SAF = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
 			FRA = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = infantry_officer
+				}
+				add_unit_leader_trait = commando 
+				add_unit_leader_trait = naval_invader
+			}
+			CAN = {
+			every_army_leader = {
+				limit = {
+					has_trait = commando
+				}
+				add_unit_leader_trait = naval_invader				
+			}
 			}
 		}
 	}
@@ -4232,16 +4286,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		every_army_leader = {
-				limit = {
-					has_trait = trickster
-				}
-				add_unit_leader_trait = commando 
-				add_unit_leader_trait = naval_invader
-				add_unit_leader_trait = trait_mountaineer 
-				add_unit_leader_trait = hill_fighter
-				add_unit_leader_trait = trait_engineer
-			}
+		
 		custom_effect_tooltip = "Minors will also benefit from the operation buff"
 			add_timed_idea = { idea = ENG_torch  days = 90 }
 			hidden_effect = {
@@ -4260,6 +4305,24 @@ focus_tree = {
 			}
 			461 = { set_building_level = { type = air_base level = 10 }}
 			458 = { set_building_level = { type = air_base level = 10 }}
+			every_army_leader = {
+				limit = {
+					has_trait = trickster
+				}
+				add_unit_leader_trait = commando 
+				add_unit_leader_trait = naval_invader
+				add_unit_leader_trait = trait_mountaineer 
+				add_unit_leader_trait = hill_fighter
+				add_unit_leader_trait = trait_engineer
+			}
+			CAN = {
+			every_army_leader = {
+				limit = {
+					has_trait = commando
+				}
+				add_unit_leader_trait = trait_engineer				
+			}
+			}
 		}
 	}
 	

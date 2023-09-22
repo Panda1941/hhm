@@ -64,6 +64,7 @@ characters={
 			}
 		}
 		corps_commander={
+		traits={ commando  }
 			skill=4
 			attack_skill=2
 			defense_skill=3
@@ -82,6 +83,7 @@ characters={
 			}
 		}
 		field_marshal={
+		traits={ trickster infantry_officer armor_officer }
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -118,7 +120,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter }
+			traits={ hill_fighter infantry_officer }
 			skill=4
 			attack_skill=4
 			defense_skill=3

@@ -952,6 +952,27 @@ if = {
 				remove_idea = FRA_industrialist_connections 
 				add_idea = FRA_civil_and_military_organization
 			}
+			every_army_leader = {
+				limit = {
+					has_trait = panzer_leader
+				}
+				add_unit_leader_trait = desert_fox 
+				add_unit_leader_trait = trickster
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = infantry_officer
+				}
+				add_unit_leader_trait = infantry_leader 
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = trait_mountaineer
+				}
+				add_unit_leader_trait = commando 
+				add_unit_leader_trait = naval_invader
+				add_unit_leader_trait = trait_engineer
+			}
 		}
 	}
 	focus = {
