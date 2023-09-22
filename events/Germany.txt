@@ -1438,19 +1438,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # Give Hungary Northern Transylvania
-		name = germany.20.a
-		ai_chance = { factor = 80 }
-		add_named_threat = { threat = 2 name = GER_second_vienna_award_HUN_north }
-		HUN = {
-			set_country_flag = GER_second_vienna_award_HUN_north
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_north }
-		}
-		ROM = {
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_ROM_north }
-			country_event = { id = romania.2 }
-		}
-	}
+	
 	option = { # Give Hungary all of Transylvania
 		trigger = {
 			ROM = {

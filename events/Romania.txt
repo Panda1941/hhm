@@ -108,30 +108,6 @@ country_event = {
 		}
 		set_country_flag = second_vienna_accepted_north
 	}
-	option = { # Refuse
-		name = romania.2.b
-		ai_chance = { 
-			factor = 20 
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		HUN = {
-			country_event = { days = 1 id = hungary.4 }
-			effect_tooltip = { add_state_claim = 76 }
-		}
-		GER = {
-			country_event = { days = 1 id = germany.21 }
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state
-					target = ROM
-					generator = { 76 }
-				}
-			}
-		}
-	}
 }
 
 # Second Vienna Award - All of Transylvania
@@ -161,28 +137,7 @@ country_event = {
 		}
 		set_country_flag = second_vienna_accepted_all
 	}
-	option = { # Refuse
-		name = romania.2.b
-		ai_chance = { factor = 50 }
-		HUN = {
-			country_event = { days = 1 id = hungary.5 }
-			effect_tooltip = {
-				add_state_claim = 76
-				add_state_claim = 83
-				add_state_claim = 84
-			}
-		}
-		GER = {
-			country_event = { days = 1 id = germany.21 }
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state
-					target = ROM
-					generator = { 76 }
-				}
-			}
-		}
-	}
+	
 }
 
 # Second Vienna Award - No Concessions
@@ -218,19 +173,7 @@ country_event = {
 			country_event = { days = 1 id = bulgaria.1 }
 		}
 	}
-	option = { # Refuse
-		name = romania.5.b
-		ai_chance = { 
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			} 
-		}
-		BUL = {
-			country_event = { days = 1 id = bulgaria.2 }
-		}
-	}
+	
 }
 
 # Seek an alliance - Since everyone is out to get us
