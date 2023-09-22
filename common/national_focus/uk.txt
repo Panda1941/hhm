@@ -78,83 +78,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = tizard_mission_focus
-		available = {
-			has_government = democratic
-			any_other_country = {
-				has_war_with = ROOT
-				NOT = {
-					has_government = democratic
-				}
-				num_of_factories > 30
-			}
-			NOt = {
-				has_war_with = USA
-			}
-			USA = {
-				has_government = ROOT
-				has_war = no
-				NOT = {
-					OR = {
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-					}
-				}
-			}
-		}
-		prerequisite = {
-			focus = crypto_bomb_focus
-		}
-		prerequisite = {
-			focus = radar_focus
-		}
-		icon = GFX_goal_generic_scientific_exchange
-		x = 0
-		y = 3
-		relative_position_id = crypto_bomb_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		completion_reward = {
-			USA = {
-				country_event = britain.1
-			}
-		}
-	}
-	focus = {
-		id = maud_focus
-		available = {
-			is_in_faction_with = USA
-		}
-		prerequisite = {
-			focus = tizard_mission_focus
-		}
-		icon = GFX_focus_wonderweapons
-		x = 0
-		y = 1
-		relative_position_id = tizard_mission_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = maud_focus
-				bonus = 1
-				uses = 1
-				category = nuclear
-			}
-		}
-	}
+	
+	
 	focus = {
 		id = limited_rearmament_focus
 		icon = GFX_goal_generic_build_tank
@@ -753,7 +678,7 @@ focus_tree = {
 		}
 		continue_if_invalid = yes
 		icon = GFX_goal_generic_consumer_goods
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -956,9 +881,7 @@ focus_tree = {
 		prerequisite = {
 			focus = royal_ordinance_focus
 		}
-		prerequisite = {
-			focus = maud_focus
-		}
+		
 		icon = GFX_goal_generic_secret_weapon
 		x = -1
 		y = 1
@@ -990,6 +913,40 @@ focus_tree = {
 				uses = 1
 				category = nuclear
 			}
+		}
+	}
+	focus = {
+		id = UK_USA_manhattan_project
+		text = "Manhattan Project"
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = UK_secret_focus }
+		
+		x = 0
+		y = 1
+		relative_position_id = UK_secret_focus
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = secret_bonus
+				ahead_reduction = 1.5
+				
+				technology = nuclear_reactor
+			}
+			add_tech_bonus = {
+				name = USA_manhattan_project
+				bonus = 2.0
+				uses = 1
+				category = nuclear
+			}
+			
 		}
 	}
 	focus = {
@@ -1329,6 +1286,7 @@ focus_tree = {
 					category = air_doctrine
 				}
 			}
+			add_ideas = england_tac
 		}
 	}
 	focus = {
@@ -1383,6 +1341,7 @@ focus_tree = {
 					category = air_doctrine
 				}
 			}
+			add_ideas = england_marine
 		}
 	}
 	focus = {
@@ -1440,7 +1399,7 @@ focus_tree = {
 			#focus = general_rearmament_focus
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 4
+		x = 5
 		y = -1
 		relative_position_id = general_rearmament_focus
 		cost = 6
@@ -1968,7 +1927,7 @@ focus_tree = {
 			num_subjects > 0
 		}
 		icon = GFX_goal_generic_national_unity
-		x = 28
+		x = 30
 		y = 0
 		offset = {
 			x = -2
@@ -3822,7 +3781,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		icon = GFX_goal_support_democracy
-		x = 10
+		x = 12
 		y = 0
 		relative_position_id = uk_empire_focus
 		cost = 5
@@ -4146,6 +4105,16 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		every_army_leader = {
+				add_logistics = 1
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = armor_officer
+				}
+				add_unit_leader_trait = panzer_leader
+                add_unit_leader_trait = desert_fox				
+			}
 		custom_effect_tooltip = "Minors will also benefit from the operation buff"
 			add_timed_idea = { idea = ENG_compass  days = 90 }
 			hidden_effect = {
@@ -4177,6 +4146,13 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			every_army_leader = {
+				limit = {
+					has_trait = infantry_officer
+				}
+				add_unit_leader_trait = infantry_leader 
+				add_unit_leader_trait = desert_fox
+			}
 		custom_effect_tooltip = "Minors will also benefit from the operation buff"
 			add_timed_idea = { idea = ENG_crusader  days = 90 }
 			hidden_effect = {
@@ -4213,6 +4189,13 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		every_army_leader = {
+				limit = {
+					has_trait = infantry_officer
+				}
+				add_unit_leader_trait = commando 
+				add_unit_leader_trait = naval_invader
+			}
 		custom_effect_tooltip = "Minors will also benefit from the operation buff"
 			add_timed_idea = { idea = ENG_market_garden  days = 90 }
 			hidden_effect = {
@@ -4249,6 +4232,16 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		every_army_leader = {
+				limit = {
+					has_trait = trickster
+				}
+				add_unit_leader_trait = commando 
+				add_unit_leader_trait = naval_invader
+				add_unit_leader_trait = trait_mountaineer 
+				add_unit_leader_trait = hill_fighter
+				add_unit_leader_trait = trait_engineer
+			}
 		custom_effect_tooltip = "Minors will also benefit from the operation buff"
 			add_timed_idea = { idea = ENG_torch  days = 90 }
 			hidden_effect = {
@@ -4267,6 +4260,64 @@ focus_tree = {
 			}
 			461 = { set_building_level = { type = air_base level = 10 }}
 			458 = { set_building_level = { type = air_base level = 10 }}
+		}
+	}
+	
+	focus = {
+		id = ENG_USA_combined_bomber_offensive
+		text = "Strike Hard, Strike Sure"
+		icon = GFX_goal_generic_air_bomber
+
+		available = {
+			has_war = yes
+		}
+		x = 10
+		y = 5
+		
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = USA_combined_bomber_offensive
+				bonus = 1.0
+				uses = 1
+				category = cat_strategic_bomber
+			}
+			add_ideas = combined_bomber_offensive_eng
+		}
+	}
+	
+	focus = {
+		id = ENG_USA_combined_bomber_offensive_2
+		text = "Tall Boy"
+		icon = GFX_goal_generic_air_bomber
+
+		available = {
+			has_war = yes
+			date > 1941.01.01
+		}
+		x = 10
+		y = 6
+		
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			air_experience = 25
+			
+			add_ideas = tall_boys
 		}
 	}
 	

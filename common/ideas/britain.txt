@@ -1573,6 +1573,109 @@ ideas = {
 				repair_speed_factor = 0.1
 			}
 		}
+		
+		##############################################air ideas ###########################################
+		
+		tall_boys = {
+			picture = generic_air_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			}
+			equipment_bonus = {
+				
+				
+				medium_plane_airframe = {
+					
+					air_bombing  = 0.10  instant = yes
+					air_range = 0.20 instant = yes 
+				}
+				
+			}
+		}
+		england_marine={
+			picture = generic_air_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			}
+			equipment_bonus = {
+				
+				large_plane_maritime_patrol_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		england_tac={
+			picture = generic_air_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			}
+			equipment_bonus = {
+				
+				
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.10
+					defence = 0.05
+				}
+				medium_plane_scout_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		combined_bomber_offensive_eng = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			equipment_bonus = {
+				large_plane_airframe = {
+					air_range = 0.1 instant = yes
+				}	
+			}
+			equipment_bonus = {
+				large_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			equipment_bonus = {
+				large_plane_airframe = {
+					defense = 0.20  instant = yes
+				}
+			}
+		}
 
 	}
 	

@@ -1031,4 +1031,8 @@
  mech_anti_air:0 "Mechanized Anti-Air"
  mech_at:0 "Mechanized Anti-Tank"
 
+tall_boys:0 "Tall Boy"
+england_marine:0 "Royal Navy Patrol"
+england_tac:0 "Wellington Bomber"
+combined_bomber_offensive_eng:0 "Combined Bomber Offensive"
 
