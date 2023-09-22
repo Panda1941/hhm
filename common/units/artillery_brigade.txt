@@ -299,4 +299,160 @@ sub_units = {
 			attack = -0.4
 		}
 	}
+	
+	mech_arty = {
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1198
+		ai_priority = 100
+		active = yes
+		type = {
+			mechanized
+			artillery
+		}
+		group = mobile
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+		combat_width = 3
+		transport = mechanized_equipment		
+		manpower = 500
+		need = {
+			artillery_equipment = 24
+			mechanized_equipment = 36
+		}
+		essential = {
+			mechanized_equipment
+		}	
+		max_strength = 20
+		max_organisation = 10
+		default_morale = 0.1
+		training_time = 60
+		weight = 0.125
+		supply_consumption = 0.33
+		breakthrough = -0.25
+		
+	
+		forest = {
+			attack = -0.2
+			movement = -0.5
+		}
+
+		hills = {
+			movement = -0.05
+		}
+		urban = {
+			defence = -0.10 
+		}
+
+		mountain = {
+			movement = -0.2
+			attack = -0.6
+			defence = -0.6
+		}
+
+		jungle = {
+			attack = -0.4
+			defence = -0.6
+			movement = -0.5
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -1.2
+		}
+	}
+	mech_rarty = {
+		sprite = "artillery"
+		map_icon_category = infantry
+		priority = 1199
+		ai_priority = 100
+		active = yes
+		type = {
+			mechanized
+			artillery
+		}
+		group = mobile
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}		
+		combat_width = 3
+		transport = mechanized_equipment
+		need = {
+			rocket_artillery_equipment = 24
+			mechanized_equipment = 36
+		}
+		essential = {
+			mechanized_equipment
+		}		
+		manpower = 500
+		max_organisation = 10
+		default_morale = 0.1
+		max_strength = 20
+		training_time = 60
+		weight = 0.125
+		breakthrough = -0.25
+
+		supply_consumption = 0.34
+					
+	
+		forest = {
+			attack = -0.2
+			movement = -0.5
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+			attack = -0.6 
+			defence = -0.6
+		}
+		urban = {
+			defence = -0.10 
+		}
+
+		jungle = {
+			attack = -0.4
+			defence = -0.9
+			movement = -0.5
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -1.2
+		}
+	}
 }

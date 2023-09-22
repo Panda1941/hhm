@@ -1178,6 +1178,132 @@ technologies = {
 			cat_special_forces_generic
 		}
 	}
+	
+	pack = {
+		
+		enable_equipments = {
+			pack_artillery_equipment_1
+		}
+		
+		enable_subunits = {
+			pack_artillery
+		}
+		
+		path = {
+			leads_to_tech = pack3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1936 }
+		}
+		
+		categories = {
+			infantry_tech
+			mountaineers_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	pack2 = {
+		pack_artillery = {
+			hard_attack = 4.0
+			ap_attack = 30.0
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = pack_at
+			}
+			custom_effect_tooltip = ATT_tooltip_pack_at
+		}
+		
+
+		
+		research_cost = 1.5
+		start_year = 1941
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1941 }
+		}
+		
+		categories = {
+			infantry_tech
+			mountaineers_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	pack3 = {
+		
+		enable_equipments = {
+			pack_artillery_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = pack4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = pack2
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 2.0
+		start_year = 1939
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1939 }
+		}
+		
+		categories = {
+			infantry_tech
+			mountaineers_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	pack4 = {
+		
+		enable_equipments = {
+			pack_artillery_equipment_3
+		}
+	
+		research_cost = 2.0
+		start_year = 1942
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1942 }
+		}
+		
+		categories = {
+			infantry_tech
+			mountaineers_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
 
 	tech_special_forces = {
 		category_special_forces = {

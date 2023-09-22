@@ -1,0 +1,23 @@
+spriteTypes = {	
+	
+	SpriteType = {
+		name = "GFX_pack_medium"
+		texturefile = "gfx/interface/technologies/pack1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_pack2_medium"
+		texturefile = "gfx/interface/technologies/pack2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_pack3_medium"
+		texturefile = "gfx/interface/technologies/pack3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_pack4_medium"
+		texturefile = "gfx/interface/technologies/pack4.dds"
+	}
+
+}

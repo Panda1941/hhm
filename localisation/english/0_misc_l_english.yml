@@ -1024,5 +1024,11 @@
  HUN_agricul_society_2:0 "Agricultural Society"
  HUN_agricul_society_3:0 "Agricultural Society"
  HUN_grenadier_training_idea:0 "Grenadier Training"
+ 
+ ATT_tooltip_pack_at:0 "§RGives 200% production cost§! £production_cost §Rto our Pack Artillery Equipment§! \n§RNOTE: This is done through a hidden National Spirit giving the buff to the equipment.§!"
+ mech_arty:0 "Mechanized Artillery"
+ mech_rarty:0 "Mechanized Rocket Artillery"
+ mech_anti_air:0 "Mechanized Anti-Air"
+ mech_at:0 "Mechanized Anti-Tank"
 
 

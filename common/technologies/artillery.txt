@@ -65,8 +65,14 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
+		pack_artillery = {
+			soft_attack = 0.1
+		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+		}
+		mech_arty = {
+			soft_attack = 0.15
 		}
 		#light_sp_artillery_brigade = {
 		#	soft_attack = 0.15
@@ -185,8 +191,14 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
+		pack_artillery = {
+			soft_attack = 0.1
+		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+		}
+		mech_arty = {
+			soft_attack = 0.15
 		}
 		#light_sp_artillery_brigade = {
 		#	soft_attack = 0.1
@@ -255,8 +267,14 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
+		pack_artillery = {
+			soft_attack = 0.1
+		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+		}
+		mech_arty = {
+			soft_attack = 0.15
 		}
 		#light_sp_artillery_brigade = {
 		#	soft_attack = 0.05
@@ -365,8 +383,14 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
+		pack_artillery = {
+			soft_attack = 0.1
+		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+		}
+		mech_arty = {
+			soft_attack = 0.15
 		}
 		#light_sp_artillery_brigade = {
 		#	soft_attack = 0.05
@@ -501,6 +525,9 @@ technologies = {
 		motorized_rocket_brigade = {
 			soft_attack = 0.15
 		}
+		mech_rarty = {
+			soft_attack = 0.15
+		}
 
 		path = {
 			leads_to_tech = rocket_artillery3
@@ -545,6 +572,9 @@ technologies = {
 		motorized_rocket_brigade = {
 			soft_attack = 0.15
 		}
+		mech_rarty = {
+			soft_attack = 0.15
+		}
 
 		path = {
 			leads_to_tech = rocket_artillery4
@@ -582,6 +612,9 @@ technologies = {
 		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.3
+		}
+		mech_rarty = {
+			soft_attack = 0.15
 		}
 		enable_equipment_modules = {
 			tank_rocket_launcher_2
@@ -691,6 +724,9 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
+		mech_anti_air = {
+			air_attack = 0.15
+		}
 
 		tech_air_damage_factor = -0.02
 
@@ -798,6 +834,9 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
+		mech_anti_air = {
+			air_attack = 0.15
+		}
 
 		enable_equipment_modules = {
 			tank_heavy_cannon_2
@@ -852,6 +891,9 @@ technologies = {
 		}
 		mot_anti_air_brigade = {
 			air_attack = 0.1
+		}
+		mech_anti_air = {
+			air_attack = 0.15
 		}
 
 		tech_air_damage_factor = -0.02
@@ -1042,6 +1084,10 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.2
 		}
+		mech_at = {
+			hard_attack = 0.1 
+			ap_attack = 0.2
+		}
 		#light_tank_destroyer_brigade = {
 		#	hard_attack = 0.15
 		#	ap_attack = 0.2
@@ -1125,6 +1171,10 @@ technologies = {
 
 		mot_anti_tank_brigade = {
 			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		mech_at = {
+			hard_attack = 0.1 
 			ap_attack = 0.1
 		}
 
@@ -1212,6 +1262,10 @@ technologies = {
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		mech_at = {
+			hard_attack = 0.1 
 			ap_attack = 0.1
 		}
 		#light_tank_destroyer_brigade = {
@@ -1309,6 +1363,10 @@ technologies = {
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
 			ap_attack = 0.1
+		}
+		mech_at = {
+			ap_attack = 0.1
+			hard_attack = 0.1
 		}
 		#light_tank_destroyer_brigade = {
 		#	hard_attack = 0.05

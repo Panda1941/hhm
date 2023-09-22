@@ -1,0 +1,24 @@
+ideas = {
+	hidden_ideas = {
+	
+	pack_at = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+			    pack_artillery_equipment = {
+					build_cost_ic = 1.0
+					instant = yes
+				}	
+			}		
+		}
+	
+	}
+}	

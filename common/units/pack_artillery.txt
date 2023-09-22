@@ -1,0 +1,82 @@
+sub_units = {
+	pack_artillery = {
+		sprite = artillery
+		map_icon_category = infantry
+		special_forces = yes
+		mountaineers = yes
+		
+		priority = 1
+		ai_priority = 1
+		active = no
+		
+		type = {
+			infantry
+			artillery
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 3
+
+		manpower = 500
+		need = {
+			pack_artillery_equipment = 36
+		}
+		
+		max_strength = 0.5
+		max_organisation = 0
+		default_morale = 0.2
+		training_time = 160
+		weight = 0.5
+		supply_consumption = 0.1
+
+		#Line artillery bonuses
+		soft_attack = 0.25
+
+		can_be_parachuted = yes
+		
+		forest = {
+			attack = -0.1
+			movement = -0.1
+		}
+
+		hills = {
+			attack = 0.1
+			movement = 0.05
+		}
+		
+		mountain = {
+			attack = 0.25
+			movement = 0.1
+		}
+
+		jungle = {
+			attack = -0.15
+			movement = -0.1
+		}
+
+		marsh = {
+			attack = -0.1
+			movement = -0.2
+		}
+
+		fort = {
+			attack = 0.05
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+}

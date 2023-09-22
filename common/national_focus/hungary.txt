@@ -1063,7 +1063,7 @@ focus_tree = {
 		}
 
 		available = {
-date > 1938.01.01
+date > 1937.06.01
 		}
 
 		bypass = {
@@ -1092,6 +1092,7 @@ date > 1938.01.01
 		icon = GFX_focus_HUN_weiss_metal_works_expansion
 		relative_position_id = HUN_announce_the_gyor_program
 		prerequisite = { focus = HUN_announce_the_gyor_program }
+		prerequisite = { focus = HUN_invite_foreign_investors }
 		x = -3
 		y = 1
 
@@ -1138,6 +1139,7 @@ date > 1938.01.01
 		id = HUN_civilian_industry
 		icon = GFX_focus_HUN_civilian_industry
 		prerequisite = { focus = HUN_announce_the_gyor_program }
+		prerequisite = { focus = HUN_invite_foreign_investors }
 		x = -1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -1200,10 +1202,10 @@ date > 1938.01.01
 	focus = {
 		id = HUN_invite_foreign_investors
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = HUN_civilian_industry }
-		x = -2
+		prerequisite = { focus = HUN_support_domestic_industry }
+		x = -1
 		y = 1
-		relative_position_id = HUN_civilian_industry
+		relative_position_id = HUN_support_domestic_industry
 
 		cost = 5
 
@@ -1232,7 +1234,7 @@ date > 1938.01.01
 	focus = {
 		id = HUN_expand_the_manfred_weiss_steel_works
 		icon = GFX_focus_generic_steel
-		prerequisite = { focus = HUN_invite_foreign_investors }
+		prerequisite = { focus = HUN_weiss_metal_works_expansion }
 		x = -3
 		y = 2
 		relative_position_id = HUN_civilian_industry
@@ -1303,7 +1305,7 @@ date > 1938.01.01
 	focus = {
 		id = HUN_expand_the_aluminum_industry
 		icon = GFX_focus_HUN_expand_the_aluminum_industry
-		prerequisite = { focus = HUN_invite_foreign_investors }
+		prerequisite = { focus = HUN_weiss_metal_works_expansion }
 		x = -1
 		y = 2
 		relative_position_id = HUN_civilian_industry
@@ -2738,7 +2740,7 @@ GER = { has_tech = basic_medium_tank_chassis
 		id = HUN_light_infantry_divisions_doctrine
 		icon = GFX_focus_HUN_light_infantry_divisions_doctrine
 		prerequisite = { focus = HUN_home_defense }
-		mutually_exclusive = { focus = HUN_heavy_divisions_doctrine }
+		mutually_exclusive = { focus = HUN_heavy_infantry_divisions_doctrine }
 		x = 3
 		y = 1
 		relative_position_id = HUN_home_defense

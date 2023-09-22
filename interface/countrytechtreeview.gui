@@ -278,41 +278,48 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "marines_tree"
-				position = { x = 140 y = 825 }
+				position = { x = 140 y = 980 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_mountaineers_tree"
-				position = { x = 140 y = 930 }
+				position = { x = 140 y = 1060 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "paratroopers_tree"
-				position = { x = 140 y = 1035 }
+				position = { x = 140 y = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "shock_troops_tree"
-				position = { x = 140 y = 1140 }
+				position = { x = 140 y = 1230 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			
 			gridboxtype = {
 				name = "jaegers_tree"
-				position = { x = 140 y = 1238 }
+				position = { x = 140 y = 1280 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_special_forces_tree"
-				position = { x = 140 y = 1536 }
+				position = { x = 140 y = 1440 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			
+			gridboxtype = {
+				name = "pack_tree"
+				position = { x = 140 y = 980 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
