@@ -147,7 +147,7 @@ sub_units = {
 			category_line_artillery
 		}		
 		essential = {
-			mech_chassis
+			mechanized_equipment
 		}	
 		combat_width = 1		
 		#Size Definitions
@@ -158,10 +158,10 @@ sub_units = {
 		training_time = 60
 		weight = 0.125
 		supply_consumption = 0.18
-		transport = mech_chassis
+		transport = mechanized_equipment
 		need = {
 			anti_air_equipment = 24
-			mech_chassis = 20
+			mechanized_equipment = 20
 		}
 		
 
