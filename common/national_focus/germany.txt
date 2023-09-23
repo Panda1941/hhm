@@ -1718,10 +1718,7 @@ focus_tree = {
 				OR = {
 					exists = no
 					is_subject = yes			
-					AND = {
-						is_subject = no
-						is_in_faction_with = ROOT
-					}
+					
 				}
 			}
 		}
@@ -1782,10 +1779,7 @@ focus_tree = {
 				OR = {
 					exists = no
 					is_subject = yes
-					AND = {
-						is_subject = no
-						is_in_faction_with = ROOT
-					}
+					
 				}
 			}
 		}
@@ -2766,6 +2760,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = secret_bonus
 				ahead_reduction = 1.5
+				bonus = 1.50
 				uses = 1
 				technology = atomic_research
 			}
