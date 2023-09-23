@@ -3614,8 +3614,7 @@ technologies = {
 		
 		air_cas_present_factor = 0.05
 		army_bonus_air_superiority_factor = 0.10
-
-		land_reinforce_rate = 0.05		
+	
 		
 		path = {
 			leads_to_tech = guerilla_warfare
