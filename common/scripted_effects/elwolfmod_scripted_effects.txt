@@ -292,22 +292,6 @@ elwolfmod_capitulations_on_actions = {
 			transfer_state = 97
 		}
 	}
-	if = {
-		limit = {
-			original_tag = FRA
-			FRA = { has_war_with = GER }
-		}
-		
-		retire_country_leader = yes
-		create_country_leader = {
-			name = "Charles de Gaulle"
-			desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-			picture = "Portrait_France_Charles_De_Gaulle.dds"
-			expire = "1965.1.1"
-			traits = { patriotic_guerilla }
-			ideology = conservatism
-		}
-	}
 	# France (Vichy check instead of MTTH)
 	if = {
 		limit = {
