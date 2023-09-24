@@ -2191,80 +2191,6 @@
 			add_ideas = partisan_suppression_focus
 		}
 	}
-	
-	#####################################################################OPERATIONS
-	focus = {
-		id = SOV_winter_offensive
-		icon = GFX_focus_attack_germany
-		relative_position_id = SOV_war_with_germany
-		available = {
-		OR = {
-		    AND = {
-			date > 1941.11.01 
-			date < 1942.03.1
-			}
-			AND = {
-			date > 1942.11.01 
-			date < 1943.03.1
-			}
-			}
-		}
-		x = 0
-		y = 1
-		prerequisite = { focus = SOV_war_with_germany }
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-			add_timed_idea= {idea = SOV_winter_offensive days = 60}
-		}
-	}
-	
-	focus = {
-		id = SOV_uranus
-		icon = GFX_focus_SOV_protect_the_east
-		prerequisite = { focus = SOV_war_with_germany }
-
-		available = {
-			date > 1942.08.15
-			date < 1942.11.23
-		}
-		x = 2
-		y = 1
-		relative_position_id = SOV_war_with_germany
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_timed_idea= {idea=SOV_uranus days=60}
-		}
-	}
-	
-	focus = {
-		id = SOV_bagration
-		icon = GFX_focus_SOV_red_army
-		prerequisite = { focus = SOV_war_with_germany }
-		available = {
-			NOT = {has_idea = SOV_uranus}
-			date > 1943.08.01
-		}
-		x = -2
-		y = 1
-		relative_position_id = SOV_war_with_germany
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_timed_idea= {idea= SOV_bagration days=100}
-		}
-	}
-
 
 
 	focus = {
@@ -2364,33 +2290,6 @@
 			}
 		}
 	}
-	
-	focus = {
-		id = SOV_kv1
-
-		icon = GFX_focus_SOV_kv1
-		text = "KV 1"
-		prerequisite = { focus = SOV_pc_of_mechanical_engineering }
-		x = 3
-		y = 1
-		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
-
-		available = {
-			
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			add_tech_bonus = {
-                name = SOV_kv1			
-				bonus = 1.0
-				uses = 1
-				technology = improved_heavy_tank
-			}
-		}
-	}
 
 	focus = {
 		id = SOV_t34
@@ -2410,6 +2309,12 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = SOV_t34_programe
+			add_tech_bonus = {
+                name = SOV_kv1			
+				bonus = 1.0
+				uses = 1
+				technology = improved_medium_tank
+			}
 		}
 	}
 
@@ -2431,6 +2336,12 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = SOV_kv_programe
+			add_tech_bonus = {
+                name = SOV_kv1			
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_tank
+			}
 		}
 	}
 
@@ -2864,5 +2775,257 @@
 			}
 		}
 	}
+
+
+
+
+
+
+
+
+
+	
+
+
+	focus = {
+		id = SOV_great_patriotic_war_focus
+		icon = GFX_focus_SOV_father_of_nations
+		text = "Great Patriotic War"
+		available = {
+			has_war_with = GER
+		}
+		x = -1
+		y = 2
+		relative_position_id = SOV_kv
+		cost = 5
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		search_filters = {  }
+		completion_reward = {
+			add_ideas = SOV_great_patriotic_war_5
+		}
+	}
+
+	focus = {
+		id = SOV_defend_moscow_focus
+		icon = GFX_focus_SOV_third_rome
+		text = "Defence of Moscow"
+
+		prerequisite = { focus = SOV_great_patriotic_war_focus }
+
+		available = {
+			has_war_with = GER
+
+			NOT = {
+				has_full_control_of_state = 219
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = SOV_great_patriotic_war_focus
+		cost = 3
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		search_filters = {  }
+		completion_reward = {
+			
+			219 = {
+				add_dynamic_modifier = {
+					modifier = defence_of_moscow
+					days = 90
+				}	
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_defend_stalingrad_focus
+		icon = GFX_focus_SOV_patriarch_of_all_russia
+		text = "Defence of Stalingrad"
+
+		prerequisite = { focus = SOV_great_patriotic_war_focus }
+
+		available = {
+			has_war_with = GER
+			
+			NOT = {
+				has_full_control_of_state = 217
+			}
+		}
+		x = -2
+		y = 2
+		relative_position_id = SOV_great_patriotic_war_focus
+		cost = 3
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		search_filters = {  }
+		completion_reward = {
+			
+			217 = {
+				add_dynamic_modifier = {
+					modifier = defence_of_stalingrad
+					days = 90
+				}	
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_defend_leningrad_focus
+		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
+		text = "Defence of Leningrad"
+
+		prerequisite = { focus = SOV_great_patriotic_war_focus }
+
+		available = {
+			has_war_with = GER
+
+			NOT = {
+				has_full_control_of_state = 195
+			}
+		}
+		x = 0
+		y = 2
+		relative_position_id = SOV_great_patriotic_war_focus
+		cost = 2
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		search_filters = {  }
+		completion_reward = {
+			
+			195 = {
+				add_dynamic_modifier = {
+					modifier = defence_of_leningrad
+					days = 90
+				}	
+			}
+		}
+	}
+
+	
+
+	focus = {
+		id = SOV_last_stand_focus
+		icon = GFX_focus_SOV_the_defense_of_moscow
+		text = "Last Stand"
+
+		prerequisite = { focus = SOV_defend_moscow_focus }
+		prerequisite = { focus = SOV_defend_stalingrad_focus }
+		prerequisite = { focus = SOV_defend_leningrad_focus }
+
+		available = {
+			has_war_with = GER
+
+			OR = {
+				
+				NOT = {
+					has_full_control_of_state = 219
+				}
+				NOT = {
+					has_full_control_of_state = 217
+				}
+				NOT = {
+					has_full_control_of_state = 195
+				}
+			}
+		}
+		x = 0
+		y = 2
+		relative_position_id = SOV_defend_moscow_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		search_filters = {  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_great_patriotic_war_5
+				add_idea = SOV_great_patriotic_war_4
+			}
+		}
+	}
+
+	
+	focus = {
+		id = SOV_winter_offensive
+		icon = GFX_focus_SOV_restore_cossack_units
+		relative_position_id = SOV_great_patriotic_war_focus
+		available = {
+		OR = {
+		    AND = {
+			date > 1941.11.01 
+			date < 1942.03.1
+			}
+			AND = {
+			date > 1942.11.01 
+			date < 1943.03.1
+			}
+			}
+		}
+		x = 2
+		y = 1
+		prerequisite = { focus = SOV_great_patriotic_war_focus }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_timed_idea= {idea = SOV_winter_offensive days = 60}
+		}
+	}
+	
+	focus = {
+		id = SOV_uranus
+		icon = GFX_focus_SOV_protect_the_east
+		prerequisite = { focus = SOV_winter_offensive }
+
+		available = {
+			date > 1942.08.15
+			date < 1942.11.23
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_winter_offensive
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea= {idea=SOV_uranus days=60}
+		}
+	}
+	
+	focus = {
+		id = SOV_bagration
+		icon = GFX_focus_SOV_red_army
+		prerequisite = { focus = SOV_uranus }
+		available = {
+			NOT = {has_idea = SOV_uranus}
+			date > 1943.08.01
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_uranus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea= {idea= SOV_bagration days=100}
+		}
+	}
+
 
 }

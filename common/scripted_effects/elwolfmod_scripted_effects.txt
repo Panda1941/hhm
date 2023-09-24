@@ -251,13 +251,13 @@ elwolfmod_vichy_france = {
 		transfer_state = 320
 		transfer_state = 635
 		transfer_state = 730
-		create_country_leader = {
-			name = "Charles de Gaulle"
-			desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-			picture = "Portrait_France_Charles_De_Gaulle.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-		}
+		#create_country_leader = {
+		#	name = "Charles de Gaulle"
+		#	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+		#	picture = "Portrait_France_Charles_De_Gaulle.dds"
+		#	expire = "1965.1.1"
+		#	ideology = conservatism
+		#}
 		#create_corps_commander = {
 		#	name = "Philippe Leclerc"
 		#	picture = "portrait_france_philippe_leclerc.dds"
@@ -645,7 +645,22 @@ elwolfmod_capitulations_on_actions_collab = {
 	}
 }
 
-tp_divs_out_of_france = {    every_state = { limit = { OR = {  is_core_of = FRA is_core_of = BEL is_core_of = GER }}  teleport_armies = { limit= { original_tag = FRA } to_state = 5139 }   }  }
+tp_divs_out_of_france = {    
+	every_state = { 
+		limit = { 
+			OR = {  
+				is_core_of = FRA 
+				is_core_of = BEL 
+				is_core_of = GER 
+			}
+		}  
+		
+		teleport_armies = { 
+			limit= { original_tag = FRA } 
+			to_province = 5139 
+		}   
+	}  
+}
 
 
 

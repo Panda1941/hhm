@@ -815,6 +815,10 @@
  lastline_state:0 "Last line of defense"
  FRA_state:0 "French Trenches"
  
+ defence_of_moscow:0 "Defence of Moscow"
+ defence_of_leningrad:0 "Defence of Leningrad"
+ defence_of_stalingrad:0 "Defence of Stalingrad"
+ 
  #Soviet Focuses and ideas
  
  SOV_winter_offensive_focus:0 "Winter Offensive"

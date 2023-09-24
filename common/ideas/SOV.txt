@@ -530,12 +530,6 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
-			
-			research_bonus = {
-				land_doctrine = 0.05
-				naval_doctrine = 0.05
-				air_doctrine = 0.05
-			}
 
 			modifier = {
 				army_org_factor = 0.45
@@ -554,12 +548,6 @@ ideas = {
 
 			allowed_civil_war = {
 				has_government = communism
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.04
-				naval_doctrine = 0.04
-				air_doctrine = 0.04
 			}
 
 			modifier = {
@@ -580,12 +568,6 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
-			
-			research_bonus = {
-				land_doctrine = 0.03
-				naval_doctrine = 0.03
-				air_doctrine = 0.03
-			}
 
 			modifier = {
 				army_org_factor = 0.25
@@ -605,12 +587,6 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
-			
-			research_bonus = {
-				land_doctrine = 0.02
-				naval_doctrine = 0.02
-				air_doctrine = 0.02
-			}
 
 			modifier = {
 				army_org_factor = 0.15
@@ -629,12 +605,6 @@ ideas = {
 
 			allowed_civil_war = {
 				has_government = communism
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.01
-				naval_doctrine = 0.01
-				air_doctrine = 0.01
 			}
 
 			modifier = {

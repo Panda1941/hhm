@@ -1271,6 +1271,33 @@ lastline_state = {
 	army_core_defence_factor = 0.1
 
 }
+
+defence_of_moscow = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_defend_moscow
+
+	army_core_defence_factor = 0.15
+	max_dig_in = 3
+}
+defence_of_leningrad = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_defend_moscow
+
+	army_core_defence_factor = 0.075
+	max_dig_in = 1
+}
+defence_of_stalingrad = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_defend_moscow
+
+	army_core_defence_factor = 0.1
+	max_dig_in = 2
+}
+
+
 JAP_attack = {
     enable = { always = yes }
 	
