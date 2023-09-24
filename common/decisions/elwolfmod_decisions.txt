@@ -13,8 +13,9 @@ templates_retards_ai = {
 					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
 					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
 					infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
-					artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 } 
 					artillery_brigade = { x = 3 y = 1 }	artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }	artillery_brigade = { x = 4 y = 2 }
 				}
 				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
 			}
@@ -54,6 +55,7 @@ templates_retards_ai = {
 						mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 2 } mountaineers = { x = 2 y = 2 }
 						rocket_artillery_brigade = { x = 3 y = 0 } rocket_artillery_brigade = { x = 4 y = 0 }
 						rocket_artillery_brigade = { x = 3 y = 1 } rocket_artillery_brigade = { x = 4 y = 1 }
+						rocket_artillery_brigade = { x = 3 y = 2 }	rocket_artillery_brigade = { x = 4 y = 2 }
 					}
 					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
 				}
@@ -68,6 +70,7 @@ templates_retards_ai = {
 						marine = { x = 0 y = 2 } marine = { x = 1 y = 2 } marine = { x = 2 y = 2 }
 						rocket_artillery_brigade = { x = 3 y = 0 } rocket_artillery_brigade = { x = 4 y = 0 }
 						rocket_artillery_brigade = { x = 3 y = 1 } rocket_artillery_brigade = { x = 4 y = 1 }
+						rocket_artillery_brigade = { x = 3 y = 2 }	rocket_artillery_brigade = { x = 4 y = 2 }
 					}
 					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } rocket_artillery = { x = 0 y = 3 } }
 				}
@@ -262,19 +265,20 @@ operations = {
 			
 		
 		complete_effect = {
-		WST = { 
+			WST = { 
 				transfer_state = 513
 				transfer_state = 460
 				transfer_state = 459
 				transfer_state = 461
 				transfer_state = 462
 			}
-		ITA = {
-			declare_war_on = {
-				target = ENG 
-				type = annex_everything
+			ITA = {
+				declare_war_on = {
+					target = ENG 
+					type = annex_everything
+				}
 			}
-			}
+	
 			if = { limit = { country_exists = ENG }	ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } } }
 		}
 	}
