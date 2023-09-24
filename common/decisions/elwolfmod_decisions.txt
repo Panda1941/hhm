@@ -260,7 +260,7 @@ operations = {
 			factor = 100
 		}
 		available = {
-			FRA = {surrender_progress > 0.95} 
+			date > 1940.01.01 
 			}
 			
 		
