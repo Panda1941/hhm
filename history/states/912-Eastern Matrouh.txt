@@ -5,6 +5,7 @@ state={
 	resources={
 		oil=8.000
 	}
+
 	history={
 		owner = ENG
 		buildings = {
@@ -14,12 +15,12 @@ state={
 		victory_points = {
 			13264 2 
 		}
-		
 		add_core_of = SWE
 
 	}
+
 	provinces={
-		10061 11910 11967 13259 13261 13264 13279 
+		10061 11910 11967 13259 13261 13264 13275 13276 13279 
 	}
 	manpower=32556
 	buildings_max_level_factor=1.000
