@@ -10,21 +10,35 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5                          -- Defau
 
 -- QOL
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                           -- Up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
-NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.20, 0.14, 0.05, 0.0 }
-NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 720
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30
+NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.20, 0.14, 0.055, 0.0 }
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 12
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 14
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 							    -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	    -- WAS 60 | less messages lying around at the top of your screen
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 25
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3
 
-NDefines.NInterface.MINIMAP_PING_DELAY_BETWEEN_PINGS = 1
+NDefines.NInterface.MINIMAP_PING_DELAY_BETWEEN_PINGS = 1	-- less spam ping
+
+NDefines.NMilitary.COMBAT_MINIMUM_TIME = 1  -- affects micro, much smoother
+
+NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false -- General grinding :smug:
+
+NDefines.NMilitary.MIN_DIVISION_DEPLOYMENT_TRAINING = 0.8
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0                     -- Removed for game stability/reducing chance of desync
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.5			    -- Volunteer shit to prevent 2w spam
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.5				    -- Volunteer shit to prevent 2w spam
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 1				    -- Volunteer shit to prevent 2w spam
+
+
+NDefines.NOperatives.AGENCY_CREATION_DAYS = 0
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0				        -- was 5 Number of factories used to create an intelligence agency
+
+NDefines.NOperatives.AGENCY_OPERATIVE_RECRUITMENT_TIME = 0
+NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 0
+NDefines.NOperatives.BECOME_SPYMASTER_MIN_UPGRADES = 0
+
 
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000                            -- WAS 500 || XP Cap
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000			                 -- WAS 500 || XP Cap
@@ -270,8 +284,8 @@ NDefines.NOperatives.DIPLOMATIC_PRESSURE_DAILY_XP_GAIN = 0
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 50
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 10.0
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 10
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 5.0
 
 --- Embargos
 NDefines.NDiplomacy.EMBARGO_COST = 0 -- 100
@@ -319,8 +333,8 @@ NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all 
 
 NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 4.9
 
---NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
---NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
+NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
+NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
 NDefines_Graphics.NAirGfx.MAX_PATROL_SCENARIOS = 0
 NDefines_Graphics.NAirGfx.MAX_DOGFIGHTS_SCENARIOS = 0
 NDefines_Graphics.NAirGfx.MAX_TRANSPORT_SCENARIOS = 0
@@ -358,6 +372,7 @@ NDefines_Graphics.NGraphics.SUPPLY_ICON_DISTANCE_CUTOFF = 1500
 NDefines_Graphics.NGraphics.PROV_CONSTRUCTION_ICON_DISTANCE_CUTOFF = 300
 NDefines_Graphics.NGraphics.STATE_CONSTRUCTION_ICON_DISTANCE_CUTOFF = 600
 NDefines_Graphics.NGraphics.GRADIENT_BORDERS_REFRESH_FREQ = 0.2
+NDefines_Graphics.NGraphics.BORDER_WIDTH = 1 --vanilla 1.25
 NDefines_Graphics.NGraphics.MAPICON_GROUP_PASSES = 5
 NDefines_Graphics.NGraphics.DRAW_REFRACTIONS_CUTOFF = 0
 NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 40
@@ -377,6 +392,11 @@ NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
+
+NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_BAD = {0.65, 0, 0, 1}
+NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_GOOD = {0, 0.65, 0, 1}
+NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_AVERAGE = {0.65, 0.65, 0, 1}
+NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_NEUTRAL = {130.0/255, 130.0/255, 130.0/255, 1}
 
 --Supply and combat changes
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.25 |  attack combat penalty for attacker if out of supply

@@ -19,7 +19,14 @@ branch_intelligence = {
 		
 		level = {
 			modifier = {
-				civilian_intel_factor = 0.25
+				civilian_intel_factor = 0.15
+				navy_intel_factor = 0.15
+			}
+		}
+		level = {
+			modifier = {
+				civilian_intel_factor = 0.20
+				navy_intel_factor = 0.20
 			}
 		}
 	}
@@ -40,51 +47,14 @@ branch_intelligence = {
 		
 		level = {
 			modifier = {
-				army_intel_factor = 0.25
+				army_intel_factor = 0.15
+				airforce_intel_factor = 0.15
 			}
 		}
-		
-	}
-	
-	upgrade_naval_department = {
-	
-		picture = GFX_agency_naval_department
-		frame = GFX_upgrade_frame_naval
-		sound = Spy_Agency_Intel_Upgrades_Confirm
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		modifiers_during_progress = {
-			civilian_factory_use = 5
-		}
-		
 		level = {
 			modifier = {
-				navy_intel_factor = 0.25
-			}
-		}
-		
-	}
-	
-	upgrade_airforce_department = {
-	
-		picture = GFX_agency_airforce_department
-		frame = GFX_upgrade_frame_airforce
-		sound = Spy_Agency_Intel_Upgrades_Confirm
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		modifiers_during_progress = {
-			civilian_factory_use = 5
-		}
-		
-		level = {
-			modifier = {
-				airforce_intel_factor = 0.25
+				army_intel_factor = 0.20
+				airforce_intel_factor = 0.20
 			}
 		}
 		
@@ -109,13 +79,19 @@ branch_defense = {
 		
 		level = {
 			modifier = {
-				intelligence_agency_defense = 1.5
+				intelligence_agency_defense = 1
 			}
 		}
 		
 		level = {
 			modifier = {
-				intelligence_agency_defense = 1.25
+				intelligence_agency_defense = 1
+			}
+		}
+		
+		level = {
+			modifier = {
+				intelligence_agency_defense = 1
 			}
 		}
 		
@@ -148,13 +124,13 @@ branch_defense = {
 		
 		level = {
 			modifier = {
-				root_out_resistance_effectiveness_factor = 0.25
+				root_out_resistance_effectiveness_factor = 0.3
 			}
 		}
 		
 		level = {
 			modifier = {
-				root_out_resistance_effectiveness_factor = 0.25
+				root_out_resistance_effectiveness_factor = 0.3
 			}
 		}
 	}
@@ -181,32 +157,6 @@ branch_operation = {
 				operation_steal_tech_outcome = 0.25
 			}
 		}
-		
-	}
-	
-	upgrade_portable_radios = {
-	
-		picture = GFX_agency_portable_radios
-		sound = Spy_Agency_Operations_Upgrades_Confirm
-		
-		ai_will_do = {
-			factor = 1
-		}
-	
-		available = {
-			has_tech = radio
-		}
-
-		modifiers_during_progress = {
-			civilian_factory_use = 8
-		}
-		
-		level = {
-			modifier = {
-				operation_coordinated_strike_outcome = 1
-			}
-		}
-		
 	}
 	
 	upgrade_invisible_ink = {
@@ -228,29 +178,6 @@ branch_operation = {
 				operation_steal_tech_risk = -0.25
 			}
 		}
-		
-	}
-	
-	upgrade_plastic_explosives = {
-	
-		picture = GFX_agency_plastic_explosives
-		sound = Spy_Agency_Operations_Upgrades_Confirm
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		modifiers_during_progress = {
-			civilian_factory_use = 8
-		}
-		
-		level = {
-			modifier = {
-				target_sabotage_factor = 0.25
-				boost_resistance_factor = 0.25
-			}
-		}
-		
 	}
 	
 	upgrade_suicide_pills = {
@@ -268,8 +195,21 @@ branch_operation = {
 		
 		level = {
 			modifier = {
-				operative_death_on_capture_chance = 0.1
+				operative_death_on_capture_chance = 0.15
 				own_operative_detection_chance = -0.05
+			}
+		}
+		
+		level = {
+			modifier = {
+				operative_death_on_capture_chance = 0.15
+				own_operative_detection_chance = -0.05
+			}
+		}
+		
+		level = {
+			modifier = {
+				operative_death_on_capture_chance = 0.2
 			}
 		}
 		
@@ -278,54 +218,6 @@ branch_operation = {
 }
 
 branch_operative = {
-	
-	upgrade_training_centers = {
-	
-		picture = GFX_agency_localized_training_center
-		Sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
-		
-		ai_will_do = {
-			factor = 2
-		}
-		
-		modifiers_during_progress = {
-			civilian_factory_use = 10
-		}
-		
-		level = {
-			modifier = {
-				enemy_operative_recruitment_chance = 0.25
-				occupied_operative_recruitment_chance = 0.25
-				new_operative_slot_bonus = 1
-			}
-			
-			complete_effect = {
-				unlock_decision_category_tooltip = lar_local_recruitment
-			}
-		}
-		
-	}
-	
-	upgrade_commando_training = {
-	
-		picture = GFX_agency_commando_training
-		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm	
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		modifiers_during_progress = {
-			civilian_factory_use = 5
-		}
-		
-		level = {
-			modifier = {
-				commando_trait_chance_factor = 1 # +100%
-			}
-		}
-		
-	}
 	
 	upgrade_interrogation_techniques = {
 	
@@ -347,47 +239,9 @@ branch_operative = {
 			}
 		}
 		
-	}
-	
-	upgrade_diplo_training = {
-	
-		picture = GFX_agency_diplomatic_training
-		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		modifiers_during_progress = {
-			civilian_factory_use = 5
-		}
-		
 		level = {
 			modifier = {
-				control_trade_mission_factor = 0.25
-				diplomatic_pressure_mission_factor = 0.25
-			}
-		}
-		
-	}
-	
-	upgrade_psycho_warfare = {
-	
-		picture = GFX_agency_psychological_warfare
-		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		modifiers_during_progress = {
-			civilian_factory_use = 8
-		}
-		
-		level = {
-			modifier = {
-				propaganda_mission_factor = 0.25
-				boost_ideology_mission_factor = 0.25
+				enemy_operative_capture_chance_factor = 0.5 # +100%
 			}
 		}
 		
