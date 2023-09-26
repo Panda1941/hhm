@@ -203,6 +203,81 @@ political_actions = {
 
 operations = {
 	
+	china_wave_1 = {
+		# icon = generic_operation
+		allowed = {
+			tag = CHI
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			surrender_progress > 0.1
+		}
+		complete_effect = {
+			capital_scope = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = no
+					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
+					owner = ROOT
+					count = 30
+				}
+			}
+		}
+	}
+	
+	china_wave_2 = {
+		# icon = generic_operation
+		allowed = {
+			tag = CHI
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			surrender_progress > 0.3
+		}
+		complete_effect = {
+			capital_scope = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = no
+					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
+					owner = ROOT
+					count = 30
+				}
+			}
+		}
+	}
+	
+	china_wave_3 = {
+		# icon = generic_operation
+		allowed = {
+			tag = CHI
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			surrender_progress > 0.75
+		}
+		complete_effect = {
+			capital_scope = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = no
+					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
+					owner = ROOT
+					count = 30
+				}
+			}
+		}
+	}
+	
 	japanese_invasion_of_china = {
 		# icon = generic_operation
 		allowed = {
