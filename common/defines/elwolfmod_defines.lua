@@ -285,7 +285,10 @@ NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 14 --7 the ai will refreshes 
 NDefines.NAI.AI_UPDATE_ROLES_FREQUENCY_HOURS = 240  --48 the ai will change templates less frequently
 NDefines.NAI.UPDATE_SUPPLY_MOTORIZATION_FREQUENCY_HOURS = 120    --52 every 5 days the ai will check weather they should increase supply motorization
 NDefines.NAI.UPDATE_SUPPLY_BOTTLENECKS_FREQUENCY_HOURS = 480    --168 every 20 days the ai will check for supply related bottlenecks and try to fix them
-NDefines.NAI.AREA_DEFENSE_SETTING_VP = true --False (AI will garrison cities as well as coasts)
+
+-- AI fixing
+NDefines.NAI.AREA_DEFENSE_SETTING_VP = false --False (AI will garrison cities as well as coasts)
+NDefines.NAI.AREA_DEFENSE_SETTING_COASTLINES = false
 
 --THANKS THRASHY
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                       -- biggest bonus we can get from having a small wing with an ace on

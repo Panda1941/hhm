@@ -6,10 +6,8 @@ state={
 	}
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = CHI
-		add_core_of = CHI
+		owner = WST
+		add_core_of = WST
 		buildings = {
 			infrastructure = 1
 
@@ -30,7 +28,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 	provinces={
 		4407 5018 5080 5102 8041 8059 10741 10856 
 	}
-	manpower=368200
+	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 

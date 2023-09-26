@@ -121,4 +121,57 @@ no_ai_planes = {
 #        air_airborne_1 = -1000
 #        air_airborne_2 = -1000
 #        air_airborne_3 = -1000
+#   }
 }
+
+
+#stolen from GDU
+AI_CHINA_STRAT = {
+	name = "China behaviour"
+	desc = "ai china does stuff"
+
+	enable = {
+        original_tag = CHI
+	}
+
+	abort = {
+
+	}
+    
+
+    ai_strategy = {
+        type = ignore_army_incompetence
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = JAP
+        value = 100
+    }
+    ai_strategy = {
+        type = garrison
+        value = 20
+    }
+    ai_strategy = {
+        type = spare_unit_factor
+        value = 30
+    }
+
+    ai_strategy = {
+        type = front_unit_request
+        tag = WST
+        value = -1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = FRA
+        value = -1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = ENG
+        value = -1000
+    }
+}
+
+

@@ -1,6 +1,6 @@
 ﻿capital = 613 # Nanjing
 
-oob = "CHI_1936"
+oob = "CHI_ELWOLF_SPAWN"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "CHI_1936_naval_mtg"

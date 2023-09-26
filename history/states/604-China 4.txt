@@ -3,10 +3,8 @@ state={
 	name="STATE_604"
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = XSM
-		add_core_of = XSM
+		owner = WST
+		add_core_of = WST
 		victory_points = {
 			7940 10 
 		}
@@ -37,7 +35,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 	provinces={
 		4914 4964 7940 8018 8037 12899 
 	}
-	manpower=1196100
+	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=rural
 

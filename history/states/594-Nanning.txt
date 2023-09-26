@@ -17,10 +17,11 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		add_core_of = GXC
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		victory_points = { 
-			7137 10 
+			7137 20 
 		}
 
 		1938.10.25 = {

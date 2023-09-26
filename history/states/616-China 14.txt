@@ -3,8 +3,8 @@ state={
 	name="STATE_616"
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
-		owner = CHI
-		add_core_of = CHI
+		owner = WST
+		add_core_of = WST
 		add_core_of = XSM
 		add_core_of = XSM
 		buildings = {
@@ -33,7 +33,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 	provinces={
 		3742 5031 5057 5100 7511 8055 8081 8127 10724 12327 12750 12776 
 	}
-	manpower=2077600
+	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 
