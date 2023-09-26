@@ -725,11 +725,12 @@ date > 1938.01.01
 	focus = {
 		id = SAF_focus_on_resources
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = SAF_expand_the_mining_industry }
+		prerequisite = { focus = SAF_pretoria_arms }
 		mutually_exclusive = { focus = SAF_fast_rearmament }
-		x = -2
-		y = 2
-		relative_position_id = SAF_expand_the_mining_industry
+
+		x = -1
+		y = 1
+		relative_position_id = SAF_pretoria_arms
 
 		cost = 10
 
@@ -758,11 +759,11 @@ date > 1938.01.01
 	focus = {
 		id = SAF_focus_on_resources_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = SAF_focus_on_resources }
+		prerequisite = { focus = SAF_expand_the_mining_industry }
 
-		x = 0
-		y = 1
-		relative_position_id = SAF_focus_on_resources
+		x = -2
+		y = 3
+		relative_position_id = SAF_expand_the_mining_industry
 
 		cost = 10
 
@@ -792,10 +793,10 @@ date > 1938.01.01
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_focus_on_resources_2_IC
@@ -840,10 +841,10 @@ date > 1938.01.01
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = steel_refinery
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SAF_focus_on_resources_3_IC
@@ -855,6 +856,7 @@ date > 1938.01.01
 		id = SAF_focus_on_resources_4
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = SAF_focus_on_resources_2 }
+		prerequisite = { focus = SAF_expand_the_rand_mines }
 
 		x = 2
 		y = 1
@@ -902,11 +904,11 @@ date > 1938.01.01
 	focus = {
 		id = SAF_fast_rearmament
 		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = SAF_infrastructure_effort }
-		x = 2
-		y = 2
-		relative_position_id = SAF_expand_the_mining_industry
+		prerequisite = { focus = SAF_pretoria_arms }
 		mutually_exclusive = { focus = SAF_focus_on_resources }
+		x = 1
+		y = 1
+		relative_position_id = SAF_pretoria_arms
 
 		cost = 10
 
@@ -931,6 +933,69 @@ date > 1938.01.01
 		
 		add_ideas = {SAF_military_complex_expansion}
 			
+		}
+	}
+	
+	focus = {
+		id = SAF_pretoria_arms_2
+		text = "Ammunition Plants"
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = SAF_fast_rearmament focus = SAF_focus_on_resources }
+		prerequisite = { focus = SAF_secure_interests_in_africa }
+		x = 8
+		y = 1	
+		relative_position_id = SAF_fast_rearmament
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = SAF_pretoria_arms_AF
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = SAF_pretoria_arms_AF
+			}
 		}
 	}
 
@@ -1063,9 +1128,8 @@ date > 1938.01.01
 		id = SAF_armament_effort
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = SAF_infrastructure_effort }
-		prerequisite = { focus = SAF_fast_rearmament }
 		x = 2
-		y = 4
+		y = 3
 		relative_position_id = SAF_south_african_railways
 
 		cost = 10
@@ -1169,7 +1233,7 @@ date > 1938.01.01
 		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = SAF_armament_effort }
 		x = 2
-		y = 5
+		y = 4
 		relative_position_id = SAF_south_african_railways
 
 		cost = 10
@@ -1240,7 +1304,7 @@ date > 1938.01.01
 		}
 
 		available = {
-
+date > 1937.07.01
 		}
 		
 		bypass = {

@@ -2512,7 +2512,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_army_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -2590,7 +2590,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_strategic_air_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2703,7 +2703,7 @@ focus_tree = {
 				ahead_reduction = 1.0
 				uses = 1
 				name = mech_army_bonus
-				technology = mechanised_infantry
+				category = motorized_equipment
 			}
 		}
 	}
@@ -3728,7 +3728,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_rhineland
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -3787,7 +3787,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 5
+		cost = 3
 		bypass = {
 			188 = { is_owned_by = GER }
 			85 = { is_owned_by = GER }
@@ -4212,7 +4212,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = GER_demand_sudetenland
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 10
 		}	
@@ -4238,7 +4238,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_demand_sudetenland
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -4345,7 +4345,7 @@ hidden_effect = {
 		x = -3
 		y = 1
 		relative_position_id = GER_danzig_or_war
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -4563,10 +4563,10 @@ hidden_effect = {
 			}
 			every_state = {
 				limit = {	has_state_flag = GER_naval_rearmament_1dockyard }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4600,10 +4600,10 @@ hidden_effect = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = GER_naval_rearmament_1dockyard
@@ -5193,6 +5193,10 @@ hidden_effect = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+		date>1941.1.1
+	
 		}
 			
 		available_if_capitulated = yes

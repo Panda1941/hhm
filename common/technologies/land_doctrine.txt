@@ -1210,6 +1210,7 @@ technologies = {
 	    
 		allow = {
 			tag = ENG 
+			tag = USA
             date > 1941.07.01			
 		}
 
@@ -2155,7 +2156,9 @@ technologies = {
 		
 		
 		allow = {
-			tag = ITA 			
+			tag = ITA
+            tag = JAP			
+			
 		}
 		on_research_complete = {
 	        custom_effect_tooltip = ATT_tooltip_grand_mechanized_offensive

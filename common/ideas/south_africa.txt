@@ -19,8 +19,8 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.01
 				consumer_goods_factor = 0.05
-				industrial_capacity_factory = -0.25
-				industrial_capacity_dockyard = -0.25
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
 			}
 		}		
 
@@ -39,8 +39,8 @@ ideas = {
 
 			modifier = {
 			    consumer_goods_factor = 0.03
-				industrial_capacity_factory = -0.12
-				industrial_capacity_dockyard = -0.12
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
 			}
 		}
 
