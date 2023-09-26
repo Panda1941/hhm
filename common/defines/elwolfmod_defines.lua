@@ -24,7 +24,7 @@ NDefines.NMilitary.COMBAT_MINIMUM_TIME = 1  -- affects micro, much smoother
 
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false -- General grinding :smug:
 
-NDefines.NMilitary.MIN_DIVISION_DEPLOYMENT_TRAINING = 0.8
+NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING = 2.5
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0                     -- Removed for game stability/reducing chance of desync
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.5			    -- Volunteer shit to prevent 2w spam

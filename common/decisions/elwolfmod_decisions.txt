@@ -222,7 +222,7 @@ operations = {
 					allow_spawning_on_enemy_provs = no
 					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
 					owner = ROOT
-					count = 30
+					count = 40
 				}
 			}
 		}
@@ -247,7 +247,7 @@ operations = {
 					allow_spawning_on_enemy_provs = no
 					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
 					owner = ROOT
-					count = 30
+					count = 40
 				}
 			}
 		}
@@ -272,7 +272,7 @@ operations = {
 					allow_spawning_on_enemy_provs = no
 					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
 					owner = ROOT
-					count = 30
+					count = 40
 				}
 			}
 		}

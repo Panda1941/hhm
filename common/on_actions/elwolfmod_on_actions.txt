@@ -24,16 +24,6 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = {
-						tag = CHI
-					}
-				}
-				CHI = {
-					load_oob = "CHI_ELWOLF_SPAWN"
-				}
-			}
-			if = {
-				limit = {
-					FROM = {
 						tag = POL
 					}
 				}
@@ -1341,6 +1331,25 @@ on_actions = {
 						province = 5023
 						instant_build = yes
 					}
+				}
+			}
+			else = {
+				ENG = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_1
+						amount = 8000
+					}
+					add_offsite_building = { type = industrial_complex level = 12 }
+					add_offsite_building = { type = arms_factory level = 4 }
+				}
+
+				CAN = {
+					add_offsite_building = { type = industrial_complex level = 2 }
+					add_offsite_building = { type = arms_factory level = 1 }
+				}
+				SAF = {
+					add_offsite_building = { type = industrial_complex level = 3 }
+					add_offsite_building = { type = arms_factory level = 1 }
 				}
 			}
 			every_country = {

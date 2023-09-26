@@ -442,7 +442,7 @@
 		}
 
 		available = {
-			date > 1941.01.01
+			date > 1941.06.01
 		}
 
 		bypass = {
