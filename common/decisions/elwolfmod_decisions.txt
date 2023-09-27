@@ -2,22 +2,41 @@ templates_retards_ai = {
 
 	inf_templates = {
 	
-		allowed = {  }
+		available = { 
+			OR = {
+				AND = {
+					original_tag = CHI
+					date > 1937.06.01
+				}
+				NOT = {
+					original_tag = CHI
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
 		
 		fire_only_once = yes
 		
 		complete_effect = {
-			division_template = {
-				name = "30w infantry + arty"
-				regiments = {
-					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
-					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
-					infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
-					artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 } 
-					artillery_brigade = { x = 3 y = 1 }	artillery_brigade = { x = 4 y = 1 }
-					artillery_brigade = { x = 3 y = 2 }	artillery_brigade = { x = 4 y = 2 }
+			if = {
+				limit = {
+					NOT = { original_tag = CHI } 
 				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+				division_template = {
+					name = "30w infantry + arty"
+					regiments = {
+						infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
+						infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
+						infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
+						artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 } 
+						artillery_brigade = { x = 3 y = 1 }	artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }	artillery_brigade = { x = 4 y = 2 }
+					}
+					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+				}
 			}
 			division_template = {
 				name = "30w pure infantry"
@@ -222,7 +241,7 @@ operations = {
 					allow_spawning_on_enemy_provs = no
 					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
 					owner = ROOT
-					count = 40
+					count = 60
 				}
 			}
 		}
@@ -247,7 +266,7 @@ operations = {
 					allow_spawning_on_enemy_provs = no
 					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
 					owner = ROOT
-					count = 40
+					count = 80
 				}
 			}
 		}
@@ -272,7 +291,7 @@ operations = {
 					allow_spawning_on_enemy_provs = no
 					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
 					owner = ROOT
-					count = 40
+					count = 60
 				}
 			}
 		}

@@ -107,6 +107,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				ai_focus_defense_factor = 1.0
+				ai_desired_divisions_factor = 1.5
 				army_attack_factor = -0.3
 				army_defence_factor = -0.3
 				mobilization_speed = -0.3
@@ -131,6 +133,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				ai_focus_defense_factor = 1.0
+				ai_desired_divisions_factor = 1.5
 				army_attack_factor = -0.2
 				army_defence_factor = -0.2
 				mobilization_speed = -0.2
@@ -155,9 +159,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.1
-				army_defence_factor = -0.1
-				mobilization_speed = -0.1
+				ai_focus_defense_factor = 1.0
+				ai_desired_divisions_factor = 1.5
+				army_attack_factor = -0.25
+				army_defence_factor = 0.15
 			}
 
 		}
@@ -198,6 +203,7 @@ ideas = {
 			
 			modifier = {
 				command_power_gain_mult = -0.7
+				army_org_factor = 0.05
 			}
 
 		}
@@ -300,7 +306,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.05
-				industrial_capacity_factory = -0.05
+				industrial_capacity_factory = 0.05
 			}
 		}
 
@@ -321,7 +327,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.10
-				industrial_capacity_factory = -0.10
+				industrial_capacity_factory = 0.10
 			}
 		}
 		
@@ -341,7 +347,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.15
-				industrial_capacity_factory = -0.15
+				industrial_capacity_factory = 0.15
 			}
 		}
 		
@@ -361,7 +367,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.20
-				industrial_capacity_factory = -0.20
+				industrial_capacity_factory = 0.20
 			}
 		}
 
@@ -381,7 +387,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.25
-				industrial_capacity_factory = -0.25
+				industrial_capacity_factory = 0.25
 			}
 		}		
 

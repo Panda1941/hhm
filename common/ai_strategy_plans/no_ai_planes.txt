@@ -124,8 +124,6 @@ no_ai_planes = {
 #   }
 }
 
-
-#stolen from GDU
 AI_CHINA_STRAT = {
 	name = "China behaviour"
 	desc = "ai china does stuff"
@@ -150,11 +148,19 @@ AI_CHINA_STRAT = {
     }
     ai_strategy = {
         type = garrison
-        value = 20
+        value = 25
     }
+
     ai_strategy = {
-        type = spare_unit_factor
-        value = 30
+        type = put_unit_buffers
+        ratio = 0.25
+        states = {
+            597
+            743
+            613
+            594
+        }
+        subtract_fronts_from_need = yes
     }
 
     ai_strategy = {
@@ -171,6 +177,11 @@ AI_CHINA_STRAT = {
         type = front_unit_request
         tag = ENG
         value = -1000
+    }
+
+    ai_strategy = {
+        type = force_build_armies
+        value = 200
     }
 }
 
