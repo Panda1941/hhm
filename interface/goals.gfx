@@ -4329,6 +4329,50 @@ spriteTypes = {
 		name = "GFX_focus_HUN_light_infantry_divisions_doctrine"
 		texturefile = "gfx/interface/goals/HUN/r56_goal_generic_infantry_flames.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_CAN_canada_wheat_board"
+		texturefile = "gfx/interface/goals/CAN/AUS_agriculture.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CAN_national_housing_act"
+		texturefile = "gfx/interface/goals/CAN/Barlament.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CAN_commandeer_a_battlecruiser"
+		texturefile = "gfx/interface/goals/CAN/BEL_Battleship_Investements.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CAN_the_sexton"
+		texturefile = "gfx/interface/goals/CAN/sexton.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CAN_federal_relief"
+		texturefile = "gfx/interface/goals/CAN/generic_banking_legislation.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CAN_war_bonds"
+		texturefile = "gfx/interface/goals/CAN/goal_CAN_lets_go_canada.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CAN_heavy_recon"
+		texturefile = "gfx/interface/goals/CAN/r56_goal_CAN_valentine.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CAN_uranium_mining"
+		texturefile = "gfx/interface/goals/CAN/r56_goal_CAN_uranium_mining.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CAN_armoured_carrier_mass_production"
+		texturefile = "gfx/interface/goals/CAN/r56_goal_CAN_truck.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CAN_a_parliamentary_declaration_of_war"
+		texturefile = "gfx/interface/goals/CAN/r56_goal_CAN_tovictory.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CAN_a_canadian_cruiser"
+		texturefile = "gfx/interface/goals/CAN/r56_goal_CAN_ram_tank.dds"
+	}
 	
 	
 	
