@@ -2268,7 +2268,7 @@
 	focus = {
 		id = SOV_superior_war_machines
 
-		icon = GFX_focus_generic_tank_production
+		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = SOV_pc_of_mechanical_engineering }
 		x = -1
 		y = 1
@@ -2346,6 +2346,31 @@
 	}
 
 	focus = {
+		id = SOV_t54
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = { focus = SOV_kv focus = SOV_t34 }
+		x = 1
+		y = 1
+		relative_position_id = SOV_t34
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+                name = SOV_t54			
+				bonus = 0.75
+				uses = 1
+				technology = main_battle_tank_chassis	
+			}
+		}
+	}
+
+	focus = {
 		id = SOV_the_means_to_wage_war
 
 		icon = GFX_goal_generic_military_sphere
@@ -2374,7 +2399,7 @@
 	focus = {
 		id = SOV_soviet_artillery
 
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = SOV_superior_war_machines focus = SOV_the_means_to_wage_war }
 		x = 2
 		y = 2
@@ -2410,6 +2435,40 @@
 			}
 
 			add_ideas = SOV_defense_industry_artillery_bonus
+		}
+	}
+
+	focus = {
+		id = SOV_stalins_organ
+
+		text = "Stalin'	s Organ"
+
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = SOV_soviet_artillery }
+		x = -1
+		y = 1
+		relative_position_id = SOV_soviet_artillery
+		cost = 5
+
+		available = {
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			custom_effect_tooltip = "Will add the Motorized Rocket Artillery technology"
+			set_technology = {
+				motorized_rocket_unit = 1
+			}
+			
+			572 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2794,8 +2853,8 @@
 		available = {
 			has_war_with = GER
 		}
-		x = -1
-		y = 2
+		x = 0
+		y = 3
 		relative_position_id = SOV_kv
 		cost = 5
 		ai_will_do = {
