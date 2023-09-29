@@ -1,11 +1,14 @@
-state=
-{
+
+state={
 	id=645
 	name="STATE_645"
-	manpower=1018
-	state_category = small_island
-	history=
-{ 1936.1.1.13 = { owner = WST add_core_of = WST }
+
+	history={
+		1936.1.1.13 = {
+			owner = WST
+			add_core_of = WST
+
+		}
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
@@ -15,15 +18,19 @@ state=
 				naval_base = 1
 
 			}
+
 		}
 		victory_points = {
-			13025 5
-		 }
+			13025 5 
+		}
 
 	}
+
 	provinces={
-		13025
+		13025 13375 13376 13377 13378 
 	}
-
-	local_supplies=0.0 
+	manpower=1018
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
 }
