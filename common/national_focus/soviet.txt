@@ -2347,6 +2347,7 @@
 
 	focus = {
 		id = SOV_t54
+		text = "T-54"
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		prerequisite = { focus = SOV_kv focus = SOV_t34 }
 		x = 1
