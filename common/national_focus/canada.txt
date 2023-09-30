@@ -385,84 +385,12 @@
 	}
 
 	focus = {
-		id = CAN_retool_angus_shops
-		icon = GFX_goal_generic_construct_mil_factory
-	
-		prerequisite = { focus = CAN_bits_and_pieces_program }
-		x = -2
-		y = 3
-		relative_position_id = CAN_bits_and_pieces_program
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_retool_angus_shops_AF
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 285 517 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = CAN_retool_angus_shops_AF
-			}
-		}
-	}
-
-	focus = {
 		id = CAN_imperial_oil
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = CAN_retool_angus_shops }
-		x = 0
+		prerequisite = { focus = CAN_bits_and_pieces_program }
+		x = -1
 		y = 1
-		relative_position_id = CAN_retool_angus_shops
+		relative_position_id = CAN_bits_and_pieces_program
 
 		cost = 5
 
@@ -647,17 +575,6 @@
 					instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_department_of_munitions_and_supply_AF2
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 
 		completion_reward = {
@@ -676,22 +593,6 @@
 					instant_build = yes
 				}
 				set_state_flag = CAN_department_of_munitions_and_supply_AF1
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_department_of_munitions_and_supply_AF2
 			}
 		}
 	}
@@ -997,17 +898,6 @@ threat > 0.25
 					instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_victory_aircraft_limited_AF2
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 
 		completion_reward = {
@@ -1027,23 +917,6 @@ threat > 0.25
 					instant_build = yes
 				}
 				set_state_flag = CAN_victory_aircraft_limited_AF1
-			}
-			random_owned_controlled_state = {
-				prioritize = { 276 682 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_victory_aircraft_limited_AF2
 			}
 		}
 	}
@@ -1174,17 +1047,6 @@ threat > 0.25
 					instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_john_inglis_and_company_AF2
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 
 		completion_reward = {
@@ -1204,23 +1066,6 @@ threat > 0.25
 					instant_build = yes
 				}
 				set_state_flag = CAN_john_inglis_and_company_AF1
-			}
-			random_owned_controlled_state = {
-				prioritize = { 276 682 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_john_inglis_and_company_AF2
 			}
 		}
 	}
@@ -1603,7 +1448,7 @@ threat > 0.25
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = CAN_war_bonds }
 		
-		x = -3
+		x = 0
 		y = 1
 		relative_position_id = CAN_war_bonds
 

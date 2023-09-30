@@ -49,16 +49,16 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.06
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
 				production_speed_dockyard_factor = -0.20
-				production_speed_arms_factory_factor = -0.20
+				production_speed_arms_factory_factor = -0.25
 				production_speed_infrastructure_factor = 0.25
 				stability_factor = -0.1
 				production_factory_max_efficiency_factor = -0.05
 				production_speed_buildings_factor = -0.05
-				political_power_gain = -0.50
+				political_power_gain = -0.60
 			}
 		}
 
@@ -77,15 +77,15 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.05
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = 0.075
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
 				production_speed_dockyard_factor = -0.20
-				production_speed_arms_factory_factor = -0.20
+				production_speed_arms_factory_factor = -0.25
 				production_speed_infrastructure_factor = 0.25
 				production_factory_max_efficiency_factor = -0.05
 				production_speed_buildings_factor = -0.05
-				political_power_gain = -0.50
+				political_power_gain = -0.60
 			}
 		}
 		
@@ -104,15 +104,15 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.02
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
 				production_speed_dockyard_factor = -0.20
-				production_speed_arms_factory_factor = -0.20
+				production_speed_arms_factory_factor = -0.25
 				production_speed_infrastructure_factor = 0.25
 				production_factory_max_efficiency_factor = -0.05
 				production_speed_buildings_factor = -0.05
-				political_power_gain = -0.50
+				political_power_gain = -0.60
 			}
 		}
 		
@@ -131,14 +131,15 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
+				consumer_goods_factor = 0.025
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 				production_speed_dockyard_factor = -0.20
-				production_speed_arms_factory_factor = -0.20
+				production_speed_arms_factory_factor = -0.25
 				production_speed_infrastructure_factor = 0.25
 				production_factory_max_efficiency_factor = -0.05
 				production_speed_buildings_factor = -0.05
-				political_power_gain = -0.30
+				political_power_gain = -0.40
 			}
 		}
 		
@@ -162,7 +163,7 @@ ideas = {
 				production_speed_dockyard_factor = -0.20
 				production_speed_arms_factory_factor = -0.20
 				production_speed_infrastructure_factor = 0.25
-				political_power_gain = -0.30
+				political_power_gain = -0.40
 			}
 		}
 		
@@ -345,7 +346,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.04
+				consumer_goods_factor = -0.03
 			}
 		}
 
@@ -364,7 +365,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.06
+				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 0.05
 			}
 		}
@@ -428,10 +429,10 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				
-				production_speed_industrial_complex_factor = 0.25
-				production_speed_arms_factory_factor = -0.10
-				production_speed_dockyard_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.20
+				production_speed_arms_factory_factor = -0.15
+				production_speed_dockyard_factor = -0.15
 			}
 		}
 		
@@ -450,10 +451,10 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
-				production_speed_arms_factory_factor = 0.20
-				production_speed_dockyard_factor = 0.20
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
 			}
 		}
 		

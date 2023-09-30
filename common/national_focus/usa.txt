@@ -1839,7 +1839,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_low_support_trigger = yes
+			congress_medium_support_trigger = yes
 		}
 		
 		bypass = {
@@ -1855,9 +1855,9 @@ focus_tree = {
 			USA_great_depression_level_down = yes
 			if = {
 				limit = {
-					not = { congress_medium_support_trigger = yes }
+					not = { USA_congress_large_opposition = yes }
 				}
-				USA_congress_small_opposition = yes
+				USA_congress_large_opposition = yes
 			}
 		}
 	}
@@ -1875,7 +1875,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_medium_support_trigger = yes
+			congress_high_support_trigger = yes
 		}
 		
 		bypass = {
@@ -1892,10 +1892,10 @@ focus_tree = {
 				limit = {
 					communism < 0.1 
 				}
-				USA_congress_small_opposition = yes
+				USA_congress_large_opposition = yes
 			}
 			else = {
-				USA_congress_medium_opposition = yes
+				USA_congress_large_opposition = yes
 			}
 		}
 	}
@@ -1913,7 +1913,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			congress_high_support_trigger = yes
 		}
 		
 		bypass = {
@@ -2033,10 +2033,11 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_congress_large_opposition = yes
 			custom_effect_tooltip = available_political_advisor
 		    show_ideas_tooltip = charles_coughlin
-		    add_popularity = { ideology = fascism popularity = 0.10 }
-			add_stability = -0.05
+		    add_popularity = { ideology = fascism popularity = 0.25 }
+			add_stability = -0.1
 		     if = {
 		    	limit = {
 		    		is_ai = yes
