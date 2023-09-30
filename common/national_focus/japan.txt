@@ -261,8 +261,8 @@
 		}
 
 		available = {
-			has_full_control_of_state = 605
-			has_full_control_of_state = 325
+			has_full_control_of_state = 593
+			has_full_control_of_state = 592
 		}
 
 		bypass = {
@@ -275,13 +275,13 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			605 = {
+			593 = {
 				add_resource = {
 					type = aluminium
 					amount = 8
 				}
 			}
-			325 = {
+			592 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
@@ -460,6 +460,7 @@
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+		
 			create_wargoal = {
 				target = ENG
 				type = annex_everything
@@ -479,6 +480,13 @@
 				target = FRA
 				type = annex_everything
 				expire = 0
+			}
+			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+			JAP = {
+				add_timed_idea = { idea = JAP_banzai days = 180 }
+			}
+			MAN = {
+				add_timed_idea = { idea = JAP_banzai days = 180 }
 			}
 		}
 	}
@@ -684,7 +692,7 @@
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -712,10 +720,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 				set_state_flag = JAP_zaibatsus_factories
@@ -762,7 +770,7 @@
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -772,7 +780,7 @@
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -796,10 +804,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = JAP_nationalize_war_industry_AF
@@ -821,10 +829,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_nationalize_war_industry_IC
@@ -1428,7 +1436,7 @@
 		y = 0
 		relative_position_id = JAP_the_manchurian_project 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1491,8 +1499,16 @@
 			add_tech_bonus = {
 				name = JAP_small_arms_modernization
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = infantry_weapons	
+			}
+			532 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1530,6 +1546,14 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = JAP_supremacy_of_technology
+			455 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1561,11 +1585,25 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			461 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = JAP_modern_artillery
 				bonus = 1.0
 				uses = 2
-				category = artillery	
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = JAP_modern_artillery
+				bonus = 1.0
+				uses = 1
+				technology = antiair2
 			}
 		}
 	}
@@ -1600,9 +1638,17 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_armored_divisions
-				bonus = 1.0
-				uses = 1
+				bonus = 1.5
+				uses = 2
 				category = armor	
+			}
+			282 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1647,7 +1693,7 @@
 		y = 1
 		relative_position_id = JAP_army_expansion_law
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1673,6 +1719,14 @@
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = hajime_sugiyama
+			531 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1684,7 +1738,7 @@
 		y = 1
 		relative_position_id = JAP_army_expansion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1709,6 +1763,14 @@
 
 		completion_reward = {
 			add_ideas = JAP_superior_will
+			528 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2075,7 +2137,7 @@
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -2085,7 +2147,7 @@
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -2123,10 +2185,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_new_naval_estimates_DY1
@@ -2148,10 +2210,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_new_naval_estimates_DY2
@@ -2197,6 +2259,12 @@
 				uses = 2
 				category = cat_base_strike
 			}
+			add_tech_bonus = {
+				name = JAP_carrier_warfare_experiments
+				bonus = 1.00
+				uses = 1
+				category = cv_tech
+			}
 		}
 	}
 
@@ -2238,6 +2306,13 @@
 				bonus = 1.0
 				uses = 1
 				category = marine_tech	
+			}
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = tp_tech
 			}
 		}
 	}

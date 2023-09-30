@@ -4113,6 +4113,9 @@ focus_tree = {
 			CAN = {add_timed_idea = { idea = ENG_compass  days = 90 }}
 			SAF = {add_timed_idea = { idea = ENG_compass  days = 90 }}
 			FRA = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+			RAJ = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+			AST = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+			BRA = {add_timed_idea = { idea = ENG_compass  days = 90 }}
 			}
 			every_army_leader = {
 				add_logistics = 1
@@ -4181,6 +4184,9 @@ focus_tree = {
 			CAN = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
 			SAF = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
 			FRA = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+			RAJ = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+			AST = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+			BRA = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
 			}
 			every_army_leader = {
 				limit = {
@@ -4242,6 +4248,9 @@ focus_tree = {
 			CAN = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
 			SAF = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
 			FRA = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
+			RAJ = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
+			AST = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
+			BRA = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
 			}
 			every_army_leader = {
 				limit = {
@@ -4294,6 +4303,7 @@ focus_tree = {
 			CAN = {add_timed_idea = { idea = ENG_torch  days = 90 }}
 			SAF = {add_timed_idea = { idea = ENG_torch  days = 90 }}
 			FRA = {add_timed_idea = { idea = ENG_torch  days = 90 }}
+			AST = {add_timed_idea = { idea = ENG_torch  days = 90 }}
 			}
 			FRA = { 
 				transfer_state = 461

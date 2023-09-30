@@ -143,7 +143,7 @@
 		y = 1
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -217,14 +217,14 @@
 		x = 0
 		y = 1
 		relative_position_id = CAN_national_housing_act
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
 		}
 
 		available = {
-			threat > 0.05
+			threat > 0.15
 		}
 		
 		bypass = {
@@ -607,7 +607,7 @@
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
@@ -914,7 +914,7 @@
 		y = 1
 		relative_position_id = CAN_alberta_coal_towns
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -925,7 +925,7 @@
 		}
 
 		available = {
-threat > 0.15
+threat > 0.25
 		}
 		
 		bypass = {
@@ -1385,7 +1385,7 @@ threat > 0.15
 		y = 1
 		relative_position_id = CAN_canada_wheat_board
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1396,7 +1396,7 @@ threat > 0.15
 		}
 
 		available = {
-		GER = { has_completed_focus = GER_anschluss }	
+		GER = { has_completed_focus = GER_end_of_czechoslovakia }	
 		}
 		
 		bypass = {
@@ -1731,7 +1731,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_a_modest_reaarmament
 		text = "Increased Military Budget"
-		icon = GFX_goal_CAN_budget
+		icon = GFX_focus_generic_treaty
 		x = 42
 		y = 0
 
@@ -1757,14 +1757,14 @@ date > 1940.07.01
 		available_if_capitulated = yes
 
 		completion_reward = {
-				add_ideas = CAN_budget_2
+				add_timed_idea = { idea = CAN_budget_2 days = 1460 }
 		}
 	}
 
 	focus = {
 		id = CAN_learn_from_the_last_mobilization
 		text = "Learn From WW1 "
-		icon = GFX_goal_generic_army_elite
+		icon = GFX_goal_rhineland
 		x = -1
 		y = 1
 
@@ -1797,13 +1797,13 @@ date > 1940.07.01
 	focus = {
 		id = CAN_expand_military_research
 		TEXT  = "Expand Military Research"
-		icon = GFX_goal_generic_secret_rearmament
+		icon = GFX_goal_generic_small_arms
 		x = 1
 		y = 1
 
 		prerequisite = {focus = CAN_a_modest_reaarmament}
 		relative_position_id = CAN_a_modest_reaarmament
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -1824,15 +1824,22 @@ date > 1940.07.01
 		completion_reward = {
 			add_tech_bonus = {
 				category = infantry_weapons
-				uses = 2
-				bonus = 0.5
+				uses = 1
+				bonus = 1.0
 				name = CAN_infantry_equipment_bonus
 			}
 			add_tech_bonus = {
 				category = artillery 
-				uses = 2
-				bonus = 0.5
+				uses = 1
+				bonus = 1.0
 				name = CAN_expand_military_research
+			}
+			add_tech_bonus = {
+			    name = mech_150
+				bonus = 1.5
+				uses = 1
+				name = CAN_expand_military_research
+				technology = mechanised_infantry
 			}
 		}
 	}
@@ -1840,7 +1847,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_take_over_the_idle_capacity
 		text = "Take Over The Idle Capacity"
-		icon = GFX_GOAL_move_industry
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 0
 		y = 2
 
@@ -1881,7 +1888,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_keep_the_current_military_budget
 		text = "Keep The Current Military Budget"
-		icon = GFX_goal_generic_peaceful_diplomacy
+		icon = GFX_goal_generic_neutrality_focus
 		x = 32
 		y = 0
 
@@ -1906,14 +1913,14 @@ date > 1940.07.01
 		available_if_capitulated = yes
 
 		completion_reward ={
-		add_ideas = CAN_budget_1
+		add_timed_idea = { idea = CAN_budget_1 days = 1460 }
 		}
 	}
 
 	focus = {
 		id = CAN_declare_national_defence_emergency
 		text = "Declare national Defence Emergency"
-		icon = GFX_goal_CAN_NUP
+		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
 
@@ -1950,14 +1957,14 @@ date > 1940.07.01
 	focus = {
 		id = CAN_all_in
 		text = "All In"
-		icon = GFX_goal_CAN_lets_go_canada
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 0
 		y = 2
 
 		prerequisite = { focus = CAN_declare_national_defence_emergency}
 		relative_position_id = CAN_keep_the_current_military_budget
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -1993,11 +2000,12 @@ date > 1940.07.01
 	focus = {
 		id = CAN_prioritize_canadian_defense
 		text = "Canadian Defense"
-		icon = GFX_goal_defensive_position2
+		icon = GFX_goal_generic_defence
 		x = 0
 		y = 1
 
 		prerequisite = { focus = CAN_take_over_the_idle_capacity focus = CAN_all_in}
+		mutually_exclusive = { focus = CAN_prioritize_the_commonwealth }
 		
 		relative_position_id = CAN_take_over_the_idle_capacity
 
@@ -2027,8 +2035,7 @@ date > 1940.07.01
 				category = land_doctrine
 			}
 			
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = CAN_george_pearkes
+			
 			random_owned_controlled_state= {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -2043,7 +2050,8 @@ date > 1940.07.01
 	focus = {
 		id = CAN_prioritize_the_commonwealth
 		text = "Protect The Seas"
-		icon = GFX_goal_ENG_imperial_conscription
+		icon = GFX_goal_generic_construct_naval_dockyard
+		mutually_exclusive = { focus = CAN_prioritize_canadian_defense }
 		x = 0
 		y = 1
 
@@ -2081,8 +2089,7 @@ date > 1940.07.01
 				uses = 1
 				category = naval_equipment
 			}
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = CAN_andrew_mcnaughton
+			
 			random_owned_controlled_state= {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -2097,7 +2104,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_enact_war_measures
 		text = "Enact War Measures"
-		icon = GFX_goal_generic_martial_law
+		icon = GFX_goal_generic_propaganda
 		x = -5
 		y = 4
 
@@ -2131,7 +2138,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_national_resources_mobilization_act_2
 		text = "Mobilisation Act"
-		icon = GFX_goal_manpower
+		icon = GFX_focus_generic_military_academy
 		x = 0
 		y = 1
 
@@ -2172,7 +2179,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_mechanize_the_cavalry
 		text = "Mechanize The Cavalry"
-		icon = GFX_goal_CAN_RCAC
+		icon = GFX_focus_CAN_a_canadian_cruiser
 		x = -7
 		y = 1
 
@@ -2197,12 +2204,13 @@ date > 1940.07.01
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
+		add_tech_bonus = {
+				name = CAN_a_canadian_cruiser			
+				bonus = 1.00
 				uses = 1
-				category = land_doctrine
+				category = cat_medium_armor
 			}
+		    
 			add_ideas = CAN_army
 			random_owned_controlled_state= {
 				add_extra_state_shared_building_slots = 3
@@ -2212,13 +2220,19 @@ date > 1940.07.01
 					instant_build = yes
 				}
 			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 
 	focus = {
 		id = CAN_adopt_the_war_of_movement
 		text = "Austin MK5"
-		icon = GFX_mobility
+		icon = GFX_goal_generic_army_doctrines
 		x = 4
 		y = 1
 
@@ -2256,7 +2270,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_retool_montreal_locomotive_works
 		text = "Montreal Lococmotive Works"
-		icon = GFX_goal_r56_CAN_industry
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 0
 		y = 1
 
@@ -2302,7 +2316,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_the_CMP
 		text = "CMP Truck"
-		icon = GFX_goal_CAN_truck
+		icon = GFX_goal_generic_army_motorized
 		x = 0
 		y = 1
 
@@ -2339,7 +2353,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_a_canadian_cruiser
 		text = "Canadian Cruiser"
-		icon = GFX_focus_CAN_a_canadian_cruiser
+		icon = GFX_focus_SAF_crusader
 		x = -2
 		y = 1
 
@@ -2364,24 +2378,22 @@ date > 1940.07.01
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+		
 		add_tech_bonus = {
-				bonus = 1.50
+				name = CAN_a_canadian_cruiser			
 				uses = 1
-				name = mech_army_bonus
-				technology = basic_medium_tank
-			}
-		add_tech_bonus = {
-				bonus = 1.00
-				uses = 1
-				name = mech_army_bonus
-				technology = improved_medium_tank
-			}	
-		   add_tech_bonus = {
+				ahead_reduction = 1.2
 				category = cat_medium_armor
-				uses = 1
+			}	
+		
+		add_tech_bonus = {
+				name = CAN_a_canadian_cruiser			
 				bonus = 0.50
-				name = CAN_a_canadian_cruiser 
+				uses = 1
+				category = cat_medium_armor
 			}
+			
+		   
 			random_owned_controlled_state= {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -2396,7 +2408,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_infantry_tank_production
 		text = "Infantry Tank"
-		icon = GFX_goal_generic_heavy_armour_british
+		icon = GFX_focus_SAF_infantry_support
 		x = 2
 		y = 1
 
@@ -2536,7 +2548,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_mobile_artillery
 		text = "Mobile Artillery"
-		icon = GFX_ROM_mountain_artillery
+		icon = GFX_focus_SAF_arty
 		x = 0
 		y = 1
 
@@ -2573,13 +2585,13 @@ date > 1940.07.01
 	focus = {
 		id = CAN_replace_the_ross
 		text = "Replace The Ross Rifle"
-		icon = GFX_goal_generic_gun_purchase
+		icon = GFX_goal_generic_small_arms
 		x = 3
 		y = 1
 
 		prerequisite = { focus = CAN_mobile_artillery focus = CAN_send_in_the_zombies}
 		relative_position_id = CAN_mobile_artillery
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -2611,7 +2623,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_construct_the_long_branch_arsenal
 		text = "Long Branch Arsenal"
-		icon = GFX_goal_proving_grounds
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 0
 		y = 1
 
@@ -2656,7 +2668,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_red_deer_training_camp_new
 		text = "Red Deer Training Camp"
-		icon = GFX_goal_generic_army
+		icon = GFX_goal_generic_military_sphere
 		x = 0
 		y = 1
 
@@ -2701,7 +2713,7 @@ date > 1940.07.01
 
 		prerequisite = { focus = CAN_mobile_artillery}
 		relative_position_id = CAN_mobile_artillery
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -2738,7 +2750,7 @@ date > 1940.07.01
 
 		prerequisite = { focus = CAN_the_best_of_both_worlds}
 		relative_position_id = CAN_the_best_of_both_worlds
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -2789,7 +2801,7 @@ date > 1940.07.01
 	focus = {
 		id = CAN_no_man_gone_to_waste
 		text = "No Man Go To Waste"
-		icon = GFX_goal_generic_democratic_army
+		icon = GFX_focus_generic_military_mission
 		x = 0
 		y = 3
 
@@ -2827,7 +2839,7 @@ CAN = {
 
 	focus = {
 		id = CAN_send_in_the_zombies
-		icon = GFX_goal_generic_into_fire
+		icon = GFX_goal_generic_demand_territory
 		x = 6
 		y = 1
 
@@ -2871,7 +2883,7 @@ CAN = {
 	focus = {
 		id = CAN_a_call_for_total_war
 		text = "A Call for Total War"
-		icon = GFX_goal_generic_red_freedom
+		icon = GFX_goal_tfv_can_compromise_with_quebec
 		x = 0
 		y = 1
 
@@ -2903,7 +2915,7 @@ CAN = {
 						has_completed_focus = CAN_national_resources_mobilization_act
 					}
 				}
-				add_ideas = extensive_conscription
+				remove_ideas = CAN_conscription_crisis
 			}
 			if = {
 				limit = {
@@ -2920,13 +2932,13 @@ CAN = {
 	focus = {
 		id = CAN_logistics_effort
 		text = "Logistics Effort"
-		icon = GFX_USA_well_supplied_and_motivated
+		icon = GFX_goal_generic_build_tank
 		x = -1
 		y = 1
 
 		prerequisite = { focus = CAN_a_call_for_total_war}
 		relative_position_id = CAN_a_call_for_total_war
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -2957,7 +2969,7 @@ CAN = {
 	focus = {
 		id = CAN_the_CRMC
 		text = "CRMC"
-		icon = GFX_goal_CAN_special_branch
+		icon = GFX_goal_generic_amphibious_assault
 		x = 1
 		y = 1
 
@@ -2995,7 +3007,7 @@ CAN = {
 	focus = {
 		id = CAN_stop_the_jap
 		text = "Pacific War"
-		icon = GFX_GOAL_litsuwu_line
+		icon = GFX_focus_usa_focus_on_asia
 		x = 0
 		y = 3
 
@@ -3022,19 +3034,10 @@ CAN = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = CAN_modify_army_spirit_tt
-			add_to_variable = {
-				CAN_army_attack_factor_var = 0.05
-				tooltip = CAN_attack_tt1
-			}
-			add_to_variable = {
-				CAN_army_defence_factor_var = 0.05
-				tooltip = CAN_def_tt1
-			}
-			add_to_variable = {
-				CAN_max_dig_in_var = 2
-				tooltip = CAN_digin_tt1
-			}
+			
+			
+			CAN = {add_timed_idea={ idea = CAN_japan days = 120}}
+			
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -3467,7 +3470,7 @@ CAN = {
 	focus = {
 		id = CAN_rebuild_the_royal_canadian_airforce
 		text = "Royal Canadian Airforce"
-		icon = GFX_goal_CAN_coa_air_force
+		icon = GFX_goal_generic_build_airforce
 		x = 52
 		y = 0
 
@@ -3583,7 +3586,7 @@ CAN = {
 	focus = {
 		id = CAN_air_wireless_development
 		text = "Fighter Development"
-		icon = GFX_goal_generic_radio_development_2
+		icon = GFX_goal_generic_build_airforce
 		x = -1
 		y = 1
 
@@ -3620,7 +3623,7 @@ CAN = {
 	focus = {
 		id = CAN_canadian_hurricane_production
 		text = "Hurricane Production"
-		icon = GFX_goal_GBR_hawker
+		icon = GFX_goal_generic_air_fighter
 		x = 0
 		y = 2
 
@@ -3679,7 +3682,7 @@ CAN = {
 	focus = {
 		id = CAN_begin_local_aircraft_production
 		text = "Local Aircraft Production"
-		icon = GFX_goal_generic_war_factory
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 1
 		y = 1
 
@@ -3724,7 +3727,7 @@ CAN = {
 	focus = {
 		id = CAN_the_plan
 		text = "The Plan"
-		icon = GFX_british_commonwealth_air_training_plan
+		icon = GFX_focus_research
 		x = 15
 		y = 1
 
@@ -3764,7 +3767,7 @@ CAN = {
 	focus = {
 		id = CAN_home_defense
 		text = "Home Defense"
-		icon = GFX_goal_CAN_toronto_island_airport
+		icon = GFX_goal_generic_radar
 		x = -3
 		y = 1
 
@@ -3810,7 +3813,7 @@ CAN = {
 	focus = {
 		id = CAN_fortify_the_western_coast
 		text = "Fortify the Western Coast"
-		icon = GFX_goal_generic_fortify_aa
+		icon = GFX_goal_generic_construct_military
 		x = 0
 		y = 1
 
@@ -3877,7 +3880,7 @@ CAN = {
 
 	focus = {
 		id = CAN_victory_aircraft_limited
-		icon = GFX_goal_generic_air_bomber_new
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 0
 		y = 1
 
