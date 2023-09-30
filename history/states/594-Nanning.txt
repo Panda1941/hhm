@@ -2,12 +2,12 @@
 state={
 	id=594
 	name="STATE_594"
-	manpower = 6550000
-	state_category = town
+	manpower = 26550000
+	state_category = large_city
 	resources={
-		tungsten=5 # was: 14
-		steel = 12 # was: 10
-		chromium = 6 # was: 4
+		tungsten=8 # was: 14
+		steel = 16 # was: 10
+		chromium = 10 # was: 4
 	}
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
@@ -16,12 +16,12 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		add_core_of = GXC
 		add_core_of = GXC
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-			arms_factory = 2
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 4
 		}
 		victory_points = { 
-			7137 20 
+			7137 25 
 		}
 
 		1938.10.25 = {

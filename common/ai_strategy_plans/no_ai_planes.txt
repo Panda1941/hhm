@@ -148,19 +148,7 @@ AI_CHINA_STRAT = {
     }
     ai_strategy = {
         type = garrison
-        value = 25
-    }
-
-    ai_strategy = {
-        type = put_unit_buffers
-        ratio = 0.25
-        states = {
-            597
-            743
-            613
-            594
-        }
-        subtract_fronts_from_need = yes
+        value = 40
     }
 
     ai_strategy = {
@@ -181,7 +169,7 @@ AI_CHINA_STRAT = {
 
     ai_strategy = {
         type = force_build_armies
-        value = 200
+        value = 2000
     }
 }
 
