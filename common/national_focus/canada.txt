@@ -4199,6 +4199,26 @@ CAN = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		create_equipment_variant = {
+				name = "Crown Colony Class"
+				type = ship_hull_cruiser_2
+				name_group = ENG_CL_HISTORICAL
+				allow_without_tech = yes
+				parent_version = 0
+				modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+			}
+		   
 		    add_equipment_production = {
 				equipment = {
 					type = ship_hull_cruiser_2
@@ -4251,6 +4271,21 @@ CAN = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		create_equipment_variant = {
+			name = "Tribal Class"
+			type = ship_hull_light_2
+			name_group = ENG_DD_HISTORICAL
+			modules = {
+				fixed_ship_battery_slot = dp_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_sonar_2
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_light_battery_2
+				rear_1_custom_slot = ship_depth_charge_2
+			}
+		}
 		    add_equipment_production = {
 				equipment = {
 					type = ship_hull_light_2
@@ -4449,6 +4484,23 @@ CAN = {
          		idea = CAN_fleet_modernization
          		days = 365
 			}
+			
+			create_equipment_variant = {
+		name = "E/F/G/H Class"
+		type = ship_hull_light_2
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = dp_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
 
 			add_equipment_production = {
 				equipment = {
@@ -4562,56 +4614,17 @@ CAN = {
 		}
 	}
 
-	focus = {
-		id = CAN_commandeer_a_battlecruiser
-		text = "Repulse Class BC"
-		icon = GFX_focus_CAN_commandeer_a_battlecruiser
-		x = 1
-		y = 1
-
-		prerequisite = { focus = CAN_focus_on_countering_surface_raiders }
-		relative_position_id = CAN_focus_on_countering_surface_raiders
-		cost = 3
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    add_equipment_production = {
-				equipment = {
-					type = ship_hull_heavy_2
-					creator = "CAN"
-					version_name = "Repulse Class"
-				}
-				requested_factories = 1
-				progress = 0.8
-				amount = 1
-			}
-		}
-	}
+	
 
 	focus = {
 		id = CAN_a_canadian_town_class
 		text = "Town Class"
 		icon = GFX_focus_generic_navy_battleship2
-		x = 0
+		x = 1
 		y = 1
 
-		prerequisite = { focus = CAN_commandeer_a_battlecruiser }
-		relative_position_id = CAN_commandeer_a_battlecruiser
+		prerequisite = { focus = CAN_focus_on_countering_surface_raiders }
+		relative_position_id = CAN_focus_on_countering_surface_raiders
 		cost = 3
 
 		ai_will_do = {
