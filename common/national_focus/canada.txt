@@ -2231,12 +2231,7 @@ date > 1940.07.01
 				category = cat_medium_armor
 			}	
 		
-		add_tech_bonus = {
-				name = CAN_a_canadian_cruiser			
-				bonus = 0.50
-				uses = 1
-				category = cat_medium_armor
-			}
+		
 			
 		   
 			random_owned_controlled_state= {

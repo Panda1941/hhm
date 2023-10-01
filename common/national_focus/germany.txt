@@ -2199,8 +2199,9 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+		add_research_slot = 1
 			
-			air_experience = 25
+			
 			add_tech_bonus = {
 				name = GER_air_innovation
 				bonus = 1.0
@@ -2214,6 +2215,7 @@ focus_tree = {
 				uses = 2
 				category = battlefield_support_tree
 			}
+			air_experience = 25
 
 			if = {
 				limit = {
@@ -2445,8 +2447,8 @@ focus_tree = {
 			factor = 1
 		}
 
-		prerequisite = { focus = GER_soviet_treaty }
-		relative_position_id = GER_soviet_treaty
+		prerequisite = { focus = GER_army_innovation }
+		relative_position_id = GER_army_innovation
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2458,7 +2460,8 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				technology = improved_infantry_weapons
-			}		
+			}
+add_ideas = {GER_mp38_idea}			
 		}
 	}
 
@@ -2472,8 +2475,8 @@ focus_tree = {
 			factor = 1
 		}
 
-		prerequisite = { focus = GER_soviet_treaty }
-		relative_position_id = GER_soviet_treaty
+		prerequisite = { focus = GER_army_innovation }
+		relative_position_id = GER_army_innovation
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2485,7 +2488,51 @@ focus_tree = {
 				bonus = 0.75
 				uses = 2
 				category = artillery
-			}		
+			}
+add_ideas = {GER_sfh18_idea}			
+		}
+	}
+	
+	focus = {
+		id = GER_engineering
+		text = "Cream of the wehrmacht"
+		icon = GFX_focus_HUN_armored_warfare
+		prerequisite = { focus = GER_german_war_economy focus = GER_extra_tech_slot }
+		x = 1
+		y = 2
+		relative_position_id = GER_german_war_economy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		available = {
+        OR = {
+				AND = {
+					has_tech = streamlined_line
+					
+				}
+				AND = {
+					has_tech = flexible_line
+			
+				}
+			}
+			date > 1942.01.01
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_ideas = GER_pool_technical_know_how
 		}
 	}
 	
@@ -2538,8 +2585,9 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 1.0
 				uses = 1
-				category = cat_medium_armor
+				technology = basic_medium_tank_chassis
 			}
+			add_ideas = {GER_soviet_military_exercises}
 		}
 	}
 	
@@ -2550,8 +2598,8 @@ focus_tree = {
 		prerequisite = { focus = GER_army_innovation_2 }
 		relative_position_id = GER_army_innovation_2
 		mutually_exclusive = { focus = GER_support_tanks }
-		x = 1
-		y = 1
+		x = -1
+		y = 3
 		cost = 5
 		ai_will_do = {
 			factor = 0
@@ -2570,8 +2618,8 @@ focus_tree = {
 		prerequisite = { focus = GER_army_innovation_2 }
 		relative_position_id = GER_army_innovation_2
 		mutually_exclusive = { focus = GER_infantry_support_tanks }
-		x = -1
-		y = 1
+		x = -3
+		y = 3
 		cost = 5
 		ai_will_do = {
 			factor = 0
@@ -2644,18 +2692,74 @@ focus_tree = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {
-                name = medium_light_75			
+                name = improved_medium_tank			
 				bonus = 0.75
-				uses = 2
-				category = cat_medium_armor
-				category = cat_light_armor
+				uses = 1
+				technology = improved_medium_tank_chassis
 			}
 			#add_tech_bonus = {
-			#	bonus = 0.75
+			#    name = mech_150
+			#	bonus = 1.5
 			#	uses = 1
 			#	name = mech_army_bonus
-			#	technology = advanced_medium_tank
+			#	technology = mechanised_infantry
 			#}
+			#add_tech_bonus = {
+			#	name = armored_car_100
+			#	bonus = 1.0
+			#	uses = 2
+			#	category = cat_armored_cars
+			#}
+			#add_ideas = {GER_prepare_the_afrikakorps}
+		}
+	}
+	
+	focus = {
+		id = GER_pz2
+		text = "Ardennen Panzer"
+		icon = GFX_focus_GER_pz2
+		prerequisite = { focus = GER_army_innovation }
+		x = -2
+		y = 2
+		relative_position_id = GER_army_innovation
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			# Balance research bonus to 2 techs in land_doctrine
+			army_experience = 20
+			add_tech_bonus = {
+                name = advanced_light_tank			
+				bonus = 0.75
+				uses = 1
+				technology = advanced_light_tank_chassis
+			}
+			add_ideas = {GER_Pz2_idea}
+		}
+	}
+	
+	focus = {
+		id = GER_armored_car
+		text = "Heavy Infantry"
+		icon = GFX_focus_HUN_heavy_infantry_divisions_doctrine
+		prerequisite = { focus = GER_army_innovation }
+		x = 2
+		y = 2
+		relative_position_id = GER_army_innovation
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			# Balance research bonus to 2 techs in land_doctrine
+			army_experience = 20
 			add_tech_bonus = {
 			    name = mech_150
 				bonus = 1.5
@@ -2674,15 +2778,79 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = GER_army_innovation_3
+		text = "Army Innovations III"
+		icon = GFX_focus_GER_army_innovation_3
+		prerequisite = { focus = GER_army_innovation_2 }
+		x = 0
+		y = 2
+		relative_position_id = GER_army_innovation_2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			# Balance research bonus to 2 techs in land_doctrine
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}	
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				name = army_innovation_3_bonus
+				technology = advanced_medium_tank_chassis
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_panther
+		text = "Panzerkampfwagen V"
+		icon = GFX_focus_GER_panther
+		
+		prerequisite = { focus = GER_army_innovation_2 }
+		mutually_exclusive = { focus = GER_tiger }
+		available = {
+			
+		}
+		x = 1
+		y = 3
+		relative_position_id = GER_army_innovation_2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+
+			army_experience = 50
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				name = army_innovation_3_bonus
+				technology = advanced_medium_tank_chassis
+			}
+		}
+	}
+	
+	focus = {
 		id = GER_tiger
 		icon = GFX_focus_GER_tiger
 		
 		prerequisite = { focus = GER_army_innovation_2 }
+		mutually_exclusive = { focus = GER_panther }
 		available = {
 			
 		}
 		x = 3
-		y = 1
+		y = 3
 		relative_position_id = GER_army_innovation_2
 		cost = 10
 		ai_will_do = {
@@ -2696,7 +2864,7 @@ focus_tree = {
                 name = GER_tiger			
 				bonus = 1.0
 				uses = 1
-				technology = improved_heavy_tank
+				technology = improved_heavy_tank_chassis
 			}
 			add_tech_bonus = {
 			    name = mech_100
@@ -4783,7 +4951,7 @@ hidden_effect = {
 		x = -2
 		y = 2
 		relative_position_id = GER_naval_effort
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 0.25
 		}	
@@ -4823,16 +4991,8 @@ hidden_effect = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		hidden_effect = {
-				GER_upgrade_kriegsmarine_effect = yes
-				set_variable = {
-					GER_positioning = 0.1
-				}
-				set_variable = {
-					GER_screening_efficiency = 0.1
-				}
-			}
-			custom_effect_tooltip = GER_PLAN_Z_modify
+		
+			add_timed_idea = { idea = GER_rebuild_the_high_seas_fleet days = 1460}
 			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {

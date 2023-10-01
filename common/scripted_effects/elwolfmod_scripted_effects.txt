@@ -657,7 +657,7 @@ tp_divs_out_of_france = {
 		
 		teleport_armies = { 
 			limit= { original_tag = FRA } 
-			to_province = 5139 
+			to_state = 5139 
 		}   
 	}  
 }

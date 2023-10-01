@@ -1053,5 +1053,8 @@
  CAN_army_2:0 "Canadian Army Tactics "
  CAN_army_3:0 "Canadian Army Tactics "
  CAN_war_measures:0 "War Measures"
+ GER_Pz2_idea:0 "Panzer II factories"
+ GER_sfh18_idea:0 "Artillery factories"
+ GER_mp38_idea:0 "Munition Factories"
 
 
