@@ -2801,12 +2801,30 @@ add_ideas = {GER_sfh18_idea}
 				uses = 2
 				category = land_doctrine
 			}	
-			add_tech_bonus = {
-				bonus = 0.75
-				uses = 1
-				name = army_innovation_3_bonus
-				technology = advanced_medium_tank_chassis
+			
+			set_technology = {
+				improved_medium_tank_chassis_2 = 1
 			}
+			
+		create_equipment_variant = {
+		name = "Panzer IV Ausf. F"
+		type = medium_tank_chassis_4
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon_3
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = squeezebore_adaptor
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "GFX_GER_improved_medium_tank_medium"
+	}
 		}
 	}
 	
