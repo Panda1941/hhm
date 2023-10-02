@@ -2233,7 +2233,7 @@ technologies = {
 			modify_building_resources = {
 				building = steel_refinery
 				resource = steel
-				amount = 2
+				amount = 4
 			}
 		}
 		show_effect_as_desc = yes
@@ -2333,7 +2333,7 @@ technologies = {
 			modify_building_resources = {
 				building = aluminium_refinery
 				resource = aluminium
-				amount = 2
+				amount = 4
 			}
 		}
 		show_effect_as_desc = yes
@@ -2758,6 +2758,20 @@ technologies = {
 			name = industry_folder
 			position = { x = 2 y = 10 }
 		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_refinery
+				resource = steel
+				amount = 2
+			}
+			modify_building_resources = {
+				building = aluminium_refinery
+				resource = aluminium
+				amount = 2
+			}
+		}
+		show_effect_as_desc = yes
 		
 		ai_will_do = {
 			factor = 2
