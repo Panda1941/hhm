@@ -346,6 +346,7 @@
  modern_tank_aa_chassis_1:0 "Modern SP Anti-Air"
  modern_tank_aa_chassis:0 "Modern SP Anti-Air"
  super_heavy_tank_chassis:0 "Super-Heavy Tank Chassis"
+ super_heavy_tank_chassis_2:0 "Super-Heavy Tank Chassis II"
  super_heavy_tank_chassis_desc:0 "A gigantic vehicle, capable of mounting the heaviest armor and the biggest gun, but consequently fairly slow and unreliable."
  super_heavy_tank_chassis_1:0 "Super-Heavy Tank Chassis"
  super_heavy_tank_artillery_chassis_desc:0 "A gigantic vehicle, capable of mounting the heaviest armor and the biggest gun, but consequently fairly slow and unreliable."
