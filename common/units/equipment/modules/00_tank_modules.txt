@@ -1825,7 +1825,7 @@ equipment_modules = {
 		}
 	}
 	
-	tank_super_heavy_cannon = {
+	tank_super_heavy_cannon_2 = {
 		abbreviation = "sh2"
 		category = tank_super_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
