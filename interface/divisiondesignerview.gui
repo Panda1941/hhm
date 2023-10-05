@@ -409,7 +409,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "equipment_stats"
 				position = { x = 353 y = 55 }	
-				size = { width = 172 height = 244 }
+				size = { width = 195 height = 244 }
 				clipping = yes
 				
 				background = {
