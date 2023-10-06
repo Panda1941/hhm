@@ -2350,6 +2350,10 @@
 		text = "Army Innovations"
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SOV_t34 }
+		
+		available = {
+		date > 1942.01.01	
+		}
 		x = -1
 		y = 2
 		relative_position_id = SOV_t34

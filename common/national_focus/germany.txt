@@ -2785,6 +2785,11 @@ add_ideas = {GER_sfh18_idea}
 		text = "Army Innovations III"
 		icon = GFX_focus_GER_army_innovation_3
 		prerequisite = { focus = GER_army_innovation_2 }
+		
+		available = {
+		date > 1942.01.01	
+		}
+		
 		x = 0
 		y = 2
 		relative_position_id = GER_army_innovation_2
