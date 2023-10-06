@@ -547,5 +547,21 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_wheeled_suspension.dds"
 		legacy_lazy_load = no
 	}
+	
+	spriteType = {
+		name = "GFX_EMI_tank_large_roadwheels"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_roadwheels.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_small_roadwheels"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_roadwheels.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_vertical_volute_spring_suspension"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_vvss_suspension.dds"
+		legacy_lazy_load = no
+	}
 
 }

@@ -35,13 +35,14 @@
  MODULE_ALLOW_ROLE:1 "§GAllows§! the $ROLE|H$ role"
  MODULE_ALLOW_ROLE_BUT_OTHER_FORBID:0 "§GAllows§! the $ROLE|H$ role, but $FORBIDDING_MODULE|H$ §Rforbids§! it"
  MODULE_FORBID_ROLE:1 "§RForbids§! the $ROLE|H$ role"
-
+ 
  MODULE_ALLOWED_ROLE_IS_FORBIDDEN_BY_ANOTHER_MODULE:0 "The role $ROLE|H$ is £trigger_yes£ by module $ALLOWING_MODULE|H$ but is £trigger_no£ by module $FORBIDDING_MODULE|H$.\n\n"
 
  ### EQUIPMENT MODULE CATEGORIES ###
  EQ_MOD_CAT_tank_engine_type_TITLE:0 "Engine Type"
  EQ_MOD_CAT_tank_armor_type_TITLE:0 "Armor Type"
  EQ_MOD_CAT_tank_suspension_type_TITLE:1 "Tracked Suspension"
+ EQ_MOD_CAT_tank_roadwheels_type_TITLE:1 "Roadwheels Type"
  EQ_MOD_CAT_tank_light_turret_type_TITLE:0 "Light Turret Type"
  EQ_MOD_CAT_tank_medium_turret_type_TITLE:0 "Medium Turret Type"
  EQ_MOD_CAT_tank_heavy_turret_type_TITLE:0 "Heavy Turret Type"
@@ -63,6 +64,7 @@
  EQ_MOD_SLOT_suspension_type_slot_TITLE:0 "Suspension"
  EQ_MOD_SLOT_armor_type_slot_TITLE:0 "Armor Type"
  EQ_MOD_SLOT_engine_type_slot_TITLE:0 "Engine Type"
+ EQ_MOD_SLOT_roadwheels_type_slot_TITLE:0 "Roadwheels Type"
  EQ_MOD_SLOT_special_type_slot_1_TITLE:0 "Special Features"
  EQ_MOD_SLOT_special_type_slot_2_TITLE:0 "Special Features"
  EQ_MOD_SLOT_special_type_slot_3_TITLE:0 "Special Features"
@@ -92,6 +94,10 @@
  tank_bogie_suspension_desc:0 "A simple and fairly cheap type of suspension in which the roadwheels are mounted individually, allowing them to be easily replaced if damaged."
  tank_interleaved_suspension:0 "Interleaved Roadwheels"
  tank_interleaved_suspension_desc:0 "By overlapping the roadwheels, more of them can be fit in the same length of the hull, thereby improving mobility as well as providing some additional protection in the flanks."
+ tank_small_roadwheels:0 "Small Roadwheels"
+ tank_small_roadwheels_desc:0 "Compact roadwheels with a smaller size, offering increased ground contact points. This design results in a smoother ride by distributing the weight more evenly across multiple wheels, enhancing stability on various terrains."
+ tank_large_roadwheels:0 "Large Roadwheels"
+ tank_large_roadwheels_desc:0 "Large roadwheels characterized by their substantial size, providing enhanced obstacle-crossing capabilities. The larger size allows the wheels to better navigate over obstacles, providing improved clearance and reducing the risk of getting stuck."
  tank_light_one_man_tank_turret:0 "One Man Turret"
  tank_light_one_man_tank_turret_desc:0 "A small turret barely large enough to hold a single crew member, who is tasked with aiming and loading the main armament as well as keeping watch for targets and threats."
  tank_light_two_man_tank_turret:0 "Two Man Turret"
