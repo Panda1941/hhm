@@ -98,6 +98,7 @@
  tank_small_roadwheels_desc:0 "Compact roadwheels with a smaller size, offering increased ground contact points. This design results in a smoother ride by distributing the weight more evenly across multiple wheels, enhancing stability on various terrains."
  tank_large_roadwheels:0 "Large Roadwheels"
  tank_large_roadwheels_desc:0 "Large roadwheels characterized by their substantial size, providing enhanced obstacle-crossing capabilities. The larger size allows the wheels to better navigate over obstacles, providing improved clearance and reducing the risk of getting stuck."
+ tank_vertical_volute_spring_suspension:0 "Vertical Volute Spring Suspension"
  tank_light_one_man_tank_turret:0 "One Man Turret"
  tank_light_one_man_tank_turret_desc:0 "A small turret barely large enough to hold a single crew member, who is tasked with aiming and loading the main armament as well as keeping watch for targets and threats."
  tank_light_two_man_tank_turret:0 "Two Man Turret"

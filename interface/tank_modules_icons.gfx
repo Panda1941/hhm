@@ -563,5 +563,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_vvss_suspension.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_TM_medium_tank_chassis_roadwheels_type_slot"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_roadwheels.dds"
+		legacy_lazy_load = no
+	}
+	
 
 }
