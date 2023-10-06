@@ -74,6 +74,13 @@ technologies = {
 			ammo_ap
 			ammo_he
 			ammo_apcr
+			AAAPCR
+			AAAP
+			AAHE
+			
+			tank_module_camouflage
+			tank_module_camouflage_desert
+			tank_module_camouflage_winter
 		}
 		enable_subunits = {
 			light_armor
