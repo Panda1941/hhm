@@ -1703,7 +1703,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_super_heavy_cannon
+			tank_super_heavy_cannon_2
 			tank_super_heavy_turret
 		}
 
