@@ -114,7 +114,7 @@ equipments = {
 		}
 		default_modules = {
 			main_armament_slot = empty
-			turret_type_slot = tank_light_one_man_tank_turret
+			turret_type_slot = tank_light_breakthrough_turret_1
 			suspension_type_slot = tank_bogie_suspension
 			roadwheels_type_slot = tank_large_roadwheels
 			armor_type_slot = tank_riveted_armor
@@ -389,7 +389,7 @@ equipments = {
 		}
 		default_modules = {
 			main_armament_slot = empty
-			turret_type_slot = tank_medium_one_man_tank_turret
+			turret_type_slot = tank_medium_breakthrough_turret_1
 			suspension_type_slot = tank_bogie_suspension
 			roadwheels_type_slot = tank_large_roadwheels
 			armor_type_slot = tank_riveted_armor
@@ -729,7 +729,7 @@ equipments = {
 		}
 		default_modules = {
 			main_armament_slot = empty
-			turret_type_slot = tank_heavy_two_man_tank_turret
+			turret_type_slot = tank_heavy_breakthrough_turret_1
 			suspension_type_slot = tank_bogie_suspension
 			roadwheels_type_slot = tank_large_roadwheels
 			armor_type_slot = tank_riveted_armor
@@ -1220,7 +1220,7 @@ equipments = {
 		}
 		default_modules = {
 			main_armament_slot = empty
-			turret_type_slot = tank_super_heavy_three_man_tank_turret
+			turret_type_slot = tank_super_heavy_turret
 			suspension_type_slot = tank_bogie_suspension
 			roadwheels_type_slot = tank_large_roadwheels
 			armor_type_slot = tank_riveted_armor
@@ -1423,7 +1423,7 @@ equipments = {
 
 		default_modules = {
 			main_armament_slot = empty
-			turret_type_slot = tank_light_one_man_tank_turret
+			turret_type_slot = tank_light_breakthrough_turret_1
 			suspension_type_slot = tank_bogie_suspension
 			roadwheels_type_slot = tank_large_roadwheels
 			armor_type_slot = tank_riveted_armor

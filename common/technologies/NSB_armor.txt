@@ -48,13 +48,6 @@ technologies = {
 			tank_large_roadwheels
 			tank_small_roadwheels
 			
-			
-			tank_heavy_two_man_tank_turret
-			tank_heavy_three_man_tank_turret
-			tank_heavy_fixed_superstructure_turret
-			tank_super_heavy_four_man_tank_turret
-			tank_super_heavy_three_man_tank_turret
-			tank_modern_tank_turret
 			sloped_armor
 			extra_ammo_storage
 			wet_ammo_storage
@@ -63,19 +56,20 @@ technologies = {
 			tank_small_cannon
 			secondary_turret_small_cannon
 
-
-
 			tank_light_breakthrough_turret_1
 			tank_light_defence_turret_1
 			tank_light_cheap_turret_1
 			tank_light_fixed_superstructure_turret_1
 			tank_light_aa_turret_1
-
 			tank_medium_breakthrough_turret_1
 			tank_medium_defence_turret_1
 			tank_medium_cheap_turret_1
 			tank_medium_fixed_superstructure_turret_1
 			tank_medium_aa_turret_1
+			tank_heavy_breakthrough_turret_1
+			tank_heavy_defence_turret_1
+			tank_heavy_cheap_turret_1
+			tank_heavy_fixed_superstructure_turret_1
 			
 			ammo_ap
 			ammo_he
@@ -1296,6 +1290,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_modern_cannon
+			tank_modern_tank_turret
 		}
 
 		research_cost = 2.5
@@ -1648,6 +1643,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_super_heavy_cannon
+			tank_super_heavy_turret
 		}
 
 		research_cost = 2.5
@@ -1708,6 +1704,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_super_heavy_cannon
+			tank_super_heavy_turret
 		}
 
 		research_cost = 2.5

@@ -77,6 +77,25 @@
  BRA_destroyers:0 "New Destroyer Models"
  BRA_transport_ships:0 "Naval Logistics"
 
+ #TANK SUTFF
+ tank_light_breakthrough_turret_1:0 "Light Breakthrough turret 1"
+ tank_light_defence_turret_1:0 "Light Defence turret 1"
+ tank_light_cheap_turret_1:0 "Light Cheap turret 1"
+ tank_light_fixed_superstructure_turret_1:0 "Light Fixed Superstructure turret 1"
+ tank_light_aa_turret_1:0 "Light AA turret 1"
+ tank_medium_breakthrough_turret_1:0 "Medium Breakthrough turret 1"
+ tank_medium_defence_turret_1:0 "Medium Defence turret 1"
+ tank_medium_cheap_turret_1:0 "Medium Cheap turret 1"
+ tank_medium_fixed_superstructure_turret_1:0 "Medium Fixed Superstructure turret 1"
+ tank_medium_aa_turret_1:0 "Medium AA turret 1"
+ tank_heavy_breakthrough_turret_1:0 "Heavy Breakthrough turret 1"
+ tank_heavy_defence_turret_1:0 "Heavy Defence turret 1"
+ tank_heavy_cheap_turret_1:0 "Heavy Cheap turret 1"
+ tank_heavy_fixed_superstructure_turret_1:0 "Heavy Fixed Superstructure turret 1"
+
+ tank_super_heavy_turret:0 "Super Heavy Turret"
+ tank_modern_tank_turret:0 "Modern Turret"
+
 
 
 
