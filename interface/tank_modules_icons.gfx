@@ -569,5 +569,21 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
+	spriteType = {
+		name = "GFX_EMI_ammo_ap"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/ap.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_ammo_apcr"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/apcr.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_ammo_he"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/he.dds"
+		legacy_lazy_load = no
+	}
+	
 
 }

@@ -489,3 +489,6 @@
  
  expanded_fuel_tank:0 "Fuel Drum"
  expanded_fuel_tank_desc:0 "An externally mounted fuel drum designed to extend the operational range of an armored vehicle."
+ ammo_ap:0 "Armor Piercing Shell"
+ ammo_apcr:0 "Armor Piercing Capacity Round"
+ ammo_he:0 "Hight Explosive Ammo"

@@ -196,6 +196,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_ammo_type
 				}
 			}
 		}
@@ -472,6 +473,7 @@ equipments = {
 					tank_radio_module
 					tank_special_module
 					tank_secondary_turret
+					tank_ammo_type
 				}
 			}
 
@@ -670,6 +672,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_ammo_type
 				}
 			}
 
@@ -957,6 +960,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_ammo_type
 				}
 			}
 
@@ -1138,6 +1142,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_ammo_type
 				}
 			}
 
@@ -1340,6 +1345,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_ammo_type
 				}
 			}
 
