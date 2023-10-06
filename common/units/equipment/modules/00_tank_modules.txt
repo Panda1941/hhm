@@ -138,8 +138,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			build_cost_ic = 5
 			reliability = 0.25
+			build_cost_ic = 3.0
 		}
 		dismantle_cost_ic  = 2
 
@@ -153,7 +153,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			build_cost_ic = 5
+			build_cost_ic = 2
 		}
 		dismantle_cost_ic  = 2
 
@@ -169,7 +169,7 @@ equipment_modules = {
 
 		add_stats = {
 			defense = 2
-			build_cost_ic = 6
+			build_cost_ic = 3.5
 		}
 		dismantle_cost_ic  = 1
 
@@ -182,6 +182,7 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = 0.05
+			build_cost_ic = 4.0
 			
 			
 		}
@@ -239,16 +240,17 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			build_cost_ic = 0.5
-			breakthrough = 5
-			reliability = -0.1
+			breakthrough = 4.0
+			hardness = 0.025
+			reliability = 0.025
+			defense = 3
+			build_cost_ic = 8
 		}
 		xp_cost = 0
 		dismantle_cost_ic  = 1
 
 		multiply_stats =  {
-			maximum_speed = 0.05
-			build_cost_ic = 0.05
+			
 		}
 
 		can_convert_from = {
@@ -262,13 +264,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			breakthrough = 2
+			breakthrough = 2.0
 			reliability = -0.05
+			build_cost_ic = 2.0
 		}
 		xp_cost = 0
 		dismantle_cost_ic  = 1
 
 		multiply_stats =  {
+		maximum_speed = 0.025
 		}
 
 	}
@@ -278,14 +282,16 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			reliability = 0.025
-			defense = 2
+		    build_cost_ic = 1.0
+			breakthrough = 5
+			reliability = -0.1	
+			build_cost_ic = 4.0
 		}
 		xp_cost = 0
 		dismantle_cost_ic  = 1
 
 		multiply_stats =  {
-
+        maximum_speed = 0.05
 		}
 
 		can_convert_from = {

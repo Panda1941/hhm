@@ -584,6 +584,13 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/he.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_EMI_tank_ammo_type"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/ammo_type.dds"
+		legacy_lazy_load = no
+	}
+	
+	
 	
 
 }
