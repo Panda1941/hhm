@@ -2072,8 +2072,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			initiative = 0.005
-			defense = 1.0
-			build_cost_ic = 1.0
+			breakthrough = 2
+			build_cost_ic = 1.5
 		}
 	}
 	
@@ -2084,6 +2084,7 @@ equipment_modules = {
 		add_stats = {
 			initiative = 0.005
 			defense = 1.0
+			reliability = 0.05
 			build_cost_ic = 1.00
 		}
 	}
@@ -2094,8 +2095,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			initiative = 0.005
-			defense = 1.0
-			build_cost_ic = 1.00
+			defense = 3.0
+			build_cost_ic = 2
 		}
 	}
 
