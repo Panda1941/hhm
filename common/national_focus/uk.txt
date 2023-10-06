@@ -618,7 +618,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1
-				uses = 2
+				uses = 3
 				category = industry_late
 			}
 		}
@@ -678,7 +678,7 @@ focus_tree = {
 		}
 		continue_if_invalid = yes
 		icon = GFX_goal_generic_consumer_goods
-		x = 5
+		x = 4
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -886,7 +886,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = royal_ordinance_focus
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -924,7 +924,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = UK_secret_focus
-		cost = 10
+		cost = 8
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -959,7 +959,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 3
 		}
@@ -1190,7 +1190,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 3
 		}
@@ -1244,7 +1244,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -1299,7 +1299,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -1356,7 +1356,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = fighter_command_focus
-		cost = 10
+		cost = 15
 		ai_will_do = {
 			factor = 3
 		}
@@ -4345,7 +4345,7 @@ focus_tree = {
 		available = {
 			has_war = yes
 		}
-		x = 10
+		x = 9
 		y = 5
 		
 		cost = 10
@@ -4377,7 +4377,7 @@ focus_tree = {
 			has_war = yes
 			date > 1941.01.01
 		}
-		x = 10
+		x = 9
 		y = 6
 		
 		cost = 10

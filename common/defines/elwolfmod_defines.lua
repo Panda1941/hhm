@@ -62,6 +62,9 @@ NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
 -- Slots
 NDefines.NBuildings.MAX_SHARED_SLOTS = 28
 
+-- Research
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3
+
 -- Free Templates
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
