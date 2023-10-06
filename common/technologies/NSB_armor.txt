@@ -444,9 +444,6 @@ technologies = {
 			tank_small_cannon_3
 			tank_close_support_gun_2
 			tank_anti_air_cannon_3
-			auto_loader
-			stabilizer
-			squeezebore_adaptor	
 		}
 
 		path = {
@@ -651,7 +648,10 @@ technologies = {
 			light_tank_aa_chassis_5
 		}
 		enable_equipment_modules = {
-			
+			tank_auto_cannon_4
+			tank_small_cannon_4
+			tank_close_support_gun_3
+			tank_anti_air_cannon_3
 		}
 
 		research_cost = 2
@@ -809,8 +809,6 @@ technologies = {
 			tank_high_velocity_cannon_2
 			tank_rocket_launcher
 			tank_medium_howitzer
-			stabilizer
-			squeezebore_adaptor
 			tank_anti_air_cannon_2
 		}
 
@@ -904,7 +902,12 @@ technologies = {
 			medium_tank_aa_chassis_3
 		}
 		enable_equipment_modules = {
-			
+			tank_medium_cannon_3
+			tank_high_velocity_cannon_4
+			tank_rocket_launcher_2
+			tank_medium_howitzer_2
+			stabilizer
+			tank_anti_air_cannon_3
 		}
 
 		path = {
@@ -991,7 +994,12 @@ technologies = {
 			medium_tank_aa_chassis_5
 		}
 		enable_equipment_modules = {
-			
+			tank_medium_cannon_3
+			tank_high_velocity_cannon_4
+			tank_rocket_launcher_2
+			tank_medium_howitzer_2
+			stabilizer
+			tank_anti_air_cannon_3
 		}
 
 		path = {
@@ -1077,13 +1085,10 @@ technologies = {
 			medium_tank_aa_chassis_4
 		}
 		enable_equipment_modules = {
-			auto_loader
-			tank_medium_howitzer_2
-			tank_rocket_launcher_2
-			tank_high_velocity_cannon_3
-			tank_medium_cannon_3
-			tank_anti_air_cannon_3
+			tank_medium_cannon_4	
 		}
+		
+			
 
 		
 		
@@ -1167,12 +1172,10 @@ technologies = {
 		}
 		
 		enable_equipment_modules = {
-			auto_loader
-			tank_medium_howitzer_2
-			tank_rocket_launcher_2
-			tank_high_velocity_cannon_3
-			tank_medium_cannon_3
-			tank_anti_air_cannon_3
+		    tank_medium_cannon_4
+			stabilizer
+			squeezebore_adaptor
+			tank_anti_air_cannon_4
 		}
 
 		path = {
@@ -1233,7 +1236,11 @@ technologies = {
 		}
 		
 		enable_equipment_modules = {
-		
+			tank_medium_cannon_5
+			tank_high_velocity_cannon_5
+			tank_medium_howitzer_3 
+			tank_rocket_launcher_3
+			auto_loader
 		}
 
 		path = {
@@ -1519,6 +1526,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_cannon_3
 			tank_high_velocity_cannon_3
+			tank_heavy_howitzer_2
 			auto_loader
 			tank_anti_air_cannon_3
 		}
@@ -1583,6 +1591,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_cannon_3
 			tank_high_velocity_cannon_3
+			tank_heavy_howitzer_2
 			auto_loader
 			tank_anti_air_cannon_3
 		}

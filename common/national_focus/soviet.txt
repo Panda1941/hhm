@@ -2310,10 +2310,10 @@
 		completion_reward = {
 			add_ideas = SOV_t34_programe
 			add_tech_bonus = {
-                name = SOV_kv1			
+                name = t34			
 				bonus = 1.0
 				uses = 1
-				technology = improved_medium_tank
+				category = armor
 			}
 		}
 	}
@@ -2340,8 +2340,57 @@
                 name = SOV_kv1			
 				bonus = 1.0
 				uses = 1
-				technology = improved_heavy_tank
+				technology = improved_heavy_tank_chassis
 			}
+		}
+	}
+	
+	focus = {
+		id = SOV_army_innovation
+		text = "Army Innovations"
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = SOV_t34 }
+		x = -1
+		y = 2
+		relative_position_id = SOV_t34
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			# Balance research bonus to 2 techs in land_doctrine
+			army_experience = 20
+				
+			
+			set_technology = {
+				improved_medium_tank_chassis_3 = 1
+			}
+			
+		create_equipment_variant = {
+		name = "T-34 Winter-War"
+		type = medium_tank_chassis_4
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon_4
+			turret_type_slot = tank_medium_breakthrough_turret_1
+			suspension_type_slot = tank_vertical_volute_spring_suspension
+			roadwheels_type_slot = tank_large_roadwheels
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = ammo_ap
+			special_type_slot_2 = squeezebore_adaptor
+			special_type_slot_3 = tank_radio_3
+			special_type_slot_4 = tank_module_camouflage_winter
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 3
+		}
+		icon = "GFX_SOV_medium_tank_chassis_4"
+	}
 		}
 	}
 

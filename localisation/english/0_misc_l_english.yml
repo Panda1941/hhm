@@ -1076,4 +1076,16 @@
  GER_sfh18_idea:0 "Artillery factories"
  GER_mp38_idea:0 "Munition Factories"
  
+ tank_auto_cannon_4:0 "Modern Auto Cannon"
+ tank_small_cannon_4:0 "Modern Small Cannon"
+ tank_close_support_gun_3:0 "Modern Close Support Gun"
+ tank_high_velocity_cannon_4:0 "Advanced High Velocity"
+ tank_medium_cannon_4:0 "Modern Medium Cannon"
+ tank_anti_air_cannon_4:0 "Modern Anti Air Cannon"
+ tank_medium_cannon_5:0 "Modern Medium Cannon II"
+ tank_high_velocity_cannon_5:0 "Modern High Velocity Cannon"
+ tank_medium_howitzer_3:0 "Advanced Medium Howitzer"
+ tank_rocket_launcher_3:0 "Advanced Rocket Launcher"
+ tank_heavy_howitzer_2:0 "Improved Heavy Howitzer" 
+ tank_super_heavy_cannon_2:0 "Super Heavy Cannon II"
 
