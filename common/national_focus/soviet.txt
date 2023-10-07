@@ -748,8 +748,8 @@
 			
 			add_tech_bonus = {
 				name = SOV_industrial_expansion
-				bonus = 1.0
-				uses = 1
+				bonus = 1.5
+				uses = 2
 				category = industry_late
 			}
 		}
@@ -2006,7 +2006,7 @@
 		x = -1
 		y = 1
 		relative_position_id = SOV_nkvd_divisions
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2533,7 +2533,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_lessons_of_war
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -2553,7 +2553,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_barrier_troops
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -2573,7 +2573,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_an_adaptable_army
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -2593,7 +2593,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_experts_in_camouflage
-		cost = 10
+		cost = 8
 
 		allow_branch = {
 			NOT = {
@@ -2910,7 +2910,7 @@
 		x = 0
 		y = 3
 		relative_position_id = SOV_kv
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1000
 		}	

@@ -145,7 +145,7 @@ ideas = {
 			picture = generic_research_bonus
 			
 			modifier = {
-				research_speed_factor = 0.075
+				research_speed_factor = 0.1
 			}
 		}
 
@@ -758,7 +758,7 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.075
 			}
 		}
 
@@ -821,7 +821,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_buildings_factor = 0.075
+				production_speed_buildings_factor = 0.1
 				conscription = 0.01
 			}
 		}
@@ -842,11 +842,11 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_buildings_factor = 0.075
+				production_speed_buildings_factor = 0.1
 				conscription = 0.01
 
 				communism_drift = 0.05
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.03
 			}
 		}
 
@@ -1084,8 +1084,8 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.10
 				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = 0.04
-				production_speed_industrial_complex_factor = 0.10
+				consumer_goods_factor = 0.025
+				production_speed_industrial_complex_factor = 0.15
 				industrial_concern_cost_factor = -0.15
 			}
 		}
