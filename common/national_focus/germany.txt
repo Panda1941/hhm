@@ -4610,9 +4610,8 @@ hidden_effect = {
 		icon = GFX_focus_GER_war_with_france
 		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
 		available = {
-		AND = {
-			date > 1939.9.01
-			}
+			NOT = { has_war_with = FRA }
+			date > 1939.03.01
 		}
 		x = 1
 		y = 1
