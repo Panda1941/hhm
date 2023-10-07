@@ -4086,11 +4086,14 @@ focus_tree = {
 	focus = {
 		id = ENG_compass
 		available = {
+		OR = {
 		AND ={
  				NOT = { ENG ={controls_state =451 }}
 				NOT = { ENG ={controls_state =450 }}
  				date > 1940.6.1
  			}
+			date > 1940.6.1
+			}
 		}
 		prerequisite = {
 			focus = ENG_home_defence
@@ -4157,10 +4160,13 @@ focus_tree = {
 	focus = {
 		id = ENG_crusader
 		available = {
+		OR = {
 		AND ={
  				NOT = { ENG ={controls_state =451 }}
  				date > 1941.1.1
  			}
+			date > 1941.1.1
+		}	
 		}
 		prerequisite = {
 			focus = ENG_home_defence
