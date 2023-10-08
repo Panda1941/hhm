@@ -1,0 +1,34 @@
+state={
+	id=913
+	name="STATE_913"
+	provinces={
+		657 687 3076 9635 
+	}
+	history={
+		owner = ROM
+		victory_points = {
+			657 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 3
+			657 = {
+				naval_base = 8
+
+			}
+			687 = {
+				naval_base = 1
+
+			}
+			dockyard = 1
+
+		}
+		add_core_of = ROM
+
+	}
+	manpower=482541
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}
