@@ -158,6 +158,8 @@ sub_units = {
 		initiative = 0.01
 		supply_consumption = 0.05
 		breakthrough = 0.3
+		
+		transport = infantry_equipment
 
 		defense = -0.1
 		soft_attack = -0.5
