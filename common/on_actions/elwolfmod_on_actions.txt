@@ -41,6 +41,20 @@ on_actions = {
 						id = britain.24
 						days = 1
 					}
+					remove_ideas = Naval_treaty_allies
+				}
+				FRA = {
+					remove_ideas = Naval_treaty_allies
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = USA
+					}
+				}
+				USA = {
+					remove_ideas = Naval_treaty_allies 
 				}
 			}
 			#if = {
@@ -1920,6 +1934,15 @@ on_actions = {
 					type = support_equipment_1
 					amount = 156
 				}
+			}
+			ENG = {
+			add_ideas = Naval_treaty_allies
+			}
+			FRA = {
+			add_ideas = Naval_treaty_allies
+			}
+			USA = {
+			add_ideas = Naval_treaty_allies
 			}
 		}
 	}

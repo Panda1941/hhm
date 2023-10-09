@@ -704,6 +704,26 @@ ideas = {
 			}
 		}
 		
+		Naval_treaty_allies = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent
+			
+			modifier = {
+				industrial_capacity_dockyard = -0.25
+				production_speed_dockyard_factor = -0.15
+			}
+		}
+		
 	}
 }
 
