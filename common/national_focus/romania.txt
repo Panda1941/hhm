@@ -743,73 +743,14 @@
 				popularity = 0.35
 				ideology = fascism
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = ROM_mihail_sturdza
+			
 			add_stability = -0.05
-			add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GER }
-			GER = { add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = ROOT } }
-			if = {
-				limit = { 
-					has_dlc = "Battle for the Bosporus"
-					NOT = {
-						is_in_faction_with = TUR
-						TUR = { is_faction_leader = yes }
-					}
-				}
-				every_other_country = {
-					limit = {
-						has_opinion_modifier = BFTB_balkan_pact_ally
-					}
-					remove_opinion_modifier = {
-						target = ROM
-						modifier = BFTB_balkan_pact_ally
-					}
-					if = {
-						limit = {
-							is_in_faction_with = TUR
-							TUR = { is_faction_leader = no }
-						}
-						hidden_effect = {
-							ROOT = {
-								remove_opinion_modifier = {
-									target = PREV
-									modifier = BFTB_balkan_pact_ally
-								}
-							}
-						}
-					}
-				}
-			}
+
+			
 			hidden_effect = { 
 				set_country_flag = can_change_sides_fas
-				if = { 
-					limit = {
-						has_dlc = "Battle for the Bosporus"
-						NOT = {
-							is_in_faction_with = TUR
-							TUR = { is_faction_leader = yes }
-						}
-					}
-					remove_opinion_modifier = {
-						target = BUL
-						modifier = BFTB_balkan_pact_enemy
-					}
-					remove_opinion_modifier = {
-						target = HUN
-						modifier = BFTB_balkan_pact_enemy
-					}
-					add_opinion_modifier = {
-						target = BUL
-						modifier = BFTB_incongruous_neighbors
-					}
-					add_opinion_modifier = {
-						target = HUN
-						modifier = BFTB_incongruous_neighbors
-					}
-				}
 			}
-			unlock_decision_category_tooltip = ROM_change_sides
-			unlock_decision_tooltip = ROM_change_sides_to_allies
+			
 			#Cancel guarantees
 			diplomatic_relation = {
 				country = YUG
@@ -1024,7 +965,7 @@
 				add_idea = ROM_figurehead_king_michael
 				remove_idea = ROM_king_carol_ii_hedonist
 			}
-			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 360 }
+			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 200 }
 			hidden_effect = {
 				news_event = { id = news.323 days = 1 }
 			}
@@ -1092,19 +1033,16 @@
 
 		completion_reward = {
 			add_ideas = ROM_army_war_college
-			custom_effect_tooltip = ROM_war_college_tt
-			hidden_effect = {
 				create_corps_commander = { 
 					name = "Barbu Paraianu"
 					gfx = GFX_Portrait_romania_barbu_paraianu
 					traits = { infantry_officer }
-					skill = 2
-					attack_skill = 1
-					defense_skill = 1
+					skill = 4
+					attack_skill = 4
+					defense_skill = 2
 					planning_skill = 3
-					logistics_skill = 2
+					logistics_skill = 4
 				}
-			}
 		}
 	}
 
@@ -1139,6 +1077,12 @@
 				name = ROM_the_zb_53
 				bonus = 1.0
 				uses = 1
+				technology = improved_infantry_weapons
+			}
+			add_tech_bonus = {
+				name = ROM_the_zb_53
+				bonus = 0.5
+				uses = 1
 				category = infantry_weapons
 			}
 		}
@@ -1171,48 +1115,18 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			custom_effect_tooltip = ROM_vanatori_de_munte_unit_tt
-			hidden_effect = {
-				division_template = {
-					name = "Vanatori de munte"
-					priority = 2
-					division_names_group = ROM_MTN_01
-					regiments = {
-						mountaineers = { x = 0 y = 0 }
-						mountaineers = { x = 0 y = 1 }
-						mountaineers = { x = 0 y = 2 }
 			
-	    	   		 	mountaineers = { x = 1 y = 0 }
-						mountaineers = { x = 1 y = 1 }
-						mountaineers = { x = 1 y = 2 }
-			
-	    	   		 	mountaineers = { x = 2 y = 0 }
-						mountaineers = { x = 2 y = 1 }
-						mountaineers = { x = 2 y = 2 }
-
-	    	   		 	artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						artillery_brigade = { x = 3 y = 3 }
-					}
-					support = {
-						artillery = { x = 0 y = 0 }
-					}
-				}
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 46 }
-					create_unit = {
-						division = "name = \"Vanatori de munte\" division_template = \"Vanatori de munte\" start_experience_factor = 1.0" 
-						owner = ROM
-					}
-				}
-			}
 			add_tech_bonus = {
 				name = ROM_vanatori_de_munte
 				bonus = 1.0
 				uses = 1
 				category = mountaineers_tech
+			}
+			add_tech_bonus = {
+				name = ROM_vanatori_de_munte
+				bonus = 1.0
+				uses = 1
+				category = jaeger_tech
 			}
 		}
 	}
@@ -1246,8 +1160,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_artillery_modernization
-				bonus = 1.0
-				uses = 1
+				bonus = 0.75
+				uses = 2
 				category = artillery
 			}
 		}
@@ -1283,7 +1197,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_modern_at_guns
-				bonus = 1.5
+				bonus = 2.0
 				uses = 3
 				category = cat_anti_tank
 			}

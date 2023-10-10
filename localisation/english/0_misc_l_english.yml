@@ -2,6 +2,8 @@
  industry_late:0 "Late Game Industry"
 
  tank_medium_cannon_3:0 "Advanced Medium Cannon"
+
+ jaeger_tech:0 "Jaeger Technology"
  
  #TEMPLATES
  templates_retards_ai:0 "Templates for retards"
