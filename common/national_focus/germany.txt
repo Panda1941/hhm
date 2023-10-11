@@ -4584,6 +4584,15 @@ hidden_effect = {
 				HUN = { is_subject_of = ROM } #just rude
 			}
 		}
+		complete_tooltip = {
+			HUN = { 
+			transfer_state = 76
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 82
+			add_ideas = HUN_overeliance_german_trade
+		}
+		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -4592,10 +4601,17 @@ hidden_effect = {
 					}
 					ROM = {
 						controls_state = 76
+						controls_state = 83
+						controls_state = 84
 						NOT = { has_war_with = HUN }
 					}
 				}
-				country_event = { id = germany.20 }
+				HUN = { 
+			transfer_state = 76
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 82
+		}
 			}
 			HUN = {
 						add_ideas = HUN_overeliance_german_trade
