@@ -18,7 +18,7 @@ ideas = {
 
 			modifier = {
 				fascism_drift = 0.01
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.15
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
 			}
@@ -38,7 +38,7 @@ ideas = {
 			picture = saf_ossewabrandwag_2
 
 			modifier = {
-			    consumer_goods_factor = 0.03
+			    consumer_goods_factor = 0.10
 				industrial_capacity_factory = -0.075
 				industrial_capacity_dockyard = -0.075
 			}
@@ -220,7 +220,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				conscription_factor = -0.05
 			}
 
@@ -242,7 +242,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				conscription_factor = -0.08
 			}
 
@@ -459,7 +459,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.05
 			}
 

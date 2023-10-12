@@ -121,7 +121,7 @@ ideas = {
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.50
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -150,7 +150,7 @@ ideas = {
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.30
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -179,7 +179,7 @@ ideas = {
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
 				production_speed_buildings_factor = -0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.15
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -454,7 +454,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -585,7 +585,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.05
-				consumer_goods_factor = -0.04
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -605,7 +605,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.05
-				consumer_goods_factor = -0.04
+				consumer_goods_factor = -0.15
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -626,7 +626,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.10
-				consumer_goods_factor = -0.08
+				consumer_goods_factor = -0.25
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -647,7 +647,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.10
-				consumer_goods_factor = -0.08
+				consumer_goods_factor = -0.25
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -669,7 +669,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.15
-				consumer_goods_factor = -0.08
+				consumer_goods_factor = -0.25
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -691,7 +691,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.15
-				consumer_goods_factor = -0.08
+				consumer_goods_factor = -0.25
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -715,7 +715,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.20
-				consumer_goods_factor = -0.08
+				consumer_goods_factor = -0.25
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -737,7 +737,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.10
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.075
 			}
 		}
 

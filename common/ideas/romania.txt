@@ -186,7 +186,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.50
 			}
 		}
 
@@ -273,7 +273,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -374,7 +374,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.075
+				consumer_goods_factor = 0.20
 				stability_factor = -0.1
 			}
 		}
@@ -527,7 +527,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -814,7 +814,7 @@ ideas = {
 
 			}
 			modifier = {
-				consumer_goods_factor = -0.04
+				consumer_goods_factor = -0.15
 			}
 		}
 		

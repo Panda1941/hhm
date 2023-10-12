@@ -340,7 +340,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			modifier = {	consumer_goods_factor = -0.05	}
+			modifier = {	consumer_goods_factor = -0.15	}
 		}
 		FRA_global_investments = {
 			picture = generic_exploit_mines

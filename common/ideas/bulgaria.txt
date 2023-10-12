@@ -554,7 +554,7 @@ ideas = {
 			
 			modifier = {
 				trade_laws_cost_factor = -0.50
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.05
 			}
 		}
@@ -628,7 +628,7 @@ ideas = {
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
-				consumer_goods_factor = 0.025
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -648,7 +648,7 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = 0.075
+				consumer_goods_factor = 0.20
 			}
 		}
 
@@ -668,7 +668,7 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
 				production_factory_max_efficiency_factor = 0.15
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.15
 			}
 		}
 
@@ -685,7 +685,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_speed_industrial_complex_factor = 0.2
 			}
 		}
@@ -1125,7 +1125,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -1239,7 +1239,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				conscription = 0.02
 			} 
 		}
@@ -1259,7 +1259,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				conscription = 0.02
 				industrial_capacity_factory = 0.1
 			} 
@@ -1394,7 +1394,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				trade_laws_cost_factor = -0.35
 				economy_cost_factor = -0.35
 			}
@@ -1759,7 +1759,7 @@ ideas = {
 				economy_cost_factor = -0.5
 				production_speed_arms_factory_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = -0.025
+				consumer_goods_factor = -0.075
 				min_export = -0.15
 			} 
 		}
@@ -1782,7 +1782,7 @@ ideas = {
 				economy_cost_factor = -0.5
 				production_speed_arms_factory_factor = 0.1
 				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = -0.025
+				consumer_goods_factor = -0.075
 				min_export = -0.25
 				local_resources_factor = 0.15
 			} 
@@ -1822,7 +1822,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.05
 				global_building_slots_factor = 0.1
 			} 
@@ -1930,7 +1930,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				drift_defence_factor = -0.5
 				democratic_drift = 0.05
 			}
