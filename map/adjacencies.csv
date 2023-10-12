@@ -79,7 +79,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1123;7115;sea;8318;-1;-1;-1;-1;;Okinawa 2
 13370;13024;sea;2831;-1;-1;-1;-1;;Saipan-Tinian
 13374;13047;sea;7247;-1;-1;-1;-1;;Wake
-13371;13373;sea;2831;-1;-1;-1;-1;;Wake
+13371;13373;sea;7473;-1;-1;-1;-1;;Wake
 1135;13090;sea;6471;-1;-1;-1;-1;;Amlia-Unalaska
 13090;10694;sea;6064;-1;-1;-1;-1;;Unalaska-Unimak
 10048;7195;sea;8384;-1;-1;-1;-1;;Hawaii-Maui
