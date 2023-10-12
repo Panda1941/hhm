@@ -253,7 +253,7 @@ leader_traits = {
 		political_power_factor = -0.1
 		stability_factor = 0.05
 		neutrality_drift = 0.05
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 
 		ai_will_do = {
 			factor = 1
@@ -284,7 +284,7 @@ leader_traits = {
 	humble = {
 		random = no
 		neutrality_drift = 0.05
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 
 		ai_will_do = {
 			factor = 1
@@ -680,7 +680,7 @@ leader_traits = {
 
 	the_silver_president = { #Juan Andreu
 		random = no
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 		fascism_acceptance = 50
 		ai_will_do = {
 			factor = 1
@@ -983,14 +983,14 @@ leader_traits = {
 		random = no
 		trade_laws_cost_factor = -0.33
 		economy_cost_factor = -0.33
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 	}
 
 	strict_austerity_adherent = {
 		random = no
 		stability_factor = -0.15
 		economy_cost_factor = 0.5
-		consumer_goods_factor = -0.1
+		consumer_goods_factor = -0.30
 	}
 
 	defeatist = {
@@ -1124,7 +1124,7 @@ leader_traits = {
 
 	disgraced_monarch = {
 		random = no
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 		stability_factor = -0.1
 	}
 
@@ -1231,7 +1231,7 @@ leader_traits = {
 		random = no
 		stability_factor = 0.05
 		economy_cost_factor = -0.33
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.1
 		democratic_acceptance = 50
 		fascism_acceptance = -25
 		communism_acceptance = -25
@@ -1442,7 +1442,7 @@ leader_traits = {
 
 	the_statist = { #Peker
 		random = no
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.1
 		political_power_factor = 0.1
 		production_speed_arms_factory_factor = 0.05
 		production_speed_industrial_complex_factor = 0.05
@@ -1450,7 +1450,7 @@ leader_traits = {
 
 	the_academic = { #Aydemir
 		random = no
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.1
 		political_power_factor = 0.1
 		industrial_capacity_factory = 0.05
 		production_factory_efficiency_gain_factor = 0.05
@@ -1614,7 +1614,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.1
 		political_power_gain = 0.05
 		opinion_gain_monthly_factor = 0.25
 		enemy_justify_war_goal_time = 0.25
@@ -1624,7 +1624,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.1
 		production_speed_arms_factory_factor = 0.07
 		production_speed_industrial_complex_factor = 0.07
 		fascism_drift = 0.1
@@ -1910,7 +1910,7 @@ leader_traits = {
 		sprite = 10
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_infrastructure_factor = 0.05
-		consumer_goods_factor = -0.025
+		consumer_goods_factor = -0.08
 	}
 
 	womens_rights_activist = {
@@ -1934,7 +1934,7 @@ leader_traits = {
 		sprite = 13
 		fascism_drift = 0.05
 		political_power_factor = 0.1
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 	}
 
 	nazi_sympathizer = {
@@ -2062,7 +2062,7 @@ leader_traits = {
 	tainted_ras = {
 		random = no
 		production_factory_efficiency_gain_factor = -0.1
-		consumer_goods_factor = 0.05
+		consumer_goods_factor = 0.15
 		#equipment_capture_factor = 0.25
 		neutrality_acceptance = 30
 		
@@ -2070,7 +2070,7 @@ leader_traits = {
 	tainted_ras_2 = {
 		random = no
 		production_factory_efficiency_gain_factor = -0.1
-		consumer_goods_factor = 0.05
+		consumer_goods_factor = 0.15
 		#equipment_capture_factor = 0.25
 		neutrality_acceptance = 30
 		stability_factor = 0.05
@@ -2137,7 +2137,7 @@ leader_traits = {
 	liberator_of_eth_haymanot = {
 		random = no
 		production_factory_efficiency_gain_factor = 0
-		consumer_goods_factor = 0.1
+		consumer_goods_factor = 0.25
 		#equipment_capture_factor = 0.25
 		neutrality_acceptance = 30
 		stability_factor = 0.1
@@ -2228,7 +2228,7 @@ leader_traits = {
 	anti_unionist_pure_anarchist = {
 		random = no
 		sprite = 13
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.05
 		production_speed_buildings_factor = 0.1
 		industry_free_repair_factor = 0.15
 	}
@@ -2295,7 +2295,7 @@ leader_traits = {
 	minister_of_finance_deressa = {
 		random = no
 		sprite = 10
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.10
 		min_export = -0.05
 		industrial_capacity_factory = 0.1
 		production_lack_of_resource_penalty_factor = -0.05
@@ -2354,7 +2354,7 @@ leader_traits = {
 	rich_sultan = {
 		random = no
 		industrial_capacity_factory = 0.05
-		consumer_goods_factor = 0.05
+		consumer_goods_factor = 0.15
 		political_power_factor = 0.1
 	}
 
@@ -2570,7 +2570,7 @@ leader_traits = {
 		random = no
 		party_popularity_stability_factor = 0.15
 		political_power_factor = 0.1
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.05
 	}
 
 	#FERRUCIO PARRI
@@ -2592,7 +2592,7 @@ leader_traits = {
 
 		political_advisor_cost_factor = -0.25
 		stability_factor = 0.1
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.05
 	}
 
 	### CLN ###
@@ -2742,7 +2742,7 @@ leader_traits = {
 		random = no 
 		
 		political_power_gain = 0.25
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.05
 		puppet_cost_factor = -0.4
 		
 		ai_will_do = {
@@ -3317,7 +3317,7 @@ leader_traits = {
 	labor_defense_organizer = {
 		random = no
 		sprite = 13
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.40
 		army_core_defence_factor = 0.05
 		experience_gain_army_factor = 0.05
 		research_speed_factor = -0.03
@@ -3383,7 +3383,7 @@ leader_traits = {
 	emigre_connections = {
 		random = no
 		weekly_manpower = 2000
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.1
 	}
 
 	desperate_gambit = {
@@ -3564,7 +3564,7 @@ leader_traits = {
 	soviet_economist = {
 		random = no
 		sprite = 13
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.05
 		war_support_factor = 0.05
 		production_speed_synthetic_refinery_factor = 0.15
 		subversive_activites_upkeep = -0.05
@@ -3724,7 +3724,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		fascism_drift = 0.1
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.05
 		opinion_gain_monthly_same_ideology_factor = 0.15
 	}
 
@@ -3746,7 +3746,7 @@ leader_traits = {
 	driver_of_the_faithful = {
 		random = no
 		sprite = 13
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.05
 		industrial_capacity_factory = 0.05
 	}
 
@@ -3859,7 +3859,7 @@ leader_traits = {
 		sprite = 13
 
 		communism_drift = 0.1
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 
 		ai_will_do = {
 			factor = 1
@@ -4010,7 +4010,7 @@ leader_traits = {
 	financial_expert = {
 		sprite = 10
 		random = yes
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 
 		ai_will_do = {
 			factor = 2
@@ -4207,7 +4207,7 @@ leader_traits = {
 	finance_graduate = {
 		sprite = 10
 		random = no
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.10
 
 		ai_will_do = {
 			factor = 2
@@ -4330,7 +4330,7 @@ leader_traits = {
 		sprite = 10
 
 		stability_factor = 0.05
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 
 		ai_will_do = {
 			factor = 1
@@ -4365,7 +4365,7 @@ leader_traits = {
 		random = no
 		sprite = 10
 
-		consumer_goods_factor = -0.1
+		consumer_goods_factor = -0.25
 		resistance_growth_on_our_occupied_states = 0.1
 
 		ai_will_do = {
@@ -4468,7 +4468,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.05
 		stability_factor = 0.05
 		conscription = 0.005
 
@@ -4573,7 +4573,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		fascism_drift = 0.1
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 	}
 
 	leftist_freemason = {
@@ -4654,7 +4654,7 @@ leader_traits = {
 	agricultural_capitalist = {
 		random = no
 		sprite = 13
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 		neutrality_drift = 0.05
 	}
 
@@ -4716,7 +4716,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		fascism_drift = 0.05
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 	}
 
 	subservient_ultranationalist = {
@@ -4943,7 +4943,7 @@ leader_traits = {
 	staunch_aristocrat = {
 		random = no
 		sprite = 13
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.15
 		drift_defence_factor = 0.15
 	}
 
@@ -6009,7 +6009,7 @@ leader_traits = {
 
 		min_export = 0.3
 		opinion_gain_monthly_factor = -0.05
-		consumer_goods_factor = 0.05
+		consumer_goods_factor = 0.15
 		political_power_gain = -0.15
 
 		ai_will_do = {
