@@ -717,6 +717,21 @@ guiTypes = {
 			position = { x = 164 y = 116 }
 			size = { width = 198 height = 30 }
 			
+			containerWindowType = {
+				name = "division_name_bg"
+				size = { width = 280 height = 30 }
+
+				
+				
+
+			}
+
+			iconType = {
+				name = "division_nametag_icon"
+				spriteType = "GFX_division_nametag_icon"
+				position = { x = 260 y = 5 }
+	#			position = { x = 174 y = 135 }
+			}			  
 			instantTextboxType = {
 				name = "name"
 				position = { x = 5 y = 5 }
@@ -771,6 +786,18 @@ guiTypes = {
 			position = { x = 164 y = 70 }
 			size = { width = 198 height = 30 }
 			
+			containerWindowType = {
+				name = "division_name_bg"
+				size = { width = 220 height = 30 }
+				
+				
+			}
+
+			iconType = {
+				name = "division_template_icon"
+				spriteType = "GFX_division_template_icon"
+				position = { x = 260 y = 0 }
+			}									   
 			editBoxType = {
 				name = "name"
 				position = { x = 5 y = 3 }
@@ -1153,6 +1180,14 @@ guiTypes = {
 			spriteType ="GFX_div_unit_item_bg"
 		}
 		
+		iconType = {
+			name = "glowup"
+			spriteType = "GFX_spirit_glow"
+			position = {x=-17 y=-8}
+			scale = 0.70
+			hide = yes
+		}
+		
 		instantTextboxType = {
 			name = "name"
 			position = { x = 9 y = 22 }
@@ -1193,6 +1228,15 @@ guiTypes = {
 			spriteType ="GFX_div_subunit_item_bg"
 		}
 		
+		iconType = {
+			name = "glowup"
+			quadTextureSprite = "GFX_bop_glow_effect"
+			position = {x=-4 y=16}
+			Orientation = CENTER_LOWER
+			scale = 1.0
+			hide = yes
+		}
+		
 		instantTextboxType = {
 			name = "name"
 			position = { x = 3 y = 27 }
@@ -1203,6 +1247,12 @@ guiTypes = {
 			maxWidth = 65
 			maxHeight = 20
 			format = centre
+				   
+			pdx_tooltip_anchor =
+			{
+				x = -254
+				y = -2
+			}
 		}
 	
 		buttonType = {
@@ -1212,6 +1262,12 @@ guiTypes = {
 			Orientation = CENTER_LOWER
 			scale = 0.8
 			clicksound = click_default
+			pdx_tooltip_anchor =
+			{
+				x = -254
+				y = -2
+			}
+			
 		}	
 
 		buttonType = {

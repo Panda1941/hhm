@@ -39,6 +39,10 @@ technologies = {
 			naval_air
 			naval_bomber
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 
 		
@@ -92,6 +96,10 @@ technologies = {
 			naval_air
 			naval_bomber
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		
@@ -170,6 +178,10 @@ technologies = {
 			naval_air
 			naval_bomber
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -246,6 +258,10 @@ technologies = {
 			naval_air
 			naval_bomber
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -311,6 +327,10 @@ technologies = {
 			naval_air
 			naval_bomber
 			jet_technology
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 
 		ai_will_do = {
@@ -357,6 +377,7 @@ technologies = {
 			tactical_bomber
 			cat_heavy_fighter
 			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -396,6 +417,7 @@ technologies = {
 			tactical_bomber
 			cat_heavy_fighter
 			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -457,6 +479,7 @@ technologies = {
 			tactical_bomber
 			cat_heavy_fighter
 			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -518,6 +541,7 @@ technologies = {
 			tactical_bomber
 			cat_heavy_fighter
 			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -568,6 +592,7 @@ technologies = {
 			jet_technology
 			cat_heavy_fighter
 			tactical_bomber
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -606,6 +631,7 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -650,6 +676,7 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -694,6 +721,7 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -738,6 +766,7 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -778,6 +807,7 @@ technologies = {
 			heavy_air
 			jet_technology
 			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -814,10 +844,235 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	heavy_bombs = {
+		enable_equipment_modules = {
+					heavy_bomb_locks
+		}
+			
+		research_cost = 1
+		start_year = 1940
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+
+	armor_piercing_bombs = {
+		enable_equipment_modules = {
+					armor_piercing_bomb_locks
+		}
+			
+		research_cost = 1
+		start_year = 1936
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+	
+	photo_reconnaisance = {
+		enable_equipment_modules = {
+			recon_camera
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		allow_branch = { has_dlc = "La Resistance" }
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			mio_cat_all_medium_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = basic_medium_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+	air_torpedoe_1 = {
+		enable_equipment_modules = {
+			torpedo_mounting
+		}
+			
+		research_cost = 1
+		start_year = 1936
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		path = {
+			leads_to_tech = air_torpedoe_2
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+	air_torpedoe_2 = {
+		enable_equipment_modules = {
+			torpedo_mounting_2
+		}
+			
+		research_cost = 1
+		start_year = 1940
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = air_torpedoe_3
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+	air_torpedoe_3 = {
+		enable_equipment_modules = {
+			torpedo_mounting_3
+		}
+			
+		research_cost = 1
+		start_year = 1944
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 10 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
 		}
 	}
 	
@@ -854,6 +1109,10 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -865,6 +1124,55 @@ technologies = {
 					has_tech = iw_large_airframe
 				}
 				factor = 5
+			}
+		}
+	}
+	
+	survivability_studies = {
+
+		enable_equipment_modules = {
+			self_sealing_fuel_tanks_small
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_large
+			armor_plate_small
+			armor_plate_medium
+			armor_plate_large
+		}
+		
+		research_cost = 1
+		start_year = 1939
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -2 y = 5 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+			modifier = {
+				has_War = yes
+				factor = 3
 			}
 		}
 	}
@@ -891,6 +1199,10 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -933,6 +1245,58 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
+		}
+	}
+	
+	aa_cannon_3 = {
+
+		enable_equipment_modules = {
+			aircraft_cannon_2_1x
+			aircraft_cannon_2_2x
+			cannon_defense_turret
+			cannon_defense_turret_2x
+		}
+		
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 12 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -994,6 +1358,12 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1001,36 +1371,6 @@ technologies = {
 		}
 	}
 
-	photo_reconnaisance = {
-		enable_equipment_modules = {
-			recon_camera
-		}
-		
-		research_cost = 1
-		start_year = 1922
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 2 y = 4 }
-		}
-
-		allow_branch = { has_dlc = "La Resistance" }
-		
-		categories = {
-			air_equipment
-			plane_modules_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					has_tech = basic_medium_airframe
-				}
-				factor = 5
-			}
-		}
-	}
 
 	suicide_charge = {
 
