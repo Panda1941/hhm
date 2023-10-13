@@ -44,5 +44,234 @@ equipments = {
 		archetype = support_equipment
 		priority = 20	
 	}
+	###################################AMPHIBIOUS#############################################
+	amphibious_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			infantry
+			motorized
+		}
+		group_by = archetype
+		
+		upgrades = {
+			tank_reliability_upgrade
+			mech_cost_upgrade
+		}
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Shovels to dig a hole
+		defense = 5
+		breakthrough = 5
+
+		#Mines and shit :kekw:
+		soft_attack = 1.0
+		ap_attack = 2
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 4
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+
+	amphibious_equipment_1 = {
+		year = 1918
+
+		archetype = amphibious_equipment
+		priority = 20	
+	}
+	
+	############################################ASSAULT###########################################
+	assault_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			infantry
+			motorized
+		}
+		group_by = archetype
+		
+		upgrades = {
+			tank_reliability_upgrade
+			mech_cost_upgrade
+		}
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Shovels to dig a hole
+		defense = 5
+		breakthrough = 5
+
+		#Mines and shit :kekw:
+		hard_attack = 3.0
+		ap_attack = 5
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 5
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+
+	assault_equipment_1 = {
+		year = 1918
+
+		archetype = assault_equipment
+		priority = 20	
+	}
+	
+	############################################MOUNTAIN###########################################
+	mountain_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			infantry
+			motorized
+		}
+		group_by = archetype
+		
+		upgrades = {
+			tank_reliability_upgrade
+			mech_cost_upgrade
+		}
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Shovels to dig a hole
+		defense = 5
+		breakthrough = 5
+
+		#Mines and shit :kekw:
+		soft_attack = 1.0
+		ap_attack = 2
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 3.5
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+
+	mountain_equipment_1 = {
+		year = 1918
+
+		archetype = mountain_equipment
+		priority = 20	
+	}
+	
+	############################################PARATROOPER###########################################
+	paratrooper_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			infantry
+			motorized
+		}
+		group_by = archetype
+		
+		upgrades = {
+			tank_reliability_upgrade
+			mech_cost_upgrade
+		}
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Shovels to dig a hole
+		defense = 1
+		breakthrough = 8
+
+		#Mines and shit :kekw:
+		soft_attack = 1.0
+		ap_attack = 0.5
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 4.5
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+
+	paratrooper_equipment_1 = {
+		year = 1918
+
+		archetype = paratrooper_equipment
+		priority = 20	
+	}
+	
+	############################################RANGER###########################################
+	ranger_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			infantry
+			motorized
+		}
+		group_by = archetype
+		
+		upgrades = {
+			tank_reliability_upgrade
+			mech_cost_upgrade
+		}
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Shovels to dig a hole
+		defense = 3
+		breakthrough = 5
+
+		#Mines and shit :kekw:
+		soft_attack = 1.0
+		ap_attack = 1
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 3.5
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+
+	ranger_equipment_1 = {
+		year = 1918
+
+		archetype = ranger_equipment
+		priority = 20	
+	}
 
 }

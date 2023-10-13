@@ -1931,7 +1931,7 @@ equipment_modules = {
 			hard_attack = 1.5
 			soft_attack = 1.5
 			breakthrough = 1.5
-			air_attack = 4
+			#air_attack = 4
 			reliability = -0.05
 		}
 		xp_cost = 0
@@ -1965,7 +1965,7 @@ equipment_modules = {
 			hard_attack = -1.5
 			soft_attack = 3.0
 			breakthrough = 1.0
-			air_attack = 6
+			#air_attack = 6
 			reliability = -0.07
 		}
 		xp_cost = 0
@@ -1998,7 +1998,7 @@ equipment_modules = {
 			hard_attack = 3.0
 			soft_attack = -1.5
 			breakthrough = 0.5
-			air_attack = 2
+			#air_attack = 2
 			reliability = -0.025
 		}
 		xp_cost = 0

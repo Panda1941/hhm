@@ -649,6 +649,9 @@ technologies = {
 		enable_subunits = {
 			paratrooper
 		}
+		enable_equipments = {
+		    paratrooper_equipment_1
+		}
 		
 		path = {
 			leads_to_tech = paratroopers2
@@ -790,6 +793,9 @@ technologies = {
 		enable_subunits = {
 			marine
 		}
+		enable_equipments = {
+		    amphibious_equipment_1
+		}
 		
 		on_research_complete_limit = {
 			NOT = {
@@ -915,6 +921,9 @@ technologies = {
 		enable_subunits = {
 			mountaineers
 		}
+		enable_equipments = {
+		    mountain_equipment_1
+		}
 
 		on_research_complete_limit = {
 			NOT = {
@@ -1012,6 +1021,9 @@ technologies = {
 		enable_subunits = {
 			shock_troops
 		}
+		enable_equipments = {
+		    assault_equipment_1
+		}
 
 		on_research_complete_limit = {
 			NOT = {
@@ -1102,6 +1114,9 @@ technologies = {
 	jaegers = {
 		enable_subunits = {
 			jaeger
+		}
+		enable_equipments = {
+		    ranger_equipment_1
 		}
 		on_research_complete = {
 			if = {
@@ -1310,7 +1325,7 @@ technologies = {
 			acclimatization_hot_climate_gain_factor = 0.1
 			acclimatization_cold_climate_gain_factor = 0.1
 		}
-        special_forces_min = 56
+        special_forces_min = 28
 		
 		#dependencies = {
 		#	OR = {
@@ -1354,7 +1369,7 @@ technologies = {
 		}
 
 		special_forces_training_time_factor = 0.1
-		special_forces_min = 56
+		special_forces_min = 28
 		
 		path = {
 			leads_to_tech = extreme_environment_training
@@ -1390,7 +1405,7 @@ technologies = {
 		
 		special_forces_no_supply_grace = 48
 		special_forces_out_of_supply_factor = -0.1
-		special_forces_min = 56
+		special_forces_min = 28
 		
 		path = {
 			leads_to_tech = elite_forces
@@ -1425,7 +1440,7 @@ technologies = {
 		}
 		
 		special_forces_no_supply_grace = 48
-		special_forces_min = 56
+		special_forces_min = 28
 
 		research_cost = 2
 		start_year = 1943

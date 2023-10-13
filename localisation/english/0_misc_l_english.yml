@@ -1097,4 +1097,19 @@
  tank_super_heavy_cannon_2:0 "Super Heavy Cannon II"
  
  Naval_treaty_allies:0 "London Naval Treaty"
+ 
+ amphibious_equipment:0 "Amphibious Equipment"
+ amphibious_equipment_1:0 "Marine Gear I"
+ 
+ assault_equipment:0 "Assault Equipment"
+ assault_equipment_1:0 "Siege Weapons I"
+ 
+ mountain_equipment:0 "Mountaineer Equipment"
+ mountain_equipment_1:0 "Mountain Gear I"
+ 
+ paratrooper_equipment:0 "Paratrooper Equipment"
+ paratrooper_equipment_1:0 "Parachute Gear I"
+ 
+ ranger_equipment:0 "Ranger Equipment"
+ ranger_equipment_1:0 "Ranger Gear I"
 

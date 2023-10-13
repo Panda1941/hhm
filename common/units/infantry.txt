@@ -168,10 +168,12 @@ sub_units = {
 		need = {
 			infantry_equipment = 250
 			support_equipment = 50
+			amphibious_equipment = 25
 			#pack_artillery_equipment = 12
 		}
 		essential = {
 			support_equipment
+			amphibious_equipment
 		}
 
 		marsh = {
@@ -227,13 +229,16 @@ sub_units = {
 		initiative = 0.01
 		supply_consumption = 0.05
 		breakthrough = 0.3
+		soft_attack = 0.25
 	
 		need = {
 			infantry_equipment = 300
-			support_equipment = 50
+			support_equipment = 60
+			amphibious_equipment = 35
 		}
 		essential = {
 			support_equipment
+			amphibious_equipment
 		}
 
 		marsh = {
@@ -295,10 +300,12 @@ sub_units = {
 		need = {
 			infantry_equipment = 300
 			support_equipment = 50
+			mountain_equipment = 25
 			#pack_artillery_equipment = 12
 		}
 		essential = {
 			support_equipment
+			mountain_equipment
 		}
 
 		hills = {
@@ -366,10 +373,12 @@ sub_units = {
 		need = {
 			infantry_equipment = 300	# More expensive than any other sp force
 			support_equipment = 50
+			paratrooper_equipment = 25
 			#pack_artillery_equipment = 12
 		}
 		essential = {
 			support_equipment
+			paratrooper_equipment
 		}
 	}
 	
@@ -423,12 +432,14 @@ sub_units = {
 		need = {
 			infantry_equipment = 350
 			support_equipment = 50
+			assault_equipment = 25
 			#mechanized_equipment = 10
 			#pack_artillery_equipment = 12
 		}
 		
 		essential = {
 			support_equipment
+			assault_equipment
 			#mechanized_equipment
 		}
 		
@@ -491,10 +502,12 @@ sub_units = {
 		need = {
 			infantry_equipment = 250
 			support_equipment = 50
+			ranger_equipment = 25
 			#pack_artillery_equipment = 12
 		}
 		essential = {
 			support_equipment
+			ranger_equipment
 		}
 
 

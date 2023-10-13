@@ -632,6 +632,7 @@ technologies = {
 		}
 		# faster planning
 		planning_speed = 0.1
+		additional_brigade_column_size = 1
 		
 		category_support_battalions = {
 			max_organisation = 2
@@ -1711,6 +1712,7 @@ technologies = {
 		category_all_infantry = { 
 			soft_attack = 0.05 
 		}
+		additional_brigade_column_size = 1
 		category_artillery = { 
 			soft_attack = 0.05
 		}
@@ -2501,6 +2503,7 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		max_planning = 0.10
+		additional_brigade_column_size = 1
 		category_light_infantry = {
 			max_organisation = 5
 			breakthrough = 0.1
@@ -3006,7 +3009,8 @@ technologies = {
 		
 		infantry = {
 			combat_width = -0.5
-		}	
+		}
+additional_brigade_column_size = 1		
 		
 		category_all_infantry = {
 			max_organisation = 15	
