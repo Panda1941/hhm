@@ -821,8 +821,8 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_buildings_factor = 0.1
-				conscription = 0.01
+				production_speed_buildings_factor = 0.12
+				conscription = 0.025
 			}
 		}
 
@@ -842,11 +842,11 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_buildings_factor = 0.1
-				conscription = 0.01
+				production_speed_buildings_factor = 0.12
+				conscription = 0.025
 
 				communism_drift = 0.05
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.15
 			}
 		}
 
