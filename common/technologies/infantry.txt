@@ -2167,12 +2167,9 @@ technologies = {
 		enable_equipments = {
 			motorized_rocket_equipment_1
 		}
-		dependencies = {
-			rocket_artillery = 1
-		}	
 	
-		research_cost = 1.5
-		start_year = 1938
+		research_cost = 1.25
+		start_year = 1940
 		
 		ai_will_do = {
 			factor = 1
