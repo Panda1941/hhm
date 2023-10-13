@@ -1990,6 +1990,11 @@
 				idea = SOV_the_road_of_life_ns
 				days = 730
 			}
+	
+		set_technology = {
+			    winter_logistics_support_tech = 1
+				
+			}
 		}
 	}
 

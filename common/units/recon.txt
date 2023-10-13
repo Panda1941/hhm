@@ -554,8 +554,8 @@ sub_units = {
 		
 		snow = { #This can end up stacking with terrain benefits
 			attack = 0.25
-			defence = 0.25
-			movement = 0.3
+			defence = 0.15
+			movement = 0.20
 		}
 	}
 	
