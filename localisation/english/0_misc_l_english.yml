@@ -4,6 +4,11 @@
  tank_medium_cannon_3:0 "Advanced Medium Cannon"
 
  jaeger_tech:0 "Jaeger Technology"
+
+ modifier_production_speed_steel_refinery_factor:0 "§YSteel Refinery§! construction speed"
+ modifier_production_speed_aluminium_refinery_factor:0 "§YAluminium Refinery§! construction speed"
+ modifier_production_speed_advanced_steel_refinery_factor:0 "§YHeavy Metal Refinery§! construction speed"
+
  
  #TEMPLATES
  templates_retards_ai:0 "Templates for retards"

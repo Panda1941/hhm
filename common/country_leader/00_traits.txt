@@ -1242,6 +1242,9 @@ leader_traits = {
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_rail_way_factor = 0.1
 		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_steel_refinery_factor = 0.1
+		production_speed_aluminium_refinery_factor = 0.1
+		production_speed_advanced_steel_refinery_factor = 0.1
 		trade_opinion_factor = 0.25
 		democratic_acceptance = 25
 	}
@@ -1538,6 +1541,9 @@ leader_traits = {
 		production_speed_rail_way_factor = 0.1
 		production_speed_supply_node_factor = 0.1
 		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_steel_refinery_factor = 0.1
+		production_speed_aluminium_refinery_factor = 0.1
+		production_speed_advanced_steel_refinery_factor = 0.1
 		trade_opinion_factor = 0.15
 		democratic_drift = 0.05
 		fascism_drift = -0.1
@@ -3567,6 +3573,9 @@ leader_traits = {
 		consumer_goods_factor = -0.05
 		war_support_factor = 0.05
 		production_speed_synthetic_refinery_factor = 0.15
+		production_speed_steel_refinery_factor = 0.15
+		production_speed_aluminium_refinery_factor = 0.15
+		production_speed_advanced_steel_refinery_factor = 0.15
 		subversive_activites_upkeep = -0.05
 	}
 
@@ -4000,6 +4009,13 @@ leader_traits = {
 		production_speed_arms_factory_factor = -0.05
 		production_speed_infrastructure_factor = 0.10
 		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_steel_refinery_factor = 0.1
+		production_speed_aluminium_refinery_factor = 0.1
+		production_speed_advanced_steel_refinery_factor = 0.1
+
+		
+
+
 		local_resources_factor = 0.05
 		
 		ai_will_do = {
@@ -4198,6 +4214,10 @@ leader_traits = {
 		production_speed_infrastructure_factor = 0.05
 		production_speed_rail_way_factor = 0.05
 		production_speed_synthetic_refinery_factor = 0.05
+		
+		production_speed_steel_refinery_factor = 0.05
+		production_speed_aluminium_refinery_factor = 0.05
+		production_speed_advanced_steel_refinery_factor = 0.05
 
 		ai_will_do = {
 			factor = 1
@@ -4567,6 +4587,9 @@ leader_traits = {
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
 		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_steel_refinery_factor = 0.1
+		production_speed_aluminium_refinery_factor = 0.1
+		production_speed_advanced_steel_refinery_factor = 0.1
 	}
 
 	falangist_syndicalist = {
@@ -4835,6 +4858,9 @@ leader_traits = {
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
 		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_steel_refinery_factor = 0.1
+		production_speed_aluminium_refinery_factor = 0.1
+		production_speed_advanced_steel_refinery_factor = 0.1
 	}
 
 	sanation_militarist = {
