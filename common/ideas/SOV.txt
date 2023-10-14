@@ -1901,5 +1901,484 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 			}
 		}
+		SOV_gosproyektstroy_2_usa = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA
+				NOT = { has_country_flag = SOV_gosproyektstroy_level_3_flag }
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		SOV_gosproyektstroy_3_usa_civ = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 1 } #CIV
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		SOV_gosproyektstroy_3_usa_mil = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 2 } #MIL
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		SOV_gosproyektstroy_3_usa_dock = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 3 } #DOCK
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.1
+				license_purchase_cost = -0.25
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		SOV_gosproyektstroy_2_eng = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 2 } #ENG
+				NOT = { has_country_flag = SOV_gosproyektstroy_level_3_flag }
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				line_change_production_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+
+		SOV_gosproyektstroy_3_eng_civ = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 2 } #ENG
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 1 } #CIV
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				line_change_production_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		SOV_gosproyektstroy_3_eng_mil = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 2 } #ENG
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 2 } #MIL
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				line_change_production_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		SOV_gosproyektstroy_3_eng_dock = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 2 } #ENG
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 3 } #DOCK
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.1
+				license_purchase_cost = -0.25
+				line_change_production_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		SOV_gosproyektstroy_2_ger = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 3 } #GER
+				NOT = { has_country_flag = SOV_gosproyektstroy_level_3_flag }
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		SOV_gosproyektstroy_3_ger_civ = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 3 } #GER
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 1 } #CIV
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		SOV_gosproyektstroy_3_ger_mil = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 3 } #GER
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 2 } #MIL
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		SOV_gosproyektstroy_3_ger_dock = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 3 } #GER
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 3 } #DOCK
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.1
+				license_purchase_cost = -0.25
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		SOV_gosproyektstroy_2_jap = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 4 } #JAP
+				NOT = { has_country_flag = SOV_gosproyektstroy_level_3_flag }
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+
+		SOV_gosproyektstroy_3_jap_civ = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 4 } #JAP
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 1 } #CIV
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				production_factory_start_efficiency_factor = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		SOV_gosproyektstroy_3_jap_mil = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 4 } #JAP
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 2 } #MIL
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				license_purchase_cost = -0.25
+				production_factory_start_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		SOV_gosproyektstroy_3_jap_dock = {
+
+			name = SOV_gosproyektstroy_1
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_TAG = SOV
+
+			}
+
+			visible = {
+				has_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 4 } #JAP
+				has_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 3 } #DOCK
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.1
+				license_purchase_cost = -0.25
+				production_factory_start_efficiency_factor = 0.1
+				industrial_capacity_dockyard = 0.05
+			}
+		}
 	}
 }
