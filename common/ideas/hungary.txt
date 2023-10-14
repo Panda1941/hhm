@@ -2,6 +2,28 @@ ideas = {
 
 	country = {
 
+		HUN_autarky_idea = {
+			name = "Autarky"
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_speed_buildings_factor = 0.075
+				consumer_goods_factor = -0.025
+			}
+		}
+
+
 		HUN_treaty_of_triannon = {
 			allowed = {
 				original_tag = HUN
@@ -328,9 +350,9 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_infrastructure_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
-				research_speed_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.2
+				research_speed_factor = 0.1
 			}
 		}
 
@@ -408,6 +430,7 @@ ideas = {
 		HUN_hidden_officer_school_idea = {
 		
 			picture = generic_army_war_college
+			name = "Hidden officer School"
 				 
 			available = {
 				has_war = no
