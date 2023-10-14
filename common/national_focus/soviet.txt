@@ -1534,7 +1534,7 @@
 			}		
 		}
 		bypass = {
-			
+			has_war_with = ROM
 		}
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }

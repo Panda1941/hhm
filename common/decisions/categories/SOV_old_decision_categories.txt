@@ -58,11 +58,7 @@ SOV_gosproyektstroy_decision_category = {
 	}
 
 	visible = {
-		OR = {
-			has_idea = SOV_gosproyektstroy_1
-			has_country_flag = SOV_gosproyektstroy_level_2_flag
-			has_country_flag = SOV_gosproyektstroy_level_3_flag
-		}
+		always = no
 	}
 }
 

@@ -54,7 +54,6 @@ ideas = {
 			}
 			modifier = {
 				army_org_factor = 0.1
-				army_leader_start_level = 2
 				army_intel_to_others = -5.0
 				custom_modifier_tooltip = best_of_the_best_spirit_tt
 			}
@@ -150,7 +149,6 @@ ideas = {
 			visible = {  }
 			modifier = {
 				custom_modifier_tooltip = mobile_warfare_academy_spirit_tt
-				trait_panzer_leader_xp_gain_factor = 0.2
 				army_fuel_capacity_factor = 0.25
 				army_org_regain = 0.03
 			}
@@ -174,7 +172,6 @@ ideas = {
 			visible = {  }
 			modifier = {
 				custom_modifier_tooltip = superior_firepower_academy_spirit_tt
-				trait_engineer_xp_gain_factor = 0.2
 				air_cas_present_factor = 0.075
 				initiative_factor = 0.04
 			}
@@ -200,8 +197,8 @@ ideas = {
 				custom_modifier_tooltip = theatre_training_academy_spirit_tt
 				acclimatization_cold_climate_gain_factor = 0.25 
 				acclimatization_hot_climate_gain_factor  = 0.25
-				truck_attrition_factor = -0.25
-				supply_node_range = 0.04
+				truck_attrition_factor = -0.3
+				supply_node_range = 0.06
 			}
 			ai_will_do = {
 				base = 1
@@ -248,6 +245,7 @@ ideas = {
 			ledger = army
 			modifier = {
 				experience_gain_army = 0.05
+				experience_gain_army_factor = 0.05
 				land_doctrine_cost_factor = -0.025
 				command_power_gain = 0.2
 			}
@@ -310,6 +308,7 @@ ideas = {
 			available = { has_government = democratic }
 			modifier = {
 				experience_gain_army = 0.075
+				experience_gain_army_factor = 0.1
 				army_advisor_cost_factor = -0.5
 			}
 			ai_will_do = {
@@ -355,7 +354,7 @@ ideas = {
 			available = { OR = { has_government = fascism has_government = neutrality } }
 			modifier = {
 				political_power_factor = 0.1
-				experience_gain_army = 0.025
+				experience_gain_army = 0.05
 				party_popularity_stability_factor = 0.05
 			}
 			ai_will_do = {
@@ -400,8 +399,8 @@ ideas = {
 			available = { has_tech = superior_firepower  }
 			ledger = army
 			modifier = {
-				army_artillery_attack_factor = 0.08
-				army_artillery_defence_factor = 0.08
+				army_artillery_attack_factor = 0.09
+				army_artillery_defence_factor = 0.09
 				breakthrough_factor = 0.05
 			}
 			ai_will_do = {
@@ -447,8 +446,7 @@ ideas = {
 			available = army
 			visible = { has_tech = mass_assault }
 			modifier = {
-				army_infantry_defence_factor = 0.05
-				army_defence_against_major_factor = 0.05
+				army_infantry_defence_factor = 0.08
 			}
 			ai_will_do = {
 				base = 1
@@ -488,8 +486,8 @@ ideas = {
 		static_warfare_spirit = {
 			ledger = army
 			modifier = {
-				max_dig_in = 2.5
-				dig_in_speed_factor = 0.25
+				max_dig_in = 4.0
+				dig_in_speed_factor = 0.4
 			}
 			ai_will_do = {
 				factor = 1
@@ -503,9 +501,9 @@ ideas = {
 		flexible_organization_spirit = {
 			ledger = army
 			modifier = {
-				org_loss_when_moving = -0.2
+				org_loss_when_moving = -0.4
 				army_speed_factor = 0.05
-				land_reinforce_rate	= 0.04
+				land_reinforce_rate	= 0.05
 			}
 			ai_will_do = {
 				factor = 1
@@ -537,8 +535,8 @@ ideas = {
 			ledger = army
 			modifier = {
 				training_time_army_factor = -0.5
-				experience_loss_factor = -0.15
-				army_org_factor = 0.05
+				experience_gain_army = 0.04
+				army_org_factor = 0.08
 			}
 			ai_will_do = {
 				factor = 1
@@ -552,8 +550,8 @@ ideas = {
 		victory_or_death_spirit = {
 			ledger = army
 			modifier = {
-				army_morale_factor = 0.1
-				org_loss_at_low_org_factor = -0.25
+				army_morale_factor = 0.12
+				org_loss_at_low_org_factor = -0.35
 			}
 			ai_will_do = {
 				factor = 1
@@ -567,9 +565,9 @@ ideas = {
 		maneuver_warfare_spirit = {
 			available = { has_tech = mobile_warfare }
 			modifier = {
-				breakthrough_factor = 0.03
+				breakthrough_factor = 0.06
 				army_speed_factor = 0.05
-				coordination_bonus = 0.03
+				coordination_bonus = 0.04
 			}
 			ai_will_do = {
 				base = 1
@@ -595,7 +593,7 @@ ideas = {
 			ledger = army
 			available = { has_tech = superior_firepower }
 			modifier = {
-				breakthrough_factor = 0.05
+				breakthrough_factor = 0.03
 				army_artillery_attack_factor = 0.08
 				special_forces_attack_factor = 0.08
 			}
@@ -618,9 +616,9 @@ ideas = {
 			ledger = army
 			available = { has_tech = trench_warfare }
 			modifier = {
-				supply_consumption_factor = -0.08
-				air_fuel_consumption_factor = -0.08
-				navy_fuel_consumption_factor = -0.08
+				supply_consumption_factor = -0.10
+				air_fuel_consumption_factor = -0.10
+				navy_fuel_consumption_factor = -0.10
 			}
 			ai_will_do = {
 				base = 1
@@ -641,7 +639,7 @@ ideas = {
 			ledger = army
 			available = { has_tech = mass_assault }
 			modifier = {
-				army_strength_factor = 0.15
+				army_strength_factor = 0.2
 				cas_damage_reduction = 0.05
 			}
 			ai_will_do = {

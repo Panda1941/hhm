@@ -9,12 +9,12 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				min_export = 0
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 
-				production_speed_buildings_factor = 0.10
+				production_speed_buildings_factor = 0.05
 				
-				research_speed_factor = 0.10
+				research_speed_factor = 0.025
 			}
 			allowed_to_remove = {
 				always = no
@@ -41,19 +41,19 @@ ideas = {
 			picture = generic_org_of_african_unity
 			name = "Africa Bonus"
 			modifier = {  
-				army_strength_factor = 0.75
+				army_strength_factor = 1.0
 				supply_consumption_factor = -0.05
 				army_org_regain = 0.1
 				supply_node_range = 0.15
 			}
 			modifier = {
-				air_attack_factor =-0.5
+				air_attack_factor =-0.3
 			
 			}
 			equipment_bonus = {
 				large_plane_airframe = {
 					instant = yes
-					air_defence = -0.5
+					air_defence = -0.3
 				}
 			}
 		}
@@ -98,9 +98,9 @@ ideas = {
 			}
 			removal_cost = -1
 			research_bonus = {
-				infantry_weapons = 0.15
-				artillery = 0.15
-				air_equipment = 0.15
+				infantry_weapons = 0.12
+				artillery = 0.12
+				air_equipment = 0.12
 			}
 			modifier = {
 				global_building_slots_factor = 0.2
@@ -166,7 +166,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_infantry_bonus
 			modifier = {
-				experience_gain_army = 0.15
+				experience_gain_army = 0.175
 
 				training_time_army_factor = -0.89
 				air_training_xp_gain_factor = 10
