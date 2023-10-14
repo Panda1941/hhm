@@ -575,7 +575,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_consumer_goods_factor = -0.03 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = -0.09 }
 			custom_effect_tooltip = ITA_investments_in_edison_ricostruzione_industriale_tt
 
 			159 = { #LOMBARDY (Milano)
@@ -802,7 +802,7 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = -0.04 }
 			custom_effect_tooltip = ITA_increase_production_military_industry_tt
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.03 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		}
 	}
@@ -829,7 +829,7 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = -0.2 }
 			custom_effect_tooltip = ITA_keep_specialization_military_industry_tt
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.03 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		}
 	}
@@ -1678,7 +1678,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_consumer_goods_factor = -0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = -0.03 }
 			custom_effect_tooltip = ITA_reggianes_exports_ricostruzione_industriale_tt
 
 			if = {
@@ -1781,7 +1781,7 @@ focus_tree = {
 		relative_position_id = ITA_citta_dell_aria
 		cost = 5
 		available = {
-			date > 1939.01.01
+			
 		}
 
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -4405,14 +4405,6 @@ focus_tree = {
 				limit = {
 					has_dlc = "No Step Back"
 				}
-				if = {
-					limit = {
-						has_tech = super_heavy_tank_chassis
-					}
-					#SH template
-					ITA_add_il_duce_sh_tank_template_and_production = yes
-				}
-				else = {
 					add_tech_bonus = {
 						name = ITA_capo_supremo
 						ahead_reduction = 2
@@ -4420,11 +4412,6 @@ focus_tree = {
 						uses = 1
 						technology = super_heavy_tank_chassis
 					}
-					custom_effect_tooltip = ITA_focus_sh_tank_template_tt
-					effect_tooltip = {
-						ITA_add_il_duce_sh_tank_template_and_production = yes
-					}
-				}
 			}
 			else = {
 				add_tech_bonus = {

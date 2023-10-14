@@ -828,7 +828,6 @@ technologies = {
 			small_bomb_bay
 			medium_bomb_bay
 			large_bomb_bay
-			torpedo_mounting
 		}
 			
 		research_cost = 1
@@ -838,6 +837,15 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 2 }
 		}
+		path = {
+			leads_to_tech = heavy_bombs
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = photo_reconnaisance
+			research_cost_coeff = 1
+		}
+		
 
 		
 		categories = {
@@ -865,7 +873,11 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 2 y = 4 }
+		}
+		path = {
+			leads_to_tech = armor_piercing_bombs
+			research_cost_coeff = 1
 		}
 		
 		categories = {
@@ -901,7 +913,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 2 }
+			position = { x = 2 y = 6 }
 		}
 		
 		categories = {
@@ -1180,7 +1192,9 @@ technologies = {
 	aa_cannon_1 = {
 
 		enable_equipment_modules = {
+			aircraft_cannon_1_1x
 			aircraft_cannon_1_2x
+			cannon_defense_turret
 			tank_buster_2
 		}
 		
@@ -1193,6 +1207,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = aa_cannon_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aa_cannon_3
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1229,6 +1247,7 @@ technologies = {
 	aa_cannon_2 = {
 
 		enable_equipment_modules = {
+			aircraft_cannon_2_1x
 			aircraft_cannon_2_2x
 			cannon_defense_turret_2x
 		}
@@ -1238,8 +1257,9 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 12 }
+			position = { x = 1 y = 12 }
 		}
+		
 
 		categories = {
 			air_equipment
@@ -1275,18 +1295,16 @@ technologies = {
 	aa_cannon_3 = {
 
 		enable_equipment_modules = {
-			aircraft_cannon_2_1x
-			aircraft_cannon_2_2x
-			cannon_defense_turret
-			cannon_defense_turret_2x
+			large_aircraft_cannon_1x
+			large_aircraft_cannon_2x
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1945
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 12 }
+			position = { x = -1 y = 12 }
 		}
 
 		categories = {

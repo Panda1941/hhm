@@ -581,6 +581,7 @@ if = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = { FRA_expanded_citizenship }
+			remove_ideas = { FRA_full_employment }
 		}
 	}
 

@@ -68,6 +68,7 @@ set_technology = {
 	mass_assault = 1
 	fleet_in_being = 1
 	basic_train = 1
+	tech_trucks = 1
 }
 if = {
 	limit = {

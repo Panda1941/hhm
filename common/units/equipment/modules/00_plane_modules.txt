@@ -580,6 +580,25 @@ equipment_modules = {
 			interception
 		}
 	}
+	
+	aircraft_cannon_1_2x = {
+		abbreviation = "ac12"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+
+		add_stats = {
+			air_attack = 20
+			build_cost_ic = 5
+			air_agility = -5
+			weight = 6
+		}
+		xp_cost = 0
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
 
 	aircraft_cannon_2_1x = {
 		abbreviation = "ac21"
@@ -592,6 +611,63 @@ equipment_modules = {
 			build_cost_ic = 4
 			air_agility = -3
 			weight = 5
+		}
+		xp_cost = 0
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+	
+	aircraft_cannon_2_2x = {
+		abbreviation = "ac32"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		parent = aircraft_cannon_1_2x
+		add_equipment_type = { fighter heavy_fighter }
+		add_stats = {
+			air_attack = 22
+			build_cost_ic = 6
+			air_agility = -5
+			weight = 6
+		}
+		xp_cost = 0
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+
+	large_aircraft_cannon_1x = {
+		abbreviation = "ac21"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		parent = aircraft_cannon_1_1x
+		add_equipment_type = { fighter heavy_fighter }
+		add_stats = {
+			air_attack = 11
+			build_cost_ic = 3
+			air_agility = -4
+			weight = 5
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+
+	large_aircraft_cannon_2x = {
+		abbreviation = "ac22"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		parent = aircraft_cannon_1_2x
+		add_equipment_type = { fighter heavy_fighter }
+		add_stats = {
+			air_attack = 22
+			build_cost_ic = 6
+			air_agility = -8
+			weight = 10
 		}
 		xp_cost = 0
 		allow_mission_type = {
@@ -764,6 +840,90 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 0.5
 	}
+	
+	heavy_bomb_locks = {
+		abbreviation = "bol"
+		category = cas_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+			naval_bomber
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_agility = -20
+				weight = 6
+				air_ground_attack = 8
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+			}
+			add_stats = {
+				air_agility = -20
+				weight = 6
+				naval_strike_attack = 3
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
+			}
+		}
+		dismantle_cost_ic = 0.5
+	}
+
+	armor_piercing_bomb_locks = {
+		abbreviation = "bol"
+		category = cas_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+			naval_bomber
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_agility = -20
+				weight = 6
+				air_ground_attack = 2
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+			}
+			add_stats = {
+				air_agility = -20
+				weight = 6
+				naval_strike_attack = 6
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
+			}
+		}
+		dismantle_cost_ic = 0.5
+	}
 
 	tank_buster_1 = {
 		abbreviation = "tb1"
@@ -849,7 +1009,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 			air_agility = -15
-			weight = 5
+			weight = 2
 		}
 		xp_cost = 0
 		allow_mission_type = {
@@ -863,7 +1023,7 @@ equipment_modules = {
 			}
 			add_stats = {
 				air_ground_attack = 8
-				weight = 0
+				weight = 2
 			}
 		}
 		mission_type_stats = {
@@ -872,7 +1032,7 @@ equipment_modules = {
 			}
 			add_stats = {
 				air_ground_attack = 4
-				weight = 0
+				weight = 2
 			}
 		}
 		mission_type_stats = {
@@ -881,7 +1041,7 @@ equipment_modules = {
 			}
 			add_stats = {
 				naval_strike_attack = 2
-				weight = 0
+				weight = 2
 			}
 			add_average_stats = {
 				naval_strike_targetting = 4
