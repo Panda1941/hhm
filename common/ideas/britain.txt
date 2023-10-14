@@ -170,6 +170,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.15
+				production_speed_arms_factory_factor = 0.025
+				production_speed_dockyard_factor = 0.025
 			}
 		}
 		
@@ -260,7 +262,7 @@ ideas = {
 					build_cost_ic = -0.1 instant = yes
 				}
 				convoy = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.2 instant = yes
 				}
 			}
 		}
@@ -468,7 +470,7 @@ ideas = {
 			modifier = {
 				democratic_drift = 0.1
 				stability_weekly = 0.002
-				political_power_factor = 0.05
+				political_power_factor = 0.075
 			}
 
 			picture = eng_steady_as_she_goes

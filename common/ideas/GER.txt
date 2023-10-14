@@ -199,7 +199,8 @@ ideas = {
 			picture = generic_exploit_mines
 
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.125
+				consumer_goods_factor = -0.025
 			}
 		}
 
@@ -653,9 +654,9 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.075
-				industrial_capacity_dockyard = -0.25
-				consumer_goods_factor = -0.10
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = -0.3
+				consumer_goods_factor = -0.125
 			}
 		}
 
