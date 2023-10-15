@@ -19,7 +19,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.075
-				consumer_goods_factor = -0.025
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -457,7 +457,7 @@ ideas = {
 		}
 		HUN_hungaro_german_trade_agreement_two = {
 
-		picture = HUN_hungaro_german_trade_treaty
+			picture = HUN_hungaro_german_trade_treaty
 		
 		
 		

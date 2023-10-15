@@ -4387,15 +4387,7 @@ add_ideas = {GER_sfh18_idea}
 		icon = GFX_focus_GER_first_vienna_award
 		prerequisite = { focus = GER_demand_sudetenland }
 		bypass = {
-			OR = {
-				AND = {
-					NOT = { CZE = { controls_state = 664 } }
-					NOT = { owns_state = 664 }
-				}
-				HUN = { is_friend_or_potential_friend_of_GER = no }
-				CZE = { is_puppet_of = GER }
-				CZE = { is_in_faction_with = GER }
-			}
+			
 		}
 		available = {
 			is_subject = no
@@ -4437,10 +4429,10 @@ add_ideas = {GER_sfh18_idea}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-		add_ideas = {
-		CZE_skoda_works
-}
-hidden_effect = {
+			add_ideas = {
+				CZE_skoda_works
+			}
+			hidden_effect = {
 			HUN = {
 				transfer_state = 664
 				add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
@@ -4545,44 +4537,7 @@ hidden_effect = {
 		
 		}
 		bypass = {
-			OR = {
-				AND = {
-					OR = {
-						HUN = {
-							NOT = { has_government = fascism }
-							is_friend_or_potential_friend_of_GER = no
-						}
-						ROM = {
-							OR = {
-								AND = {
-									NOT = { controls_state = 76 }
-									NOT = { controls_state = 83 }
-									NOT = { controls_state = 84 }
-								}
-								has_war_with = HUN
-								AND = {
-									is_in_faction_with = GER
-									HUN = { NOT = { is_in_faction_with = GER } }#GER should not want to give territory to Hungary if Romania joined the axis early.
-								}
-							}
-						}
-					}
-					OR = {
-						BUL = { is_friend_or_potential_friend_of_GER = no }
-						ROM = {
-							OR = {
-								NOT = { controls_state = 77 }
-								has_war_with = BUL					
-							}
-						}					
-					}
-				}
-				HUN = { exists = no } 
-				ROM = { exists = no	}
-				HUN = { has_capitulated = yes }
-				ROM = { has_capitulated = yes }
-				HUN = { is_subject_of = ROM } #just rude
-			}
+			
 		}
 		complete_tooltip = {
 			HUN = { 
@@ -4607,15 +4562,18 @@ hidden_effect = {
 					}
 				}
 				HUN = { 
-			transfer_state = 76
-			transfer_state = 83
-			transfer_state = 84
-			transfer_state = 82
-		}
+					transfer_state = 76
+					transfer_state = 83
+					transfer_state = 84
+					transfer_state = 82
+				}
 			}
 			HUN = {
-						add_ideas = HUN_overeliance_german_trade
-					}
+				add_timed_idea = {
+					idea = HUN_overeliance_german_trade
+					days = 365
+				}
+			}
 			
 		}
 	}

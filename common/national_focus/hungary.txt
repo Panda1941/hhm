@@ -1119,7 +1119,7 @@ focus_tree = {
 
 		available = {
 			date >1940.01.01
-			num_of_factories > 90
+			num_of_factories > 80
 		}
 
 		bypass = {
@@ -1393,7 +1393,14 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes 
+				}
+			}
 			every_army_leader = {
 				add_planning = 1
 			}
@@ -1494,6 +1501,14 @@ focus_tree = {
 				uses = 1
 				technology = mechanised_infantry
 			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes 
+				}
+			}
 		}
 	}
 
@@ -1531,6 +1546,14 @@ focus_tree = {
 				uses = 2
 				category = hospital_tech
 				category = logistics_tech
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes 
+				}
 			}
 		}
 	}
@@ -1805,6 +1828,14 @@ GER = { has_tech = basic_medium_tank_chassis
 				uses = 2
 				category = cat_mobile_warfare
 			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes 
+				}
+			}
 		}
 	}
 
@@ -1894,9 +1925,7 @@ GER = { has_tech = basic_medium_tank_chassis
 			add_building_construction = {
 				type = radar_station
 				level = 2
-				instant_build = yes
-				 
-				 
+				instant_build = yes 
 			}
 		}
 		43 = {

@@ -143,21 +143,6 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 			swap_ideas = {
 				remove_idea = BUL_national_industry_01
 				add_idea = BUL_national_industry_02
@@ -278,21 +263,6 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 			swap_ideas = {
 				remove_idea = BUL_national_industry_02
 				add_idea = BUL_national_industry_03
@@ -389,10 +359,9 @@ focus_tree = {
 		prerequisite = { focus = BUL_national_railway_lines }
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		relative_position_id = BUL_national_railway_lines
-		mutually_exclusive = { focus = BUL_light_metal_exploitation }
 		x = -1
 		y = 1
-		cost = 8
+		cost = 10
 
 		available = {
 			controls_state = 48
@@ -418,10 +387,9 @@ focus_tree = {
 		prerequisite = { focus = BUL_national_railway_lines }
 		icon = GFX_goal_generic_construct_civilian
 		relative_position_id = BUL_national_railway_lines
-		mutually_exclusive = { focus = BUL_all_that_glitters }
 		x = 1
 		y = 1
-		cost = 8
+		cost = 10
 
 		available = {
 			controls_state = 48
@@ -1801,21 +1769,6 @@ focus_tree = {
 	focus = {
 		id = BUL_total_war
 
-		select_effect = {
-			if = {
-				limit = {
-					any_allied_country = {
-						has_war_with = ROM
-					}
-				}
-				add_ai_strategy = {
-					type = prepare_for_war
-					id = ROM
-					value = 100
-				}
-			}
-		}
-
 		prerequisite = { focus = BUL_join_the_tripartite_pact }
 
 		icon = GFX_goal_generic_attack_allies
@@ -1825,13 +1778,13 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_government = fascism
+			date > 1940.06.01
 		}
 		
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			add_war_support = 0.1
-			add_stability = -0.1
+			add_war_support = 0.15
+			add_stability = -0.05
 			add_ideas = BUL_total_war
 		}
 	}
