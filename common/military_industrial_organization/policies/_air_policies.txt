@@ -18,7 +18,6 @@ mio_policy_air_perfect_finish = {
 	equipment_bonus = {
 		same_as_mio = {
 				maximum_speed = 0.05
-				build_cost_ic = 0.05
 			}
 	}
 }
@@ -108,7 +107,7 @@ mio_policy_air_modular_assembly  = {
 	available = { has_mio_size > 5}
 	production_bonus = {
 		same_as_mio = {
-			production_cost_factor = -0.05
+			production_cost_factor = -0.025
 		}
 	}	
 }

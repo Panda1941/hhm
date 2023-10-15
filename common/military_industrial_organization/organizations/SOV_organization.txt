@@ -57,11 +57,11 @@
 @materiel_3_X = 9
 @materiel_3_Y = 4
 #BONUSES
-@artillery_production_cost_factor = -0.1
-@infantry_equipment_production_cost_factor = -0.1
-@motorized_production_cost_factor = -0.1
-@materiel_production_efficiency_cap_factor = 0.1
-@materiel_production_capacity_factor = 0.1
+@artillery_production_cost_factor = -0.05
+@infantry_equipment_production_cost_factor = -0.05
+@motorized_production_cost_factor = -0.05
+@materiel_production_efficiency_cap_factor = 0.05
+@materiel_production_capacity_factor = 0.05
 
 
 ########    ###    ##    ## ##    ##  ######  
@@ -146,8 +146,9 @@ SOV_morozov_design_bureau_organization = {
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
 			FROM = {
-				has_full_control_of_state = 195 #LENINGRAD
+				has_full_control_of_state = 195 #LENINGRAD	
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -178,7 +179,8 @@ SOV_morozov_design_bureau_organization = {
 		available = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
-			} 
+			}
+            date > 1941.01.01			
 		}
 
 		on_complete = {
@@ -209,7 +211,8 @@ SOV_morozov_design_bureau_organization = {
 		available = {
 			FROM = {
 				has_full_control_of_state = 653 #SVERDLOVSK
-			} 
+			}
+            date > 1941.01.01			
 		}
 
 		on_complete = {
@@ -250,6 +253,7 @@ SOV_astrov_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 195 #LENINGRAD
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -281,6 +285,7 @@ SOV_astrov_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -312,6 +317,8 @@ SOV_astrov_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 653 #SVERDLOVSK
 			} 
+			date > 1941.01.01
+			
 		}
 
 		on_complete = {
@@ -386,6 +393,7 @@ SOV_okmo_organization = {
 			FROM = {
 				has_full_control_of_state = 195 #LENINGRAD
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -417,6 +425,7 @@ SOV_okmo_organization = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -448,6 +457,7 @@ SOV_okmo_organization = {
 			FROM = {
 				has_full_control_of_state = 653 #SVERDLOVSK
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -511,6 +521,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 			FROM = {
 				has_full_control_of_state = 195 #LENINGRAD
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -542,6 +553,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -573,6 +585,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 			FROM = {
 				has_full_control_of_state = 653 #SVERDLOVSK
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -619,6 +632,7 @@ SOV_kirov_organization = {
 			FROM = {
 				has_full_control_of_state = 195 #LENINGRAD
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -650,6 +664,7 @@ SOV_kirov_organization = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -681,6 +696,7 @@ SOV_kirov_organization = {
 			FROM = {
 				has_full_control_of_state = 653 #SVERDLOVSK
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -1028,10 +1044,7 @@ SOV_rubin_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 195 #LENINGRAD
 			}
-			FROM = {
-				 
-				has_completed_focus = SOV_surface_warfare
-			}
+			
 			#Only exists in this MIO
 		}
 
@@ -1061,10 +1074,7 @@ SOV_rubin_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 195 #LENINGRAD
 			}
-			FROM = {
-				 
-				has_completed_focus = SOV_submarine_warfare
-			}
+			
 			#Only exists in this MIO
 		}
 
@@ -1228,10 +1238,7 @@ SOV_black_sea_shipyard_organization = {
 			FROM = {
 				has_full_control_of_state = 202 #KIEV
 			}
-			FROM = {
-				 
-				has_completed_focus = SOV_surface_warfare
-			}
+			
 			#Only exists in this MIO
 		}
 
@@ -1261,10 +1268,7 @@ SOV_black_sea_shipyard_organization = {
 			FROM = {
 				has_full_control_of_state = 227 #STALINO
 			}
-			FROM = {
-				 
-				has_completed_focus = SOV_submarine_warfare
-			}
+			
 			#Only exists in this MIO
 		}
 
@@ -1490,7 +1494,8 @@ SOV_mig_design_bureau_organization = {
 		available = {
 			FROM = {
 				has_full_control_of_state = 251 #KUYBYSHEV
-			} 
+			}
+            date > 1942.01.01			
 		}
 
 		on_complete = {
@@ -1522,6 +1527,7 @@ SOV_mig_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 219 #MOSCOW
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -1558,6 +1564,7 @@ SOV_mig_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 808 #RIGA
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -1640,6 +1647,7 @@ SOV_ilyushin_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 251 #KUYBYSHEV
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -1671,6 +1679,7 @@ SOV_ilyushin_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 219 #MOSCOW
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -1707,6 +1716,7 @@ SOV_ilyushin_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 808 #RIGA
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -1755,6 +1765,7 @@ SOV_yakovlev_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 251 #KUYBYSHEV
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -1786,6 +1797,7 @@ SOV_yakovlev_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 219 #MOSCOW
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -1822,6 +1834,7 @@ SOV_yakovlev_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 808 #RIGA
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -1933,6 +1946,7 @@ SOV_tupolev_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 251 #KUYBYSHEV
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -1964,6 +1978,7 @@ SOV_tupolev_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 219 #MOSCOW
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -2000,6 +2015,7 @@ SOV_tupolev_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 808 #RIGA
 			} 
+			date > 1942.01.01	
 		}
 
 		on_complete = {
@@ -2086,6 +2102,7 @@ SOV_grabin_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 398 #PERM
 			} 
+			date > 1941.01.01	
 			#Only exists in this MIO
 		}
 
@@ -2111,6 +2128,7 @@ SOV_grabin_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 227 #STALINO
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -2142,6 +2160,7 @@ SOV_grabin_design_bureau_organization = {
 			FROM = {
 				has_full_control_of_state = 582 #MAGNITOGORSK
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -2213,6 +2232,7 @@ SOV_tula_arms_plant_organization = {
 			FROM = {
 				has_full_control_of_state = 399 #UDMURTIA (Izhevsk)
 			} 
+			date > 1941.01.01
 			#Only exists in this MIO
 		}
 
@@ -2238,6 +2258,7 @@ SOV_tula_arms_plant_organization = {
 			FROM = {
 				has_full_control_of_state = 227 #STALINO
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -2269,6 +2290,7 @@ SOV_tula_arms_plant_organization = {
 			FROM = {
 				has_full_control_of_state = 582 #MAGNITOGORSK
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -2361,6 +2383,7 @@ SOV_gaz_organization = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
 			} 
+			date > 1941.01.01
 			#Only exists in this MIO
 		}
 
@@ -2386,6 +2409,7 @@ SOV_gaz_organization = {
 			FROM = {
 				has_full_control_of_state = 227 #STALINO
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
@@ -2417,6 +2441,7 @@ SOV_gaz_organization = {
 			FROM = {
 				has_full_control_of_state = 582 #MAGNITOGORSK
 			} 
+			date > 1941.01.01
 		}
 
 		on_complete = {
