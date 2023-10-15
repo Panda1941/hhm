@@ -6,7 +6,7 @@ buildings = {
 
 
 	infrastructure = {
-		base_cost = 3000
+		base_cost = 2500
 		icon_frame = 3
 		infrastructure = yes
 		max_level = 5
@@ -21,7 +21,7 @@ buildings = {
 
 	arms_factory = {
 		show_on_map = 6
-		base_cost = 7500
+		base_cost = 8250
 		base_cost_conversion = 4000
 		military_production = 1
 		icon_frame = 2
@@ -34,7 +34,7 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 11000
+		base_cost = 11500
 		base_cost_conversion = 9000
 		general_production = 1
 		icon_frame = 1

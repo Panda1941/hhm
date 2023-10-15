@@ -532,6 +532,13 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
+			every_country = {
+				add_ideas = starting_production
+			}
+		}
+	}
+	on_startup = {
+		effect = {
 			#every_country = {
 			#	every_army_leader = {
 			#		limit = {
