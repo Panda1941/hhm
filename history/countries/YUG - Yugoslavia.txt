@@ -27,7 +27,7 @@ if = {
 		set_technology = {
 			iw_small_airframe = 1
 			basic_small_airframe = 1
-			engines_1 = 1
+			
 			aa_lmg = 1
 			aa_cannon_1 = 1
 		}
@@ -249,7 +249,7 @@ if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "YUG_1939_air_bba"
 			set_technology = {
-				engines_2 = 1
+				
 			}
 		else = {
 			set_air_oob = "YUG_1939_air_legacy"

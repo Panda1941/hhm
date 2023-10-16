@@ -21,8 +21,8 @@ if = {
 		set_technology = {
 			aa_lmg = 1
 			aa_cannon_1 = 1
-			engines_1 = 1
-			engines_2 = 1
+			
+			
 			early_bombs = 1
 			aircraft_construction = 1
 			iw_small_airframe = 1
@@ -1090,7 +1090,7 @@ if = {
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_small_cannon_2
-				turret_type_slot = tank_medium_three_man_tank_turret
+				turret_type_slot = tank_medium_breakthrough_turret_1
 				suspension_type_slot = tank_torsion_bar_suspension
 				armor_type_slot = tank_welded_armor
 				engine_type_slot = tank_gasoline_engine

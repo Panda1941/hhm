@@ -27,7 +27,6 @@ if = {
 		set_technology = {
 			iw_small_airframe = 1
 			aa_lmg = 1
-			engines_1 = 1
 		}
 	else = {
 		set_air_oob = "ROM_1936_air_legacy"
@@ -130,7 +129,6 @@ if = {
 	}
 	give_guarantee = CZE
 	give_guarantee = GRE
-	give_guarantee = TUR
 	give_guarantee = YUG
 }
 if = {
@@ -141,7 +139,6 @@ if = {
 		}
 	}
 	give_guarantee = GRE
-	give_guarantee = TUR
 	give_guarantee = YUG
 }
 add_ideas = neutrality_idea
@@ -241,7 +238,7 @@ set_convoys = 10
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_technology = {
-				engines_2 = 1
+				
 				basic_small_airframe = 1
 				improved_small_airframe = 1
 			}
