@@ -18,8 +18,7 @@ equipments = {
 		fuel_consumption = 0
 
 		upgrades = {
-			tank_reliability_upgrade
-			mech_cost_upgrade
+			
 		}
 		# Combat abilities
 		lg_armor_piercing = 1

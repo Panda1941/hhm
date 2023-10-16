@@ -18,8 +18,7 @@ equipments = {
 		}
 
 		upgrades = {
-			tank_reliability_upgrade
-			mech_cost_upgrade
+			
 		}
 		can_be_lend_leased = {
 			always = no

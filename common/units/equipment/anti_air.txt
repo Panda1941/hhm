@@ -12,8 +12,7 @@ equipments = {
 		group_by = archetype
 		
 		upgrades = {
-			tank_reliability_upgrade
-			mech_cost_upgrade
+			
 		}
 		
 		interface_category = interface_category_land

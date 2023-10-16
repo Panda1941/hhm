@@ -46,6 +46,32 @@ GER_porsche_organization = {
 			FROM = { has_completed_focus = NOR_invite_german_engineers }
 		}
 	}
+
+	
+
+	add_trait = {  
+		token = GER_mio_trait_hotrolled_armor
+		name = GER_mio_trait_hotrolled_armor
+		icon = GFX_generic_mio_department_icon_tank_general_technology
+		special_trait_background = yes
+
+		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis heavy_tank_chassis }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+
+			production_capacity_factor = 0.05
+		}
+
+		position = { x=0 y=2 }  
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+		}
+	}
 }
 
 GER_henschel_organization = {
@@ -109,6 +135,31 @@ GER_henschel_organization = {
 			}
 		}
 	}
+
+
+	add_trait = {  
+		token = GER_mio_trait_hotrolled_armor
+		name = GER_mio_trait_hotrolled_armor
+		icon = GFX_generic_mio_department_icon_tank_general_technology
+		special_trait_background = yes
+
+		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis heavy_tank_chassis }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+
+			production_capacity_factor = 0.05
+		}
+
+		position = { x=8 y=3 }  
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+		}
+	}
 }
 
 GER_man_organization = {
@@ -132,6 +183,30 @@ GER_man_organization = {
 				FROM = { NOT = { original_tag = GER } }
 			}
 			FROM = { NOT = { has_war_with = GER } }
+		}
+	}
+
+	add_trait = {  
+		token = GER_mio_trait_hotrolled_armor
+		name = GER_mio_trait_hotrolled_armor
+		icon = GFX_generic_mio_department_icon_tank_general_technology
+		special_trait_background = yes
+
+		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis heavy_tank_chassis }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+
+			production_capacity_factor = 0.05
+		}
+
+		position = { x=8 y=3 }  
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
 		}
 	}
 }
@@ -171,10 +246,12 @@ GER_daimler_benz_organization = {
 		icon = GFX_generic_mio_department_icon_tank_general_technology
 		special_trait_background = yes
 
-		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
+		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis heavy_tank_chassis }
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
 			production_efficiency_gain_factor = 0.05
+
+			production_capacity_factor = 0.05
 		}
 
 		position = { x=9 y=0 }  
@@ -194,7 +271,7 @@ GER_daimler_benz_organization = {
 		special_trait_background = yes
 
 		any_parent = { GER_mio_trait_hotrolled_armor }
-		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
+		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis heavy_tank_chassis }
 		equipment_bonus = {
 			armor_value = 0.1
 		} 

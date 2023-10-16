@@ -15,8 +15,7 @@ equipments = {
 		
 		active = yes
 		upgrades = {
-			tank_reliability_upgrade
-			mech_cost_upgrade
+			
 		}
 		
 		#Misc Abilities
