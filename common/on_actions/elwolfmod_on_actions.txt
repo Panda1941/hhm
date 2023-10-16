@@ -4,6 +4,16 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = {
+						tag = CHI
+					}
+				}
+				CHI = {
+					load_oob = "CHI_ELWOLF_SPAWN"
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
 						tag = GRE
 					}
 				}
