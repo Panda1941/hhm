@@ -1,0 +1,23 @@
+ideas = {
+    hidden_ideas = {
+		starting_efficiency = {
+
+            name = "Starting Production"
+
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_start_efficiency_factor = 0.4
+                production_factory_efficiency_gain_factor = 1000
+			}
+		}
+    }
+}

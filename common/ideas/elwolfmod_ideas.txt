@@ -723,21 +723,6 @@ ideas = {
 				production_speed_dockyard_factor = -0.15
 			}
 		}
-		
-		starting_production = {
-			cancel = {
-				date > 1936.01.01
-			}
-			name = "Starting Production"
-			allowed = {
-				always = no				# Added via focus
-			}
-			removal_cost = -1
-			picture = generic_central_management
-			modifier = {
-				production_factory_start_efficiency_factor = 1.0
-			}
-		}
 	}
 }
 

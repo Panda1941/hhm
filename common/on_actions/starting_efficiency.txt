@@ -1,0 +1,14 @@
+on_actions = {
+    on_startup = {
+		effect = {
+			every_country = {
+				add_timed_idea = {
+    				idea = starting_efficiency
+    				days = 1
+				}
+			}
+			
+		}
+	}
+}
+

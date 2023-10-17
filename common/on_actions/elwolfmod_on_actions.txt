@@ -142,13 +142,6 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
-			every_country = {
-				add_ideas = starting_production
-			}
-		}
-	}
-	on_startup = {
-		effect = {
 			ENG = {
 				remove_resource_rights = 676
 				remove_resource_rights = 291
