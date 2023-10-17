@@ -592,6 +592,255 @@ on_actions = {
 		}
 	}
 
+	#
+	on_daily_ETH = {
+		effect = {
+			# State Control - how many do we own, how many do we need to control
+			IF = {
+				limit = { 
+					ETH = { exists = yes } 
+					#TODO_TA add more triggers
+				}
+				# Get 50% limit
+				set_temp_variable = { temp_controlled_owned_50 = num_owned_states }
+				multiply_temp_variable = { temp_controlled_owned_50 = 0.5 }
+				round_temp_variable = temp_controlled_owned_50
+				set_variable = { controlled_owned_50 = temp_controlled_owned_50 }
+				set_variable = { controlled_owned_more_than_50 = controlled_owned_50 }
+				add_to_variable = {controlled_owned_more_than_50 = 1 }
+
+				# Get 75% limit
+				set_temp_variable = { temp_controlled_owned_75 = num_owned_states }
+				multiply_temp_variable = { temp_controlled_owned_75 = 0.75 }
+				round_temp_variable = temp_controlled_owned_75
+				set_variable = { controlled_owned_75 = temp_controlled_owned_75 }
+			}
+			# War Escalation Checks
+			IF = { 
+				limit = { 
+					has_global_flag = second_italo_ethiopian_war_flag 
+					NOT = { has_country_flag = ETH_divisions_count_flag }
+					ITA = {
+						num_divisions_in_states = {
+							 count > 24
+							 states = { 550 559 271 835 836 837 838 839 840 841 842 843 844 }
+							 exclude = { irregular_infantry } 
+						}
+					}
+				}
+				set_country_flag = ETH_divisions_count_flag 
+				ETH_escalate_the_war_effect = yes 
+			}
+			IF = { 
+				limit = { 
+					has_global_flag = second_italo_ethiopian_war_flag 
+					NOT = { has_country_flag = ETH_planes_count_flag }
+					ITA = {
+						num_planes_stationed_in_regions = {
+							value > 299
+				  			regions = { 17 273 274 }
+				  		}
+					}
+				}
+				LOG = "planes triggered"
+				set_country_flag = ETH_planes_count_flag 
+				ETH_escalate_the_war_effect = yes 
+			}
+			# trigger events (move to weekly if too performance heavy)
+			IF = {
+				limit = { 
+					has_global_flag = second_italo_ethiopian_war_flag 
+					is_tutorial = no 
+					NOT = { has_government = fascism } # not for collaboration regime
+				}
+				# International Rep Grows 
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ETH_international_reputation_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 2 }
+					}
+					set_country_flag = ETH_international_reputation_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.200
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+				# Army Morale Boost
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ETH_army_morale_boost_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 5 }
+					}
+					set_country_flag = ETH_army_morale_boost_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.201
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+				# Enemy desertions
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ETH_enemy_desertions_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 7 }
+					}
+					set_country_flag = ETH_enemy_desertions_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.202
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+				# Survival Against All odds
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ETH_survival_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 8 }
+					}
+					set_country_flag = ETH_survival_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.203
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+				# The People's War 
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ETH_peoples_war_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 9 }
+					}
+					set_country_flag = ETH_peoples_war_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.204
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+			}
+		}
+	}
+
+	on_daily_ITA = {
+		# war escalation effects 
+		effect = {
+			IF = {
+				limit = {
+					is_tutorial = no  
+					has_global_flag = second_italo_ethiopian_war_flag 
+				}
+				# Italian Public Concerned
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ITA_pulic_concerned_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 3 }
+					}
+					set_country_flag = ITA_pulic_concerned_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.300
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+				# Army of Africa Disheartened
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ITA_army_of_africa_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 4 }
+					}
+					set_country_flag = ITA_army_of_africa_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.301
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+				# Unrest in the Colonies
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ITA_unrest_in_the_colonies_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 5 }
+					}
+					set_country_flag = ITA_unrest_in_the_colonies_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.302
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+				# Italian Public Questions War Effort
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ITA_war_effort_questioned_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 6 }
+					}
+					set_country_flag = ITA_war_effort_questioned_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.303
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+				# Mass Desertions 
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ITA_mass_desertions_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 7 }
+					}
+					set_country_flag = ITA_mass_desertions_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.304
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+				# Uproar in the Colonies
+				IF = {
+					limit = { 
+						NOT = { has_country_flag = ITA_uproar_colonies_flag }
+						check_variable = { ETH.ETH_war_escalation_level > 9 }
+					}
+					set_country_flag = ITA_uproar_colonies_flag
+					country_event = {
+						id = BBA_italo_ethiopian_war_events.305
+						hours = 6 
+						random_hours = 8 
+					}
+				}
+			}
+		}
+	}
+
+	on_weekly_ETH = {
+		effect = {
+			IF = {
+				limit = {
+					ETH = {
+						exists = yes 
+						has_war = yes 
+					}
+				}
+				for_each_scope_loop = {
+					array = ETH_promised_states_array
+					IF = { 
+						limit = {
+							controller = {
+								NOT = { original_tag = ETH }
+								has_full_control_of_state = PREV
+								is_in_faction_with = ETH
+								has_war_with = PREV.owner 		
+							}
+							owner = {
+								has_war_with = ETH
+							}
+						}
+						set_state_controller_to = ETH 
+					}
+				}
+			}
+		}
+	}
 	#ROOT is winner #FROM is loser
 	on_peaceconference_ended = {
 		effect = {
