@@ -649,9 +649,7 @@ technologies = {
 		enable_subunits = {
 			paratrooper
 		}
-		enable_equipments = {
-		    paratrooper_equipment_1
-		}
+		
 		
 		path = {
 			leads_to_tech = paratroopers2
@@ -793,9 +791,7 @@ technologies = {
 		enable_subunits = {
 			marine
 		}
-		enable_equipments = {
-		    amphibious_equipment_1
-		}
+		
 		
 		on_research_complete_limit = {
 			NOT = {
@@ -921,9 +917,7 @@ technologies = {
 		enable_subunits = {
 			mountaineers
 		}
-		enable_equipments = {
-		    mountain_equipment_1
-		}
+		
 
 		on_research_complete_limit = {
 			NOT = {
@@ -1021,9 +1015,7 @@ technologies = {
 		enable_subunits = {
 			shock_troops
 		}
-		enable_equipments = {
-		    assault_equipment_1
-		}
+		
 
 		on_research_complete_limit = {
 			NOT = {
@@ -1115,9 +1107,7 @@ technologies = {
 		enable_subunits = {
 			jaeger
 		}
-		enable_equipments = {
-		    ranger_equipment_1
-		}
+		
 		on_research_complete = {
 			if = {
 				limit = {
@@ -1191,6 +1181,45 @@ technologies = {
 			jaeger_tech
 			infantry_tech
 			cat_special_forces_generic
+		}
+	}
+	
+	tech_special_forces_gear = {
+
+		enable_equipments = {
+			special_forces_equipment_1
+		}
+			
+		
+		
+		research_cost = 1.0
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @1918 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 4
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 4
+				date > "1939.1.1"
+			}
 		}
 	}
 	
@@ -2743,6 +2772,8 @@ technologies = {
 			winter_logistics_support
 		}
 	}
+	
+	
 
 	long_range_patrol_support_tech = {
 		

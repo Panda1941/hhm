@@ -1098,20 +1098,12 @@
  
  Naval_treaty_allies:0 "London Naval Treaty"
  
- amphibious_equipment:0 "Amphibious Equipment"
- amphibious_equipment_1:0 "Marine Gear I"
- 
- assault_equipment:0 "Assault Equipment"
- assault_equipment_1:0 "Siege Weapons I"
- 
- mountain_equipment:0 "Mountaineer Equipment"
- mountain_equipment_1:0 "Mountain Gear I"
- 
- paratrooper_equipment:0 "Paratrooper Equipment"
- paratrooper_equipment_1:0 "Parachute Gear I"
- 
- ranger_equipment:0 "Ranger Equipment"
- ranger_equipment_1:0 "Ranger Gear I"
- 
+ special_forces_equipment:0 "Special Forces Equipment"
+ special_forces_equipment_1:0 "Spcial Forces Gear"
  winter_logistics_support_tech:0 "Winter Gears"
+ tech_special_forces_gear:0 "Special Forces Equipment"
+ protein:0 "Protein"
+ protein_desc:0 "§RTHANK YOUR FOR THE PROTEIN SIR§! \n§Y Proteins are very important molecules that are essential for all living organisms. By dry weight, proteins are the largest unit of cells. Proteins are involved in virtually all cell functions and a different type of protein is devoted to each role, with tasks ranging from general cellular support to cell signaling and locomotion. In total, there are seven types of proteins..§!"
+ bullets:0 "Bullets"
+ bullets_desc:0 "§RI NEED MORE BULLETS§! \n§Y A bullet is a kinetic projectile, a component of firearm ammunition that is shot from a gun barrel. They are made of a variety of materials, such as copper, lead, steel, polymer, rubber and even wax; and are made in various shapes and constructions, including specialized functions such as hunting, target shooting, training, and combat. Bullets are often tapered, making them more aerodynamic. Bullet size is expressed by weight and diameter (referred to as "caliber") in both imperial and metric measurement systems§!"
 

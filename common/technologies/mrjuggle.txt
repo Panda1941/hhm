@@ -1,0 +1,28 @@
+technologies = {
+	bullets = {
+		
+		research_cost = 0
+		
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 0 }
+		}
+		on_research_complete = {
+		set_technology={bullets=0
+		}
+		}
+	}
+	protein = {
+		research_cost = 0
+		
+		folder = {
+			name = industry_folder
+			position = { x = 9 y = 0 }
+		}
+		on_research_complete = {
+		set_technology={protein=0
+		}
+		}
+	}
+}
+

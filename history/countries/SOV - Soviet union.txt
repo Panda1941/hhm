@@ -362,6 +362,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
+	tech_special_forces_gear = 1
 	motorised_infantry = 1
 	tech_trucks = 1
 	paratroopers = 1
@@ -373,6 +374,8 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
+	air_torpedoe_1 = 1
+	pack = 1
 }
 
 if = {

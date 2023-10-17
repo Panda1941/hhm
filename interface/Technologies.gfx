@@ -7929,7 +7929,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_early_bombs_medium"
-		texturefile = "gfx/interface/technologies/bba_tech_bombs.dds"																		  
+		texturefile = "gfx/interface/technologies/bba_tech_early_bombs.dds"																		  
 	}
 	SpriteType = {
 		name = "GFX_photo_reconnaisance_medium"
@@ -8592,5 +8592,19 @@ spriteTypes = {
 		name = "GFX_FIN_super_heavy_tank_2_medium"
 		texturefile = "gfx/interface/technologies/FIN_super_heavy_tank_2.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_protein_medium"
+		texturefile = "gfx/interface/technologies/protein.png"
+	}
+	SpriteType = {
+		name = "GFX_bullets_medium"
+		texturefile = "gfx/interface/technologies/bullets.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_special_forces_gear_medium"
+		texturefile = "gfx/interface/technologies/special_equipment.dds"
+	}
+	
 	
 }

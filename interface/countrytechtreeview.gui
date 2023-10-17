@@ -323,6 +323,13 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
+			
+			gridboxtype = {
+				name = "tech_special_forces_gear_tree"
+				position = { x = 140 y = 1400 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 
 
 			
@@ -3093,6 +3100,22 @@ guiTypes = {
 			gridboxtype = {
 				name = "construction1_tree"
 				position = { x = 894 y = 312 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "bullets_tree"
+				position = { x = 1100 y = 50 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "protein_tree"
+				position = { x = 300 y = 50 }
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"

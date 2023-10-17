@@ -420,6 +420,7 @@ sub_units = {
 		priority = 0
 		ai_priority = 0
 		active = no
+		affects_speed = no
 
 		type = {
 			infantry
@@ -454,7 +455,7 @@ sub_units = {
 
 		# Support nerfs to combat abilities
 
-		maximum_speed = 0.6 # move at horsie speeds
+		
 		
 		essential = {
 			infantry_equipment
@@ -462,9 +463,9 @@ sub_units = {
 		}
 
 		need = {
-			infantry_equipment = 80
-			support_equipment = 60
-			ranger_equipment = 25
+			infantry_equipment = 100
+			support_equipment = 50
+			special_forces_equipment = 25
 		}
 		
 		forest = {
@@ -497,6 +498,7 @@ sub_units = {
 		priority = 0
 		ai_priority = 0
 		active = no
+		affects_speed = no
 
 		type = {
 			infantry
@@ -504,6 +506,8 @@ sub_units = {
 		}
 		
 		group = support
+		
+		
 		
 		categories = {
 			category_front_line
@@ -548,8 +552,9 @@ sub_units = {
 		}
 
 		need = {
-			infantry_equipment = 80
-			support_equipment = 60
+			infantry_equipment = 100
+			support_equipment = 50
+			special_forces_equipment = 25
 		}
 		
 		snow = { #This can end up stacking with terrain benefits
@@ -558,6 +563,7 @@ sub_units = {
 			movement = 0.20
 		}
 	}
+
 	
 	long_range_patrol_support = { # Long-range patrols for Finland
 		abbreviation = "LRP"
@@ -566,6 +572,7 @@ sub_units = {
 		priority = 0
 		ai_priority = 0
 		active = no
+		affects_speed = no
 
 		type = {
 			infantry
@@ -608,7 +615,7 @@ sub_units = {
 		recon = 2 #Recon is 1
 		can_be_parachuted = yes
 
-		maximum_speed = 0.6 # move at horsie speeds
+		
 		
 		essential = {
 			infantry_equipment

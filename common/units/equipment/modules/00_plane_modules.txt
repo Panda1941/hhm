@@ -580,25 +580,6 @@ equipment_modules = {
 			interception
 		}
 	}
-	
-	aircraft_cannon_1_2x = {
-		abbreviation = "ac12"
-		category = fighter_weapon
-		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { fighter heavy_fighter }
-
-		add_stats = {
-			air_attack = 20
-			build_cost_ic = 5
-			air_agility = -5
-			weight = 6
-		}
-		xp_cost = 0
-		allow_mission_type = {
-			air_superiority
-			interception
-		}
-	}
 
 	aircraft_cannon_2_1x = {
 		abbreviation = "ac21"
@@ -619,24 +600,7 @@ equipment_modules = {
 		}
 	}
 	
-	aircraft_cannon_2_2x = {
-		abbreviation = "ac32"
-		category = fighter_weapon
-		sfx = sfx_ui_sd_module_turret
-		parent = aircraft_cannon_1_2x
-		add_equipment_type = { fighter heavy_fighter }
-		add_stats = {
-			air_attack = 22
-			build_cost_ic = 6
-			air_agility = -5
-			weight = 6
-		}
-		xp_cost = 0
-		allow_mission_type = {
-			air_superiority
-			interception
-		}
-	}
+	
 
 	large_aircraft_cannon_1x = {
 		abbreviation = "ac21"

@@ -830,7 +830,7 @@ technologies = {
 			large_bomb_bay
 		}
 			
-		research_cost = 1
+		research_cost = 2
 		start_year = 1922
 
 		folder = {
@@ -839,6 +839,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = heavy_bombs
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_piercing_bombs
 			research_cost_coeff = 1
 		}
 		path = {
@@ -868,17 +872,14 @@ technologies = {
 					heavy_bomb_locks
 		}
 			
-		research_cost = 1
-		start_year = 1940
+		research_cost = 2
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 4 }
+			position = { x = 1 y = 4 }
 		}
-		path = {
-			leads_to_tech = armor_piercing_bombs
-			research_cost_coeff = 1
-		}
+		
 		
 		categories = {
 			air_equipment
@@ -908,12 +909,12 @@ technologies = {
 					armor_piercing_bomb_locks
 		}
 			
-		research_cost = 1
+		research_cost = 2
 		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 6 }
+			position = { x = 3 y = 4 }
 		}
 		
 		categories = {
@@ -1140,54 +1141,7 @@ technologies = {
 		}
 	}
 	
-	survivability_studies = {
-
-		enable_equipment_modules = {
-			self_sealing_fuel_tanks_small
-			self_sealing_fuel_tanks_medium
-			self_sealing_fuel_tanks_large
-			armor_plate_small
-			armor_plate_medium
-			armor_plate_large
-		}
-		
-		research_cost = 1
-		start_year = 1939
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = -2 y = 5 }
-		}
-
-		categories = {
-			air_equipment
-			plane_modules_tech
-			mio_cat_all_light_fighter_and_modules
-			mio_cat_all_medium_aircraft_and_modules
-			mio_cat_all_heavy_aircraft_and_modules
-			mio_cat_all_light_aircraft_and_modules
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				date > "1937.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1938.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1939.1.1"
-				factor = 3
-			}
-			modifier = {
-				has_War = yes
-				factor = 3
-			}
-		}
-	}
+	
 
 	aa_cannon_1 = {
 
