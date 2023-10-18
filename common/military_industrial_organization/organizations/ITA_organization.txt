@@ -98,7 +98,7 @@ ITA_fiat_organization = {
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.15
 		}
 	}
 }

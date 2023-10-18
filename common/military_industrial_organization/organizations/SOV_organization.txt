@@ -13,7 +13,7 @@
 @tank_3_Y = 4
 #BONUSES
 @tank_max_speed = 0.05
-@tank_production_capacity_factor = 0.05
+@tank_production_capacity_factor = 0.06
 @tank_soft_attack = 0.05
 
 
@@ -42,7 +42,7 @@
 @aircraft_3_X = 9
 @aircraft_3_Y = 4
 #BONUSES
-@aircraft_production_cost_factor = -0.05
+@aircraft_production_cost_factor = -0.04
 @aircraft_air_agility = 0.05
 @aircraft_air_defence = 0.1
 @aircraft_surface_detection = 0.15
@@ -57,11 +57,11 @@
 @materiel_3_X = 9
 @materiel_3_Y = 4
 #BONUSES
-@artillery_production_cost_factor = -0.05
-@infantry_equipment_production_cost_factor = -0.05
-@motorized_production_cost_factor = -0.05
+@artillery_production_cost_factor = -0.04
+@infantry_equipment_production_cost_factor = -0.04
+@motorized_production_cost_factor = -0.04
 @materiel_production_efficiency_cap_factor = 0.05
-@materiel_production_capacity_factor = 0.05
+@materiel_production_capacity_factor = 0.08
 
 
 ########    ###    ##    ## ##    ##  ######  

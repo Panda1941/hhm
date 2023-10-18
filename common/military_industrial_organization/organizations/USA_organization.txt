@@ -99,8 +99,8 @@ USA_chrysler_organization = {
 
 		all_parents = { USA_mio_trait_strict_design_specifications }
 		production_bonus = {
-			production_cost_factor = -0.1
-			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
+			production_capacity_factor = 0.1
 		}
 	}
 }
@@ -556,7 +556,7 @@ USA_ford_motor_company_organization = {
 	
 	initial_trait = {
 		equipment_bonus = {
-			build_cost_ic = -0.05
+			build_cost_ic = -0.03
 		}
 	}
 }

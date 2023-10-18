@@ -26,13 +26,7 @@ POL_pzinz_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = POL } }
-			}
-			FROM = { NOT = { has_war_with = POL } }
-		}
+		
 	}
 	
 	initial_trait = {
