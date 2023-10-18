@@ -427,7 +427,7 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 112					-- You can have a minimum of 
 
 -- Adding equipment capture
 
-NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.02		-- 0.0 after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
+NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.05		-- 0.0 after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
 
 -- NERF TO INFRA
 
