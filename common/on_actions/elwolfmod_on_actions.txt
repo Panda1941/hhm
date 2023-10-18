@@ -582,8 +582,8 @@ on_actions = {
 				}
 
 				CAN = {
-					add_offsite_building = { type = industrial_complex level = 4 }
-					add_offsite_building = { type = arms_factory level = 2 }
+					add_offsite_building = { type = industrial_complex level = 17 }
+					add_offsite_building = { type = arms_factory level = 9 }
 				}
 				SAF = {
 					add_offsite_building = { type = industrial_complex level = 6 }
@@ -645,8 +645,8 @@ on_actions = {
 				}
 
 				CAN = {
-					add_offsite_building = { type = industrial_complex level = 2 }
-					add_offsite_building = { type = arms_factory level = 1 }
+					add_offsite_building = { type = industrial_complex level = 15 }
+					add_offsite_building = { type = arms_factory level = 8 }
 				}
 				SAF = {
 					add_offsite_building = { type = industrial_complex level = 3 }

@@ -125,7 +125,7 @@ equipments = {
 		
 		naval_range = 3000
 		
-		max_strength = 350
+		max_strength = 400
 
 		fuel_consumption = 67
 		
@@ -286,7 +286,7 @@ equipments = {
 
 		naval_range = 3000
 		
-		max_strength = 350
+		max_strength = 400
 		reliability = 0.80
 		fuel_consumption = 67
 		
@@ -345,7 +345,7 @@ equipments = {
 		}
 		naval_range = 3500
 		
-		max_strength = 370
+		max_strength = 400
 		reliability = 0.85
 		fuel_consumption = 67
 		naval_speed = 30
@@ -478,7 +478,7 @@ equipments = {
 		}
 		naval_range = 4500
 		
-		max_strength = 450
+		max_strength = 400
 		naval_speed = 30
 		fuel_consumption = 67
 		reliability = 0.95
@@ -578,7 +578,7 @@ equipments = {
 		}
 		naval_range = 4500
 		naval_speed = 32
-		max_strength = 700
+		max_strength = 800
 		fuel_consumption = 75
 		reliability = 0.80
 		build_cost_ic = 5500

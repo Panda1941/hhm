@@ -76,7 +76,7 @@ equipments = {
 		
 		naval_range = 2500
 		
-		max_strength = 10
+		max_strength = 20
 		
 
 		fuel_consumption = 1
@@ -182,7 +182,7 @@ equipments = {
 		
 		naval_range = 5000
 		
-		max_strength = 30
+		max_strength = 20
 
 
 		
@@ -230,7 +230,7 @@ equipments = {
 
 		naval_range = 6000
 		
-		max_strength = 35
+		max_strength = 20
 		
 
 		
@@ -289,7 +289,7 @@ equipments = {
 		
 		naval_range = 5000
 		
-		max_strength = 30
+		max_strength = 20
 
 
 		
@@ -328,7 +328,7 @@ equipments = {
 		
 		naval_range = 500
 		
-		max_strength = 5
+		max_strength = 10
 
 		manpower = 100
 
