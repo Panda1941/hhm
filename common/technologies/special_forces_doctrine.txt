@@ -87,11 +87,16 @@ technologies = {
 		xor = { rangers }
 		
 		rangers_support = {
-			acclimatization_cold_climate_gain_factor = 0.25
-			snow = {
+			#acclimatization_cold_climate_gain_factor = 0.25
+			#snow = {
+			#	attack = 0.15
+			#	defence = 0.20
+			#	movement = 0.15
+			#}
+			forest = {
 				attack = 0.15
-				defence = 0.20
-				movement = 0.15
+				defence = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -134,9 +139,9 @@ technologies = {
 		
 		rangers_support = {
 			mountain = {
-				attack = 0.20
+				attack = 0.15
 				defence = 0.10
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -219,9 +224,9 @@ technologies = {
 		category_mountaineers = {
 			defense = 0.10
 		}
-		mountaineers = {
-			combat_width = -0.2
-		}
+		#mountaineers = {
+		#	combat_width = -0.2
+		#}
 		
 		path = {
 			leads_to_tech = mountaineers_combat_3
@@ -268,14 +273,14 @@ technologies = {
 		artillery = {
 			battalion_mult = {
 				category = category_mountaineers
-				breakthrough = 0.15
+				breakthrough = 0.10
 			}
 		}
 		
 		rangers_support = {
 			battalion_mult = {
 				category = category_line_artillery
-				soft_attack = 0.20
+				soft_attack = 0.10
 			}
 		}
 		
@@ -394,7 +399,7 @@ technologies = {
 		
 		special_forces_min = 28
 		special_forces_out_of_supply_factor = -0.1
-		special_forces_attack_factor = 0.10
+		special_forces_attack_factor = 0.05
 		acclimatization_hot_climate_gain_factor = 0.10
 		acclimatization_cold_climate_gain_factor = 0.10
 		
@@ -515,7 +520,7 @@ technologies = {
 			jungle = {
 				attack = 0.15
 				defence = 0.10
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -564,9 +569,9 @@ technologies = {
 		
 		pioneer_support = {
 			amphibious = {
-				attack = 0.25
-				defence = 0.15
-				movement = 0.20
+				attack = 0.15
+				defence = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -611,7 +616,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		unit_marine_design_cost_factor = -0.50
+		#unit_marine_design_cost_factor = -0.50
 
 		marine = {
 			max_organisation = 5
@@ -804,7 +809,7 @@ technologies = {
 		}
 		
 		shore_bombardment_bonus = 0.15
-		special_forces_attack_factor = 0.10
+		special_forces_attack_factor = 0.05
 			
 		doctrine = yes	
 		research_cost = 2.25
@@ -852,10 +857,12 @@ technologies = {
 			}
 		}
 		
+		special_forces_attack_factor = 0.10
 		
-		on_research_complete = {
-			add_ideas = GEN_cheaper_amphib
-		}
+		
+		#on_research_complete = {
+		#	add_ideas = GEN_cheaper_amphib
+		#}
 		
 		doctrine = yes	
 		research_cost = 2.25
@@ -1395,7 +1402,7 @@ technologies = {
 		
 		special_forces_min = 14
 		special_forces_training_time_factor = -0.10
-		special_forces_attack_factor = 0.10
+		special_forces_attack_factor = 0.05
 			
 		doctrine = yes	
 		research_cost = 2.25

@@ -436,7 +436,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			hg_attack = 7.0
-			lg_attack = 7.0
+			lg_attack = 4.0
 			build_cost_ic = 725
 			#surface_visibility = 3.5
 		}
@@ -446,7 +446,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 22
-			max_strength = 60
+			max_strength = 90
 		}
 		build_cost_resources = {
 			steel = 1
@@ -477,7 +477,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			hg_attack = 9.0
-			lg_attack = 9.0
+			lg_attack = 6.0
 			build_cost_ic = 675
 			#surface_visibility = 3.5
 		}
@@ -487,7 +487,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 25
-			max_strength = 60
+			max_strength = 90
 		}
 		build_cost_resources = {
 			steel = 1
@@ -518,7 +518,7 @@ equipment_modules = {
 
 		add_stats = {
 			hg_attack = 11.0
-			lg_attack = 11.0
+			lg_attack = 8.0
 			build_cost_ic = 725
 			#surface_visibility = 3.5
 		}
@@ -528,7 +528,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 29
-			max_strength = 60
+			max_strength = 90
 		}
 		build_cost_resources = {
 			steel = 2
@@ -565,7 +565,7 @@ equipment_modules = {
 
 		add_stats = {
 			hg_attack = 13.0
-			lg_attack = 13.0
+			lg_attack = 12.0
 			build_cost_ic = 775
 			#surface_visibility = 3.5
 		}
@@ -575,7 +575,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 34
-			max_strength = 60
+			max_strength = 90
 		}
 		build_cost_resources = {
 			steel = 2
@@ -2358,7 +2358,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			build_cost_ic = 0.125
-			naval_speed = -0.3
+			naval_speed = -0.30
 			max_strength = 0.10
 
 		}
@@ -2398,7 +2398,7 @@ equipment_modules = {
 		parent = ship_armor_bb_1
 		multiply_stats = {
 			build_cost_ic = 0.15
-			naval_speed = -0.3
+			naval_speed = -0.30
 			max_strength = 0.10
 		}
 		build_cost_resources = {
@@ -2439,7 +2439,7 @@ equipment_modules = {
 		parent = ship_armor_bb_2
 		multiply_stats = {
 			build_cost_ic = 0.175
-			naval_speed = -0.3
+			naval_speed = -0.30
 			max_strength = 0.15
 		}
 		build_cost_resources = {
@@ -2521,8 +2521,8 @@ equipment_modules = {
 		parent = ship_armor_cruiser_1
 		multiply_stats = {
 			build_cost_ic = 0.15
-			naval_speed = -0.075
-			max_strength = 0.05
+			naval_speed = -0.05
+			max_strength = 0.10
 		}
 		dismantle_cost_ic = 3000
 		
@@ -2540,8 +2540,8 @@ equipment_modules = {
 		parent = ship_armor_cruiser_2
 		multiply_stats = {
 			build_cost_ic = 0.2
-			naval_speed = -0.1
-			max_strength = 0.1
+			naval_speed = -0.10
+			max_strength = 0.15
 		}
 		dismantle_cost_ic = 3500
 		
@@ -2560,8 +2560,8 @@ equipment_modules = {
 		parent = ship_armor_cruiser_3
 		multiply_stats = {
 			build_cost_ic = 0.25
-			naval_speed = -0.125
-			max_strength = 0.15
+			naval_speed = -0.15
+			max_strength = 0.20
 		}
 		dismantle_cost_ic = 4000
 		
@@ -2588,8 +2588,8 @@ equipment_modules = {
 			naval_speed = -0.05
 		}
 		add_stats = {
-			armor_value = 5
-			max_strength = 25
+			armor_value = 10
+			max_strength = 50
 		}
 		dismantle_cost_ic = 2500
 	}
