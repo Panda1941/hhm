@@ -169,7 +169,7 @@ NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.1 -- Each carrier above the opti
 
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80.0,	-- big guns
-		160.0,	-- torpedos
+		100.0,	-- torpedos	-- latest change brings torpedoes to vanilla value
 		45,	-- small guns
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
@@ -193,7 +193,7 @@ NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
     0.0, -- HOLD
     1.0, -- PATROL		
-    0.5, -- STRIKE FORCE 
+    1.0, -- STRIKE FORCE 
     0.5, -- CONVOY RAIDING
     0.5, -- CONVOY ESCORT
     0.3, -- MINES PLANTING	
@@ -201,6 +201,18 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
     0.0, -- TRAIN
     0.0, -- RESERVE_FLEET
     1.0, -- NAVAL_INVASION_SUPPORT
+}
+NDefines.NNavy.MISSION_FUEL_COSTS = { 
+	0.0, -- HOLD
+	1.0, -- PATROL		
+	1.0, -- STRIKE FORCE 
+	1.0, -- CONVOY RAIDING
+	1.0, -- CONVOY ESCORT
+	1.0, -- MINES PLANTING	
+	1.0, -- MINES SWEEPING	
+	0.0, -- TRAIN
+	0.0, -- RESERVE_FLEET
+	1.0, -- NAVAL_INVASION_SUPPORT
 }
 
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
@@ -432,8 +444,8 @@ NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.05		-- 0.0 after a successfu
 -- NERF TO INFRA
 
 NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 0.25
-NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_FROM = { 1, 0.125, 0.0, 0.1 }
-NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_TO = { 0.1, 0.9, 0.1, 0.6 }
+NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_FROM = { 0.25, 0.125, 0.0, 0.1 }
+NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_TO = { 0.05, 0.9, 0.1, 0.6 }
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.30         -- effect on defense due to enemy air superiorty
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.70	       -- more AA attack will approach this amount of help (diminishing returns)

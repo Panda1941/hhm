@@ -371,7 +371,7 @@ operation_collaboration_government = { ### 10 2/55
 	desc = operation_collaboration_government_desc
 	priority = 10
 
-	days = 220
+	days = 270
 	network_strength = 60
 	operatives = 1
 	
