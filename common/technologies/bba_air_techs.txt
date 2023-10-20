@@ -1146,7 +1146,6 @@ technologies = {
 	aa_cannon_1 = {
 
 		enable_equipment_modules = {
-			aircraft_cannon_1_1x
 			aircraft_cannon_1_2x
 			cannon_defense_turret
 			tank_buster_2
@@ -1201,7 +1200,6 @@ technologies = {
 	aa_cannon_2 = {
 
 		enable_equipment_modules = {
-			aircraft_cannon_2_1x
 			aircraft_cannon_2_2x
 			cannon_defense_turret_2x
 		}
@@ -1249,7 +1247,6 @@ technologies = {
 	aa_cannon_3 = {
 
 		enable_equipment_modules = {
-			large_aircraft_cannon_1x
 			large_aircraft_cannon_2x
 		}
 		

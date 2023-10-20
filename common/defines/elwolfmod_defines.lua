@@ -444,8 +444,8 @@ NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.05		-- 0.0 after a successfu
 -- NERF TO INFRA
 
 NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 0.25
-NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_FROM = { 0.25, 0.125, 0.0, 0.1 }
-NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_TO = { 0.05, 0.9, 0.1, 0.6 }
+NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_FROM = { 1.0, 1.0, 0.0, 0.1 }
+NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_TO = { 1.0, 1.0, 0.1, 0.5 }
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.30         -- effect on defense due to enemy air superiorty
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.70	       -- more AA attack will approach this amount of help (diminishing returns)

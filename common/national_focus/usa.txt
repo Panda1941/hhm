@@ -468,6 +468,36 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = USA_extra_tech_slot_0
+		icon = GFX_focus_research
+		text = "Extra Research Slot"
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_federal_housing_act }
+		relative_position_id = USA_federal_housing_act
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
 		id = USA_office_of_scientific_research_and_development
 		icon = GFX_focus_research
 		x = 1
@@ -1300,6 +1330,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			democratic > 0.95
+			date > 1940.06.01
 		}
 		completion_reward = {
 			add_ideas = wartime_industry_focus
@@ -2222,6 +2253,36 @@ focus_tree = {
 				remove_idea = USA_banking_sector_deregulation
 				add_idea = USA_national_employment_strategy
 			}
+		}
+	}
+	focus = {
+		id = USA_extra_tech_slot_1
+		icon = GFX_focus_research
+		text = "Extra Research Slot"
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_national_employment_strategy }
+		relative_position_id = USA_national_employment_strategy
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 

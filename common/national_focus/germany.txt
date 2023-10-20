@@ -4066,7 +4066,7 @@ add_ideas = {GER_sfh18_idea}
 			factor = 0
 		}	
 		completion_reward = {
-			add_named_threat = { threat = 5 name = GER_danzig_or_war }
+			add_named_threat = { threat = 20 name = GER_danzig_or_war }
 			declare_war_on = {
 				target = POL 
 				type = annex_everything

@@ -457,6 +457,10 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.06
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_1
+		}
 		
 		path = {
 			leads_to_tech = improved_computing_machine 
@@ -508,8 +512,10 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.07
+
 		enable_equipment_modules = {
 			bomb_sights_2
+			ship_fire_control_system_2
 		}
 		path = {
 			leads_to_tech = advanced_computing_machine 
@@ -569,6 +575,9 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.1
+		enable_equipment_modules = { 
+			ship_fire_control_system_3
+		}
 		
 		path = {
 			leads_to_tech = advanced_encryption 
@@ -630,6 +639,10 @@ technologies = {
 			leads_to_tech = modern_decryption 
 			research_cost_coeff = 1
 		}
+
+		critical_receive_chance = -0.10
+		naval_light_gun_hit_chance_factor = 0.15
+		naval_heavy_gun_hit_chance_factor = 0.15
 		
 		enable_equipment_modules = {
 			bomb_sights_3
@@ -910,127 +923,6 @@ technologies = {
 			decryption_tech
 		}
 	}
-
-	basic_fire_control_system = {
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
-		enable_equipment_modules = { 
-			ship_fire_control_system_1
-		}
-		
-		research_cost = 0.75
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				OR = {
-					can_research = improved_fire_control_system
-					has_tech = improved_fire_control_system
-				}
-				factor = 0
-			}
-		}
-		
-		categories = {
-			electronics
-			computing_tech
-			naval_equipment
-		}
-	}
-
-	improved_fire_control_system = {
-
-		enable_equipment_modules = { 
-			ship_fire_control_system_2
-		}
-		
-		research_cost = 0.75
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				OR = {
-					can_research = advanced_fire_control_system
-					has_tech = advanced_fire_control_system
-				}
-				factor = 0
-			}
-		}
-		
-		categories = {
-			electronics
-			computing_tech
-			naval_equipment
-		}
-	}
-
-	advanced_fire_control_system = {
-
-		enable_equipment_modules = { 
-			ship_fire_control_system_3
-		}
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-		
-		research_cost = 0.75
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			
-		}
-		
-		categories = {
-			electronics
-			computing_tech
-			naval_equipment
-		}
-	}
-
 	
 	experimental_rockets = {
 
@@ -1487,47 +1379,6 @@ technologies = {
 			ship_radar_5
 			air_air_radar_3
 			tank_radio_4
-		}
-	}
-	
-	modern_fire_control_system = {
-
-		enable_equipment_modules = { 
-			
-		}
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-		
-		research_cost = 1
-		
-		critical_receive_chance = -0.10
-		naval_light_gun_hit_chance_factor = 0.15
-		naval_heavy_gun_hit_chance_factor = 0.15
-		
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 16 }
-		}
-		
-		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			
-		}
-		
-		categories = {
-			electronics
-			computing_tech
-			naval_equipment
 		}
 	}
 }
