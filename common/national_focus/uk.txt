@@ -648,31 +648,12 @@ focus_tree = {
 			focus = limited_rearmament_focus
 		}
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					threat > 0.1
-					has_war = yes
-					has_idea = ENG_no_further_appeasement_idea
-					NOT = {
-						has_government = democratic
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Man the Guns"
-					}
-				}
-				OR = {
-					threat > 0.1
-					has_war = yes
-					NOT = {
-						has_government = democratic
-					}
+			OR = {
+				threat > 0.1
+				has_war = yes
+				has_idea = ENG_no_further_appeasement_idea
+				GER = {
+					has_completed_focus = GER_demand_sudetenland
 				}
 			}
 		}
