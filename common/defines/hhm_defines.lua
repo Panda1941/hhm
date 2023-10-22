@@ -79,6 +79,19 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1							-- Max number of mines that can be layed by the ships. The value should be hidden from the user, as we present % so it's an abstract value that should be used for balancing.
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0						-- Value used to overall balance of the speed of planting naval mines
 
+-- NERF TO INFRA
+
+NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 0.25
+NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_FROM = { 1.0, 1.0, 0.0, 0.1 }
+NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_TO = { 1.0, 1.0, 0.1, 0.5 }
+
+-- Production changes
+NDefines.NProduction.BASE_FACTORY_SPEED = 6				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5.0				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3.5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+
+NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.01 -- How much equipment from deployed divisions will be transferred on capitulation
+
 -- Army Balance
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5
 
@@ -106,8 +119,31 @@ NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_MALUS = -0.5
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.25                 -- vanilla -0.30 | small river crossing
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.425          -- vanilla -0.6 | large river crossing
  
+NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2   -- extra damage dice if our armor outclasses enemy
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 4   -- extra damage dice if our armor outclasses enemy
+NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.60 -- damage reduction if armor outclassing enemy
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.60 -- damage reduction if armor outclassing enemy
+NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.002		   -- Factor to scale collateral damage to infra and forts with.
+NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 13		-- chance to get a hit to damage on forts. (out of 100)
+NDefines.NMilitary.ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.066		   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+NDefines.NMilitary.ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE = 0.066 -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
 
+--Supply and combat changes
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.25 |  attack combat penalty for attacker if out of supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.5    -- vanilla -0.65 | defend combat penalty for attacker if out of supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_ATTACK = -0.50     -- vanilla -0.35 | attack combat penalty for defender if out of supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.25     -- vanilla -0.15 | defend combat penalty for defender if out of supply
+NDefines.NMilitary.OUT_OF_FUEL_EQUIPMENT_MULT = 0.5 -- vanilla 0.1 
 
+NDefines.NSupply.CAPITAL_SUPPLY_BASE = 45 -- base supply for capital
+NDefines.NSupply.CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0 -- supply from one civilian factory
+NDefines.NSupply.CAPITAL_SUPPLY_MILITARY_FACTORIES = 0 -- supply from one military factory
+NDefines.NSupply.CAPITAL_SUPPLY_DOCKYARDS = 0 --supply from one naval factory
+
+NDefines.NSupply.RAILWAY_BASE_FLOW = 15.0 		-- how much base flow railway gives when a node connected to its capital/a naval node by a railway
+NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 6.0 	-- how much additional flow a railway level gives
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
+NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 100.0     --How many trucks does it cost to fully motorize a hub
 
 NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
 		1.00,
@@ -152,6 +188,18 @@ NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always r
 		0.53,
 		0.50,
 	}
+
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2
+
+-- SPECIAL FORCES
+
+NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.01					-- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 112					-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
+
+-- Adding equipment capture
+
+NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.05		-- 0.0 after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
+	
 
 -- Navy Balance
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.4
@@ -261,7 +309,32 @@ NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.50	-- 0.75 Maximum da
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001		-- 0.01 Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.	
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05	-- 0.07 Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_DAMAGE_FACTOR = 0.081 -- @30% vanilla 0.27  
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_FACTOR = 0.012 -- @30% of vanilla 0.040  
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0.0009 -- @15% of vanilla 0.006  Portion of train damage to additionally deal to railways
 
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.30         -- effect on defense due to enemy air superiorty
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.70	       -- more AA attack will approach this amount of help (diminishing returns)
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.1     -- effect on speed due to enemy air superiority
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.20                       -- CAS bonus factor for air support moddifier for land unit in combat
+
+NDefines.NSupply.COOLDOWN_DAYS_AFTER_MOVING_SUPPLY_CAPITAL = 7 -- vanilla 30  cooldown for moving supply again after last move
+NDefines.NSupply.DAYS_TO_START_GIVING_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL = 1  --vanilla 7 the country will start gaining supply after this many days moving its capital
+NDefines.NSupply.DAYS_TO_START_GIVING_FULL_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL =  2 -- vanilla 21  the country will reach max supply after this many days moving its capital
+NDefines.NAI.AIR_SUPERIORITY_FOR_FRIENDLY_CAS_RATIO = 0.30		-- Demand at least this proportion of our cas planes as air superiority regardless of other needs
+NDefines.NAir.ESCORT_FACTOR = 4  		-- cas enters battle earlier, fucks a lot of shit up
+
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MAXIMUMS =	{20, 20, 20, 20}	--MAXIMUMS controls the maximum value that the pool can contribute to the final intel values.
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_ABSOLUTE_MAXIMUMS =	{30, 30, 30, 30}	--ABSOLUTE_MAXIMUMS defines a ceiling for the intel in the pool that will never be exceeded. They are meant to be greater or equal to MAXIMUMS. If the array is empty, no absolute maximum is defined.
+NDefines.NIntel.RECON_PLANE_INTEL_BASE = 0.04 				-- intel base amount for a strategic area per plane
+NDefines.NIntel.RECON_PLANE_LAND_DISTRIBUTION = { 15.0, 10.0, 0.0, 10.0 }    -- controls for land and sea zones how much of each intel typee is given (civ, army, navy, air)
+NDefines.NIntel.RECON_PLANE_SEA_DISTRIBUTION = { 0.0, 0.0, 15.0, 0.0 }
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.1 
+NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.7 -- min required intel to focus tree with taken focuses
+NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4  -- min required intel to show currently focus
+NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS_PROGRESS = 0.5  -- min required intel to show current focus progress
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5                  -- VANILLA 3
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.50							-- Higher value = more shot down planes
 
 -- Flicker Bombing
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.14    -- How much efficiency to regain per day. Gain applied hourly.
@@ -413,90 +486,17 @@ NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_GOOD = {0, 0.65, 0, 1}
 NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_AVERAGE = {0.65, 0.65, 0, 1}
 NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_NEUTRAL = {130.0/255, 130.0/255, 130.0/255, 1}
 
---Supply and combat changes
-NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.25 |  attack combat penalty for attacker if out of supply
-NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.5    -- vanilla -0.65 | defend combat penalty for attacker if out of supply
-NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_ATTACK = -0.50     -- vanilla -0.35 | attack combat penalty for defender if out of supply
-NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.25     -- vanilla -0.15 | defend combat penalty for defender if out of supply
-NDefines.NMilitary.OUT_OF_FUEL_EQUIPMENT_MULT = 0.5 -- vanilla 0.1 
-
-NDefines.NSupply.CAPITAL_SUPPLY_BASE = 45 -- base supply for capital
-NDefines.NSupply.CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0 -- supply from one civilian factory
-NDefines.NSupply.CAPITAL_SUPPLY_MILITARY_FACTORIES = 0 -- supply from one military factory
-NDefines.NSupply.CAPITAL_SUPPLY_DOCKYARDS = 0 --supply from one naval factory
-
-NDefines.NSupply.RAILWAY_BASE_FLOW = 15.0 		-- how much base flow railway gives when a node connected to its capital/a naval node by a railway
-NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 6.0 	-- how much additional flow a railway level gives
-NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
-NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 100.0     --How many trucks does it cost to fully motorize a hub
-
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2
-
--- SPECIAL FORCES
-
-NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.01					-- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 112					-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
-
--- Adding equipment capture
-
-NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.05		-- 0.0 after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
-
--- NERF TO INFRA
-
-NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 0.25
-NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_FROM = { 1.0, 1.0, 0.0, 0.1 }
-NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_TO = { 1.0, 1.0, 0.1, 0.5 }
-
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.30         -- effect on defense due to enemy air superiorty
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.70	       -- more AA attack will approach this amount of help (diminishing returns)
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.1     -- effect on speed due to enemy air superiority
-NDefines.NMilitary.AIR_SUPPORT_BASE = 0.20                       -- CAS bonus factor for air support moddifier for land unit in combat
-
-NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_DAMAGE_FACTOR = 0.081 -- @30% vanilla 0.27  
-NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_FACTOR = 0.012 -- @30% of vanilla 0.040  
-NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0.0009 -- @15% of vanilla 0.006  Portion of train damage to additionally deal to railways
-NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.01 -- How much equipment from deployed divisions will be transferred on capitulation
-
-NDefines.NSupply.COOLDOWN_DAYS_AFTER_MOVING_SUPPLY_CAPITAL = 7 -- vanilla 30  cooldown for moving supply again after last move
-NDefines.NSupply.DAYS_TO_START_GIVING_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL = 1  --vanilla 7 the country will start gaining supply after this many days moving its capital
-NDefines.NSupply.DAYS_TO_START_GIVING_FULL_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL =  2 -- vanilla 21  the country will reach max supply after this many days moving its capital
-NDefines.NAI.AIR_SUPERIORITY_FOR_FRIENDLY_CAS_RATIO = 0.30		-- Demand at least this proportion of our cas planes as air superiority regardless of other needs
-NDefines.NAir.ESCORT_FACTOR = 4  		-- cas enters battle earlier, fucks a lot of shit up
-
-NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MAXIMUMS =	{20, 20, 20, 20}	--MAXIMUMS controls the maximum value that the pool can contribute to the final intel values.
-NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_ABSOLUTE_MAXIMUMS =	{30, 30, 30, 30}	--ABSOLUTE_MAXIMUMS defines a ceiling for the intel in the pool that will never be exceeded. They are meant to be greater or equal to MAXIMUMS. If the array is empty, no absolute maximum is defined.
-NDefines.NIntel.RECON_PLANE_INTEL_BASE = 0.04 				-- intel base amount for a strategic area per plane
-NDefines.NIntel.RECON_PLANE_LAND_DISTRIBUTION = { 15.0, 10.0, 0.0, 10.0 }    -- controls for land and sea zones how much of each intel typee is given (civ, army, navy, air)
-NDefines.NIntel.RECON_PLANE_SEA_DISTRIBUTION = { 0.0, 0.0, 15.0, 0.0 }
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.1 
-NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.7 -- min required intel to focus tree with taken focuses
-NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4  -- min required intel to show currently focus
-NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS_PROGRESS = 0.5  -- min required intel to show current focus progress
-NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5                  -- VANILLA 3
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.50							-- Higher value = more shot down planes
-
 NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {300, 500, 1500}
 NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {300, 500, 1500}
 NDefines_Graphics.NGraphics.CAPITAL_ICON_CUTOFF = 1000	-- At what camera distance capital icons disappears
 
-NDefines.NProduction.BASE_FACTORY_SPEED = 6				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5.0				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3.5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+-- Nukes buffed
+NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.99					-- Minimum damage from nukes as a percentage of current strength/organisation
+NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 0.99					-- Minimum damage from nukes as a percentage of current strength/organisation
 
-NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2   -- extra damage dice if our armor outclasses enemy
-NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 4   -- extra damage dice if our armor outclasses enemy
-NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.60 -- damage reduction if armor outclassing enemy
-NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.60 -- damage reduction if armor outclassing enemy
-NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.002		   -- Factor to scale collateral damage to infra and forts with.
-NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 13		-- chance to get a hit to damage on forts. (out of 100)
-NDefines.NMilitary.ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.066		   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
-NDefines.NMilitary.ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE = 0.066 -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
-
-NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.9					-- Minimum damage from nukes as a percentage of current strength/organisation
-NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 0.9					-- Minimum damage from nukes as a percentage of current strength/organisation
-
-
-NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 1.6 			-- How much each level mutliplies the funds for size up 
-NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 200     -- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
-
+-- MIO stuff
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 2.0 			-- How much each level mutliplies the funds for size up 
+NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 250     -- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
+NDefines.NIndustrialOrganisation.FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.15	-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 5		-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
 -------------------------------------------------------------------------------------------
