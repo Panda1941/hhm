@@ -36,8 +36,13 @@ sub_units = {
 		weight = 0.025
 		supply_consumption = 0.02
 		
-		entrenchment  = 4
+		entrenchment  = 3
 
+		battalion_mult = {
+			category = category_light_infantry
+			entrenchment = 0.08
+			add = yes
+		}
 				
 		defense = 0.1
 		breakthrough = 0.5
@@ -167,8 +172,8 @@ sub_units = {
 		}
 
 		river = {
-			attack = 0.10
-			defence = 0.20
+			attack = 0.15
+			defence = 0.05
 			movement = 0.25
 		}
 		

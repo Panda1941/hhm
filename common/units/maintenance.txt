@@ -36,7 +36,7 @@ sub_units = {
 		
 		# Important Ability
 		reliability_factor = 0.075
-		#equipment_capture_factor = 0.05
+		equipment_capture_factor = 0.025
 		fuel_capacity = 50
 		
 		essential = {

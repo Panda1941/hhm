@@ -21,6 +21,11 @@ sub_units = {
 			category_recon
 		}
 
+		battalion_mult = {
+			category = category_artillery
+			soft_attack = 0.10
+		}
+
 	
 		combat_width = 0
 	
@@ -103,6 +108,12 @@ sub_units = {
 			category_support_battalions
 			category_army
 			category_recon
+		}
+
+
+		battalion_mult = {
+			category = category_artillery
+			soft_attack = 0.15
 		}
 
 	
@@ -190,6 +201,12 @@ sub_units = {
 			category_recon
 		}
 
+		
+		battalion_mult = {
+			category = category_artillery
+			soft_attack = 0.15
+		}
+
 	
 		combat_width = 0
 	
@@ -270,6 +287,12 @@ sub_units = {
 			category_army
 			category_all_armor
 			category_recon
+		}
+
+		
+		battalion_mult = {
+			category = category_artillery
+			soft_attack = 0.15
 		}
 
 	
@@ -470,7 +493,7 @@ sub_units = {
 		
 		forest = {
 			movement = 0.15
-			attack = 0.05
+			attack = 0.10
 		}
 		hills = {
 			movement = 0.15

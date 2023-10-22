@@ -103,8 +103,8 @@ NDefines.NMilitary.UNIT_DIGIN_CAP = 0
 NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 0
 NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0
 NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_MALUS = -0.5
-NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.30                 -- vanilla -0.30 | small river crossing
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.60          -- vanilla -0.6 | large river crossing
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.25                 -- vanilla -0.30 | small river crossing
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.425          -- vanilla -0.6 | large river crossing
  
 
 
