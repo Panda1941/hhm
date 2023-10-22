@@ -72,6 +72,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	air_torpedoe_1 = 1
+	pack = 1
 }
 if = {
 	limit = {
