@@ -7,14 +7,14 @@ state={
 		oil=16 # was: 2
 	}
 	
-	state_category = town
+	state_category = metropolis
 
 	history={
 		owner = CAN
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 5
 			dockyard = 1
 			air_base = 3
 			1408 = {

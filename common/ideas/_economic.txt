@@ -370,103 +370,18 @@ ideas = {
 
 			available = {
 				has_war = yes
-				has_war_support > 0.8
-				any_enemy_country = {
-					ic_ratio = {
-						tag = ROOT
-						ratio > 0.5
-					}
-				}
-				is_major = no
-
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					has_war_support > 0.9
-					congress_high_support_trigger = yes
-				}
-				if = {
-					limit = {
-						original_tag = TUR
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = {
-						OR = {
-							has_active_mission = TUR_etatism_crisis_1
-							has_active_mission = TUR_etatism_crisis_2
-							has_active_mission = TUR_etatism_crisis_3
-						}
-					}
-				}
-			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
+				
+				NOT = {
+					original_tag = USA
+					original_tag = ENG
+					original_tag = SOV
+					original_tag = GER
+					original_tag = ITA
+					original_tag = JAP
 				}
 			}
 			ai_will_do = {
    				factor = 1
-
-				modifier = {
-					factor = 25
-					#Prio this if nation has a lot of manpower compared to MIC
-					manpower_per_military_factory > 15000
-				}
-
-				modifier = {
-					#Block  unless nation has a lot of manpower
-					factor = 0
-					manpower_per_military_factory <  10000
-				}
-
-
-				modifier = {
-					# never take this if we are on low conscription laws for safety
-					factor = 0
-					OR = {
-						has_idea = volunteer_only
-						has_idea = limited_conscription
-					}
-				}
-
-				# Germany needs to be careful
-				modifier = {
-					factor = 0
-
-					tag = GER
-					NOT = { has_tech = volkssturm }
-					has_war = yes
-					date < 1944.01.01
-				}
-				modifier = {
-					factor = 0
-
-					tag = SOV
-					has_war = yes
-					OR = {
-						has_manpower < 2000000
-						NOT = {
-							OR = {
-								has_idea = all_adults_serve
-								has_idea = service_by_requirement
-							}
-						}
-					}
-				}
    			}
 
 			cost = 150
@@ -474,9 +389,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value  = 0.15
-				conscription = -0.025
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.075
 			}
 
