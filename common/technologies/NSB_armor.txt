@@ -48,7 +48,7 @@ technologies = {
 			tank_large_roadwheels
 			tank_small_roadwheels
 			
-			sloped_armor
+			#sloped_armor
 			extra_ammo_storage
 			wet_ammo_storage
 			smoke_launchers
@@ -916,7 +916,7 @@ technologies = {
 			tank_high_velocity_cannon_4
 			tank_rocket_launcher_2
 			tank_medium_howitzer_2
-			stabilizer
+			#stabilizer
 			tank_anti_air_cannon_3
 		}
 
@@ -1009,7 +1009,7 @@ technologies = {
 			tank_high_velocity_cannon_4
 			tank_rocket_launcher_2
 			tank_medium_howitzer_2
-			stabilizer
+			#stabilizer
 			tank_anti_air_cannon_3
 		}
 
@@ -1255,12 +1255,18 @@ technologies = {
 			tank_medium_howitzer_3 
 			tank_rocket_launcher_3
 			auto_loader
+			sloped_armor
 		}
 
 		path = {
 			leads_to_tech = main_battle_tank_chassis
 			research_cost_coeff = 1
 		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_2_tt
+		}
+		show_effect_as_desc = yes
 
 		research_cost = 2
 		start_year = 1944
@@ -1464,9 +1470,10 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_cannon_2
 			tank_heavy_howitzer
-			stabilizer
+			#stabilizer
 			squeezebore_adaptor
 			tank_anti_air_cannon_2
+			sloped_armor
 		}
 
 		path = {
@@ -1478,7 +1485,11 @@ technologies = {
 			leads_to_tech = advanced_heavy_tank_chassis_1
 			research_cost_coeff = 1
 		}
-
+		
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_2_tt
+		}
+		show_effect_as_desc = yes
 
 		research_cost = 2.5
 		start_year = 1941
@@ -1546,6 +1557,7 @@ technologies = {
 			tank_high_velocity_cannon_3
 			tank_heavy_howitzer_2
 			auto_loader
+			stabilizer
 			tank_anti_air_cannon_3
 		}
 
@@ -1553,6 +1565,11 @@ technologies = {
 			leads_to_tech = super_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_3_tt
+		}
+		show_effect_as_desc = yes
 
 		research_cost = 2.5
 		start_year = 1943
@@ -1619,6 +1636,11 @@ technologies = {
 			leads_to_tech = super_heavy_tank_chassis_1
 			research_cost_coeff = 1
 		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_4_tt
+		}
+		show_effect_as_desc = yes
 
 		research_cost = 2.5
 		start_year = 1943
@@ -1766,71 +1788,13 @@ technologies = {
 		enable_equipment_modules = {
 		}
 
-		path = {
-			leads_to_tech = armor_tech_2
-			research_cost_coeff = 1
-		}
+		#path = {
+		#	leads_to_tech = armor_tech_2
+		#	research_cost_coeff = 1
+		#}
 
 		on_research_complete = {
 			custom_effect_tooltip = armor_tech_1_tt
-		}
-		show_effect_as_desc = yes
-
-		research_cost = 1
-		start_year = 1936
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 2 y = @1935 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1939.1.1"
-			}
-		}
-
-		categories = {
-			armor_module
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-	}
-
-	armor_tech_2 = {
-
-		enable_equipment_modules = {
-			armor_skirts
-		}
-		path = {
-			leads_to_tech = armor_tech_3
-			research_cost_coeff = 1
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = armor_tech_2_tt
 		}
 		show_effect_as_desc = yes
 
@@ -1877,111 +1841,6 @@ technologies = {
 		}
 	}
 
-	armor_tech_3 = {
-
-
-		path = {
-			leads_to_tech = armor_tech_4
-			research_cost_coeff = 1
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = armor_tech_3_tt
-		}
-		show_effect_as_desc = yes
-
-		research_cost = 1
-		start_year = 1941
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 2 y = @1941 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1939.1.1"
-			}
-		}
-
-		categories = {
-			armor_module
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-	}
-
-	armor_tech_4 = {
-
-		research_cost = 1
-		start_year = 1944
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 2 y = @1944 }
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = armor_tech_4_tt
-		}
-		show_effect_as_desc = yes
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1939.1.1"
-			}
-		}
-
-		categories = {
-			armor_module
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-	}
 
 	engine_tech_1 = {
 
