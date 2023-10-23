@@ -18,7 +18,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 				naval_base = 4
 			}
 		}
-		add_core_of = SWE
+		add_core_of = RAJ
 
 	}
 

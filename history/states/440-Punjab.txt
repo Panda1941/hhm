@@ -4,7 +4,7 @@ state={
 	name="STATE_440"
 	manpower = 13665000
 	
-	state_category = town
+	state_category = large_city
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		victory_points = {
@@ -13,8 +13,10 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = RAJ
 		buildings = {
 			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			arms_factory = 1
 		}
-		add_core_of = SWE
+		add_core_of = RAJ
 	}
 
 	provinces={

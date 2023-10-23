@@ -92,10 +92,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.1
-				war_support_factor = -0.05
+				stability_factor = -0.15
 				conscription_factor = -0.2
-				autonomy_gain = -0.4
 			}
 		}
 
@@ -115,8 +113,8 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.02
-				conscription_factor = -0.1
-				autonomy_gain = 0.6
+				conscription_factor = -0.05
+				autonomy_gain = 0.5
 			}
 		}
 
@@ -188,7 +186,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				autonomy_gain = -0.1
+				
 			}
 		}
 
@@ -238,7 +236,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				autonomy_gain = -0.4
+				political_power_gain = -0.15
 			}
 		}
 

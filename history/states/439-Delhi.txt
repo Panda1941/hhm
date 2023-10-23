@@ -4,13 +4,13 @@ state={
 	name="STATE_439"
 	manpower = 31136800
 	
-	state_category = city
+	state_category = megalopolis
 	
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = RAJ
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			industrial_complex = 5
 			air_base = 4
 		}
 		victory_points = {

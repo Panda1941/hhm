@@ -795,29 +795,12 @@ characters={
 				original_tag = RAJ
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = RAJ_all_india_forward_bloc 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				
 			}
 			traits = {
-				fascist_demagogue 
+				war_industrialist 
 			}
-			do_effect = {
-				NOT = {
-					has_government = fascism 
-				}
-			}
+			
 			ai_will_do = {
 				factor = 0.000
 			}
