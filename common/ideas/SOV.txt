@@ -9,8 +9,7 @@ ideas = {
 			name = "Cancel all Trade"
 			removal_cost = -1
 			modifier = {
-				min_export = -0.2				
-				research_speed_factor = -0.025
+				min_export = -0.15				
 			}
 		}
 
@@ -1081,9 +1080,7 @@ ideas = {
 
 			modifier = {
 				land_doctrine_cost_factor = -0.1
-				production_factory_max_efficiency_factor = 0.1
-				
-
+				production_factory_max_efficiency_factor = 0.05
 			}
 			equipment_bonus = {
 				armor = {
@@ -1106,7 +1103,7 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.10
 				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.15
 				production_speed_industrial_complex_factor = 0.15
 				industrial_concern_cost_factor = -0.15
 			}
