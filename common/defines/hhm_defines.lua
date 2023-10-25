@@ -76,8 +76,10 @@ NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0				-- XP cost for repl
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
 
-NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1							-- Max number of mines that can be layed by the ships. The value should be hidden from the user, as we present % so it's an abstract value that should be used for balancing.
-NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0						-- Value used to overall balance of the speed of planting naval mines
+-- Minelaying
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 2000.0							-- Max number of mines that can be layed by the ships. The value should be hidden from the user, as we present % so it's an abstract value that should be used for balancing.
+NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.005						-- Value used to overall balance of the speed of planting naval mines
+NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.006	
 
 -- NERF TO INFRA
 

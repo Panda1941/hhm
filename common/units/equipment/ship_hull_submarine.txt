@@ -70,7 +70,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 25
+		sub_visibility = 30
 		naval_speed = 4
 		reliability = 0.60
 		
@@ -126,7 +126,7 @@ equipments = {
 			rear_1_custom_slot = empty
 			fixed_ship_engine_slot = sub_ship_engine_2
 		}
-		sub_visibility = 26
+		sub_visibility = 27
 		naval_speed = 8
 		reliability = 0.70
 
@@ -176,7 +176,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 22
+		sub_visibility = 24
 		naval_speed = 18
 		reliability = 0.75
 		
