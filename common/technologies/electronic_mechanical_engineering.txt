@@ -17,7 +17,7 @@ technologies = {
 			ship_fire_control_system_0
 		}
 		
-		research_cost = 1
+		research_cost = 0.75
 		start_year = 1936
 		folder = {
 			name = electronics_folder
@@ -52,7 +52,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1
+		start_year = 1937
 		
 		folder = {
 			name = electronics_folder
@@ -436,7 +437,7 @@ technologies = {
 			bomb_sights_1
 		}
 		
-		research_cost = 2.5
+		research_cost = 2
 		
 		folder = {
 			name = electronics_folder
@@ -1174,8 +1175,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		start_year = 1940
-		research_cost = 5
+		start_year = 1939
+		research_cost = 4
 		
 		folder = {
 			name = electronics_folder
@@ -1256,7 +1257,7 @@ technologies = {
 		# can build reactors
 		research_speed_factor = 0.025
 		
-		start_year = 1943
+		start_year = 1942
 		research_cost = 5
 		
 		folder = {

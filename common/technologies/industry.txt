@@ -148,7 +148,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1941
 		
 		folder = {
@@ -178,7 +178,7 @@ technologies = {
 		line_change_production_efficiency_factor = 0.25
 		production_factory_start_efficiency_factor = 0.1
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1943
 		
 		XOR = {
@@ -216,7 +216,7 @@ technologies = {
 		production_factory_max_efficiency_factor = 0.15
 		production_factory_efficiency_gain_factor = 0.05
 			
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1943
 		
 		XOR = {
@@ -256,7 +256,7 @@ technologies = {
 		line_change_production_efficiency_factor = 0.25
 		production_factory_start_efficiency_factor = 0.15
 		
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1945
 		
 		folder = {
@@ -285,7 +285,7 @@ technologies = {
 		production_factory_max_efficiency_factor = 0.20
 		production_factory_efficiency_gain_factor = 0.1
 			
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1945
 		
 		folder = {
@@ -590,7 +590,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		
 		XOR = {
 			dispersed_industry
@@ -665,7 +665,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1937
 		
 		folder = {
@@ -708,7 +708,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1939
 		
 		folder = {
@@ -750,7 +750,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1941
 		
 		folder = {
@@ -788,7 +788,7 @@ technologies = {
 		
 		production_speed_industrial_complex_factor = 0.05
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1943
 		
 		path = {
@@ -836,7 +836,7 @@ technologies = {
 		
 		production_speed_industrial_complex_factor = 0.05
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1945
 		
 		folder = {
@@ -883,7 +883,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		
 		XOR = {
 			concentrated_industry
@@ -963,7 +963,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1937
 		
 		folder = {
@@ -1009,7 +1009,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1939
 		
 		folder = {
@@ -1054,7 +1054,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1941
 		
 		folder = {
@@ -1096,7 +1096,7 @@ technologies = {
 		production_speed_dockyard_factor = 0.025
 		
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1943
 		
 		path = {
@@ -1145,7 +1145,7 @@ technologies = {
 		production_speed_dockyard_factor = 0.025
 		
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1945
 		
 		folder = {
@@ -1189,7 +1189,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.5
+		research_cost = 0.75
 		start_year = 1936
 		folder = {
 			name = industry_folder
@@ -1447,7 +1447,7 @@ technologies = {
 			leads_to_tech = fuel_refining5
 			research_cost_coeff = 1
 		}
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1941
 		folder = {
 			name = industry_folder
@@ -1490,7 +1490,7 @@ technologies = {
 		fuel_gain_factor = 0.20
 		fuel_gain_factor_from_states = 0.1
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1943
 		folder = {
 			name = industry_folder
@@ -1538,7 +1538,7 @@ technologies = {
 		fuel_gain_factor = 0.2
 		fuel_gain_factor_from_states = 0.1
 
-		research_cost = 3.25
+		research_cost = 2
 		start_year = 1945
 		folder = {
 			name = industry_folder
@@ -1856,7 +1856,7 @@ technologies = {
 
 		fuel_gain_factor_from_states = 0.5
 		
-		research_cost = 1.75
+		research_cost = 1.8
 		start_year = 1945
 		
 		folder = {
@@ -2203,7 +2203,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.2
+		research_cost = 1.5
 		start_year = 1936
 		categories = {
 			industry
@@ -2298,7 +2298,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.6
+		research_cost = 1.5
 		start_year = 1937
 		
 		categories = {
@@ -2338,7 +2338,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		
-		research_cost = 1.6
+		research_cost = 1.5
 		start_year = 1937
 		
 		categories = {
@@ -2396,7 +2396,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1939
 		
 		categories = {
@@ -2452,7 +2452,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1939
 		
 		categories = {
@@ -2509,7 +2509,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.8
+		research_cost = 1.5
 		start_year = 1941
 		
 		categories = {
@@ -2554,7 +2554,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		
-		research_cost = 1.8
+		research_cost = 1.5
 		start_year = 1941
 		
 		categories = {
@@ -2613,7 +2613,7 @@ technologies = {
 		}
 
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1943
 		
 		categories = {
@@ -2646,7 +2646,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1943
 		
 		categories = {
