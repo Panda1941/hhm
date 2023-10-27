@@ -84,10 +84,12 @@ generic_tank_organization = {
 		name = generic_mio_initial_trait_standardized_production
 		
 		equipment_bonus = {
-			armor_value = -0.05
-			defense =-0.05
-			hardness = -0.05
-			build_cost_ic = -0.025
+			#armor_value = -0.05
+			#defense =-0.05
+			#hardness = -0.05	
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
 		}
 	}
 
@@ -581,7 +583,7 @@ generic_mobile_tank_organization = {
 		name = generic_mio_initial_trait_fast_tanks_designer
 		
 		equipment_bonus = {
-			armor_value = -0.05
+			#armor_value = -0.05
 			reliability_factor = -0.05
 			maximum_speed = 0.1
 		}
@@ -810,10 +812,10 @@ generic_medium_tank_organization = {
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.05
 		}
-		
-		production_bonus = {
-			production_capacity_factor = 0.05
+		equipment_bonus = {
+			soft_attack = 0.05	
 		}
+		
 	}
 
 	trait = {
