@@ -6356,6 +6356,7 @@ ITA_diplomacy_balkan_decision_category = {
 		cost = 75
 
 		complete_effect = {
+			custom_effect_tooltip = "The AI will always refuse"
 			FROM = {
 				country_event = {
 				    id = BBA_italy_interaction_events.8
