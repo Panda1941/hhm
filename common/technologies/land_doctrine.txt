@@ -2958,7 +2958,7 @@ technologies = {
 		conscription = 0.03
 
 		category_light_infantry = {
-			max_organisation = 6
+			max_organisation = 5
 		}
 		
 		
@@ -3007,13 +3007,10 @@ technologies = {
 
 		supply_consumption_factor = -0.10
 		
-		infantry = {
-			combat_width = -0.5
-		}
-additional_brigade_column_size = 1		
+		additional_brigade_column_size = 1		
 		
 		category_all_infantry = {
-			max_organisation = 15	
+			max_organisation = 10	
 		}
 
 		enable_tactic = tactic_relentless_assault
@@ -3080,7 +3077,7 @@ additional_brigade_column_size = 1
 	
 	deep_operations = {
 		category_tanks = {
-			max_organisation = 7
+			max_organisation = 5
 			default_morale = 0.1
 		}
 		armored_car = {
@@ -3193,11 +3190,7 @@ additional_brigade_column_size = 1
 		xp_research_type = army
 		xp_unlock_cost = 100
 		supply_consumption_factor = -0.10
-		land_reinforce_rate = 0.03
-		
-		infantry = {
-			defense = -0.1
-		}
+		land_reinforce_rate = 0.01
 		
 		category_line_artillery = {
 			soft_attack = 0.10
@@ -3254,15 +3247,15 @@ additional_brigade_column_size = 1
 		xp_unlock_cost = 100
 		category_tanks = {
 			max_organisation = 1
-			breakthrough = 0.25
+			breakthrough = 0.20
 		}
 		category_all_infantry = {
 			max_organisation = 5
-			breakthrough = 0.15
+			breakthrough = 0.12
 		}
 		armored_car = {
 			max_organisation = 1
-			breakthrough = 0.15
+			breakthrough = 0.12
 		}
 		
 		enable_tactic = tactic_breakthrough
@@ -3385,12 +3378,12 @@ additional_brigade_column_size = 1
 		army_fuel_capacity_factor = 1	
 		no_supply_grace = 48
 		category_all_infantry = {
-			max_organisation = 3
-			max_strength = 0.60
+			max_organisation = 2
+			max_strength = 0.5
 		}
 		category_all_armor = {
 		    max_strength = 0.5
-			max_organisation = 5
+			max_organisation = 3
 			maximum_speed = 0.05
 			default_morale = 0.05
 		}
@@ -3449,10 +3442,10 @@ additional_brigade_column_size = 1
 		industrial_capacity_factory = 0.05
 		attrition = -0.1 #take 10% less attrition losses
 		infantry = {
-			default_morale = 0.10
+			default_morale = 0.05
 		}
 		category_line_artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.10
 			hard_attack = 0.10
 		}
 		
@@ -3618,7 +3611,7 @@ additional_brigade_column_size = 1
         
 		industrial_capacity_factory = 0.05
 		conscription = 0.05
-		land_reinforce_rate = 0.07
+		land_reinforce_rate = 0.05
 		xp_research_type = army
 		xp_unlock_cost = 100
 		
@@ -3665,7 +3658,7 @@ additional_brigade_column_size = 1
 		xp_research_type = army
 		xp_unlock_cost = 100
 		dig_in_speed_factor = 0.5
-		industrial_capacity_factory = 0.02
+		industrial_capacity_factory = 0.05
 		
 		
 		path = {
