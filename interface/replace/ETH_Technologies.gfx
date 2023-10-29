@@ -1,0 +1,148 @@
+SpriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_ETH_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/ETH_1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_ETH_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/ETH_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/ETH_3.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_ETH_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/ETH_4.dds"
+	}
+
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_ETH_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/ETH_at1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_ETH_antitank2_medium"
+	texturefile = "gfx/interface/technologies/ETH_at2.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_ETH_antitank5_medium"
+	texturefile = "gfx/interface/technologies/ETH_at3.dds"
+	}
+
+SpriteType = {
+	name = "GFX_ETH_antitank7_medium"
+	texturefile = "gfx/interface/technologies/ETH_at3.dds"
+	}	
+
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_ETH_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/ETH_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_antiair2_medium"
+	texturefile = "gfx/interface/technologies/ETH_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_antiair5_medium"
+	texturefile = "gfx/interface/technologies/ETH_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_antiair7_medium"
+	texturefile = "gfx/interface/technologies/ETH_aa3.dds"
+	}
+	
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_ETH_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/ETH_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_artillery1_medium"
+	texturefile = "gfx/interface/technologies/ETH_a2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_ETH_artillery4_medium"
+	texturefile = "gfx/interface/technologies/ETH_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_artillery7_medium"
+	texturefile = "gfx/interface/technologies/ETH_a3.dds"
+	}
+	
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_ETH_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/ETH_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/ETH_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/ETH_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/ETH_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/ETH_ac3.dds"
+	}
+### troop_carriers ###
+
+	SpriteType = {
+	name = "GFX_ETH_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/ETH_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/ETH_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ETH_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/ETH_tc1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_ETH_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/ETH_tc4.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_ETH_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/ETH_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_ETH_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/ETH_tc2.dds"
+	}
+
+}

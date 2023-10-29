@@ -1,0 +1,71 @@
+@ProfileBackgroundScale = 0.71
+@ProfilePictureScale = 0.57
+
+guiTypes = {
+	containerWindowType = {
+		name = "profile_badge_item"
+		position = { x = 0 y = 0 }
+		size = { width = 210 height = 40 }
+		clipping = yes
+		
+		iconType = {
+			name = "picture_bg"
+			position = { x = 5 y = 5 }
+			spriteType = "GFX_profile_picture_bg_default"
+			alwaystransparent = yes
+			#centerposition = yes
+			#Orientation = center
+			scale = 0.1
+		}
+
+		iconType = {
+			name = "picture"
+			position = { x = 5 y = 5 }
+			spriteType = "GFX_goal_generic_trade"
+			alwaystransparent = yes
+			#centerposition = yes
+			#Orientation = center
+			scale = 0.1
+		}
+
+		buttonType = {
+			name = "background"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_cm_mp_bg_t"
+			clicksound = click_default
+			#scale = 0.25
+		}
+
+		iconType = {
+			name = "cm_mp_bg_t"
+			spriteType = "GFX_cm_mp_bg_t"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "progress_bar"
+			spriteType = "GFX_cm_mp_bar"
+			position = { x = 74 y = 10 }
+			alwaystransparent = yes
+		}
+		
+		
+		
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 73 y = 10 }
+			maxWidth = 134
+			maxHeight = 18
+			fixedsize = yes
+			font = "hoi_16mbs"
+			text = "PLAYER_NAME"
+			format = center
+			vertical_alignment = center
+			multiline = no
+			alwaystransparent = yes
+		}
+		
+
+	}
+}

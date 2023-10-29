@@ -1,0 +1,154 @@
+spriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_SPD_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/TUR_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/SPD_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/SPD_3.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_SPD_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/SPD_4.dds"
+	}
+	
+    ### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_SPD_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/SPD_at1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_SPD_antitank2_medium"
+	texturefile = "gfx/interface/technologies/SPD_at2.dds"
+	}		
+   
+    SpriteType = {
+	name = "GFX_SPD_antitank5_medium"
+	texturefile = "gfx/interface/technologies/SPD_at3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_antitank7_medium"
+	texturefile = "gfx/interface/technologies/SPD_at3.dds"
+	}
+	
+	### Anti-Air ###
+
+	SpriteType = {
+	name = "GFX_SPD_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/SPD_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_antiair2_medium"
+	texturefile = "gfx/interface/technologies/SPD_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_antiair5_medium"
+	texturefile = "gfx/interface/technologies/SPD_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_antiair7_medium"
+	texturefile = "gfx/interface/technologies/SPD_aa3.dds"
+	}
+	
+    ### Arty ###
+	
+	SpriteType = {
+	name = "GFX_SPD_motorized_rocket_unit_medium"
+	texturefile = "gfx/interface/technologies/SPD_mra.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_SPD_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/SPD_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_artillery1_medium"
+	texturefile = "gfx/interface/technologies/SPD_a2.dds"
+	}		
+	
+	SpriteType = {
+	name = "GFX_SPD_artillery4_medium"
+	texturefile = "gfx/interface/technologies/SPD_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_artillery7_medium"
+	texturefile = "gfx/interface/technologies/SPD_a3.dds"
+	}
+	
+    ### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_SPD_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/SPD_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/SPD_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/SPD_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/SPD_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/SPD_ac3.dds"
+	}
+	
+	### troop_carriers ###
+
+	SpriteType = {
+	name = "GFX_SPD_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/SPD_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/SPD_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/SPD_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SPD_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/SPD_tc4.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SPD_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/SPD_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SPD_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/SPD_tc2.dds"
+	}
+	
+}

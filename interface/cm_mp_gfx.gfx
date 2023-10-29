@@ -1,0 +1,49 @@
+
+spriteTypes = {
+	
+	###
+
+	spriteType = { 
+		name = "GFX_cm_mp_bg"
+		texturefile = "gfx/interface/cm_mp_bg.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_cm_mp_bg_t"
+		texturefile = "gfx/interface/cm_mp_bg_t.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_cm_mp_flag_ready"
+		texturefile = "gfx/interface/cm_mp_flag_ready.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_cm_mp_ban"
+		texturefile = "gfx/interface/cm_mp_ban.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_cm_mp_kick"
+		texturefile = "gfx/interface/cm_mp_kick.dds"
+	}
+	spriteType = { 
+		name = "GFX_cm_mp_wisper"
+		texturefile = "gfx/interface/cm_mp_wisper.dds"
+	}
+	spriteType = { 
+		name = "GFX_cm_mp_ob"
+		texturefile = "gfx/interface/cm_mp_ob.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_cm_mp_bar"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx\\interface\\cm_mp_bar.dds"
+		textureFile2 = "gfx\\interface\\cm_mp_bar_bg.dds"
+		size = { x = 132 y = 20 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+
+}

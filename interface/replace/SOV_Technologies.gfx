@@ -1,0 +1,147 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_SOV_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/EST_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/SOV_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/SOV_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/SOV_4.dds"
+	}
+
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_SOV_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/SOV_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_artillery4_medium"
+	texturefile = "gfx/interface/technologies/SOV_a3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_SOV_artillery1_medium"
+	texturefile = "gfx/interface/technologies/SOV_a2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_SOV_artillery7_medium"
+	texturefile = "gfx/interface/technologies/SOV_a3.dds"
+	}
+	
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_SOV_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/SOV_at1.dds"
+	}		
+	
+	SpriteType = {
+	name = "GFX_SOV_antitank2_medium"
+	texturefile = "gfx/interface/technologies/SOV_at2.dds"
+	}		
+   
+    SpriteType = {
+	name = "GFX_SOV_antitank5_medium"
+	texturefile = "gfx/interface/technologies/SOV_at3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_SOV_antitank7_medium"
+	texturefile = "gfx/interface/technologies/SOV_at3.dds"
+	}
+	
+
+### Anti-air ###
+
+
+	SpriteType = {
+	name = "GFX_SOV_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/SOV_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_antiair2_medium"
+	texturefile = "gfx/interface/technologies/SOV_aa2.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_SOV_antiair5_medium"
+	texturefile = "gfx/interface/technologies/SOV_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_antiair7_medium"
+	texturefile = "gfx/interface/technologies/SOV_aa3.dds"
+	}
+	
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_SOV_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/SOV_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/SOV_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/SOV_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/SOV_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/SOV_ac3.dds"
+	}
+	
+    ### troop_carriers ###
+
+    SpriteType = {
+		name = "GFX_SOV_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_tc1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/SOV_tc1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_motorised_equipment_medium"
+		texturefile = "gfx/interface/technologies/SOV_tc1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/SOV_tc4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/SOV_tc3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/SOV_tc2.dds"
+	}

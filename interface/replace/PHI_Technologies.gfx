@@ -1,0 +1,125 @@
+spriteTypes = {	
+
+### guns ###
+	
+	SpriteType = {
+	name = "GFX_PHI_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/PHI_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_PHI_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/PHI_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_PHI_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/PHI_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_PHI_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/PHI_4.dds"
+	}
+
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_PHI_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/PHI_iwa.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_PHI_artillery1_medium"
+	texturefile = "gfx/interface/technologies/PHI_a2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_PHI_artillery4_medium"
+	texturefile = "gfx/interface/technologies/PHI_a3.dds"
+	}
+	
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_PHI_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/PHI_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_PHI_antiair2_medium"
+	texturefile = "gfx/interface/technologies/PHI_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_PHI_antiair5_medium"
+	texturefile = "gfx/interface/technologies/PHI_aa3.dds"
+	}
+	
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_PHI_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/PHI_at1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_PHI_antitank2_medium"
+	texturefile = "gfx/interface/technologies/PHI_at2.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_PHI_antitank5_medium"
+	texturefile = "gfx/interface/technologies/PHI_at3.dds"
+	}	
+	
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_PHI_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/PHI_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_PHI_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/PHI_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_PHI_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/PHI_ac3.dds"
+	}
+	
+	
+### troop_carriers ###
+
+    SpriteType = {
+	name = "GFX_PHI_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/PHI_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_PHI_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/PHI_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_PHI_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/PHI_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_PHI_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/PHI_tc4.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_PHI_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/PHI_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_PHI_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/PHI_tc2.dds"
+	}
+	

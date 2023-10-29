@@ -1,0 +1,149 @@
+spriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_ITA_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/ITA_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/ITA_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/ITA_3.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_ITA_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/ITA_4.dds"
+	}
+
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_ITA_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/ITA_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_artillery4_medium"
+	texturefile = "gfx/interface/technologies/ITA_a3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_ITA_artillery1_medium"
+	texturefile = "gfx/interface/technologies/ITA_a2.dds"
+	}
+
+SpriteType = {
+	name = "GFX_ITA_artillery7_medium"
+	texturefile = "gfx/interface/technologies/ITA_a3.dds"
+	}	
+	
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_ITA_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/ITA_at1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_ITA_antitank2_medium"
+	texturefile = "gfx/interface/technologies/ITA_at2.dds"
+	}		
+   
+    SpriteType = {
+	name = "GFX_ITA_antitank5_medium"
+	texturefile = "gfx/interface/technologies/ITA_at3.dds"
+	}
+
+SpriteType = {
+	name = "GFX_ITA_antitank7_medium"
+	texturefile = "gfx/interface/technologies/ITA_at3.dds"
+	}	
+	
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_ITA_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/ITA_aa1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_ITA_antiair2_medium"
+	texturefile = "gfx/interface/technologies/ITA_aa2.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_ITA_antiair5_medium"
+	texturefile = "gfx/interface/technologies/ITA_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_antiair7_medium"
+	texturefile = "gfx/interface/technologies/ITA_aa3.dds"
+	}
+
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_ITA_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/ITA_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/ITA_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/ITA_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/ITA_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/ITA_ac3.dds"
+	}
+
+### troop_carriers ###
+
+    SpriteType = {
+	name = "GFX_ITA_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/ITA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/ITA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/ITA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ITA_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/ITA_tc4.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_ITA_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/ITA_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_ITA_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/ITA_tc2.dds"
+	}
+
+}

@@ -1,0 +1,124 @@
+spriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_IRE_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/IRE_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_IRE_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/IRE_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_IRE_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/IRE_3.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_IRE_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/IRE_4.dds"
+	}
+	
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_IRE_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/IRE_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_IRE_artillery4_medium"
+	texturefile = "gfx/interface/technologies/IRE_a3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_IRE_artillery1_medium"
+	texturefile = "gfx/interface/technologies/IRE_a2.dds"
+	}	
+	
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_IRE_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/IRE_at1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_IRE_antitank2_medium"
+	texturefile = "gfx/interface/technologies/IRE_at2.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_IRE_antitank5_medium"
+	texturefile = "gfx/interface/technologies/IRE_at3.dds"
+	}	
+	
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_IRE_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/IRE_aa1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_IRE_antiair2_medium"
+	texturefile = "gfx/interface/technologies/IRE_aa2.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_IRE_antiair5_medium"
+	texturefile = "gfx/interface/technologies/IRE_aa3.dds"
+	}
+	
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_IRE_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/IRE_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_IRE_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/IRE_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_IRE_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/IRE_ac3.dds"
+	}
+	
+### troop_carriers ###
+
+    SpriteType = {
+	name = "GFX_IRE_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/IRE_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_IRE_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/IRE_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_IRE_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/IRE_tc1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_IRE_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/IRE_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_IRE_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/IRE_tc4.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_IRE_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/IRE_tc3.dds"
+	}
+	
+}

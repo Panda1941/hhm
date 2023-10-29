@@ -1,0 +1,121 @@
+spriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_NOR_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/NOR_ac1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_NOR_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/NOR_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NOR_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/NOR_ac3.dds"
+	}
+
+
+	SpriteType = {
+	name = "GFX_NOR_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/NOR_1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_NOR_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/NOR_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NOR_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/NOR_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NOR_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/NOR_4.dds"
+	}
+	
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_NOR_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/NOR_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NOR_artillery4_medium"
+	texturefile = "gfx/interface/technologies/NOR_a3.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_NOR_artillery1_medium"
+	texturefile = "gfx/interface/technologies/NOR_a2.dds"
+	}	
+
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_NOR_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/NOR_at1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_NOR_antitank2_medium"
+	texturefile = "gfx/interface/technologies/NOR_at2.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_NOR_antitank5_medium"
+	texturefile = "gfx/interface/technologies/NOR_at3.dds"
+	}		
+
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_NOR_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/NOR_aa1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_NOR_antiair2_medium"
+	texturefile = "gfx/interface/technologies/NOR_aa2.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_NOR_antiair5_medium"
+	texturefile = "gfx/interface/technologies/NOR_aa3.dds"
+	}
+
+### troop_carriers ###
+
+	SpriteType = {
+	name = "GFX_NOR_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/NOR_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NOR_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/NOR_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NOR_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/NOR_tc1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_NOR_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/NOR_tc4.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_NOR_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/NOR_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_NOR_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/NOR_tc2.dds"
+    }

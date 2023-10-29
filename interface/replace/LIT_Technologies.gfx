@@ -1,0 +1,131 @@
+spriteTypes = {	
+
+	##### LIT aircraft #####
+	
+	##### LIT tanks #####
+	
+	##### LIT Equipment #####
+	
+	SpriteType = {
+	name = "GFX_LIT_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/LIT_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_LIT_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/LIT_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_LIT_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/LIT_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_LIT_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/LIT_4.dds"
+	}
+
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_LIT_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/LIT_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_LIT_artillery1_medium"
+	texturefile = "gfx/interface/technologies/LIT_a2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_LIT_artillery4_medium"
+	texturefile = "gfx/interface/technologies/LIT_a3.dds"
+	}	
+
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_LIT_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/LIT_at1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_LIT_antitank2_medium"
+	texturefile = "gfx/interface/technologies/LIT_at2.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_LIT_antitank5_medium"
+	texturefile = "gfx/interface/technologies/LIT_at3.dds"
+	}		
+	
+
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_LIT_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/LIT_aa1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_LIT_antiair2_medium"
+	texturefile = "gfx/interface/technologies/LIT_aa2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_LIT_antiair5_medium"
+	texturefile = "gfx/interface/technologies/LIT_aa3.dds"
+	}
+
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_LIT_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/LIT_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_LIT_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/LIT_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_LIT_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/LIT_ac3.dds"
+	}
+	
+### troop_carriers ###
+
+    SpriteType = {
+	name = "GFX_LIT_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/LIT_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_LIT_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/LIT_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_LIT_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/LIT_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_LIT_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/LIT_tc4.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_LIT_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/LIT_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_LIT_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/LIT_tc2.dds"
+	}
+
+}	
+

@@ -1,0 +1,155 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_ICE_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/DEN_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ICE_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/DEN_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ICE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/DEN_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ICE_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/DEN_4.dds"
+	}
+	
+	### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_ICE_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/DEN_at1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_ICE_antitank2_medium"
+	texturefile = "gfx/interface/technologies/DEN_at2.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_ICE_antitank5_medium"
+	texturefile = "gfx/interface/technologies/DEN_at3.dds"
+	}
+	
+	 SpriteType = {
+	name = "GFX_ICE_antitank7_medium"
+	texturefile = "gfx/interface/technologies/DEN_at3.dds"
+	}
+	
+	### Anti-air ###
+
+
+	SpriteType = {
+	name = "GFX_ICE_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/DEN_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ICE_antiair2_medium"
+	texturefile = "gfx/interface/technologies/DEN_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ICE_antiair5_medium"
+	texturefile = "gfx/interface/technologies/DEN_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ICE_antiair7_medium"
+	texturefile = "gfx/interface/technologies/DEN_aa3.dds"
+	}
+	
+	### Arty ###
+
+	SpriteType = {
+	name = "GFX_ICE_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/DEN_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ICE_artillery4_medium"
+	texturefile = "gfx/interface/technologies/DEN_a3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_ICE_artillery1_medium"
+	texturefile = "gfx/interface/technologies/DEN_a2.dds"
+	}
+
+SpriteType = {
+	name = "GFX_ICE_artillery7_medium"
+	texturefile = "gfx/interface/technologies/DEN_a3.dds"
+	}	
+
+	### troop_carriers ###
+
+	SpriteType = {
+		name = "GFX_ICE_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/DEN_tc1.dds"
+	}
+		SpriteType = {
+		name = "GFX_ICE_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/DEN_tc1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ICE_motorised_equipment_medium"
+		texturefile = "gfx/interface/technologies/DEN_tc1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ICE_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/ICE_tc4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ICE_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/ICE_tc3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ICE_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/DEN_tc2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ICE_amphibious_mechanized_infantry_medium"
+		texturefile = "gfx/interface/technologies/DEN_atc1.dds"
+	}
+	
+
+	### armoured cars ###
+
+	SpriteType = {
+		name = "GFX_ICE_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/DEN_td1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ICE_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ICE_ac1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ICE_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ICE_ac3.dds"
+	}
+
+SpriteType = {
+		name = "GFX_ICE_armored_car4_medium"
+		texturefile = "gfx/interface/technologies/ICE_ac3.dds"
+	}
+
+SpriteType = {
+		name = "GFX_ICE_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ICE_ac3.dds"
+	}	
+
+
+	

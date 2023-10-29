@@ -1,0 +1,986 @@
+spriteTypes = {	
+
+### Weapon 1 ###
+
+	SpriteType = {
+	name = "GFX_ENG_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/UK_1.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_CAN_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/LAT_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/UK_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/UK_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/UK_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/UK_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/UK_1.dds"
+	}
+	
+### Weapon 2 ###
+
+	SpriteType = {
+	name = "GFX_ENG_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/UK_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/UK_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/RAJ_2.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_AST_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/OZ_2.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_NZL_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/OZ_2.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_MAL_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/UK_2.dds"
+	}
+
+    SpriteType = {
+    name = "GFX_SAF_infantry_weapons1_medium"
+    texturefile = "gfx/interface/technologies/UK_2.dds"
+	}
+	
+### Weapon 3 ###
+	
+	SpriteType = {
+	name = "GFX_SAF_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/SA_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/RAJ_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/NZ_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/UK_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/CAN_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/OZ_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/UK_3.dds"
+	}
+	
+### Weapon 4 ###
+		
+	SpriteType = {
+	name = "GFX_ENG_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/UK_4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/CAN_4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/OZ_4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/NZ_4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/SA_4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/RAJ_4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/UK_4.dds"
+	}
+	
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_SAF_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/SA_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_artillery1_medium"
+	texturefile = "gfx/interface/technologies/SA_a2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_artillery4_medium"
+	texturefile = "gfx/interface/technologies/SA_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_artillery7_medium"
+	texturefile = "gfx/interface/technologies/SA_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/RAJ_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_artillery1_medium"
+	texturefile = "gfx/interface/technologies/RAJ_a2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_artillery4_medium"
+	texturefile = "gfx/interface/technologies/RAJ_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_artillery7_medium"
+	texturefile = "gfx/interface/technologies/RAJ_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/MAL_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_artillery1_medium"
+	texturefile = "gfx/interface/technologies/MAL_a2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_artillery4_medium"
+	texturefile = "gfx/interface/technologies/MAL_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_artillery7_medium"
+	texturefile = "gfx/interface/technologies/MAL_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/OZ_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_artillery1_medium"
+	texturefile = "gfx/interface/technologies/OZ_a2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_artillery4_medium"
+	texturefile = "gfx/interface/technologies/OZ_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_artillery7_medium"
+	texturefile = "gfx/interface/technologies/OZ_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/CAN_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_artillery1_medium"
+	texturefile = "gfx/interface/technologies/CAN_a2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_artillery4_medium"
+	texturefile = "gfx/interface/technologies/CAN_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_artillery7_medium"
+	texturefile = "gfx/interface/technologies/CAN_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/NZ_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_artillery1_medium"
+	texturefile = "gfx/interface/technologies/NZ_a2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_artillery4_medium"
+	texturefile = "gfx/interface/technologies/NZ_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_artillery7_medium"
+	texturefile = "gfx/interface/technologies/NZ_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/UK_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_artillery1_medium"
+	texturefile = "gfx/interface/technologies/UK_a2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_artillery4_medium"
+	texturefile = "gfx/interface/technologies/UK_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_artillery7_medium"
+	texturefile = "gfx/interface/technologies/UK_a3.dds"
+	}
+	
+### Figher Aircraft ###
+
+	SpriteType = {
+	name = "GFX_NZL_fighter1_medium"
+	texturefile = "gfx/interface/technologies/NZ_f2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_MAL_fighter1_medium"
+	texturefile = "gfx/interface/technologies/MAL_f2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_fighter2_medium"
+	texturefile = "gfx/interface/technologies/NZ_f3.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_NZL_fighter3_medium"
+	texturefile = "gfx/interface/technologies/NZ_f4.dds"
+	}	
+
+	
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_AST_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/OZ_aa1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_AST_antiair2_medium"
+	texturefile = "gfx/interface/technologies/OZ_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/NZ_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_antiair2_medium"
+	texturefile = "gfx/interface/technologies/NZ_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/SA_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_antiair2_medium"
+	texturefile = "gfx/interface/technologies/SA_aa2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_MAL_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/MAL_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_antiair2_medium"
+	texturefile = "gfx/interface/technologies/MAL_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/RAJ_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_antiair2_medium"
+	texturefile = "gfx/interface/technologies/RAJ_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/CAN_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_antiair2_medium"
+	texturefile = "gfx/interface/technologies/CAN_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/UK_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_antiair2_medium"
+	texturefile = "gfx/interface/technologies/UK_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_antiair5_medium"
+	texturefile = "gfx/interface/technologies/OZ_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_antiair7_medium"
+	texturefile = "gfx/interface/technologies/OZ_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_antiair5_medium"
+	texturefile = "gfx/interface/technologies/NZ_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_antiair7_medium"
+	texturefile = "gfx/interface/technologies/NZ_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_antiair5_medium"
+	texturefile = "gfx/interface/technologies/SA_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_antiair7_medium"
+	texturefile = "gfx/interface/technologies/SA_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_antiair5_medium"
+	texturefile = "gfx/interface/technologies/MAL_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_antiair7_medium"
+	texturefile = "gfx/interface/technologies/MAL_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_antiair5_medium"
+	texturefile = "gfx/interface/technologies/RAJ_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_antiair7_medium"
+	texturefile = "gfx/interface/technologies/RAJ_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_antiair5_medium"
+	texturefile = "gfx/interface/technologies/CAN_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_antiair7_medium"
+	texturefile = "gfx/interface/technologies/CAN_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_antiair5_medium"
+	texturefile = "gfx/interface/technologies/UK_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_antiair7_medium"
+	texturefile = "gfx/interface/technologies/UK_aa3.dds"
+	}
+	
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_ENG_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/UK_at1.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_ENG_antitank2_medium"
+	texturefile = "gfx/interface/technologies/UK_at2.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_SAF_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/SA_at1.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_SAF_antitank2_medium"
+	texturefile = "gfx/interface/technologies/SA_at2.dds"
+	}	
+	    
+	SpriteType = {
+	name = "GFX_SAF_antitank5_medium"
+	texturefile = "gfx/interface/technologies/SA_at3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_SAF_antitank7_medium"
+	texturefile = "gfx/interface/technologies/SA_at3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/CAN_at1.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_CAN_antitank2_medium"
+	texturefile = "gfx/interface/technologies/CAN_at2.dds"
+	}	
+	    
+	SpriteType = {
+	name = "GFX_CAN_antitank5_medium"
+	texturefile = "gfx/interface/technologies/CAN_at3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_CAN_antitank7_medium"
+	texturefile = "gfx/interface/technologies/CAN_at3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/OZ_at1.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_AST_antitank2_medium"
+	texturefile = "gfx/interface/technologies/OZ_at2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_AST_antitank5_medium"
+	texturefile = "gfx/interface/technologies/OZ_at3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_AST_antitank7_medium"
+	texturefile = "gfx/interface/technologies/OZ_at3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/NZ_at1.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_NZL_antitank2_medium"
+	texturefile = "gfx/interface/technologies/NZ_at2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_antitank5_medium"
+	texturefile = "gfx/interface/technologies/NZ_at3.dds"
+	}
+
+SpriteType = {
+	name = "GFX_NZL_antitank7_medium"
+	texturefile = "gfx/interface/technologies/NZ_at3.dds"
+	}	
+	
+
+	SpriteType = {
+	name = "GFX_RAJ_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/RAJ_at1.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_RAJ_antitank2_medium"
+	texturefile = "gfx/interface/technologies/RAJ_at2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_RAJ_antitank5_medium"
+	texturefile = "gfx/interface/technologies/RAJ_at3.dds"
+	}
+
+SpriteType = {
+	name = "GFX_RAJ_antitank7_medium"
+	texturefile = "gfx/interface/technologies/RAJ_at3.dds"
+	}	
+	
+
+	SpriteType = {
+	name = "GFX_MAL_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/MAL_at1.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_MAL_antitank2_medium"
+	texturefile = "gfx/interface/technologies/MAL_at2.dds"
+	}		
+	
+	SpriteType = {
+	name = "GFX_MAL_antitank5_medium"
+	texturefile = "gfx/interface/technologies/MAL_at3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_MAL_antitank7_medium"
+	texturefile = "gfx/interface/technologies/MAL_at3.dds"
+	}
+	
+	
+### trucks ###
+
+    SpriteType = {
+	name = "GFX_NZL_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/NZ_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/NZ_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/NZ_tc1.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_SAF_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/SA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/SA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/SA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/UK_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/UK_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/UK_tc1.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_CAN_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/CAN_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/CAN_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/CAN_tc1.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_MAL_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/MAL_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/MAL_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/MAL_tc1.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_AST_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/OZ_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/OZ_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/OZ_tc1.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_RAJ_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/RAJ_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/RAJ_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/RAJ_tc1.dds"
+	}
+
+### troop_carriers ###
+
+	SpriteType = {
+	name = "GFX_AST_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/OZ_tc4.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_AST_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/OZ_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_AST_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/OZ_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/SA_tc4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/SA_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/SA_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/CAN_tc4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/CAN_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_CAN_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/CAN_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/RAJ_tc4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/RAJ_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_RAJ_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/RAJ_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/NZ_tc4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/NZ_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_NZL_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/NZ_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/MAL_tc4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/MAL_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_MAL_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/MAL_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/UK_tc4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/UK_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_ENG_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/UK_tc2.dds"
+	}
+	
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_AST_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/OZ_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/OZ_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/OZ_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/OZ_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/OZ_ac3.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_MAL_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/MAL_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/MAL_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/MAL_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/MAL_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAL_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/MAL_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/SA_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/SA_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/SA_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/SA_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SAF_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/SA_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/RAJ_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/RAJ_ac2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_RAJ_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/RAJ_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/RAJ_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_RAJ_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/RAJ_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/NZ_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/NZ_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/NZ_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/NZ_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NZL_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/NZ_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/CAN_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/CAN_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/CAN_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/CAN_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/CAN_ac3.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_ENG_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/UK_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/UK_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/UK_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/UK_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ENG_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/UK_ac3.dds"
+	}
+	
+	
+}
+	

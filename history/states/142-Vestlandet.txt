@@ -32,13 +32,13 @@ state={
 			}
 		}
 		victory_points = {
-			9296 1
+			9296 5
 		}
 		victory_points = {
-			53 1
+			53 5
 		}
 		victory_points = {
-			122 3
+			122 15
 		}
 		add_core_of = NOR
 	}

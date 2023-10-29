@@ -1,0 +1,148 @@
+spriteTypes = {	
+
+### guns ###
+	
+	SpriteType = {
+	name = "GFX_USA_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/USA_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/USA_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/USA_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/USA_4.dds"
+	}
+	
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_USA_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/USA_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_artillery1_medium"
+	texturefile = "gfx/interface/technologies/USA_a2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_USA_artillery4_medium"
+	texturefile = "gfx/interface/technologies/USA_a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_artillery7_medium"
+	texturefile = "gfx/interface/technologies/USA_a3.dds"
+	}
+
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_USA_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/USA_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_antiair2_medium"
+	texturefile = "gfx/interface/technologies/USA_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_antiair5_medium"
+	texturefile = "gfx/interface/technologies/USA_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_antiair7_medium"
+	texturefile = "gfx/interface/technologies/USA_aa3.dds"
+	}
+
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_USA_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/USA_at1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_USA_antitank2_medium"
+	texturefile = "gfx/interface/technologies/USA_at2.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_USA_antitank5_medium"
+	texturefile = "gfx/interface/technologies/USA_at3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_antitank7_medium"
+	texturefile = "gfx/interface/technologies/USA_at3.dds"
+	}
+
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_USA_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/USA_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/USA_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/USA_ac3.dds"
+	}
+
+SpriteType = {
+	name = "GFX_USA_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/USA_ac3.dds"
+	}
+
+SpriteType = {
+	name = "GFX_USA_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/USA_ac3.dds"
+	}	
+	
+### troop_carriers ###
+
+    SpriteType = {
+	name = "GFX_USA_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/USA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/USA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/USA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/USA_tc4.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/USA_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/USA_tc2.dds"
+	}

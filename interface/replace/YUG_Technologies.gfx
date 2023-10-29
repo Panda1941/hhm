@@ -1,0 +1,129 @@
+spriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_YUG_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/YUG_1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_YUG_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/YUG_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_YUG_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/YUG_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_YUG_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/YUG_4.dds"
+	}
+
+    ### Arty ###
+	
+	SpriteType = {
+	name = "GFX_YUG_motorized_rocket_unit_medium"
+	texturefile = "gfx/interface/technologies/YUG_mra.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_YUG_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/YUG_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_YUG_artillery4_medium"
+	texturefile = "gfx/interface/technologies/YUG_a3.dds"
+	}	
+		
+	SpriteType = {
+	name = "GFX_YUG_artillery1_medium"
+	texturefile = "gfx/interface/technologies/YUG_a2.dds"
+	}
+	
+    ### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_YUG_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/YUG_at1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_YUG_antitank2_medium"
+	texturefile = "gfx/interface/technologies/YUG_at2.dds"
+	}		
+   
+    SpriteType = {
+	name = "GFX_YUG_antitank5_medium"
+	texturefile = "gfx/interface/technologies/YUG_at3.dds"
+	}	
+	
+    ### Anti-Air ###
+
+	SpriteType = {
+	name = "GFX_YUG_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/YUG_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_YUG_antiair2_medium"
+	texturefile = "gfx/interface/technologies/YUG_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_YUG_antiair5_medium"
+	texturefile = "gfx/interface/technologies/YUG_aa3.dds"
+	}
+	
+	
+    ### troop_carriers ###
+	
+    SpriteType = {
+	name = "GFX_YUG_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/YUG_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_YUG_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/YUG_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_YUG_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/YUG_tc1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_YUG_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/YUG_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_YUG_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/YUG_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_YUG_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/YUG_tc4.dds"
+	}
+	
+    ### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_YUG_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/YUG_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_YUG_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/YUG_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_YUG_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/YUG_ac3.dds"
+	}
+	

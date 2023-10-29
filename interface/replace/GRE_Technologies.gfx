@@ -1,0 +1,146 @@
+spriteTypes = {	
+
+	
+	SpriteType = {
+		name = "GFX_GRE_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GRE_1.dds"
+	}
+		SpriteType = {
+		name = "GFX_GRE_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/GRE_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GRE_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GRE_4.dds"
+	}
+	
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_GRE_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/GRE_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GRE_artillery1_medium"
+	texturefile = "gfx/interface/technologies/GRE_a2.dds"
+	}		
+	
+	SpriteType = {
+	name = "GFX_GRE_artillery4_medium"
+	texturefile = "gfx/interface/technologies/GRE_a3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_GRE_artillery7_medium"
+	texturefile = "gfx/interface/technologies/GRE_a3.dds"
+	}	
+	
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_GRE_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/GRE_at1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_GRE_antitank2_medium"
+	texturefile = "gfx/interface/technologies/GRE_at2.dds"
+	}			
+	
+    SpriteType = {
+	name = "GFX_GRE_antitank5_medium"
+	texturefile = "gfx/interface/technologies/GRE_at3.dds"
+	}
+
+SpriteType = {
+	name = "GFX_GRE_antitank7_medium"
+	texturefile = "gfx/interface/technologies/GRE_at3.dds"
+	}	
+	
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_GRE_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/GRE_aa1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GRE_antiair2_medium"
+	texturefile = "gfx/interface/technologies/GRE_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GRE_antiair5_medium"
+	texturefile = "gfx/interface/technologies/GRE_aa3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GRE_antiair7_medium"
+	texturefile = "gfx/interface/technologies/GRE_aa3.dds"
+	}
+		
+    ### troop_carriers ###
+	
+    SpriteType = {
+	name = "GFX_GRE_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/GRE_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GRE_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/GRE_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GRE_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/GRE_tc1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GRE_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/GRE_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GRE_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/GRE_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GRE_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/GRE_tc4.dds"
+	}
+	
+    ### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_GRE_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/GRE_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GRE_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/GRE_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GRE_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/GRE_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GRE_armored_car4_medium"
+	texturefile = "gfx/interface/technologies/GRE_ac3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GRE_armored_car_at_upgrade_medium"
+	texturefile = "gfx/interface/technologies/GRE_ac3.dds"
+	}
