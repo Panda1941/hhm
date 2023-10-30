@@ -322,6 +322,122 @@ guiTypes = {
 				}					
 				
 			}
+			
+			############################################################################
+			#						LAND DOCTRINES OVERALL TREES
+			############################################################################
+			instantTextBoxType = {
+				name = "mobile_warfare_overall_title"
+				position = { x = 120 y = 1400 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "MOBILE_WARFARE_OVERALL_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "MOBILE_WARFARE_OVERALL_LABEL_TT"
+			}
+
+			gridboxtype = {
+				name = "mobile_warfare_overall_tree"
+				position = { x=80 y=1400 }
+				size = { width = 478 height = 440 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-25 }
+				}
+			}
+			
+			instantTextBoxType = {
+				name = "superior_firepower_overall_title"
+				position = { x = 600 y = 1400 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "SUPERIOR_FIREPOWER_OVERALL_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "SUPERIOR_FIREPOWER_OVERALL_LABEL_TT"
+			}
+
+			gridboxtype = {
+				name = "superior_firepower_overall_tree"
+				position = { x=560 y=1400 }
+				size = { width = 480 height = 440 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-25 }
+				}
+			}
+			
+			instantTextBoxType = {
+				name = "grand_battleplan_overall_title"
+				position = { x = 1080 y = 1400 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "GRAND_BATTLEPLAN_OVERALL_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "GRAND_BATTLEPLAN_OVERALL_LABEL_TT"
+			}
+
+			gridboxtype = {
+				name = "grand_battleplan_overall_tree"
+				position = { x=1040 y=1400 }
+				size = { width = 480 height = 440 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-25 }
+				}
+			}
+			
+			instantTextBoxType = {
+				name = "mass_assault_overall_title"
+				position = { x = 1560 y = 1400 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "MASS_ASSAULT_OVERALL_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "MASS_ASSAULT_OVERALL_LABEL_TT"
+			}
+
+			gridboxtype = {
+				name = "mass_assault_overall_tree"
+				position = { x=1520 y=1400 }
+				size = { width = 480 height = 440 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-25 }
+				}
+			}
+			############################################################################
 		}
 		
 		containerWindowType = {
@@ -794,6 +910,94 @@ guiTypes = {
 					position = { x=0 y=-150 }					
 				}
 			}
+			
+			############################################################################
+			#						NAVAL DOCTRINES OVERALL TREES
+			############################################################################
+			instantTextBoxType = {
+				name = "fleet_in_being_overall_title"
+				position = { x = 120 y = 1050 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "FLEET_IN_BEING_OVERALL_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "FLEET_IN_BEING_OVERALL_LABEL_TT"
+			}
+
+			gridboxtype = {
+				name = "fleet_in_being_overall_tree"
+				position = { x=80 y=1050 }
+				size = { width = 478 height = 200 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-25 }
+				}
+			}
+
+			instantTextBoxType = {
+				name = "trade_interdiction_overall_title"
+				position = { x = 610 y = 1050 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "TRADE_INTERDICTION_OVERALL_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "TRADE_INTERDICTION_OVERALL_LABEL_TT"
+			}
+
+			gridboxtype = {
+				name = "trade_interdiction_overall_tree"
+				position = { x=560 y=1050 }
+				size = { width = 480 height = 200 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-25 }
+				}
+			}
+
+			instantTextBoxType = {
+				name = "base_strike_overall_title"
+				position = { x = 1085 y = 1050 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "BASE_STRIKE_OVERALL_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "BASE_STRIKE_OVERALL_LABEL_TT"
+			}
+
+			gridboxtype = {
+				name = "base_strike_overall_tree"
+				position = { x=1042 y=1050 }
+				size = { width = 480 height = 200 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-25 }
+				}
+			}
+			############################################################################
 		}
 
 		containerWindowType = {
@@ -982,6 +1186,91 @@ guiTypes = {
 					position = { x=0 y=-150 }					
 				}
 			}
+			
+			############################################################################
+			#						AIR DOCTRINES OVERALL TREES
+			############################################################################
+			instantTextBoxType = {
+				name = "strategic_destruction_overall_title"
+				position = { x = 80 y = 1400 }
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "STRATEGIC_DESTRUCTION_OVERALL_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "STRATEGIC_DESTRUCTION_OVERALL_LABEL_TT"
+			}
+
+			gridboxtype = {
+				name = "strategic_destruction_overall_tree"
+				position = { x=70 y=1400 }
+				size = { width = 427 height = 400 }
+				slotsize = { width=50 height=50 }
+				format = "UP"
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=10 y=-25 }
+				}
+			}
+
+			instantTextBoxType = {
+				name = "battlefield_support_overall_title"
+				position = { x = 595 y = 1400 }
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "BATTLEFIELD_SUPPORT_OVERALL_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "BATTLEFIELD_SUPPORT_OVERALL_LABEL_TT"
+			}
+
+			gridboxtype = {
+				name = "battlefield_support_overall_tree"
+				position = { x=595 y=1400 }
+				size = { width = 427 height = 400 }
+				slotsize = { width=60 height=60 }
+				format = "UP"
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-25 }
+				}
+			}
+
+			instantTextBoxType = {
+				name = "operational_integrity_overall_title"
+				position = { x = 1100 y = 1400 }
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "OPERATIONAL_INTEGRITY_OVERALL_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "OPERATIONAL_INTEGRITY_OVERALL_LABEL_TT"
+			}
+
+			gridboxtype = {
+				name = "operational_integrity_overall_tree"
+				position = { x=1100 y=1400 }
+				size = { width = 427 height = 400 }
+				slotsize = { width=60 height=60 }
+				format = "UP"
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-25 }
+				}
+			}
+			############################################################################
 		}
 		containerWindowType = {
 			name = "special_forces_doctrine_folder"

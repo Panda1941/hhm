@@ -1,0 +1,16 @@
+technologies = {
+
+	# Hidden Tech
+	overall_not_researchable = {
+
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

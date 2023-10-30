@@ -1,0 +1,183 @@
+spriteTypes = {
+	
+	######################
+	# Land Doctrines
+	######################
+
+	# Mobile Warfare
+	SpriteType = {
+		name = "GFX_mobile_warfare_overall_medium"
+		texturefile = "gfx/interface/technologies/mobile_warfare.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mobile_warfare_L_medium"
+		texturefile = "gfx/interface/technologies/mobile_infantry.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mobile_warfare_R_medium"
+		texturefile = "gfx/interface/technologies/armored_spearhead.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mobile_warfare_LL_medium"
+		texturefile = "gfx/interface/technologies/werwolf_guerillas.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mobile_warfare_RL_medium"
+		texturefile = "gfx/interface/technologies/werwolf_guerillas.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mobile_warfare_LR_medium"
+		texturefile = "gfx/interface/technologies/modern_blitzkrieg.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mobile_warfare_RR_medium"
+		texturefile = "gfx/interface/technologies/modern_blitzkrieg.dds"
+		alwaystransparent = yes
+	}
+	# Superior Firepower
+	SpriteType = {
+		name = "GFX_superior_firepower_overall_medium"
+		texturefile = "gfx/interface/technologies/superior_firepower.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_superior_firepower_L_medium"
+		texturefile = "gfx/interface/technologies/dispersed_support.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_superior_firepower_R_medium"
+		texturefile = "gfx/interface/technologies/intergrated_support.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_superior_firepower_LL_medium"
+		texturefile = "gfx/interface/technologies/air_land_battle.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_superior_firepower_RL_medium"
+		texturefile = "gfx/interface/technologies/air_land_battle.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_superior_firepower_LR_medium"
+		texturefile = "gfx/interface/technologies/shock_and_awe.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_superior_firepower_RR_medium"
+		texturefile = "gfx/interface/technologies/shock_and_awe.dds"
+		alwaystransparent = yes
+	}
+	# Grand Battleplan
+	SpriteType = {
+		name = "GFX_grand_battleplan_overall_medium"
+		texturefile = "gfx/interface/technologies/grand_battle_plan.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_grand_battleplan_L_medium"
+		texturefile = "gfx/interface/technologies/c3i_theory.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_grand_battleplan_R_medium"
+		texturefile = "gfx/interface/technologies/infiltration_in_depth.dds"
+		alwaystransparent = yes
+	}
+	# Mass Assault
+	SpriteType = {
+		name = "GFX_mass_assault_overall_medium"
+		texturefile = "gfx/interface/technologies/mass_assault.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mass_assault_L_medium"
+		texturefile = "gfx/interface/technologies/continuous_offensive.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mass_assault_R_medium"
+		texturefile = "gfx/interface/technologies/guerilla_warfare.dds"
+		alwaystransparent = yes
+	}
+	
+	######################
+	# Naval Doctrines
+	######################
+
+	# Fleet in Being
+	SpriteType = {
+		name = "GFX_fleet_in_being_overall_medium"
+		texturefile = "gfx/interface/technologies/fleet_in_being.dds"
+	}
+	# Trade Interdiction
+	SpriteType = {
+		name = "GFX_trade_interdiction_overall_medium"
+		texturefile = "gfx/interface/technologies/trade_interdiction.dds"
+	}
+	# Base Strike
+	SpriteType = {
+		name = "GFX_base_strike_overall_medium"
+		texturefile = "gfx/interface/technologies/base_strike.dds"
+	}
+	
+	######################
+	# Air Doctrines
+	######################
+
+	# Strategic Destruction
+	SpriteType = {
+		name = "GFX_strategic_destruction_overall_medium"
+		texturefile = "gfx/interface/technologies/air_superiority.dds"
+	}
+	SpriteType = {
+		name = "GFX_strategic_destruction_L_medium"
+		texturefile = "gfx/interface/technologies/fighter_sweeps.dds"
+	}
+	SpriteType = {
+		name = "GFX_strategic_destruction_R_medium"
+		texturefile = "gfx/interface/technologies/dogfighting_experience.dds"
+	}
+	SpriteType = {
+		name = "GFX_strategic_destruction_LL_medium"
+		texturefile = "gfx/interface/technologies/night_bombing.dds"
+	}
+	SpriteType = {
+		name = "GFX_strategic_destruction_RL_medium"
+		texturefile = "gfx/interface/technologies/night_bombing.dds"
+	}
+	SpriteType = {
+		name = "GFX_strategic_destruction_LR_medium"
+		texturefile = "gfx/interface/technologies/day_bombing.dds"
+	}
+	SpriteType = {
+		name = "GFX_strategic_destruction_RR_medium"
+		texturefile = "gfx/interface/technologies/day_bombing.dds"
+	}
+	# Battlefield Support
+	SpriteType = {
+		name = "GFX_battlefield_support_overall_medium"
+		texturefile = "gfx/interface/technologies/formation_flying.dds"
+	}
+	SpriteType = {
+		name = "GFX_battlefield_support_L_medium"
+		texturefile = "gfx/interface/technologies/formation_fighting.dds"
+	}
+	SpriteType = {
+		name = "GFX_battlefield_support_R_medium"
+		texturefile = "gfx/interface/technologies/fighter_veteran_initiative.dds"
+	}
+	# Operational Integrity
+	SpriteType = {
+		name = "GFX_operational_integrity_overall_medium"
+		texturefile = "gfx/interface/technologies/force_rotation.dds"
+	}
+}

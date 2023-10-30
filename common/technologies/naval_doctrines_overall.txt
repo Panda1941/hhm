@@ -1,0 +1,200 @@
+# Last patch values checked: 1.11.1
+
+technologies = {
+
+	fleet_in_being_overall = {
+
+		#doctrine_name = "FLEET_IN_BEING_OVERALL"
+
+		dependencies = {
+			overall_not_researchable = 1
+		}
+		
+		doctrine = yes
+
+		research_cost = 1
+		xp_unlock_cost = 100
+		
+		#categories = {
+		#}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		# Effects
+		carrier = {
+			max_organisation = 30
+			sub_detection = 0.50
+		}
+		battleship = {
+			max_organisation = 50
+		}
+		battle_cruiser = {
+			max_organisation = 30
+		}
+		heavy_cruiser = {
+			max_organisation = 30
+		}
+		light_cruiser = {
+			max_organisation = 25
+			surface_detection = 0.10
+			sub_detection = 0.35
+		}
+		destroyer = {
+			max_organisation = 20
+			surface_detection = 0.10
+			sub_detection = 0.30
+		}
+		submarine = {
+			max_organisation = 40
+			surface_detection = 0.25
+			convoy_raiding_coordination = 0.15
+		}
+
+		navy_anti_air_attack_factor = 0.10
+		navy_capital_ship_attack_factor = 0.1
+		navy_capital_ship_defence_factor = 0.10
+		strike_force_movement_org_loss = -0.2
+		sortie_efficiency = 0.3
+		convoy_escort_efficiency = 0.45
+		mines_planting_by_fleets_factor = 0.2
+		naval_torpedo_reveal_chance_factor = -0.15
+	}
+
+	trade_interdiction_overall = {
+
+		#doctrine_name = "TRADE_INTERDICTION_OVERALL"
+
+		dependencies = {
+			overall_not_researchable = 1
+		}
+		
+		doctrine = yes
+
+		research_cost = 1
+		xp_unlock_cost = 100
+		
+		#categories = {
+		#}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		# Effects
+		carrier = {
+			max_organisation = 60
+		}
+		battleship = {
+			max_organisation = 50
+			convoy_raiding_coordination = 0.5
+			surface_detection = 0.25
+		}
+		battle_cruiser = {
+			max_organisation = 40
+			surface_detection = 0.30
+			convoy_raiding_coordination = 0.50
+		}
+		heavy_cruiser = {
+			max_organisation = 40
+			surface_detection = 0.30
+			convoy_raiding_coordination = 0.50
+		}
+		light_cruiser = {
+			max_organisation = 30
+			surface_detection = 0.30
+			convoy_raiding_coordination = 0.50
+		}
+		destroyer = {
+			max_organisation = 5
+			sub_detection = 0.05
+		}
+		submarine = {
+			max_organisation = 50
+			surface_detection = 0.50
+			convoy_raiding_coordination = 0.50
+			max_strength = 0.2
+		}
+
+		navy_capital_ship_defence_factor = 0.10
+		strike_force_movement_org_loss = -0.2
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		naval_torpedo_reveal_chance_factor = -0.20
+		navy_submarine_attack_factor = 0.1
+		sortie_efficiency = 0.3
+		convoy_escort_efficiency = 0.05
+		modifier = {
+			naval_strike_targetting_factor = 0.2
+		}
+	}
+
+	base_strike_overall = {
+
+		#doctrine_name = "BASE_STRIKE_OVERALL"
+
+		dependencies = {
+			overall_not_researchable = 1
+		}
+		
+		doctrine = yes
+
+		research_cost = 1
+		xp_unlock_cost = 100
+		
+		#categories = {
+		#}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		# Effects
+		carrier = {
+			max_organisation = 120
+			sub_detection = 0.25
+		}
+		battleship = {
+			max_organisation = 20
+		}
+		light_cruiser = {
+			max_organisation = 50
+			sub_detection = 0.25
+		}
+		destroyer = {
+			max_organisation = 20
+			sub_detection = 0.25
+		}
+		submarine = {
+			max_organisation = 40
+			surface_detection = 0.25
+			convoy_raiding_coordination = 0.15
+		}
+
+		port_strike = 0.5
+		navy_carrier_air_agility_factor = 0.10
+		sortie_efficiency = 0.5
+		carrier_capacity_penalty_reduction = -0.2
+		navy_capital_ship_defence_factor = 0.10
+		modifier = {
+			naval_strike_targetting_factor = 0.4
+		}
+		naval_torpedo_reveal_chance_factor = -0.15
+		convoy_escort_efficiency = 0.30
+	}
+}
