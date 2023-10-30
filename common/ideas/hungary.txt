@@ -274,7 +274,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.20
 			}
 		}
 
