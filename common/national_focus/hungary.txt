@@ -211,7 +211,6 @@ focus_tree = {
 				limit = {
 					has_government = neutrality
 				}
-				add_popularity = { ideology = fascism popularity = 0.05 }
 				add_country_leader_role = {
 					character = "HUN_franz_friedrich"
 					country_leader = {
@@ -287,7 +286,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_economic_intervention
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -946,7 +945,7 @@ focus_tree = {
 		x = -3
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
@@ -1045,7 +1044,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_reintegrate_the_railroads
 
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 70
@@ -1085,7 +1084,7 @@ focus_tree = {
 		}
 
 		available = {
-			num_of_factories > 50
+			num_of_factories > 45
 		}
 
 		bypass = {
@@ -1119,7 +1118,7 @@ focus_tree = {
 
 		available = {
 			date >1940.01.01
-			num_of_factories > 80
+			num_of_factories > 75
 		}
 
 		bypass = {
@@ -1150,7 +1149,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_announce_the_gyor_program
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 40
@@ -1224,7 +1223,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 70
@@ -1243,7 +1242,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 60
 		}
 	}
 
@@ -1255,7 +1254,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 60
@@ -1373,7 +1372,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_army_maneuvers
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 40

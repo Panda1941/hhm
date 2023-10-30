@@ -180,19 +180,19 @@ set_variable = { ITA_ultimatum_days = 14 }
 }
 
 #RICOSTRUZIONE INDUSTRIALE
-set_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
+set_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.10 }
 set_variable = { ITA_iri_industrial_concern_cost_factor = -0.35 }
 set_variable = { ITA_iri_tank_manufacturer_cost_factor = -0.15 }
 set_variable = { ITA_iri_materiel_manufacturer_cost_factor = -0.15 }
 set_variable = { ITA_iri_aircraft_manufacturer_cost_factor = -0.15 }
 set_variable = { ITA_iri_naval_manufacturer_cost_factor = -0.15 }
 
-set_variable = { ITA_iri_production_speed_arms_factory_factor = 0 }
-set_variable = { ITA_iri_consumer_goods_factor = 0 }
+set_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
+set_variable = { ITA_iri_consumer_goods_factor = 0.03 }
 set_variable = { ITA_iri_local_resources_factor = 0 }
 set_variable = { ITA_iri_production_speed_infrastructure_factor = 0 }
 set_variable = { ITA_re_supply_node_range = 0 }
-set_variable = { ITA_iri_production_speed_dockyard_factor = 0 }
+set_variable = { ITA_iri_production_speed_dockyard_factor = 0.05 }
 
 add_dynamic_modifier = { modifier = ITA_ricostruzione_industriale_dynamic_modifier }
 

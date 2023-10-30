@@ -18,8 +18,7 @@ ideas = {
 			picture = generic_exploit_mines
 
 			modifier = {
-				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.15
 				local_resources_factor = 0.1
 			}
 		}
@@ -275,7 +274,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				consumer_goods_factor = -0.20
+				consumer_goods_factor = -0.25
 			}
 		}
 
