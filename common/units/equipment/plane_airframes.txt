@@ -206,7 +206,7 @@ equipments = {
 
 		air_range = 500
 		maximum_speed = 0
-		air_agility = 45
+		air_agility = 56
 		air_defence = 7
 		weight = 3
 		naval_strike_attack = 1
@@ -224,7 +224,7 @@ equipments = {
 
 		air_range = 650
 		maximum_speed = 0
-		air_agility = 50
+		air_agility = 62
 		air_defence = 9
 		weight = 4
 		naval_strike_attack = 1
@@ -301,7 +301,7 @@ equipments = {
 
 		air_range = 900
 		maximum_speed = 0
-		air_agility = 65
+		air_agility = 70
 		air_defence = 11
 		weight = 5
 		naval_strike_attack = 1
@@ -393,7 +393,7 @@ equipments = {
 
 		air_range = 1100
 		maximum_speed = 0
-		air_agility = 80
+		air_agility = 74
 		air_defence = 12
 		weight = 6
 		naval_strike_attack = 1
@@ -508,7 +508,7 @@ equipments = {
 
 		air_range = 2000
 		maximum_speed = 0
-		air_agility = 55
+		air_agility = 72
 		air_defence = 18
 		weight = 7
 		naval_strike_attack = 1
@@ -822,7 +822,7 @@ equipments = {
 
 		air_range = 450
 		maximum_speed = 0
-		air_agility = 40
+		air_agility = 54
 		air_defence = 7
 		weight = 5
 		naval_strike_attack = 1
@@ -841,7 +841,7 @@ equipments = {
 
 		air_range = 570
 		maximum_speed = 0
-		air_agility = 45
+		air_agility = 60
 		air_defence = 9
 		weight = 6
 		naval_strike_attack = 1
@@ -917,7 +917,7 @@ equipments = {
 
 		air_range = 750
 		maximum_speed = 0
-		air_agility = 60
+		air_agility = 66
 		air_defence = 11
 		weight = 7
 		naval_strike_attack = 1
@@ -1008,7 +1008,7 @@ equipments = {
 
 		air_range = 900
 		maximum_speed = 0
-		air_agility = 75
+		air_agility = 70
 		air_defence = 12
 		weight = 8
 		naval_strike_attack = 1
@@ -1117,7 +1117,7 @@ equipments = {
 
 		air_range = 1700
 		maximum_speed = 0
-		air_agility = 55
+		air_agility = 70
 		air_defence = 18
 		weight = 9
 		naval_strike_attack = 1
