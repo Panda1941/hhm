@@ -37,6 +37,46 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/generic_a3.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_interwar_artillery_medium"
+		texturefile = "gfx/interface/technologies/artillery2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_artillery3_medium"
+		texturefile = "gfx/interface/technologies/artillery2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_artillery2_medium"
+		texturefile = "gfx/interface/technologies/artillery5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_artillery5_medium"
+		texturefile = "gfx/interface/technologies/artillery5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_artillery6_medium"
+		texturefile = "gfx/interface/technologies/artillery2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_artillery8_medium"
+		texturefile = "gfx/interface/technologies/artillery5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_artillery9_medium"
+		texturefile = "gfx/interface/technologies/artillery2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_artillery10_medium"
+		texturefile = "gfx/interface/technologies/artillery5.dds"
+	}
+	
 ### Anti-tank ###
 
 	SpriteType = {
@@ -57,6 +97,46 @@ spriteTypes = {
     SpriteType = {
 	name = "GFX_antitank7_medium"
 	texturefile = "gfx/interface/technologies/generic_at3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_antitank1_medium"
+		texturefile = "gfx/interface/technologies/antitank2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_antitank3_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_antitank4_medium"
+		texturefile = "gfx/interface/technologies/antitank2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_antitank6_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_antitank8_medium"
+		texturefile = "gfx/interface/technologies/antitank2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_antitank9_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_antitank10_medium"
+		texturefile = "gfx/interface/technologies/antitank2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_antitank11_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
 	}	
 	
 	
@@ -80,6 +160,46 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_antiair7_medium"
 	texturefile = "gfx/interface/technologies/generic_aa3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_antiair1_medium"
+		texturefile = "gfx/interface/technologies/antiair1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_antiair3_medium"
+		texturefile = "gfx/interface/technologies/antiair2.dds"
+	}
+
+SpriteType = {
+		name = "GFX_antiair4_medium"
+		texturefile = "gfx/interface/technologies/antiair1.dds"
+	}
+
+SpriteType = {
+		name = "GFX_antiair6_medium"
+		texturefile = "gfx/interface/technologies/antiair2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_antiair8_medium"
+		texturefile = "gfx/interface/technologies/antiair1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_antiair9_medium"
+		texturefile = "gfx/interface/technologies/antiair2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_antiair10_medium"
+		texturefile = "gfx/interface/technologies/antiair1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_antiair11_medium"
+		texturefile = "gfx/interface/technologies/antiair2.dds"
 	}
 
 ### armoured cars ###

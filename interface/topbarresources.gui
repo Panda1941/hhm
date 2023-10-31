@@ -19,7 +19,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "aluminum"
-		position = { x= 970 y = 5}
+		position = { x= 1112 y = 3}
 		clipping = no
 		size = { width=56 height=30 }
 		Orientation = UPPER_LEFT
@@ -52,7 +52,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "rubber"
-		position = { x= 1028 y = 5}
+		position = { x= 1166 y = 3}
 		clipping = no
 		size = { width=56 height=30 }
 		Orientation = UPPER_LEFT
@@ -85,7 +85,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "tungsten"
-		position = { x= 1086 y = 5}
+		position = { x= 1220 y = 3}
 		clipping = no
 		size = { width=56 height=30 }
 		Orientation = UPPER_LEFT
@@ -118,7 +118,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "steel"
-		position = { x= 1144 y = 5}
+		position = { x= 1276 y = 3}
 		clipping = no
 		size = { width=56 height=30 }
 		Orientation = UPPER_LEFT
@@ -151,7 +151,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "chromium"
-		position = { x= 1202 y = 5}
+		position = { x= 1332 y = 3}
 		clipping = no
 		size = { width=56 height=30 }
 		Orientation = UPPER_LEFT
