@@ -1030,10 +1030,6 @@ technologies = {
 			cat_mobile_warfare
 		}
 
-		path = {
-			leads_to_tech = blitzkrieg 
-			research_cost_coeff = 1
-		}
 		
 		path = {
 			leads_to_tech = kampfgruppe 
@@ -1088,10 +1084,7 @@ technologies = {
 			cat_mobile_warfare
 		}
 
-		path = {
-			leads_to_tech = blitzkrieg 
-			research_cost_coeff = 1
-		}
+		
 		
 		path = {
 			leads_to_tech = kampfgruppe 
