@@ -9170,4 +9170,83 @@ spriteTypes = {
 		name = "GFX_BRA_anti_tank_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/AT_4_allies.dds"
 	}
+	
+	
+	#######################doctrine stuff#############################
+	
+	SpriteType = {
+		name = "GFX_prepared_defense_ger_medium"
+		texturefile = "gfx/interface/technologies/prepared_defense.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_fortifications_medium"
+		texturefile = "gfx/interface/technologies/defence_in_depth.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_coordination_medium"
+		texturefile = "gfx/interface/technologies/centralized_fire_control.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_infantry_ger_medium"
+		texturefile = "gfx/interface/technologies/mobile_defence.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_air_support_medium"
+		texturefile = "gfx/interface/technologies/battlefield_support.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_volkssturm_recruitment_medium"
+		texturefile = "gfx/interface/technologies/volkssturm.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_stuka_medium"
+		texturefile = "gfx/interface/technologies/direct_ground_support.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_support_companies_medium"
+		texturefile = "gfx/interface/technologies/regimental_combat_teams.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_support_aa_medium"
+		texturefile = "gfx/interface/technologies/intergrated_support.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_concentrated_fp_medium"
+		texturefile = "gfx/interface/technologies/concentrated_fire_plans.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_inf_tactics_medium"
+		texturefile = "gfx/interface/technologies/infiltration_in_depth.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_mobile_arty_medium"
+		texturefile = "gfx/interface/technologies/mobile_infantry.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_arty_hp_medium"
+		texturefile = "gfx/interface/technologies/mass_motorization.dds"
+		alwaystransparent = yes
+	}
 }
