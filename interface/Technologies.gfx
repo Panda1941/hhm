@@ -5011,7 +5011,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_sup_mechanized_offensive_medium"
-		texturefile = "gfx/interface/technologies/mechanised_offensive.dds"
+		texturefile = "gfx/interface/technologies/armored_operations.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = {
@@ -9249,4 +9249,66 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/mass_motorization.dds"
 		alwaystransparent = yes
 	}
+	
+	SpriteType = {
+		name = "GFX_inf_sup_medium"
+		texturefile = "gfx/interface/technologies/infantry_offensive.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_armored_offensives_medium"
+		texturefile = "gfx/interface/technologies/deep_operations.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_sup_combined_arms_medium"
+		texturefile = "gfx/interface/technologies/vast_offensives.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_sup_regimental_combat_teams_medium"
+		texturefile = "gfx/interface/technologies/regimental_combat_teams.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_sup_intergrated_support_medium"
+		texturefile = "gfx/interface/technologies/intergrated_support.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_concentrated_fp_sup_medium"
+		texturefile = "gfx/interface/technologies/concentrated_fire_plans.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_combined_arms_sup_medium"
+		texturefile = "gfx/interface/technologies/combined_arms.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_tactical_control_sup_medium"
+		texturefile = "gfx/interface/technologies/tactical_control.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_air_land_battle_sup_medium"
+		texturefile = "gfx/interface/technologies/air_land_battle.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_tactical_control_air_medium"
+		texturefile = "gfx/interface/technologies/ground_support_integration.dds"
+		alwaystransparent = yes
+	}	
+	
+	
 }
