@@ -1820,7 +1820,7 @@ technologies = {
 	
 	sup_delay = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		category_light_infantry = {
 			defense = 0.05
 		}
@@ -1863,7 +1863,7 @@ technologies = {
 	
 	mobile_defence = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		category_all_infantry = {
 			max_organisation = 3
 		}
@@ -1915,7 +1915,7 @@ technologies = {
 	
 	inf_sup = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 		category_light_infantry = {
 			max_organisation = 12
@@ -1961,7 +1961,7 @@ technologies = {
 	
 	intergrated_support = { #This Branch is focused on boosting stuff in the support column 
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		on_research_complete = {
 	custom_effect_tooltip = ATT_tooltip_integrated_support
 	}
@@ -2026,7 +2026,7 @@ technologies = {
 	
 	regimental_combat_teams = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		category_support_battalions = {
 			max_organisation = 3
 			soft_attack = 0.05
@@ -2079,7 +2079,7 @@ technologies = {
 	
 	dispersed_support = { # Branch is focused on support units as part of the regular brigades
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 		
 		category_line_artillery = {
@@ -2132,7 +2132,7 @@ technologies = {
 	
 	overwhelming_firepower = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		category_line_artillery = {
 			soft_attack = 0.10
 			breakthrough = 0.05
@@ -2185,7 +2185,7 @@ technologies = {
 	
 	sup_mechanized_offensive = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		category_all_armor = {
 			breakthrough = 0.20
 			soft_attack = 0.05
@@ -2242,7 +2242,7 @@ technologies = {
 	
 	armored_offensives = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 	    
 		category_all_infantry = {
@@ -2306,7 +2306,7 @@ technologies = {
 	
 	concentrated_fire_plans = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		on_research_complete = {
 	custom_effect_tooltip = ATT_tooltip_concentrated_fire_plans
 	}
@@ -2366,7 +2366,7 @@ technologies = {
 	
 	combined_arms = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 		category_all_armor = {
 			hard_attack = 0.10
@@ -2425,7 +2425,7 @@ technologies = {
 	
 	tactical_control = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		land_reinforce_rate = 0.02
 		air_cas_present_factor = 0.10
 		
@@ -2480,7 +2480,7 @@ technologies = {
 	
 	air_land_battle = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		category_front_line = {
 			max_organisation = 5
 		}
@@ -2527,7 +2527,7 @@ technologies = {
 	
 	centralized_fire_control = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		coordination_bonus = 0.05
 
 		category_light_infantry = { 
@@ -2582,7 +2582,7 @@ technologies = {
 
 		
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 		
 		category_recon = {
@@ -2637,7 +2637,7 @@ technologies = {
 	
 	advanced_firebases = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 		category_artillery = { 
 			soft_attack = 0.10
@@ -2699,7 +2699,7 @@ technologies = {
 	
 	sup_combined_arms = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 		category_all_armor = {
 			hard_attack = 0.10
@@ -2761,7 +2761,7 @@ technologies = {
 	
 	shock_and_awe = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 		category_front_line = {
 			 soft_attack = 0.05
@@ -2819,7 +2819,7 @@ technologies = {
 	
 	sup_intergrated_support = { #This Branch is focused on boosting stuff in the support column 
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 
 	
 		category_support_battalions = {
@@ -2877,7 +2877,7 @@ technologies = {
 	
 	sup_regimental_combat_teams = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		category_support_battalions = {
 			max_organisation = 3
 			soft_attack = 0.05
@@ -2935,7 +2935,7 @@ technologies = {
 	
 	concentrated_fp_sup = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 
 		category_army = {
@@ -2988,7 +2988,7 @@ technologies = {
 	
 	combined_arms_sup = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 		category_all_armor = {
 			hard_attack = 0.10
@@ -3046,7 +3046,7 @@ technologies = {
 	
 	tactical_control_sup = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		land_reinforce_rate = 0.02
 		air_cas_present_factor = 0.10
 		
@@ -3106,7 +3106,7 @@ technologies = {
 	
 	tactical_control_air = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 		air_cas_present_factor = 0.10	
 
@@ -3151,7 +3151,7 @@ technologies = {
 	
 	air_land_battle_sup = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 80
 		
 			
 		#combat advantage when air superior
