@@ -1,60 +1,32 @@
 ﻿l_english:
  # Land Doctrines
- MOBILE_WARFARE_OVERALL_LABEL:0 "Mobile Warfare Overall"
- MOBILE_WARFARE_OVERALL_LABEL_TT:0 "Overall bonuses granted by this doctrine"
+ MOBILE_WARFARE_OVERALL_LABEL:0 "Mobile Warfare Germany"
+ MOBILE_WARFARE_OVERALL_LABEL_TT:0 "Germany bonuses granted by this doctrine"
  
  mobile_warfare_overall:0 "Mobile Warfare"
- mobile_warfare_overall_desc:0 "All §YMobile Warfare§! effects up to §YElastic Defense§!.\n\n"
- mobile_warfare_L:0 "Mobile Infantry Path"
- mobile_warfare_L_desc:0 "All §YMobile Warfare§! effects going through the §YMobile Infantry§! path up to §YKampfgruppe§!.\n\n"
- mobile_warfare_R:0 "Blitzkrieg Path"
- mobile_warfare_R_desc:0 "All §YMobile Warfare§! effects going through the §YBlitzkrieg§! path up to §YKampfgruppe§!.\n\n"
- mobile_warfare_LL:0 "Desperate Defense (L&L)"
- mobile_warfare_LL_desc:0 "All §YMobile Warfare§! effects after completing both the §YMobile Infantry§! and the §YDesperate Defense§! paths (Left & Left).\n\n"
- mobile_warfare_LR:0 "Modern Blitzkrieg (L&R)"
- mobile_warfare_LR_desc:0 "All §YMobile Warfare§! effects after completing both the §YMobile Infantry§! and the §YModern Blitzkrieg§! paths (Left & Right).\n\n"
- mobile_warfare_RL:0 "Desperate Defense (R&L)"
- mobile_warfare_RL_desc:0 "All §YMobile Warfare§! effects after completing both the §YBlitzkrieg§! and the §YDesperate Defense§! paths (Right & Left).\n\n"
- mobile_warfare_RR:0 "Modern Blitzkrieg (R&R)"
- mobile_warfare_RR_desc:0 "All §YMobile Warfare§! effects after completing both the §YBlitzkrieg§! and the §YModern Blitzkrieg§! paths (Right & Right).\n\n"
+ mobile_warfare_overall_desc:0 ""
  
- SUPERIOR_FIREPOWER_OVERALL_LABEL:0 "Superior Firepower Overall"
- SUPERIOR_FIREPOWER_OVERALL_LABEL_TT:0 "Overall bonuses granted by this doctrine"
+ 
+ SUPERIOR_FIREPOWER_OVERALL_LABEL:0 "Superior Firepower USA/ENG"
+ SUPERIOR_FIREPOWER_OVERALL_LABEL_TT:0 "USA/ENG bonuses granted by this doctrine"
  
  superior_firepower_overall:0 "Superior Firepower"
- superior_firepower_overall_desc:0 "All §YSuperior Firepower§! effects up to §YMobile Defense§!.\n\n"
- superior_firepower_L:0 "Dispersed Support Path"
- superior_firepower_L_desc:0 "All §YSuperior Firepower§! effects going through the §YDispersed Support§! path up to §YMechanized Offensive§!.\n\n"
- superior_firepower_R:0 "Integrated Support Path"
- superior_firepower_R_desc:0 "All §YSuperior Firepower§! effects going through the Integrated Support§! path up to §YMechanized Offensive§!.\n\n"
- superior_firepower_LL:0 "Airland Battle (L&L)"
- superior_firepower_LL_desc:0 "All §YSuperior Firepower§! effects after completing both the §YDispersed Support§! and the §YAirland Battle§! paths (Left & Left).\n\n"
- superior_firepower_LR:0 "Shock & Awe (L&R)"
- superior_firepower_LR_desc:0 "All §YSuperior Firepower§! effects after completing both the §YDispersed Support§! and the §YShock & Awe§! paths (Left & Right).\n\n"
- superior_firepower_RL:0 "Airland Battle (R&L)"
- superior_firepower_RL_desc:0 "All §YSuperior Firepower§! effects after completing both the §YIntegrated Support§! and the §YAirland Battle§! paths (Right & Left).\n\n"
- superior_firepower_RR:0 "Shock & Awe (R&R)"
- superior_firepower_RR_desc:0 "All §YSuperior Firepower§! effects after completing both the §YIntegrated Support§! and the §YShock & Awe§! paths (Right & Right).\n\n"
+ superior_firepower_overall_desc:0 ""
  
- GRAND_BATTLEPLAN_OVERALL_LABEL:0 "Grand Battleplan Overall"
- GRAND_BATTLEPLAN_OVERALL_LABEL_TT:0 "Overall bonuses granted by this doctrine"
+ 
+ GRAND_BATTLEPLAN_OVERALL_LABEL:0 "Grand Battleplan JAP/ITA"
+ GRAND_BATTLEPLAN_OVERALL_LABEL_TT:0 "JAP/ITA bonuses granted by this doctrine"
  
  grand_battleplan_overall:0 "Grand Battleplan"
- grand_battleplan_overall_desc:0 "All §YGrand Battleplan§! effects up to §YGrand Assault§!.\n\n"
- grand_battleplan_L:0 "Assault Path"
- grand_battleplan_L_desc:0 "All §YGrand Battleplan§! effects after completing the §YAssault§! path (Left).\n\n"
- grand_battleplan_R:0 "Infiltration Path"
- grand_battleplan_R_desc:0 "All §YGrand Battleplan§! effects after completing the §YInfiltration§! path (Right).\n\n"
+ grand_battleplan_overall_desc:0 ""
  
- MASS_ASSAULT_OVERALL_LABEL:0 "Mass Assault Overall"
- MASS_ASSAULT_OVERALL_LABEL_TT:0 "Overall bonuses granted by this doctrine"
+ 
+ MASS_ASSAULT_OVERALL_LABEL:0 "Mass Assault Soviet Union"
+ MASS_ASSAULT_OVERALL_LABEL_TT:0 "SOV bonuses granted by this doctrine"
  
  mass_assault_overall:0 "Mass Assault"
- mass_assault_overall_desc:0 "All §YMass Assault§! effects up to §YDefense in Depth§!.\n\n"
- mass_assault_L:0 "Deep Battle Path"
- mass_assault_L_desc:0 "All §YMass Assault§! effects after completing the §YDeep Battle§! path (Left).\n\n"
- mass_assault_R:0 "Mass Mobilization Path"
- mass_assault_R_desc:0 "All §YMass Assault§! effects after completing the §YMass Mobilization§! path (Right).\n\n"
+ mass_assault_overall_desc:0 ""
+ 
  
  # Naval Doctrines
  FLEET_IN_BEING_OVERALL_LABEL:0 "Fleet In Being Overall"

@@ -99,6 +99,12 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	SpriteType = {
+		name = "GFX_mass_assault_overall_2_medium"
+		texturefile = "gfx/interface/technologies/streamlined_line2.png"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
 		name = "GFX_mass_assault_L_medium"
 		texturefile = "gfx/interface/technologies/continuous_offensive.dds"
 		alwaystransparent = yes

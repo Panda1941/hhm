@@ -39,31 +39,6 @@ technologies = {
 			max_organisation = 2
 		}
 		
-		support_light_sp_artillery = {   
-		    need = { light_tank_artillery_chassis = -4 }   
-			}
-	    support_medium_sp_artillery = {   
-			need = { medium_tank_artillery_chassis = -4 }   
-			}
-		support_heavy_sp_artillery = {   
-			need = { heavy_tank_artillery_chassis = -4 }   
-			}
-		support_modern_sp_artillery = {   
-			need = { modern_tank_artillery_chassis = -4 }   
-			}
-		light_flame_tank = {  
-			need = {  light_tank_flame_chassis = -4 } 
-			}
-		medium_flame_tank = {  
-			need = {   medium_tank_flame_chassis = -4 }  
-			}
-		heavy_flame_tank = {  
-			need = { heavy_tank_flame_chassis  = -4 } 
-			}
-		on_research_complete = {   
-		custom_effect_tooltip = spam_tank_tt  
-		}
-		
 		enable_tactic = tactic_unexpected_thrust
 		org_loss_when_moving = -0.1
 
@@ -378,236 +353,9 @@ technologies = {
 		}
 	}
 	
-	mobile_infantry = { #Branch focuses on infantry, included Motorised and Mechanised.
 	
 	
-	    
-		allow = {
-			tag = GER 
-            date > 1941.01.01			
-		}
-
-		xp_research_type = army
-		xp_unlock_cost = 80
 	
-		
-		artillery_brigade = { 
-		    max_strength = 3  
-		}
-		anti_air_brigade = { 
-		    max_strength = 3 
-		}
-		anti_tank_brigade = { 
-		    max_strength = 3 
-		}
-		rocket_artillery_brigade = { 
-		    max_strength = 3
-		}
-		motorized = {
-			maximum_speed = 0.1
-		}
-		mot_recon = {
-			maximum_speed = 0.1
-		}
-		mot_artillery_brigade = {
-			maximum_speed = 0.1
-		}
-		mot_anti_tank_brigade = {
-			maximum_speed = 0.1
-		}
-		mot_anti_air_brigade = {
-			maximum_speed = 0.1
-		}
-		mechanized = {
-			maximum_speed = 0.1
-		}
-		amphibious_mechanized = {
-			maximum_speed = 0.1
-		}
-		
-		
-		path = {
-			leads_to_tech = mass_motorization 
-			research_cost_coeff = 1
-		}
-
-		
-		doctrine = yes	
-		research_cost = 4.5
-
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-
-			modifier = {
-				tag = GER
-				factor = 2
-			}
-		}
-		
-		ai_research_weights = {
-			armor = 1.0
-			defensive = -2.0
-			motorized_equipment = 3.0
-			cat_mechanized_equipment = 5.0
-		}
-	}
-	
-	mass_motorization = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		
-		
-		
-        	
-		category_support_battalions= {
-			breakthrough = 0.10
-        	}
-		
-		
-		path = {
-			leads_to_tech = mechanised_offensive 
-			research_cost_coeff = 1
-		}
-		
-		
-
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-		}
-		
-		ai_research_weights = {
-			armor = 2.0
-			defensive = -12.0
-		}
-	}
-	
-	mechanised_offensive = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-
-		motorized = {
-			fuel_capacity = 0.25
-			breakthrough = 0.50
-			
-		}
-		mechanized = {
-			fuel_capacity = 0.25
-			breakthrough = 0.50
-		}
-		amphibious_mechanized = {
-			fuel_capacity = 0.25
-			breakthrough = 0.50
-		}
-		
-		armored_car = {
-            fuel_capacity = 0.25
-            breakthrough = 0.50			
-		}
-
-		category_tanks = {
-			fuel_capacity = 0.25
-		}
-	
-
-		enable_tactic = tactic_blitz
-		
-		
-		path = {
-			leads_to_tech = volkssturm 
-			research_cost_coeff = 1
-		}
-
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-		}
-		
-		ai_research_weights = {
-			armor = 2.0
-			motorized_equipment = 2.0
-			cat_mechanized_equipment = 2.0
-		}
-	}
 	
 	armored_spearhead = { #Branch focused on Tanks 
 		xp_research_type = army
@@ -1283,12 +1031,7 @@ technologies = {
 			maximum_speed = 0.1
 		}
 		
-		motorized = {
-			need = { motorized_equipment = -7 }
-		}
-		mechanized = {
-			need = { mechanized_equipment = -7 }
-		}
+		
         mot_artillery_brigade = {
 			soft_attack = 0.05
 		}
@@ -1307,9 +1050,6 @@ technologies = {
 			cat_mobile_warfare
 		}
 
-		on_research_complete = { 
-			custom_effect_tooltip = spam_truck_tt
-		}
 		
 		folder = {
 			name = land_doctrine_folder
@@ -1556,183 +1296,7 @@ technologies = {
 		}
 	}
 	
-	volkssturm = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		
-		
-		allow = {
-			tag = GER 
-            date > 1942.01.01			
-		}
-		
 	
-		
-
-		
-		max_dig_in = 3
-		dig_in_speed_factor = 0.15
-		conscription = 0.02
-		experience_loss_factor = 0.10
-		
-		path = {
-			leads_to_tech = nd_conscription 
-			research_cost_coeff = 1
-		}
-
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		
-		on_research_complete = {
-	custom_effect_tooltip = ATT_tooltip_volkssturm
-	}
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.15
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				tag = GER
-				factor = 3
-			}
-		}
-		
-		ai_research_weights = {
-			armor = 2.0
-		}
-	}
-	
-	nd_conscription = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		conscription = 0.03
-		training_time_factor = -0.05
-		minimum_training_level = -0.05
-		experience_loss_factor = 0.15
-		
-		motorized = {
-			fuel_consumption = -0.15
-			
-		}
-		mechanized = {
-			fuel_consumption = -0.15
-		}
-		amphibious_mechanized = {
-			fuel_consumption = -0.15
-		}
-		
-		armored_car = {
-			fuel_consumption = -0.15		
-		}
-
-		category_tanks = {
-			fuel_consumption = -0.15
-
-		}
-
-		path = {
-			leads_to_tech = werwolf_guerillas 
-			research_cost_coeff = 1
-		}
-
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.15
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
-		}
-		
-		ai_research_weights = {
-			armor = 2.0
-		}
-	}
-	
-	werwolf_guerillas = {
-
-		xp_research_type = army
-		xp_unlock_cost = 80
-		
-		
-		supply_consumption_factor = -0.10
-		land_reinforce_rate = 0.02
-		cas_damage_reduction = 0.10
-
-		
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.15
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
-		}
-		
-		ai_research_weights = {
-			armor = 2.0
-		}
-	}
 
 	
 	
@@ -1759,7 +1323,7 @@ technologies = {
 		
 		
 		category_front_line = {
-			 soft_attack = 0.15
+			 soft_attack = 0.10
 		}
 		
 		max_planning = -0.20
@@ -1767,24 +1331,7 @@ technologies = {
 			supply_consumption = 0.15
 		}
 		
-		support_light_sp_artillery = {   
-		    need = { light_tank_artillery_chassis = 4 }   
-			}
-	    support_medium_sp_artillery = {   
-			need = { medium_tank_artillery_chassis = 4 }   
-			}
-		support_heavy_sp_artillery = {   
-			need = { heavy_tank_artillery_chassis = 4 }   
-			}
-		artillery_brigade = {
-			need = { artillery_equipment = 7 }
-		}	
-		rocket_artillery_brigade = {
-			need = { rocket_artillery_equipment = 7 }
-		}
-		on_research_complete = { 
-			custom_effect_tooltip = spam_arty_tt
-		}
+		
 		
 		
 		enable_tactic = tactic_barrage
@@ -1959,123 +1506,7 @@ technologies = {
 		}
 	}
 	
-	intergrated_support = { #This Branch is focused on boosting stuff in the support column 
-		xp_research_type = army
-		xp_unlock_cost = 80
-		on_research_complete = {
-	custom_effect_tooltip = ATT_tooltip_integrated_support
-	}
-	    
-		allow = {
-		OR = {
-			tag = ENG 
-			tag = USA
-		}	
-            date > 1941.07.01			
-		}
-
 	
-		category_support_battalions = {
-			max_organisation = 3
-			soft_attack = 0.1
-			air_attack = 0.1
-		}
-		
-		path = {
-			leads_to_tech = regimental_combat_teams 
-			research_cost_coeff = 1
-		}
-
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_superior_firepower
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 2 }
-		}
-		
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-			factor = 20
-		}
-		
-		ai_research_weights = {
-			artillery = 1.0
-		}
-	}
-	
-	regimental_combat_teams = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		category_support_battalions = {
-			max_organisation = 3
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
-		
-		enable_tactic = tactic_overwhelming_fire
-		
-		path = {
-			leads_to_tech = concentrated_fire_plans 
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_superior_firepower
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			factor = 20
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-		}
-		
-		ai_research_weights = {
-			artillery = 1.0
-		}
-	}
 	
 	dispersed_support = { # Branch is focused on support units as part of the regular brigades
 		xp_research_type = army
@@ -2304,226 +1735,9 @@ technologies = {
 		}
 	}
 	
-	concentrated_fire_plans = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		on_research_complete = {
-	custom_effect_tooltip = ATT_tooltip_concentrated_fire_plans
-	}
-	    
-		allow = {
-			tag = ENG 
-            date > 1942.01.01			
-		}
-
-		category_army = {
-			soft_attack = 0.03
-		}
-		coordination_bonus = 0.05
-		
-		path = {
-			leads_to_tech = combined_arms 
-			research_cost_coeff = 1
-		}
-
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_superior_firepower
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.25
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
-		}
-		
-		ai_research_weights = {
-			artillery = 1.0
-		}
-	}
 	
-	combined_arms = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		
-		category_all_armor = {
-			hard_attack = 0.10
-			soft_attack = 0.05
-			breakthrough = 0.15
-		}
-		category_light_infantry = {
-			max_organisation = 2
-			breakthrough = 0.10
-		}
-		
-		enable_tactic = tactic_breakthrough
-		
-		path = {
-			leads_to_tech = tactical_control 
-			research_cost_coeff = 1
-		}
-
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_superior_firepower
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.15
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
-		}
-		
-		ai_research_weights = {
-			artillery = 1.0
-		}
-	}
 	
-	tactical_control = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		land_reinforce_rate = 0.02
-		air_cas_present_factor = 0.10
-		
-	
-		enable_tactic = tactic_tactical_withdrawal
-		
-		path = {
-			leads_to_tech = air_land_battle 
-			research_cost_coeff = 1
-		}
 
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_superior_firepower
-		}
-		category_all_armor = {
-			default_morale = 0.10
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.15
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
-		}
-		
-		ai_research_weights = {
-			artillery = 1.0
-		}
-	}
-	
-	air_land_battle = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		category_front_line = {
-			max_organisation = 5
-		}
-			
-		#combat advantage when air superior
-		army_bonus_air_superiority_factor = 0.20
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_superior_firepower
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.15
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
-		}
-		
-		ai_research_weights = {
-			artillery = 1.0
-		}
-	}
 	
 	centralized_fire_control = {
 		xp_research_type = army
@@ -3261,15 +2475,7 @@ technologies = {
 		
 		
 
-		marine= {
-			need = { support_equipment = -10 }
-		}
-		mountaineers= {
-			need = { support_equipment = -10 }
-		}
-		paratrooper= {
-			need = { support_equipment = -10 }
-		}
+		
 		
 		
 		path = {
@@ -3287,9 +2493,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = { 
-			custom_effect_tooltip = spam_trench_tt
-		}
+		
 
 		doctrine = yes	
 		research_cost = 2.25
@@ -3643,81 +2847,7 @@ technologies = {
 	
 	
 	
-	grand_mechanized_offensive = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		
-		
-		allow = {
-		OR = {
-			tag = ITA 
-			tag = JAP
-		}				
-		}
-		on_research_complete = {
-	        custom_effect_tooltip = ATT_tooltip_grand_mechanized_offensive
-	}
 	
-		motorized = {
-			max_organisation = 5
-		}
-		armored_car = {
-			max_organisation = 5
-		}
-		mechanized = {
-			max_organisation = 5
-		}
-		amphibious_mechanized = {
-			max_organisation = 5
-		}
-		
-		enable_tactic = tactic_blitz
-		enable_tactic = tactic_elastic_defense
-		
-		
-		path = {
-			leads_to_tech = assault_concentration 
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.35
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.65
-			}
-		}
-		
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-			cat_mechanized_equipment = 1.0
-		}
-	}
 	
 	grand_mechanized_offensive_2 = {
 		xp_research_type = army
@@ -3784,117 +2914,9 @@ technologies = {
 		}
 	}
 	
-	assault_concentration = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		max_planning = 0.1
-
-		enable_tactic = tactic_overwhelming_fire
-		
-		path = {
-			leads_to_tech = branch_interoperation 
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.3
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.6
-			}
-		}
-		
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-			cat_mechanized_equipment = 1.0
-		}
-	}
 	
-	branch_interoperation = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		category_all_infantry = {
-			max_organisation = 5
-			soft_attack = 0.05
-		}
-		category_tanks = {
-			max_organisation = 1
-			max_strength = 0.25
-		}
-		armored_car = {
-			max_organisation = 1
-		}
-		coordination_bonus = 0.1
-		
-		path = {
-			leads_to_tech = assault_breakthrough 
-			research_cost_coeff = 1
-		}
-		
-		
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.25
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.55
-			}
-		}
-		
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-		}
-	}
+	
+	
 	
 	branch_interoperation_2 = {
 		xp_research_type = army
@@ -4058,60 +3080,7 @@ technologies = {
 		}
 	}
 	
-	assault_breakthrough = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		category_army = {
-			breakthrough = 0.10
-		}
-		army_attack_factor = 0.05
-		
-		enable_tactic = tactic_breakthrough
 	
-
-		path = {
-			leads_to_tech = central_planning 
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.2
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
-		}
-		
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-			cat_mechanized_equipment = 1.0
-		}
-	}
 	
 	assault_breakthrough_2 = {
 		xp_research_type = army
@@ -4163,56 +3132,7 @@ technologies = {
 		}
 	}
 	
-	central_planning = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		max_planning = 0.1
-		max_command_power = 30
-		planning_speed = 0.2
-		attrition = -0.15
-		
-		path = {
-			leads_to_tech = c3i_theory 
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.15
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.45
-			}
-		}
-		
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-		}
-	}
+	
 	
 	central_planning_2 = {
 		xp_research_type = army
@@ -4262,57 +3182,7 @@ technologies = {
 		}
 	}
 	
-	c3i_theory = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		land_reinforce_rate = 0.02
-		category_all_infantry = {
-			max_organisation = 5
-		}
-		category_tanks = {
-			max_organisation = 1
-		}
-		armored_car = {
-			max_organisation = 2
-		}
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.1
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.4
-			}
-		}
-		
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-		}
-	}
+	
 	
 	c3i_theory_2 = {
 		xp_research_type = army
@@ -4841,33 +3711,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		artillery_brigade = {
-			need = { artillery_equipment = -7 }
-		}	
-		rocket_artillery_brigade = {
-			need = { rocket_artillery_equipment = -7 }
-		}
-		anti_tank_brigade ={
-			need = { anti_tank_equipment = -7 }
-		}
-		anti_air_brigade = {
-			need = { anti_air_equipment = -6 }
-		}
-		infantry = {
-			need = { infantry_equipment = -20 }
-		}
-		marine= {
-			need = { infantry_equipment = -32 }
-		}
-		mountaineers= {
-			need = { infantry_equipment = -28 }
-		}
-		paratrooper= {
-			need = { infantry_equipment = -38 }
-		}
-		penal_battalion= {
-			need = { infantry_equipment = -10 }
-		}
+		
 		
 		
 		land_reinforce_rate = 0.020
@@ -4877,9 +3721,7 @@ technologies = {
 		doctrine = yes	
 		research_cost = 2.25
 		
-		on_research_complete = { 
-			custom_effect_tooltip = spam_inf_tt
-		}
+		
 		
 		categories = {
 			land_doctrine
@@ -5877,89 +4719,7 @@ technologies = {
 		}
 	}
 	
-	peoples_army = {
 	
-	allow = {
-			tag = SOV 
-            date > 1942.01.01			
-		}
-    on_research_complete = {
-	        custom_effect_tooltip = ATT_tooltip_peoples_army
-	}		
-
-		xp_research_type = army
-		xp_unlock_cost = 80
-		
-		industrial_capacity_factory = 0.05
-		attrition = -0.1 #take 10% less attrition losses
-		infantry = {
-			default_morale = 0.05
-		}
-		category_line_artillery = {
-			soft_attack = 0.10
-			hard_attack = 0.10
-		}
-		
-		enable_tactic = tactic_human_wave_tactics
-		
-		
-		path = {
-			leads_to_tech = human_infantry_offensive
-			research_cost_coeff = 1
-		}
-		
-		
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_mass_assault
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-			modifier = {
-				factor = 0.6
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-
-		}
-		
-		ai_research_weights = {
-			industry = 2.0
-		}
-	}
 	
 	peoples_army_2 = {
 			
@@ -6106,55 +4866,7 @@ technologies = {
 		}
 	}
 	
-	human_infantry_offensive = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		
-		industrial_capacity_factory = 0.05
-		category_special_forces = { 
-		    max_strength = 0.25 
-			breakthrough = 0.10
-		}
-        infantry = {
-			default_morale = 0.10
-		}	
-        category_line_artillery = {
-			breakthrough = 0.10
-		}		
-		
-		path = {
-			leads_to_tech = large_front_offensive
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_mass_assault
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-		}
-		
-		ai_research_weights = {
-			industry = 2.0
-		}
-	}
+	
 	
 	human_infantry_offensive_2 = {
 		xp_research_type = army
@@ -6240,52 +4952,7 @@ technologies = {
 		}
 	}
 	
-	large_front_offensive = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		
-		industrial_capacity_factory = 0.05
-		category_army = {
-			default_morale = 0.2
-		}
-		category_all_armor = {
-			maximum_speed = 0.10
-		}
-		
-		
-		path = {
-			leads_to_tech = human_wave_offensive
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_mass_assault
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-		}
-		
-		ai_research_weights = {
-			industry = 2.0
-		}
-	}
+	
 	
 	large_front_offensive_2 = {
 		xp_research_type = army
@@ -6334,52 +5001,7 @@ technologies = {
 		}
 	}
 	
-	human_wave_offensive = {
-        
-		industrial_capacity_factory = 0.05
-		conscription = 0.05
-		land_reinforce_rate = 0.05
-		xp_research_type = army
-		xp_unlock_cost = 80
-		
-		air_cas_present_factor = 0.05
-		army_bonus_air_superiority_factor = 0.10
 	
-		
-		path = {
-			leads_to_tech = guerilla_warfare
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_mass_assault
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-		}
-		
-		ai_research_weights = {
-			infantry_weapons = 1.0
-			industry = 2.0
-		}
-	}
 	
 	human_wave_offensive_2 = {
         
@@ -6502,88 +5124,9 @@ technologies = {
 		}
 	}
 	
-	guerilla_warfare = {
-		xp_research_type = army
-		xp_unlock_cost = 80
-		dig_in_speed_factor = 0.5
-		industrial_capacity_factory = 0.05
-		
-		
-		path = {
-			leads_to_tech = gurilla_tatics_ma
-			research_cost_coeff = 1
-		}
-		
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		categories = {
-			land_doctrine
-			cat_mass_assault
-		}
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 10 }
-		}
-		
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			factor = 20
-		}
-		
-		ai_research_weights = {
-			industry = 2.0
-		}
-	}
+	
 
-	gurilla_tatics_ma = {
-		xp_research_type = army
-		xp_unlock_cost = 0
-		
-		
-		enable_tactic = tactic_guerrilla_tactics
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		allow = {
-			has_game_rule = {
-				rule = elwolf_guerrilla_tactics
-				option = ALLOWED
-			}
-		}
-		
-		categories = {
-			land_doctrine
-			cat_mass_assault
-		}
-		
-		folder = {
-			name = land_doctrine_folder_2
-			position = { x = 0 y = 12 }
-		}
-		
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			factor = 20
-		}
-		
-		ai_research_weights = {
-			industry = 2.0
-		}
-	}
+	
 
 
 
