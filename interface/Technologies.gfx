@@ -9308,7 +9308,97 @@ spriteTypes = {
 		name = "GFX_tactical_control_air_medium"
 		texturefile = "gfx/interface/technologies/ground_support_integration.dds"
 		alwaystransparent = yes
+	}
+
+SpriteType = {
+		name = "GFX_tech_pioneers_medium"
+		texturefile = "gfx/interface/technologies/tech_pioneers.dds"
+		alwaystransparent = yes
+	}
+
+SpriteType = {
+		name = "GFX_tech_ranger_recon_medium"
+		texturefile = "gfx/interface/technologies/tech_ranger_recon.dds"
+		alwaystransparent = yes
 	}	
+	
+	SpriteType = {
+		name = "GFX_grand_battle_plan_logistics_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_grand_battle_plan_logistics_2_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company2.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_grand_assault_hp_medium"
+		texturefile = "gfx/interface/technologies/tech_field_hospital.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_infiltration_in_depth_spec_medium"
+		texturefile = "gfx/interface/technologies/tech_field_hospital3.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_branch_interoperation_pre_medium"
+		texturefile = "gfx/interface/technologies/tech_field_hospital2.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_grand_mechanized_offensive_2_medium"
+		texturefile = "gfx/interface/technologies/mechanised_offensive.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_branch_interoperation_2_medium"
+		texturefile = "gfx/interface/technologies/branch_interoperation.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_branch_interoperation_air_medium"
+		texturefile = "gfx/interface/technologies/low_echelon_support.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_shock_and_awe_air_medium"
+		texturefile = "gfx/interface/technologies/mass_destruction.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_assault_breakthrough_2_medium"
+		texturefile = "gfx/interface/technologies/assault_breakthrough.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_central_planning_2_medium"
+		texturefile = "gfx/interface/technologies/central_planning.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_c3i_theory_2_medium"
+		texturefile = "gfx/interface/technologies/c3i_theory.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_infiltration_in_depth_2_medium"
+		texturefile = "gfx/interface/technologies/infiltration_in_depth.dds"
+		alwaystransparent = yes
+	}
 	
 	
 }

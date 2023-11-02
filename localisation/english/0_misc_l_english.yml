@@ -1154,4 +1154,18 @@
  tactical_control_sup:0 "Tactical Control"
  tactical_control_air:0 "Air Control"
  air_land_battle_sup:0 "Air Land Battle"
+ shock_and_awe_air:0 "Strategic Bomber Support"
+ 
+ grand_battle_plan_logistics:0 "Logistical Support"
+ grand_battle_plan_logistics_2:0 "Logistical Support II"
+ grand_assault_hp:0 "Filed Hospital Detachments"
+ branch_interoperation_pre:0 "Filed Hospital Detachments II"
+ grand_mechanized_offensive_2:0 "Mechanized Offensive"
+ branch_interoperation_air:0 "Long Range Support"
+ branch_interoperation_2:0 "Branch Interoperation"
+ infiltration_in_depth_2:0 "Commando Troops"
+ central_planning_2:0 "Central Planning"
+ assault_breakthrough_2:0 "Assault Breakthrough"
+ infiltration_in_depth_spec:0 "Special Forces Training"
+ c3i_theory_2:0 "C3i Theory"
  
