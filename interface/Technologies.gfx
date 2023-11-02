@@ -9400,5 +9400,100 @@ SpriteType = {
 		alwaystransparent = yes
 	}
 	
+	SpriteType = {
+		name = "GFX_mass_inf_medium"
+		texturefile = "gfx/interface/technologies/infantry_offensive.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_large_front_operations_mass_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_operational_concentration_2_medium"
+		texturefile = "gfx/interface/technologies/assault_concentration.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_vast_offensives_supply_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company2.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_vast_offensives_2_medium"
+		texturefile = "gfx/interface/technologies/overwhelming_firepower.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_vast_offensives_3_medium"
+		texturefile = "gfx/interface/technologies/overwhelming_firepower.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_mass_mech_medium"
+		texturefile = "gfx/interface/technologies/mechanised_offensive.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_mass_speed_medium"
+		texturefile = "gfx/interface/technologies/armored_operations.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_peoples_army_2_arty_medium"
+		texturefile = "gfx/interface/technologies/dispersed_support.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_peoples_army_2_medium"
+		texturefile = "gfx/interface/technologies/attritional_containment.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_human_infantry_offensive_2_arty_medium"
+		texturefile = "gfx/interface/technologies/advanced_firebases.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_human_infantry_offensive_2_medium"
+		texturefile = "gfx/interface/technologies/infantry_offensive.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_large_front_offensive_2_medium"
+		texturefile = "gfx/interface/technologies/large_front_operations.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_human_wave_offensive_2_medium"
+		texturefile = "gfx/interface/technologies/human_wave_offensive.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_human_wave_offensive_fighter_medium"
+		texturefile = "gfx/interface/technologies/formation_flying.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_human_wave_offensive_cas_medium"
+		texturefile = "gfx/interface/technologies/combat_unit_destruction.dds"
+		alwaystransparent = yes
+	}
 	
 }
