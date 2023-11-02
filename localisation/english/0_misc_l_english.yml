@@ -9,6 +9,9 @@
  modifier_production_speed_aluminium_refinery_factor:0 "§YAluminium Refinery§! construction speed"
  modifier_production_speed_advanced_steel_refinery_factor:0 "§YHeavy Metal Refinery§! construction speed"
 
+ tech_pioneers:0 "Pioneers"
+ tech_ranger_recon:0 "Rangers"
+
  
  #TEMPLATES
  templates_retards_ai:0 "Templates for retards"

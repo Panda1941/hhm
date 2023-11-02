@@ -173,6 +173,10 @@ technologies = {
 			leads_to_tech = tech_engineers3
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = tech_pioneers
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1.5
 		start_year = 1939
@@ -203,6 +207,29 @@ technologies = {
 				factor = 2
 				date > "1942.1.1"
 			}
+		}
+	}
+
+	tech_pioneers = {
+
+		enable_subunits = {
+			pioneer_support
+		}
+
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = support_folder
+			position = { x = 5 y = -7 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
 		}
 	}
 	
@@ -407,6 +434,10 @@ technologies = {
 			leads_to_tech = tech_recon3
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = tech_ranger_recon
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1.5
 		start_year = 1939
@@ -437,6 +468,29 @@ technologies = {
 				factor = 2
 				date > "1942.1.1"
 			}
+		}
+	}
+	
+	tech_ranger_recon = {
+
+		enable_subunits = {
+			rangers_support
+		}
+
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = support_folder
+			position = { x = 5 y = -5 }
+		}
+		
+		categories = {
+			support_tech
+			recon_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
