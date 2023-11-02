@@ -166,9 +166,9 @@ ideas = {
 			removal_cost = -1
 			picture = generic_infantry_bonus
 			modifier = {
-				experience_gain_army = 0.175
+				experience_gain_army = 0.2
 
-				training_time_army_factor = -0.89
+				training_time_army_factor = -0.25
 				air_training_xp_gain_factor = 10
 				experience_gain_navy_unit_factor = 10
 				

@@ -13,10 +13,7 @@ technologies = {
 		category_special_forces = {
 			max_organisation = 5
 			soft_attack = 0.05
-		}
-		enable_subunits = {
-			rangers_support
-		}		
+		}	
 		###########
 		
 		force_use_small_tech_layout = yes
@@ -468,10 +465,6 @@ technologies = {
 		category_special_forces = {
 			max_organisation = 5
 			soft_attack = 0.05
-		}
-		
-		enable_subunits = {
-			pioneer_support
 		}
 		
 		doctrine = yes	

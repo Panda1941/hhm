@@ -62,6 +62,13 @@ NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
 -- Slots
 NDefines.NBuildings.MAX_SHARED_SLOTS = 28
 
+-- Market
+NDefines.NMarket.LOW_PRICE_LEVEL_FACTOR = 0.5
+NDefines.NMarket.HIGH_PRICE_LEVEL_FACTOR = 1.1
+
+NDefines.NMarket.PURCHASE_CONTRACT_DELIVERY_TOTAL_DAYS = 14
+NDefines.NMarket.IC_TO_CIC_FACTOR = 1
+
 -- Research
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3
 

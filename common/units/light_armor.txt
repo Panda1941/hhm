@@ -76,4 +76,70 @@ sub_units = {
 			movement = -0.2
 		}		
 	}
+	
+	airborne_light_armor = { #light tanks
+		abbreviation = "LTA"
+		sprite = light_armor
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+			category_all_armor
+			category_paratroopers
+		}
+
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 5
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 500
+		training_time = 180
+
+		#Misc Abilities
+		weight = 0.5
+		supply_consumption = 0.1
+		recon = 1
+		can_be_parachuted = yes
+
+		# Support nerfs to combat abilities
+		defense = -0.5
+		breakthrough = -0.4
+		soft_attack = -0.25
+		hard_attack = -0.25
+		armor_value = -0.75
+		can_be_parachuted = yes
+		
+		essential = {
+			light_tank_chassis
+		}
+
+		need = {
+			light_tank_chassis = 45
+		}
+
+		plains = {
+			movement = 0.1
+		}
+		desert = {
+			movement = 0.1
+		}
+
+		same_support_type = recon
+	}
+	
 }
