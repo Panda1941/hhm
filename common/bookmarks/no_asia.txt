@@ -53,6 +53,23 @@ bookmarks = {
 				GER_pz2
 			}
 		}
+		
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+            available = { NOT = { has_dlc = "Man the Guns" } }
+			ideas = {
+				sour_loser
+				general_staff
+				GER_mefo_bills_1
+			}
+			focuses = {
+				GER_atlantikwall_a
+				GER_army_innovation_2
+				GER_pz2
+			}
+		}
+		
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -68,7 +85,6 @@ bookmarks = {
 			}
 		}
 		
-
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
