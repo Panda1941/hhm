@@ -3365,10 +3365,7 @@ technologies = {
 			leads_to_tech = night_assault_tactics 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = c3i_theory_2 
-			research_cost_coeff = 1
-		}
+		
 		
 
 
@@ -3603,6 +3600,19 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_grand_battle_plan
+		}
+		
+		path = {
+			leads_to_tech = central_planning_2 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = assault_breakthrough_2 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = infiltration_in_depth_spec 
+			research_cost_coeff = 1
 		}
 
 		
@@ -4535,10 +4545,7 @@ technologies = {
 		research_cost = 4.5
 		
 		
-		path = {
-			leads_to_tech = mass_mech
-			research_cost_coeff = 1
-		}
+		
 		path = {
 			leads_to_tech = mass_speed
 			research_cost_coeff = 1
@@ -4680,6 +4687,11 @@ technologies = {
 		
 		category_all_armor = {
 			maximum_speed = 0.05
+		}
+		
+		path = {
+			leads_to_tech = mass_mech
+			research_cost_coeff = 1
 		}
 
 		doctrine = yes	
