@@ -1187,3 +1187,8 @@
  mass_speed:0 "Winter Tracks"
  mass_mech:0 "Mechanized Offensive"
  
+ mass_assault_overall_2:0 "Industrial Overclocking"
+ 
+ tech_dozer_blade:0 "Dozer Blade"
+ tech_easy_maintenance:0 "Easy Maintenance"
+ 

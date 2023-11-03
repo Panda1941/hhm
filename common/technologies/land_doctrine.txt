@@ -309,10 +309,10 @@ technologies = {
 		xp_unlock_cost = 80
 
 		max_dig_in = 3
-		engineer = {
+		pioneer_support = {
 			
 			fort = {
-				defence = 0.10
+				defence = 0.05
 			}
 		}
 	

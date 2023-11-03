@@ -9320,6 +9320,18 @@ SpriteType = {
 		name = "GFX_tech_ranger_recon_medium"
 		texturefile = "gfx/interface/technologies/tech_ranger_recon.dds"
 		alwaystransparent = yes
+	}
+	
+SpriteType = {
+		name = "GFX_tech_dozer_blade_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_dozer_blade.dds"
+		alwaystransparent = yes
+	}
+
+SpriteType = {
+		name = "GFX_tech_easy_maintenance_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_easy_maintenance_access.dds"
+		alwaystransparent = yes
 	}	
 	
 	SpriteType = {
