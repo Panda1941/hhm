@@ -315,15 +315,6 @@ technologies = {
 				defence = 0.05
 			}
 		}
-	
-		
-		
-		
-		path = {
-			leads_to_tech = fortifications 
-			research_cost_coeff = 1
-		}
-
 		
 		doctrine = yes	
 		research_cost = 4.5
