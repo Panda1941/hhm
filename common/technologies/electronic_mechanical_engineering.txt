@@ -107,6 +107,7 @@ technologies = {
 		}
 		
 		research_cost = 1.75
+		start_year = 1937
 		
 		folder = {
 			name = electronics_folder
