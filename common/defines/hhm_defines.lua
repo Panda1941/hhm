@@ -263,8 +263,8 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profi
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		2.0,	-- big guns
-		8.0,	-- torpedos
-		4.0,	-- small guns
+		4.0,	-- torpedos
+		3.0,	-- small guns
 	}
 
 NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
