@@ -916,6 +916,7 @@ technologies = {
 			tank_high_velocity_cannon_4
 			tank_rocket_launcher_2
 			tank_medium_howitzer_2
+			squeezebore_adaptor
 			#stabilizer
 			tank_anti_air_cannon_3
 		}
@@ -1187,7 +1188,7 @@ technologies = {
 		enable_equipment_modules = {
 		    tank_medium_cannon_4
 			stabilizer
-			squeezebore_adaptor
+			
 			tank_anti_air_cannon_4
 		}
 

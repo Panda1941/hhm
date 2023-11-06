@@ -160,7 +160,7 @@ SOV_industry_relocation = {
 
 		cancel_if_not_visible = no
 
-		cost = 20
+		cost = 15
 
 		days_remove = 30
 

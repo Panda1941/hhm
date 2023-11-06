@@ -1103,10 +1103,10 @@
 	focus = {
 		id = SOV_send_military_advisors_to_spain
 		icon = GFX_focus_intervention_spain_republic
-		prerequisite = { focus = SOV_peoples_commissariat }
-		x = 1
+		prerequisite = { focus = SOV_great_purge }
+		x = -4
 		y = 1
-		relative_position_id = SOV_peoples_commissariat
+		relative_position_id = SOV_great_purge
 		cost = 5
 
 		ai_will_do = {
@@ -1953,7 +1953,7 @@ date > 1940.09.01
 		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_military_reorganization }
 		available = {
 			OR = {
-				date > 1941.6.1
+				date > 1941.9.1
 				has_War_with = GER
 			}
 		}
@@ -2510,7 +2510,7 @@ date > 1940.09.01
 		cost = 5
 
 		available = {
-
+        date > 1942.01.01
 		}
 		
 		search_filters = {}
