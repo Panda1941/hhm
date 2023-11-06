@@ -958,7 +958,7 @@
  
  ATT_tooltip_small_arms_industry:0 "Gives a §Y-2% production cost§! £production_cost  bonus to our §YInfantry Equipment Artillery Equipment§! and §YSupport Equipment.§!\n§RNOTE: This is done through a hidden National Spirit giving the buff to the equipment.§!"
  ATT_tooltip_small_arms_industry_1:0 "Gives a §Y-3% production cost§! £production_cost  bonus to our §YInfantry Equipment Artillery Equipment§! and §YSupport Equipment.§!\n§RNOTE: This is done through a hidden National Spirit giving the buff to the equipment.§!"
- ATT_tooltip_small_arms_industry_2:0 "Gives a §Y-3% production cost§! £production_cost  bonus to our §YInfantry Equipment Artillery Equipment§! and §YSupport Equipment.§!\n§RNOTE: This is done through a hidden National Spirit giving the buff to the equipment.§!"
+ ATT_tooltip_small_arms_industry_2:0 "Gives a §Y-5% production cost§! £production_cost  bonus to our §YInfantry Equipment Artillery Equipment§! and §YSupport Equipment.§!\n§RNOTE: This is done through a hidden National Spirit giving the buff to the equipment.§!"
  ATT_tooltip_small_arms_industry_3:0 "Gives a §Y-5% production cost§! £production_cost  bonus to our §YInfantry Equipment Artillery Equipment§! and §YSupport Equipment.§!\n§RNOTE: This is done through a hidden National Spirit giving the buff to the equipment.§!"
  
  ATT_tooltip_mobile_infantry:0 "\n§RNOTE: Germany specific doctrines after 1941.01.01.§!"

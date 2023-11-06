@@ -11,8 +11,8 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5                          -- Defau
 -- QOL
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                           -- Up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
 NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.20, 0.15, 0.045, 0.0 }
-NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 12
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 14
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 14
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 21
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 							    -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	    -- WAS 60 | less messages lying around at the top of your screen
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 25
@@ -95,7 +95,7 @@ NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_FROM = { 1.0, 1.0, 0.0, 0.1 }
 NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_TO = { 1.0, 1.0, 0.1, 0.5 }
 
 -- Production changes
-NDefines.NProduction.BASE_FACTORY_SPEED = 6				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED = 6						-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5.0				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3.5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 
@@ -107,7 +107,7 @@ NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5
 NDefines.NMilitary.TRAINING_ATTRITION = 0  -- vanilla 0.06
 NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 72							-- base hours needed to prepare an invasion
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.10
-NDefines.NMilitary.RELIABILTY_RECOVERY = 0.0 -- WAS 0.1 factor affecting how much equipment is returned "from the dead"
+NDefines.NMilitary.RELIABILTY_RECOVERY = 0.02 -- WAS 0.1 factor affecting how much equipment is returned "from the dead"
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 -- WAS 1 aka TRAINED | Since the above was changed there is no point to not allowing divs to be trained to regular considering that its only 10% stats now.
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
 
@@ -325,8 +325,8 @@ NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5                  -- VANILLA 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.50							-- Higher value = more shot down planes
 
 -- Flicker Bombing
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.14    -- How much efficiency to regain per day. Gain applied hourly.
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.14    -- How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.1    -- How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.1    -- How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 0.5
 
 
@@ -368,12 +368,12 @@ NDefines.NDiplomacy.EMBARGO_COST = 0 -- 100
 NDefines.NDiplomacy.EMBARGO_THREAT_THRESHOLD = -1 -- 30
 
 --All of this AI stuff doesn't affect strategy, just used to increase performance
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 30  --7 the ai will check what the best doctrine they can have is once every month
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 30  --7 the ai will check what the best division template they can have is once every month
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_EQUIPMENT = 30 --7 the ai will check what the best equipment they can have is once every month
-NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 14 --7 the ai will refreshes need scores based on country situation
-NDefines.NAI.AI_UPDATE_ROLES_FREQUENCY_HOURS = 240  --48 the ai will change templates less frequently
-NDefines.NAI.UPDATE_SUPPLY_MOTORIZATION_FREQUENCY_HOURS = 120    --52 every 5 days the ai will check weather they should increase supply motorization
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 90  --7 the ai will check what the best doctrine they can have is once every month
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 90  --7 the ai will check what the best division template they can have is once every month
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_EQUIPMENT = 90 --7 the ai will check what the best equipment they can have is once every month
+NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 30 --7 the ai will refreshes need scores based on country situation
+NDefines.NAI.AI_UPDATE_ROLES_FREQUENCY_HOURS = 480  --48 the ai will change templates less frequently
+NDefines.NAI.UPDATE_SUPPLY_MOTORIZATION_FREQUENCY_HOURS = 360    --52 every 5 days the ai will check weather they should increase supply motorization
 NDefines.NAI.UPDATE_SUPPLY_BOTTLENECKS_FREQUENCY_HOURS = 480    --168 every 20 days the ai will check for supply related bottlenecks and try to fix them
 
 -- AI fixing
@@ -479,18 +479,18 @@ NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {300, 500, 1500}
 NDefines_Graphics.NGraphics.CAPITAL_ICON_CUTOFF = 1000	-- At what camera distance capital icons disappears
 
 -- Nukes buffed
-NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.99					-- Minimum damage from nukes as a percentage of current strength/organisation
+NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.95					-- Minimum damage from nukes as a percentage of current strength/organisation
 NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 0.99					-- Minimum damage from nukes as a percentage of current strength/organisation
 
 -- MIO stuff
 NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.1					-- Cost in Political Power daily generation when one MIO is assigned to a research slot. If 0, cost is entirely disabled.
 NDefines.NIndustrialOrganisation.ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY = 0.0		-- Cost in Political Power daily generation when one MIO is assigned to a production line. If 0, cost is entirely disabled.
-NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 850									-- Funds needed for a MIO to increment its size and get points to unlock traits
-NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 150						-- How much each level mutliplies the funds for size up 
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 820									-- Funds needed for a MIO to increment its size and get points to unlock traits
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 180						-- How much each level mutliplies the funds for size up 
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_POW = 2.1							-- the power we applie to the mio size when calculating funds to level up. 	
 NDefines.NIndustrialOrganisation.UNLOCKED_TRAITS_PER_SIZE_UP = 1							-- Number of points for unlocking traits obtained when the MIO increments its size
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 5								-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
-NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 500     	-- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
+NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 250     	-- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
 NDefines.NIndustrialOrganisation.FUNDS_FOR_CREATING_EQUIPMENT_VARIANT = 0					-- Funds added to MIO when a new variant is created with the Design Team assigned to it
 NDefines.NIndustrialOrganisation.FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.15				-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.
 NDefines.NIndustrialOrganisation.MAX_FUNDS_FROM_MANUFACTURER_PER_DAY = 100					-- Max funds generated per manufacturer per day. Set to 0 for no Maximum.
