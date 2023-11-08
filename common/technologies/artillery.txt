@@ -119,6 +119,9 @@ technologies = {
 		xor = { artillery2 }
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1936
 
@@ -253,6 +256,9 @@ technologies = {
 		xor = { interwar_artillery }
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1936
 
@@ -335,6 +341,9 @@ technologies = {
 		xor = { artillery5 }
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1940
 
@@ -467,6 +476,9 @@ technologies = {
 		xor = { artillery3 }
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1940
 
@@ -546,6 +558,9 @@ technologies = {
 		xor = { artillery8 }
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1942
 
@@ -676,6 +691,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { artillery6 }
 
@@ -750,6 +768,9 @@ technologies = {
 		#}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { artillery10 }
 
@@ -826,6 +847,9 @@ technologies = {
 		
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { artillery9 }
 
@@ -968,6 +992,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { rocket_artillery3 }
 
@@ -1023,6 +1050,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { rocket_artillery2 }
 
@@ -1123,6 +1153,9 @@ technologies = {
 		
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1943
 		
@@ -1175,6 +1208,9 @@ technologies = {
 		
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1943
 		
@@ -1299,6 +1335,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { antiair3 }
 
@@ -1425,6 +1464,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1939
 		
@@ -1482,6 +1524,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1941
 		
@@ -1605,6 +1650,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1941
 		
@@ -1716,6 +1764,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { antiair9 }
 
@@ -1777,6 +1828,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1943
 		
@@ -1831,6 +1885,9 @@ technologies = {
 		
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1945
 		
@@ -1888,6 +1945,9 @@ technologies = {
 
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1945
 		
@@ -2063,6 +2123,9 @@ technologies = {
 		xor = { antitank3 }
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1939
 
@@ -2245,6 +2308,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { antitank1 } 
 
@@ -2348,6 +2414,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { antitank6 }
 
@@ -2529,6 +2598,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { antitank4 }
 
@@ -2725,6 +2797,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { antitank9 }
 
@@ -2823,6 +2898,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		
 		xor = { antitank8 }
 
@@ -2918,6 +2996,9 @@ technologies = {
 		
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1945
 		
@@ -3013,6 +3094,9 @@ technologies = {
 		
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		start_year = 1945
 		

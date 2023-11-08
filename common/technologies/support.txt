@@ -101,6 +101,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -181,6 +184,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -219,6 +225,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1940
 		folder = {
 			name = support_folder
@@ -275,6 +284,9 @@ technologies = {
 		}		
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -340,6 +352,9 @@ technologies = {
 			}
 		}
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -386,6 +401,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -442,6 +460,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -480,6 +501,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1940
 		folder = {
 			name = support_folder
@@ -503,6 +527,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1940
 		folder = {
 			name = support_folder
@@ -530,6 +557,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -567,6 +597,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -610,6 +643,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -677,6 +713,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -709,6 +748,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -736,6 +778,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -783,6 +828,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -834,6 +882,9 @@ technologies = {
 		
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -872,6 +923,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1940
 		folder = {
 			name = support_folder
@@ -900,6 +954,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -938,6 +995,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -985,6 +1045,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1030,6 +1093,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -1074,6 +1140,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1113,6 +1182,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -1170,6 +1242,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1220,6 +1295,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -1269,6 +1347,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1308,6 +1389,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -1358,6 +1442,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1394,6 +1481,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -1437,6 +1527,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1475,6 +1568,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1945
 		folder = {
 			name = support_folder

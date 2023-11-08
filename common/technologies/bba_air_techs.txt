@@ -831,6 +831,9 @@ technologies = {
 		}
 			
 		research_cost = 2
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1922
 
 		folder = {
@@ -873,6 +876,9 @@ technologies = {
 		}
 			
 		research_cost = 2
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 
 		folder = {
@@ -910,6 +916,9 @@ technologies = {
 		}
 			
 		research_cost = 2
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 
 		folder = {
@@ -945,6 +954,9 @@ technologies = {
 		}
 		
 		research_cost = 1
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1922
 
 		folder = {
@@ -977,6 +989,9 @@ technologies = {
 		}
 			
 		research_cost = 1
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 
 		folder = {
@@ -1018,6 +1033,9 @@ technologies = {
 		}
 			
 		research_cost = 1
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1940
 
 		folder = {
@@ -1059,6 +1077,9 @@ technologies = {
 		}
 			
 		research_cost = 1
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1944
 
 		folder = {
@@ -1101,6 +1122,9 @@ technologies = {
 		}
 		
 		research_cost = 1
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1922
 
 		folder = {
@@ -1152,6 +1176,9 @@ technologies = {
 		}
 		
 		research_cost = 3.0
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1941
 
 		folder = {
@@ -1205,6 +1232,9 @@ technologies = {
 		}
 		
 		research_cost = 1.5
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1945
 
 		folder = {
@@ -1251,6 +1281,9 @@ technologies = {
 		}
 		
 		research_cost = 1.5
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1945
 
 		folder = {
@@ -1312,6 +1345,9 @@ technologies = {
 		}
 		
 		research_cost = 1
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1936
 
 		folder = {
