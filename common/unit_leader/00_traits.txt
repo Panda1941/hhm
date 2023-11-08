@@ -2023,7 +2023,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			positioning = 0.25
+			positioning = 0.05
 		}
 		custom_gain_xp_trigger_tooltip = SUPERIOR_TACTICIAN_TRIGGER_TT
 		
@@ -2201,7 +2201,7 @@ leader_traits = {
 			destroyer = {
 				naval_damage_factor = 0.1
 				naval_torpedo_hit_chance_factor = 0.1
-				navy_visibility = -0.1
+				#navy_visibility = -0.1
 			}
 		}	
 		ai_will_do = {
@@ -2298,7 +2298,7 @@ leader_traits = {
 	lone_wolf = { 
 		type = navy
 		modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+			naval_enemy_fleet_size_ratio_penalty_factor = 0.25
 		}
 				
 		ai_will_do = {
@@ -2315,7 +2315,7 @@ leader_traits = {
 	concealment_expert = { 
 		type = navy
 		modifier = {
-			navy_visibility = -0.2
+			navy_visibility = -0.05
 		}
 				
 		ai_will_do = {

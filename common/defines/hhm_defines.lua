@@ -222,10 +222,28 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_EXTERNAL_FACTOR = 0.65
 --------------------------------------------------------------------
 NDefines.NNavy.CARRIER_STACK_PENALTY = 6 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.1 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
+---------------------------------------------------------------------------------------------------------------------------------------
+NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 2          -- how often carrier planes do battle inside naval combat
+NDefines.NAir.CARRIER_SIZE_STAT_INCREMENT = 10					-- Each Point of carrier_size state adds capacity for this many planes
+NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.3			-- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.75					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.25					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 10.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 ------------------------------------------------------------------------
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 48 -- vanilla 2, hours to join combat
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.025 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
+NDefines.NNavy.REPAIR_AND_RETURN_PRIO_LOW = 0.25								-- % of total Strength. When below, navy will go to home base to repair.
+NDefines.NNavy.REPAIR_AND_RETURN_PRIO_MEDIUM = 0.5							    -- % of total Strength. When below, navy will go to home base to repair.
+NDefines.NNavy.REPAIR_AND_RETURN_PRIO_HIGH = 0.8								-- % of total Strength. When below, navy will go to home base to repair.
+NDefines.NNavy.REPAIR_AND_RETURN_PRIO_LOW_COMBAT = 0.6						    -- % of total Strength. When below, navy will go to home base to repair (in combat).
+NDefines.NNavy.REPAIR_AND_RETURN_PRIO_MEDIUM_COMBAT = 0.3						-- % of total Strength. When below, navy will go to home base to repair (in combat).
+NDefines.NNavy.REPAIR_AND_RETURN_PRIO_HIGH_COMBAT = 0.1						    -- % of total Strength. When below, navy will go to home base to repair (in combat).
+NDefines.NNavy.REPAIR_AND_RETURN_AMOUNT_SHIPS_LOW = 0.25						-- % of total damaged ships, that will be sent for repair-and-return in one call.
+NDefines.NNavy.REPAIR_AND_RETURN_AMOUNT_SHIPS_MEDIUM = 0.50					    -- % of total damaged ships, that will be sent for repair-and-return in one call.
+NDefines.NNavy.REPAIR_AND_RETURN_AMOUNT_SHIPS_HIGH = 0.75						-- % of total damaged ships, that will be sent for repair-and-return in one call.
+NDefines.NNavy.REPAIR_AND_RETURN_UNIT_DYING_STR = 0.25							-- Str below this point is considering a single ship "dying", and a high priority to send to repair.
+NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 1.25									-- random factor in damage. So if max damage is fe. 10, and randomness is 30%, then damage will be between 7-10.
 ------------------------------------------------------------------------------------------------------------------------------
 NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
 		2.00,
@@ -257,15 +275,21 @@ NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {	-- 0 armor will alway
 		0.00 -- For criticals, you could reduce crit chance unlike damage in army combat, but we do not for now.
 }
 
+	
+NDefines.NNavy.CONVOY_HIT_PROFILE												= 120.0  	-- convoys has this contant hit profile
+NDefines.NNavy.HIT_PROFILE_MULT 												= 100.0  	-- multiplies hit profile of every ship
+NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR										    = 0.5		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult)
+NDefines.NNavy.HIT_PROFILE_SPEED_BASE											= 20		-- Base value added to hitprofile speed calulation
+
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80.0,	-- big guns
-		100.0,	-- torpedos	-- latest change brings torpedoes to vanilla value
-		45,	-- small guns
+		115.0,	-- torpedos	-- latest change brings torpedoes to vanilla value
+		45,	    -- small guns
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
-		2.0,	-- big guns
-		4.0,	-- torpedos
-		3.0,	-- small guns
+		1.0,	-- big guns
+		8.0,	-- torpedos
+		2.0,	-- small guns
 	}
 
 NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
