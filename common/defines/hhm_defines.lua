@@ -88,11 +88,12 @@ NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 2000.0							-- Max number of mines t
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.005						-- Value used to overall balance of the speed of planting naval mines
 NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.006	
 
+-- Airbase capacity change
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100		-- 200 how many planes u can have per level of airbase
+
 -- NERF TO INFRA
 
 NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 0.25
-NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_FROM = { 1.0, 1.0, 0.0, 0.1 }
-NDefines.NMapMode.MAP_MODE_INFRA_RANGE_COLOR_TO = { 1.0, 1.0, 0.1, 0.5 }
 
 -- Production changes
 NDefines.NProduction.BASE_FACTORY_SPEED = 6						-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
