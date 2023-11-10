@@ -2887,9 +2887,17 @@ add_ideas = {GER_sfh18_idea}
 			army_experience = 50
 			add_tech_bonus = {
                 name = GER_tiger			
-				bonus = 1.0
+				bonus = 1.25
 				uses = 1
 				technology = improved_heavy_tank_chassis
+			}
+			add_tech_bonus = {
+                name = GER_tiger			
+				bonus = 0.75
+				uses = 1
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_heavy_tank_chassis_1
+				
 			}
 			add_tech_bonus = {
 			    name = mech_100
@@ -2898,6 +2906,8 @@ add_ideas = {GER_sfh18_idea}
 				name = mech_army_bonus
 				category = motorized_equipment
 			}
+			add_ideas = GER_heavy_research
+			
 		}
 	}
 
