@@ -13,23 +13,20 @@ templates_retards_ai = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			if = {
-				limit = {
-					NOT = { original_tag = CHI } 
+			custom_effect_tooltip = "Will add a 9/6 Infantry template"
+			division_template = {
+				name = "30w infantry + arty"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
+					infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
+					artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 } 
+					artillery_brigade = { x = 3 y = 1 }	artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }	artillery_brigade = { x = 4 y = 2 }
 				}
-				division_template = {
-					name = "30w infantry + arty"
-					regiments = {
-						infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
-						infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
-						infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
-						artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 } 
-						artillery_brigade = { x = 3 y = 1 }	artillery_brigade = { x = 4 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }	artillery_brigade = { x = 4 y = 2 }
-					}
-					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
-				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
 			}
+			custom_effect_tooltip = "Will add a 15/0 Infantry template"
 			division_template = {
 				name = "30w pure infantry"
 				regiments = {
@@ -40,6 +37,36 @@ templates_retards_ai = {
 					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 } infantry = { x = 2 y = 4 } 
 				}
 				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+			}
+			
+			if = {
+			limit = { has_tech = tech_military_police }
+				custom_effect_tooltip = "Will add a mp template"
+				division_template = {
+					name = "mp"
+					regiments = {
+						cavalry = { x = 0 y = 0 } cavalry = { x = 1 y = 0 } cavalry = { x = 2 y = 0 } cavalry = { x = 3 y = 0 } cavalry = { x = 4 y = 0 }
+						cavalry = { x = 0 y = 1 } cavalry = { x = 1 y = 1 } cavalry = { x = 2 y = 1 } cavalry = { x = 3 y = 1 } cavalry = { x = 4 y = 1 }
+						cavalry = { x = 0 y = 2 } cavalry = { x = 1 y = 2 } cavalry = { x = 2 y = 2 } cavalry = { x = 3 y = 2 } cavalry = { x = 4 y = 2 }
+						cavalry = { x = 0 y = 3 } cavalry = { x = 1 y = 3 } cavalry = { x = 2 y = 3 } cavalry = { x = 3 y = 3 } cavalry = { x = 4 y = 3 }
+						cavalry = { x = 0 y = 4 } cavalry = { x = 1 y = 4 } cavalry = { x = 2 y = 4 } cavalry = { x = 3 y = 4 } cavalry = { x = 4 y = 4 }
+					}
+					support = { military_police = {x = 0 y = 0 } }
+				}
+			}
+			else = {
+				custom_effect_tooltip = "Will add a mp template"
+				division_template = {
+					name = "mp"
+					regiments = {
+						cavalry = { x = 0 y = 0 } cavalry = { x = 1 y = 0 } cavalry = { x = 2 y = 0 } cavalry = { x = 3 y = 0 } cavalry = { x = 4 y = 0 }
+						cavalry = { x = 0 y = 1 } cavalry = { x = 1 y = 1 } cavalry = { x = 2 y = 1 } cavalry = { x = 3 y = 1 } cavalry = { x = 4 y = 1 }
+						cavalry = { x = 0 y = 2 } cavalry = { x = 1 y = 2 } cavalry = { x = 2 y = 2 } cavalry = { x = 3 y = 2 } cavalry = { x = 4 y = 2 }
+						cavalry = { x = 0 y = 3 } cavalry = { x = 1 y = 3 } cavalry = { x = 2 y = 3 } cavalry = { x = 3 y = 3 } cavalry = { x = 4 y = 3 }
+						cavalry = { x = 0 y = 4 } cavalry = { x = 1 y = 4 } cavalry = { x = 2 y = 4 } cavalry = { x = 3 y = 4 } cavalry = { x = 4 y = 4 }
+					}
+					support = { }
+				}
 			}
 		}
 	}
@@ -60,6 +87,7 @@ templates_retards_ai = {
 		complete_effect = {	
 			if = {
 			limit = { has_tech = tech_mountaineers }
+				custom_effect_tooltip = "Will add a Mountaineer template"
 				division_template = {
 					name = "30w mountaineers"
 					regiments = {
@@ -75,6 +103,7 @@ templates_retards_ai = {
 			}
 			if = {
 			limit = { has_tech = marines }
+				custom_effect_tooltip = "Will add a Marine template"
 				division_template = {
 					name = "30w marines"
 					regiments = {
@@ -90,6 +119,7 @@ templates_retards_ai = {
 			}
 			if = {
 			limit = { has_tech = paratroopers }
+				custom_effect_tooltip = "Will add a Paratrooper template"
 				division_template = {
 					name = "30w paratroopers"	# Arty can't be paradropped so there is no point adding it in
 					regiments = {
@@ -104,6 +134,7 @@ templates_retards_ai = {
 			}
 			if = {
 			limit = { has_tech = jaegers }
+				custom_effect_tooltip = "Will add a Jaeger template"
 				division_template = {
 					name = "30w jaegers"	# Arty can't be paradropped so there is no point adding it in
 					regiments = {
@@ -119,6 +150,7 @@ templates_retards_ai = {
 			}
 			if = {
 			limit = { has_tech = shock_troops }
+				custom_effect_tooltip = "Will add a Shock Troop template"
 				division_template = {
 					name = "30w shock troops"	# Arty can't be paradropped so there is no point adding it in
 					regiments = {
@@ -140,9 +172,20 @@ templates_retards_ai = {
 		
 		fire_only_once = yes
 		
-		complete_effect = { 
+		complete_effect = {
+			custom_effect_tooltip = "Will add a Motorized Light tank Template template"
+			division_template = {
+				name = "light tanks"
+				regiments = {
+					light_armor = { x = 0 y = 0 } light_armor = { x = 1 y = 0 } light_armor = { x = 2 y = 0 } motorized = { x = 3 y = 0 }	motorized = { x = 4 y = 0 }
+					light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 1 } light_armor = { x = 2 y = 1 } motorized = { x = 3 y = 1 }	motorized = { x = 4 y = 1 }
+					light_armor = { x = 0 y = 2 } light_armor = { x = 1 y = 2 } light_armor = { x = 2 y = 2 } motorized = { x = 3 y = 2 }	motorized = { x = 4 y = 2 }
+					}											
+				support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+			}
 			if = {
 			limit = { has_tech = mechanised_infantry }
+				custom_effect_tooltip = "Will add a Mechanized Medium tank Template template"
 				division_template = {
 					name = "medium tanks"
 					regiments = {
@@ -154,6 +197,7 @@ templates_retards_ai = {
 				}
 			}
 			else = {
+				custom_effect_tooltip = "Will add a Motorized Medium tank Template template"
 				division_template = {
 					name = "medium tanks"
 					regiments = {
@@ -166,6 +210,7 @@ templates_retards_ai = {
 			}
 			if = {
 			limit = { has_tech = mechanised_infantry }
+				custom_effect_tooltip = "Will add a Mechanized Heavy tank Template template"
 				division_template = {
 					name = "heavy tanks"
 					regiments = {
@@ -177,6 +222,7 @@ templates_retards_ai = {
 				}
 			}
 			else = {
+				custom_effect_tooltip = "Will add a Motorized Heavy tank Template template"
 				division_template = {
 					name = "heavy tanks"
 					regiments = {
@@ -185,53 +231,6 @@ templates_retards_ai = {
 						heavy_armor = { x = 0 y = 2 } heavy_armor = { x = 1 y = 2 } heavy_armor = { x = 2 y = 2 } motorized = { x = 3 y = 2 }	motorized = { x = 4 y = 2 }
 						}											
 					support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
-				}
-			}
-
-			division_template = {
-				name = "light tanks"
-				regiments = {
-					light_armor = { x = 0 y = 0 } light_armor = { x = 1 y = 0 } light_armor = { x = 2 y = 0 } motorized = { x = 3 y = 0 }	motorized = { x = 4 y = 0 }
-					light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 1 } light_armor = { x = 2 y = 1 } motorized = { x = 3 y = 1 }	motorized = { x = 4 y = 1 }
-					light_armor = { x = 0 y = 2 } light_armor = { x = 1 y = 2 } light_armor = { x = 2 y = 2 } motorized = { x = 3 y = 2 }	motorized = { x = 4 y = 2 }
-					}											
-				support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
-			}
-		}
-	}
-	
-	mp_template = {
-	
-		allowed = {  }
-		
-		fire_only_once = yes
-		
-		complete_effect = {
-			if = {
-			limit = { has_tech = tech_military_police }
-				division_template = {
-					name = "mp"
-					regiments = {
-						cavalry = { x = 0 y = 0 } cavalry = { x = 1 y = 0 } cavalry = { x = 2 y = 0 } cavalry = { x = 3 y = 0 } cavalry = { x = 4 y = 0 }
-						cavalry = { x = 0 y = 1 } cavalry = { x = 1 y = 1 } cavalry = { x = 2 y = 1 } cavalry = { x = 3 y = 1 } cavalry = { x = 4 y = 1 }
-						cavalry = { x = 0 y = 2 } cavalry = { x = 1 y = 2 } cavalry = { x = 2 y = 2 } cavalry = { x = 3 y = 2 } cavalry = { x = 4 y = 2 }
-						cavalry = { x = 0 y = 3 } cavalry = { x = 1 y = 3 } cavalry = { x = 2 y = 3 } cavalry = { x = 3 y = 3 } cavalry = { x = 4 y = 3 }
-						cavalry = { x = 0 y = 4 } cavalry = { x = 1 y = 4 } cavalry = { x = 2 y = 4 } cavalry = { x = 3 y = 4 } cavalry = { x = 4 y = 4 }
-					}
-					support = { military_police = {x = 0 y = 0 } }
-				}
-			}
-			else = {
-				division_template = {
-					name = "mp"
-					regiments = {
-						cavalry = { x = 0 y = 0 } cavalry = { x = 1 y = 0 } cavalry = { x = 2 y = 0 } cavalry = { x = 3 y = 0 } cavalry = { x = 4 y = 0 }
-						cavalry = { x = 0 y = 1 } cavalry = { x = 1 y = 1 } cavalry = { x = 2 y = 1 } cavalry = { x = 3 y = 1 } cavalry = { x = 4 y = 1 }
-						cavalry = { x = 0 y = 2 } cavalry = { x = 1 y = 2 } cavalry = { x = 2 y = 2 } cavalry = { x = 3 y = 2 } cavalry = { x = 4 y = 2 }
-						cavalry = { x = 0 y = 3 } cavalry = { x = 1 y = 3 } cavalry = { x = 2 y = 3 } cavalry = { x = 3 y = 3 } cavalry = { x = 4 y = 3 }
-						cavalry = { x = 0 y = 4 } cavalry = { x = 1 y = 4 } cavalry = { x = 2 y = 4 } cavalry = { x = 3 y = 4 } cavalry = { x = 4 y = 4 }
-					}
-					support = { }
 				}
 			}
 		}
