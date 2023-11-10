@@ -1212,6 +1212,15 @@ on_actions = {
 			add_ideas = Naval_treaty_allies
 			}
 		}
+		effect = {
+		if = {
+				limit = {
+				normally_played_country = yes 				
+				}
+				
+			}
+			every_country = { country_event = { id = countrystartup.29 } }
+		}
 	}
 	on_state_control_changed = {
 		effect = {
