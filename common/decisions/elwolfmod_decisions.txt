@@ -1,5 +1,13 @@
 templates_retards_ai = {
-
+    
+	panda_mod_navy_tips = { 
+		allowed = {  normally_played_country = yes }
+		fire_only_once = no
+		complete_effect = {
+			country_event = countrystartup.29 
+		}
+	}
+	
 	inf_templates = {
 	
 		available = { 
