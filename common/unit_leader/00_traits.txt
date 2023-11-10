@@ -1198,24 +1198,27 @@ leader_traits = {
 		genius_advisor_trait = army_logistics_3
 	}
 
-	skilled_staffer_sov_ger = {
-        type = corps_commander
-        gain_xp_leader = {
-            check_variable = {
-                num_units > 1000
-            }
-        }
-        cost = 20000
-        corps_commander_modifier = {
-            max_commander_army_size = 950
-        }
-        ai_will_do = {
-            factor = 1
-        }
-        logistics_skill_factor = 2
-        gui_row = 14
-        slot = high_command
-    }
+	skilled_staffer_sov_ger = { 
+		type = corps_commander
+		
+		cost = 2000
+		
+		corps_commander_modifier = {
+			max_commander_army_size = 950
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		logistics_skill_factor = 2
+		
+		gui_row = 15
+		
+		slot = high_command
+		specialist_advisor_trait = army_logistics_1
+		expert_advisor_trait = army_logistics_2
+		genius_advisor_trait = army_logistics_3
+	}
 	
 	trickster = { 
 		type = corps_commander
