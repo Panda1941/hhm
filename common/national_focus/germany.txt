@@ -2538,6 +2538,7 @@ add_ideas = {GER_sfh18_idea}
 	
 	focus = {
 		id = GER_soviet_treaty
+		text = "Treaty with the USSR"
 		icon = GFX_focus_Ger_sov_treaty
 		prerequisite = { focus = GER_army_innovation }
 		available = {
@@ -3086,6 +3087,7 @@ add_ideas = {GER_sfh18_idea}
 
 	focus = {
 		id = GER_ussr_war_goal
+		text = "War with the USSR"
 		icon = GFX_focus_GER_ussr_war_goal
 		prerequisite = { focus = GER_rhineland }
 		will_lead_to_war_with = SOV
@@ -5618,7 +5620,6 @@ add_ideas = {GER_sfh18_idea}
  	}
  	focus = {
  		id = GER_south
- 		icon = GFX_focus_GER_south
  		mutually_exclusive = { focus = GER_north }
  		prerequisite = { focus = GER_blau}
  		icon = GFX_focus_ger_reichskommisariats
