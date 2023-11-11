@@ -24,7 +24,7 @@ NDefines.NMilitary.COMBAT_MINIMUM_TIME = 1  -- affects micro, much smoother
 
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false -- General grinding :smug:
 
-NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING = 2.5
+NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING = 3.0
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0                     -- Removed for game stability/reducing chance of desync
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.5			    -- Volunteer shit to prevent 2w spam
@@ -52,7 +52,7 @@ NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
 	0.0/360.0, 1.0, 1.0,	--red
 	10.0/360.0, 1.0, 1.0,	--orange
 	60.0/360.0, 1.0, 1.0,	--yellow
-	120.0/360.0, 0.75, 1.0,	--green
+	120.0/360.0, 1.0, 1.0,	--green
 	180.0/360.0, 1.0, 1.0,	--turq
 	235.0/360.0, 1.0, 1.0,	--blue
 	260.0/360.0, 1.0, 1.0,	--dark purple
@@ -85,8 +85,8 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
 
 -- Minelaying
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 2000.0							-- Max number of mines that can be layed by the ships. The value should be hidden from the user, as we present % so it's an abstract value that should be used for balancing.
-NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.005						-- Value used to overall balance of the speed of planting naval mines
-NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.006	
+NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.008						-- Value used to overall balance of the speed of planting naval mines
+NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.009	
 
 -- Airbase capacity change
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100		-- 200 how many planes u can have per level of airbase
@@ -100,7 +100,7 @@ NDefines.NProduction.BASE_FACTORY_SPEED = 6						-- Base factory speed multiplie
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5.0				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3.5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 
-NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.01 -- How much equipment from deployed divisions will be transferred on capitulation
+NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.05 -- How much equipment from deployed divisions will be transferred on capitulation
 
 -- Army Balance
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5
