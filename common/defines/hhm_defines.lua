@@ -198,7 +198,7 @@ NDefines.NMilitary.SLOWEST_SPEED = 3
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.4
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0
 
-NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR    = 0.5 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR = 0.5 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 1.0  -- maximum penalty to get from larger fleets
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS = 0.0  -- the accumulated penalty from new ships will be clamped to this value
 NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.75    -- damage penalty at 0% positioning
@@ -208,7 +208,6 @@ NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING    = 0  -- AA penalt
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- vanilla 0.6 org will clamped to this ratio on manual move
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.05 -- vanilla 0.1, controls onmap movement speed of navies, not in battle ; affects naval invasions
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.025 -- vanilla 0.05
-NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE = 70.0
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 10                             -- scoring for target picking for planes inside naval combat, one define per ship typ
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 50
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 25
@@ -234,7 +233,7 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.75					-- Balancing value to conver
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.25					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 10.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 ------------------------------------------------------------------------
-NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 48 -- vanilla 2, hours to join combat
+
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.025 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.REPAIR_AND_RETURN_PRIO_LOW = 0.7								-- % of total Strength. When below, navy will go to home base to repair.
@@ -244,7 +243,7 @@ NDefines.NNavy.REPAIR_AND_RETURN_PRIO_LOW_COMBAT = 0.85						    -- % of total S
 NDefines.NNavy.REPAIR_AND_RETURN_PRIO_MEDIUM_COMBAT = 0.6						-- % of total Strength. When below, navy will go to home base to repair (in combat).
 NDefines.NNavy.REPAIR_AND_RETURN_PRIO_HIGH_COMBAT = 0.45					    -- % of total Strength. When below, navy will go to home base to repair (in combat).
 NDefines.NNavy.REPAIR_AND_RETURN_UNIT_DYING_STR = 0							-- Str below this point is considering a single ship "dying", and a high priority to send to repair.
-NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 1.25									-- random factor in damage. So if max damage is fe. 10, and randomness is 30%, then damage will be between 7-10.
+NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.10									-- random factor in damage. So if max damage is fe. 10, and randomness is 30%, then damage will be between 7-10.
 NDefines.NNavy.AGGRESION_MULTIPLIER_FOR_COMBAT = 3
 ------------------------------------------------------------------------------------------------------------------------------
 NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
@@ -291,11 +290,11 @@ NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values whil
 }
 
 	
-NDefines.NNavy.CONVOY_HIT_PROFILE												= 120.0  	-- convoys has this contant hit profile
-NDefines.NNavy.HIT_PROFILE_MULT 												= 65.0  	-- multiplies hit profile of every ship
-NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR										    = 0.4		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult)
-NDefines.NNavy.HIT_PROFILE_SPEED_BASE											= 20		-- Base value added to hitprofile speed calulation
-NDefines.NNavy.SPEED_TO_ESCAPE_SPEED                                            = 1.5
+NDefines.NNavy.CONVOY_HIT_PROFILE = 120.0  	-- convoys has this contant hit profile
+NDefines.NNavy.HIT_PROFILE_MULT = 65.0  	-- multiplies hit profile of every ship
+NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR = 0.4		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult)
+NDefines.NNavy.HIT_PROFILE_SPEED_BASE = 20		-- Base value added to hitprofile speed calulation
+NDefines.NNavy.SPEED_TO_ESCAPE_SPEED = 1.5
 NDefines.NNavy.BASE_ESCAPE_SPEED = 0.25 
 
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
