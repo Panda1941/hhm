@@ -773,7 +773,7 @@ if = {
 			special_type_slot_1 = ammo_ap
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 1
+			#tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 1
 		}
 		icon = "GFX_ITA_basic_light_tank_medium"
@@ -792,7 +792,7 @@ if = {
 			special_type_slot_1 = ammo_ap
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 1
+			#tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 1
 		}
 		icon = "GFX_ITA_basic_light_tank_medium"
@@ -811,7 +811,7 @@ if = {
 			special_type_slot_1 = ammo_ap
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 1
+			#tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 1
 		}
 		icon = "GFX_ITA_basic_light_tank_medium"

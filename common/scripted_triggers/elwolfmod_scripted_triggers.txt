@@ -47,26 +47,3 @@ is_limited_country = {
 DIPLOMACY_PEACE_PROPOSAL_ENABLE_TRIGGER = {
 	always = no
 }
-
-normally_played_country = {
-OR = {
-original_tag = BUL  
-original_tag = BRA 
-original_tag = NZL	
-original_tag = AST	
-original_tag = RAJ	
-original_tag = JAP	
-original_tag = MAN	
-original_tag = SAF	
-original_tag = FRA	
-original_tag = GER	
-original_tag = ITA	
-original_tag = ROM	
-original_tag = HUN	
-original_tag = SOV
-original_tag = SPR	
-original_tag = ENG	
-original_tag = CAN 
-original_tag = USA
-}
-}

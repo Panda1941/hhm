@@ -396,8 +396,8 @@ if = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
 		improved_light_tank_chassis = 1
-		engine_tech_1 = 1
-		engine_tech_2 = 1
+		#engine_tech_1 = 1
+		#engine_tech_2 = 1
 	}
 }
 if = {
@@ -597,7 +597,7 @@ if = {
 			special_type_slot_1 = ammo_ap
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 1
+			#tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 1
 		}
 		obsolete = yes
@@ -618,7 +618,7 @@ if = {
 			special_type_slot_1 = ammo_ap
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 2
+			#tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 1
 		}
 		icon = "GFX_SOV_basic_light_tank_medium"
@@ -637,7 +637,7 @@ if = {
 			special_type_slot_1 = ammo_ap
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 3
+			#tank_nsb_engine_upgrade = 3
 			tank_nsb_armor_upgrade = 1
 		}
 		icon = "GFX_SOV_improved_light_tank_medium"
@@ -657,7 +657,7 @@ if = {
 			special_type_slot_2 = tank_radio_1
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 3
+			#tank_nsb_engine_upgrade = 3
 			tank_nsb_armor_upgrade = 1
 		}
 		icon = "GFX_SOV_improved_light_tank_medium"
@@ -678,7 +678,7 @@ if = {
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade = 3
-			tank_nsb_engine_upgrade = 1
+			#tank_nsb_engine_upgrade = 1
 		}
 		icon = "GFX_SOV_basic_heavy_tank_medium"
 	}
@@ -697,7 +697,7 @@ if = {
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade = 1
-			tank_nsb_engine_upgrade = 3
+			#tank_nsb_engine_upgrade = 3
 		}
 		icon = "GFX_SOV_basic_heavy_tank_medium"
 	}

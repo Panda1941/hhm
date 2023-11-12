@@ -77,7 +77,7 @@ upgrades = {
 			}
 		}
 		armor_value = 0.125
-		maximum_speed = -0.15
+		maximum_speed = -0.025
 		reliability = -0.03
 		add_stats = {
 			breakthrough = 4.0

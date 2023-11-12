@@ -307,7 +307,7 @@ if = {
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade = 1
-			tank_nsb_engine_upgrade = 1
+			#tank_nsb_engine_upgrade = 1
 		}
 		obsolete = yes #used for oob
 		icon = "GFX_POL_basic_light_tank"
@@ -327,7 +327,7 @@ if = {
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade = 2
-			tank_nsb_engine_upgrade = 2
+			#tank_nsb_engine_upgrade = 2
 		}
 		icon = "GFX_POL_imp_light_tank"
 	}
@@ -346,7 +346,7 @@ if = {
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade = 2
-			tank_nsb_engine_upgrade = 2
+			#tank_nsb_engine_upgrade = 2
 		}
 		icon = "GFX_POL_imp_light_tank"
 	}

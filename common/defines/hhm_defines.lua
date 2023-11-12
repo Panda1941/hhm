@@ -188,6 +188,10 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 112					-- You can have a minimum of 
 -- Adding equipment capture
 
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.05		-- 0.0 after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
+-------------------------------------------------------
+---speed------------------
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.020                   -- basic speed control
+NDefines.NMilitary.SLOWEST_SPEED = 3
 	
 
 -- Navy Balance

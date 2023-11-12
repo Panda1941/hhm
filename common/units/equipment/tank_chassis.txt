@@ -127,14 +127,14 @@ equipments = {
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_large_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
+			suspension_type_slot = tank_torsion_bar_suspension
+			roadwheels_type_slot = tank_small_roadwheels
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 4
+		maximum_speed = 8
 		build_cost_ic = 1
 		reliability = 0.8
 		hardness = 0.50
@@ -157,7 +157,7 @@ equipments = {
 		module_slots = inherit
 
 		upgrades = {
-			tank_nsb_engine_upgrade
+			#tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
 	}
@@ -171,7 +171,7 @@ equipments = {
 		parent = light_tank_chassis_0
 		priority = 2000
 		module_slots = inherit
-		maximum_speed = 5.5
+		maximum_speed = 8.0
 		build_cost_ic = 2
 		reliability = 0.85
 		armor_value = 10
@@ -191,7 +191,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		build_cost_ic = 3.0
-		maximum_speed = 6
+		maximum_speed = 8.0
 		reliability = 0.90
 		armor_value = 15
 		hardness = 0.50
@@ -225,7 +225,7 @@ equipments = {
 		module_slots = inherit
 		build_cost_ic = 4.0
 		fuel_consumption = 0.25
-		maximum_speed = 6.25
+		maximum_speed = 8.0
 		reliability = 0.95
 		armor_value = 20
 		hardness = 0.55
@@ -258,7 +258,7 @@ equipments = {
 		module_slots = inherit
 		build_cost_ic = 5.0
 		fuel_consumption = 0.25
-		maximum_speed = 6.50
+		maximum_speed = 8.0
 		reliability = 1.0
 		armor_value = 25
 		hardness = 0.60
@@ -290,7 +290,7 @@ equipments = {
 		module_slots = inherit
 		build_cost_ic = 6.0
 		fuel_consumption = 0.25
-		maximum_speed = 6.75
+		maximum_speed = 8.0
 		reliability = 1.1
 		armor_value = 45
 		defense = 2.0
@@ -425,14 +425,14 @@ equipments = {
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_medium_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_large_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
+			suspension_type_slot = tank_torsion_bar_suspension
+			roadwheels_type_slot = tank_small_roadwheels
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 4
+		maximum_speed = 6
 		build_cost_ic = 13
 		reliability = 0.90
 		armor_value = 0
@@ -454,10 +454,10 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		upgrades = {
-			tank_nsb_engine_upgrade
+			#tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
-		maximum_speed = 4.25
+		maximum_speed = 6
 		build_cost_ic = 3.65
 		reliability = 0.75
 		armor_value = 10
@@ -501,7 +501,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		fuel_consumption = 0.25
-		maximum_speed = 4.25
+		maximum_speed = 6
 		build_cost_ic = 5.5
 		reliability = 1.0
 		armor_value = 45
@@ -533,7 +533,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		fuel_consumption = 1.25
-		maximum_speed = 4.25
+		maximum_speed = 6
 		build_cost_ic = 8.5
 		reliability = 1.1
 		armor_value = 60
@@ -567,7 +567,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		fuel_consumption = 0.25
-		maximum_speed = 4.75
+		maximum_speed = 6
 		build_cost_ic = 8.5
 		reliability = 1.3
 		armor_value = 60
@@ -588,7 +588,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		fuel_consumption = 0.25
-		maximum_speed = 4.75
+		maximum_speed = 6
 		build_cost_ic = 7.5
 		reliability = 1.15
 		armor_value = 50
@@ -768,14 +768,14 @@ equipments = {
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_heavy_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_large_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
+			suspension_type_slot = tank_torsion_bar_suspension
+			roadwheels_type_slot = tank_small_roadwheels
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
 		}
 
 		fuel_consumption = 1.75
-		maximum_speed = 3.5
+		maximum_speed = 4
 		build_cost_ic = 31
 		reliability = 0.85
 		armor_value = 25
@@ -798,7 +798,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		upgrades = {
-			tank_nsb_engine_upgrade
+			#tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
 		maximum_speed = 4
@@ -843,7 +843,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		build_cost_ic = 33.92
-		maximum_speed = 4.25
+		maximum_speed = 4
 		fuel_consumption = 2.75
 		reliability = 0.95
 		armor_value = 110
@@ -877,7 +877,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		build_cost_ic = 39.13
-		maximum_speed = 4.25
+		maximum_speed = 4
 		fuel_consumption = 3.25
 		reliability = 1.15
 		armor_value = 130
@@ -912,7 +912,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		build_cost_ic = 49.13
-		maximum_speed = 3.75
+		maximum_speed = 4
 		fuel_consumption = 3.75
 		reliability = 1.05
 		armor_value = 150
@@ -1081,14 +1081,14 @@ equipments = {
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_modern_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_large_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
+			suspension_type_slot = tank_torsion_bar_suspension
+			roadwheels_type_slot = tank_small_roadwheels
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 6.0
+		maximum_speed = 8.0
 		build_cost_ic = 9.92
 		reliability = 1.8
 		armor_value = 90
@@ -1112,7 +1112,7 @@ equipments = {
 		module_slots = inherit
 
 		upgrades = {
-			tank_nsb_engine_upgrade
+			#tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
 	}
@@ -1264,14 +1264,14 @@ equipments = {
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_super_heavy_turret
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_large_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
+			suspension_type_slot = tank_torsion_bar_suspension
+			roadwheels_type_slot = tank_small_roadwheels
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
 		}
 
 		fuel_consumption = 4.75
-		maximum_speed = 3.5
+		maximum_speed = 4
 		build_cost_ic = 75.75
 		reliability = 1.3
 		armor_value = 170
@@ -1294,7 +1294,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		upgrades = {
-			tank_nsb_engine_upgrade
+			#tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
 		defense = 16
@@ -1309,12 +1309,12 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		upgrades = {
-			tank_nsb_engine_upgrade
+			#tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}	
 		defense = 18
 		fuel_consumption = 5.75
-		maximum_speed = 2.25
+		maximum_speed = 4
 		build_cost_ic = 85.75
 		reliability = 1.20
 		armor_value = 190
@@ -1469,10 +1469,10 @@ equipments = {
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_large_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
+			suspension_type_slot = tank_torsion_bar_suspension
+			roadwheels_type_slot = tank_small_roadwheels
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
 		}
 
 		fuel_consumption = 0
@@ -1497,7 +1497,7 @@ equipments = {
 		archetype = amphibious_tank_chassis
 		priority = 2000
 		upgrades = {
-			tank_nsb_engine_upgrade
+			#tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
 		module_slots = inherit
