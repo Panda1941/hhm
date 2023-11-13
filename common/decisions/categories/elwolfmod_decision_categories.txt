@@ -47,7 +47,7 @@ elwolfmod_gamerules = {
 	visible_when_empty = yes
 
 	visible = {
-		always = yes
+		date < 1936.02.01
 	}
 }
 
@@ -68,7 +68,7 @@ elwolfmod_gamerules_two = {
 	visible_when_empty = yes
 
 	visible = {
-		always = yes
+		date < 1936.02.01
 	}
 }
 
