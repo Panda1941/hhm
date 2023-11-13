@@ -96,8 +96,8 @@ NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100		-- 200 how many planes u can ha
 NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 0.25
 
 -- Production changes
-NDefines.NProduction.BASE_FACTORY_SPEED = 6						-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5.0				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED = 5.7					-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3.5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 
 NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.05 -- How much equipment from deployed divisions will be transferred on capitulation
