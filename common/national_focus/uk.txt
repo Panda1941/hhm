@@ -970,6 +970,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			mio:ENG_supermarine_organization = { add_mio_size = 1 }
 			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -1180,6 +1181,7 @@ focus_tree = {
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
+			mio:ENG_supermarine_organization = { add_mio_size = 1 }
 			if = {
 				limit = {
 					NOT = {
@@ -1234,6 +1236,8 @@ focus_tree = {
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
+			mio:ENG_avro_organization = { add_mio_size = 1 }
+			mio:ENG_de_havilland_organization = { add_mio_size = 1 }
 			if = {
 				limit = {
 					NOT = {
@@ -1289,6 +1293,7 @@ focus_tree = {
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
+			mio:ENG_fairey_aviation_organization = { add_mio_size = 1 }
 			if = {
 				limit = {
 					NOT = {

@@ -2163,43 +2163,13 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		complete_tooltip = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = GER_air_innovation
-				bonus = 1.0
-				uses = 1
-				category = light_air
-			}
-			add_doctrine_cost_reduction = {
-				name = air_sup_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = battlefield_support_tree
-			}
-			every_state = {
-				limit = { has_state_flag = GER_air_innovation_2air }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = { has_state_flag = GER_air_innovation_6air }
-				add_building_construction = {
-					type = air_base
-					level = 6
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = ritter_von_greim
-		}
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-		add_research_slot = 1
+			mio:GER_messerschmitt_organization = { add_mio_size = 1 }
+
+
+			add_research_slot = 1
 			
 			
 			add_tech_bonus = {
@@ -2216,31 +2186,6 @@ focus_tree = {
 				category = battlefield_support_tree
 			}
 			air_experience = 25
-
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							air_base > 3
-							air_base < 9
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 5
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 6
-						instant_build = yes
-					}
-					set_state_flag = GER_air_innovation_6air
-				}				
-			}
 
 			random_owned_controlled_state = {
 				limit = {
@@ -2299,7 +2244,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-		add_ideas = Luftwaffe_tac
+			mio:GER_junkers_organization = { add_mio_size = 1 }
+			add_ideas = Luftwaffe_tac
 			
 			add_tech_bonus = {
 				name = GER_air_innovation
@@ -2337,7 +2283,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-		add_ideas = Luftwaffe_interceptor
+			mio:GER_heinkel_organization = { add_mio_size = 1 }
+			add_ideas = Luftwaffe_interceptor
 			add_tech_bonus = {
 				name = GER_long_range_escorts
 				bonus = 2.0
@@ -2364,7 +2311,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-		add_ideas = Luftwaffe_marine
+			mio:GER_dornier_organization = { add_mio_size = 1 }
+			add_ideas = Luftwaffe_marine
 			add_tech_bonus = {
 				name = nav_bomber_bonus
 				bonus = 1.0
@@ -2390,7 +2338,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-		add_ideas = Luftwaffe_strat
+			mio:GER_heinkel_organization = { add_mio_size = 1 }
+			add_ideas = Luftwaffe_strat
 			# Balance research bonus for 2 techs in battlefield_support_tree
 			
 			add_tech_bonus = {
@@ -2461,7 +2410,7 @@ focus_tree = {
 				uses = 1
 				technology = improved_infantry_weapons
 			}
-add_ideas = {GER_mp38_idea}			
+			add_ideas = {GER_mp38_idea}			
 		}
 	}
 
@@ -2489,7 +2438,7 @@ add_ideas = {GER_mp38_idea}
 				uses = 2
 				category = artillery
 			}
-add_ideas = {GER_sfh18_idea}			
+			add_ideas = {GER_sfh18_idea}			
 		}
 	}
 	
@@ -2649,6 +2598,7 @@ add_ideas = {GER_sfh18_idea}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = { 
+			mio:GER_focke_wulf_organization = { add_mio_size = 1 }
 			air_experience = 50
 
 			add_ideas = GER_air_innovations_2_idea
