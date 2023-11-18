@@ -15,7 +15,7 @@ equipments = {
 
 		armor_value = 0 # HP = BASE_TRAIN_HP + armor_value
 
-		build_cost_ic = 70
+		build_cost_ic = 60
 		resources = {
 			steel = 1
 		}
@@ -29,7 +29,7 @@ equipments = {
 
 		armor_value = 0 # HP = BASE_TRAIN_HP + armor_value
 
-		build_cost_ic = 70
+		build_cost_ic = 60
 		resources = {
 			steel = 1
 		}
@@ -42,7 +42,7 @@ equipments = {
 		parent = train_equipment_1
 		priority = 20
 
-		build_cost_ic = 50
+		build_cost_ic = 45
 		resources = {
 			steel = 1
 		}
@@ -56,9 +56,9 @@ equipments = {
 		priority = 30
 
 		armor_value = 250 # HP = BASE_TRAIN_HP + armor_value
-		air_attack = 18
+		air_attack = 20
 
-		build_cost_ic = 105
+		build_cost_ic = 85
 		resources = {
 			steel = 2
 		}

@@ -204,7 +204,7 @@ guiTypes = {
 			position = { x = 16 y = 188 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
-			text = "Test Build"				
+			text = "Single Player"				
 			clicksound = click_default			
 			oversound = ui_menu_over
 		}
@@ -214,7 +214,7 @@ guiTypes = {
 			position = { x = 16 y = 228}
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
-			text = "Play with Friends xD"			
+			text = "Multiplayer"			
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -243,7 +243,7 @@ guiTypes = {
 			name = "settings_button"
 			position = { x = 16 y = 268 }
 			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "Change Stuff"
+			buttonText = "Settings"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -253,7 +253,7 @@ guiTypes = {
 			name = "career_profile_button"
 			position = { x = 16 y = 308 }
 			quadTextureSprite ="GFX_main_lobby_button"
-			buttonText = "Bragging Rights"
+			buttonText = "Career Profile"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -301,7 +301,7 @@ guiTypes = {
 			position = { x = 16 y = 470 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
-			text = "DO NOT PRESS!"			
+			text = "Exit"			
 			clicksound = click_default
 			oversound = ui_menu_over
 			
