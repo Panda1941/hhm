@@ -1,26 +1,23 @@
 
 state={
-	id=883
-	name="STATE_883"
+	id=918
+	name="STATE_918"
 
 	history={
 		owner = ENG
-		add_core_of = SWE
-		victory_points = {
-			12725 1 
-		}
 		buildings = {
 			infrastructure = 1
 
 		}
+		add_core_of = SWE
 
 	}
 
 	provinces={
-		2003 2046 2088 
+		4068 4910 5069 7156 12889 
 	}
-	manpower=311402
+	manpower=1560
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=wasteland
 	local_supplies=0.000
 }
