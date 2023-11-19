@@ -1196,7 +1196,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_la_division_azul }
-		prerequisite = { focus = SPA_stamp_out_the_maquis }
+		
 		
 		icon = GFX_goal_generic_position_armies
 		x = 0
@@ -1236,26 +1236,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = SPA_stamp_out_the_maquis
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_dictator_for_life }
-		
-		icon = GFX_goal_generic_more_territorial_claims
-		x = 2
-		y = 1
-		relative_position_id = SPA_dictator_for_life
-		cost = 2
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = SPR_recovering_from_civil_war_focus_tt
-		}
-	}
+	
 
 	focus = {
 		id = SPA_defenses_against_strategic_bombing
@@ -1608,20 +1589,7 @@ focus_tree = {
 		available = {
 			has_global_flag = scw_over
 			is_in_faction = no
-			OR = {
-				AND = {
-					GER = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-				AND = {
-					ITA = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-			}
+			
 		}
 		bypass = {
 			OR = {
@@ -1652,35 +1620,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					GER = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-				GER = { country_event = generic.2 }
-			}
-			if = {
-				limit = {
-					ITA = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-				ITA = { country_event = generic.2 }
-			}
+			custom_effect_tooltip = SPR_MIO
 		}
 	}
 
 	focus = {
 		id = SPA_fascist_economic_aid
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
+			
 		}
 		bypass = {
 		}
@@ -1764,10 +1711,7 @@ focus_tree = {
 			has_full_control_of_state = 176
 			has_full_control_of_state = 792
 			has_full_control_of_state = 41
-			any_allied_country = {
-				is_major = yes
-				has_government = fascism
-			}
+			
 		}
 		bypass = {
 		}
@@ -1848,10 +1792,7 @@ focus_tree = {
 	focus = {
 		id = SPA_improve_cross_country_railways
 		available = {
-			any_allied_country = {
-				is_major = yes
-				has_government = fascism
-			}
+			
 			has_full_control_of_state = 169
 			has_full_control_of_state = 789
 			has_full_control_of_state = 175
@@ -1893,11 +1834,7 @@ focus_tree = {
 	focus = {
 		id = SPA_support_the_war_industry
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
+			
 		}
 		bypass = {
 		}
@@ -1962,14 +1899,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = SPA_reduce_reliance_on_foreign_resources_tt
+			
 		}
 	}
 
 	focus = {
 		id = SPA_italian_shipbuilding_expertise
 		available = {
-			is_in_faction_with = ITA
+			
 		}
 		bypass = {
 		}
@@ -1997,11 +1934,7 @@ focus_tree = {
 	focus = {
 		id = SPA_the_duty_to_work
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
+			
 		}
 		bypass = {
 		}
@@ -2023,11 +1956,7 @@ focus_tree = {
 	focus = {
 		id = SPA_expand_the_war_industry
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
+			
 		}
 		bypass = {
 		}
@@ -2264,7 +2193,7 @@ focus_tree = {
 				uses = 2
 				category = excavation_tech
 			}
-			custom_effect_tooltip = SPA_reduce_reliance_on_foreign_resources_tt
+			
 		}
 	}
 

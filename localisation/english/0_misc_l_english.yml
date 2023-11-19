@@ -762,7 +762,7 @@
 
 # EFF TOOL LOC
  elwolfmod_efficency_decisions:0 "Efficency Decisions"
- elwolfmod_efficency_decisions_desc:0 "\nThis Tool Gives §Y100§! Efficency to Any of The Following Techs On §G150§! Factories \n\n    §YHow To Use§!\n       §LStep 1:§!  If gaining efficency on a Tank or Aircraft name the desired design §Y"eff"§! before selecting a decision below \n       §LStep 2:§!  §RUnassign§! any mills you want to have assigned to this new production line (Max §Y150§! Factories)\n       §LStep 3:§! Click desision below for the desired line and make sure it worked properly \n\n\n §RWarning:§! This tool only works on §4Researched§! equiptment and will not work if the tech is under lisence production\n"
+ elwolfmod_efficency_decisions_desc:0 "\nThis Tool Gives §Y100§! Efficency to Any of The Following Techs On §G150§! Factories \n\n    §YHow To Use§!\n       §BStep 1:§!  If gaining efficency on a Tank or Aircraft name the desired design §Y"eff"§! before selecting a decision below \n       §BStep 2:§!  §RUnassign§! any mills you want to have assigned to this new production line (Max §Y150§! Factories)\n       §BStep 3:§! Click desision below for the desired line and make sure it worked properly \n\n\n §RWarning:§! This tool only works on §4Researched§! equiptment and will not work if the tech is under lisence production\n"
 
  eff_gun_1:0 "Gun 1"
  eff_gun_2:0 "Gun 2"
@@ -978,6 +978,8 @@
  spam_arty_tt:0 "Infantry and Leg Special Forces battalions require §R+20% Artillery equipment.§! (Rocket.A. and Artillery)."
  spam_tank_tt:0 "Armor Support Companies will require §G-4 Flame Tank§! / §GSp. Artillery-chassis.§!"
  spam_trench_tt:0 "Leg Special Forces battalions require §G-10% Support Equipments§!."
+ SPR_MIO:0 "§GCan use§! §YGerman Armored Military Industry Organizations.§!"
+
  
  ##########################################reworks can saf ger
  
