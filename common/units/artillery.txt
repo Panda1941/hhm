@@ -75,6 +75,8 @@ sub_units = {
 		need = {
 			rocket_artillery_equipment = 12
 		}
+		
+		same_support_type = artillery
 
 		manpower = 300
 		training_time = 120
