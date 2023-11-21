@@ -44,6 +44,8 @@ sub_units = {
 		weight = 0.1
 		
         supply_consumption = 0.1
+		
+		same_support_type = anti_air
 
 		# Support nerfs to combat abilities
 		defense = -0.4

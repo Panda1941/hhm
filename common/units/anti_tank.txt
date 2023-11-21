@@ -22,6 +22,7 @@ sub_units = {
 			category_army
 		}
 
+		same_support_type = anti_tank
 
 		combat_width = 0
 
