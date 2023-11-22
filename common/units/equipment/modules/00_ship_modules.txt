@@ -381,8 +381,7 @@ equipment_modules = {
 			hg_armor_piercing = 45
 		}
 		build_cost_resources = {
-			steel = 1
-			chromium = 1
+			steel = 1 
 		}
 		can_convert_from = {
 			module_category = ship_heavy_battery
@@ -530,7 +529,7 @@ equipment_modules = {
 			max_strength = 90
 		}
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 
 		forbid_module_categories = {
@@ -577,7 +576,7 @@ equipment_modules = {
 			max_strength = 90
 		}
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 
 		forbid_module_categories = {
@@ -2442,7 +2441,7 @@ equipment_modules = {
 			max_strength = 0.15
 		}
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 			chromium = 1
 		}
 		add_stats = {
@@ -2486,7 +2485,7 @@ equipment_modules = {
 			max_strength = 0.20
 		}
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 			chromium = 1
 		}
 		add_stats = {
@@ -2572,7 +2571,7 @@ equipment_modules = {
 			naval_torpedo_damage_reduction_factor = 0.15
 		}
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 			chromium = 1
 		}
 	}
