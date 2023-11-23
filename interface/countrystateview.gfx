@@ -686,5 +686,14 @@ spriteTypes = {
 		name = "GFX_modifiers_ITA_established_mafia"
 		textureFile = "gfx/interface/state_modifiers/modifiers_ITA_established_mafia.dds"
 	}
+	#################################################################################################
+	    spriteType = {
+		name = "GFX_GER_war_zone_modifier_icon"
+		textureFile = "gfx/interface/state_modifiers/GER_war_zone_modifier_icon.dds"
+	}
+	spriteType = {
+		name = "SOV_war_zone_modifier_icon"
+		textureFile = "gfx/interface/state_modifiers/SOV_war_zone_modifier_icon.dds"
+	}
 
 }

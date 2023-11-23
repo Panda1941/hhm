@@ -1241,7 +1241,7 @@ RAJ_industrialized_personnel = {
 frontline_state = {
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_capital_of_the_tsars
+	icon = SOV_war_zone_modifier_icon
 
 	army_core_defence_factor = -0.10
 
@@ -1250,7 +1250,7 @@ frontline_state = {
 2ndline_state = {
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_capital_of_the_tsars
+	icon = SOV_war_zone_modifier_icon
 
 	army_core_defence_factor = -0.05
 
@@ -1259,7 +1259,7 @@ frontline_state = {
 3rdline_state = {
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_capital_of_the_tsars
+	icon = SOV_war_zone_modifier_icon
 
 	army_core_defence_factor = 0.05
 
@@ -1268,7 +1268,7 @@ frontline_state = {
 lastline_state = {
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_capital_of_the_tsars
+	icon = SOV_war_zone_modifier_icon
 
 	army_core_defence_factor = 0.1
 
@@ -1287,7 +1287,7 @@ defence_of_leningrad = {
 
 	icon = GFX_modifiers_SOV_defend_moscow
 
-	army_core_defence_factor = 0.075
+	army_core_defence_factor = 0.10
 	max_dig_in = 1
 }
 defence_of_stalingrad = {
@@ -1295,7 +1295,7 @@ defence_of_stalingrad = {
 
 	icon = GFX_modifiers_SOV_defend_moscow
 
-	army_core_defence_factor = 0.1
+	army_core_defence_factor = 0.12
 	max_dig_in = 2
 }
 
@@ -1303,10 +1303,10 @@ defence_of_stalingrad = {
 JAP_attack = {
     enable = { always = yes }
 	
-	icon = GFX_modifiers_generic_military_plans
+	icon = GFX_GER_war_zone_modifier_icon
 	
 	max_dig_in = -5
-	army_defence_factor = -0.05
+	army_defence_factor = -0.10
 
 }
 
