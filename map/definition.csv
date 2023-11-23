@@ -487,7 +487,7 @@
 486;2;69;25;land;false;plains;1
 487;2;69;175;land;false;plains;1
 488;2;72;90;land;false;plains;1
-489;2;72;140;land;false;plains;1
+489;2;72;140;land;false;urban;1
 490;2;72;195;land;true;forest;2
 491;2;75;55;land;false;plains;1
 492;2;75;160;land;false;forest;2
@@ -518,7 +518,7 @@
 517;2;114;160;land;false;mountain;6
 518;2;117;20;land;false;plains;1
 519;2;117;75;land;false;hills;1
-520;2;117;225;land;false;plains;6
+520;2;117;225;land;false;urban;6
 521;2;120;40;land;false;mountain;1
 522;2;120;85;land;false;plains;1
 523;2;120;190;land;false;forest;1
@@ -583,7 +583,7 @@
 582;2;204;70;land;false;plains;1
 583;2;204;175;land;false;plains;1
 584;2;207;35;land;false;forest;1
-585;2;207;90;land;false;plains;1
+585;2;207;90;land;false;urban;1
 586;2;207;140;land;false;forest;1
 587;2;210;0;land;false;urban;1
 588;2;210;55;land;false;plains;1
@@ -3485,7 +3485,7 @@
 3484;44;81;98;land;false;mountain;1
 3485;44;81;148;land;false;hills;1
 3486;44;84;8;land;false;plains;6
-3487;44;84;63;land;false;plains;6
+3487;44;84;63;land;false;urban;6
 3488;44;84;213;land;false;forest;1
 3489;44;87;28;land;false;plains;1
 3490;44;87;178;land;false;plains;6
@@ -3553,7 +3553,7 @@
 3552;44;168;198;land;true;forest;1
 3553;44;171;13;land;false;forest;1
 3554;44;171;58;land;false;forest;1
-3555;44;171;163;land;false;plains;1
+3555;44;171;163;land;false;urban;1
 3556;44;174;23;land;false;marsh;1
 3557;44;174;128;land;false;plains;1
 3558;44;177;43;land;false;plains;1
@@ -6346,7 +6346,7 @@
 6345;85;129;96;land;true;plains;1
 6346;85;129;146;land;false;plains;1
 6347;85;129;201;land;false;plains;1
-6348;85;132;61;land;false;hills;1
+6348;85;132;61;land;false;urban;1
 6349;85;132;166;land;true;plains;1
 6350;85;135;26;land;true;plains;1
 6351;85;135;81;land;false;plains;1
@@ -6600,7 +6600,7 @@
 6599;86;204;41;land;true;forest;1
 6600;86;204;146;land;false;hills;1
 6601;86;204;191;land;false;plains;6
-6602;86;207;6;land;false;plains;1
+6602;86;207;6;land;false;urban;1
 6603;86;207;156;land;false;forest;1
 6604;86;207;211;land;false;hills;1
 6605;86;210;71;land;false;plains;1
@@ -11280,7 +11280,7 @@
 11279;169;75;192;land;false;hills;1
 11280;169;78;52;land;false;forest;1
 11281;169;78;157;land;false;forest;6
-11282;169;81;17;land;false;forest;1
+11282;169;81;17;land;false;urban;1
 11283;169;81;72;land;false;plains;1
 11284;169;81;222;land;false;plains;1
 11285;169;84;37;land;false;marsh;1
@@ -11482,7 +11482,7 @@
 11481;170;108;217;land;false;plains;1
 11482;170;111;32;land;false;desert;6
 11483;170;111;182;land;false;urban;1
-11484;170;114;97;land;false;plains;1
+11484;170;114;97;land;false;urban;1
 11485;170;114;147;land;false;plains;1
 11486;170;114;202;land;false;hills;1
 11487;170;117;62;land;false;forest;1
