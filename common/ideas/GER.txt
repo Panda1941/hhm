@@ -563,9 +563,9 @@ ideas = {
 				}
 			}
 			modifier = {
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = 0.20
-				consumer_goods_factor = 0.03
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = 0.30
+				consumer_goods_factor = 0.10
 			}
 		}
 
