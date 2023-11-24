@@ -43,7 +43,7 @@ equipments = {
 
 		archetype = motorized_equipment
 		priority = 30
-		maximum_speed = 8
+		maximum_speed = 6
 		reliability = 0.65
 		breakthrough = 2
 

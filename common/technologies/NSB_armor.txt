@@ -448,6 +448,7 @@ technologies = {
 			tank_small_cannon_3
 			tank_close_support_gun_2
 			tank_anti_air_cannon_3
+			stabilizer
 		}
 
 		path = {
@@ -1099,6 +1100,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_medium_cannon_4	
+			stabilizer
 		}
 		
 			
@@ -1471,7 +1473,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_cannon_2
 			tank_heavy_howitzer
-			#stabilizer
+			stabilizer
 			squeezebore_adaptor
 			tank_anti_air_cannon_2
 			sloped_armor
@@ -1558,7 +1560,6 @@ technologies = {
 			tank_high_velocity_cannon_3
 			tank_heavy_howitzer_2
 			auto_loader
-			stabilizer
 			tank_anti_air_cannon_3
 		}
 
