@@ -29,43 +29,14 @@
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = SOV_finish_five_year_plan_2IC }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 		completion_reward = {
-		add_timed_idea = { idea = SOV_five_year_plan_hhm days = 1825 } 
+			add_timed_idea = { idea = SOV_five_year_plan_hhm days = 1390 } 
+			custom_effect_tooltip = "The idea lasts exactly 4 years if selected as first focus"
 			195 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = SOV_finish_five_year_plan_2IC
-			}
-			137 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -77,10 +48,10 @@
 			}
 
 			219 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -467,43 +438,23 @@
 		}
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = SOV_production_effort_2AF }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
 			army_experience = 10
-			653 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = SOV_production_effort_2AF
-			}
 			572 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SOV_production_effort_2AF
 			}
 			137 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SOV_production_effort_2AF
@@ -560,49 +511,60 @@
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = SOV_infrastructure_effort_3Inf }
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
+			custom_effect_tooltip = "the first 4 x2 infrastructure are on pre-set states, the others are random states in asia"
 			40 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
 			569 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
 			568 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
 			571 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = asia }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = asia }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = asia }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = asia }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = asia }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = asia }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 			}
 		}
 	}
@@ -639,7 +601,7 @@
 			}
 			add_resource = {
 				type = rubber
-				amount = 12
+				amount = 24
 				state = 404
 			}
 		}
@@ -775,8 +737,6 @@
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = georgy_zhukov
 			# REVISIT Might want to add more
-
-			add_ideas = SOV_stakhanovite_movement
 		}
 	}
 
@@ -2294,7 +2254,7 @@ date > 1940.09.01
                 name = SOV_kv1			
 				bonus = 1.0
 				uses = 1
-				technology = improved_heavy_tank_chassis
+				category = armor
 			}
 		}
 	}
@@ -2326,29 +2286,6 @@ date > 1940.09.01
 			set_technology = {
 				improved_medium_tank_chassis_3 = 1
 			}
-			
-		create_equipment_variant = {
-		name = "T-34 Winter-War"
-		type = medium_tank_chassis_4
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_medium_cannon_4
-			turret_type_slot = tank_medium_breakthrough_turret_1
-			suspension_type_slot = tank_vertical_volute_spring_suspension
-			roadwheels_type_slot = tank_large_roadwheels
-			armor_type_slot = tank_welded_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-			special_type_slot_2 = squeezebore_adaptor
-			special_type_slot_3 = tank_radio_3
-			special_type_slot_4 = tank_module_camouflage_winter
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 4
-			tank_nsb_armor_upgrade = 3
-		}
-		icon = "GFX_SOV_medium_tank_chassis_4"
-	}
 		}
 	}
 
