@@ -513,9 +513,12 @@ date > 1938.01.01
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-		ENG = { custom_effect_tooltip = needs_approval 
-				country_event = tfv_south_africa.1
-				}
+		SAF = { 
+		transfer_state = 542
+		transfer_state = 545
+		transfer_state = 771
+		transfer_state = 770
+		}
 		}
 	}
 
