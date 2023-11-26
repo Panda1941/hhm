@@ -2338,6 +2338,8 @@ date > 1940.09.01
 				uses = 3
 				category = support_tech
 			}
+
+			add_ideas = soviet_fighter_discount
 		}
 	}
 

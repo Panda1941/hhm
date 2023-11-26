@@ -212,10 +212,10 @@ ideas = {
 			
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 				cv_small_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 		}
@@ -1616,11 +1616,11 @@ ideas = {
 				
 				large_plane_maritime_patrol_plane_airframe = {
 					instant = yes
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 				}
 				small_plane_cas_airframe = {
 					instant = yes
-					build_cost_ic = -0.05
+					build_cost_ic = -0.025
 				}
 			}
 		}
@@ -1640,12 +1640,12 @@ ideas = {
 				
 				medium_plane_airframe = {
 					instant = yes
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 					defence = 0.05
 				}
 				medium_plane_scout_plane_airframe = {
 					instant = yes
-					build_cost_ic = -0.05
+					build_cost_ic = -0.025
 				}
 			}
 		}
@@ -1670,7 +1670,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				large_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 			equipment_bonus = {
