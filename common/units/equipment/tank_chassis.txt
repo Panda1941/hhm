@@ -200,18 +200,6 @@ equipments = {
 			steel = 1
 		}
 		
-		module_slots = {
-
-            special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-			
-		}
 	}
 
 	light_tank_chassis_3 = {
@@ -233,10 +221,9 @@ equipments = {
 		resources = {
 			steel = 2
 		}
-		
 		module_slots = {
 
-			special_type_slot_3 = {
+            special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
@@ -244,6 +231,7 @@ equipments = {
 					tank_secondary_turret
 				}
 			}
+			
 		}
 	}
 	
@@ -265,11 +253,11 @@ equipments = {
 		defense = 1.5
 		resources = {
 			steel = 2
-		}
+		}	
+		
+		module_slots = {
 
-        module_slots = {
-
-			special_type_slot_4 = {
+			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
@@ -277,7 +265,7 @@ equipments = {
 					tank_secondary_turret
 				}
 			}
-		}		
+		}
 	}
 	light_tank_chassis_5 = {
 		abbreviation = "lt5"
@@ -298,6 +286,18 @@ equipments = {
 		resources = {
 			steel = 2
 		}
+
+        module_slots = {
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+					tank_secondary_turret
+				}
+			}
+		}	
 	}
 
 	
