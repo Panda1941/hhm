@@ -1762,8 +1762,8 @@ equipment_modules = {
 		}
 		xp_cost = 0
 		multiply_stats = {
-			defense = 0.15
-			breakthrough = 0.15
+			defense = 0.2
+			breakthrough = 0.2
 		}
 	}
 
@@ -1798,8 +1798,8 @@ equipment_modules = {
 		}
 		xp_cost = 0
 		multiply_stats = {
-			defense = 0.35
-			breakthrough = 0.35
+			defense = 0.3
+			breakthrough = 0.3
 		}
 	}
 
