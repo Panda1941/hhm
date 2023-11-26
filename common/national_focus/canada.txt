@@ -820,16 +820,7 @@ threat > 0.25
 		}
 		
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
+			
 		}
 
 		cancel_if_invalid = yes

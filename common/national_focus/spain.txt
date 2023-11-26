@@ -1191,7 +1191,7 @@ focus_tree = {
 	focus = {
 		id = SPA_the_tangiers_enclave
 		available = {
-			has_full_control_of_state = 290
+			#has_full_control_of_state = 290
 		}
 		bypass = {
 		}
@@ -1212,7 +1212,7 @@ focus_tree = {
 					ENG = { has_government = democratic }
 				}
 				effect_tooltip = {
-					290 = {
+					169 = {
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
 							type = industrial_complex
@@ -1221,11 +1221,11 @@ focus_tree = {
 						}
 					}
 				}
-				custom_effect_tooltip = SPA_the_tangiers_enclave_tt
-				ENG = { country_event = { id = lar_spain.36 hours = 6 random_hours = 18 } }
+				#custom_effect_tooltip = SPA_the_tangiers_enclave_tt
+				#ENG = { country_event = { id = lar_spain.36 hours = 6 random_hours = 18 } }
 			}
 			else = {
-				290 = {
+				169 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex

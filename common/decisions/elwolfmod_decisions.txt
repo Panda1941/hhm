@@ -467,6 +467,27 @@ operations = {
 			}
 		}
 	}
+	spain_joins_war = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			SPR = {has_war_with = ENG} 
+			}
+			
+		
+		complete_effect = {
+		WST = { 
+				transfer_state = 290
+			}
+		}
+	}
 	african_bonus_for_all = {
 		# icon = generic_operation
 		allowed = {
