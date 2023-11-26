@@ -2046,7 +2046,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 4.5
-			breakthrough = 7.5
+			breakthrough = 8
 		}
 		xp_cost = 0
 
@@ -2059,8 +2059,8 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2.0
-			breakthrough = 1.0
-			defense = 4.5
+			breakthrough = 1.5
+			defense = 4.0
 		}
 		xp_cost = 0
 		multiply_stats = {
@@ -2077,6 +2077,9 @@ equipment_modules = {
 			breakthrough = 4
 			build_cost_ic = 2.0
 		}
+		multiply_stats = {
+			breakthrough = 0.04
+		}
 	}
 	
 	tank_module_camouflage_desert= {
@@ -2089,6 +2092,11 @@ equipment_modules = {
 			reliability = 0.05
 			build_cost_ic = 2.0
 		}
+		multiply_stats = {
+			reliability = 0.05
+			defense = 0.02
+			breakthrough = 0.02
+		}
 	}
 	
 	tank_module_camouflage_winter= {
@@ -2100,6 +2108,9 @@ equipment_modules = {
 			defense = 3.0
 			build_cost_ic = 2.0
 		}
+		multiply_stats = {
+			defense = 0.03
+		}
 	}
 
 	extra_ammo_storage = {
@@ -2108,8 +2119,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 2.5
-			reliability = -0.05
+			build_cost_ic = 1.0
+			reliability = -0.1
 			breakthrough = 6
 		}
 		xp_cost = 0
@@ -2121,8 +2132,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = 0.25
-			build_cost_ic = 3
+			reliability = 0.2
+			build_cost_ic = 2.5
 		}
 		xp_cost = 0
 		multiply_stats = {
@@ -2136,7 +2147,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 2.5
+			build_cost_ic = 5.0
 			reliability = -0.05
 		}
 		xp_cost = 0
@@ -2244,8 +2255,8 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 4
-			breakthrough = 9
-			defense = 3
+			breakthrough = 12
+			defense = 2
 		}
 		xp_cost = 0
 		
@@ -2257,13 +2268,13 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = 0.15
+			reliability = 0.10
 			defense = 2
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		multiply_stats = {
-			build_cost_ic = -0.025
+			build_cost_ic = -0.03
 		}
 	}
 
@@ -2273,9 +2284,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 3.0
+			soft_attack = 2.5
 			defense = 1.5
-			build_cost_ic = 1.5
+			build_cost_ic = 2.0
 		}
 		xp_cost = 0
 		multiply_stats = {
