@@ -30,8 +30,8 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_timed_idea = { idea = SOV_five_year_plan_hhm days = 1390 } 
-			custom_effect_tooltip = "The idea lasts exactly 4 years if selected as first focus"
+			add_timed_idea = { idea = SOV_five_year_plan_hhm days = 1755 } 
+			custom_effect_tooltip = "The idea lasts exactly 5 years if selected as first focus"
 			195 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
