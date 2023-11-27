@@ -41,7 +41,6 @@ sub_units = {
 		defense = -0.50	#Don't nerf this stat
 		breakthrough = -0.6
 		armor_value = -0.75
-		soft_attack = 0.30
 		
 		amphibious = {
 			attack = -0.5
@@ -88,7 +87,6 @@ sub_units = {
 		defense = -0.50	#Don't nerf this stat
 		breakthrough = -0.6
 		armor_value = -0.75
-		soft_attack = 0.30
 		
 		amphibious = {
 			attack = -0.5
@@ -135,7 +133,6 @@ sub_units = {
 		defense = -0.50	#Don't nerf this stat
 		breakthrough = -0.6
 		armor_value = -0.75
-		soft_attack = 0.30
 		
 		amphibious = {
 			attack = -0.5
@@ -183,7 +180,6 @@ sub_units = {
 		defense = -0.50	#Don't nerf this stat
 		breakthrough = -0.6
 		armor_value = -0.75
-		soft_attack = 0.30
 		
 		amphibious = {
 			attack = -0.5
@@ -230,7 +226,6 @@ sub_units = {
 		defense = -0.50	#Don't nerf this stat
 		breakthrough = -0.6
 		armor_value = -0.75
-		soft_attack = 0.30
 		
 		amphibious = {
 			attack = -0.5

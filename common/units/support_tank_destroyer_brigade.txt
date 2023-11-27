@@ -40,8 +40,6 @@ sub_units = {
 		#support unit nerf
 
 		defense = -0.50
-		ap_attack = 0.10
-		hard_attack = 0.20
 		breakthrough = -0.6
 		armor_value = -0.75
 		
@@ -90,8 +88,6 @@ sub_units = {
 		
 		#support unit nerf
 		defense = -0.50
-		ap_attack = 0.10
-		hard_attack = 0.20
 		breakthrough = -0.6
 		armor_value = -0.75
 		
@@ -138,8 +134,6 @@ sub_units = {
 		
 		#support unit nerf
 		defense = -0.50
-		ap_attack = 0.10
-		hard_attack = 0.20
 		breakthrough = -0.6
 		armor_value = -0.75
 		
@@ -186,8 +180,6 @@ sub_units = {
 		
 		#support unit nerf
 		defense = -0.50
-		ap_attack = 0.10
-		hard_attack = 0.20
 		breakthrough = -0.6
 		armor_value = -0.75
 		
@@ -234,8 +226,6 @@ sub_units = {
 		
 		#support unit nerf
 		defense = -0.50
-		ap_attack = 0.10
-		hard_attack = 0.20
 		breakthrough = -0.6
 		armor_value = -0.75
 		
