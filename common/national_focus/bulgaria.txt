@@ -38,7 +38,7 @@ focus_tree = {
 		id = BUL_acquire_modern_tools
 
 		icon = GFX_goal_generic_production2
-		x = 12
+		x = 14
 		y = 0
 		cost = 10
 
@@ -65,7 +65,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_acquire_modern_tools }
 		icon = GFX_goal_generic_construction
 		relative_position_id = BUL_acquire_modern_tools
-		x = -6
+		x = -11
 		y = 1
 		cost = 8
 
@@ -106,21 +106,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 			add_ideas = BUL_foreign_industry_idea
 
 		}
@@ -187,21 +173,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			if = {
-				limit = {
-					212 = {
-						is_owned_by = BUL
-					}
-				} 
-				212 = { #PLOVDIV
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
+			
 			add_ideas = BUL_tobacco_exports
 		}
 	}
@@ -227,21 +199,7 @@ focus_tree = {
 				remove_idea = BUL_foreign_industry_idea
 				add_idea = BUL_nationalized_industry
 			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 
@@ -473,11 +431,13 @@ focus_tree = {
 
 	focus = {
 		id = BUL_negotiate_bulgarian_rearmament
+		
 
 		prerequisite = { focus = BUL_acquire_modern_tools }
-		icon = GFX_focus_generic_combined_arms
+		icon = GFX_focus_befriend_italy
 		relative_position_id = BUL_acquire_modern_tools
-		x = 0
+		mutually_exclusive = { focus = BUL_negotiate_bulgarian_rearmament_2 }
+		x = 1
 		y = 1
 		cost = 5
 
@@ -492,23 +452,126 @@ focus_tree = {
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
+		
 		completion_reward = {
-			unlock_decision_category_tooltip = BUL_rearmament
+		add_named_threat = {
+			    threat = 1
+			    name = "Bulgarian Rearmament"
+			}
+			remove_ideas = BUL_army_restrictions_panda
+			custom_effect_tooltip = yugo_war 
+			
+		}
+	}
+	
+	focus = {
+		id = BUL_yugo_stuff
+		text = "Claims on Yugoslavia"
+		icon = GFX_focus_BUL_support_macedonian_organizations
+		#GFX_focus_BUL_supremacy_on_the_bosporus
+		
+		x = 19
+		y = 1
+		cost = 5
+
+		bypass = {
+			YUG = {
+					exists = no	
+			}
+		}
+
+		available = {
+always = false
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
+		
+		completion_reward = {
+		BUL = {
+					transfer_state = 803
+					add_state_core = 803
+					transfer_state = 106
+					add_state_core = 106
+				}
+		}
+	}
+	
+	focus = {
+		id = BUL_greece_stuff
+		text = "Claims on Greece"
+		icon = GFX_focus_GRE_bedrock_of_balkan_stability 
+		
+		x = 21
+		y = 1
+		cost = 5
+
+		bypass = {
+			GRE = {
+					exists = no	
+			}
+		}
+
+		available = {
+always = false
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
+		
+		completion_reward = {
+		BUL = {
+					transfer_state = 184
+					add_state_core = 184
+					transfer_state = 731
+					add_state_core = 731
+				}
+		}
+	}
+	
+	focus = {
+		id = BUL_negotiate_bulgarian_rearmament_2
+		text = "Slow Recovery"
+
+		prerequisite = { focus = BUL_acquire_modern_tools }
+		icon = GFX_focus_chi_british_cooperation
+		relative_position_id = BUL_acquire_modern_tools
+		mutually_exclusive = { focus = BUL_negotiate_bulgarian_rearmament }
+		x = -1
+		y = 1
+		cost = 5
+
+		bypass = {
+			
+		}
+
+		available = {
+			YUG = {
+					exists = no	
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+		add_named_threat = {
+			    threat = 1
+			    name = "Bulgarian Rearmament"
+			}
+			remove_ideas = BUL_army_restrictions_panda
 		}
 	}
 
 	focus = {
 		id = BUL_reorganize_the_military_industry
 
-		prerequisite = { focus = BUL_negotiate_bulgarian_rearmament }
+		#prerequisite = { focus = BUL_rebuild_the_army }
+		prerequisite = { focus = BUL_national_military_academy }
 		icon = GFX_focus_generic_tank_production
-		relative_position_id = BUL_negotiate_bulgarian_rearmament
-		x = 0
-		y = 1
+		relative_position_id = BUL_rebuild_the_army
+		x = 2
+		y = 3
 		cost = 5
 
 		available = {
-			NOT = { has_idea = BUL_army_restrictions }
+			#NOT = { has_idea = BUL_army_restrictions }
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -534,8 +597,9 @@ focus_tree = {
 		id = BUL_darzhavna_voenna_fabrika
 
 		prerequisite = { focus = BUL_reorganize_the_military_industry }
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_generic_small_arms
 		relative_position_id = BUL_reorganize_the_military_industry
+		mutually_exclusive = { focus = BUL_darzhavna_voenna_fabrika_2 }
 		x = -1
 		y = 1
 		cost = 10
@@ -568,18 +632,52 @@ focus_tree = {
 			    uses = 2
 				category = support_tech
 			}
-			#custom_effect_tooltip = available_designer
-			#show_ideas_tooltip = BUL_dvf
+		}
+	}
+	
+	focus = {
+		id = BUL_darzhavna_voenna_fabrika_2
+		text = "Rocketry Experiments"
+
+		prerequisite = { focus = BUL_reorganize_the_military_industry }
+		icon = GFX_focus_rocketry
+		relative_position_id = BUL_reorganize_the_military_industry
+		mutually_exclusive = { focus = BUL_darzhavna_voenna_fabrika }
+		x = 1
+		y = 1
+		cost = 10
+
+		available = {
+			212 = {
+				is_owned_by = BUL
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			212 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				uses = 2
+				bonus = 1
+				category = rocketry
+			}
 		}
 	}
 
 	focus = {
 		id = BUL_found_dvf_sopot
 
-		prerequisite = { focus = BUL_darzhavna_voenna_fabrika }
+		prerequisite = { focus = BUL_darzhavna_voenna_fabrika focus = BUL_darzhavna_voenna_fabrika_2 }
 		icon = GFX_goal_generic_army_artillery
 		relative_position_id = BUL_darzhavna_voenna_fabrika
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
 
@@ -614,11 +712,11 @@ focus_tree = {
 	focus = {
 		id = BUL_rebuild_the_army
 
-		prerequisite = { focus = BUL_reorganize_the_military_industry }
+		prerequisite = { focus = BUL_negotiate_bulgarian_rearmament focus = BUL_negotiate_bulgarian_rearmament_2 }
 		icon = GFX_focus_generic_little_entente
-		relative_position_id = BUL_reorganize_the_military_industry
-		x = 1
-		y = 1
+		relative_position_id = BUL_acquire_modern_tools
+		x = 0
+		y = 2
 		cost = 10
 
 		available = {
@@ -632,16 +730,16 @@ focus_tree = {
 			    uses = 2
 				category = land_doctrine
 			}
-			if = {
-				limit = { has_idea = BUL_bulgarian_army_02 }
-				swap_ideas = {
-					remove_idea = BUL_bulgarian_army_02
-					add_idea = BUL_bulgarian_army_03
-				}
-			}
-			else = {
-				add_ideas = BUL_bulgarian_army_01
-			}
+			#if = {
+			#	limit = { has_idea = BUL_bulgarian_army_02 }
+			#	swap_ideas = {
+			#		remove_idea = BUL_bulgarian_army_02
+			#		add_idea = BUL_bulgarian_army_03
+			#	}
+			#}
+			
+			add_ideas = BUL_bulgarian_army_01
+			
 			if = {
 				limit = { has_idea = disarmed_nation }
 				add_ideas = volunteer_only
@@ -656,12 +754,12 @@ focus_tree = {
 	focus = {
 		id = BUL_vasil_levsky_national_military_university
 
-		prerequisite = { focus = BUL_rebuild_the_army }
-		prerequisite = { focus = BUL_darzhavna_voenna_fabrika }
+		
+		prerequisite = { focus = BUL_national_military_academy focus = BUL_foreign_military_academy }
 		icon = GFX_focus_research
-		relative_position_id = BUL_found_dvf_sopot
-		x = 2
-		y = 0
+		relative_position_id = BUL_national_military_academy
+		x = -5
+		y = 1
 		cost = 10
 
 		available = {
@@ -686,10 +784,10 @@ focus_tree = {
 	focus = {
 		id = BUL_prussia_of_the_balkans
 
-		prerequisite = { focus = BUL_vasil_levsky_national_military_university }
+		
 		prerequisite = { focus = BUL_found_dvf_sopot }
 		icon = GFX_focus_BUL_prussia_of_the_balkans
-		relative_position_id = BUL_vasil_levsky_national_military_university
+		relative_position_id = BUL_found_dvf_sopot
 		x = 0
 		y = 1
 		cost = 10
@@ -730,11 +828,12 @@ focus_tree = {
 	focus = {
 		id = BUL_national_military_academy
 
-		prerequisite = { focus = BUL_negotiate_bulgarian_rearmament }
+		prerequisite = { focus = BUL_rebuild_the_army }
 		icon = GFX_focus_generic_military_academy
-		relative_position_id = BUL_negotiate_bulgarian_rearmament
-		x = 3
-		y = 2
+		relative_position_id = BUL_rebuild_the_army
+		mutually_exclusive = { focus = BUL_foreign_military_academy }
+		x = 5
+		y = 1
 		cost = 5
 
 		available = {
@@ -743,7 +842,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			army_experience = 15
+			#army_experience = 15
 			add_doctrine_cost_reduction = {
 				name = BUL_national_military_academy
 			    cost_reduction = 0.5
@@ -765,15 +864,152 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = BUL_form_mechanized_battalions
+		text = "Armored Infantry"
+		
+		icon = GFX_focus_HUN_form_mechanized_battalions
+		prerequisite = { focus = BUL_national_military_academy }
+		x = 0
+		y = 1
+		relative_position_id = BUL_national_military_academy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = BUL_mech
+				bonus = 0.75
+				uses = 2
+				technology = mechanised_infantry
+				technology = mechanised_infantry2
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_form_shock_troops_battalions
+		text = "Grenadier Training"
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = BUL_form_mechanized_battalions }
+		x = 0
+		y = 1
+		relative_position_id = BUL_form_mechanized_battalions
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			
+			add_ideas = BUL_grenadier_training_idea
+		}
+	}
+	
+	focus = {
+		id = BUL_foreign_military_academy
+		text = "Foreign Military Academy"
+
+		prerequisite = { focus = BUL_rebuild_the_army }
+		icon = GFX_focus_chi_mission_to_germany
+		relative_position_id = BUL_rebuild_the_army
+		mutually_exclusive = { focus = BUL_national_military_academy }
+		x = 11
+		y = 1
+		cost = 10
+
+		available = {
+		AND = {
+YUG = {
+					exists = no	
+			}
+			GER = { has_completed_focus = GER_anschluss }
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+		    
+			army_experience = 100
+			
+		}
+	}
+	
+	focus = {
+		id = BUL_contract_foreign_companies
+
+		prerequisite = { focus = BUL_foreign_military_academy }
+		icon = GFX_focus_generic_license_production
+		relative_position_id = BUL_foreign_military_academy
+		x = 0
+		y = 2
+		cost = 10
+
+		available = {
+		GER = {
+					has_opinion = {
+						target = BUL
+						value > 79
+					}
+				}
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		add_political_power = -100
+		add_relation_modifier = {
+				target = GER
+				modifier = BUL_license_german_equipment
+			}
+			add_tech_bonus = {			
+				bonus = 0.50
+				uses = 3 
+				category = armor
+			}			
+		}
+	}
 
 	focus = {
 		id = BUL_war_logistics
 
-		prerequisite = { focus = BUL_national_military_academy }
+		prerequisite = { focus = BUL_national_military_academy focus = BUL_foreign_military_academy }
 		icon = GFX_goal_generic_army_motorized
 		relative_position_id = BUL_national_military_academy
-		x = 0
-		y = 2
+		x = 3
+		y = 1
 		cost = 10
 
 		available = {
@@ -789,23 +1025,18 @@ focus_tree = {
 			    uses = 3
 				category = support_tech
 			}
-			add_tech_bonus = {
-				name = BUL_war_logistics
-			    bonus = 2
-			    uses = 1
-				category = motorized_equipment
-			}
+			
 		}
 	}
 
 	focus = {
 		id = BUL_a_black_sea_fleet
 
-		prerequisite = { focus = BUL_negotiate_bulgarian_rearmament }
-		icon = GFX_focus_generic_destroyer
-		relative_position_id = BUL_negotiate_bulgarian_rearmament
-		x = 2
-		y = 1
+		prerequisite = { focus = BUL_acquire_modern_tools }
+		icon = GFX_focus_BUL_supremacy_on_the_bosporus
+		relative_position_id = BUL_acquire_modern_tools
+		x = -3
+		y = 2
 		cost = 10
 
 		available = {
@@ -863,8 +1094,8 @@ focus_tree = {
 		prerequisite = { focus = BUL_acquire_modern_tools }
 		icon = GFX_goal_generic_build_navy
 		relative_position_id = BUL_acquire_modern_tools
-		x = 4
-		y = 4
+		x = -4
+		y = 1
 		cost = 10
 
 		available = {
@@ -942,7 +1173,7 @@ focus_tree = {
 
 		icon = GFX_focus_BUL_power_to_the_tsar
 		relative_position_id = BUL_oppose_the_royal_dictatorship
-		x = 26
+		x = 32
 		y = 0
 		cost = 5
 		mutually_exclusive = { focus = BUL_oppose_the_royal_dictatorship }
@@ -1135,18 +1366,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_ideas = BUL_brannik
-			
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -1238,34 +1457,6 @@ focus_tree = {
 					instant_build = yes
 					province = 949
 				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = BUL_war_industry_flag
-			}
-			random_owned_controlled_state = {
-				limit = {
-					NOT = { has_state_flag = BUL_war_industry_flag }
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = { has_state_flag = BUL_war_industry_flag }
-				clr_state_flag = BUL_war_industry_flag
 			}
 			if = {
 				limit = {
@@ -1589,46 +1780,6 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
-				set_state_flag = BUL_corporatism_flag
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					NOT = { has_state_flag = BUL_corporatism_flag }
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			hidden_effect = {
-				random_owned_state = {
-					limit = {
-						has_state_flag = BUL_corporatism_flag
-					}
-					clr_state_flag = BUL_corporatism_flag
-				}
-			}
 			swap_ideas = {
 				remove_idea = BUL_government_reforms_fascists_02
 				add_idea = BUL_government_reforms_fascists_03
@@ -1939,9 +2090,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			set_rule = {
-				can_create_factions = yes
-			}
+			
 			random_owned_state = {
 				prioritize = { 48 212 }
 				limit = {

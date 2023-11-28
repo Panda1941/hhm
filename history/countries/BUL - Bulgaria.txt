@@ -49,9 +49,11 @@ if = { #DLC
 	#IDEAS SETUP
 	add_ideas = { #DLC
 		BUL_second_national_catastrophe
-		BUL_army_restrictions
+		#BUL_army_restrictions
+		BUL_army_restrictions_panda
 		#BUL_imro_01
-		volunteer_only
+		disarmed_nation
+		bulg_tank_research
 	}
 
 

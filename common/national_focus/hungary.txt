@@ -1651,8 +1651,7 @@ focus_tree = {
 		}
 
 		available = {
-		GER = { has_completed_focus = GER_tiger } 
-
+		#GER = { has_completed_focus = GER_tiger } 
 		}
 
 		bypass = {
@@ -1696,8 +1695,8 @@ focus_tree = {
 		}
 
 		available = {
-GER = { has_tech = basic_medium_tank_chassis 
-		}
+#GER = { has_tech = basic_medium_tank_chassis 
+#		}
 		}
 
 		bypass = {

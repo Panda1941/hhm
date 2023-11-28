@@ -17,41 +17,42 @@
 ##     ## ######## ##     ## ##     ## ##     ## ##     ## ##     ## ######## ##    ##    ##    
 
 
-BUL_rearmament = {
-	BUL_negotiate_bulgarian_rearmament = {
+#BUL_rearmament = {
+#	BUL_negotiate_bulgarian_rearmament = {
+#
+#		icon = GFX_decision_generic_industry
+#
+#		ai_will_do = {
+#			base = 100
+#		}
+#
+#		allowed = { 
+#			original_tag = BUL
+#		}
+#
+#		available = {
+#			has_completed_focus = BUL_negotiate_bulgarian_rearmament
+#		}
+#
+#		days_remove = 30
+#
+#		fire_only_once = yes
+#
+#		visible = {
+#			has_completed_focus = BUL_negotiate_bulgarian_rearmament
+#		}
+#
+#		cost = 100
+#
+#		complete_effect = {
+#		}
+#
+#		remove_effect = {
+#			ENG = { country_event = bftb_bulgaria_rearmament.1 }
+#		}
+#	}
+#}
 
-		icon = GFX_decision_generic_industry
-
-		ai_will_do = {
-			base = 100
-		}
-
-		allowed = { 
-			original_tag = BUL
-		}
-
-		available = {
-			has_completed_focus = BUL_negotiate_bulgarian_rearmament
-		}
-
-		days_remove = 60
-
-		fire_only_once = yes
-
-		visible = {
-			has_completed_focus = BUL_negotiate_bulgarian_rearmament
-		}
-
-		cost = 100
-
-		complete_effect = {
-		}
-
-		remove_effect = {
-			ENG = { country_event = bftb_bulgaria_rearmament.1 }
-		}
-	}
-}
 
 
 #### ##    ## ########  ##     ##  ######  ######## ########  ####    ###    ##       

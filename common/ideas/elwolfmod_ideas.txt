@@ -745,6 +745,26 @@ ideas = {
 	
 			}
 		}
+		
+		bulg_tank_research = {
+			picture = generic_armor
+			allowed = {
+				original_tag = BUL
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				armor = -0.20
+			}
+			
+
+			modifier = {
+			   production_factory_efficiency_gain_factor = -0.10
+			}
+		}
 	}
 }
 

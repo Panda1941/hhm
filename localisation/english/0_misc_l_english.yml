@@ -1196,3 +1196,8 @@
  
  ger_heavy_research:0 "Heavy Tank Research"
  
+ BUL_license_german_equipment:0 "License Foreign Equipments"
+ 
+ yugo_war:0 "\n§RThis will lead to war with Yugoslavia when italy declares war!§!"
+ BUL_army_restrictions_panda:0 "Army Restrictions"
+ bulg_tank_research:0 "Insufficient Armored Warfare Experience"

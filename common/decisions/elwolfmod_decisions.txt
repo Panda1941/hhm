@@ -585,7 +585,104 @@ operations = {
 			}
 		}
 	}
+	BUL_joins_war = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			ITA = { has_war_with = YUG } 
+			}
+			
+		
+		complete_effect = {
+			BUL = {
+				declare_war_on = {
+					target = YUG 
+					type = annex_everything
+				}
+			}
 	
+			if = { limit = { country_exists = YUG }	BUL = { add_to_war = { targeted_alliance = ITA enemy = YUG } } }
+		}
+	}
+	BUL_claims = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		AND {
+			YUG = { 
+						exists = no
+					}
+					BUL = { 
+						has_completed_focus = BUL_negotiate_bulgarian_rearmament 
+					} 
+}					
+			}
+			
+		
+		complete_effect = {
+		BUL = { 
+				transfer_state = 803
+				transfer_state = 106
+				
+			}
+			803 = {	
+					add_core_of = BUL
+				}
+			106 = {	
+					add_core_of = BUL
+				}	
+		}
+	}
+	BUL_claims_2 = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		AND {
+			GRE = { 
+						exists = no
+					}
+					BUL = { 
+						has_completed_focus = BUL_negotiate_bulgarian_rearmament 
+					} 
+}					
+			}
+			
+		
+		complete_effect = {
+		BUL = { 
+				transfer_state = 184
+				transfer_state = 731
+				
+			}
+			184 = {	
+					add_core_of = BUL
+				}
+			731 = {	
+					add_core_of = BUL
+				}	
+		}
+	}
 	
 
 
