@@ -642,7 +642,40 @@ operations = {
 				}
 			106 = {	
 					add_core_of = BUL
-				}					
+				}
+            IF = {
+				limit = { NOT = { has_full_control_of_state = 77} }
+				77 = {
+					add_core_of = BUL
+					transfer_state_to = BUL
+				}
+			}
+
+				
+				ITA = {
+					852 = {
+						add_extra_state_shared_building_slots = 6
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				106 = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				give_resource_rights = { receiver = ITA state = 803 }
+				give_resource_rights = { receiver = ITA state = 106 }
+						
 		}
 	}
 	BUL_claims_2 = {
@@ -677,7 +710,27 @@ operations = {
 				}
 			731 = {	
 					add_core_of = BUL
-				}	
+				}
+731 = {
+					remove_building = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+				184 = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+                give_resource_rights = { receiver = ITA state = 184 }
+				give_resource_rights = { receiver = ITA state = 731 }
+341 = {
+				set_demilitarized_zone = no
+				add_core_of = BUL
+				transfer_state_to = BUL
+				add_manpower = 289548
+			}				
 		}
 	}
 	

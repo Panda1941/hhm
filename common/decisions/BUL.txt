@@ -64,91 +64,91 @@
 #### ##    ## ########   #######   ######     ##    ##     ## #### ##     ## ######## 
 
 
-BUL_foreign_agreements = {
-
-	BUL_german_industrial_agreements = {
-
-		priority = 59
-
-		icon = generic_factory
-
-		ai_will_do = {
-			base = 10
-		}
-
-		allowed = { always = yes } #Activated from effect
-
-		available = {
-			num_of_civilian_factories_available_for_projects > 1
-			NOT = {
-				GER = {
-					has_war_with = ENG
-				}
-			}
-		}
-
-		visible = {
-			country_exists = GER
-		}
-
-		cost = 75
-		days_remove = 60
-		days_re_enable = 60
-		
-		modifier = {
-			civilian_factory_use = 1
-		}
-		
-		complete_effect = {
-		}
-		
-		remove_effect = {		
-			custom_effect_tooltip = "Will be avaliable again 60 days after completion"	
-
-			random_list = {
-				20 = {
-					add_political_power = 75
-				}
-				70 = {
-					random_owned_controlled_state = {
-						limit = {
-							ROOT = { has_full_control_of_state = PREV }
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				10 = {
-					random_owned_controlled_state = {
-						limit = {
-							ROOT = { has_full_control_of_state = PREV }
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-						}
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = industrial_complex
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-			}
-		}
-	}
-}
+#BUL_foreign_agreements = {
+#
+#	BUL_german_industrial_agreements = {
+#
+#		priority = 59
+#
+#		icon = generic_factory
+#
+#		ai_will_do = {
+#			base = 10
+#		}
+#
+#		allowed = { always = yes } #Activated from effect
+#
+#		available = {
+#			num_of_civilian_factories_available_for_projects > 1
+#			NOT = {
+#				GER = {
+#					has_war_with = ENG
+#				}
+#			}
+#		}
+#
+#		visible = {
+#			country_exists = GER
+#		}
+#
+#		cost = 75
+#		days_remove = 60
+#		days_re_enable = 60
+#		
+#		modifier = {
+#			civilian_factory_use = 1
+#		}
+#		
+#		complete_effect = {
+#		}
+#		
+#		remove_effect = {		
+#			custom_effect_tooltip = "Will be avaliable again 60 days after completion"	
+#
+#			random_list = {
+#				20 = {
+#					add_political_power = 75
+#				}
+#				70 = {
+#					random_owned_controlled_state = {
+#						limit = {
+#							ROOT = { has_full_control_of_state = PREV }
+#							free_building_slots = {
+#								building = industrial_complex
+#								size > 0
+#								include_locked = yes
+#							}
+#						}
+#						add_extra_state_shared_building_slots = 1
+#						add_building_construction = {
+#							type = industrial_complex
+#							level = 1
+#							instant_build = yes
+#						}
+#					}
+#				}
+#				10 = {
+#					random_owned_controlled_state = {
+#						limit = {
+#							ROOT = { has_full_control_of_state = PREV }
+#							free_building_slots = {
+#								building = industrial_complex
+#								size > 0
+#								include_locked = yes
+#							}
+#						}
+#						add_extra_state_shared_building_slots = 2
+#						add_building_construction = {
+#							type = industrial_complex
+#							level = 2
+#							instant_build = yes
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
 
 
 
@@ -161,136 +161,136 @@ BUL_foreign_agreements = {
  #######     ##    ##     ## ######## ##     ## 
 
 
-BUL_negotiate_claims_in_the_balkans = {
-	BUL_demand_our_historical_claims = {
-
-		icon = hol_draw_up_staff_plans
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-			OR = {
-				ITA = { has_war_with = YUG }
-				GER = { has_war_with = ENG }
-				date > 1939.09.01
-			}
-		}
-
-		visible = { always = yes }
-
-		cost = 75
-
-		fire_only_once = yes
-		
-		complete_effect = {	
-			custom_effect_tooltip = BUL_our_claims_tt
-
-			803 = {
-				add_core_of = ROOT
-				transfer_state_to = ROOT
-			}
-			106 = {
-				add_core_of = ROOT
-				transfer_state_to = ROOT
-			}
-			184 = {
-				add_core_of = ROOT
-				transfer_state_to = ROOT
-			}
-			731 = {
-				add_core_of = ROOT
-				transfer_state_to = ROOT
-			}
-
-			IF = {
-				limit = { NOT = { has_full_control_of_state = 77} }
-				77 = {
-					add_core_of = ROOT
-					transfer_state_to = ROOT
-				}
-			}
-
-			hidden_effect = {
-				77 = {	# FAILSAFE IF BULGARIA HAS DOBRUJA BUT DOESN"T HAVE A CORE
-					add_core_of = ROOT
-				}
-				ITA = {
-					852 = {
-						add_extra_state_shared_building_slots = 6
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = industrial_complex
-							level = 4
-							instant_build = yes
-						}
-					}
-				}
-				106 = {
-					remove_building = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-				731 = {
-					remove_building = {
-						type = industrial_complex
-						level = 3
-					}
-				}
-				184 = {
-					remove_building = {
-						type = arms_factory
-						level = 1
-					}
-				}
-
-				give_resource_rights = { receiver = ITA state = 803 }
-				give_resource_rights = { receiver = ITA state = 106 }
-				give_resource_rights = { receiver = ITA state = 184 }
-				give_resource_rights = { receiver = ITA state = 731 }
-			}	
-		}
-	}
-
-	
-	BUL_secure_the_south_east = {
-
-		icon = hol_draw_up_staff_plans
-
-		ai_will_do = {
-			factor = 0
-			#base = 800
-		}
-
-		available = {
-			OR = {
-				ITA = { has_war_with = ENG }
-				date > 1940.06.01
-			}
-		}
-
-		visible = { always = yes }
-
-		cost = 100
-
-		fire_only_once = yes
-		
-		complete_effect = {	
-			341 = {
-				set_demilitarized_zone = no
-				add_core_of = ROOT
-				transfer_state_to = ROOT
-				add_manpower = 289548
-			}
-		}
-	}
-}
+#BUL_negotiate_claims_in_the_balkans = {
+#	BUL_demand_our_historical_claims = {
+#
+#		icon = hol_draw_up_staff_plans
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			OR = {
+#				ITA = { has_war_with = YUG }
+#				GER = { has_war_with = ENG }
+#				date > 1939.09.01
+#			}
+#		}
+#
+#		visible = { always = yes }
+#
+#		cost = 75
+#
+#		fire_only_once = yes
+#		
+#		complete_effect = {	
+#			custom_effect_tooltip = BUL_our_claims_tt
+#
+#			803 = {
+#				add_core_of = ROOT
+#				transfer_state_to = ROOT
+#			}
+#			106 = {
+#				add_core_of = ROOT
+#				transfer_state_to = ROOT
+#			}
+#			184 = {
+#				add_core_of = ROOT
+#				transfer_state_to = ROOT
+#			}
+#			731 = {
+#				add_core_of = ROOT
+#				transfer_state_to = ROOT
+#			}
+#
+#			IF = {
+#				limit = { NOT = { has_full_control_of_state = 77} }
+#				77 = {
+#					add_core_of = ROOT
+#					transfer_state_to = ROOT
+#				}
+#			}
+#
+#			hidden_effect = {
+#				77 = {	# FAILSAFE IF BULGARIA HAS DOBRUJA BUT DOESN"T HAVE A CORE
+#					add_core_of = ROOT
+#				}
+#				ITA = {
+#					852 = {
+#						add_extra_state_shared_building_slots = 6
+#						add_building_construction = {
+#							type = arms_factory
+#							level = 2
+#							instant_build = yes
+#						}
+#						add_building_construction = {
+#							type = industrial_complex
+#							level = 4
+#							instant_build = yes
+#						}
+#					}
+#				}
+#				106 = {
+#					remove_building = {
+#						type = industrial_complex
+#						level = 1
+#					}
+#				}
+#				731 = {
+#					remove_building = {
+#						type = industrial_complex
+#						level = 3
+#					}
+#				}
+#				184 = {
+#					remove_building = {
+#						type = arms_factory
+#						level = 1
+#					}
+#				}
+#
+#				give_resource_rights = { receiver = ITA state = 803 }
+#				give_resource_rights = { receiver = ITA state = 106 }
+#				give_resource_rights = { receiver = ITA state = 184 }
+#				give_resource_rights = { receiver = ITA state = 731 }
+#			}	
+#		}
+#	}
+#
+#	
+#	BUL_secure_the_south_east = {
+#
+#		icon = hol_draw_up_staff_plans
+#
+#		ai_will_do = {
+#			factor = 0
+#			#base = 800
+#		}
+#
+#		available = {
+#			OR = {
+#				ITA = { has_war_with = ENG }
+#				date > 1940.06.01
+#			}
+#		}
+#
+#		visible = { always = yes }
+#
+#		cost = 100
+#
+#		fire_only_once = yes
+#		
+#		complete_effect = {	
+#			341 = {
+#				set_demilitarized_zone = no
+#				add_core_of = ROOT
+#				transfer_state_to = ROOT
+#				add_manpower = 289548
+#			}
+#		}
+#	}
+#}
 
 
  ######   ######## ########  ##     ##    ###    ##    ## ##    ## 
