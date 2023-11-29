@@ -435,8 +435,6 @@ elwolfmod_capitulations_on_actions = {
             transfer_state = 853
 		}
 		BUL = {
-			transfer_state = 106
-			transfer_state = 803
 			if = {
 				limit = { NOT = { has_idea = peace_training } }
 				add_ideas = peace_training
@@ -586,10 +584,10 @@ elwolfmod_capitulations_on_actions_collab = {
 		    }
 		}
 		BUL = {
-			transfer_state = 106
-			add_state_core = 106
-			transfer_state = 803
-			add_state_core = 803
+			#transfer_state = 106
+			#add_state_core = 106
+			#transfer_state = 803
+			#add_state_core = 803
 			if = {
 				limit = { NOT = { has_idea = peace_training } }
 				add_ideas = peace_training

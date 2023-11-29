@@ -759,11 +759,6 @@ ideas = {
 			research_bonus = {
 				armor = -0.20
 			}
-			
-
-			modifier = {
-			   production_factory_efficiency_gain_factor = -0.10
-			}
 		}
 	}
 }

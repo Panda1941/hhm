@@ -1972,6 +1972,113 @@ ideas = {
 
 			}
 		}
+		
+		slow = {
+			picture = generic_license_production
+			name = BUL_slow
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+		slow_2 = {
+			picture = generic_license_production
+			name = BUL_slow_02
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		slow_3 = {
+			picture = generic_license_production
+			name = BUL_slow_03
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				conscription = -0.015
+			}
+		}
+		
+		
+		
+		fast = {
+			picture = generic_foreign_capital
+			name = BUL_fast
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		fast_2 = {
+			picture = generic_foreign_capital
+			name = BUL_fast_02
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		fast_3 = {
+			picture = generic_foreign_capital
+			name = BUL_fast_03
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.20
+			}
+		}
 
 	}
 

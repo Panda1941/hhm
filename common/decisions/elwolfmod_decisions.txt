@@ -622,14 +622,12 @@ operations = {
 			factor = 100
 		}
 		available = {
-		AND {
 			YUG = { 
-						exists = no
+					exists = no
 					}
 					BUL = { 
 						has_completed_focus = BUL_negotiate_bulgarian_rearmament 
-					} 
-}					
+					} 		
 			}
 			
 		
@@ -644,7 +642,7 @@ operations = {
 				}
 			106 = {	
 					add_core_of = BUL
-				}	
+				}					
 		}
 	}
 	BUL_claims_2 = {
@@ -658,14 +656,13 @@ operations = {
 			factor = 100
 		}
 		available = {
-		AND {
 			GRE = { 
-						exists = no
+			        exists = no
 					}
 					BUL = { 
 						has_completed_focus = BUL_negotiate_bulgarian_rearmament 
 					} 
-}					
+	
 			}
 			
 		
@@ -681,6 +678,169 @@ operations = {
 			731 = {	
 					add_core_of = BUL
 				}	
+		}
+	}
+	
+	BUL_slow = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+					BUL = { 
+						has_completed_focus = BUL_negotiate_bulgarian_rearmament_2
+						num_of_military_factories > 15	
+					} 
+	
+			}
+			
+		
+		complete_effect = {
+		BUL = { 
+			add_ideas = slow
+			}	
+		}
+	}
+	BUL_slow_2 = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+					BUL = { 
+						has_completed_focus = BUL_negotiate_bulgarian_rearmament_2
+		                num_of_military_factories > 30
+					} 
+	
+			}
+			
+		
+		complete_effect = {
+		BUL = { 
+			swap_ideas = {
+					remove_idea = slow
+					add_idea = slow_2
+				}
+			}	
+		}
+	}
+	BUL_slow_3 = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+					BUL = { 
+						has_completed_focus = BUL_negotiate_bulgarian_rearmament_2
+		                num_of_military_factories > 40
+					} 
+	
+			}
+			
+		
+		complete_effect = {
+		BUL = { 
+			swap_ideas = {
+					remove_idea = slow_2
+					add_idea = slow_3
+				}
+			}	
+		}
+	}
+	BUL_fast = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+					BUL = { 
+						has_completed_focus = BUL_negotiate_bulgarian_rearmament
+		                date > 1937.01.01
+					} 
+	
+			}
+			
+		
+		complete_effect = {
+		BUL = { 
+			add_ideas = fast
+			}	
+		}
+	}
+	BUL_fast_2 = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+					BUL = { 
+						has_completed_focus = BUL_negotiate_bulgarian_rearmament
+		                date > 1938.01.01
+					} 
+	
+			}
+			
+		
+		complete_effect = {
+		BUL = { 
+			swap_ideas = {
+					remove_idea = fast
+					add_idea = fast_2
+				}
+			}	
+		}
+	}
+	BUL_fast_3 = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+					BUL = { 
+						has_completed_focus = BUL_negotiate_bulgarian_rearmament
+		                date > 1939.01.01
+					} 
+	
+			}
+			
+		
+		complete_effect = {
+		BUL = { 
+			swap_ideas = {
+					remove_idea = fast_2
+					add_idea = fast_3
+				}
+			}	
 		}
 	}
 	

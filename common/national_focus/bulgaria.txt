@@ -38,7 +38,7 @@ focus_tree = {
 		id = BUL_acquire_modern_tools
 
 		icon = GFX_goal_generic_production2
-		x = 14
+		x = 22
 		y = 0
 		cost = 10
 
@@ -65,7 +65,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_acquire_modern_tools }
 		icon = GFX_goal_generic_construction
 		relative_position_id = BUL_acquire_modern_tools
-		x = -11
+		x = -18
 		y = 1
 		cost = 8
 
@@ -428,6 +428,182 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = BUL_slow
+		text = "Modernize our tools"
+
+
+		icon = GFX_goal_generic_production
+		x = 12
+		y = 2
+		cost = 10
+		
+		bypass = {
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament_2
+		num_of_military_factories > 15
+		}
+
+		available = {
+		always = false
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament_2
+		num_of_military_factories > 15
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			
+			add_ideas = slow
+		}
+	}
+	focus = {
+		id = BUL_slow_2
+		text = "Adapting to new industrial methods"
+
+
+		icon = GFX_goal_generic_production
+		x = 12
+		y = 3
+		cost = 10
+		
+		bypass = {
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament_2
+		num_of_military_factories > 30
+		}
+
+		available = {
+		always = false
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament_2
+		num_of_military_factories > 30
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			
+			swap_ideas = {
+					remove_idea = slow
+					add_idea = slow_2
+				}
+		}
+	}
+	focus = {
+		id = BUL_slow_3
+		text = "Women workforce"
+
+
+		icon = GFX_goal_generic_production
+		x = 12
+		y = 4
+		cost = 10
+		
+		bypass = {
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament_2
+		num_of_military_factories > 40
+		}
+
+		available = {
+		always = false
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament_2
+		num_of_military_factories > 40
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			
+			swap_ideas = {
+					remove_idea = slow_2
+					add_idea = slow_3
+				}
+		}
+	}
+	
+	focus = {
+		id = BUL_fast
+		text = "Training new workers"
+
+
+		icon = GFX_goal_generic_production2
+		x = 10
+		y = 2
+		cost = 10
+		
+		bypass = {
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament
+		date > 1937.01.01
+		}
+
+		available = {
+		always = false
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament
+		date > 1937.01.01
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			
+			add_ideas = fast
+		}
+	}
+	focus = {
+		id = BUL_fast_2
+		text = "Introducing workshifts"
+
+
+		icon = GFX_goal_generic_production2
+		x = 10
+		y = 3
+		cost = 10
+		
+		bypass = {
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament
+		date > 1938.01.01
+		}
+
+		available = {
+		always = false
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament
+		date > 1938.01.01
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			
+			swap_ideas = {
+					remove_idea = fast
+					add_idea = fast_2
+				}
+		}
+	}
+	focus = {
+		id = BUL_fast_3
+		text = "Underground work facilities"
+
+
+		icon = GFX_goal_generic_production2
+		x = 10
+		y = 4
+		cost = 10
+		
+		bypass = {
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament
+		date > 1939.01.01
+		}
+
+		available = {
+		always = false
+		has_completed_focus = BUL_negotiate_bulgarian_rearmament
+		date > 1939.01.01
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			
+			swap_ideas = {
+					remove_idea = fast_2
+					add_idea = fast_3
+				}
+		}
+	}
 
 	focus = {
 		id = BUL_negotiate_bulgarian_rearmament
@@ -470,7 +646,7 @@ focus_tree = {
 		icon = GFX_focus_BUL_support_macedonian_organizations
 		#GFX_focus_BUL_supremacy_on_the_bosporus
 		
-		x = 19
+		x = 26
 		y = 1
 		cost = 5
 
@@ -501,7 +677,7 @@ always = false
 		text = "Claims on Greece"
 		icon = GFX_focus_GRE_bedrock_of_balkan_stability 
 		
-		x = 21
+		x = 28
 		y = 1
 		cost = 5
 
@@ -564,9 +740,9 @@ always = false
 
 		#prerequisite = { focus = BUL_rebuild_the_army }
 		prerequisite = { focus = BUL_national_military_academy }
-		icon = GFX_focus_generic_tank_production
+		icon = GFX_goal_generic_small_arms
 		relative_position_id = BUL_rebuild_the_army
-		x = 2
+		x = -6
 		y = 3
 		cost = 5
 
@@ -582,6 +758,29 @@ always = false
 			    uses = 1
 			    category = infantry_weapons
 			}
+			
+		}
+	}
+	
+	focus = {
+		id = BUL_reorganize_the_military_industry_2
+		text = "Artillery modernization"
+
+		#prerequisite = { focus = BUL_rebuild_the_army }
+		prerequisite = { focus = BUL_reorganize_the_military_industry }
+		icon = GFX_goal_generic_army_artillery2
+		relative_position_id = BUL_reorganize_the_military_industry
+		x = -3
+		y = 1
+		cost = 5
+
+		available = {
+			#NOT = { has_idea = BUL_army_restrictions }
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			
 			add_tech_bonus = {
 				name = BUL_reorganize_the_military_industry
 			    bonus = 0.75
@@ -626,6 +825,39 @@ always = false
 			    uses = 2
 				category = infantry_weapons
 			}
+			
+		}
+	}
+	
+	focus = {
+		id = BUL_darzhavna_voenna_fabrika_supp
+		text = "New Support Equipment"
+
+		prerequisite = { focus = BUL_darzhavna_voenna_fabrika }
+		icon = GFX_goal_generic_small_arms
+		relative_position_id = BUL_darzhavna_voenna_fabrika
+		
+		x = -1
+		y = 1
+		cost = 10
+
+		available = {
+			212 = {
+				is_owned_by = BUL
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			212 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			
 			add_tech_bonus = {
 				name = BUL_darzhavna_voenna_fabrika
 			    bonus = 0.25
@@ -755,10 +987,10 @@ always = false
 		id = BUL_vasil_levsky_national_military_university
 
 		
-		prerequisite = { focus = BUL_national_military_academy focus = BUL_foreign_military_academy }
+		prerequisite = { focus = BUL_national_military_academy  }
 		icon = GFX_focus_research
 		relative_position_id = BUL_national_military_academy
-		x = -5
+		x = -2
 		y = 1
 		cost = 10
 
@@ -832,7 +1064,7 @@ always = false
 		icon = GFX_focus_generic_military_academy
 		relative_position_id = BUL_rebuild_the_army
 		mutually_exclusive = { focus = BUL_foreign_military_academy }
-		x = 5
+		x = -3
 		y = 1
 		cost = 5
 
@@ -872,7 +1104,7 @@ always = false
 		icon = GFX_focus_HUN_form_mechanized_battalions
 		prerequisite = { focus = BUL_national_military_academy }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = BUL_national_military_academy
 
 		cost = 10
@@ -914,7 +1146,7 @@ always = false
 		y = 1
 		relative_position_id = BUL_form_mechanized_battalions
 
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -947,9 +1179,9 @@ always = false
 		icon = GFX_focus_chi_mission_to_germany
 		relative_position_id = BUL_rebuild_the_army
 		mutually_exclusive = { focus = BUL_national_military_academy }
-		x = 11
+		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 		AND = {
@@ -993,7 +1225,27 @@ YUG = {
 		add_relation_modifier = {
 				target = GER
 				modifier = BUL_license_german_equipment
-			}
+			}			
+		}
+	}
+	
+	
+	focus = {
+		id = BUL_study_german_tanks
+		text = "Study German Tanks"
+
+		prerequisite = { focus = BUL_contract_foreign_companies }
+		icon = GFX_focus_generic_tank_production
+		relative_position_id = BUL_contract_foreign_companies
+		x = 0
+		y = 1
+		cost = 10
+
+		available = {
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
 			add_tech_bonus = {			
 				bonus = 0.50
 				uses = 3 
@@ -1009,7 +1261,7 @@ YUG = {
 		icon = GFX_goal_generic_army_motorized
 		relative_position_id = BUL_national_military_academy
 		x = 3
-		y = 1
+		y = 2
 		cost = 10
 
 		available = {
@@ -1035,8 +1287,8 @@ YUG = {
 		prerequisite = { focus = BUL_acquire_modern_tools }
 		icon = GFX_focus_BUL_supremacy_on_the_bosporus
 		relative_position_id = BUL_acquire_modern_tools
-		x = -3
-		y = 2
+		x = -5
+		y = 1
 		cost = 10
 
 		available = {
@@ -1094,7 +1346,7 @@ YUG = {
 		prerequisite = { focus = BUL_acquire_modern_tools }
 		icon = GFX_goal_generic_build_navy
 		relative_position_id = BUL_acquire_modern_tools
-		x = -4
+		x = -7
 		y = 1
 		cost = 10
 
@@ -1129,7 +1381,7 @@ YUG = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = BUL_expand_varna_naval_base
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 
 		available = {
@@ -1173,7 +1425,7 @@ YUG = {
 
 		icon = GFX_focus_BUL_power_to_the_tsar
 		relative_position_id = BUL_oppose_the_royal_dictatorship
-		x = 32
+		x = 36
 		y = 0
 		cost = 5
 		mutually_exclusive = { focus = BUL_oppose_the_royal_dictatorship }
