@@ -1,0 +1,15 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_unit_heavy_artillery_icon_small"
+		texturefile = "gfx/texticons/unit_heavy_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_unit_heavy_anti_tank_icon_small"
+		texturefile = "gfx/texticons/unit_heavy_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+}

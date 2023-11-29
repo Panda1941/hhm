@@ -1,0 +1,23 @@
+spriteTypes = {	
+	
+	SpriteType = {
+		name = "GFX_heavy_arty_1_medium"
+		texturefile = "gfx/interface/technologies/heavy_arty_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_heavy_arty_2_medium"
+		texturefile = "gfx/interface/technologies/heavy_arty_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_heavy_at_1_medium"
+		texturefile = "gfx/interface/technologies/heavy_at_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_heavy_at_2_medium"
+		texturefile = "gfx/interface/technologies/heavy_at_2.dds"
+	}
+
+}

@@ -189,6 +189,10 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		
+		sub_technologies = {
+			heavy_arty_1
+		}
 
 		ai_will_do = {
 			factor = 2
@@ -207,6 +211,33 @@ technologies = {
 				factor = 5
 				date > "1939.1.6"
 			}
+		}
+	}
+	
+	heavy_arty_1 = {
+
+		enable_subunits = {
+			heavy_artillery
+		}
+		enable_equipments = {
+			heavy_artillery_equipment_1
+		}
+	
+		research_cost = 1.0
+		start_year = 1939
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -404,6 +435,10 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		
+		sub_technologies = {
+			heavy_arty_2
+		}
 
 		ai_will_do = {
 			factor = 2
@@ -422,6 +457,33 @@ technologies = {
 				factor = 5
 				date > "1942.1.6"
 			}
+		}
+	}
+	
+	heavy_arty_2 = {
+
+		enable_subunits = {
+			heavy_artillery
+		}
+		enable_equipments = {
+			heavy_artillery_equipment_2
+		}
+	
+		research_cost = 1.0
+		start_year = 1941
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -2259,6 +2321,37 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		
+		sub_technologies = {
+			heavy_at_1
+		}
+	}
+	
+	heavy_at_1 = {
+
+		enable_subunits = {
+			heavy_anti_tank
+		}
+		enable_equipments = {
+			heavy_anti_tank_equipment_1
+		}
+	
+		research_cost = 1.0
+		start_year = 1940
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
 	}
 
 	antitank3 = {
@@ -2547,6 +2640,37 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+		
+		sub_technologies = {
+			heavy_at_2
+		}
+	}
+	
+	heavy_at_2 = {
+
+		enable_subunits = {
+			heavy_anti_tank
+		}
+		enable_equipments = {
+			heavy_anti_tank_equipment_2
+		}
+	
+		research_cost = 1.0
+		start_year = 1942
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			artillery
 			mio_cat_all_artillery_equipment
 		}
 	}

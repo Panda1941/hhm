@@ -1208,3 +1208,13 @@
  BUL_fast:0 "Stage I Workforce"
  BUL_fast_02:0 "Stage II Workforce"
  BUL_fast_03:0 "Stage III Workforce"
+ 
+ heavy_anti_tank:0 "Heavy Anti-Tank"
+ heavy_anti_tank_equipment:0 "Heavy Anti-Tank Equipment"
+ heavy_anti_tank_equipment_1:0 "Heavy AT I"
+ heavy_anti_tank_equipment_2:0 "Heavy AT II"
+ 
+ heavy_artillery:0 "Heavy Artillery"
+ heavy_artillery_equipment:0 "Heavy Artillery Equipment"
+ heavy_artillery_equipment_1:0 "Heavy Arty I"
+ heavy_artillery_equipment_2:0 "Heavy Arty II"
