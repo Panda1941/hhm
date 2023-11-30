@@ -40,7 +40,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		x = 22
 		y = 0
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -1452,7 +1452,7 @@ YUG = {
 		relative_position_id = BUL_power_to_the_tsar
 		x = -4
 		y = 2
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = BUL_appoint_right_wing_ministers }
 
@@ -1778,7 +1778,7 @@ YUG = {
 		relative_position_id = BUL_power_to_the_tsar
 		x = 4
 		y = 2
-		cost = 10
+		cost = 3
 
 		mutually_exclusive = { focus = BUL_the_tsars_regime }
 
@@ -1856,7 +1856,7 @@ YUG = {
 		relative_position_id = BUL_the_path_towards_a_greater_bulgaria
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		#mutually_exclusive = { focus = BUL_found_the_brannik }
 
@@ -1952,7 +1952,7 @@ YUG = {
 		relative_position_id = BUL_appoint_right_wing_ministers
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -1978,7 +1978,7 @@ YUG = {
 		relative_position_id = BUL_appoint_right_wing_ministers
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		available = {
 			num_of_factories > 15
