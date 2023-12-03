@@ -238,6 +238,9 @@ set_technology = { #VANILLA & DLC
 	tech_trucks = 1
 	fuel_silos = 1
 	basic_train = 1
+	tech_special_forces_gear = 1
+	gw_artillery = 1
+	interwar_antiair = 1
 }
 if = {
 	limit = {
