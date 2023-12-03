@@ -228,7 +228,7 @@ sub_units = {
 		suppression = 1
 		weight = 0.5
 		initiative = 0.01
-		supply_consumption = 0.05
+		supply_consumption = 0.07
 		breakthrough = 0.20
 		soft_attack = 0.05
 	
@@ -423,7 +423,7 @@ sub_units = {
 		suppression = 1.5
 		weight = 0.4
 		initiative = 0.01
-		supply_consumption = 0.08
+		supply_consumption = 0.085
 		breakthrough = 0.10
 		#hardness = -0.85
 		
