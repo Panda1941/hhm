@@ -555,7 +555,7 @@ sub_units = {
 		training_time = 90
 		suppression = 2.2
 		weight = 0.75
-		supply_consumption = 0.065
+		supply_consumption = 0.08
 	
 		# this is what moves us and sets speed
 		transport = motorized_equipment
