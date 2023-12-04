@@ -577,7 +577,7 @@ technologies = {
 	concentrated_industry = {
 
 		industrial_capacity_factory = 0.08
-		industrial_capacity_dockyard = 0.08
+		industrial_capacity_dockyard = 0.1
 
 		global_building_slots_factor = 0.25
 		industry_air_damage_factor = 0.15
