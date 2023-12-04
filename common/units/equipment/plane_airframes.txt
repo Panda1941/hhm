@@ -136,7 +136,10 @@ equipments = {
 			module = aircraft_cannon_2_2x
 			count < 2
 		}
-		
+		module_count_limit = {
+			module = armor_piercing_bomb_locks
+			count < 2
+		}
 
 
 
