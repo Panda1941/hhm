@@ -140,6 +140,7 @@ if = {
 		SPR_military_disloyalty
 		SPR_political_violence
 		SPR_national_strikes_3
+		no_navy_spain
 	}
 	recruit_character = SPR_niceto_alcala_zamora
 	recruit_character = SPR_jose_diaz
@@ -300,7 +301,7 @@ set_politics = {
 	elections_allowed = yes
 }
 
-set_convoys = 150
+set_convoys = 500
 set_stability = 0.5
 
 
