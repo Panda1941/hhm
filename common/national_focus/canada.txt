@@ -1269,7 +1269,7 @@ threat > 0.25
 		}
 
 		available = {
-date > 1940.07.01
+date > 1941.01.01
 		}
 		
 		bypass = {
@@ -2544,21 +2544,8 @@ CAN = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = CAN_national_resources_mobilization_act
-					}
-				}
-				remove_ideas = CAN_conscription_crisis
-			}
-			if = {
-				limit = {
-					has_completed_focus = CAN_national_resources_mobilization_act
-				}
-				add_ideas = wartime_conscription
-			}
+
+			add_ideas = CAN_send_in_the_zombies
 		}
 	}
 
@@ -3404,7 +3391,7 @@ CAN = {
 		id = CAN_home_defense
 		text = "Home Defense"
 		icon = GFX_goal_generic_radar
-		x = -3
+		x = 0
 		y = 1
 
 		prerequisite = { focus = CAN_the_plan}
@@ -3514,44 +3501,7 @@ CAN = {
 
 	
 
-	focus = {
-		id = CAN_victory_aircraft_limited
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 0
-		y = 1
-
-		prerequisite = { focus = CAN_the_plan}
-		relative_position_id = CAN_the_plan
-		cost = 5
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-		    random_owned_controlled_state ={
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
+	
 
 	
 
