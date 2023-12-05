@@ -2456,3 +2456,13 @@ SOV_gaz_organization = {
 		}
 	}
 }
+
+SOV_gaz_car_organization = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_gaz
+	
+	allowed = {		
+			tag = SOV
+
+	}
+}

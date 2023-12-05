@@ -758,3 +758,33 @@ GER_opel_organization = {
 		}	
 	}
 }
+
+GER_mauser_support_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_mauser
+	
+	allowed = {	 
+		OR = {
+			tag = GER 
+			tag = BUL
+			tag = ROM
+			tag = HUN
+		}
+	}
+}
+
+GER_opel_car_organization = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_opel
+	
+	allowed = {	
+		OR = {
+			tag = GER
+			tag = SPR
+			tag = HUN
+			tag = BUL
+			tag = ROM
+			tag = ITA
+		}
+	}
+}

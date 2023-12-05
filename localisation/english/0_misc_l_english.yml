@@ -1218,3 +1218,9 @@
  heavy_artillery_equipment:0 "Heavy Artillery Equipment"
  heavy_artillery_equipment_1:0 "Heavy Arty I"
  heavy_artillery_equipment_2:0 "Heavy Arty II"
+ 
+ GER_mauser_support_organization:0 "Mauser Support"
+ GER_opel_car_organization:0 "Opel Ac"
+ SOV_gaz_car_organization:0 "GAZ Ac"
+ ENG_rsaf_enfield_support_equipment_organization:0 "RSAF Enfield Support"
+ ENG_vauxhall_automotive_car_organization:0 "Vauxhall Ac"

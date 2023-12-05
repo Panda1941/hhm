@@ -6389,9 +6389,14 @@ generic_artillery_organization = {
 
 	equipment_type = {
 		artillery_equipment
+		pack_artillery_equipment
+		heavy_artillery_equipment
 		anti_tank_equipment
+		heavy_anti_tank_equipment
 		anti_air_equipment
 		rocket_artillery_equipment
+		train_equipment
+		railway_gun_equipment
 	}
 
 	research_categories = {
@@ -6481,6 +6486,7 @@ generic_artillery_organization = {
 		
 		limit_to_equipment_type = { 
 			anti_tank_equipment
+			heavy_anti_tank_equipment
 		}
 
 		equipment_bonus = {
@@ -6534,6 +6540,8 @@ generic_artillery_organization = {
 
 		limit_to_equipment_type = { 
 			artillery_equipment
+			pack_artillery_equipment
+			heavy_artillery_equipment
 			rocket_artillery_equipment
 		}
 
@@ -6572,6 +6580,7 @@ generic_artillery_organization = {
 
 		limit_to_equipment_type = { 
 			anti_tank_equipment
+			heavy_anti_tank_equipment
 			anti_air_equipment
 		}
 
@@ -6605,6 +6614,8 @@ generic_artillery_organization = {
 
 		limit_to_equipment_type = { 
 			artillery_equipment
+			pack_artillery_equipment
+			heavy_artillery_equipment
 			rocket_artillery_equipment
 		}
 
@@ -6646,6 +6657,8 @@ generic_artillery_organization = {
 
 		limit_to_equipment_type = { 
 			artillery_equipment
+			pack_artillery_equipment
+			heavy_artillery_equipment
 			rocket_artillery_equipment
 		}
 
@@ -7046,7 +7059,7 @@ generic_support_equipment_organization = {
 	}
 
 	equipment_type = { infantry_equipment support_equipment }
-	research_categories = { infantry_weapons support_tech }
+	research_categories = { infantry_weapons support_tech special_forces_equipment }
 
 	
 
@@ -7076,7 +7089,7 @@ generic_support_equipment_organization = {
 		
 		position = { x=1 y=0 }
 		
-		limit_to_equipment_type = { support_equipment }
+		limit_to_equipment_type = { support_equipment special_forces_equipment }
 		
 		production_bonus = {
 			production_resource_need_factor = -0.05
@@ -7095,7 +7108,7 @@ generic_support_equipment_organization = {
 		
 		mutually_exclusive = { generic_mio_trait_high_quality_material_blend }
 		
-		limit_to_equipment_type = { support_equipment }
+		limit_to_equipment_type = { support_equipment special_forces_equipment }
 		
 		equipment_bonus = {
 			reliability = -0.1
@@ -7118,7 +7131,7 @@ generic_support_equipment_organization = {
 		
 		mutually_exclusive = { generic_mio_trait_scrap_melting }
 		
-		limit_to_equipment_type = { support_equipment }
+		limit_to_equipment_type = { support_equipment special_forces_equipment }
 		
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
@@ -7136,7 +7149,7 @@ generic_support_equipment_organization = {
 		
 		any_parent = { generic_mio_trait_high_quality_material_blend generic_mio_trait_scrap_melting }
 		
-		limit_to_equipment_type = { support_equipment }
+		limit_to_equipment_type = { support_equipment special_forces_equipment }
 
 		production_bonus = {
 			production_efficiency_gain_factor = 0.05
@@ -7172,7 +7185,7 @@ generic_support_equipment_organization = {
 
 		mutually_exclusive = { generic_mio_trait_research_program }
 		
-		limit_to_equipment_type = { support_equipment }
+		limit_to_equipment_type = { support_equipment special_forces_equipment }
 
 		production_bonus = {
 			production_capacity_factor = 0.05

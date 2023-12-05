@@ -841,3 +841,45 @@ ENG_royal_arsenal_organization = {
 		}
 	}
 }
+
+ENG_rsaf_enfield_support_equipment_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_rsaf_enfield
+
+	allowed = {	
+		OR = {
+			tag = ENG 
+			tag = SAF
+			tag = NZL
+			tag = FRA
+			tag = BRA
+			AND = {
+				tag = GRE
+				has_dlc = "Battle for the Bosporus"
+			}
+			AND = {
+				OR = {
+					original_TAG = LAT
+					original_TAG = LIT
+					original_TAG = EST
+				}
+				has_dlc = "No Step Back"
+			}
+		}
+	}
+}
+
+ENG_vauxhall_automotive_car_organization = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_vauxhall
+	
+	allowed = {	
+		OR = {
+			tag = ENG
+			tag = POL # If Poland sets up a local one
+			tag = CAN
+			tag = SAF
+			tag = BRA
+		}
+	}
+}
