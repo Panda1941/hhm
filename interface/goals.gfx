@@ -4389,6 +4389,14 @@ spriteTypes = {
 		name = "GFX_focus_GER_armored_car"
 		texturefile = "gfx/interface/goals/GER/generic_armored_cars.dds"
 	}
+	SpriteType = {
+		name = "GFX_GER_defend_berlin"
+		textureFile = "gfx/interface/goals/GER/GER_defend_berlin.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_volkdeutsche"
+		textureFile = "gfx/interface/goals/GER/GER_volkdeutsche.dds"
+	}
 	
 	
 	

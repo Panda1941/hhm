@@ -1224,3 +1224,6 @@
  SOV_gaz_car_organization:0 "GAZ Ac"
  ENG_rsaf_enfield_support_equipment_organization:0 "RSAF Enfield Support"
  ENG_vauxhall_automotive_car_organization:0 "Vauxhall Ac"
+ 
+ GER_defend_berlin_tt:0 "Mobilise local reservists in the city, Spawning §Y60 Volksturm Divisions§!"
+ GER_volksturm_idea:0 "Volkssturm"

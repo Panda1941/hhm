@@ -5624,6 +5624,356 @@ focus_tree = {
  			}
 		}
 		
+		
+		focus = {
+		id = GER_volksturm
+		text = "Volkssturm"
+		icon = GFX_GER_volkdeutsche
+		
+		x = 37
+		y = 8
+		
+		available = {
+			surrender_progress > 0.1
+			has_war_with = SOV
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		
+		
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = GER_volksturm_idea
+			set_technology = {
+				militia_tech = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GER_defend_berlin
+		text = "Defend Berlin"
+		icon = GFX_GER_defend_berlin
+		prerequisite = { focus = GER_volksturm}
+		x = 0
+		y = 1
+		relative_position_id = GER_volksturm
+		cost = 1
+		
+		available = {
+			OR = {
+				NOT = { controls_state = 59 }
+				NOT = { controls_state = 63 }
+				NOT = { controls_state = 65 }
+				NOT = { controls_state = 69 }
+				NOT = { controls_state = 68 }
+				NOT = { controls_state = 65 }
+				NOT = { controls_state = 61 }
+				NOT = { controls_state = 60 }
+				NOT = { controls_state = 66 }
+				NOT = { controls_state = 86 }
+				surrender_progress > 0.2
+			}
+			controls_state = 64
+		}
+
+		completion_reward = {
+			64 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 375
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 3499
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 9428
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 11505
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 11444
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 3367
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 9496
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 6521
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 13257
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 11415
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 478
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 9560
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 6487
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 3522
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 9456
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 11359
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 11219
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}				
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						owner = GER
+						count = 3
+					}
+				}
+			}
+			custom_effect_tooltip = GER_defend_berlin_tt
+		}
+    }
+		
 	focus = {
  		id = GER_atlantikwall_a
  		icon = GFX_focus_GER_atlantikwall_a
