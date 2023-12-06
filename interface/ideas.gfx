@@ -7229,7 +7229,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/HUN/HUN_german_hungaro_trade.dds"
 	}
 	
+	####TANK DESIGNER
 	
 	
+	spriteType = {
+		name = "GFX_idea_daimler_benz"
+		texturefile = "gfx/interface/ideas/idea_daimler_benz.dds"
+	}
 			
 }

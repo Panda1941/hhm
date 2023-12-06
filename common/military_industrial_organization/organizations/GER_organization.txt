@@ -320,7 +320,7 @@ GER_man_organization = {
 #Benz 
 GER_daimler_benz_organization = {
 	include = generic_tank_organization
-	icon = GFX_idea_generic_tank_manufacturer_2 # TODO change
+	icon = GFX_idea_daimler_benz # TODO change
 	
 	allowed = {	
 		tag = GER 
@@ -328,7 +328,7 @@ GER_daimler_benz_organization = {
 
 	tree_header_text = {
 		text = mio_header_tank_construction
-		x = 3
+		x = 1
 	}
 
 	tree_header_text = {
@@ -356,7 +356,6 @@ GER_daimler_benz_organization = {
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
 			production_efficiency_gain_factor = 0.05
-
 			production_capacity_factor = 0.05
 		}
 
