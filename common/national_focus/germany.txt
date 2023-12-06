@@ -5359,7 +5359,7 @@ focus_tree = {
  				add_province_modifier = {
  					static_modifiers = { german_OWK_plan }
  					province = {
- 						id =6541 id =9530 id =3503 id =11484 id =520 id =11474 id =3555 id =9504 id =3529 id =6527 id =498 id =6527 id =11447 id =9474 id =9459 id =6503
+ 						id =6541 id =9530 id =3503 id =11484 id =520 id =11474 id =3555 id =9504 id =3529 id =6527 id =498 id =6527 id =11447 id =9474 id =9459 id =6503 id =6602 id =3487 id =3487 id =6516
  					}
  				}
 			}
@@ -5368,6 +5368,7 @@ focus_tree = {
 	
 	focus = {
  		id = GER_winter_attack
+		text = "Winter Offensive"
  		mutually_exclusive = { focus = GER_winter_defense }
  		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
  		icon = GFX_focus_GER_unternehmen_fruhlingserwachen
@@ -5407,6 +5408,7 @@ focus_tree = {
  	}
  	focus = {
  		id = GER_winter_defense
+		text = "Winter Defense"
  		mutually_exclusive = { focus = GER_winter_attack }
  		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
  		icon = GFX_focus_GER_winter_defense
@@ -5504,7 +5506,7 @@ focus_tree = {
  		available_if_capitulated = no
  		completion_reward = {
  			every_state = {
- 				limit={OR={state=808 state=810 state=207 state=809 state=12 state=96 state=206 state=210 state =96 state=242 state=209 state=208 state=813 state=191 state=13 state=811 state=812 state=263 }}
+ 				limit={OR={state=808 state=810 state=207 state=809 state=12 state=96 state=206 state=210 state=242 state=246 state =96 state=242 state=209 state=208 state=813 state=191 state=13 state=811 state=812 state=263 }}
  				add_dynamic_modifier = { modifier = JAP_attack days=90  }
  			}
  		}
@@ -5526,7 +5528,7 @@ focus_tree = {
  		available_if_capitulated = no
  		completion_reward = {
  			every_state = {
- 				limit={OR={state=241 state=193 state=202 state=203 state=259 state=226 state=200 state=196 state=194 state=225 state=220 state=221 state=222 state=240 state=227 state=258 state=228 state=218 state=245 state=260 state=265 }}
+ 				limit={OR={state=241 state=193 state=137 state=234 state=238 state=237 state=235 state=232 state=202 state=203 state=259 state=226 state=200 state=196 state=194 state=225 state=220 state=221 state=222 state=240 state=227 state=258 state=228 state=218 state=245 state=260 state=265 }}
  				add_dynamic_modifier = { modifier = JAP_attack days=90  }
  			}
  		}
@@ -5630,8 +5632,8 @@ focus_tree = {
 		text = "Volkssturm"
 		icon = GFX_GER_volkdeutsche
 		
-		x = 37
-		y = 8
+		x = 44
+		y = 6
 		
 		available = {
 			surrender_progress > 0.1
