@@ -760,6 +760,10 @@ sub_units = {
 		need = {
 			infantry_equipment = 85 #100 -> Same ratio as regular Infantry			
 		}
+		
+		urban = {
+			defence = 0.05
+		}
 	}
 
 	irregular_infantry = {
@@ -869,6 +873,13 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 80
+		}
+		
+		forest = {
+			defence = 0.05
+		}	
+		urban = {
+			defence = 0.05
 		}
 	}
 }
