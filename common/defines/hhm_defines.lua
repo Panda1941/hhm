@@ -202,7 +202,7 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 100
 NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_SCORE = 1
 NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 3                         -- how much score factor from low health (scales between 0->this number)
 NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 15                           -- how much score factor from low AA guns (scales between 0->this number)
-NDefines.NNavy.ANTI_AIR_TARGETING = 0.8                                       -- how good ships are at hitting aircraft
+NDefines.NNavy.ANTI_AIR_TARGETING = 1.0                                       -- how good ships are at hitting aircraft
 
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 10                             -- scoring for target picking for planes inside naval combat, one define per ship typ
@@ -350,7 +350,7 @@ NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values whil
 		10000,	-- I am death incarnate!
 	}
 -- Air Balance
-NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 4          -- how often carrier planes do battle inside naval combat
+NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 6          -- how often carrier planes do battle inside naval combat
 NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.3			-- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 2					-- Balancing value to convert damage ( nanaval_strike_attackval_strike_attack * hits ) to Strength reduction.
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
@@ -363,6 +363,8 @@ NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 200
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 200
 NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 1200
+NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 75.0						-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
+NDefines.NAir.PORT_STRIKES_DELAY_MULTIPLIER = 4                 -- multplies HOURS_DELAY_AFTER_EACH_COMBAT (4 in vanilla) if port strikes
 
 NDefines.NAir.MAX_QUICK_WING_SELECTION = 4 -- 3
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 3 -- 7.0
@@ -370,6 +372,8 @@ NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 3 -- 7.0
 NDefines.NAir.DETECT_CHANCE_FROM_OCCUPATION = 0.5 -- 0.1
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 1 -- 0.8
 NDefines.NAir.DETECT_CHANCE_FROM_RADARS = 1 -- 0.5
+NDefines.NAir.MIN_PLANE_COUNT_PARADROP = 10
+NDefines.NAir.BASE_UNIT_WEIGHT_IN_TRANSPORT_PLANES = 20
 
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 		0.0, -- AIR_SUPERIORITY
