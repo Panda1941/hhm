@@ -1176,7 +1176,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		start_year = 1940
+		start_year = 1939
 		research_cost = 4
 		
 		folder = {
@@ -1258,7 +1258,7 @@ technologies = {
 		# can build reactors
 		research_speed_factor = 0.025
 		
-		start_year = 1943
+		start_year = 1942
 		research_cost = 5
 		
 		folder = {
@@ -1291,8 +1291,8 @@ technologies = {
 
 	nukes = {
 	
-		start_year = 1945
-		research_cost = 5
+		start_year = 1944
+		research_cost = 5.5
 
 		research_speed_factor = 0.05
 		
