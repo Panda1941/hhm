@@ -595,8 +595,8 @@ NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 0.99					-- Minimum damage from nuk
 -- MIO stuff
 NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.1					-- Cost in Political Power daily generation when one MIO is assigned to a research slot. If 0, cost is entirely disabled.
 NDefines.NIndustrialOrganisation.ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY = 0.0		-- Cost in Political Power daily generation when one MIO is assigned to a production line. If 0, cost is entirely disabled.
-NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 820									-- Funds needed for a MIO to increment its size and get points to unlock traits
-NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 180						-- How much each level mutliplies the funds for size up 
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 840									-- Funds needed for a MIO to increment its size and get points to unlock traits
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 160						-- How much each level mutliplies the funds for size up 
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_POW = 2.1							-- the power we applie to the mio size when calculating funds to level up. 	
 NDefines.NIndustrialOrganisation.UNLOCKED_TRAITS_PER_SIZE_UP = 1							-- Number of points for unlocking traits obtained when the MIO increments its size
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 5								-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
