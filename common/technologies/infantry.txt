@@ -446,18 +446,16 @@ technologies = {
 			soft_attack = 0.05
 		}
 		cavalry = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}		
-
-
 		motorized = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}
 		mechanized = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}
 		amphibious_mechanized = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}	
 
         path = {
@@ -1758,39 +1756,7 @@ technologies = {
 	
 	support_weapons = {
 
-		infantry = {
-			breakthrough = 0.07
-			defense = 0.05
-		}
-		bicycle_battalion = {
-			breakthrough = 0.01
-			defense = 0.02
-		}
-		cavalry = {
-			breakthrough = 0.01
-			defense = 0.02
-		}		
-		mountaineers = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		paratrooper = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		marine = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		motorized = {
-			breakthrough = 0.05
-			defense = 0.05
-		}
-		mechanized = {
-			breakthrough = 0.05
-			defense = 0.05
-		}
-		amphibious_mechanized = {
+		category_all_infantry = {
 			breakthrough = 0.05
 			defense = 0.05
 		}
@@ -1852,39 +1818,7 @@ technologies = {
 	
 	support_weapons2 = {
 
-		infantry = {
-			breakthrough = 0.07
-			defense = 0.05
-		}
-		bicycle_battalion = {
-			breakthrough = 0.01
-			defense = 0.02
-		}
-		cavalry = {
-			breakthrough = 0.01
-			defense = 0.02
-		}		
-		mountaineers = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		paratrooper = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		marine = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		motorized = {
-			breakthrough = 0.05
-			defense = 0.05
-		}
-		mechanized = {
-			breakthrough = 0.05
-			defense = 0.05
-		}
-		amphibious_mechanized = {
+		category_all_infantry = {
 			breakthrough = 0.05
 			defense = 0.05
 		}
@@ -1951,39 +1885,8 @@ technologies = {
 	}
 	
 	support_weapons3 = {
-		infantry = {
-			breakthrough = 0.07
-			defense = 0.05
-		}
-		bicycle_battalion = {
-			breakthrough = 0.01
-			defense = 0.02
-		}
-		cavalry = {
-			breakthrough = 0.01
-			defense = 0.02
-		}		
-		mountaineers = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		paratrooper = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		marine = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		motorized = {
-			breakthrough = 0.05
-			defense = 0.05
-		}
-		mechanized = {
-			breakthrough = 0.05
-			defense = 0.05
-		}
-		amphibious_mechanized = {
+		
+		category_all_infantry = {
 			breakthrough = 0.05
 			defense = 0.05
 		}
@@ -2038,39 +1941,8 @@ technologies = {
 	
 	support_weapons4 = {
 
-		infantry = {
-			breakthrough = 0.10
-			defense = 0.07
-		}
-		bicycle_battalion = {
-			breakthrough = 0.01
-			defense = 0.02
-		}
-		cavalry = {
-			breakthrough = 0.01
-			defense = 0.02
-		}		
-		mountaineers = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		paratrooper = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		marine = {
-			breakthrough = 0.05
-			defense = 0.03
-		}
-		motorized = {
-			breakthrough = 0.05
-			defense = 0.05
-		}
-		mechanized = {
-			breakthrough = 0.05
-			defense = 0.05
-		}
-		amphibious_mechanized = {
+		
+		category_all_infantry = {
 			breakthrough = 0.05
 			defense = 0.05
 		}
