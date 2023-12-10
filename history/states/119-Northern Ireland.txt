@@ -34,7 +34,6 @@ state={
 	state_category="city"
 	
 	resources={
-		aluminium=22
 	}
 
 	local_supplies=0.0 
