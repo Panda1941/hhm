@@ -5797,7 +5797,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5806,7 +5806,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5815,7 +5815,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5824,7 +5824,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5833,7 +5833,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5842,7 +5842,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5851,7 +5851,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}				
 				random_owned_controlled_state = {
@@ -5860,7 +5860,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5869,7 +5869,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5878,7 +5878,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5887,7 +5887,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5896,7 +5896,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5905,7 +5905,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5914,7 +5914,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5923,7 +5923,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5932,7 +5932,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5941,7 +5941,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5950,7 +5950,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5959,7 +5959,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 				random_owned_controlled_state = {
@@ -5968,7 +5968,7 @@ focus_tree = {
 					create_unit = {
 						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
 						owner = GER
-						count = 3
+						count = 2
 					}
 				}
 			}
