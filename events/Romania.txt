@@ -250,3 +250,29 @@ country_event = {
 		
 	}
 }
+
+country_event = { #Election
+	id = romania.12
+	title = romania.12.t
+	desc = romania.12.desc
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	option = { 
+		name = romania.12.a
+		add_stability = -0.05
+		46 = {
+			damage_building = {
+				type = infrastructure 
+				damage = 2 
+			}
+		}
+
+		ai_chance = {
+		}
+	}
+}

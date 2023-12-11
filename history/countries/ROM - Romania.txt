@@ -39,7 +39,7 @@ if = {
 
 set_research_slots = 3
 set_stability = 0.6
-set_war_support = 0.6
+set_war_support = 0.3
 
 recruit_character = ROM_gheorghe_tatarescu
 recruit_character = ROM_constantin_ion_parhon
@@ -144,6 +144,11 @@ if = {
 	give_guarantee = YUG
 }
 add_ideas = neutrality_idea
+add_ideas = ROM_romanian_officers
+add_ideas = ROM_the_resource_curse_1
+add_ideas = ROM_agrarian_economy
+add_ideas = ROM_waning_influence_of_democracy
+add_ideas = ROM_iron_guard 
 
 #Kick off kings crazy life
 if = {
@@ -184,7 +189,7 @@ if = {
 	}
 }
 
-set_convoys = 10
+set_convoys = 50
 
 
 set_politics = {
@@ -195,9 +200,9 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 60
-	fascism = 18
+	fascism = 14
 	communism = 2
-	neutrality = 20
+	neutrality = 24
 }
 
 ### VARIANTS ###

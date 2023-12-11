@@ -159,8 +159,8 @@ bookmarks = {
 			}
 			focuses = {
 				ROM_eastern_refugees
-				ROM_force_abdication
-				ROM_trade_treaty_with_germany
+				ROM_force_the_king_to_abdicate
+				ROM_trade_treaty_with_ger
 			}
 		}
 
