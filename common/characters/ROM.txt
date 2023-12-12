@@ -130,7 +130,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter }
+			traits={ hill_fighter commando }
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -213,7 +213,7 @@ characters={
 		}
 
 		corps_commander={
-			traits={ infantry_expert }
+			traits={ infantry_expert infantry_officer infantry_leader }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -398,6 +398,7 @@ characters={
 		}
 
 		corps_commander={
+		    traits={ trickster organizer cavalry_leader panzer_leader }
 			skill=3
 			attack_skill=3
 			defense_skill=2
