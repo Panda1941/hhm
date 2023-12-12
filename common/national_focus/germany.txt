@@ -1764,7 +1764,7 @@ focus_tree = {
 					modifier = GER_align_romania
 				}
 			}
-			ROM = { give_resource_rights = { receiver = GER state = 46 }	} 
+			#ROM = { give_resource_rights = { receiver = GER state = 46 }	} 
 		}
 	}
 
@@ -4435,9 +4435,10 @@ focus_tree = {
 	
 	focus = {
 		id = GER_second_vienna_award
-		text = "Zweiten Wiener Schiedsspruch"
+		text = "Zweiten Wiener Schiedsspruch (BIG)"
 		icon = GFX_focus_GER_second_vienna_award
 		prerequisite = { focus = GER_danzig_or_war }
+		mutually_exclusive = {focus = GER_second_vienna_award_2}
 		x = -3
 		y = 1
 		relative_position_id = GER_danzig_or_war
@@ -4478,6 +4479,64 @@ focus_tree = {
 					transfer_state = 83
 					transfer_state = 84
 					transfer_state = 82
+				}
+			}
+			HUN = {
+				add_timed_idea = {
+					idea = HUN_overeliance_german_trade
+					days = 365
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = GER_second_vienna_award_2
+		text = "Zweiten Wiener Schiedsspruch (SMALL)"
+		icon = GFX_focus_GER_second_vienna_award
+		prerequisite = { focus = GER_danzig_or_war }
+		mutually_exclusive = {focus = GER_second_vienna_award}
+		x = -5
+		y = 1
+		relative_position_id = GER_danzig_or_war
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		
+		}
+		bypass = {
+			
+		}
+		complete_tooltip = {
+			HUN = { 
+			transfer_state = 76
+			#transfer_state = 83
+			#transfer_state = 84
+			#transfer_state = 82
+			add_ideas = HUN_overeliance_german_trade
+		}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					HUN = {
+						is_friend_or_potential_friend_of_GER = yes
+					}
+					ROM = {
+						controls_state = 76
+						#controls_state = 83
+						#controls_state = 84
+						NOT = { has_war_with = HUN }
+					}
+				}
+				HUN = { 
+					transfer_state = 76
+					#transfer_state = 83
+					#transfer_state = 84
+					#transfer_state = 82
 				}
 			}
 			HUN = {

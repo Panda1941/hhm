@@ -1314,8 +1314,9 @@ ideas = {
 			picture = industrial_concern_1
 			
 			allowed = {
-				original_tag = ROM
-				has_dlc = "Death or Dishonor"
+				#original_tag = ROM
+				#has_dlc = "Death or Dishonor"
+				always = no
 			}
 			
 			research_bonus = {

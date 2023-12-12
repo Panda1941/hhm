@@ -1446,6 +1446,7 @@ ideas = {
 			allowed = {
 				NOT = {
 					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
+					tag = ROM
 				}
 			}
 			

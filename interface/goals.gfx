@@ -4603,7 +4603,17 @@ spriteTypes = {
 		name = "GFX_goal_generic_agrarian_reform"
 		textureFile = "gfx/interface/goals/goal_generic_agrarian_reform.dds"
 	}
+	SpriteType = {
+		name = "GFX_r56_goal_generic_ammunitions"
+		textureFile = "gfx/interface/goals/HUN/r56_goal_generic_ammunitions.dds"
+	}
 	
+	#####################HUN##
+	
+	SpriteType = {
+	name = "GFX_hungarianskodaworkstankuser"
+	texturefile = "gfx/interface/goals/HUN/hungaryskodaworktanks.dds"	
+    }
 	
 	
 	
