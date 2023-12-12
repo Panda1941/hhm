@@ -714,6 +714,7 @@ GER_opel_organization = {
 	allowed = {	
 		OR = {
 			tag = GER
+			tag = ROM
 			AND = {
 				tag = ROM
 				has_dlc = "Death or Dishonor"
@@ -737,9 +738,9 @@ GER_opel_organization = {
 		IF = {
 			limit = { FROM = { original_tag = BUL } }
 			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
+				#tooltip = has_invited_mio_tt
 				FROM = {
-					has_country_flag = has_invited_opel_mio_flag
+					is_in_faction_with = GER
 				}
 			}
 			FROM = { 
@@ -753,7 +754,7 @@ GER_opel_organization = {
 		}
 		IF = {
 			limit = { FROM = { original_tag = ROM } }
-			FROM = { has_country_flag = GER_mot_chosen }
+			FROM = { is_in_faction_with = GER }
 		}	
 	}
 }
