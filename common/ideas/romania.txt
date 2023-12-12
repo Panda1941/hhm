@@ -288,6 +288,8 @@ ideas = {
 		}
 		
 		ROM_army_tensions = {
+		
+		picture = generic_army_problems
 
 			removal_cost = -1
 			

@@ -31346,4 +31346,260 @@ spriteTypes = {
 
 		legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_goal_GER_ration_fuel_shine"
+		texturefile = "gfx/interface/goals/GER/GER_ration_fuel.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/GER_ration_fuel.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0       
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/GER_ration_fuel.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+			animationrotation = 90.0        
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_romanian_oil_icon_shine"
+		texturefile = "gfx/interface/goals/GER/GER_romanian_oil_icon.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/GER_romanian_oil_icon.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0       
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/GER_romanian_oil_icon.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+			animationrotation = 90.0        
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GER_ig_faben_oil_specialization_shine"
+		texturefile = "gfx/interface/goals/GER/GER_ig_faben_oil_specialization.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/GER_ig_faben_oil_specialization.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0       
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/GER_ig_faben_oil_specialization.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+			animationrotation = 90.0        
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GER_oil_refineries_shine"
+		texturefile = "gfx/interface/goals/GER/GER_oil_refineries.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/GER_oil_refineries.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0       
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/GER_oil_refineries.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+			animationrotation = 90.0        
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_torpedo_boats_shine"
+		texturefile = "gfx/interface/goals/ROM/ROM_torpedo_boats.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM/ROM_torpedo_boats.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0       
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM/ROM_torpedo_boats.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+			animationrotation = 90.0        
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_advanced_industry_shine"
+		texturefile = "gfx/interface/goals/ROM/advanced_industry.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM/advanced_industry.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0       
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM/advanced_industry.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+			animationrotation = 90.0        
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GOAL_electrical_infrastructure_shine"
+		texturefile = "gfx/interface/goals/ROM/GOAL_electrical_infrastructure.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM/GOAL_electrical_infrastructure.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0       
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM/GOAL_electrical_infrastructure.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+			animationrotation = 90.0        
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_fuel_stock_shine"
+		texturefile = "gfx/interface/goals/ROM/fuel_stock.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM/fuel_stock.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0       
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM/fuel_stock.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+			animationrotation = 90.0        
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		legacy_lazy_load = no
+	}
 }

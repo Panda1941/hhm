@@ -7236,5 +7236,33 @@ spriteTypes = {
 		name = "GFX_idea_daimler_benz"
 		texturefile = "gfx/interface/ideas/idea_daimler_benz.dds"
 	}
-			
+	
+
+    ######################rom#########################
+    spriteType = {
+		name = "GFX_idea_ROM_the_resource_curse"
+		texturefile = "gfx/interface/ideas/ROM/ROM_the_resource_curse.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_trade_treaty_with_germany"
+		texturefile = "gfx/interface/ideas/GER/ROM_ger_trade_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_agricultural_economy"
+		texturefile = "gfx/interface/ideas/ROM/ROM_agricultural_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_waning_influence_of_democracy"
+		texturefile = "gfx/interface/ideas/ROM/ROM_waning_influence_of_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_violent_paramilitary_groups"
+		texturefile = "gfx/interface/ideas/ROM/ROM_violent_paramilitary_groups.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_ROM_corruption_in_the_army"
+		texturefile = "gfx/interface/ideas/ROM/ROM_corruption_in_the_army.dds"
+	}
+	
 }

@@ -137,7 +137,7 @@ focus_tree = {
 	focus = {
 		id = ROM_oil_for_armaments
 		text = "Sell oil for german armaments"
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_focus_GER_mp_38
 		prerequisite = { focus = ROM_trade_treaty_with_ger }
 		x = -1
 		y = 1
@@ -192,7 +192,7 @@ focus_tree = {
 	focus = {
 		id = ROM_german_romanian_oil_exploitation_comp
 		text = "German-Romanian oil exploitation company"
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_goal_GER_ig_faben_oil_specialization
 		prerequisite = { focus = ROM_invite_german_advisors }
 		prerequisite = { focus = ROM_oil_for_armaments }
 		x = -1
@@ -303,7 +303,7 @@ focus_tree = {
 	focus = {
 		id = ROM_reichswerke_subsidiary
 		text = "Reichswerke subsidiary"
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_goal_GER_ration_fuel
 		prerequisite = { focus = ROM_german_romanian_oil_exploitation_comp }
 		mutually_exclusive = { focus = ROM_nationalize_the_oil }
 		x = 1
@@ -503,7 +503,7 @@ focus_tree = {
 			}
 		}
 		
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_GOAL_electrical_infrastructure
 		x = 0
 		y = 1
 		relative_position_id = ROM_autarky
@@ -572,7 +572,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = ROM_bucharest_technical_institute }
 		
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_generic_steel
 		x = 0
 		y = 1
 		relative_position_id = ROM_bucharest_technical_institute
@@ -625,7 +625,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = ROM_improve_cross_country_railways focus = ROM_more_efficient_agricultural_procurement }	
-		icon = GFX_focus_usa_reestablish_the_gold_standard
+		icon = GFX_focus_GER_romanian_oil_icon
 		x = -2
 		y = 3
 		relative_position_id = ROM_bucharest_technical_institute
@@ -655,7 +655,7 @@ focus_tree = {
 
 		prerequisite = { focus = ROM_expand_the_axis_oil_trade }
 		
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_advanced_industry
 		x = 0
 		y = 1
 		relative_position_id = ROM_expand_the_axis_oil_trade
@@ -685,7 +685,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = ROM_support_the_war_industry }
 		
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_fuel_stock
 		x = -1
 		y = 1
 		relative_position_id = ROM_support_the_war_industry
@@ -759,7 +759,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = ROM_support_the_war_industry }
 		
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_GER_oil_refineries
 		x = 0
 		y = 2
 		relative_position_id = ROM_support_the_war_industry
@@ -2615,7 +2615,7 @@ focus_tree = {
 
 		completion_reward = {
 			mio:GER_henschel_organization = {
-				add_mio_funds = 500
+				add_mio_funds = 1000
 			}	
 			add_tech_bonus = {
 				category = cat_light_armor 
@@ -2916,111 +2916,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ROM_modern_destroyers
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = ROM_coastal_defense_navy focus = ROM_black_sea_dominance }
-		x = 1
-		y = 1
-		relative_position_id = ROM_coastal_defense_navy
+	
 
-		cost = 10
+	
 
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_modern_destroyers
-				bonus = 3.0
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
-
-	focus = {
-		id = ROM_torpedo_boats
-		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = ROM_coastal_defense_ships }
-		x = -2
-		y = 2
-		relative_position_id = ROM_coastal_defense_navy
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = ROM_coastal_defense_ships_2
-				remove_idea = ROM_coastal_defense_ships
-			}
-		}
-	}
-
-	focus = {
-		id = ROM_modern_submarines
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = ROM_modern_destroyers }
-		x = 0
-		y = 2
-		relative_position_id = ROM_coastal_defense_navy
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_modern_submarines
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
-		}
-	}
+	
 
 	focus = {
 		id = ROM_black_sea_dominance
@@ -3062,7 +2962,7 @@ mio:ROM_Braila_organization = {
 		id = ROM_capital_ships
 		icon = GFX_goal_ROM_new_battleships
 		prerequisite = { focus = ROM_black_sea_dominance }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ROM_black_sea_dominance
 
@@ -3096,41 +2996,7 @@ mio:ROM_Braila_organization = {
 		}
 	}
 
-	focus = {
-		id = ROM_torpedo_bombers
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = ROM_modern_destroyers }
-		x = 2
-		y = 2
-		relative_position_id = ROM_coastal_defense_navy
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_torpedo_bombers
-				bonus = 1.0
-				uses = 1
-				category = naval_bomber
-			}
-		}
-	}
+	
 
 	focus = {
 		id = ROM_expand_the_marine_regiment
@@ -3165,6 +3031,44 @@ mio:ROM_Braila_organization = {
 				uses = 2
 				category = tp_tech
 				category = marine_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = ROM_torpedo_boats
+		icon = GFX_goal_ROM_torpedo_boats
+		prerequisite = { focus = ROM_coastal_defense_ships }
+		x = -1
+		y = 2
+		relative_position_id = ROM_coastal_defense_navy
+
+		cost = 7.143
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ROM_coastal_defense_ships_2
+				remove_idea = ROM_coastal_defense_ships
 			}
 		}
 	}

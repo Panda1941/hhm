@@ -4560,6 +4560,38 @@ spriteTypes = {
 		name = "GFX_goal_r56_goal_generic_gun_purchase"
 		textureFile = "gfx/interface/goals/GER/r56_goal_generic_gun_purchase.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_GER_ration_fuel"
+		textureFile = "gfx/interface/goals/GER/GER_ration_fuel.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_romanian_oil_icon"
+		textureFile = "gfx/interface/goals/GER/GER_romanian_oil_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GER_ig_faben_oil_specialization"
+		textureFile = "gfx/interface/goals/GER/GER_ig_faben_oil_specialization.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GER_oil_refineries"
+		textureFile = "gfx/interface/goals/GER/GER_oil_refineries.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_torpedo_boats"
+		textureFile = "gfx/interface/goals/ROM/ROM_torpedo_boats.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_advanced_industry"
+		textureFile = "gfx/interface/goals/ROM/advanced_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_GOAL_electrical_infrastructure"
+		textureFile = "gfx/interface/goals/ROM/GOAL_electrical_infrastructure.dds"
+	}
+	SpriteType = {
+		name = "GFX_fuel_stock"
+		textureFile = "gfx/interface/goals/ROM/fuel_stock.dds"
+	}
 	
 	######################generic
 	
