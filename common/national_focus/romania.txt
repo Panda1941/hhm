@@ -96,8 +96,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_opinion_modifier = { target = GER modifier = ROM_trade_treaty_with_ger }
-			GER = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_ger } }
 			add_political_power = 100
 		}
 	}
