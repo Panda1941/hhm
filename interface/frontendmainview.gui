@@ -204,7 +204,7 @@ guiTypes = {
 			position = { x = 16 y = 188 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
-			text = "Single Player"				
+			text = "Test Build!"				
 			clicksound = click_default			
 			oversound = ui_menu_over
 		}
