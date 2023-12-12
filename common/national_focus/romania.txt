@@ -66,7 +66,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_trade_treaty_with_ger
-		text = "Trade treaty with GER"
+		text = "Trade treaty with Germany"
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = ROM_encourage_trade_with_germany }
 		x = -2
@@ -191,7 +191,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_german_romanian_oil_exploitation_comp
-		text = "GER ROM oil exploitation company"
+		text = "German-Romanian oil exploitation company"
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_invite_german_advisors }
 		prerequisite = { focus = ROM_oil_for_armaments }
