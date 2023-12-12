@@ -4397,6 +4397,181 @@ spriteTypes = {
 		name = "GFX_GER_volkdeutsche"
 		textureFile = "gfx/interface/goals/GER/GER_volkdeutsche.dds"
 	}
+	###romania#################
+	
+	
+	SpriteType = {
+		name = "GFX_focus_ROM_antonescus_coup_detat"
+		textureFile = "gfx/interface/goals/ROM/ROM_antonescus_coup_detat.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_axis_motor_companies"
+		textureFile = "gfx/interface/goals/ROM/ROM_axis_motor_companies.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_begin_romanian_rearmament"
+		textureFile = "gfx/interface/goals/ROM/ROM_begin_romanian_rearmament.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_black_sea_dominance"
+		textureFile = "gfx/interface/goals/ROM/ROM_black_sea_dominance.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_co_conducator"
+		textureFile = "gfx/interface/goals/ROM/ROM_co_conducator.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_coastal_defence_navy"
+		textureFile = "gfx/interface/goals/ROM/ROM_coastal_defence_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_coastal_defence_ships"
+		textureFile = "gfx/interface/goals/ROM/ROM_coastal_defence_ships.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_codreanues_path"
+		textureFile = "gfx/interface/goals/ROM/ROM_codreanues_path.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_convert_old_artillery"
+		textureFile = "gfx/interface/goals/ROM/ROM_convert_old_artillery.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_crusade_against_atheism"
+		textureFile = "gfx/interface/goals/ROM/ROM_crusade_against_atheism.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_deploy_reserve_divisions"
+		textureFile = "gfx/interface/goals/ROM/ROM_deploy_reserve_divisions.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_detente_the_entente"
+		textureFile = "gfx/interface/goals/ROM/ROM_detente_the_entente.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_election_1937"
+		textureFile = "gfx/interface/goals/ROM/ROM_election_1937.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_expand_galati_shipyards"
+		textureFile = "gfx/interface/goals/ROM/ROM_expand_galati_shipyards.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_expand_the_army"
+		textureFile = "gfx/interface/goals/ROM/ROM_expand_the_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_fascist_economics"
+		textureFile = "gfx/interface/goals/ROM/ROM_fascist_economics.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_finders_keepers"
+		textureFile = "gfx/interface/goals/ROM/ROM_finders_keepers.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_form_the_national_renaissance_front"
+		textureFile = "gfx/interface/goals/ROM/ROM_form_the_national_renaissance_front.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_grand_army"
+		textureFile = "gfx/interface/goals/ROM/ROM_grand_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_imprison_antonescu"
+		textureFile = "gfx/interface/goals/ROM/ROM_imprison_antonescu.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_imprison_the_iron_guard"
+		textureFile = "gfx/interface/goals/ROM/ROM_imprison_the_iron_guard.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_improve_logistics"
+		textureFile = "gfx/interface/goals/ROM/ROM_improve_logistics.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_institute_a_royal_dictatorship"
+		textureFile = "gfx/interface/goals/ROM/ROM_institute_a_royal_dictatorship.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_light_metal_production"
+		textureFile = "gfx/interface/goals/ROM/ROM_light_metal_production.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_local_development"
+		textureFile = "gfx/interface/goals/ROM/ROM_local_development.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_national_legionary_state"
+		textureFile = "gfx/interface/goals/ROM/ROM_national_legionary_state.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_new_battleships"
+		textureFile = "gfx/interface/goals/ROM/ROM_new_battleships.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_operetta_fascism"
+		textureFile = "gfx/interface/goals/ROM/ROM_operetta_fascism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_pressure_antonescu"
+		textureFile = "gfx/interface/goals/ROM/ROM_pressure_antonescu.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_reject_french_containment_strategies"
+		textureFile = "gfx/interface/goals/ROM/ROM_reject_french_containment_strategies.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_romanian_marines"
+		textureFile = "gfx/interface/goals/ROM/ROM_romanian_marines.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_sentinel_of_the_motherland"
+		textureFile = "gfx/interface/goals/ROM/ROM_sentinel_of_the_motherland.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_special_mountaineers"
+		textureFile = "gfx/interface/goals/ROM/ROM_special_mountaineers.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_special_mountaineers_artillery"
+		textureFile = "gfx/interface/goals/ROM/ROM_special_mountaineers_artillery.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_the_decay_of_democracy"
+		textureFile = "gfx/interface/goals/ROM/ROM_the_decay_of_democracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ROM_the_royal_foundation"
+		textureFile = "gfx/interface/goals/ROM/ROM_the_royal_foundation.dds"
+	}
+	SpriteType = {
+		name = "GFX_ger_support_tanks"
+		textureFile = "gfx/interface/goals/GER/ger_support_tanks.dds"
+	}
+	SpriteType = {
+		name = "GFX_ROM_ger_second_gen_tanks"
+		textureFile = "gfx/interface/goals/GER/ger_second_gen_tanks.dds"
+	}
+	SpriteType = {
+		name = "GFX_r56_goal_generic_radio_development_2"
+		textureFile = "gfx/interface/goals/GER/r56_goal_generic_radio_development_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_r56_goal_generic_gun_purchase"
+		textureFile = "gfx/interface/goals/GER/r56_goal_generic_gun_purchase.dds"
+	}
+	
+	######################generic
+	
+	SpriteType = {
+		name = "GFX_goal_generic_farm_tractor"
+		textureFile = "gfx/interface/goals/goal_generic_farm_tractor.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_agrarian_reform"
+		textureFile = "gfx/interface/goals/goal_generic_agrarian_reform.dds"
+	}
+	
 	
 	
 	
