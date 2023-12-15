@@ -1247,3 +1247,12 @@
  ROM_expand_the_army:0 "Expand the army"
  ROM_grand_army:0 "Grand army"
  romania.12.t:0 "Royal Dictatorship"
+ 
+ medium_tank_equipment_4:0 "Medium Tank IV"
+ medium_tank_equipment_5:0 "Medium Tank III"
+ medium_tank_equipment_6:0 "Medium Tank IV"
+ medium_tank_equipment_7:0 "Medium Tank V"
+ heavy_tank_equipment_4:0 "Heavy Tank IV"
+ super_heavy_tank_equipment_2:0 "Super Heavy Tank II "
+ light_tank_equipment_4:0 "Light tank IV"
+ light_tank_equipment_5:0 "Light tank V"
