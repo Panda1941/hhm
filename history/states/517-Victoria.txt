@@ -12,7 +12,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
-			industrial_complex = 5
+			industrial_complex = 7
 			air_base = 3
 			7798 = {
 				naval_base = 4
@@ -33,7 +33,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 	manpower=2219500
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=metropolis
 
 	local_supplies=0.0 
 }

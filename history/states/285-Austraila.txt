@@ -8,7 +8,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
-			industrial_complex = 4
+			industrial_complex = 6
 			dockyard = 2
 			air_base = 5
 			12406 = {
@@ -44,7 +44,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 	manpower=2563100
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=megalopolis
 
 	local_supplies=0.0 
 }
