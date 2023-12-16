@@ -169,7 +169,7 @@ AI_CHINA_STRAT = {
 
     ai_strategy = {
         type = force_build_armies
-        value = 2000
+        value = 200
     }
 }
 

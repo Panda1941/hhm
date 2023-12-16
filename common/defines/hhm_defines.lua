@@ -629,8 +629,8 @@ NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {300, 500, 1500}
 NDefines_Graphics.NGraphics.CAPITAL_ICON_CUTOFF = 1000	-- At what camera distance capital icons disappears
 
 -- Nukes buffed
-NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.95					-- Minimum damage from nukes as a percentage of current strength/organisation
-NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 0.99					-- Minimum damage from nukes as a percentage of current strength/organisation
+NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.9					-- Minimum damage from nukes as a percentage of current strength/organisation
+NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 0.95					-- Minimum damage from nukes as a percentage of current strength/organisation
 
 -- MIO stuff
 NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.1					-- Cost in Political Power daily generation when one MIO is assigned to a research slot. If 0, cost is entirely disabled.

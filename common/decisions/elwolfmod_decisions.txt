@@ -286,6 +286,30 @@ political_actions = {
 }
 
 operations = {
+	china_division_deployment = {
+		# icon = generic_operation
+		# a get around AI not being able to build divisions, every week china will spawn one unequiped division in their capital scope
+		allowed = {
+			tag = CHI
+		}
+		fire_only_once = no
+		days_re_enable = 0
+		days_mission_timeout = 12
+		is_good = yes
+		available = {
+			always = no
+		}
+		timeout_effect 	 = {
+			capital_scope = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = no
+					division = "name = \"Chineese Infantry\" division_template = \"Sanjiao Jun\" start_experience_factor = 0.0 start_equipment_factor = 0.001" 
+					owner = ROOT
+					count = 1
+				}
+			}
+		}
+	}
 	
 	china_wave_1 = {
 		# icon = generic_operation
