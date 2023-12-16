@@ -116,6 +116,10 @@ if = {
 	set_technology = { camelry = 1 }
 }
 
+add_ideas = {
+	low_economic_mobilisation
+}
+
 if = {
 	limit = { has_dlc = "Together for Victory" }
 

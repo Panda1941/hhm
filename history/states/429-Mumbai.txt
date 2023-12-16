@@ -3,17 +3,20 @@ state={
 	id=429
 	name="STATE_429"
 	manpower = 17355600
-	state_category = town
+	state_category = metropolis
 	
 	resources={
 		#tungsten=19 # was: 26
+		steel = 24
+		oil = 12
 	}
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = RAJ
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 7
+			arms_factory = 1
 			air_base = 2
 			1349 = {
 				naval_base = 6

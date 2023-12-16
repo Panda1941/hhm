@@ -190,6 +190,35 @@ ideas = {
 			}
 		}
 
+		RAJ_british_rail_investors_raj = {
+
+			picture = generic_build_infrastructure
+
+			name = RAJ_british_rail_investors
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			available = { is_subject_of = ENG }
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_rail_way_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
 		RAJ_british_rail_investors = {
 
 			picture = generic_build_infrastructure
