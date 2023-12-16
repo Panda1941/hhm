@@ -3,7 +3,7 @@ state={
 	id=529
 	name="STATE_529" # Chugoku
 	manpower = 5341000
-	state_category = large_city
+	state_category = metropolis
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = JAP
@@ -11,9 +11,9 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		buildings = {
 			infrastructure = 4 #was: 7
 			air_base = 3
-			dockyard = 2
-			arms_factory = 2
-			industrial_complex = 2
+			dockyard = 3
+			arms_factory = 4
+			industrial_complex = 4
 			1092 = {
 				naval_base = 10
 

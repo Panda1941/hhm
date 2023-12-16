@@ -3,16 +3,16 @@ state={
 	id=532
 	name="STATE_532" # Tokai
 	manpower = 6174000
-	state_category = large_city
+	state_category = metropolis
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 4 #was: 7
-			arms_factory = 1
-			dockyard = 1
-			industrial_complex = 2
+			arms_factory = 3
+			dockyard = 2
+			industrial_complex = 4
 		}
 		
 		victory_points = {
