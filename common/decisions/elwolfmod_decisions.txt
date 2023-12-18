@@ -330,7 +330,7 @@ operations = {
 					allow_spawning_on_enemy_provs = no
 					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
 					owner = ROOT
-					count = 60
+					count = 20
 				}
 			}
 		}
@@ -347,7 +347,7 @@ operations = {
 			factor = 100
 		}
 		available = {
-			surrender_progress > 0.3
+			surrender_progress > 0.35
 		}
 		complete_effect = {
 			capital_scope = {
@@ -355,7 +355,7 @@ operations = {
 					allow_spawning_on_enemy_provs = no
 					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
 					owner = ROOT
-					count = 80
+					count = 20
 				}
 			}
 		}
@@ -372,7 +372,7 @@ operations = {
 			factor = 100
 		}
 		available = {
-			surrender_progress > 0.75
+			surrender_progress > 0.80
 		}
 		complete_effect = {
 			capital_scope = {
@@ -380,7 +380,7 @@ operations = {
 					allow_spawning_on_enemy_provs = no
 					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
 					owner = ROOT
-					count = 60
+					count = 30
 				}
 			}
 		}

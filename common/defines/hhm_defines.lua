@@ -527,7 +527,7 @@ NDefines.NAI.UPDATE_SUPPLY_MOTORIZATION_FREQUENCY_HOURS = 360    --52 every 5 da
 NDefines.NAI.UPDATE_SUPPLY_BOTTLENECKS_FREQUENCY_HOURS = 480    --168 every 20 days the ai will check for supply related bottlenecks and try to fix them
 
 -- AI fixing
-NDefines.NAI.AREA_DEFENSE_SETTING_VP = false --False (AI will garrison cities as well as coasts)
+NDefines.NAI.AREA_DEFENSE_SETTING_VP = true --False (AI will garrison cities)
 NDefines.NAI.AREA_DEFENSE_SETTING_COASTLINES = false
 
 --THANKS THRASHY

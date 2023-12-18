@@ -139,16 +139,16 @@ AI_CHINA_STRAT = {
 
     ai_strategy = {
         type = ignore_army_incompetence
-        value = 100
+        value = 200
     }
     ai_strategy = {
         type = prepare_for_war
         id = JAP
-        value = 100
+        value = 150
     }
     ai_strategy = {
         type = garrison
-        value = 40
+        value = 45
     }
 
     ai_strategy = {
@@ -165,11 +165,6 @@ AI_CHINA_STRAT = {
         type = front_unit_request
         tag = ENG
         value = -1000
-    }
-
-    ai_strategy = {
-        type = force_build_armies
-        value = 200
     }
 }
 
