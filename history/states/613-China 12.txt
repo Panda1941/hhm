@@ -4,7 +4,7 @@ state={
 	name="STATE_613" # Shanghai
 	manpower = 17305100
 	
-	state_category = large_city
+	state_category = megalopolis
 	
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = CHI
@@ -12,8 +12,8 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 3
-			arms_factory = 4
+			industrial_complex = 4
+			arms_factory = 7
 			air_base = 6
 			dockyard = 1
 			7014 = {

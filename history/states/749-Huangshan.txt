@@ -13,6 +13,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
+			arms_factory = 4
 		}
 		victory_points = {
 			12019 1
