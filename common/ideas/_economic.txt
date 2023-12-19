@@ -370,6 +370,7 @@ ideas = {
 
 			available = {
 				has_war = yes
+				date > 1941.01.01
 				
 				NOT = {
 					original_tag = USA

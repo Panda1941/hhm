@@ -117,7 +117,7 @@ if = {
 }
 
 add_ideas = {
-	low_economic_mobilisation
+	civilian_economy
 }
 
 if = {

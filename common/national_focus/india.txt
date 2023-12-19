@@ -423,7 +423,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_british_army_support
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -958,7 +958,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = RAJ_vickers_berthier_gun
 				bonus = 0.75
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 			}
 		}
@@ -1083,7 +1083,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 5
+		cost = 6
 
 		ai_will_do = {
 			factor = 30
@@ -1595,117 +1595,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RAJ_administrative_oversight
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = RAJ_clamp_down_on_corruption }
-		x = 0
-		y = 1
-		relative_position_id = RAJ_clamp_down_on_corruption
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = RAJ_enable_local_industrialization
-		}
-	}
 	
-	focus = {
-		id = RAJ_land_clearance
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = RAJ_administrative_oversight }
-		mutually_exclusive = { focus = RAJ_workforce_integration }
-		x = -1
-		y = 1
-		relative_position_id = RAJ_administrative_oversight
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			hidden_effect = {
-				every_owned_state = {
-					limit = { has_state_flag = RAJ_industrialized_this_state }
-					add_extra_state_shared_building_slots = 1
-				}
-			}
-			custom_effect_tooltip = RAJ_land_clearance_effect_tt
-		}
-	}
-	
-	focus = {
-		id = RAJ_workforce_integration
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = RAJ_administrative_oversight }
-		mutually_exclusive = { focus = RAJ_land_clearance }
-		x = 1
-		y = 1
-		relative_position_id = RAJ_administrative_oversight
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			hidden_effect = {
-				every_owned_state = {
-					limit = { has_state_flag = RAJ_industrialized_this_state }
-					add_dynamic_modifier = {
-						modifier = RAJ_industrialized_personnel
-					}
-				}
-			}
-			custom_effect_tooltip = RAJ_integration_tooltip
-			add_dynamic_modifier = {
-				modifier = RAJ_industrialized_personnel
-			}
-			custom_effect_tooltip = RAJ_integration_tooltip_post
-		}
-	}
 
 
 	focus = {
