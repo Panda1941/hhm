@@ -44,6 +44,9 @@ sub_units = {
 		need = {
 			infantry_equipment = 100
 		}
+		essential = {
+			infantry_equipment
+		}
 	}
 
 	bicycle_battalion = {
@@ -87,6 +90,10 @@ sub_units = {
 		need = {
 			infantry_equipment = 100
 			support_equipment = 15			
+		}
+		essential = {
+			infantry_equipment
+			support_equipment
 		}
 
 		forest = {
@@ -173,6 +180,7 @@ sub_units = {
 			#pack_artillery_equipment = 12
 		}
 		essential = {
+		    infantry_equipment
 			support_equipment
 			special_forces_equipment
 		}
@@ -219,7 +227,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 20
-		max_organisation = 70
+		max_organisation = 60
 		default_morale = 0.4
 		manpower = 1000
 
@@ -233,11 +241,12 @@ sub_units = {
 		soft_attack = 0.05
 	
 		need = {
-			infantry_equipment = 350
+			infantry_equipment = 400
 			support_equipment = 50
 			special_forces_equipment = 50
 		}
 		essential = {
+		    infantry_equipment
 			support_equipment
 			special_forces_equipment
 		}
@@ -306,6 +315,7 @@ sub_units = {
 			#pack_artillery_equipment = 12
 		}
 		essential = {
+		    infantry_equipment
 			support_equipment
 			special_forces_equipment
 		}
@@ -381,6 +391,7 @@ sub_units = {
 			#pack_artillery_equipment = 12
 		}
 		essential = {
+		    infantry_equipment
 			support_equipment
 			special_forces_equipment
 		}
@@ -441,6 +452,7 @@ sub_units = {
 		}
 		
 		essential = {
+		    infantry_equipment
 			support_equipment
 			special_forces_equipment
 			#mechanized_equipment
@@ -509,6 +521,7 @@ sub_units = {
 			#pack_artillery_equipment = 12
 		}
 		essential = {
+		    infantry_equipment
 			support_equipment
 			special_forces_equipment
 		}
@@ -563,6 +576,10 @@ sub_units = {
 		need = {
 			infantry_equipment = 100
 			motorized_equipment = 35
+		}
+		essential = {
+		    infantry_equipment
+			motorized_equipment
 		}
 
 		forest = {
@@ -760,6 +777,9 @@ sub_units = {
 		need = {
 			infantry_equipment = 100 #100 -> Same ratio as regular Infantry			
 		}
+		essential = {
+		    infantry_equipment
+		}
 		
 		urban = {
 			defence = 0.05
@@ -831,6 +851,9 @@ sub_units = {
 		need = {
 			infantry_equipment = 80 # was 100 
 		}
+		essential = {
+		    infantry_equipment
+		}
 	}
 
 	militia = {
@@ -873,6 +896,9 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 80
+		}
+		essential = {
+		    infantry_equipment
 		}
 		
 		forest = {
