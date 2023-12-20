@@ -590,7 +590,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = BRA_afranio_de_mello_franco
+			idea_token = BRA_breno_leite_hamada
 			allowed  = {
 				original_tag  = BRA
 			}
@@ -609,7 +609,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = BRA_afranio_de_mello_franco
+			idea_token = BRA_edgar_peres_lemos
 			allowed  = {
 				original_tag  = BRA
 			}
