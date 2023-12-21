@@ -253,6 +253,11 @@ units = {
 			ship = { name = "Okikaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
 			ship = { name = "Yakaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
 			ship = { name = "Hiei" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Kongo Class"} } }
+			ship = { name = "Shiratsuyu" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }
+			ship = { name = "Shigure" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }
+			ship = { name = "Murasame" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }
+			ship = { name = "Samidare" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }
+			ship = { name = "Harusame" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }
 		}
 	}
 }
@@ -311,57 +316,6 @@ instant_effect =
 			}
 			requested_factories = 1
 			progress = 0.15
-			amount = 1
-		}		
-		# DD (x5): "Shiratsuyu" "Shigure" "Murasame" "Harusame" "Samidare"
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_light_1
-				creator = "JAP" 
-				version_name = "Fubuki Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}		
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_light_1
-				creator = "JAP" 
-				version_name = "Fubuki Class"
-			}
-			requested_factories = 1
-			progress = 0.6
-			amount = 1
-		}		
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_light_1
-				creator = "JAP" 
-				version_name = "Fubuki Class"
-			}
-			requested_factories = 1
-			progress = 0.5
-			amount = 1
-		}		
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_light_1
-				creator = "JAP" 
-				version_name = "Fubuki Class"
-			}
-			requested_factories = 1
-			progress = 0.4
-			amount = 1
-		}		
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_light_1
-				creator = "JAP" 
-				version_name = "Fubuki Class"
-			}
-			requested_factories = 1
-			progress = 0.3
 			amount = 1
 		}		
 }

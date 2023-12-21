@@ -287,7 +287,20 @@ units= {
 			ship = { name = "USS S-38" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
 			ship = { name = "USS S-39" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
 			ship = { name = "USS S-40" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-41" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }			
+			ship = { name = "USS S-41" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
+            ship = { name = "USS Mahan" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Cummings" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Flusser" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Case" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Conyngham" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Cassin" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Shaw" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Cushing" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Perkins" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Porter" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Phelps" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+            ship = { name = "USS Clark" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+             ship = { name = "USS Moffett" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }			
 		}									
 	}
 } 
@@ -354,164 +367,7 @@ instant_effect = {
 		progress = 0.40
 		amount = 1
 	}
-
-	# DD: Porter (x14) ("USS Porter" "USS Phelps" "USS Clark" "USS Moffett")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Porter" 
-		requested_factories = 1
-		progress = 0.20
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Phelps" 
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Clark" 
-		requested_factories = 1
-		progress = 0.50
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Moffett" 
-		requested_factories = 1
-		progress = 0.20
-		amount = 1
-	}
-	# DD: Mahan class (x9) ("USS Mahan" "USS Cummings" "USS Flusser" "USS Case" "USS Conyngham" "USS Cassin" "USS Shaw" "USS Cushing" "USS Perkins")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Mahan" 
-		requested_factories = 1
-		progress = 0.30
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Cummings" 
-		requested_factories = 1
-		progress = 0.10
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Flusser" 
-		requested_factories = 1
-		progress = 0.20
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Case" 
-		requested_factories = 1
-		progress = 0.30
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Conyngham" 
-		requested_factories = 1
-		progress = 0.10
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Cassin" 
-		requested_factories = 1
-		progress = 0.40
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Shaw" 
-		requested_factories = 1
-		progress = 0.30
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Cushing" 
-		requested_factories = 1
-		progress = 0.40
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "USA"
-			version_name = "Farragut Class"
-		}
-		name = "USS Perkins" 
-		requested_factories = 1
-		progress = 0.30
-		amount = 1
-	}
-	# SS: Shark class (x1) ("USS Tarpon")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "USA"
-			version_name = "Porpoise Class"
-		}
-		name = "USS Tarpon" 
-		requested_factories = 1
-		progress = 0.70
-		amount = 1
-	}
+	
 }
 
 #####################

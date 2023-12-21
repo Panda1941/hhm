@@ -4127,6 +4127,17 @@ focus_tree = {
 				add_unit_leader_trait = panzer_leader				
 			}
 			}
+			AST = {
+			every_army_leader = {
+				add_logistics = 1
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = armor_officer
+				}
+				add_unit_leader_trait = panzer_leader				
+			}
+			}
 			CAN = {
 			every_army_leader = {
 				limit = {
@@ -4194,6 +4205,28 @@ focus_tree = {
 				}
 				add_unit_leader_trait = infantry_leader
                 add_unit_leader_trait = desert_fox					
+			}
+			}
+			RAJ = {
+			every_army_leader = {
+				limit = {
+					has_trait = infantry_officer
+				}
+				add_unit_leader_trait = infantry_leader				
+			}
+			}
+			AST = {
+			every_army_leader = {
+				limit = {
+					has_trait = infantry_officer
+				}
+				add_unit_leader_trait = infantry_leader				
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = desert_fox
+				}
+				add_unit_leader_trait = infantry_leader				
 			}
 			}
 			SAF = {

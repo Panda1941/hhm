@@ -749,7 +749,7 @@ focus_tree = {
 			hidden_effect = {
 				add_corps_commander_role = {
 					character = RAJ_kodandera_madappa_cariappa
-					traits = { career_officer skilled_staffer }
+					traits = { career_officer skilled_staffer infantry_officer }
 					skill = 4
 					attack_skill = 2
 					defense_skill = 4
@@ -758,7 +758,7 @@ focus_tree = {
 				}
 				add_corps_commander_role = {
 					character = RAJ_kodandera_subayya_thimayya
-					traits = { jungle_rat }
+					traits = { jungle_rat infantry_officer }
 					skill = 3
 					attack_skill = 3
 					defense_skill = 2
@@ -767,7 +767,7 @@ focus_tree = {
 				}
 				add_corps_commander_role = {
 					character = RAJ_jayanto_nath_chaudhuri
-					traits = { panzer_leader }
+					traits = { panzer_leader organizer }
 					skill = 3
 					attack_skill = 4
 					defense_skill = 1

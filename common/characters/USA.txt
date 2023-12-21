@@ -219,7 +219,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine }
+			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine infantry_leader }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -257,7 +257,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
+			traits={ cavalry_officer trait_engineer commando naval_invader }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -338,7 +338,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine }
+			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine panzer_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -528,7 +528,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer commando }
+			traits={ infantry_officer commando naval_invader }
 			skill=3
 			attack_skill=3
 			defense_skill=2
