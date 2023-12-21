@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "industrial_organisation_list_window"
-		animation_time = 300
+		animation_time = 0
 		size = { width=550 height=667 }
 		show_sound = open_sub_window
 		moveable = yes

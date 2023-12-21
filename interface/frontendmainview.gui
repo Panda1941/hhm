@@ -28,7 +28,7 @@ guiTypes = {
 		position = { x=0 y =-200 }
 		show_position = { x=0 y =-1 }
 		animation_type = decelerated
-		animation_time = 1000
+		animation_time = 0
 		size = { width = 256 height = 768}
 		
 		iconType =
@@ -62,7 +62,7 @@ guiTypes = {
 		position = { x=0 y =-1 }
 		show_position = { x=-256 y =-1 }
 		animation_type = decelerated
-		animation_time = 1000					
+		animation_time = 0					
 		size = { width = 256 height = 768}
 		Orientation = upper_right
 

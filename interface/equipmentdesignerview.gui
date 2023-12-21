@@ -5,7 +5,7 @@ guiTypes = {
 		position = { x=0 y=0}
 		size = { width = 1097 height = 542 }
 		moveable = yes
-		fade_time = 500
+		fade_time = 1
 		fade_type = linear
 		orientation = CENTER
 		origo = center
@@ -719,7 +719,7 @@ guiTypes = {
 				show_position = { x = 10 y = 25 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 300
+				animation_time = 0
 				size = { width=230 height=260 }	
 				verticalScrollbar = "right_vertical_slider"
 				scroll_wheel_factor = 40
@@ -791,7 +791,7 @@ guiTypes = {
 				show_position = { x = 10 y = 27 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 300
+				animation_time = 0
 				size = { width=230 height=325 }
 				verticalScrollbar = "right_vertical_slider"
 				scroll_wheel_factor = 50

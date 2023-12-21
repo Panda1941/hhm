@@ -3,7 +3,7 @@ guiTypes = {
 		name = "market_access_overview_window"
 		position = { x=540 y=78 }
 		size = { width=350 height=600 }
-		fade_time = 200
+		fade_time = 1
 		fade_type = linear
 		moveable = yes
 		click_to_front = yes

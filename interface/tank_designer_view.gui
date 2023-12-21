@@ -5,7 +5,7 @@ guiTypes = {
 		position = { x=0 y=0 }
 		size = { width = 1091 height = 542 }
 		moveable = yes
-		fade_time = 500
+		fade_time = 1
 		fade_type = linear
 		orientation = CENTER
 		origo = center
@@ -783,7 +783,7 @@ guiTypes = {
 				show_position = { x = 10 y = 27 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 300
+				animation_time = 0
 				size = { width=230 height=325 }
 				verticalScrollbar = "right_vertical_slider"
 				margin = { top = 7 bottom = 7 right = 6 }
@@ -871,7 +871,7 @@ guiTypes = {
 				margin = { left = 4 right = 4 top = 4 bottom = 4 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 300
+				animation_time = 0
 
 				background = {
 					name = "Background"

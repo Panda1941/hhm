@@ -7,10 +7,10 @@ guiTypes = {
 		size = { width=505 height=60 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 300
+		animation_time = 0
 		Orientation = center_down
 		clipping = no
-		fade_time = 300
+		fade_time = 1
 		fade_type = linear
 		#moveable = yes
 
@@ -242,10 +242,10 @@ guiTypes = {
 				name = "battleplantools_area_defense_config_window"
 				position = {x=202 y=-50}
 				size = { width=494 height=280 }
-				#animation_time = 300
+				#animation_time = 0
 				#Orientation = center_down
 				#clipping = yes
-				fade_time = 300
+				fade_time = 1
 				fade_type = linear
 
 				background = {
@@ -333,9 +333,9 @@ guiTypes = {
 				size = { width=148 height=117 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 200
+				animation_time = 0
 				clipping = no
-				fade_time = 300
+				fade_time = 1
 				fade_type = linear
 
 
@@ -400,9 +400,9 @@ guiTypes = {
 				size = { width=148 height=117 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 200
+				animation_time = 0
 				clipping = no
-				fade_time = 300
+				fade_time = 1
 				fade_type = linear
 
 

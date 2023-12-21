@@ -33,7 +33,7 @@ guiTypes = {
 		position = {x=1200 y=20}
 		size = { width=650 height=650}
 		
-		fade_time = 300
+		fade_time = 1
 		fade_type = linear
 		moveable = yes
 		
@@ -474,7 +474,7 @@ guiTypes = {
 		position = {x=230 y=100}
 		size = { width=600 height=300}
 
-		fade_time = 300
+		fade_time = 1
 		fade_type = linear
 		moveable = no
 		
