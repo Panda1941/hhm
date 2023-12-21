@@ -20,18 +20,19 @@ on_actions = {
 			#Automatically scopes for every country
 			#add_political_power = 25		#E.G this would add 25 political power to every country every 24hrs
 			
-			if={			#You shouldn't need these, but they're good failsafes incase something goes wrong. KEEP THESE AT THE TOP
-				limit = { NOT = { has_variable = special_forces_xp } }
-				set_variable = { special_forces_xp = 0.00 }
-			}
-			if={
-				limit = { NOT = { has_variable = special_forces_xp_cap } }
-				set_variable = { special_forces_xp_cap = 500.00 }
-			}
-			if={
-				limit = { NOT = { has_variable = special_forces_xp_to_add } }
-				set_variable = { special_forces_xp_to_add = 0 }
-			}
+			#if={			#You shouldn't need these, but they're good failsafes incase something goes wrong. KEEP THESE AT THE TOP
+			#	limit = { NOT = { has_variable = special_forces_xp } }
+			#	set_variable = { special_forces_xp = 0.00 }
+			#}
+			#if={
+			#	limit = { NOT = { has_variable = special_forces_xp_cap } }
+			#	set_variable = { special_forces_xp_cap = 2000.00 }
+			#}
+			#if={
+			#	limit = { NOT = { has_variable = special_forces_xp_to_add } }
+			#	set_variable = { special_forces_xp_to_add = 0 }
+			#}
+			# Removed these for now as no non starter countries get added to the game, might have to go back
 			
 			
 			

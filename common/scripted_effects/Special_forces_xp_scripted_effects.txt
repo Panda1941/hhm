@@ -1,0 +1,9 @@
+#Remember to change the tooltips if the effects are changed
+
+SFXP_remove_60_xp = {
+	add_to_variable = { special_forces_xp = -60 }
+	custom_effect_tooltip = SFXP_remove_60_xp_tt
+}
+SFXP_add_100_xp = {
+	add_to_variable = { special_forces_xp = 100 }
+}

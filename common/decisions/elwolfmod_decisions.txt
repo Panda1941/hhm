@@ -6,7 +6,7 @@ templates_retards_ai = {
 		days_re_enable = 0
 		available = { ROOT = { has_country_flag = host } }
 		visible = { ROOT = { has_country_flag = host } }
-		complete_effect = { every_country = { add_equipment_to_stockpile = { type = convoy amount = 1 } } }
+		complete_effect = { every_country = { add_equipment_to_stockpile = { type = convoy amount = 1 } } SFXP_add_100_xp = yes}
 	}
 	
 	inf_templates = {

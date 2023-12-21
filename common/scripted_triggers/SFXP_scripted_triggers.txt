@@ -1,0 +1,10 @@
+enough_sfxp_for_doctrine = {
+	custom_trigger_tooltip = {
+    	tooltip = enough_sfxp_for_doctrine_tt
+	}
+	check_variable = {
+	    var = special_forces_xp
+	    value = 60
+	    compare = greater_than_or_equals
+	}
+}

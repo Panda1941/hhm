@@ -8,3 +8,7 @@
  #Modifiers
  experience_gain_special_forces:0 "Special Forces Experience Gain"
  experience_gain_special_forces_factor:0 "Special Forces Experience Gain"
+
+ #Tooltips
+ enough_sfxp_for_doctrine_tt:0 "Has §YSpecial Forces Experience§! > 60"
+ SFXP_remove_60_xp_tt:0 "§YSpecial Forces Experience§! §R-60§!"
