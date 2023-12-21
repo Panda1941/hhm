@@ -1,0 +1,15 @@
+ideas ={
+	country = {
+	
+	test_special_forces_xp_idea = {
+		allowed = {
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			experience_gain_special_forces = 0.2
+			experience_gain_special_forces_factor = 0.18
+		}
+	}
+}

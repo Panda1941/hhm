@@ -1,0 +1,14 @@
+experience_gain_special_forces = {
+	color_type = good
+	value_type = number
+	precision = 2		#Two decimal points
+	category = country
+	postfix = daily		#So it has the 'daily' on the end of the modifier
+}
+
+experience_gain_special_forces_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 1		#One decimal point
+	category = country
+}

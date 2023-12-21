@@ -1,0 +1,10 @@
+﻿l_english:
+ special_forces_xp_value_text:0 "[?special_forces_xp|.0]"			#This is for the topbar, we don't want any decimal points
+
+ special_forces_xp_tooltip:0 "§YSpecial Forces Experience§!\n\nCurrent expierience: §Y[?special_forces_xp|.2]§!\n\nDaily Gain: §Y[?special_forces_xp_to_add|.2]§!\n\nExperience is capped at §Y[?special_forces_xp_cap|.0]§!"
+ special_forces_xp_tooltip_delayed:0 "Special Forces XP is used to improve your special forces. Why, what else did you think it would do? Retard."
+
+
+ #Modifiers
+ experience_gain_special_forces:0 "Special Forces Experience Gain"
+ experience_gain_special_forces_factor:0 "Special Forces Experience Gain"

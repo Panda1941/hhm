@@ -1,0 +1,29 @@
+scripted_gui = {
+	SFXP_topbar = {
+		window_name = "SFXP_topbar"
+		context_type = player_context
+		parent_window_token = top_bar
+		
+		visible={
+			always = yes
+		}
+		
+		ai_enabled={
+			always = no
+		}
+	}
+	
+	special_forces = {
+		window_name = "special_forces"
+		context_type = player_context
+		parent_window_token = top_bar
+		
+		visible={
+			always = yes
+		}
+		
+		ai_enabled={
+			always = no
+		}
+	}
+}

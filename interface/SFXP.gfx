@@ -1,0 +1,18 @@
+spriteTypes = {				
+	spriteType = {
+		name = "GFX_special_forces_experience"
+		texturefile = "gfx/texticons/special_forces_experience_20x20.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_special_forces_experience_bak"
+		texturefile = "gfx/texticons/special_forces_experience_bak.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_secret_bg_56x30"
+		texturefile = "gfx/secret_bg_56x30.png"
+		legacy_lazy_load = no
+	}
+}
