@@ -130,11 +130,13 @@ ITA_crda_organization = {
 	
 	equipment_type = {
 		mio_cat_eq_all_carrier
+		mio_cat_eq_all_battleship
 		mio_cat_eq_all_cruiser
 		mio_cat_eq_all_destroyer
 	}
 	research_categories = {
 		mio_cat_tech_all_carrier_and_modules
+		mio_cat_tech_all_battleship_and_modules
 		mio_cat_tech_all_cruiser_and_modules
 		mio_cat_tech_all_destroyer_and_modules
 	}
