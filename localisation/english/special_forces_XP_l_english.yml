@@ -12,3 +12,8 @@
  #Tooltips
  enough_sfxp_for_doctrine_tt:0 "Has §YSpecial Forces Experience§! > 60"
  SFXP_remove_60_xp_tt:0 "§YSpecial Forces Experience§! §R-60§!"
+
+ #Officer corps traits
+ special_ground_forces_training:0 "Special Ground Forces Training"
+ special_air_forces_training:0 "Special Air Forces Training"
+ special_naval_forces_training:0 "Special Naval Forces Training"

@@ -7,6 +7,20 @@
 
 spriteTypes = {
 
+	### New mod spirits
+	spriteType = {
+		name = "GFX_idea_special_ground_forces_training"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_special_forces_training_green.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_special_air_forces_training"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_special_forces_training.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_special_naval_forces_training"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_special_forces_training.dds"
+	}
+
 
     ### ARMY Academy Spirits ###
 

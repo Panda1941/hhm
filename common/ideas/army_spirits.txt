@@ -480,6 +480,22 @@ ideas = {
 			}
 		}
 		
+		special_ground_forces_training = {
+			ledger = army
+			available = { }
+			modifier = {
+				experience_gain_special_forces = 0.05
+				experience_gain_army = -0.05
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+			}
+		}
+		
 	}
 
 	division_command_spirit = {

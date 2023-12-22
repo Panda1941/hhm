@@ -279,6 +279,22 @@ ideas = {
 				}
 			}
 		}
+		
+		special_naval_forces_training = {
+			ledger = navy
+			available = { }
+			modifier = {
+				experience_gain_special_forces = 0.05
+				experience_gain_navy = -0.1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+			}
+		}
 	}
 
 	naval_command_spirit = {
