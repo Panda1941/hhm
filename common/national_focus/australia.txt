@@ -1069,7 +1069,7 @@
 	focus = {
 		id = AST_standard_gauge_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 13
+		x = 14
 		y = 0
 
 		cost = 5
@@ -1167,6 +1167,51 @@
 			build_railway = {
 				path = { 1652 2157 10983 1526 10949 8200 10969 2191 12948 5197 8165 10927 8186 }
 			}
+		}
+	}
+
+	focus = {
+		id = AST_south_australian_housing_trust
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AST_western_australian_government_railways }
+		x = 0
+		y = 2
+		relative_position_id = AST_standard_gauge_railway
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = AST_south_australian_housing_trust_IC
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 519 }
 				limit = {
@@ -1183,6 +1228,7 @@
 					level = 2
 					instant_build = yes
 				}
+				set_state_flag = AST_south_australian_housing_trust_IC
 			}
 		}
 	}
@@ -1191,7 +1237,7 @@
 		id = AST_department_of_supply_and_development
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = AST_western_australian_government_railways }
-		x = 1
+		x = 2
 		y = 2
 		relative_position_id = AST_standard_gauge_railway
 
@@ -1251,6 +1297,69 @@
 	}
 
 	focus = {
+		id = AST_expand_lithgow_small_arms_factory
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = AST_south_australian_housing_trust }
+		x = 0
+		y = 3
+		relative_position_id = AST_standard_gauge_railway
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = AST_expand_lithgow_small_arms_factory_AF
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 285 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					NOT = { state = 674 }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_expand_lithgow_small_arms_factory_AF
+			}
+		}
+	}
+
+	focus = {
 		id = AST_allied_works_council
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = AST_department_of_supply_and_development }
@@ -1278,21 +1387,46 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = AST_allied_works_council_IC1
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = AST_allied_works_council_IC2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {					
 					is_in_home_area = yes					
 					free_building_slots = {
 						building = industrial_complex
-						size > 0
+						size > 1
 						include_locked = yes
 					}
 					NOT = { state = 674 }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_allied_works_council_IC1
@@ -1301,7 +1435,7 @@
 				limit = {
 					is_in_home_area = yes					
 					free_building_slots = {
-						building = arms_factory
+						building = industrial_complex
 						size > 1
 						include_locked = yes
 					}
@@ -1309,11 +1443,46 @@
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
+					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_allied_works_council_IC2
+			}
+		}
+	}
+
+	focus = {
+		id = AST_expand_the_northern_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = AST_expand_lithgow_small_arms_factory }
+		x = 0
+		y = 4
+		relative_position_id = AST_standard_gauge_railway
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 520
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			build_railway = {
+				level = 2
+				path = { 7669 1431 12104 1454 }
 			}
 		}
 	}
@@ -1350,6 +1519,44 @@
 		}
 	}
 
+	focus = {
+		id = AST_uranium_mining
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = AST_expand_the_northern_railway }
+		prerequisite = { focus = AST_australian_arms_production }
+		x = 1
+		y = 5
+		relative_position_id = AST_standard_gauge_railway
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_uranium_mining
+				bonus = 1.0
+				uses = 2
+				category = nuclear
+			}
+		}
+	}
+
 	############################
 	#### WAR PREP SECTION ######
 	############################
@@ -1357,7 +1564,7 @@
 	focus = {
 		id = AST_establish_advisory_war_council
 		icon = GFX_goal_generic_demand_territory
-		x = 20
+		x = 22
 		y = 0
 
 		cost = 5
@@ -1890,7 +2097,7 @@
 	focus = {
 		id = AST_support_the_policy_of_appeasement
 		icon = GFX_goal_generic_improve_relations
-		x = 26
+		x = 28
 		y = 0
 
 		cost = 5
