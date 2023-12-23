@@ -2924,6 +2924,13 @@ focus_tree = {
 				uses = 2
 				category = support_tech
 			}
+
+			set_variable = {
+				var = special_forces_xp_to_add
+				value = 50
+				tooltip = add_positive_amount_of_special_forces_xp_tt
+			}
+			add_set_amount_of_special_forces_xp = yes
 		}
 	}
 	focus = {

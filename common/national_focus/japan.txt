@@ -1745,6 +1745,13 @@
 
 
 		completion_reward = {
+
+			set_variable = {
+				var = special_forces_xp_to_add
+				value = 40
+				tooltip = add_positive_amount_of_special_forces_xp_tt
+			}
+			add_set_amount_of_special_forces_xp = yes
 			add_ideas = JAP_superior_will
 			528 = {
 				add_extra_state_shared_building_slots = 1
@@ -2284,6 +2291,13 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+
+			set_variable = {
+				var = special_forces_xp_to_add
+				value = 40
+				tooltip = add_positive_amount_of_special_forces_xp_tt
+			}
+			add_set_amount_of_special_forces_xp = yes
 			add_ideas = JAP_expand_the_snlf
 			add_tech_bonus = {
 				name = JAP_expand_the_snlf

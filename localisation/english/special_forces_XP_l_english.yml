@@ -8,12 +8,20 @@
  #Modifiers
  experience_gain_special_forces:0 "Special Forces Experience Gain"
  experience_gain_special_forces_factor:0 "Special Forces Experience Gain"
+ special_forces_doctrine_cost_factor:0 "Special Forces Doctrine Cost"
 
  #Tooltips
- enough_sfxp_for_doctrine_tt:0 "Has §YSpecial Forces Experience§! > 60"
  SFXP_remove_60_xp_tt:0 "§YSpecial Forces Experience§! §R-60§!"
 
  #Officer corps traits
  special_ground_forces_training:0 "Special Ground Forces Training"
  special_air_forces_training:0 "Special Air Forces Training"
  special_naval_forces_training:0 "Special Naval Forces Training"
+ 
+
+ #Triggers
+ enough_sfxp_for_doctrine_tt:0 "Doctrine Cost: £GFX_special_forces_experience §Y[?special_forces_doctrine_xp_cost|.0]§!"
+
+ #Scripted Effects
+ add_positive_amount_of_special_forces_xp_tt:0 "Special Forces Experience: §G+$RIGHT$§!."
+ add_negative_amount_of_special_forces_xp_tt:0 "Special Forces Experience: §R$RIGHT$§!."

@@ -3031,6 +3031,13 @@ mio:ROM_Braila_organization = {
 				category = tp_tech
 				category = marine_tech
 			}
+
+			set_variable = {
+				var = special_forces_xp_to_add
+				value = 25
+				tooltip = add_positive_amount_of_special_forces_xp_tt
+			}
+			add_set_amount_of_special_forces_xp = yes
 		}
 	}
 	

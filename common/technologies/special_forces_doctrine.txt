@@ -19,7 +19,7 @@ technologies = {
 		force_use_small_tech_layout = yes
 		
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		#xor = { special_forces_marines special_forces_paratroopers }
 		
@@ -34,16 +34,14 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		allow = {
-			has_tech = tech_mountaineers	
-			#enough_sfxp_for_doctrine = yes
+			enough_sfxp_for_doctrine = yes
 		}
 		
 		on_research_complete = {
-			remove_potential_special_forces_tree = yes
-			#SFXP_remove_80_xp = yes
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		categories = {
@@ -74,13 +72,20 @@ technologies = {
 	ski_troops = {
 
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
 		path = {
 			leads_to_tech = special_forces_recon
 			research_cost_coeff = 1
+		}
+
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 
 		xor = { rangers }
@@ -100,7 +105,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 
 		categories = {
 			special_forces_doctrine
@@ -125,13 +130,20 @@ technologies = {
 	rangers = {
 
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
 		path = {
 			leads_to_tech = special_forces_recon
 			research_cost_coeff = 1
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 
 		xor = { ski_troops }
@@ -145,7 +157,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 
 		categories = {
 			special_forces_doctrine
@@ -170,7 +182,7 @@ technologies = {
 	special_forces_recon = {
 
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		category_mountaineers = {
 			initiative = 0.01
@@ -190,8 +202,15 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
+		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 
 		categories = {
 			special_forces_doctrine
@@ -216,7 +235,7 @@ technologies = {
 	mountaineers_combat_1 = {
 
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -232,10 +251,17 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
+		
 		xor = { mountaineers_combat_2 }
 		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 
 		categories = {
 			special_forces_doctrine
@@ -260,13 +286,20 @@ technologies = {
 	mountaineers_combat_2 = {
 
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
 		path = {
 			leads_to_tech = mountaineers_combat_3
 			research_cost_coeff = 1
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		artillery = {
@@ -286,7 +319,7 @@ technologies = {
 		xor = { mountaineers_combat_1 }
 		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 
 		categories = {
 			special_forces_doctrine
@@ -311,7 +344,7 @@ technologies = {
 	mountaineers_combat_3 = {
 
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		category_mountaineers = {
 			max_organisation = 10
@@ -329,8 +362,15 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
+		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 
 		categories = {
 			special_forces_doctrine
@@ -355,12 +395,19 @@ technologies = {
 	mountaineers_keystone_1 = {
 
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
 		category_mountaineers = {
 			soft_attack = 0.10
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		special_forces_min = 28
@@ -369,7 +416,7 @@ technologies = {
 		xor = { mountaineers_keystone_2 }
 		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 
 		categories = {
 			special_forces_doctrine
@@ -394,7 +441,7 @@ technologies = {
 	mountaineers_keystone_2 = {
 
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		special_forces_min = 28
 		special_forces_out_of_supply_factor = -0.1
@@ -407,12 +454,19 @@ technologies = {
 		xor = { mountaineers_keystone_1 }
 		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 
 		categories = {
 			special_forces_doctrine
 			mountaineers_tech
 			cat_mountaineers_doctrine
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		folder = {
@@ -435,21 +489,19 @@ technologies = {
 		doctrine_name = "MARINES_DOCTRINE"
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		#xor = { special_forces_mountaineers special_forces_paratroopers }
 		
 		force_use_small_tech_layout = yes
 		
-		allow = { 
-			
-				has_tech = marines
-				
-			
-		}
 		
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
 		on_research_complete = {
-			remove_potential_special_forces_tree = yes
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		path = {
@@ -470,7 +522,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -505,7 +557,7 @@ technologies = {
 	marines_jungle_troops = {
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		xor = { marines_shore_parties }
 		
@@ -523,9 +575,16 @@ technologies = {
 			leads_to_tech = marines_recon 
 			research_cost_coeff = 1
 		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
 			
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -551,7 +610,7 @@ technologies = {
 	marines_shore_parties = {
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		xor = { marines_jungle_troops }
 		
@@ -570,8 +629,15 @@ technologies = {
 			}
 		}
 		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
+		
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -597,7 +663,7 @@ technologies = {
 	marines_recon = {
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -616,9 +682,16 @@ technologies = {
 		marine = {
 			max_organisation = 5
 		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
 			
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -644,7 +717,7 @@ technologies = {
 	marines_commandoes = {
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -663,11 +736,18 @@ technologies = {
 			custom_effect_tooltip = SF_MARINES_exfiltration_effect_tt
 		}
 		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
+		
 		acclimatization_cold_climate_gain_factor = 0.1
 		acclimatization_hot_climate_gain_factor = 0.1
 			
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -693,13 +773,20 @@ technologies = {
 	marines_expeditionary = {
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 
 		path = {
 			leads_to_tech = marines_expeditionary_blowtorch 
 			research_cost_coeff = 1
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		xor = { marines_commandoes }
@@ -710,7 +797,7 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.10
 		
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -736,7 +823,7 @@ technologies = {
 	marines_commandos_demolition = {
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 
@@ -750,12 +837,19 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
+		
 		marine_commando = {
 			breakthrough = 0.15
 		}
 		
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -784,7 +878,7 @@ technologies = {
 	marines_expeditionary_blowtorch = {
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -792,6 +886,13 @@ technologies = {
 		path = {
 			leads_to_tech = marines_expeditionary_support 
 			research_cost_coeff = 1
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 
 		
@@ -807,7 +908,7 @@ technologies = {
 		special_forces_attack_factor = 0.05
 			
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -833,7 +934,7 @@ technologies = {
 	marines_commandoes_mechanised = {
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		allow_branch = { has_dlc = "Man the Guns" }
@@ -842,6 +943,13 @@ technologies = {
 			 soft_attack = 0.1
 			 breakthrough = 0.1
 			 max_organisation = 5
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		pioneer_support = {
@@ -860,7 +968,7 @@ technologies = {
 		#}
 		
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -886,7 +994,7 @@ technologies = {
 	marines_commandoes_mechanised_non_mtg = {
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		allow_branch = { not = { has_dlc = "Man the Guns" } }
@@ -894,12 +1002,19 @@ technologies = {
 		special_forces_attack_factor = 0.15
 		
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
 			marine_tech
 			cat_marines_doctrine
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 
 		
@@ -920,7 +1035,7 @@ technologies = {
 	marines_expeditionary_support = {
 		
 		xp_research_type = navy
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -944,12 +1059,19 @@ technologies = {
 				defense = 0.05
 			}
 		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
 
 		extra_marine_supply_grace = 24
 		naval_invasion_capacity = 10
 			
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -978,7 +1100,7 @@ technologies = {
 		doctrine_name = "PARATROOPERS_DOCTRINE"
 
 		xp_research_type = air
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -993,15 +1115,13 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
-		allow = { 
-			
-				has_tech = paratroopers 
-				
-			
-		}
 		
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
 		on_research_complete = {
-			remove_potential_special_forces_tree = yes
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		path = {
@@ -1015,7 +1135,7 @@ technologies = {
 		}
 
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -1046,7 +1166,7 @@ technologies = {
 	paras_dispersed_drop = {
 
 		xp_research_type = air
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -1054,11 +1174,18 @@ technologies = {
 			leads_to_tech = paras_airborne_light_armor
 			research_cost_coeff = 1
 		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
 
 		xor = { paras_combat_drop }
 		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 		
 		special_forces_min = 14
 		
@@ -1089,7 +1216,7 @@ technologies = {
 	paras_combat_drop = {
 
 		xp_research_type = air
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -1100,8 +1227,15 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
+		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 		
 		special_forces_min = 14
 		
@@ -1132,13 +1266,20 @@ technologies = {
 	paras_airborne_light_armor = {
 
 		xp_research_type = air
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
 		#category_all_infantry = {
 		#	max_organisation = 15
 		#}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
 		
 		path = {
 			leads_to_tech = paras_combat_1
@@ -1151,7 +1292,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 4.5
+		research_cost = 0
 		
 		enable_subunits = {
 			airborne_light_armor
@@ -1180,13 +1321,20 @@ technologies = {
 	paras_combat_1 = {
 		
 		xp_research_type = air
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
 		path = {
 			leads_to_tech = paras_bonus_1 
 			research_cost_coeff = 1
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		xor = { paras_combat_2 }
@@ -1199,7 +1347,7 @@ technologies = {
 		}
 			
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -1225,13 +1373,20 @@ technologies = {
 	paras_combat_2 = {
 		
 		xp_research_type = air
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
 		path = {
 			leads_to_tech = paras_bonus_2 
 			research_cost_coeff = 1
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		field_hospital = {
@@ -1244,7 +1399,7 @@ technologies = {
 		xor = { paras_combat_1 }
 		
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -1270,13 +1425,20 @@ technologies = {
 	paras_bonus_1 = {
 		
 		xp_research_type = air
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
 		path = {
 			leads_to_tech = paras_keystone_1 
 			research_cost_coeff = 1
+		}
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
 		}
 		
 		category_paratroopers = {
@@ -1288,7 +1450,7 @@ technologies = {
 		acclimatization_cold_climate_gain_factor = 0.10
 			
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -1314,7 +1476,7 @@ technologies = {
 	paras_bonus_2 = {
 		
 		xp_research_type = air
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -1323,11 +1485,18 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
+		
 		paratrooper_weight_factor = -0.5
 		special_forces_no_supply_grace = 24
 		
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -1353,7 +1522,7 @@ technologies = {
 	paras_keystone_1 = {
 		
 		xp_research_type = air
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -1362,10 +1531,17 @@ technologies = {
 			breakthrough = 0.15
 		}
 		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
+		
 		special_forces_training_time_factor = 0.20
 			
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
 		
 		categories = {
 			special_forces_doctrine
@@ -1391,7 +1567,7 @@ technologies = {
 	paras_keystone_2 = {
 		
 		xp_research_type = air
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
@@ -1400,7 +1576,14 @@ technologies = {
 		special_forces_attack_factor = 0.05
 			
 		doctrine = yes	
-		research_cost = 2.25
+		research_cost = 0
+		
+		allow = {
+			enough_sfxp_for_doctrine = yes
+		}
+		on_research_complete = {
+			subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost }
+		}
 		
 		categories = {
 			special_forces_doctrine

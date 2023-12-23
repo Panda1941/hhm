@@ -12,3 +12,10 @@ experience_gain_special_forces_factor = {
 	precision = 1		#One decimal point
 	category = country
 }
+
+special_forces_doctrine_cost_factor = {
+	color_type = bad		#Less is good
+	value_type = percentage
+	precision = 0		#No decimal points
+	category = country
+}

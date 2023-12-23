@@ -5,13 +5,15 @@ on_actions = {
 				limit = { exists = yes }			#Automatically set to no, need to do yes and no. I mean, it shouldn't be too much of an issue if you don't, but best to avoid that kinda thing.
 				set_variable = { special_forces_xp = 0.00 }
 				set_variable = { special_forces_xp_cap = 2000.00 }
-				set_variable = { special_forces_xp_to_add = 0 }	
+				set_variable = { special_forces_xp_daily_to_add = 0 }	
+				set_variable = { special_forces_doctrine_xp_cost = 60.00 }	
 			}
 			every_country={
 				limit = { exists = no }
 				set_variable = { special_forces_xp = 0.00 }
 				set_variable = { special_forces_xp_cap = 2000.00 }
-				set_variable = { special_forces_xp_to_add = 0 }	
+				set_variable = { special_forces_xp_daily_to_add = 0 }	
+				set_variable = { special_forces_doctrine_xp_cost = 60.00 }	
 			}
 		}
 	}
@@ -26,26 +28,23 @@ on_actions = {
 			#}
 			#if={
 			#	limit = { NOT = { has_variable = special_forces_xp_cap } }
-			#	set_variable = { special_forces_xp_cap = 2000.00 }
+			#	set_variable = { special_forces_xp_cap = 500.00 }
 			#}
 			#if={
-			#	limit = { NOT = { has_variable = special_forces_xp_to_add } }
-			#	set_variable = { special_forces_xp_to_add = 0 }
+			#	limit = { NOT = { has_variable = special_forces_xp_daily_to_add } }
+			#	set_variable = { special_forces_xp_daily_to_add = 0 }
 			#}
-			# Removed these for now as no non starter countries get added to the game, might have to go back
+
+			#Removed these, no new nations get added or removed
 			
 			
 			
 			
-			
-			set_variable = { special_forces_xp_to_add = 0 }			#Initially I was going to do a temp variable but it's good to keep this around for loc
-			add_to_variable = { special_forces_xp_to_add = modifier@experience_gain_special_forces }
-			set_temp_variable = { special_forces_xp_factor_variable = modifier@experience_gain_special_forces_factor }
-			add_to_temp_variable = { special_forces_xp_factor_variable = 1 }
-			multiply_variable = { special_forces_xp_to_add = special_forces_xp_factor_variable }
-			
-			add_to_variable = { special_forces_xp = special_forces_xp_to_add }
+			get_special_forces_xp_daily_to_add = yes
+			add_to_variable = { special_forces_xp = special_forces_xp_daily_to_add }
 			clamp_variable = { var = special_forces_xp min = 0 max = special_forces_xp_cap }
+			
+			get_special_forces_doctrine_cost = yes
 		}
 	}
 }

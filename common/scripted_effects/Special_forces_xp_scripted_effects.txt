@@ -1,9 +1,53 @@
 #Remember to change the tooltips if the effects are changed
 
-SFXP_remove_60_xp = {
-	add_to_variable = { special_forces_xp = -60 }
-	custom_effect_tooltip = SFXP_remove_60_xp_tt
+get_special_forces_xp_daily_to_add={
+	set_variable = { special_forces_xp_daily_to_add = 0 }			#Initially I was going to do a temp variable but it's good to keep this around for loc
+	add_to_variable = { special_forces_xp_daily_to_add = modifier@experience_gain_special_forces }
+	set_temp_variable = { special_forces_xp_factor_variable = modifier@experience_gain_special_forces_factor }
+	add_to_temp_variable = { special_forces_xp_factor_variable = 1 }
+	multiply_variable = { special_forces_xp_daily_to_add = special_forces_xp_factor_variable }
 }
-SFXP_add_100_xp = {
-	add_to_variable = { special_forces_xp = 100 }
+
+
+get_special_forces_doctrine_cost={
+	set_variable = { special_forces_doctrine_xp_cost = 60.00 }
+	set_temp_variable = { special_forces_doctrine_xp_cost_factor = modifier@special_forces_doctrine_cost_factor }
+	add_to_temp_variable = { special_forces_doctrine_xp_cost_factor = 1 }
+	multiply_variable = { special_forces_doctrine_xp_cost = special_forces_doctrine_xp_cost_factor }
+
+	clamp_variable = { var = special_forces_doctrine_xp_cost min = 0 max = special_forces_xp_cap }
+}
+
+
+#You need to define the amount you want to add before hand
+#I put an example of this in the generic focus tree
+#There's two tooltips, one for positive and one for negative
+#
+#set_variable = {
+#	var = special_forces_xp_to_add
+#	value = 50
+#	tooltip = add_positive_amount_of_special_forces_xp_tt
+#}
+#add_set_amount_of_special_forces_xp = yes
+#
+
+
+
+add_set_amount_of_special_forces_xp={
+	##########################
+	#In the base game, if you have +10% army experience and do ```army_experience = 100``` as an effect, it will add 110 Army experience
+	#Just remove the code inbetween the brackets if you don't want this to happen
+	#I also put this AFTER the tooltip like in the base game, you can put it before if you want it to display the correct amount of SFXP that will be added
+
+	set_temp_variable = { special_forces_xp_factor_variable = modifier@experience_gain_special_forces_factor }
+	add_to_temp_variable = { special_forces_xp_factor_variable = 1 }
+	multiply_variable = { special_forces_xp_to_add = special_forces_xp_factor_variable }
+
+
+	##########################
+
+
+	add_to_variable = { special_forces_xp = special_forces_xp_to_add }
+	clamp_variable = { var = special_forces_xp min = 0 max = special_forces_xp_cap }
+	clear_variable = special_forces_xp_to_add
 }

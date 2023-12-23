@@ -979,6 +979,13 @@ focus_tree = {
 
 			army_experience = 25
 
+			set_variable = {
+				var = special_forces_xp_to_add
+				value = 25
+				tooltip = add_positive_amount_of_special_forces_xp_tt
+			}
+			add_set_amount_of_special_forces_xp = yes
+
 			add_doctrine_cost_reduction = {
 				name = ITA_preserve_army_traditions
 				cost_reduction = 0.75
@@ -1338,6 +1345,13 @@ focus_tree = {
 
 			army_experience = 15
 
+			set_variable = {
+				var = special_forces_xp_to_add
+				value = 25
+				tooltip = add_positive_amount_of_special_forces_xp_tt
+			}
+			add_set_amount_of_special_forces_xp = yes
+
 			add_tech_bonus = {
 				name = ITA_divisioni_alpine
 				bonus = 1.5
@@ -1370,6 +1384,13 @@ focus_tree = {
 			custom_effect_tooltip = ITA_fanti_dell_aria_re_tt
 
 			army_experience = 15
+
+			set_variable = {
+				var = special_forces_xp_to_add
+				value = 25
+				tooltip = add_positive_amount_of_special_forces_xp_tt
+			}
+			add_set_amount_of_special_forces_xp = yes
 
 			hidden_effect = {
 				if = {

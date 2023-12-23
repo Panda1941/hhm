@@ -4,7 +4,7 @@ enough_sfxp_for_doctrine = {
 	}
 	check_variable = {
 	    var = special_forces_xp
-	    value = 60
+	    value = special_forces_doctrine_xp_cost
 	    compare = greater_than_or_equals
 	}
 }

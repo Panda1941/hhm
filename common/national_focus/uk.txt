@@ -693,6 +693,13 @@ focus_tree = {
 			add_ideas = ENG_special_air_service_idea
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_david_stirling
+
+			set_variable = {
+				var = special_forces_xp_to_add
+				value = 25
+				tooltip = add_positive_amount_of_special_forces_xp_tt
+			}
+			add_set_amount_of_special_forces_xp = yes
 		}
 	}
 	focus = {
@@ -1161,6 +1168,13 @@ focus_tree = {
 			navy_experience = 10
 			air_experience = 10
 			add_ideas = ENG_chiefs_of_staff_committee_idea
+
+			set_variable = {
+				var = special_forces_xp_to_add
+				value = 25
+				tooltip = add_positive_amount_of_special_forces_xp_tt
+			}
+			add_set_amount_of_special_forces_xp = yes
 		}
 	}
 	focus = {

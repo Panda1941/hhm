@@ -1229,6 +1229,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+
+			set_variable = {
+				var = special_forces_xp_to_add
+				value = 50
+				tooltip = add_positive_amount_of_special_forces_xp_tt
+			}
+			add_set_amount_of_special_forces_xp = yes
 			add_tech_bonus = {
 				name = SPA_expand_the_special_forces
 				bonus = 1.0
