@@ -92,25 +92,6 @@ SOV_industry_relocation = {
 
 		ai_will_do = {
 			factor = 0
-			modifier = {
-				add = 200 # oh shit they are getting close!
-				FROM = {
-					OR = {
-						state = 219 #MOSCOW
-						state = 195 #LENINGRAD
-						state = 202 #KIEV
-						state = 206 #MINSK
-						state = 217 #STALINGRAD
-					}
-					any_neighbor_state = {
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				SOV_save_pp_for_manpower_trouble = yes
-			}
 		}
 
 		state_target = yes
@@ -168,7 +149,7 @@ SOV_industry_relocation = {
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
-					amount = 60_negative
+					amount = 60
 					producer = SOV
 				}
 			}
