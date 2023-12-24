@@ -2,7 +2,7 @@
 state={
 	id=476
 	name="STATE_476"
-	manpower = 1663331
+	manpower = 1
 	
 	state_category = rural
 
@@ -11,7 +11,7 @@ state={
 	}
 	
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
-		owner = MEX
+		owner = WST
 		buildings = {
 			infrastructure = 2
 			air_base = 2
@@ -19,7 +19,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 				naval_base = 2
 			}
 		}
-		add_core_of = MEX
+		add_core_of = WST
 		victory_points = {
 			10889 1
 		}
