@@ -10,7 +10,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = USA
 		buildings = {
 			infrastructure = 3 #was: 6
-			industrial_complex = 6
+			industrial_complex = 4
 			#arms_factory = 3
 			air_base = 2
 			11975 = {
