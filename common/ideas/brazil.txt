@@ -134,6 +134,111 @@ ideas = {
 
 
 
+		BRA_monke_dicatorship = {
+
+			name = "Monke-Dictatorship"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_taxed_nobility
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				stability_factor = -0.3
+				war_support_factor = 0.05
+				political_power_factor = 0.1
+			}
+		}
+
+		BRA_monke_dicatorship2 = {
+
+			name = "Monke-Economy"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_taxed_nobility
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				stability_factor = -0.35
+				war_support_factor = 0.05
+				political_power_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		BRA_monke_dicatorship3 = {
+
+			name = "Military-Dictatorship"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_taxed_nobility
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				stability_factor = -0.35
+				war_support_factor = 0.05
+				political_power_factor = 0.1
+				industrial_capacity_factory = 0.05
+				conscription = 0.02
+			}
+		}
+
+		BRA_monke_dicatorship4 = {
+
+			name = "Brazilian-Dictatorship"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_taxed_nobility
+
+			modifier = {
+				consumer_goods_factor = 0.175
+				stability_factor = -0.30
+				war_support_factor = 0.1
+				political_power_factor = 0.1
+				industrial_capacity_factory = 0.05
+				conscription = 0.02
+			}
+		}
+
+
+
+
+
 		
 		BRA_monke_politik = {
 
@@ -152,9 +257,11 @@ ideas = {
 			picture = ETH_taxed_nobility
 
 			modifier = {
-				consumer_goods_factor = 0.50
-				stability_factor = -0.35
-				political_power_factor = -0.4
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				stability_factor = -0.25
+				political_power_factor = -0.1
 			}
 		}
 		BRA_monke_politik2 = {
@@ -174,9 +281,11 @@ ideas = {
 			picture = ETH_taxed_nobility
 
 			modifier = {
-				consumer_goods_factor = 0.35
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
 				stability_factor = -0.20
-				political_power_factor = -0.15
+				democratic_drift = 0.05
 			}
 		}
 		BRA_monke_politik3 = {
@@ -196,9 +305,11 @@ ideas = {
 			picture = ETH_taxed_nobility
 
 			modifier = {
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 				stability_factor = -0.20
-				political_power_factor = -0.15
+				democratic_drift = 0.08
 			}
 		}
 		BRA_monke_politik4 = {
@@ -219,9 +330,9 @@ ideas = {
 
 			modifier = {
 				conscription = 0.015
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.1
 				stability_factor = -0.20
-				political_power_factor = -0.15
+				democratic_drift = 0.13
 			}
 		}
 		BRA_monke_politik5 = {
@@ -243,7 +354,7 @@ ideas = {
 			modifier = {
 				conscription = 0.015
 				stability_factor = -0.05
-				political_power_factor = -0.10
+				democratic_drift = 0.15
 			}
 		}
 		BRA_brazil_comes = {

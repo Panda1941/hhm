@@ -828,6 +828,7 @@
 
 		#prerequisite = { focus = BRA_construction_projects }
 		#relative_position_id = BRA_construction_projects
+		mutually_exclusive = {focus = BRA_dictatorial_powers}
 
 		ai_will_do = {
 			factor = 1
@@ -853,6 +854,7 @@
 			}
 		}
 	}
+
 	focus = {
 		id = BRA_worker_liberties
 		icon = GFX_focus_ITA_workers_unions
@@ -967,15 +969,167 @@
 			}
 		}
 	}
+
+	
 	focus = {
-		id = BRA_come_to_brazil
-		icon = GFX_focus_por_concordat
+		id = BRA_dictatorial_powers
+		icon = GFX_focus_por_the_fifth_empire
+		text = "Dictatorial Powers"
+		x = 14
+		y = 0
+
+		cost = 10
+
+		mutually_exclusive = {focus = BRA_civil_liberties_act}
+		#prerequisite = { focus = BRA_construction_projects }
+		#relative_position_id = BRA_construction_projects
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_monke_dicatorship
+				remove_idea = BRA_monke_politik
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_dictatorial_powers2
+		icon = GFX_focus_generic_industry_3
+		text = "State Run Industry"
 		x = 0
 		y = 1
 
 		cost = 10
 
-		prerequisite = { focus = BRA_social_reforms }
+		prerequisite = { focus = BRA_dictatorial_powers }
+		relative_position_id = BRA_dictatorial_powers
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_monke_dicatorship2
+				remove_idea = BRA_monke_dicatorship
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_dictatorial_powers3
+		icon = GFX_focus_chi_army_reform
+		text = "Extended Conscription"
+		x = 0
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_dictatorial_powers2 }
+		relative_position_id = BRA_dictatorial_powers2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_monke_dicatorship3
+				remove_idea = BRA_monke_dicatorship2
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_dictatorial_powers4
+		icon = GFX_focus_generic_military_dictatorship
+		text = "Brazilian Dictatorship"
+		x = 0
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_dictatorial_powers3 }
+		relative_position_id = BRA_dictatorial_powers3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_monke_dicatorship4
+				remove_idea = BRA_monke_dicatorship3
+			}
+		}
+	}
+
+
+	focus = {
+		id = BRA_come_to_brazil
+		icon = GFX_focus_por_concordat
+		x = 1
+		y = 1
+
+		cost = 10
+
+		prerequisite = { focus = BRA_social_reforms focus = BRA_dictatorial_powers4 }
 		relative_position_id = BRA_social_reforms
 
 		ai_will_do = {
@@ -1040,13 +1194,29 @@
 	}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 	focus = {
 		id = BRA_naval_expansion
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 15
-		y = 0
+		x = 8
+		y = 5
 
 		cost = 5
 
@@ -1092,7 +1262,7 @@
 		id = BRA_destroyers
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = BRA_naval_expansion }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = BRA_naval_expansion
 
@@ -1127,10 +1297,10 @@
 	focus = {
 		id = BRA_transport_ships
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = BRA_destroyers }
-		x = 0
+		prerequisite = { focus = BRA_naval_expansion }
+		x = 1
 		y = 1
-		relative_position_id = BRA_destroyers
+		relative_position_id = BRA_naval_expansion
 
 		cost = 5
 
