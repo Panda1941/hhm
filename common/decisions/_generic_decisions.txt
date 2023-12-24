@@ -279,7 +279,7 @@ economy_decisions = {
 				type = train_equipment
 				amount = 15
 			}
-			add_stability = -0.05
+			add_stability = -0.025
 		}
 	}			
 }
