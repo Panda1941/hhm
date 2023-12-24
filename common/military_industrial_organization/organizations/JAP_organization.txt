@@ -37,12 +37,7 @@ JAP_kure_naval_arsenal_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		FROM = {
-			OR = {
-				has_completed_focus = JAP_supremacy_of_the_battlefleet
-				has_completed_focus = JAP_the_ultimate_battleship
-			}
-		}
+		
 	}
 }
 
@@ -60,22 +55,7 @@ JAP_maizuru_naval_arsenal_organization = {
 	icon = GFX_idea_maizuru_naval_arsenal
 	
 	allowed = {	 
-		OR = {
-			tag = JAP 
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-		}
-	}
-	
-	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
+		tag = JAP 
 	}
 	
 	available = {
@@ -177,7 +157,7 @@ JAP_aichi_organization = {
 		tag = JAP
 	}
 	available = {
-		FROM = { has_completed_focus = JAP_range_focus }
+		
 	}
 }
 

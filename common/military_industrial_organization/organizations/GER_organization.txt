@@ -21,6 +21,7 @@ GER_porsche_organization = {
 			tag = ROM 
 			tag = SPR
 			tag = ITA
+			tag = JAP
 			AND = {
 				tag = MEX 
 				has_dlc = "Man the Guns"
@@ -121,6 +122,7 @@ GER_henschel_organization = {
             tag = ROM 
             tag = SPR
 			tag = ITA
+			tag = JAP
 			AND = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
@@ -244,6 +246,7 @@ GER_man_organization = {
             tag = ROM 
             tag = SPR
 			tag = ITA
+			tag = JAP
 			AND = {
 				tag = GRE
 				has_dlc = "Battle for the Bosporus"
@@ -769,6 +772,7 @@ GER_mauser_support_organization = {
 			tag = BUL
 			tag = ROM
 			tag = HUN
+			tag = JAP
 		}
 	}
 }
@@ -785,6 +789,7 @@ GER_opel_car_organization = {
 			tag = BUL
 			tag = ROM
 			tag = ITA
+			tag = JAP
 		}
 	}
 }
