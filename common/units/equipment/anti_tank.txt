@@ -34,7 +34,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 3
 				
-		build_cost_ic = 7
+		build_cost_ic = 6
 		resources = {
 			tungsten = 2
 			steel = 2
@@ -60,7 +60,7 @@ equipments = {
 		hard_attack = 30
 		ap_attack = 65
 		
-		build_cost_ic = 8
+		build_cost_ic = 7
 		resources = {
 			tungsten = 2
 			chromium = 1
@@ -79,7 +79,7 @@ equipments = {
 		hard_attack = 35
 		ap_attack = 95
 		
-		build_cost_ic = 9
+		build_cost_ic = 8
 		resources = {
 			tungsten = 2
 			chromium = 1
@@ -98,7 +98,7 @@ equipments = {
 		hard_attack = 40
 		ap_attack = 140
 		
-		build_cost_ic = 10
+		build_cost_ic = 9
 		resources = {
 			tungsten = 2
 			chromium = 1
