@@ -7,8 +7,8 @@ state={
 		owner = HUN
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 1
+			industrial_complex = 5
+			arms_factory = 3
 			air_base = 2
 
 		}

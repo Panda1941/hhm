@@ -8,13 +8,12 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				min_export = 0.15
-				industrial_capacity_factory = 0.06
-				industrial_capacity_dockyard = 0.06
-
-				production_speed_buildings_factor = 0.05
+				min_export = 0.0
 				
-				research_speed_factor = 0.025
+				industrial_capacity_factory = 0.12
+				industrial_capacity_dockyard = 0.12
+				production_speed_buildings_factor = 0.12
+				research_speed_factor = 0.08
 			}
 			allowed_to_remove = {
 				always = no
