@@ -475,8 +475,8 @@ NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5                  -- VANILLA 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.50							-- Higher value = more shot down planes
 
 -- Flicker Bombing
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.1    -- How much efficiency to regain per day. Gain applied hourly.
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.1    -- How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.05    -- How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.05    -- How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 0.5
 
 
