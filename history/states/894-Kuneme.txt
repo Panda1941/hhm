@@ -2,12 +2,13 @@ state={
 	id=894
 	name="STATE_894"
 	manpower = 69300
-	state_category = wasteland
+	state_category = city
 
 	history={
 		owner = SAF
 		buildings = {
 			infrastructure = 2
+			dockyard = 2
 
 		}
 		
