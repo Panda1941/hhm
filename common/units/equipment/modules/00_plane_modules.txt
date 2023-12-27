@@ -1076,8 +1076,9 @@ equipment_modules = {
 		add_equipment_type = strategic_bomber
 
 		add_stats = {
-			build_cost_ic = 10
+			build_cost_ic = 14
 			air_agility = -10
+			air_defence = -2.5
 			weight = 10
 		}
 		xp_cost = 0
@@ -1090,7 +1091,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 18
+				air_bombing = 16
 			}
 		}
 		mission_type_stats = {
