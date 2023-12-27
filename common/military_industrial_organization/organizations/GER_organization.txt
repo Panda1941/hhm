@@ -95,8 +95,11 @@ GER_porsche_organization = {
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
 			production_efficiency_gain_factor = 0.05
-
-			production_capacity_factor = 0.05
+		}
+		equipment_bonus = {
+			hard_attack = 0.02
+			soft_attack = 0.04
+			reliability = 0.1
 		}
 
 		position = { x=0 y=2 }  
@@ -219,8 +222,11 @@ GER_henschel_organization = {
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
 			production_efficiency_gain_factor = 0.05
-
-			production_capacity_factor = 0.05
+		}
+		equipment_bonus = {
+			hard_attack = 0.02
+			soft_attack = 0.04
+			reliability = 0.1
 		}
 
 		position = { x=8 y=3 }  
@@ -305,8 +311,12 @@ GER_man_organization = {
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
 			production_efficiency_gain_factor = 0.05
+		}
 
-			production_capacity_factor = 0.05
+		equipment_bonus = {
+			hard_attack = 0.02
+			soft_attack = 0.04
+			reliability = 0.1
 		}
 
 		position = { x=8 y=3 }  
@@ -316,6 +326,23 @@ GER_man_organization = {
 				factor = 1.5
 				date > 1937.1.1
 			}
+		}
+	}
+
+	add_trait = {
+		token = generic_mio_trait_specialist_shells_ger
+		name = "Special Ammunition"
+		icon = GFX_generic_mio_trait_icon_hard_attack
+
+		position = { x=-0 y=1 }
+		relative_position_id = generic_mio_trait_simplified_turret_design
+
+		all_parents = { generic_mio_trait_simplified_turret_design }
+		
+		equipment_bonus = {
+			hard_attack = 0.05
+			soft_attack = 0.1
+			ap_attack = 0.1
 		}
 	}
 }
@@ -359,7 +386,11 @@ GER_daimler_benz_organization = {
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
 			production_efficiency_gain_factor = 0.05
-			production_capacity_factor = 0.05
+		}
+		equipment_bonus = {
+			hard_attack = 0.02
+			soft_attack = 0.04
+			reliability = 0.1
 		}
 
 		position = { x=9 y=0 }  
@@ -381,8 +412,12 @@ GER_daimler_benz_organization = {
 		any_parent = { GER_mio_trait_hotrolled_armor }
 		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis heavy_tank_chassis }
 		equipment_bonus = {
-			armor_value = 0.1
+			armor_value = -0.1
 		} 
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+		}
 
 		position = { x=9 y=2 }  
 		ai_will_do = {
