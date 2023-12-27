@@ -559,11 +559,11 @@ NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all 
 
 NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 4.9
 
-NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
-NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
-NDefines_Graphics.NAirGfx.MAX_PATROL_SCENARIOS = 0
-NDefines_Graphics.NAirGfx.MAX_DOGFIGHTS_SCENARIOS = 0
-NDefines_Graphics.NAirGfx.MAX_TRANSPORT_SCENARIOS = 0
+-- NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
+-- NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
+-- NDefines_Graphics.NAirGfx.MAX_PATROL_SCENARIOS = 0
+-- NDefines_Graphics.NAirGfx.MAX_DOGFIGHTS_SCENARIOS = 0
+-- NDefines_Graphics.NAirGfx.MAX_TRANSPORT_SCENARIOS = 0
 NDefines_Graphics.NGraphics.CAMERA_ZOOM_SPEED_DISTANCE_MULT = 20
 NDefines_Graphics.NGraphics.MAPICON_GROUP_STRATEGIC_SIZE = 1000
 NDefines_Graphics.NGraphics.MAP_ICONS_STATE_HUGE = 100
@@ -635,8 +635,8 @@ NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 0.95					-- Minimum damage from nuk
 -- MIO stuff
 NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.1					-- Cost in Political Power daily generation when one MIO is assigned to a research slot. If 0, cost is entirely disabled.
 NDefines.NIndustrialOrganisation.ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY = 0.0		-- Cost in Political Power daily generation when one MIO is assigned to a production line. If 0, cost is entirely disabled.
-NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 840									-- Funds needed for a MIO to increment its size and get points to unlock traits
-NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 160						-- How much each level mutliplies the funds for size up 
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 620									-- Funds needed for a MIO to increment its size and get points to unlock traits
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 180						-- How much each level mutliplies the funds for size up 
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_POW = 2.1							-- the power we applie to the mio size when calculating funds to level up. 	
 NDefines.NIndustrialOrganisation.UNLOCKED_TRAITS_PER_SIZE_UP = 1							-- Number of points for unlocking traits obtained when the MIO increments its size
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 5								-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
@@ -644,7 +644,7 @@ NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST
 NDefines.NIndustrialOrganisation.FUNDS_FOR_CREATING_EQUIPMENT_VARIANT = 0					-- Funds added to MIO when a new variant is created with the Design Team assigned to it
 NDefines.NIndustrialOrganisation.FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.1				-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.
 NDefines.NIndustrialOrganisation.MAX_FUNDS_FROM_MANUFACTURER_PER_DAY = 100					-- Max funds generated per manufacturer per day. Set to 0 for no Maximum.
-NDefines.NIndustrialOrganisation.DESIGN_TEAM_RESEARCH_BONUS = 0.08							-- Research bonus for applying a Design Team that matches the technology
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_RESEARCH_BONUS = 0.05							-- Research bonus for applying a Design Team that matches the technology
 NDefines.NIndustrialOrganisation.ENABLE_TASK_CAPACITY = false								-- Enable limited task capacity for MIOs
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_TASK_CAPACITY = 0							-- Default start task capacity for each MIO (may be overriden in DB)
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_POLICY_ATTACH_COST = 25					-- Default start attach cost in PP for policies
