@@ -479,7 +479,7 @@ technologies = {
 		xp_unlock_cost = 80
 		
 		category_all_infantry = {
-			max_organisation = 15
+			max_organisation = 8
 		}
 		
 		doctrine = yes	
@@ -864,7 +864,7 @@ technologies = {
 		xp_unlock_cost = 80
 		category_all_infantry = {
 			default_morale = 0.2
-			max_organisation = 10
+			max_organisation = 8
 		}
 		# faster planning
 		planning_speed = 0.1
@@ -1133,7 +1133,7 @@ technologies = {
 		
 	
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 8
 			soft_attack = 0.05
 		}
 		land_night_attack = 0.10
@@ -1668,7 +1668,7 @@ technologies = {
 		
 	    
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 8
 			default_morale = 0.05
 		}
 		category_tanks = {
@@ -2719,7 +2719,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 8
 		}
 		
 		
@@ -3843,7 +3843,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 80
 		
-		max_dig_in = 5
+		max_dig_in = 3
 		cas_damage_reduction = 0.05
 		
 		
@@ -3890,7 +3890,7 @@ technologies = {
 		additional_brigade_column_size = 1		
 		
 		category_all_infantry = {
-			max_organisation = 10	
+			max_organisation = 8	
 		}
 
 		enable_tactic = tactic_relentless_assault
@@ -4457,20 +4457,20 @@ technologies = {
 			default_morale = 0.1
 		}
 		armored_car = {
-			max_organisation = 10
+			max_organisation = 8
 			default_morale = 0.1
 		}	
 
 		mechanized = {
-			max_organisation = 10
+			max_organisation = 8
 			default_morale = 0.1
 		}
 		motorized = {
-			max_organisation = 10
+			max_organisation = 8
 			default_morale = 0.1
 		}	
 		amphibious_mechanized = {
-			max_organisation = 10
+			max_organisation = 8
 			default_morale = 0.1
 		}	
 		
