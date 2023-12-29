@@ -289,7 +289,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_heavy_battery
-			convert_cost_ic = 700
+			convert_cost_ic = 1200
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -317,12 +317,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_heavy_battery
-			convert_cost_ic = 900
+			convert_cost_ic = 1300
 		}
 		
 		can_convert_from = {
 			module = ship_heavy_battery_1
-			convert_cost_ic = 600
+			convert_cost_ic = 1100
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -350,12 +350,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_heavy_battery
-			convert_cost_ic = 1200
+			convert_cost_ic = 1400
 		}
 		
 		can_convert_from = {
 			module = ship_heavy_battery_2
-			convert_cost_ic = 600
+			convert_cost_ic = 1100
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -404,7 +404,7 @@ equipment_modules = {
 		
 		add_stats = {
 			hg_attack = 30
-			build_cost_ic = 1700
+			build_cost_ic = 1900
 		}
 		build_cost_resources = {
 			steel = 1
@@ -2236,7 +2236,7 @@ equipment_modules = {
 		add_stats = {
 			surface_detection = 10
 			sub_detection = 4
-			build_cost_ic = 180
+			build_cost_ic = 220
 			naval_light_gun_hit_chance_factor = 0.05
 			naval_heavy_gun_hit_chance_factor = 0.05
 		}
@@ -2252,7 +2252,7 @@ equipment_modules = {
 		add_stats = {
 			surface_detection = 16
 			sub_detection = 8
-			build_cost_ic = 200
+			build_cost_ic = 260
 			naval_light_gun_hit_chance_factor = 0.1
 			naval_heavy_gun_hit_chance_factor = 0.1
 		}
@@ -2278,7 +2278,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			carrier_size = 2
-			build_cost_ic = 1950
+			build_cost_ic = 2500
 		}
 		manpower = 500 #outside the add_stats section for code reasons
 		multiply_stats = {
@@ -2287,7 +2287,7 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 1
 		}
-		dismantle_cost_ic = 700
+		dismantle_cost_ic = 2000
 	}
 
 ### #  # ### #       ###  ##  #  # # #  ## 
