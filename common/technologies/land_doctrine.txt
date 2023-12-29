@@ -480,6 +480,7 @@ technologies = {
 		
 		category_all_infantry = {
 			max_organisation = 8
+			supply_consumption_factor = -0.05
 		}
 		
 		doctrine = yes	
@@ -598,12 +599,15 @@ technologies = {
 		
 		motorized = {
 			max_organisation = 5
+			supply_consumption_factor = -0.05
 		}
 		mechanized = {
 			max_organisation = 5
+			supply_consumption_factor = -0.05
 		}
 		amphibious_mechanized = {
 			max_organisation = 5
+			supply_consumption_factor = -0.05
 		}		
 
 		
