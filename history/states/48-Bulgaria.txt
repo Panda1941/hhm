@@ -20,9 +20,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 11
+			industrial_complex = 8
 			air_base = 3
-			arms_factory = 1
+			arms_factory = 2
 		}
 		add_core_of = BUL
 	}
