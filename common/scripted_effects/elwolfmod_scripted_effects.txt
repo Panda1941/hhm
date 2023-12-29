@@ -21,16 +21,16 @@ elwolfmod_vichy_france = {
 		transfer_state = 806
 	}
 
-	#ITA = { 
-	#	transfer_state = 735 
-	#	735 = { 
-	#		add_compliance = 100 
-	#	}
-	#	#transfer_state = 1 
-	#	#1 = {
-	#	#	add_compliance = 100
-	#	#}
-	#}
+	ITA = { 
+		transfer_state = 735 
+		735 = { 
+			add_compliance = 100 
+		}
+		transfer_state = 1 
+		1 = {
+			add_compliance = 100
+		}
+	}
 
 	FRA = {
 		transfer_state = 713
@@ -404,23 +404,10 @@ elwolfmod_capitulations_on_actions = {
 		}
 
 		ITA = {
-			if = {
-				limit = {
-					ENG = {
-						has_idea = elwolfmod_noasia_research
-					}
-				}
-				#WST = { add_threat = 40 }
-				add_named_threat = { 
-					threat = 6.3 
-					name = elwolf_yug
-				}
-			} 
-			else = {
-				add_named_threat = { 
-					threat = 6.3 
-					name = elwolf_yug
-				}
+			add_ideas = peace_training
+			add_named_threat = { 
+				threat = 6.3 
+				name = elwolf_yug
 			}
 			
 			transfer_state = 103
@@ -441,19 +428,20 @@ elwolfmod_capitulations_on_actions = {
 			}
             transfer_state = 803
             transfer_state = 106
+            transfer_state = 77
+
+			give_resource_rights = { receiver = ITA state = 803 }
+			give_resource_rights = { receiver = ITA state = 106 }	
 		}
+
 		803 = {	
-				add_core_of = BUL
-			}
+			add_core_of = BUL
+		}
 		106 = {	
-				add_core_of = BUL
-			}
-        IF = {
-			limit = { NOT = { has_full_control_of_state = 77} }
-			77 = {
-				add_core_of = BUL
-				transfer_state_to = BUL
-			}
+			add_core_of = BUL
+		}
+		77 = {
+			add_core_of = BUL
 		}
 
 			
@@ -478,8 +466,6 @@ elwolfmod_capitulations_on_actions = {
 				level = 1
 			}
 		}
-		give_resource_rights = { receiver = ITA state = 803 }
-		give_resource_rights = { receiver = ITA state = 106 }	
 
 
 		HUN = {
@@ -509,15 +495,14 @@ elwolfmod_capitulations_on_actions = {
 	if = {
 		limit = { 
 			original_tag = GRE 
-			
-				ITA = { has_war_with = GRE }
-				
-			
+			ITA = { has_war_with = GRE }
 		} 
 
 		BUL = {
             transfer_state = 731
             transfer_state = 184
+        	give_resource_rights = { receiver = ITA state = 184 }
+			give_resource_rights = { receiver = ITA state = 731 }
 		}
 
 		ITA = {
@@ -533,25 +518,24 @@ elwolfmod_capitulations_on_actions = {
 		}
 		
 		184 = {	
-				add_core_of = BUL
-			}
+			add_core_of = BUL
+		}
 		731 = {	
-				add_core_of = BUL
-			}
+			add_core_of = BUL
+		}
+
 		731 = {
-				remove_building = {
-					type = industrial_complex
-					level = 3
-				}
+			remove_building = {
+				type = industrial_complex
+				level = 3
 			}
-			184 = {
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
+		}
+		184 = {
+			remove_building = {
+				type = arms_factory
+				level = 1
 			}
-            give_resource_rights = { receiver = ITA state = 184 }
-			give_resource_rights = { receiver = ITA state = 731 }
+		}
 		341 = {
 			set_demilitarized_zone = no
 			add_core_of = BUL
