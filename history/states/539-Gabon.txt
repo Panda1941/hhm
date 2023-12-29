@@ -1,6 +1,11 @@
 state={
 	id=539
 	name="STATE_539"
+	resources={
+		steel=10 # was: 32
+		tungsten=100 # was: 308
+		aluminium = 10 # was: 25
+	}
 
 	history={
 		owner = FRA
