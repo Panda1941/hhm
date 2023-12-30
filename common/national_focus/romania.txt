@@ -816,14 +816,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			81 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -3109,12 +3101,8 @@ mio:ROM_Braila_organization = {
 
 		completion_reward = {
 			add_manpower = 8000
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
-			}
 			46 = {				
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 	}
@@ -3143,17 +3131,17 @@ mio:ROM_Braila_organization = {
 			add_manpower = 40000
 			add_offsite_building = {
 				type = industrial_complex
-				level = 5
+				level = 3
 			}
 			46 = {				
-				add_extra_state_shared_building_slots = 7
+				add_extra_state_shared_building_slots = 3
 			}
 			79 = {
 				
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -3192,7 +3180,7 @@ mio:ROM_Braila_organization = {
 				level = 2
 			}
 			81 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -3239,14 +3227,10 @@ mio:ROM_Braila_organization = {
 			add_manpower = 45000
 			add_offsite_building = {
 				type = industrial_complex
-				level = 1
-			}
-			add_offsite_building = {
-				type = dockyard
-				level = 1
+				level = 2
 			}
 			79 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 			}
 		}
 	}

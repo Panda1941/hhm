@@ -261,7 +261,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.08
 				global_building_slots_factor = 0.1
 			}
 		}
@@ -274,7 +274,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				consumer_goods_factor = -0.20
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -286,7 +286,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				consumer_goods_factor = -0.20
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -350,8 +350,6 @@ ideas = {
 			}
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.2
 				research_speed_factor = 0.1
 			}
 		}
