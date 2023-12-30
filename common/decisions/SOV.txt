@@ -149,7 +149,7 @@ SOV_industry_relocation = {
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
-					amount = 60
+					amount = -60
 					producer = SOV
 				}
 			}
