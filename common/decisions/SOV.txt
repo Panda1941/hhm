@@ -1693,34 +1693,5 @@ SOV_great_patriotic_war = {
 	}
 }
 economy_decisions = {
-
-	cancel_trade = {
-
-		icon = generic_construction
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		cost = 0
-		fire_only_once = yes
-
-		days_remove = 30
-
-		available = {
-			original_tag = SOV
-		}
-
-		visible = {
-			original_tag = SOV
-		}
-
-		modifier = {
-			
-		}
-
-		complete_effect = {
-			add_ideas = SOV_no_more_trade
-		}
-	}
+	
 }
