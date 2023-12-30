@@ -207,7 +207,7 @@ non_core = {
 
 # On States that are controlled by a non-core country
 non_core_controller = {
-	local_building_slots_factor = -0.5
+	local_building_slots_factor = -0.2
 
 	local_factories = -0.75
 	#local_manpower = -0.75
@@ -342,39 +342,35 @@ ITA_military_agreements = {
 
 # applies when stability > 50%
 stability_good_modifier = {
-	industrial_capacity_factory = 0.1
-	industrial_capacity_dockyard = 0.1
+	industrial_capacity_factory = 0.05
+	industrial_capacity_dockyard = 0.05
 	consumer_goods_factor = -0.1
-	political_power_factor = 0.1
+	political_power_factor = 0.05
 }
 
 # applies when stability < 50%
 stability_bad_modifier = {
-	industrial_capacity_factory = -0.2
-	industrial_capacity_dockyard = -0.2
-	consumer_goods_factor = 0.05
-	political_power_factor = -0.1
+	industrial_capacity_factory = -0.1
+	industrial_capacity_dockyard = -0.1
+	consumer_goods_factor = 0.10
+	political_power_factor = -0.05
 }
 
 war_support_good_modifier = {
 	mobilization_speed = 0.30 #in 1/1000 of 1 %
-	industrial_capacity_factory = 0.1
-	army_core_attack_factor = 0.1
-	army_core_defence_factor = 0.1
+	industrial_capacity_factory = 0.05
 	command_power_gain_mult = 0.5
 }
 
 war_support_bad_modifier = {
 	mobilization_speed = -0.500 # Reduce mobilization speed by half.
-	industrial_capacity_factory = -0.1
-	army_noncore_attack_factor = -0.2  # Attacking or defending on non-core takes a penalty.
-	army_noncore_defence_factor = -0.2
+	industrial_capacity_factory = -0.05
 	command_power_gain_mult = -0.95
 	surrender_limit = -0.3	
 }
 
 war_support_during_war = { #Applied during war, scaled from 0-100% with war support, not split.
-	stability_factor = -0.4
+	stability_factor = -0.3
 }
 
 
@@ -385,28 +381,10 @@ attache_sent = {
 # Difficulty modifiers
 
 diff_very_easy_player = {
-	# production_factory_max_efficiency_factor = 0.3
-	# research_speed_factor = 0.15
-	# political_power_factor = 0.5
-	# production_lack_of_resource_penalty_factor = -0.8
-	# army_fuel_consumption_factor = -0.5
-	# air_fuel_consumption_factor = -0.5
- 	# navy_fuel_consumption_factor = -0.5
-	# supply_consumption_factor = -0.1
-	# no_supply_grace = 72
 	no_supply_grace = 36
 }
 
 diff_easy_player = {
-	# production_factory_max_efficiency_factor = 0.2
-	# research_speed_factor = 0.07
-	# political_power_factor = 0.25
-	# production_lack_of_resource_penalty_factor = -0.3
-	# army_fuel_consumption_factor = -0.25
-	# air_fuel_consumption_factor = -0.25
- 	# navy_fuel_consumption_factor = -0.25
-	# supply_consumption_factor = -0.05
-	# no_supply_grace = 48
 	no_supply_grace = 36
 }
 
@@ -415,19 +393,10 @@ diff_normal_player = {
 }
 
 diff_hard_player = {
-	# production_factory_max_efficiency_factor = -0.2
-	# research_speed_factor = -0.15
-	# political_power_factor = -0.1
-	# supply_consumption_factor = 0.05
-	# no_supply_grace = 24
 	no_supply_grace = 36
 }
 
 diff_very_hard_player = {
-	# production_factory_max_efficiency_factor = -0.3
-	# research_speed_factor = -0.30
-	# political_power_factor = -0.15
-	# supply_consumption_factor = 0.1
 	no_supply_grace = 36
 }
 
@@ -437,7 +406,6 @@ diff_very_easy_ai = {
 }
 
 diff_easy_ai = {
-	# no_supply_grace = 24
 	no_supply_grace = 36
 }
 
@@ -446,92 +414,47 @@ diff_normal_ai = {
 }
 
 diff_hard_ai = {
-	# army_fuel_consumption_factor = -0.25
-	# air_fuel_consumption_factor = -0.25
- 	# navy_fuel_consumption_factor = -0.25
-	# no_supply_grace = 48
 	no_supply_grace = 36
 }
 
 diff_very_hard_ai = {
-	# army_fuel_consumption_factor = -0.5
-	# air_fuel_consumption_factor = -0.5
- 	# navy_fuel_consumption_factor = -0.5
-	# no_supply_grace = 72
 	no_supply_grace = 36
 }
 
 
 diff_strong_ai_generic = {
-	# fightyness
-	# dig_in_speed_factor = 0.25
-	# planning_speed = 0.25
-	# supply_consumption_factor = -0.25
-	# army_morale_factor = 0.15
-	# land_reinforce_rate = 0.02
-
-	# defensivness
-	# army_core_attack_factor = 0.15
-	# army_core_defence_factor = 0.15
-
-	# attrition = -0.075
-
-	# production/research
-	# production_factory_max_efficiency_factor = 0.15
-	# production_factory_efficiency_gain_factor = 0.25
-	# industrial_capacity_dockyard = 0.2
-	# political_power_factor = 0.25
-	# research_speed_factor = 0.1
-	# production_lack_of_resource_penalty_factor = -0.3
-
-	# fuel
-	# army_fuel_consumption_factor = -0.40
-	# air_fuel_consumption_factor = -0.40
- 	# navy_fuel_consumption_factor = -0.40
-
-	# xp gain
-	# experience_gain_air_factor = 0.25
-	# experience_gain_army_factor = 0.25
-	# experience_gain_navy_factor = 0.25
-	# air_mission_xp_gain_factor = 0.25
-	# experience_gain_army_unit_factor = 0.10
-	# experience_gain_navy_unit_factor = 0.10
 }
 
 naval_mines_effect = {
-	naval_accidents_chance = 0.05
-	naval_speed_factor = -0.05
-	naval_invasion_penalty = 0.5
+	naval_accidents_chance = 0.08
+	naval_speed_factor = -0.08
+	naval_invasion_penalty = 0.333
 }
 
 air_wing_experience_bonus_max = {
-	air_attack_factor = 0.2
-	#air_defence_factor = 0.2
-	air_agility_factor = 0.3
-	air_night_penalty = -0.2
-	#air_weather_penalty = -0.3
+	air_attack_factor = 0.06
+	air_agility_factor = 0.06
+	air_night_penalty = -0.1
 }
 
 air_wing_experience_malus_min = {
-	air_attack_factor = -0.15
-	#air_defence_factor = -0.15
-	air_agility_factor = -0.15
-	air_night_penalty = 0.15
-	#air_weather_penalty = 0.15
+	air_attack_factor = -0.06
+	air_agility_factor = -0.06
+	air_night_penalty = 0.1
 }
 
 ship_experience_bonus_max = {
-    naval_damage_factor = 0.3
-    naval_defense_factor = 0.2
+    naval_damage_factor = 0.06
+    naval_defense_factor = 0.06
 }
 
 ship_experience_malus_min = {
-    naval_damage_factor = -0.1
-    naval_defense_factor = -0.1
+    naval_damage_factor = -0.06
+    naval_defense_factor = -0.06
 }
 
 carrier_experience_bonus_max = {
-	fighter_sortie_efficiency = 0.2
+	fighter_sortie_efficiency = 0.1
 }
 
 carrier_experience_malus_min = {
@@ -554,17 +477,17 @@ pride_of_the_fleet_sunk_temporary = {
 }
 
 water_modifier_shark_infested = {
-	navy_casualty_on_sink = 0.6
+	navy_casualty_on_sink = 0.8
 }
 
 screening_bonus = {
-  naval_retreat_speed = 0.2
-  convoy_retreat_speed = 0.2
-  naval_hit_chance = 0.4
+  naval_retreat_speed = 0.1
+  convoy_retreat_speed = 0.1
+  naval_hit_chance = 0.2
 }
 
 capital_screening_bonus = {
-  naval_retreat_speed = 0.2
+  naval_retreat_speed = 0.1
   sortie_efficiency = 0.1
 }
 
@@ -602,7 +525,7 @@ active_decryption_modifier = {
 
 # modifiers applied to allied divisions entering the intel network
 intel_network_state_level_bonus = {
-	amphibious_invasion_defence = 1
+	amphibious_invasion_defence = 0.25
 	planning_speed = 0.5
 }
 

@@ -246,7 +246,7 @@ if = {
 			add_tech_bonus = {
 				name = FRA_heavy_armor_focus
 				bonus = 1
-				ahead_reduction = 2
+				ahead_reduction = 0.5
 				uses = 1
 				category = armor
 			}
@@ -324,7 +324,7 @@ if = {
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
 				bonus = 1
-				ahead_reduction = 2
+				ahead_reduction = 0.5
 				uses = 1
 				category = armor
 			}
