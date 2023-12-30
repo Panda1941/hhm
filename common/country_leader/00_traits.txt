@@ -7884,10 +7884,10 @@ leader_traits = {
 
 	navy_chief_decisive_battle_2 = {
 		sprite = 3
-		navy_capital_ship_attack_factor = 0.8
-		navy_capital_ship_defence_factor = 0.8
-		navy_screen_attack_factor = 0.8
-		navy_screen_defence_factor = 0.8
+		navy_capital_ship_attack_factor = 0.08
+		navy_capital_ship_defence_factor = 0.08
+		navy_screen_attack_factor = 0.08
+		navy_screen_defence_factor = 0.08
 		experience_gain_navy = @chief_experience_gain_medium
 
 		command_cap = @tier2
@@ -8083,7 +8083,7 @@ leader_traits = {
 
 	navy_anti_submarine_1 = {
 		sprite = 4
-		navy_submarine_detection_factor = 0.8
+		navy_submarine_detection_factor = 0.08
 		#experience_gain_navy = @experience_gain_low
 
 		command_cap = @tier1
@@ -8279,7 +8279,7 @@ leader_traits = {
 
 	navy_submarine_1 = {
 		sprite = 4
-		navy_submarine_attack_factor = 0.8
+		navy_submarine_attack_factor = 0.08
 		navy_submarine_defence_factor = 0.08
 		#experience_gain_navy = @experience_gain_low
 
