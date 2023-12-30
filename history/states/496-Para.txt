@@ -10,7 +10,7 @@ state={
 		steel=3 # was: 4
 	}
 
-	history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
+	history={
         owner = BRA
 		victory_points = {
 			7476 3
