@@ -15,7 +15,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 2
+			industrial_complex = 1
 			air_base = 1
 		}
 		
@@ -36,7 +36,7 @@ state = {
 	
 	manpower = 4137910 #Was 6275820 but was divided by 2 due to Bukhara (830) and then got 1M back
 	buildings_max_level_factor = 1.000
-	state_category = city
+	state_category = metropolis
 
 	local_supplies = 2.0 
 	
