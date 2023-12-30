@@ -410,22 +410,22 @@ sub_units = {
 		
 		forest = {
 			movement = 0.15
-			attack = 0.10
+			attack = 0.05
 		}
 		hills = {
 			movement = 0.15
-			attack = 0.05
+			attack = 0.02
 		}
 		mountain = {
 			movement = 0.10
-			defence = 0.05
+			defence = 0.02
 		}
 		jungle = {
 			movement = 0.10
 		}
 		plains = {
 			movement = 0.1
-			attack = 0.05
+			attack = 0.02
 		}
 		
 		same_support_type = recon # blocks adding other recon types to template
@@ -498,8 +498,8 @@ sub_units = {
 		}
 		
 		snow = { #This can end up stacking with terrain benefits
-			attack = 0.25
-			defence = 0.15
+			attack = 0.2
+			defence = 0.1
 			movement = 0.20
 		}
 	}

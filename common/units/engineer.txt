@@ -161,18 +161,18 @@ sub_units = {
 		can_be_parachuted = yes
 
 		marsh = {
-			attack = 0.10
-			defence = 0.20
+			attack = 0.05
+			defence = 0.1
 			movement = 0.2
 		}
 
 		fort = {
-			attack = 0.15
-			defence = 0.20
+			attack = 0.1
+			defence = 0.1
 		}
 
 		river = {
-			attack = 0.15
+			attack = 0.1
 			defence = 0.05
 			movement = 0.25
 		}
