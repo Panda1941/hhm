@@ -577,8 +577,8 @@ technologies = {
 	###############
 	concentrated_industry = {
 
-		industrial_capacity_factory = 0.08
-		industrial_capacity_dockyard = 0.08
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
 
 		global_building_slots_factor = 0.25
 		industry_air_damage_factor = 0.1
@@ -653,8 +653,8 @@ technologies = {
 	
 	concentrated_industry2 = {
 
-		industrial_capacity_factory = 0.08
-		industrial_capacity_dockyard = 0.08
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		industry_air_damage_factor = 0.1
 		#industry_repair_factor = 0.05
@@ -696,8 +696,8 @@ technologies = {
 	
 	concentrated_industry3 = {
 
-		industrial_capacity_factory = 0.08
-		industrial_capacity_dockyard = 0.08
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		industry_air_damage_factor = 0.10
 		#industry_repair_factor = 0.05
@@ -738,8 +738,8 @@ technologies = {
 	
 	concentrated_industry4 = {
 
-		industrial_capacity_factory = 0.12
-		industrial_capacity_dockyard = 0.12
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
 		global_building_slots_factor = 0.25
 		industry_air_damage_factor = 0.10
 		#industry_repair_factor = 0.05
@@ -781,8 +781,8 @@ technologies = {
 	
 	concentrated_industry5 = {
 
-		industrial_capacity_factory = 0.12
-		industrial_capacity_dockyard = 0.12
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
 		global_building_slots_factor = 0.25
 		industry_air_damage_factor = 0.10
 		#industry_repair_factor = 0.05
@@ -829,8 +829,8 @@ technologies = {
 	
 	concentrated_industry6 = {
 
-		industrial_capacity_factory = 0.12
-		industrial_capacity_dockyard = 0.12
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
 		global_building_slots_factor = 0.25
 		industry_air_damage_factor = 0.10
 		#industry_repair_factor = 0.05
