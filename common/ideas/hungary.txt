@@ -443,7 +443,7 @@ ideas = {
 		HUN_hungaro_german_trade_agreement = {
 		
 			available = {
-				has_war = no
+				#has_war = no
 			}
 
 			picture = HUN_hungaro_german_trade_treaty
@@ -460,7 +460,7 @@ ideas = {
 		
 		
 			available = {
-				has_war = no
+				#has_war = no
 			}
 
 			modifier = {

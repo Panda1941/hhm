@@ -461,25 +461,85 @@
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 		
-			create_wargoal = {
+			declare_war_on = {
 				target = ENG
 				type = annex_everything
-				expire = 0
 			}
-			create_wargoal = {
-				target = HOL
+			ENG = {
+				declare_war_on_enemy_faction = yes
+			}
+			declare_war_on = {
+				target = AST
 				type = annex_everything
-				expire = 0
 			}
-			create_wargoal = {
-				target = USA
+			if = {
+				limit = {
+					NZL = { exists = yes }
+				}
+				declare_war_on = {
+					target = NZL
+					type = annex_everything
+				}
+			}
+			declare_war_on = {
+				target = RAJ
 				type = annex_everything
-				expire = 0
 			}
-			create_wargoal = {
+			declare_war_on = {
+				target = SAF
+				type = annex_everything
+			}
+			# declare_war_on = {
+			# 	target = MAL
+			# 	type = annex_everything
+			# }
+			if = {
+				limit = {
+					INS = { exists = yes }
+				}
+				declare_war_on = {
+					target = INS
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					PHI = { exists = yes }
+				}
+				declare_war_on = {
+					target = PHI
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					BRA = { exists = yes }
+				}
+				declare_war_on = {
+					target = BRA
+					type = annex_everything
+				}
+			}
+			random_country = { 
+				limit = { original_tag = HOL  has_government = democratic}
+				JAP = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}	
+			}
+			declare_war_on = {
 				target = FRA
 				type = annex_everything
-				expire = 0
+			}
+			declare_war_on = {
+				target = CAN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = USA
+				type = annex_everything
 			}
 			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
 			JAP = {

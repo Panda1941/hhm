@@ -319,7 +319,7 @@ focus_tree = {
 		relative_position_id = BUL_national_railway_lines
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			controls_state = 48
@@ -347,7 +347,7 @@ focus_tree = {
 		relative_position_id = BUL_national_railway_lines
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			controls_state = 48
@@ -1294,7 +1294,7 @@ YUG = {
 		relative_position_id = BUL_acquire_modern_tools
 		x = -5
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			NOT = { has_idea = BUL_army_restrictions }
@@ -1353,7 +1353,7 @@ YUG = {
 		relative_position_id = BUL_acquire_modern_tools
 		x = -7
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			controls_state = 211
@@ -1387,7 +1387,7 @@ YUG = {
 		relative_position_id = BUL_expand_varna_naval_base
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			controls_state = 211
@@ -2183,7 +2183,7 @@ YUG = {
 		relative_position_id = BUL_join_the_tripartite_pact
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			date > 1940.06.01
@@ -2214,7 +2214,7 @@ YUG = {
 		relative_position_id = BUL_total_war
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			any_allied_country = {
@@ -2339,7 +2339,7 @@ YUG = {
 		relative_position_id = BUL_total_war
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			is_subject = no

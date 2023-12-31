@@ -460,6 +460,42 @@ operations = {
 					target = ENG 
 					type = annex_everything
 				}
+				ENG = {
+				declare_war_on_enemy_faction = yes
+			}
+			declare_war_on = {
+				target = AST
+				type = annex_everything
+			}
+			if = {
+				limit = {
+					NZL = { exists = yes }
+				}
+				declare_war_on = {
+					target = NZL
+					type = annex_everything
+				}
+			}
+			declare_war_on = {
+				target = RAJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SAF
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CAN
+				type = annex_everything
+			}
+			#declare_war_on = {
+			#	target = USA
+			#	type = annex_everything
+			#}
 			}
 	
 			if = { limit = { country_exists = ENG }	ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } } }

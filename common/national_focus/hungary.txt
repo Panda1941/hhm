@@ -541,7 +541,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
