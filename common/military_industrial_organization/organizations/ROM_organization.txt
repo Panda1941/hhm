@@ -18,7 +18,7 @@ ROM_leonidas_works_organization = {
 		has_dlc = "Death or Dishonor"
 	}
 	available = {
-		FROM = { has_completed_focus = ROM_acquire_modern_tank }
+		#FROM = { has_completed_focus = ROM_acquire_modern_tank }
 	}
 	initial_trait = {
 		name = ROM_mio_trait_mobile_tank_destroyers
@@ -61,7 +61,7 @@ ROM_galati_shipyard_organization = {
 		has_dlc = "Death or Dishonor"
 	}
 	available = {
-		FROM = { has_completed_focus = ROM_coastal_defense_navy }
+		#FROM = { has_completed_focus = ROM_coastal_defense_navy }
 	}
 	initial_trait = {
 		name = ROM_mio_trait_coastal_defense_production
@@ -84,7 +84,7 @@ ROM_Braila_organization = {
 		has_dlc = "Death or Dishonor"
 	}
 	available = {
-		FROM = { has_completed_focus = ROM_black_sea_dominance }
+		#FROM = { has_completed_focus = ROM_black_sea_dominance }
 	}
 }
 
@@ -126,7 +126,7 @@ ROM_iar_organization = {
 		}
 
 		available = {
-			FROM = { has_completed_focus = ROM_invest_in_the_iar }
+			#FROM = { has_completed_focus = ROM_invest_in_the_iar }
 		}
 
 		equipment_bonus = {

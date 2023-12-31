@@ -341,10 +341,6 @@ SOV_okmo_organization = {
 	allowed = {	
 		OR = {
 			tag = SOV 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
 		}
 	}
 
@@ -355,24 +351,6 @@ SOV_okmo_organization = {
 				FROM = { NOT = { original_tag = SOV } }
 			}
 			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_okmo_mio_flag
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = SOV
-				}
-				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
 		}
 	}
 
@@ -731,10 +709,6 @@ SOV_nevskoye_design_bureau_organization = {
 	allowed = {	
 		OR = {
 			tag = SOV 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
 		}
 	}
 	
@@ -1595,10 +1569,6 @@ SOV_ilyushin_design_bureau_organization = {
 	allowed = {	
 		OR = {
 			tag = SOV 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
 		}
 	}
 	
@@ -2313,10 +2283,6 @@ SOV_gaz_organization = {
 	allowed = {	
 		OR = {
 			tag = SOV 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
 			AND = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
