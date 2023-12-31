@@ -1397,7 +1397,7 @@ equipments = {
 			}
 
 			special_type_slot_1 = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					tank_ammo_type
 				}
@@ -1411,21 +1411,6 @@ equipments = {
 				}
 			}
 
-			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-				}
-			}
-
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-				}
-			}
 
 		}
 		module_count_limit = {
