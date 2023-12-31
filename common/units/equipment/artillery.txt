@@ -167,7 +167,7 @@ equipments = {
 
 		defense = 30
 		breakthrough = 15
-		soft_attack = 65
+		soft_attack = 70
 		
 		build_cost_ic = 20
 		resources = {

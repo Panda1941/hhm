@@ -973,7 +973,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1031,7 +1031,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1134,7 +1134,7 @@ technologies = {
 
 		
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1189,7 +1189,7 @@ technologies = {
 
 		
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1323,7 +1323,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1458,7 +1458,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1523,7 +1523,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1655,7 +1655,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1775,7 +1775,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1844,7 +1844,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1907,7 +1907,7 @@ technologies = {
 
 		
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1972,7 +1972,7 @@ technologies = {
 		tech_air_damage_factor = -0.02
 
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -2136,7 +2136,7 @@ technologies = {
 		
 		xor = { antitank3 }
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -2338,7 +2338,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -2430,7 +2430,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -2631,7 +2631,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -2802,7 +2802,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -2889,7 +2889,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -2973,7 +2973,7 @@ technologies = {
 
 		
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -3057,7 +3057,7 @@ technologies = {
 
 		
 
-		research_cost = 2
+		research_cost = 1
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
