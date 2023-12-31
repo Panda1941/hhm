@@ -100,7 +100,7 @@ GER_porsche_organization = {
 			reliability = 0.1
 		}
 		
-		available = { original_tag = GER }
+		
 
 		position = { x=0 y=2 }  
 		ai_will_do = {
@@ -228,7 +228,7 @@ GER_henschel_organization = {
 			soft_attack = 0.04
 			reliability = 0.1
 		}
-		available = { original_tag = GER }
+		
 
 		position = { x=8 y=3 }  
 		ai_will_do = {
@@ -319,7 +319,7 @@ GER_man_organization = {
 			soft_attack = 0.04
 			reliability = 0.1
 		}
-		available = { original_tag = GER }
+		
 
 		position = { x=8 y=3 }  
 		ai_will_do = {
@@ -346,7 +346,7 @@ GER_man_organization = {
 			soft_attack = 0.1
 			ap_attack = 0.1
 		}
-		available = { original_tag = GER }
+		
 	}
 }
 
@@ -404,7 +404,7 @@ GER_daimler_benz_organization = {
 				date > 1937.1.1
 			}
 		}
-		available = { original_tag = GER }
+		
 	}
 
 	add_trait = {
@@ -431,7 +431,7 @@ GER_daimler_benz_organization = {
 				date > 1937.1.1
 			}
 		}
-		available = { original_tag = GER }
+		
 	}
 }
 
