@@ -757,7 +757,6 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = progress_cult_focus
-			add_ideas = SOV_war_heroes_ns
 		}
 	}
 
@@ -2436,6 +2435,7 @@ date > 1940.09.01
 
 		completion_reward = {
 			add_ideas = SOV_barrier_troops
+			add_ideas = SOV_war_heroes_ns
 		}
 	}
 

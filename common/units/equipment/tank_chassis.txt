@@ -545,7 +545,7 @@ equipments = {
 	}
 	
 	medium_tank_chassis_4 = {
-		abbreviation = "mt4"
+		abbreviation = "cheapium2"
 		derived_variant_name = medium_tank_equipment_4
 		visual_level = 2
 		year = 1942
@@ -555,7 +555,7 @@ equipments = {
 		module_slots = inherit
 		fuel_consumption = 0.25
 		maximum_speed = 6
-		build_cost_ic = 2.5
+		build_cost_ic = 4.5
 		reliability = 1.1
 		armor_value = 60
 		defense = 2
@@ -578,7 +578,7 @@ equipments = {
 	}
 	
 	medium_tank_chassis_5 = {
-		abbreviation = "mt5"
+		abbreviation = "cheapium1"
 		derived_variant_name = medium_tank_equipment_5
 		visual_level = 2
 		year = 1941
@@ -588,7 +588,7 @@ equipments = {
 		module_slots = inherit
 		fuel_consumption = 0.25
 		maximum_speed = 6
-		build_cost_ic = 1.5
+		build_cost_ic = 3.5
 		reliability = 1.0
 		armor_value = 50
 		defense = 2

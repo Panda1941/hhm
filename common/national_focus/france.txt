@@ -245,9 +245,9 @@ if = {
 			army_experience = 50
 			add_tech_bonus = {
 				name = FRA_heavy_armor_focus
-				bonus = 0.75
-				uses = 2
-				category = armor
+				bonus = 1.5
+				uses = 1
+				category = cat_heavy_armor
 			}
 		}
 	}
@@ -322,9 +322,15 @@ if = {
 			army_experience = 50
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
-				bonus = 0.75
-				uses = 2
-				category = armor
+				bonus = 1.5
+				uses = 1
+				category = cat_medium_armor
+			}
+			add_tech_bonus = {
+				name = FRA_light_medium_armor
+				bonus = 0.5
+				uses = 1
+				category = cat_medium_armor
 			}
 		}
 	}

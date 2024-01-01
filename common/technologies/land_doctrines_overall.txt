@@ -288,40 +288,37 @@ technologies = {
 		
 	}
 	
-	#mass_assault_overall_2 = {
-	#	
-	#	#doctrine_name = "MASS_ASSAULT_OVERALL"
-#
-	#	
-	#	allow = {
-	#		tag = SOV 
-    #        date > 1942.01.01			
-	#	}
-#
-	#	doctrine = yes
-#
-	#	research_cost = 1
-	#	xp_research_type = army
-	#	xp_unlock_cost = 50
-	#	
-	#	categories = {
-	#		land_doctrine
-	#	}
-#
-	#	folder = {
-	#		name = land_doctrine_folder
-	#		position = { x = 0 y = 3 }
-	#	}
-	#	
-	#	
-	#	
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-#
-	#	# Effects
-	#	industrial_capacity_factory = 0.2
-	#}
-	
-	
+	mass_assault_overall_2 = {
+		
+		#doctrine_name = "MASS_ASSAULT_OVERALL"
+		
+		allow = {
+			tag = SOV 
+            date > 1942.03.01			
+		}
+
+		doctrine = yes
+
+		research_cost = 1
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+		categories = {
+			land_doctrine
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 3 }
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		# Effects
+		industrial_capacity_factory = 0.2
+	}
 }
