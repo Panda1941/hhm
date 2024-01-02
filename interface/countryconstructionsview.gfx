@@ -90,7 +90,7 @@ spriteTypes = {
 		name = "GFX_non_available_factory_icon"
 		textureFile = "gfx//interface//non_available_factory_icon.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ongoing_market_contract_icon"
 		textureFile = "gfx//interface//construction//ongoing_market_contract_icon.dds"
