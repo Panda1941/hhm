@@ -142,12 +142,12 @@ techstealing = {
 	default = {
 		name = banned
 		text = "GBanned"
-		desc = "No tech stealing operations (Reccomended)"
+		desc = "Tech stealing banned (Reccomended)"
 	}
 	option = {
 		name = onehundred
-		text = "R100%"
-		desc = "Only tech steal 100%'s (Not Reccomended)"
+		text = "RAllowed"
+		desc = "Tech stealing allowed (Not Reccomended)"
 	}
 }
 

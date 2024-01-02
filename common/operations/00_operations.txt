@@ -458,6 +458,10 @@ operation_steal_tech_civilian = { ### 12 3/35
 			target = FROM
 			value > 0
 		}
+		has_game_rule = {
+			rule = techstealing
+			option = onehundred
+		}
 
 	}
 
@@ -563,6 +567,10 @@ operation_steal_tech_army = { ### 16 3/55
 		network_national_coverage = {
 			target = FROM
 			value > 0
+		}
+		has_game_rule = {
+			rule = techstealing
+			option = onehundred
 		}
 	}
 
@@ -677,6 +685,10 @@ operation_steal_tech_navy = { ### 17 3/55
 			target = FROM
 			value > 0
 		}
+		has_game_rule = {
+			rule = techstealing
+			option = onehundred
+		}
 
 	}
 
@@ -780,6 +792,10 @@ operation_steal_tech_airforce = { ### 18 3/55
 		network_national_coverage = {
 			target = FROM
 			value > 0
+		}
+		has_game_rule = {
+			rule = techstealing
+			option = onehundred
 		}
 
 	}
