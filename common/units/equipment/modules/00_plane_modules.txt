@@ -740,7 +740,7 @@ equipment_modules = {
 		add_stats = {
 			air_attack = 32
 			build_cost_ic = 14
-			air_agility = -12
+			air_agility = -16
 			weight = 16
 		}
 		xp_cost = 0
