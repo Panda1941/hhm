@@ -239,15 +239,21 @@ if = {
 		available_if_capitulated = yes
 		relative_position_id = FRA_begin_rearmament
 
-		mutually_exclusive = {focus = FRA_aggressive_focus }
+		mutually_exclusive = {focus = FRA_aggressive_focus focus = FRA_aggressive_focus_heavy }
 
 		completion_reward = {
 			army_experience = 50
 			add_tech_bonus = {
-				name = FRA_heavy_armor_focus
-				bonus = 1.5
+				name = FRA_defensive_focus
+				bonus = 1.0
 				uses = 1
-				category = cat_heavy_armor
+				category = cat_special_forces_generic
+			}
+			add_tech_bonus = {
+				name = FRA_defensive_focus
+				bonus = 0.75
+				uses = 1
+				category = infantry_weapons
 			}
 		}
 	}
@@ -316,7 +322,7 @@ if = {
 		relative_position_id = FRA_begin_rearmament
 		available_if_capitulated = yes
 		prerequisite = { focus = FRA_begin_rearmament }
-		mutually_exclusive = {focus = FRA_defensive_focus }
+		mutually_exclusive = {focus = FRA_defensive_focus focus = FRA_aggressive_focus_heavy}
 
 		completion_reward = {
 			army_experience = 50
@@ -328,19 +334,44 @@ if = {
 			}
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
 				category = cat_medium_armor
 			}
 		}
 	}
 	focus = {
+		id = FRA_aggressive_focus_heavy
+		icon = GFX_goal_generic_major_war
+		text = "Heavy Focus"
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id = FRA_begin_rearmament
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_begin_rearmament }
+		mutually_exclusive = {focus = FRA_defensive_focus focus = FRA_aggressive_focus }
+
+		completion_reward = {
+			army_experience = 50
+			
+			add_tech_bonus = {
+				name = FRA_heavy_armor_focus
+				bonus = 1.5
+				uses = 1
+				category = cat_heavy_armor
+			}
+		}
+	}
+
+
+	focus = {
 		id = FRA_battle_of_maneuver
 		icon = GFX_goal_generic_position_armies
-		x = 0
+		x = 1
 		y = 1
 
-		prerequisite = { focus = FRA_aggressive_focus }
+		prerequisite = { focus = FRA_aggressive_focus focus = FRA_aggressive_focus_heavy }
 		relative_position_id = FRA_aggressive_focus
 		cost = 5
 
@@ -355,7 +386,7 @@ if = {
 		id = FRA_motorized_focus
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = FRA_battle_of_maneuver }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = FRA_battle_of_maneuver
 		cost = 5
@@ -364,7 +395,7 @@ if = {
 
 		completion_reward = {
 			add_ideas = FRA_motorized_focus
-						add_tech_bonus = {
+			add_tech_bonus = {
 				name = FRA_mechanized_focus
 				bonus = 1.0
 				uses = 2
@@ -380,7 +411,7 @@ if = {
 			focus = FRA_battle_of_maneuver 
 			focus = FRA_firepower_kills 
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = FRA_battle_of_maneuver
 		cost = 10

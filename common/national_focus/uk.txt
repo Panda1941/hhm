@@ -1755,6 +1755,9 @@ focus_tree = {
 				uses = 1
 				category = tp_tech
 			}
+			set_technology = {
+			    marines = 1
+			}
 		}
 	}
 	focus = {
