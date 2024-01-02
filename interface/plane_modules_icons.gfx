@@ -458,6 +458,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_heavy_mg_4_icon.dds"
 		legacy_lazy_load = no
 	}
+		spriteType = {
+		name = "GFX_EMI_fighter_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_cannon_1_2_icon.dds"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_EMI_plane_special_module_defense_turret"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_lmg_turret_2_icon.dds"

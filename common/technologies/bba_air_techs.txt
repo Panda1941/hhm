@@ -1226,15 +1226,15 @@ technologies = {
 			large_aircraft_cannon_2x
 		}
 		
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = air
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
-		start_year = 1945
+		start_year = 1943
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = 8 }
 		}
 
 		categories = {
