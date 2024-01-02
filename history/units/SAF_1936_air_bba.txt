@@ -6,7 +6,7 @@ air_wings = {
 		# SAAF Fighter Squadron -- Hawker Furys
 		small_plane_airframe_0 =  {
 			owner = "SAF" 
-			amount = 30
+			amount = 100
 			creator = "ENG"
 			version_name = "Hawker Fury"
 		}
