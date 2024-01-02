@@ -9,8 +9,6 @@ state={
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = WST
 		add_core_of = WST
-		add_core_of = PRC
-		add_core_of = PRC
 		victory_points = {
 			8049 3 
 		}

@@ -12,8 +12,6 @@ state={
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = GXC
-		add_core_of = GXC
 		
 		buildings = {
 			infrastructure = 2
@@ -36,7 +34,6 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 				limit = {
 					NOT = { has_dlc = "Waking the Tiger" }
 				}
-				remove_core_of = GXC
 				CHI = { transfer_state = PREV }
 			}
 			JAP = {

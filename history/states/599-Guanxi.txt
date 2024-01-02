@@ -12,8 +12,6 @@ state= {
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = GXC
-		add_core_of = GXC
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3

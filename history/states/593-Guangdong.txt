@@ -12,8 +12,6 @@ state= {
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = GXC
-		add_core_of = GXC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -25,7 +23,6 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		}
 
 		1938.10.25 = {		
-			remove_core_of = GXC
 			owner = CHI
 			JAP = {
 				set_province_controller = 1202
