@@ -202,6 +202,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.1
 		efficiency = 50
+		industrial_manufacturer = mio:USA_springfield_armory_organization
 	}
 
 	add_equipment_production = {
@@ -212,6 +213,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
+		industrial_manufacturer = mio:ENG_rsaf_enfield_support_equipment_organization
 	}
 
 	add_equipment_production = {
@@ -222,6 +224,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
+		industrial_manufacturer = mio:USA_rock_island_arsenal_organization
 	}
 
 }
