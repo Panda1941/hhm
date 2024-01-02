@@ -566,8 +566,8 @@ generic_mobile_tank_organization = {
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
-	equipment_type = { armor }
-	research_categories = { armor }
+	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+	research_categories = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
 
 	tree_header_text = {
 		text = mio_header_engine_and_suspension
@@ -583,7 +583,7 @@ generic_mobile_tank_organization = {
 		name = generic_mio_initial_trait_fast_tanks_designer
 		
 		equipment_bonus = {
-			#armor_value = -0.05
+			armor_value = -0.05
 			reliability_factor = -0.05
 			maximum_speed = 0.1
 		}

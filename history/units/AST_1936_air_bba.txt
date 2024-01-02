@@ -6,7 +6,7 @@ air_wings = {
 		# RAAF Stations Laverton, Richmond -- Hawker Demons, Avro Ansons
 		small_plane_airframe_0 =  {
 			owner = "AST" 
-			amount = 24
+			amount = 100
 			creator = "ENG"
 			version_name = "Hawker Fury"
 		}
