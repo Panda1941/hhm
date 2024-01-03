@@ -739,8 +739,8 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 		add_stats = {
 			air_attack = 32
-			build_cost_ic = 14
-			air_agility = -16
+			build_cost_ic = 18
+			air_agility = -10
 			weight = 16
 		}
 		xp_cost = 0
