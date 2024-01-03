@@ -90,6 +90,11 @@ equipments = {
 			module = self_sealing_fuel_tanks_small
 			count < 2
 		}
+		
+		module_count_limit = {
+			module = armor_plate_small
+			count < 2
+		}
 
 		module_count_limit = {
 			module = non_strategic_materials_small
@@ -1413,6 +1418,11 @@ equipments = {
 		}
 
 		module_count_limit = {
+			module = armor_plate_medium
+			count < 2
+		}
+
+		module_count_limit = {
 			module = non_strategic_materials_medium
 			count < 2
 		}
@@ -2296,6 +2306,11 @@ equipments = {
 
 		module_count_limit = {
 			module = self_sealing_fuel_tanks_large
+			count < 2
+		}
+
+		module_count_limit = {
+			module = armor_plate_large
 			count < 2
 		}
 
