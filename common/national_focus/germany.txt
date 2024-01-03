@@ -4555,17 +4555,17 @@ focus_tree = {
 		icon = GFX_focus_GER_war_with_france
 		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
 		available = {
-			NOT = { has_war_with = FRA }
 			date > 1939.03.01
+			NOT = { ITA = { has_war_with = FRA }}
 		}
 		x = 1
 		y = 1
 		relative_position_id = GER_around_maginot
 		cost = 1
 		bypass = {
-		FRA = {
-                NOT = { controls_state = 16 }	
-						}	
+			FRA = {
+            	NOT = { controls_state = 16 }	
+			}	
 		}
 		historical_ai = {
 			date > 1939.1.1

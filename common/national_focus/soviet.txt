@@ -1442,6 +1442,7 @@
 		completion_reward = {
 			# REVISIT Covers Polish border, may want to add/remove some states
 			add_state_claim = 96
+			add_state_claim = 97
 			add_state_claim = 95
 			add_state_claim = 94
 			add_state_claim = 93
@@ -1449,6 +1450,7 @@
 			add_state_claim = 89
 			add_state_claim = 784
 			add_state_core = 96
+			add_state_core = 97
 			add_state_core = 95
 			add_state_core = 94
 			add_state_core = 93
