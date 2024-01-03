@@ -447,10 +447,10 @@ operation_steal_tech_civilian = { ### 12 3/35
 	desc = operation_steal_tech_civilian_desc
 	priority = 12
 
-	days = 110
+	days = 70
 	network_strength = 50
 	operatives = 1
-	cost_multiplier = 0
+	cost_multiplier = 0.25
 
 	visible = {
 		num_of_operatives > 0
@@ -467,6 +467,10 @@ operation_steal_tech_civilian = { ### 12 3/35
 
 	equipment = {
 		support_equipment = 100
+		civilian_factories = {
+			amount = 5
+			days = 90
+		}
 	}
 
 	risk_chance = 0.4
@@ -557,10 +561,10 @@ operation_steal_tech_army = { ### 16 3/55
 	desc = operation_steal_tech_army_desc
 	priority = 16
 
-	days = 110
+	days = 70
 	network_strength = 50
 	operatives = 1
-	cost_multiplier = 0
+	cost_multiplier = 0.25
 
 	visible = {
 		num_of_operatives > 0
@@ -576,6 +580,10 @@ operation_steal_tech_army = { ### 16 3/55
 
 	equipment = {
 		support_equipment = 100
+		civilian_factories = {
+			amount = 5
+			days = 90
+		}
 	}
 
 	risk_chance = 0.4
@@ -674,10 +682,10 @@ operation_steal_tech_navy = { ### 17 3/55
 	desc = operation_steal_tech_navy_desc
 	priority = 17
 
-	days = 110
+	days = 70
 	network_strength = 50
 	operatives = 1
-	cost_multiplier = 0
+	cost_multiplier = 0.25
 
 	visible = {
 		num_of_operatives > 0
@@ -694,6 +702,10 @@ operation_steal_tech_navy = { ### 17 3/55
 
 	equipment = {
 		support_equipment = 100
+		civilian_factories = {
+			amount = 5
+			days = 90
+		}
 	}
 
 	risk_chance = 0.4
@@ -782,10 +794,10 @@ operation_steal_tech_airforce = { ### 18 3/55
 	desc = operation_steal_tech_airforce_desc
 	priority = 18
 
-	days = 110
+	days = 70
 	network_strength = 50
 	operatives = 1
-	cost_multiplier = 0
+	cost_multiplier = 0.25
 
 	visible = {
 		num_of_operatives > 0
@@ -802,6 +814,10 @@ operation_steal_tech_airforce = { ### 18 3/55
 
 	equipment = {
 		support_equipment = 100
+		civilian_factories = {
+			amount = 5
+			days = 90
+		}
 	}
 
 	risk_chance = 0.4
