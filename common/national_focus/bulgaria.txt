@@ -1722,6 +1722,9 @@ YUG = {
 				}
 				add_ideas = war_economy
 			}
+			else = {
+				add_political_power = 120
+			}
 		}
 	}
 
@@ -1849,7 +1852,7 @@ YUG = {
 				limit = {
 					has_idea = war_economy
 				}
-				add_ideas = tot_economic_mobilisation
+				add_political_power = 120
 			}
 		}
 	}

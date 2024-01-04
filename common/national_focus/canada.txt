@@ -473,6 +473,21 @@
 
 		completion_reward = {
 			add_ideas = CAN_war_bonds_1
+
+			if = {
+				limit = {
+					OR = {
+						has_idea = war_economy
+						has_idea = tot_economic_mobilisation
+					}
+				}
+				
+				add_stability = 0.15
+				swap_ideas = {
+					remove_idea = CAN_great_depression_5
+					add_idea = CAN_great_depression_6		
+				}
+			}
 		}
 	}
 
@@ -2845,7 +2860,10 @@ CAN = {
 		}
 		
 		bypass = {
-
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
 		}
 
 		cancel_if_invalid = yes

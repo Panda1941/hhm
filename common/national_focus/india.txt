@@ -462,6 +462,14 @@ focus_tree = {
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
 						infantry = { x = 2 y = 2 }
+
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 4 y = 2 }
 					}
 
 					support = {
@@ -709,7 +717,10 @@ focus_tree = {
 						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
 						artillery_brigade = { x = 3 y = 2 }
-						artillery_brigade = { x = 3 y = 3 }
+						
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 4 y = 2 }
 					}
 				}
 	
@@ -1293,7 +1304,7 @@ focus_tree = {
 		id = RAJ_industrial_expansion
 		icon = GFX_goal_generic_construct_civ_factory
 		
-		x = 24
+		x = 22
 		y = 0
 
 		cost = 10
@@ -1349,7 +1360,7 @@ focus_tree = {
 		id = RAJ_indian_institute_of_science
 		icon = GFX_focus_research
 		prerequisite = { focus = RAJ_industrial_expansion }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
@@ -1498,7 +1509,7 @@ focus_tree = {
 		id = RAJ_integrate_princely_railways
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RAJ_industrial_expansion }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
@@ -1575,7 +1586,7 @@ focus_tree = {
 		id = RAJ_clamp_down_on_corruption
 		icon = GFX_focus_RAJ_clamp_down_on_corruption
 		prerequisite = { focus = RAJ_integrate_princely_railways }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = RAJ_integrate_princely_railways
 
@@ -1609,7 +1620,7 @@ focus_tree = {
 		id = RAJ_strengthen_ties_with_british_investors
 		icon = GFX_focus_RAJ_british_investors
 		prerequisite = { focus = RAJ_integrate_princely_railways }
-		x = 3
+		x = 0
 		y = 1
 		relative_position_id = RAJ_integrate_princely_railways
 

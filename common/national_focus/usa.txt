@@ -1276,11 +1276,11 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
-			JAP = {
-				has_war_with = CHI
+			OR = {
+				JAP = { has_war_with = CHI }
+				date > 1938.1.1
 			}
 			democratic > 0.95
-			date > 1938.1.1
 		}
 		continue_if_invalid = yes
 		x = 0

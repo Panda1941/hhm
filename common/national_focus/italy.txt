@@ -777,8 +777,8 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_redirect_alfa_romeo_production
-				bonus = 0.50
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = motorized_equipment
 				category = light_air
 			}
@@ -1440,7 +1440,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_self_propelled_guns
 				bonus = 1
-				uses = 4
+				uses = 2
 				category = artillery
 			}
 
@@ -2112,8 +2112,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = -0.25 }
-			custom_effect_tooltip = ITA_multirole_aircraft_military_industry_tt
+			#add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = -0.25 }
+			#custom_effect_tooltip = ITA_multirole_aircraft_military_industry_tt
 
 			add_to_variable = { ITA_ra_air_mission_xp_gain_factor = 0.1 }
 			custom_effect_tooltip = ITA_multirole_aircraft_ra_tt
@@ -3430,8 +3430,8 @@ focus_tree = {
 		icon = GFX_focus_ITA_devaluate_the_lire
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
-		x = -2
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
 		available = {
@@ -3442,57 +3442,6 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.02
 			add_timed_idea = { idea = ITA_devaluated_lira days = 365 }
-		}
-	}
-
-	focus = {
-		id = ITA_anglo_italian_agreements
-		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = ITA_triumph_in_africa_bba }
-
-		x = -1
-		y = 1
-		relative_position_id = ITA_triumph_in_africa_bba
-		cost = 5
-
-		bypass = {
-			NOT = { has_country_flag = SUEZ_SANCTIONS_FLAG }
-			OR = {
-				NOT = { country_exists = ETH }
-				has_subject = ETH
-			}
-		} 
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_anglo_italian_agreements_suez_tt
-				OR = {
-					NOT = { has_country_flag = SUEZ_SANCTIONS_FLAG }
-					has_country_flag = { flag = SUEZ_SANCTIONS_FLAG days > 365 }
-				}
-			}
-
-			core_compliance = {
-				occupied_country_tag = ETH
-				value > 40
-			}
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-			#Suez Canal access
-			if = {
-				limit = {
-					has_country_flag = SUEZ_SANCTIONS_FLAG
-				}
-				clr_country_flag = SUEZ_SANCTIONS_FLAG
-				custom_effect_tooltip = ITA_anglo_italian_agreements_suez_unlocked_tt
-			}
-
-			#Deescalation
-			add_to_variable = { ETH.ETH_war_escalation_level = -1 }
-			custom_effect_tooltip = ETH_war_deescalation_inc_tt
 		}
 	}
 
@@ -3862,7 +3811,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_la_battaglia_per_le_nascite
-		cost = 10
+		cost = 5
 		available = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
@@ -4421,15 +4370,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = ITA_gian_galeazzo_ciano
+			#custom_effect_tooltip = available_political_advisor
+			#show_ideas_tooltip = ITA_gian_galeazzo_ciano
 
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				custom_effect_tooltip = ITA_foreign_affairs_focus_lock_tt
-			}
+			#if = {
+			#	limit = {
+			#		has_dlc = "By Blood Alone"
+			#	}
+			#	custom_effect_tooltip = ITA_foreign_affairs_focus_lock_tt
+			#}
 		}
 	}
 
@@ -4768,7 +4717,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_request_control_of_french_territories
-		cost = 10
+		cost = 5
 		available = {
 			is_subject = no
 			159 = { 
