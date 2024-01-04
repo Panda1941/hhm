@@ -19,6 +19,7 @@ state={
 			11974 1 
 		}
 		add_core_of = SWE
+		set_state_flag = AFRICA_COMMONWEALTH_controls
 
 	}
 

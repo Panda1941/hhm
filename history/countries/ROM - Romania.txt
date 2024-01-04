@@ -145,6 +145,7 @@ add_ideas = ROM_the_resource_curse_1
 add_ideas = ROM_agrarian_economy
 add_ideas = ROM_waning_influence_of_democracy
 add_ideas = ROM_iron_guard 
+add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_6
 
 #Kick off kings crazy life
 if = {

@@ -4,6 +4,8 @@ state={
 	name="STATE_448"
 
 	history={
+	set_state_flag = ITA_controls
+	set_state_flag = NOT_AFRICA_COMMONWEALTH_controls
 		owner = ITA
 		victory_points = {
 			13340 20 

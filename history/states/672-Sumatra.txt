@@ -16,6 +16,7 @@ state={
 { 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = HOL
 		add_core_of = SWE
+		set_state_flag = USA_controls
 		victory_points = {
 			4652 1 
 		}

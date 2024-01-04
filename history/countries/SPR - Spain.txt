@@ -141,6 +141,7 @@ if = {
 		SPR_political_violence
 		SPR_national_strikes_3
 		no_navy_spain
+		AFRICA_COMMONWEALTH_controls_axis_idea_6
 	}
 	recruit_character = SPR_niceto_alcala_zamora
 	recruit_character = SPR_jose_diaz

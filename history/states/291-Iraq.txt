@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = IRQ
+		set_state_flag = AFRICA_COMMONWEALTH_controls
 		victory_points = {
 			2097 10
 		}

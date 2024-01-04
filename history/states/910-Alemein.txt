@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = ENG
+		set_state_flag = AFRICA_COMMONWEALTH_controls
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

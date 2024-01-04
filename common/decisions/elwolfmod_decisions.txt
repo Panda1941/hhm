@@ -501,6 +501,45 @@ operations = {
 			if = { limit = { country_exists = ENG }	ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } } }
 		}
 	}
+	invade_IRAQ = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = WST
+		}
+		
+		available = {
+			tag = WST
+			ITA = { has_war_with = ENG }
+			
+		}
+
+		cost = 0
+		
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		complete_effect = {
+		ENG = {
+		annex_country = {
+					target = IRQ
+					transfer_troops = no
+				}
+			every_state = {
+				limit = {
+					is_core_of = IRQ
+					is_controlled_by = ENG
+				}
+				add_compliance = 40
+			}
+			
+		}
+		}
+	}
 	conquer_and_divide = {
 		# icon = generic_operation
 		allowed = {

@@ -295,9 +295,9 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.10
+				#attack_bonus_against = 0.10
 				defense_bonus_against  = -0.1
-				breakthrough_bonus_against  = 0.05
+				breakthrough_bonus_against  = 0.10
 			}
 
 		}

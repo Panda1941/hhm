@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = ENG
+		set_state_flag = AFRICA_COMMONWEALTH_controls
 		victory_points = {
 			4076 10 
 		}

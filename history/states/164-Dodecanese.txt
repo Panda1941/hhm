@@ -7,6 +7,7 @@ state=
 	state_category = small_island
 	
 	history = {
+	set_state_flag = ITA_controls
 		owner = ITA
 		victory_points = {
 			10007 1 

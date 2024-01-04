@@ -1243,7 +1243,7 @@ frontline_state = {
 
 	icon = SOV_war_zone_modifier_icon
 
-	army_core_defence_factor = -0.10
+	army_core_defence_factor = -0.05
 
 }
 
@@ -1252,7 +1252,7 @@ frontline_state = {
 
 	icon = SOV_war_zone_modifier_icon
 
-	army_core_defence_factor = -0.05
+	army_core_defence_factor = 0.05
 
 }
 
@@ -1261,7 +1261,7 @@ frontline_state = {
 
 	icon = SOV_war_zone_modifier_icon
 
-	army_core_defence_factor = 0.05
+	army_core_defence_factor = 0.10
 
 }
 
@@ -1270,7 +1270,7 @@ lastline_state = {
 
 	icon = SOV_war_zone_modifier_icon
 
-	army_core_defence_factor = 0.1
+	army_core_defence_factor = 0.15
 
 }
 

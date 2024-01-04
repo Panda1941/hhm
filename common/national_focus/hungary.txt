@@ -2506,8 +2506,8 @@ focus_tree = {
 		id = HUN_form_shock_troops_battalions
 		text = "Grenadier Training"
 		icon = GFX_focus_HUN_form_shock_troops_battalions
-		prerequisite = { focus = HUN_heavy_infantry_divisions_doctrine }
-		x = 1
+		prerequisite = { focus = HUN_home_defense }
+		x = 2
 		y = 1
 		relative_position_id = HUN_heavy_infantry_divisions_doctrine
 

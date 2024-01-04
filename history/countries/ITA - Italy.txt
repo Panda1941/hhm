@@ -26,6 +26,8 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	MEDITERRANEAN_AXIS_controls_original
+	AFRICA_COMMONWEALTH_controls_axis_idea_6
 }
 
 # RESISTANCE / COMPLIANCE

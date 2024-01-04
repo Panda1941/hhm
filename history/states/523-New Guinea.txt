@@ -4,6 +4,7 @@ state={
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		add_core_of = SWE
+		set_state_flag = USA_controls
 		owner = AST
 		buildings = {
 			infrastructure = 1

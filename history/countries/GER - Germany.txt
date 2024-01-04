@@ -194,6 +194,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	AFRICA_COMMONWEALTH_controls_axis_idea_6
 }
 add_ideas = GER_mefo_bills_1
 

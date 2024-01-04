@@ -180,6 +180,7 @@ add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
+	MEDITERRANEAN_ALLIES_controls_original
 }
 	
 

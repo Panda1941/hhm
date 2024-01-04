@@ -7269,5 +7269,23 @@ spriteTypes = {
 		name = "GFX_idea_reichswerke_hermann_goring"
 		texturefile = "gfx/interface/ideas/reichswerke.dds"
 	}
+	#####################med and asia###########
 	
+	spriteType = {
+		name = "GFX_idea_ita_state_med"
+		texturefile = "gfx/interface/ideas/idea_ita_state_med.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Fate_Of_Med"
+		textureFile = "gfx/interface/ideas/Fate_Of_Med.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_jap_island_hopping"
+		textureFile = "gfx/interface/ideas/ideas_jap_island_hopping.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_usa_island_hopping"
+		textureFile = "gfx/interface/ideas/ideas_usa_island_hopping.dds"
+	}
 }

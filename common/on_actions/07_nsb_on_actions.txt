@@ -1547,6 +1547,55 @@ on_actions = {
 				}
 			}
 		}
+		
+		effect = {
+			if = {
+				limit = {
+					ITA = {
+						has_war = yes
+						date > 1936.1.1
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_1 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_2 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_3 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_4 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_5 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_6 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_7 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_8 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_9 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_10 }
+					}
+				}
+				ITA = {
+					remove_ideas = MEDITERRANEAN_AXIS_controls_original
+					add_ideas = MEDITERRANEAN_AXIS_controls_idea_5
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					ENG = {
+						has_war = yes
+						date > 1936.1.1
+						NOT = { has_idea = MEDITERRANEAN_ALLIES_controls_idea_1 }
+						NOT = { has_idea = MEDITERRANEAN_ALLIES_controls_idea_2 }
+						NOT = { has_idea = MEDITERRANEAN_ALLIES_controls_idea_3 }
+						NOT = { has_idea = MEDITERRANEAN_ALLIES_controls_idea_4 }
+						NOT = { has_idea = MEDITERRANEAN_ALLIES_controls_idea_5 }
+						NOT = { has_idea = MEDITERRANEAN_ALLIES_controls_idea_6 }
+						NOT = { has_idea = MEDITERRANEAN_ALLIES_controls_idea_7 }
+						NOT = { has_idea = MEDITERRANEAN_ALLIES_controls_idea_8 }
+						NOT = { has_idea = MEDITERRANEAN_ALLIES_controls_idea_9 }
+						NOT = { has_idea = MEDITERRANEAN_ALLIES_controls_idea_10 }
+					}
+				}
+				ENG = {
+					remove_ideas = MEDITERRANEAN_ALLIES_controls_original
+					add_ideas = MEDITERRANEAN_ALLIES_controls_idea_5
+				}
+			}
+		}
 
 		#SOVIET - If Soviet has "Long Live to Peace" propaganda campaign active, bad shit happens if they enter a war
 		effect = {

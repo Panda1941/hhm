@@ -6,6 +6,8 @@ state = {
 	state_category = town
 	
 	history = {
+	set_state_flag = ITA_controls
+	set_state_flag = NOT_AFRICA_COMMONWEALTH_controls
 		owner = ITA
 		victory_points = {
 			11773 3 

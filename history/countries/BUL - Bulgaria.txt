@@ -55,6 +55,7 @@ if = { #DLC
 		#BUL_imro_01
 		disarmed_nation
 		bulg_tank_research
+		AFRICA_COMMONWEALTH_controls_axis_idea_6
 	}
 
 
