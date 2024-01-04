@@ -1295,16 +1295,16 @@
  
  ### DYNAMIC SPIRITS ###
  MEDITERRANEAN_AXIS_controls:0 "The State of the Mediterranean"
- MEDITERRANEAN_AXIS_controls_desc:0 "Africa Mechanic: capturing Allied Mediterranean strong holds and holding our own will provide a buff to our industry and defensive capabilities. \n§GLocations that Allies starts with§!\n§YGibraltar\nMalta\nCairo\nCyprus\nTel Aviv\n\n§GLocations that Axis starts with§!\nSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese" 
+ MEDITERRANEAN_AXIS_controls_desc:0 "Africa Mechanic: capturing Allied Mediterranean strongholds and holding our own will provide a buff to our industry and defensive capabilities. \n§GLocations that Allies starts with§!\n§YGibraltar\nMalta\nCairo\nCyprus\nTel Aviv\n\n§GLocations that Axis starts with§!\nSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese" 
 
  MEDITERRANEAN_AXIS_controls_original:0 "The State of the Mediterranean (Inactive)"
- MEDITERRANEAN_AXIS_controls_original_desc:0 "Africa Mechanic: capturing Allied Mediterranean strong holds will provide a buff to our industry and defensive capabilities.\n§RNOTE: Idea won't update till Italy is at war§!\n§GLocations that Allies starts with§!\n§YGibraltar\nMalta\nCairo\nCyprus\nTel Aviv\n\n§GLocations that Axis starts with§!\nSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese" 
+ MEDITERRANEAN_AXIS_controls_original_desc:0 "Africa Mechanic: capturing Allied Mediterranean strongholds will provide a buff to our industry and defensive capabilities.\n§RNOTE: Idea won't update till Italy is at war§!\n§GLocations that Allies starts with§!\n§YGibraltar\nMalta\nCairo\nCyprus\nTel Aviv\n\n§GLocations that Axis starts with§!\nSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese" 
   
  MEDITERRANEAN_ALLIES_controls:0 "The State of the Mediterranean"
- MEDITERRANEAN_ALLIES_controls_desc:0 "Africa Mechanic: capturing Mediterranean strong holds and holding our own will provide a buff to our industry and defensive capabilities.\n§GLocations that Allies starts with§!\n§YSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese\n\n§GLocations that Allies starts with§!\nGibraltar\nMalta\nCairo\nCyprus\nTel Aviv"
+ MEDITERRANEAN_ALLIES_controls_desc:0 "Africa Mechanic: capturing Mediterranean strongholds and holding our own will provide a buff to our industry and defensive capabilities.\n§GLocations that Axis starts with§!\n§YSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese\n\n§GLocations that Allies starts with§!\nGibraltar\nMalta\nCairo\nCyprus\nTel Aviv"
   
  MEDITERRANEAN_ALLIES_controls_original:0 "The State of the Mediterranean"
- MEDITERRANEAN_ALLIES_controls_original_desc:0 "Africa Mechanic: capturing Mediterranean strong holds and holding our own will provide a buff to our industry and defensive capabilities.\n§RNOTE: Idea won't update till UK is at war§!\n§GLocations that Allies starts with§!\n§YSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese\n\n§GLocations that Allies starts with§!\nGibraltar\nMalta\nCairo\nCyprus\nTel Aviv"
+ MEDITERRANEAN_ALLIES_controls_original_desc:0 "Africa Mechanic: capturing Mediterranean strongholds and holding our own will provide a buff to our industry and defensive capabilities.\n§RNOTE: Idea won't update till UK is at war§!\n§GLocations that Axis starts with§!\n§YSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese\n\n§GLocations that Allies starts with§!\nGibraltar\nMalta\nCairo\nCyprus\nTel Aviv"
 
  AFRICA_COMMONWEALTH_controls_axis_original:0 "The State of the Mediterranean (Barbarossa)"
  AFRICA_COMMONWEALTH_controls_axis_original_desc:0 "Africa Mechanic: Losing North Africa or gaining points will grant a bonus against the Soviets.\n§GFrom West to East§!\n§YGilbraltar\nTunis\nSardinia\nMalta\nSicily\nNaples\nTripoli\nBenghazi\nTobruk\nMatrouh\nEl-Alamein\nAlexanderia\nCairo\nCyprus\nAswan\nIsrael\nBaghdad" 

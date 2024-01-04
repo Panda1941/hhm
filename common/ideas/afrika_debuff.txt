@@ -160,11 +160,7 @@ ideas = {
 				army_core_attack_factor = 0.125
 				army_core_defence_factor = 0.125
 			}
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.0125
-				defense_bonus_against = 0.0125
-			}
+			
 
 			picture = ita_state_med
 			
@@ -192,11 +188,7 @@ ideas = {
 				army_core_attack_factor = 0.15
 				army_core_defence_factor = 0.15
 			}
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.025
-				defense_bonus_against = 0.025
-			}
+			
 
 			picture = ita_state_med
 			
@@ -224,11 +216,7 @@ ideas = {
 				army_core_attack_factor = 0.20
 				army_core_defence_factor = 0.20
 			}
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.050
-				defense_bonus_against = 0.050
-			}
+			
 
 			picture = ita_state_med
 			
@@ -256,11 +244,7 @@ ideas = {
 				army_core_attack_factor = 0.25
 				army_core_defence_factor = 0.25
 			}
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.075
-				defense_bonus_against = 0.075
-			}
+			
 
 			picture = ita_state_med
 			
@@ -288,11 +272,7 @@ ideas = {
 				army_core_attack_factor = 0.30
 				army_core_defence_factor = 0.30
 			}
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.10
-				defense_bonus_against = 0.10
-			}
+			
 
 			picture = ita_state_med
 			

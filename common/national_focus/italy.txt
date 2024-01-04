@@ -4387,12 +4387,12 @@ focus_tree = {
 		icon = GFX_focus_generic_balkans_focus
 		prerequisite = { focus = ITA_foreign_affairs }
 
-		x = 0
+		x = 3
 		y = 1
 		relative_position_id = ITA_foreign_affairs
 		cost = 5
 		available = {
-			date > 1937.09.01
+			date > 1939.01.01
 		}
 
 		search_filters = {}
@@ -4439,11 +4439,11 @@ focus_tree = {
 	focus = {
 		id = ITA_albanian_occupation
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = ITA_balkan_ambition }
+		prerequisite = { focus = ITA_foreign_affairs }
 
-		x = -2
+		x = 1
 		y = 1
-		relative_position_id = ITA_balkan_ambition
+		relative_position_id = ITA_foreign_affairs
 		cost = 5
 		available = {
 		}
@@ -4518,10 +4518,10 @@ focus_tree = {
 	focus = {
 		id = ITA_pact_of_steel
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ITA_balkan_ambition }
+		prerequisite = { focus = ITA_foreign_affairs }
 		x = 0
-		y = 1
-		relative_position_id = ITA_balkan_ambition
+		y = 2
+		relative_position_id = ITA_foreign_affairs
 		cost = 5
 
 		bypass = {
@@ -4643,6 +4643,7 @@ focus_tree = {
 		id = ITA_italian_irredentism
 		icon = GFX_focus_ITA_italian_irredentism
 		prerequisite = { focus = ITA_pact_of_steel }
+		prerequisite = { focus = ITA_albanian_occupation }
 
 		x = 2
 		y = 1
@@ -4760,10 +4761,7 @@ focus_tree = {
 		relative_position_id = ITA_italian_irredentism
 		cost = 5
 		available = {
-			is_subject = no
-			NOT = { is_in_faction_with = GRE }
-			NOT = { has_guaranteed = GRE }
-			NOT = { has_non_aggression_pact_with = GRE }
+			date > 1938.01.01
 		}
 
 		will_lead_to_war_with = GRE
