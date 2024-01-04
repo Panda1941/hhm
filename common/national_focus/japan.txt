@@ -498,7 +498,7 @@
 					INS = { exists = yes }
 				}
 				declare_war_on = {
-					target = INS
+					target = HOL
 					type = annex_everything
 				}
 			}
