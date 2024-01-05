@@ -4003,6 +4003,11 @@ focus_tree = {
 					add_war_support = 0.1
 				}
 			}
+			every_state = {
+ 				limit={OR={state=785 state=810 state=18 state=28 state=15 state=16 state=29 state=27 state =17 state=24 }}
+ 				add_dynamic_modifier = { modifier = FRA_state days=150 }
+				add_dynamic_modifier = { modifier = france_early_core days=150 }
+ 			}
 		}
 	}
 	
@@ -4574,11 +4579,7 @@ focus_tree = {
 				target = FRA 
 				type = annex_everything
 			}
-			add_timed_idea = { idea = AXIS_blitzkrieg days = 30 }
-			every_state = {
- 				limit={OR={state=785 state=810 state=18 state=28 state=15 state=16 state=29 state=27 state =17 state=24 }}
- 				add_dynamic_modifier = { modifier = FRA_state days=90  }
- 			}
+			add_timed_idea = { idea = AXIS_blitzkrieg days = 30 }		
 		}
 	}	
 
