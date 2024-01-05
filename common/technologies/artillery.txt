@@ -71,23 +71,23 @@ technologies = {
 	interwar_artillery = {
 
 		artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		pack_artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		mech_arty = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		support_light_sp_artillery= { soft_attack = 0.05 }
@@ -234,24 +234,24 @@ technologies = {
 	artillery2 = {
 
 		artillery = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		pack_artillery = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		mech_arty = {
-			soft_attack = 0.10
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		support_light_sp_artillery= { soft_attack = 0.05 }
 		support_medium_sp_artillery= { soft_attack = 0.05 }
@@ -306,23 +306,23 @@ technologies = {
 	artillery3 = {
 
 		artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10 
 		}
 		pack_artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		mech_arty = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		support_light_sp_artillery= { soft_attack = 0.05 }
@@ -460,24 +460,24 @@ technologies = {
 	artillery5 = {
 
 		artillery = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		pack_artillery = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		mech_arty = {
-			soft_attack = 0.10
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		support_light_sp_artillery= { soft_attack = 0.05 }
 		support_medium_sp_artillery= { soft_attack = 0.05 }
@@ -537,23 +537,23 @@ technologies = {
 	artillery6 = {
 
 		artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		pack_artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		mech_arty = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		support_light_sp_artillery= { soft_attack = 0.05 }
@@ -662,24 +662,24 @@ technologies = {
 	artillery8 = {
 
 		artillery = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		pack_artillery = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		mech_arty = {
-			soft_attack = 0.10
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		support_light_sp_artillery= { soft_attack = 0.05 }
 		support_medium_sp_artillery= { soft_attack = 0.05 }
@@ -734,23 +734,23 @@ technologies = {
 	artillery9 = {
 
 		artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		pack_artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		mech_arty = {
-			soft_attack = 0.15
+			soft_attack = 0.08
 			defense = 0.10
 		}
 		support_light_sp_artillery= { soft_attack = 0.05 }
@@ -801,24 +801,24 @@ technologies = {
 	artillery10 = {
 
 		artillery = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		pack_artillery = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.1
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		mech_arty = {
-			soft_attack = 0.10
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.1
 		}
 		support_light_sp_artillery= { soft_attack = 0.05 }
 		support_medium_sp_artillery= { soft_attack = 0.05 }
@@ -948,24 +948,24 @@ technologies = {
 	rocket_artillery2 = {
 
 		rocket_artillery = {
-			soft_attack = 0.15
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.12
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.15
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.12
 		}
 		mot_rocket_artillery_brigade = {
-			soft_attack = 0.15
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.12
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.15
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.12
 		}
 		mech_rarty = {
-			soft_attack = 0.15
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.12
 		}
 
 		path = {
@@ -1006,24 +1006,19 @@ technologies = {
 	rocket_artillery3 = {
 
 		rocket_artillery = {
-			soft_attack = 0.30
-			breakthrough = 0.05
+			soft_attack = 0.18
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.30
-			breakthrough = 0.05
+			soft_attack = 0.18
 		}
 		mot_rocket_artillery_brigade = {
-			soft_attack = 0.30
-			breakthrough = 0.05
+			soft_attack = 0.18
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.30
-			breakthrough = 0.05
+			soft_attack = 0.18
 		}
 		mech_rarty = {
-			soft_attack = 0.30
-			breakthrough = 0.05
+			soft_attack = 0.18
 		}
 
 		path = {
@@ -1112,24 +1107,24 @@ technologies = {
 	rocket_artillery5 = {
 
 		rocket_artillery = {
-			soft_attack = 0.15
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.12
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.15
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.12
 		}
 		mot_rocket_artillery_brigade = {
-			soft_attack = 0.15
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.12
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.15
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.12
 		}
 		mech_rarty = {
-			soft_attack = 0.15
-			breakthrough = 0.15
+			soft_attack = 0.08
+			breakthrough = 0.12
 		}
 
 		
@@ -1167,24 +1162,19 @@ technologies = {
 	rocket_artillery6 = {
 
 		rocket_artillery = {
-			soft_attack = 0.30
-			breakthrough = 0.05
+			soft_attack = 0.18
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.30
-			breakthrough = 0.05
+			soft_attack = 0.18
 		}
 		mot_rocket_artillery_brigade = {
-			soft_attack = 0.30
-			breakthrough = 0.05
+			soft_attack = 0.18
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.30
-			breakthrough = 0.05
+			soft_attack = 0.18
 		}
 		mech_rarty = {
-			soft_attack = 0.30
-			breakthrough = 0.05
+			soft_attack = 0.18
 		}
 
 		
@@ -1297,16 +1287,16 @@ technologies = {
 	antiair1 = {
 
 		anti_air = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		mot_anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		mech_anti_air = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 
 		
@@ -1426,16 +1416,16 @@ technologies = {
 	antiair3 = {
 
 		anti_air = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		anti_air_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		mot_anti_air_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		mech_anti_air = {
 			hard_attack = 0.10
@@ -1499,16 +1489,16 @@ technologies = {
 	antiair4 = {
 
 		anti_air = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		mot_anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		mech_anti_air = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		support_light_sp_anti_air= { air_attack = 0.05 }
 		support_medium_sp_anti_air= { air_attack = 0.05 }
@@ -1627,16 +1617,16 @@ technologies = {
 	antiair6 = {
 
 		anti_air = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		anti_air_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		mot_anti_air_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		mech_anti_air = {
 			hard_attack = 0.10
@@ -1751,16 +1741,16 @@ technologies = {
 	antiair8 = {
 
 		anti_air = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		mot_anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		mech_anti_air = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		support_light_sp_anti_air= { air_attack = 0.05 }
 		support_medium_sp_anti_air= { air_attack = 0.05 }
@@ -1816,16 +1806,16 @@ technologies = {
 	antiair9 = {
 
 		anti_air = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		anti_air_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		mot_anti_air_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		mech_anti_air = {
 			hard_attack = 0.10
@@ -1885,16 +1875,16 @@ technologies = {
 	antiair10 = {
 
 		anti_air = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		mot_anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		mech_anti_air = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 
 		support_light_sp_anti_air= { air_attack = 0.05 }
@@ -1948,20 +1938,20 @@ technologies = {
 	antiair11 = {
 
 		anti_air = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		anti_air_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		mot_anti_air_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		mech_anti_air = {
-			hard_attack = 0.1
-			ap_attack = 0.5
+			hard_attack = 0.08
+			ap_attack = 0.4
 		}
 		support_light_sp_anti_air= { air_attack = 0.05 }
 		support_medium_sp_anti_air= { air_attack = 0.05 }
