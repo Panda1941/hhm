@@ -1287,16 +1287,16 @@ technologies = {
 	antiair1 = {
 
 		anti_air = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		anti_air_brigade = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		mot_anti_air_brigade = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		mech_anti_air = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 
 		
@@ -1489,16 +1489,16 @@ technologies = {
 	antiair4 = {
 
 		anti_air = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		anti_air_brigade = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		mot_anti_air_brigade = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		mech_anti_air = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		support_light_sp_anti_air= { air_attack = 0.05 }
 		support_medium_sp_anti_air= { air_attack = 0.05 }
@@ -1741,16 +1741,16 @@ technologies = {
 	antiair8 = {
 
 		anti_air = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		anti_air_brigade = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		mot_anti_air_brigade = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		mech_anti_air = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		support_light_sp_anti_air= { air_attack = 0.05 }
 		support_medium_sp_anti_air= { air_attack = 0.05 }
@@ -1875,16 +1875,16 @@ technologies = {
 	antiair10 = {
 
 		anti_air = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		anti_air_brigade = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		mot_anti_air_brigade = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 		mech_anti_air = {
-			air_attack = 0.1
+			air_attack = 0.12
 		}
 
 		support_light_sp_anti_air= { air_attack = 0.05 }
