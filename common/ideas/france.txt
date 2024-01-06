@@ -484,7 +484,7 @@ ideas = {
 			
 			modifier = {
 				conscription = 0.3
-				min_export = -1	
+				#min_export = -1	
 			}
 		}
 		

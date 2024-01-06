@@ -209,6 +209,11 @@ if = {
 		freedom_level = 0.4
 	}
 	set_autonomy = {
+		target = BRA
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
 		target = SAF
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
