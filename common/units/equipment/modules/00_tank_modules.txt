@@ -11,7 +11,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 3
-			fuel_consumption = 4.00
+			fuel_consumption = 5.00
 			reliability = -0.1
 			maximum_speed = 1.0
 			fuel_capacity = 50
@@ -30,7 +30,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2.5
-			fuel_consumption = 3.00
+			fuel_consumption = 3.75
 			reliability = 0.3
 			#maximum_speed = 1.0
 			fuel_capacity = 25
@@ -45,7 +45,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			fuel_consumption = 4.5
+			fuel_consumption = 5.65
 			build_cost_ic = 5.5
 			reliability = -0.20
 			breakthrough = 2
@@ -66,7 +66,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 5
-			fuel_consumption = 8
+			fuel_consumption = 10
 			reliability = -0.35
 			maximum_speed = 1.0
 		}
