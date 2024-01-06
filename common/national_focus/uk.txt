@@ -2004,7 +2004,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_military
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = uk_service_focus
 		cost = 10
@@ -3265,6 +3265,105 @@ focus_tree = {
 			}
 		}
 	}
+
+
+	focus = {
+		id = uk_brazil_focus
+		prerequisite = {
+			focus = uk_commonwealth_focus
+		}
+		available = {
+			any_country = {
+				original_tag = BRA
+				is_in_faction_with = ROOT
+			}
+		}
+		bypass = {
+			OR = {
+				BRA = {
+					exists = no
+				}
+				BRA = {
+					custom_trigger_tooltip = {
+						tooltip = construction_effort_tt
+						all_owned_state = {
+							free_building_slots = {
+								building = industrial_complex
+								size < 1
+								include_locked = yes
+							}
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = naval_effort_tt
+						all_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size < 1
+								include_locked = yes
+							}
+						}
+					}
+				}
+			}
+		}
+		text = "Development in Brazil"
+		icon = GFX_goal_generic_construct_civilian
+		x = 3
+		y = 1
+		relative_position_id = uk_commonwealth_focus
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			BRA = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = aided_industry
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_australia_focus
+				}
+			}
+		}
+	}
+
+
 	focus = {
 		id = uk_australia_focus
 		prerequisite = {
@@ -3721,47 +3820,20 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 120
 			
-			IF = {
-				limit = { CAN = { exists = yes } }
-				CAN = {
-					add_timed_idea = { idea = ENG_imperial_conference_defense_2 days = 365 }
-					add_timed_idea = { idea = ENG_imperial_conference_economy_2 days = 365 }
+			every_other_country = {
+				limit = { 
+					is_in_faction_with = ROOT
+					NOT = { original_tag = USA }
+					exists = yes
 				}
+
+				add_timed_idea = { idea = ENG_imperial_conference_defense_2 days = 365 }
+				add_timed_idea = { idea = ENG_imperial_conference_economy_2 days = 365 }
 			}
-			IF = {
-				limit = { SAF = { exists = yes } }
-				SAF = {
-					add_timed_idea = { idea = ENG_imperial_conference_defense_2 days = 365 }
-					add_timed_idea = { idea = ENG_imperial_conference_economy_2 days = 365 }
-				}
-			}
-			IF = {
-				limit = { AST = { exists = yes } }
-				AST = {
-					add_timed_idea = { idea = ENG_imperial_conference_defense_2 days = 365 }
-					add_timed_idea = { idea = ENG_imperial_conference_economy_2 days = 365 }
-				}
-			}
-			IF = {
-				limit = { RAJ = { exists = yes } }
-				RAJ = {
-					add_timed_idea = { idea = ENG_imperial_conference_defense_2 days = 365 }
-					add_timed_idea = { idea = ENG_imperial_conference_economy_2 days = 365 }
-				}
-			}
-			IF = {
-				limit = { FRA = { exists = yes } }
-				FRA = {
-					add_timed_idea = { idea = ENG_imperial_conference_defense_2 days = 365 }
-					add_timed_idea = { idea = ENG_imperial_conference_economy_2 days = 365 }
-				}
-			}
-			IF = {
-				limit = { ENG = { exists = yes } }
-				ENG = {
-					add_timed_idea = { idea = ENG_imperial_conference_defense_1 days = 365 }
-					add_timed_idea = { idea = ENG_imperial_conference_economy_1 days = 365 }
-				}
+
+			ENG = {
+				add_timed_idea = { idea = ENG_imperial_conference_defense_1 days = 365 }
+				add_timed_idea = { idea = ENG_imperial_conference_economy_1 days = 365 }
 			}
 		}
 	}
