@@ -2004,7 +2004,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_military
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = uk_service_focus
 		cost = 10
@@ -2959,7 +2959,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = uk_colonial_focus
-		cost = 2
+		cost = 1
 		available_if_capitulated = yes
 		completion_reward = {
 			random_country = {
