@@ -517,7 +517,7 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 10
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 5.0
 
 --- Embargos
-NDefines.NDiplomacy.EMBARGO_COST = 0 -- 100
+NDefines.NDiplomacy.EMBARGO_COST = 10 -- 100
 NDefines.NDiplomacy.EMBARGO_THREAT_THRESHOLD = -1 -- 30
 
 --All of this AI stuff doesn't affect strategy, just used to increase performance
