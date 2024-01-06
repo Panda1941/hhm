@@ -13,7 +13,7 @@ equipment_modules = {
 			maximum_speed = 350
 			thrust = 15
 			build_cost_ic = 26
-			fuel_consumption = 0.16
+			fuel_consumption = 0.24
 		}
 	}
 
@@ -26,7 +26,7 @@ equipment_modules = {
 			maximum_speed = 300
 			thrust = 22
 			build_cost_ic = 34
-			fuel_consumption = 0.32
+			fuel_consumption = 0.4
 		}
 	}
 
@@ -39,7 +39,7 @@ equipment_modules = {
 			maximum_speed = 300
 			thrust = 30
 			build_cost_ic = 48
-			fuel_consumption = 0.48
+			fuel_consumption = 0.6
 		}
 	}
 
@@ -52,7 +52,7 @@ equipment_modules = {
 			maximum_speed = 300
 			thrust = 37
 			build_cost_ic = 60
-			fuel_consumption = 0.64
+			fuel_consumption = 1.0
 		}
 	}
 
@@ -65,7 +65,7 @@ equipment_modules = {
 			maximum_speed = 300
 			thrust = 52.5
 			build_cost_ic = 80
-			fuel_consumption = 0.8
+			fuel_consumption = 1.0
 		}
 	}
 
@@ -79,7 +79,7 @@ equipment_modules = {
 			maximum_speed = 480
 			thrust = 16
 			build_cost_ic = 30
-			fuel_consumption = 0.16
+			fuel_consumption = 0.24
 		}
 
 		can_convert_from = {
@@ -98,7 +98,7 @@ equipment_modules = {
 			maximum_speed = 450
 			thrust = 24
 			build_cost_ic = 44
-			fuel_consumption = 0.32
+			fuel_consumption = 0.4
 		}
 
 		can_convert_from = {
@@ -117,7 +117,7 @@ equipment_modules = {
 			maximum_speed = 450
 			thrust = 32
 			build_cost_ic = 60
-			fuel_consumption = 0.48
+			fuel_consumption = 0.6
 		}
 
 		can_convert_from = {
@@ -136,7 +136,7 @@ equipment_modules = {
 			maximum_speed = 450
 			thrust = 40
 			build_cost_ic = 74
-			fuel_consumption = 0.64
+			fuel_consumption = 1.0
 		}
 		can_convert_from = {
 			module = engine_1_4x
@@ -154,7 +154,7 @@ equipment_modules = {
 			maximum_speed = 450
 			thrust = 56
 			build_cost_ic = 96
-			fuel_consumption = 0.8
+			fuel_consumption = 1.0
 		}
 
 		can_convert_from = {
@@ -173,7 +173,7 @@ equipment_modules = {
 			maximum_speed = 550
 			thrust = 30
 			build_cost_ic = 38
-			fuel_consumption = 0.16
+			fuel_consumption = 0.24
 		}
 
 		can_convert_from = {
@@ -192,7 +192,7 @@ equipment_modules = {
 			maximum_speed = 500
 			thrust = 45
 			build_cost_ic = 54
-			fuel_consumption = 0.32
+			fuel_consumption = 0.4
 		}
 
 		can_convert_from = {
@@ -211,7 +211,7 @@ equipment_modules = {
 			maximum_speed = 500
 			thrust = 60
 			build_cost_ic = 72
-			fuel_consumption = 0.48
+			fuel_consumption = 0.6
 		}
 
 		can_convert_from = {
@@ -230,7 +230,7 @@ equipment_modules = {
 			maximum_speed = 500
 			thrust = 75
 			build_cost_ic = 88
-			fuel_consumption = 0.64
+			fuel_consumption = 1.0
 		}
 
 		can_convert_from = {
@@ -249,7 +249,7 @@ equipment_modules = {
 			maximum_speed = 500
 			thrust = 90
 			build_cost_ic = 112
-			fuel_consumption = 0.8
+			fuel_consumption = 1.0
 		}
 		can_convert_from = {
 			module = engine_2_4x
@@ -267,7 +267,7 @@ equipment_modules = {
 			maximum_speed = 750
 			thrust = 36
 			build_cost_ic = 46
-			fuel_consumption = 0.16
+			fuel_consumption = 0.24
 		}
 
 		can_convert_from = {
@@ -286,7 +286,7 @@ equipment_modules = {
 			maximum_speed = 700
 			thrust = 54
 			build_cost_ic = 68
-			fuel_consumption = 0.32
+			fuel_consumption = 0.4
 		}
 		can_convert_from = {
 			module = engine_3_2x
@@ -304,7 +304,7 @@ equipment_modules = {
 			maximum_speed = 700
 			thrust = 72
 			build_cost_ic = 84
-			fuel_consumption = 0.48
+			fuel_consumption = 0.6
 		}
 
 		can_convert_from = {
@@ -323,7 +323,7 @@ equipment_modules = {
 			maximum_speed = 700
 			thrust = 90
 			build_cost_ic = 102
-			fuel_consumption = 0.64
+			fuel_consumption = 1.0
 		}
 
 		can_convert_from = {
@@ -342,7 +342,7 @@ equipment_modules = {
 			maximum_speed = 700
 			thrust = 126
 			build_cost_ic = 128
-			fuel_consumption = 0.8
+			fuel_consumption = 1.0
 		}
 		can_convert_from = {
 			module = engine_3_6x
