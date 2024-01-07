@@ -29,6 +29,8 @@
  EQ_MOD_CAT_plane_special_module_radio_navigation_TITLE:0 "Radio Navigation"
  EQ_MOD_CAT_plane_special_module_air_ground_radar_TITLE:0 "Air-Ground Radar"
  EQ_MOD_CAT_plane_special_module_air_air_radar_TITLE:0 "Air-Air Radar"
+ EQ_MOD_CAT_plane_custom_wing_type_TITLE:0 "Wing Types"
+
 
  EQ_MOD_SLOT_fixed_main_weapon_slot_TITLE:0 "Main Armament"
  EQ_MOD_SLOT_fixed_auxiliary_weapon_slot_1_TITLE:0 "Secondary Weapons"
@@ -442,6 +444,16 @@
  engines_4_desc:0 "$engine_4_1x_desc$"
  range_improvements:0 "Range Improvements"
  range_improvements_desc:0 "While it seems obvious that adding more fuel capacity will increase the range of an airplane, actually adding that capacity to a plane without impacting flight performance too much is far from trivial."
+ 
+ EQ_MOD_SLOT_special_type_slot_1_TITLE:0 "Wing Type"
+ EQ_MOD_SLOT_special_type_slot_2_TITLE:0 "Aspiration"
+ trapezoid_wings:0 "Trapezoid Wings"
+ trapezoid_wings_desc:0 "Cheap and easy to produce, light and low drag, but inferior in lift compared to elliptical wings."
+ elliptical_wings:0 "Elliptical Wings"
+ elliptical_wings_desc:0 "Difficult to produce, but their high lift makes them superior in aerial dogfights."
+
+ plane_turbo:0 "Turbocharged"
+ plane_turbo_desc:0 "Turbochargers provide more power at higher altitudes, and a greater fuel efficiency, at the cost of complexity, weight, and reliability."
 
 
 

@@ -2004,4 +2004,22 @@ equipment_modules = {
 		xp_cost = 0
 	}
 
+
+	# Custom air technologies
+
+	trapezoid_wings = {
+		abbreviation = "trapwing"
+		category = plane_custom_wing_type
+	}
+
+	elliptical_wings = {
+		abbreviation = "elipwing"
+		category = plane_custom_wing_type
+	}
+
+	plane_turbocharger = {
+		abbreviation = "planeturbo"
+		category = plane_aspiration_type
+	}
+
 }

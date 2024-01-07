@@ -574,6 +574,30 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+		#### Custom Modules ####
+
+	# Wings
+	spriteType = {
+		name = "GFX_EMI_trapezoid_wings"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/wing_trapezoid.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_elliptical_wings"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/wing_elliptical.dds"
+		legacy_lazy_load = no
+	}
+
+	# Aspiration guiTypes
+
+	spriteType = {
+		name = "GFX_EMI_plane_turbocharger"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/turbocharger.dds"
+		legacy_lazy_load = no
+	}
+
+
 
 		#### MODULE SLOTS ICONS ####
 
@@ -600,5 +624,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/Niche_icon_strip_glow.dds"
 		noOfFrames = 8
 	}
+
+
 
 }
