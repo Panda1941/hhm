@@ -342,23 +342,21 @@ ITA_military_agreements = {
 
 # applies when stability > 50%
 stability_good_modifier = {
-	industrial_capacity_factory = 0.1
-	industrial_capacity_dockyard = 0.1
-	consumer_goods_factor = -0.1
+	industrial_capacity_factory = 0.2
+	industrial_capacity_dockyard = 0.2
+	consumer_goods_factor = -0.05
 	political_power_factor = 0.1
 }
 
 # applies when stability < 50%
 stability_bad_modifier = {
-	industrial_capacity_factory = -0.1
-	industrial_capacity_dockyard = -0.1
-	consumer_goods_factor = 0.10
-	political_power_factor = -0.05
+	industrial_capacity_factory = -0.5
+	industrial_capacity_dockyard = -0.5
+	political_power_factor = -0.2
 }
 
 war_support_good_modifier = {
 	mobilization_speed = 0.30 #in 1/1000 of 1 %
-	industrial_capacity_factory = 0.05
 	army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.1
 	command_power_gain_mult = 0.5
@@ -366,7 +364,6 @@ war_support_good_modifier = {
 
 war_support_bad_modifier = {
 	mobilization_speed = -0.500 # Reduce mobilization speed by half.
-	industrial_capacity_factory = -0.05
 	command_power_gain_mult = -0.95
 	surrender_limit = -0.3	
 }
