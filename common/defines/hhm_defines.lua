@@ -93,10 +93,10 @@ NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100		-- 200 how many planes u can ha
 
 -- NERF TO INFRA
 
-NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 0.50
+NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 1.0
 
 -- Production changes
-NDefines.NProduction.BASE_FACTORY_SPEED = 5.7					-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED = 5						-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3.5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 
