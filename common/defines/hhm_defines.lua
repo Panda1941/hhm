@@ -277,7 +277,7 @@ NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING		    = 0.3  -
 NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				    = 0.4  -- AA penalty at 0% positioning
 NDefines.NNavy.SUBMARINE_REVEAL_ON_MINIMUM_POSITIONING                      = 1  -- submarine reveal change on 0% positioning 
 --------------------------------------------------------------------
-NDefines.NNavy.CARRIER_STACK_PENALTY = 10 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
+NDefines.NNavy.CARRIER_STACK_PENALTY = 6 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.1 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 ---------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
