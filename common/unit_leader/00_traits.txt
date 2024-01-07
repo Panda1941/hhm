@@ -1855,8 +1855,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			cas_damage_reduction = 0.5
-			air_superiority_bonus_in_combat = -0.5
+			cas_damage_reduction = 0.05
 		}
 		
 		ai_will_do = {
