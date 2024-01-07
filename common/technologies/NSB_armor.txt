@@ -1105,15 +1105,9 @@ technologies = {
 			tank_medium_cannon_4	
 			stabilizer
 		}
-		
-			
-
-		
-		
-		
 
 		research_cost = 2
-		start_year = 1942
+		start_year = 1943
 
 		folder = {
 			name = nsb_armour_folder
