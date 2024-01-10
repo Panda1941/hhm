@@ -451,7 +451,7 @@ technologies = {
 			tank_small_cannon_3
 			tank_close_support_gun_2
 			tank_anti_air_cannon_3
-			stabilizer
+			#stabilizer
 		}
 
 		path = {
@@ -921,7 +921,7 @@ technologies = {
 			tank_rocket_launcher_2
 			tank_medium_howitzer_2
 			squeezebore_adaptor
-			#stabilizer
+			##stabilizer
 			tank_anti_air_cannon_3
 		}
 
@@ -1014,7 +1014,7 @@ technologies = {
 			tank_high_velocity_cannon_4
 			tank_rocket_launcher_2
 			tank_medium_howitzer_2
-			#stabilizer
+			##stabilizer
 			tank_anti_air_cannon_3
 		}
 
@@ -1103,7 +1103,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_medium_cannon_4	
-			stabilizer
+			#stabilizer
 		}
 
 		research_cost = 2
@@ -1186,7 +1186,7 @@ technologies = {
 		
 		enable_equipment_modules = {
 		    tank_medium_cannon_4
-			stabilizer
+			#stabilizer
 			
 			tank_anti_air_cannon_4
 		}
@@ -1254,7 +1254,7 @@ technologies = {
 			tank_high_velocity_cannon_5
 			tank_medium_howitzer_3 
 			tank_rocket_launcher_3
-			auto_loader
+			#auto_loader
 			sloped_armor
 		}
 
@@ -1470,7 +1470,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_cannon_2
 			tank_heavy_howitzer
-			stabilizer
+			#stabilizer
 			squeezebore_adaptor
 			tank_anti_air_cannon_2
 			sloped_armor
@@ -1556,7 +1556,7 @@ technologies = {
 			tank_heavy_cannon_3
 			tank_high_velocity_cannon_3
 			tank_heavy_howitzer_2
-			auto_loader
+			#auto_loader
 			tank_anti_air_cannon_3
 		}
 
@@ -1627,7 +1627,7 @@ technologies = {
 			tank_heavy_cannon_3
 			tank_high_velocity_cannon_3
 			tank_heavy_howitzer_2
-			auto_loader
+			#auto_loader
 			tank_anti_air_cannon_3
 		}
 

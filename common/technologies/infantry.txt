@@ -1387,8 +1387,10 @@ technologies = {
 		category_special_forces = {
 			acclimatization_hot_climate_gain_factor = 0.1
 			acclimatization_cold_climate_gain_factor = 0.1
+			max_organisation = 8
+			soft_attack = 0.08
 		}
-        special_forces_min = 28
+        special_forces_min = 56
 		
 		#dependencies = {
 		#	OR = {
@@ -1427,12 +1429,14 @@ technologies = {
 
 		category_special_forces = {
 			max_organisation = 5
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 
 		special_forces_training_time_factor = 0.1
-		special_forces_min = 28
+		special_forces_out_of_supply_factor = -0.1
+		special_forces_attack_factor = 0.06
+		special_forces_min = 56
 		
 		path = {
 			leads_to_tech = extreme_environment_training
@@ -1468,7 +1472,8 @@ technologies = {
 		
 		special_forces_no_supply_grace = 48
 		special_forces_out_of_supply_factor = -0.1
-		special_forces_min = 28
+		special_forces_attack_factor = 0.06
+		special_forces_min = 56
 		
 		path = {
 			leads_to_tech = elite_forces
@@ -1503,6 +1508,7 @@ technologies = {
 		}
 		
 		special_forces_no_supply_grace = 48
+		special_forces_attack_factor = 0.06
 		special_forces_min = 28
 
 		research_cost = 2
