@@ -1601,7 +1601,7 @@ technologies = {
 		category_paratroopers = {
 			soft_attack = 0.1
 			hard_attack = 0.04
-			defence = 0.1
+			defense = 0.1
 		}
 		
 		allow = {
