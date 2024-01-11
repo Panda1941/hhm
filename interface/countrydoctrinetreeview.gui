@@ -908,6 +908,18 @@ guiTypes = {
 				name ="paratroopers_bg"
 				spriteType = "GFX_paratroopers_bg"
 				position = { x=1050 y=33 }
+			}
+
+			iconType = {
+				name ="shock_troop_bg"
+				spriteType = "GFX_paratroopers_bg"
+				position = { x=1530 y=33 }
+			}
+
+			iconType = {
+				name ="jaeger_bg"
+				spriteType = "GFX_marine_bg"
+				position = { x=2010 y=33 }
 			}		
 			
 			instantTextBoxType = {
@@ -948,6 +960,30 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}		
+			instantTextBoxType = {
+				name = "shock_troop_title"
+				position = { x = 1560 y = 35 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "Shock Troops"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}	
+			instantTextBoxType = {
+				name = "jaeger_title"
+				position = { x = 2040 y = 35 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "Jeegers"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}	
 
 			instantTextBoxType = {
 				name = "mountaineers_desc"
@@ -983,6 +1019,30 @@ guiTypes = {
 				borderSize = {x = 0 y = 4}
 				text = "PARATROOPERS_DOCTRINE_DESC"
 				maxWidth = 350
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "shock_troop_desc"
+				position = { x = 1560 y = 90 }
+				textureFile = ""
+				font = "hoi_20b"
+				borderSize = {x = 0 y = 4}
+				text = "Shock troops are perfect urban assault specialists. With the knowledge of close quarters combat, they might also prove themselves capable against fotifications."
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "jaeger_desc"
+				position = { x = 2040 y = 90 }
+				textureFile = ""
+				font = "hoi_20b"
+				borderSize = {x = 0 y = 4}
+				text = "Jaegers are great in forests, they specialize and excell in them. Anywhere there are trees, jaegers thrive."
+				maxWidth = 400
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
@@ -1029,9 +1089,36 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_fullborder_tiled"
 					position = { x=0 y=-150 }					
-				}					
-				
+				}	
 			}	 
+
+			gridboxtype = {
+				name = "special_forces_shock_troops_tree"
+				position = { x=1520 y=172 }
+				size = { width = 478 height = 1000 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-150 }					
+				}	
+			}
+
+			gridboxtype = {
+				name = "special_forces_jaeger_tree"
+				position = { x=2000 y=172 }
+				size = { width = 478 height = 1000 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-150 }					
+				}	
+			}
 		}				 
 		containerWindowType = {
 			name = "folder_tabs"

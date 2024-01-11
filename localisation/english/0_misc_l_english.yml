@@ -31,6 +31,18 @@
  GER_medium_tank_manufacturer:0 "Medium Tank Designer"
  GER_modular_tank_manufacturer:0 "Modular Tank Deisgner"
 
+
+ #DOCTRINE
+ special_forces_shock_troops:0 "Elevate the Shock Troops"
+ shock_troops_cities:0 "Urban Training"
+ shock_troops_forts:0 "Fort Training"
+ shock_troops_generic1:0 "Close Quarters Weapons"
+ shock_troops_generic2:0 "New Breaching Methods"
+ shock_troops_offense:0 "Modern Recovery Tactics"
+ shock_troops_defence:0 "Organized Defence"
+ shock_troops_offense2:0 "Organized Offence"
+ shock_troops_defence2:0 "Building Defence Methods"
+
  #GERMANY
  GER_mp_38:0 "MP 38"
  GER_high_caliber_arty:0 "High Caliber Artillery"

@@ -484,9 +484,10 @@ ideas = {
 			ledger = army
 			available = { }
 			modifier = {
-				experience_gain_special_forces = 0.05
-				experience_gain_army = -0.05
+				experience_gain_special_forces = 0.08
+				experience_gain_army = -0.08
 			}
+			cost = 10
 			ai_will_do = {
 				factor = 1
 				modifier = {

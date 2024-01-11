@@ -112,6 +112,8 @@ technology_categories = {
 	cat_mountaineers_doctrine
 	cat_marines_doctrine
 	cat_paratroopers_doctrine
+	cat_shock_troop_doctrine
+	cat_jaeger_doctrine
 	
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
 	mio_cat_tech_medium_armor_and_modules #Includes modules and Modern Tank
@@ -156,7 +158,9 @@ technology_folders = {
 		ledger = army
 	}
 	air_techs_folder = {
-		available = { NOT = { has_dlc = "By Blood Alone" } }
+		available = { 
+			NOT = { has_dlc = "By Blood Alone" }
+		}
 		ledger = air
 	}
 	bba_air_techs_folder = {

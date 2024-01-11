@@ -284,9 +284,10 @@ ideas = {
 			ledger = navy
 			available = { }
 			modifier = {
-				experience_gain_special_forces = 0.05
-				experience_gain_navy = -0.1
+				experience_gain_special_forces = 0.08
+				experience_gain_navy = -0.16
 			}
+			cost = 10
 			ai_will_do = {
 				factor = 1
 				modifier = {

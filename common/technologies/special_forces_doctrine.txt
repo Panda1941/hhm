@@ -42,7 +42,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			
 			cat_mountaineers_doctrine
 		}
 		
@@ -117,7 +117,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			
 			cat_mountaineers_doctrine
 		}
 		
@@ -187,7 +187,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			
 			cat_mountaineers_doctrine
 		}
 		
@@ -252,7 +252,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			
 			cat_mountaineers_doctrine
 		}
 		
@@ -304,7 +304,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			
 			cat_mountaineers_doctrine
 		}
 		
@@ -380,7 +380,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			
 			cat_mountaineers_doctrine
 		}
 		
@@ -433,7 +433,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			
 			cat_mountaineers_doctrine
 		}
 		
@@ -479,7 +479,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			
 			cat_mountaineers_doctrine
 		}
 		
@@ -517,7 +517,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			
 			cat_mountaineers_doctrine
 		}
 		
@@ -589,7 +589,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 
@@ -651,7 +651,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 
@@ -703,7 +703,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 
@@ -757,7 +757,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 
@@ -810,7 +810,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 
@@ -861,7 +861,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 
@@ -916,7 +916,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 		
@@ -977,7 +977,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 
@@ -1033,7 +1033,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 
@@ -1067,7 +1067,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 		
@@ -1139,7 +1139,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			
 			cat_marines_doctrine
 		}
 
@@ -1203,7 +1203,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			
 			cat_paratroopers_doctrine
 		}
 
@@ -1262,7 +1262,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			
 			cat_paratroopers_doctrine
 		}
 		
@@ -1315,7 +1315,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			
 			cat_paratroopers_doctrine
 		}
 		
@@ -1373,7 +1373,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			
 			cat_paratroopers_doctrine
 		}
 		
@@ -1424,7 +1424,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			
 			cat_paratroopers_doctrine
 		}
 
@@ -1476,7 +1476,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			
 			cat_paratroopers_doctrine
 		}
 
@@ -1524,7 +1524,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			
 			cat_paratroopers_doctrine
 		}
 
@@ -1572,7 +1572,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			
 			cat_paratroopers_doctrine
 		}
 
@@ -1616,7 +1616,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			
 			cat_paratroopers_doctrine
 		}
 
@@ -1660,7 +1660,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			
 			cat_paratroopers_doctrine
 		}
 
@@ -1679,4 +1679,819 @@ technologies = {
 		}
 	}
 	
+
+
+
+	### Shock Troops
+
+	
+	
+	special_forces_shock_troops = {
+		doctrine_name = "SHOCK_TROOPS_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		#xor = { special_forces_mountaineers special_forces_marines } 
+	
+
+		shock_troops = {
+			max_organisation = 2
+			breakthrough = 0.02
+			supply_consumption_factor = -0.1
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = shock_troops_cities
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = shock_troops_forts
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_shock_troop_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shock_troops_cities = {
+		
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		xor = { shock_troops_forts } 
+	
+	
+		shock_troops = {
+			urban = {
+				attack = 0.1
+			}
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = shock_troops_generic1
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_shock_troop_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shock_troops_forts = {
+		
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		xor = { shock_troops_cities } 
+	
+	
+		shock_troops = {
+			fort = {
+				attack = 0.1
+			}
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = shock_troops_generic1
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_shock_troop_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shock_troops_generic1 = {
+		
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		#xor = { special_forces_mountaineers special_forces_marines } 
+	
+	
+		shock_troops = {
+			max_organisation = 6
+			soft_attack = 0.03
+			hard_attack = 0.03
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = shock_troops_generic2
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_shock_troop_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shock_troops_generic2 = {
+		
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		#xor = { special_forces_mountaineers special_forces_marines } 
+	
+	
+		shock_troops = {
+			max_organisation = 2
+			breakthrough = 0.04
+			defense = 0.04
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = shock_troops_offense
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = shock_troops_defence
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_shock_troop_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shock_troops_offense = {
+		
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		xor = { shock_troops_defence } 
+	
+	
+		shock_troops = {
+			max_strength = 0.2
+			breakthrough = 0.04
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = shock_troops_offense2
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_shock_troop_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shock_troops_defence = {
+		
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		xor = { shock_troops_offense } 
+	
+	
+		shock_troops = {
+			max_organisation = 4
+			defense = 0.04
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = shock_troops_defence2
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_shock_troop_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shock_troops_offense2 = {
+		
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		#xor = { special_forces_mountaineers special_forces_marines } 
+	
+	
+		shock_troops = {
+			max_organisation = 4
+			breakthrough = 0.04
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		#path = {
+		#	leads_to_tech = paras_dispersed_drop
+		#	research_cost_coeff = 1
+		#}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_shock_troop_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = -1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shock_troops_defence2 = {
+		
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		#xor = { special_forces_mountaineers special_forces_marines } 
+	
+	
+		shock_troops = {
+			max_organisation = 6
+			defense = 0.04
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		#path = {
+		#	leads_to_tech = paras_dispersed_drop
+		#	research_cost_coeff = 1
+		#}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_shock_troop_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+
+
+
+
+
+	
+	### Jaegers
+
+	
+	
+	special_forces_jaeger = {
+		doctrine_name = "JAEGER_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		#xor = { special_forces_mountaineers special_forces_marines } 
+	
+
+		jaeger = {
+			max_organisation = 4
+			supply_consumption_factor = -0.1
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = jaeger_generic1
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_jaeger_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	jaeger_generic1 = {
+		doctrine_name = "JAEGER_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		#xor = { special_forces_mountaineers special_forces_marines } 
+	
+
+		jaeger = {
+			max_organisation = 2
+			soft_attack = 0.04
+			hard_attack = 0.04
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = jaeger_forest
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = jaeger_marsh
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_jaeger_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	jaeger_forest = {
+		doctrine_name = "JAEGER_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		xor = { jaeger_marsh } 
+	
+
+		jaeger = {
+			forest = {
+				attack = 0.1
+			}
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = jaeger_generic2
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_jaeger_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = -1 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	jaeger_marsh = {
+		doctrine_name = "JAEGER_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		xor = { jaeger_forest } 
+	
+
+		jaeger = {
+			marsh = {
+				attack = 0.1
+			}
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = jaeger_generic2
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_jaeger_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 1 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	jaeger_generic2 = {
+		doctrine_name = "JAEGER_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		#xor = { special_forces_mountaineers special_forces_marines } 
+	
+
+		jaeger = {
+			max_organisation = 2
+			breakthrough = 0.05
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = jaeger_jungle
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = jaeger_forest2
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_jaeger_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	jaeger_jungle = {
+		doctrine_name = "JAEGER_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		xor = { jaeger_forest2 } 
+	
+
+		jaeger = {
+			jungle = {
+				attack = 0.1
+			}
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = jaeger_generic3
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_jaeger_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	jaeger_forest2 = {
+		doctrine_name = "JAEGER_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		xor = { jaeger_jungle } 
+	
+
+		jaeger = {
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		path = {
+			leads_to_tech = jaeger_generic3
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_jaeger_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	jaeger_generic3 = {
+		doctrine_name = "JAEGER_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 0
+		
+		force_use_small_tech_layout = yes
+		
+		#xor = { special_forces_mountaineers special_forces_marines } 
+	
+
+		jaeger = {
+			max_organisation = 2
+			max_strength = 0.2
+			defense = 0.05
+		}
+		
+		
+		
+		allow = { enough_sfxp_for_doctrine = yes }
+		on_research_complete = { subtract_from_variable = { special_forces_xp = special_forces_doctrine_xp_cost } }
+		
+		#path = {
+		#	leads_to_tech = shock_troops_cities
+		#	research_cost_coeff = 1
+		#}
+		
+		doctrine = yes	
+		research_cost = 0
+		
+		categories = {
+			special_forces_doctrine
+			cat_jaeger_doctrine
+		}
+
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
