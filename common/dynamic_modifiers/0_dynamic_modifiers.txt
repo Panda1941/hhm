@@ -1344,3 +1344,37 @@ france_early_core = {
 
 	army_core_defence_factor = 0.05
 }
+
+BRA_state_of_the_economy = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_tank
+
+	consumer_goods_factor = BRA_state_of_the_economy_consumer_goods_factor
+	production_speed_industrial_complex_factor = BRA_state_of_the_economy_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = BRA_state_of_the_economy_production_speed_arms_factory_factor
+	production_speed_dockyard_factor = BRA_state_of_the_economy_production_speed_dockyard_factor
+	
+	industrial_capacity_factory = BRA_state_of_the_economy_industrial_capacity_factory
+	industrial_capacity_dockyard = BRA_state_of_the_economy_industrial_capacity_dockyard
+}
+
+BRA_state_of_the_military = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_tank
+
+	conscription_factor = 0
+	army_org_factor = 0
+	army_morale_factor = 0
+	breakthrough_factor = 0
+	army_attack_factor = 0
+}
+
+BRA_state_of_the_country = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_tank
+
+	consumer_goods_factor = BRA_state_of_the_economy_consumer_goods_factor
+}

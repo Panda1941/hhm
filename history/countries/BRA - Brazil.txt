@@ -125,12 +125,28 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 72
+	democratic = 22
+	fascism = 4
+	communism = 2
 }
+
+set_stability = 0.3
+set_war_support = 0.3
 
 add_ideas = {
 	BRA_monke_politik
 }
+
+set_variable = { var = BRA_state_of_the_economy_consumer_goods_factor value = 0.3 }
+set_variable = { var = BRA_state_of_the_economy_production_speed_industrial_complex_factor value = -0.05 }
+set_variable = { var = BRA_state_of_the_economy_production_speed_arms_factory_factor value = -0.1 }
+set_variable = { var = BRA_state_of_the_economy_production_speed_dockyard_factor value = -0.1 }
+set_variable = { var = BRA_state_of_the_economy_industrial_capacity_factory value = -0.1 }
+set_variable = { var = BRA_state_of_the_economy_industrial_capacity_dockyard value = -0.1 }
+
+
+#add_dynamic_modifier = { modifier = BRA_state_of_the_economy }
 
 set_convoys = 40
 set_research_slots = 3
