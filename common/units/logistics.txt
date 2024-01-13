@@ -39,7 +39,7 @@ sub_units = {
 		# Important Ability
 		supply_consumption_factor = -0.1
 		fuel_consumption_factor = -0.05
-		fuel_capacity = 100
+		fuel_capacity = 180
 
 		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
 		
@@ -52,6 +52,52 @@ sub_units = {
 			support_equipment = 40
 			motorized_equipment = 20
 		}
+	}
+	logistics_company_infantry = {
+		abbreviation = "LOGI"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = yes
 
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 20
+		default_morale = 0.25
+		manpower = 500
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		can_be_parachuted = yes
+		defense = -1 
+		breakthrough = -1
+
+		# Important Ability
+		supply_consumption_factor = -0.08
+
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			support_equipment = 50
+		}
 	}
 }

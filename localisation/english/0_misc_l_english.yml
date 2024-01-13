@@ -12,6 +12,8 @@
  tech_pioneers:0 "Pioneers"
  tech_ranger_recon:0 "Rangers"
 
+ logistics_company_infantry:0 "Infantry Logistics Company"
+
  
  #TEMPLATES
  templates_retards_ai:0 "INFO"

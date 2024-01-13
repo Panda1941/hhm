@@ -427,6 +427,13 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_unit_logistics_company_infantry_icon_small"
+		texturefile = "gfx/texticons/support_logistics_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
 
 	spriteType = {
 		name = "GFX_nato_unit_motorized_artillery_icon_small"

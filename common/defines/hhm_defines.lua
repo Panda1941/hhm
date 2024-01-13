@@ -141,6 +141,14 @@ NDefines.NMilitary.ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE = 0.066 -- Chance fo
 
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.10
 
+NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.4			--0.8
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.2			--0.25
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.4	--0.5
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3	--0.3
+NDefines.NMilitary.OUT_OF_SUPPLY_SPEED = -0.6					--0.8
+NDefines.NMilitary.OUT_OF_FUEL_SPEED_MULT = 0.4					--0.4
+NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = 0.00	--0.05
+
 --Supply and combat changes
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.25 |  attack combat penalty for attacker if out of supply
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.5    -- vanilla -0.65 | defend combat penalty for attacker if out of supply
@@ -234,7 +242,7 @@ NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.05		-- 0.0 after a successfu
 -------------------------------------------------------
 ---speed------------------
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.020                   -- basic speed control
-NDefines.NMilitary.SLOWEST_SPEED = 3
+NDefines.NMilitary.SLOWEST_SPEED = 4
 	
 
 -- Navy Balance

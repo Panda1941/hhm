@@ -38,14 +38,14 @@ categories =  {
 		units = {
 			attack = -0.15
 			defence = -0.1
-			#movement = -0.2
+			movement = -0.1
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.1
 		
-		#supply_flow_penalty_factor = 0.08
+		supply_flow_penalty_factor = 0.08
 		
-		#truck_attrition_factor = 0.2
+		truck_attrition_factor = 0.2
 	}
 
 	hills = {
@@ -62,13 +62,13 @@ categories =  {
 		units = {
 			attack = -0.30
 			defence = -0.1
-			#movement = -0.20
+			movement = -0.15
 		}
 		enemy_army_bonus_air_superiority_factor = -0.05
 		
-		#supply_flow_penalty_factor = 0.1
+		supply_flow_penalty_factor = 0.1
 		
-		#truck_attrition_factor = 0.2
+		truck_attrition_factor = 0.2
 	}
 	
 	mountain = {
@@ -85,15 +85,15 @@ categories =  {
 
 		units = {
 			attack = -0.6
-			movement = -0.35
+			movement = -0.25
 			defence = -0.1
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.10
 		
-		#supply_flow_penalty_factor = 0.12
+		supply_flow_penalty_factor = 0.12
 		
-		#truck_attrition_factor = 1.0
+		truck_attrition_factor = 1.0
 	}
 	
 	plains = {
@@ -124,12 +124,12 @@ categories =  {
 		units = {
 			attack = -0.30
 			defence = 0.25
-			#movement = -0.2
+			movement = -0.05
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.60
 				
-		#supply_flow_penalty_factor = -0.2
+		supply_flow_penalty_factor = -0.2
 	}
 	
 	jungle = {
@@ -154,9 +154,9 @@ categories =  {
 		
 		#sickness_chance = 1.0
 		
-		#supply_flow_penalty_factor = 0.16
+		supply_flow_penalty_factor = 0.16
 		
-		#truck_attrition_factor = 3.0
+		truck_attrition_factor = 3.0
 	}	
 	
 	marsh = {
@@ -198,14 +198,14 @@ categories =  {
 		units = {
 		    attack = -0.15
 			defence = -0.15
-			movement = -0.30	
+			movement = -0.20	
 		}
-		army_attack_speed_factor = -0.20
+		army_attack_speed_factor = -0.1
 		#sickness_chance = 0.10
 		
-		#supply_flow_penalty_factor = 0.14
+		supply_flow_penalty_factor = 0.14
 		
-		#truck_attrition_factor = 0.5
+		truck_attrition_factor = 0.5
 	}
 	
 	water_fjords = {
