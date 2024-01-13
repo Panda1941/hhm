@@ -1115,8 +1115,10 @@ technologies = {
 
 		enable_equipment_modules = {
 			light_mg_4x
+			lmg_defense_turret
 			lmg_defense_turret_2x
 			heavy_mg_4x
+			hmg_defense_turret
 			hmg_defense_turret_2x
 			tank_buster_1
 		}
@@ -1172,6 +1174,7 @@ technologies = {
 		enable_equipment_modules = {
 			aircraft_cannon_1_2x
 			cannon_defense_turret
+			cannon_defense_turret_2x
 			tank_buster_2
 		}
 		
