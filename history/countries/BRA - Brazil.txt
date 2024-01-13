@@ -131,8 +131,8 @@ set_popularities = {
 	communism = 2
 }
 
-set_stability = 0.3
-set_war_support = 0.3
+set_stability = 0.5
+set_war_support = 0.5
 
 add_ideas = {
 	BRA_monke_politik
