@@ -42,6 +42,15 @@
  shock_troops_defence:0 "Organized Defence"
  shock_troops_offense2:0 "Organized Offence"
  shock_troops_defence2:0 "Building Defence Methods"
+ 
+ special_forces_jaeger:0 "Elevate the Jäger Troops"
+ jaeger_generic1:0 "Demolishing Tree-shield"
+ jaeger_forest:0 "Forest Training"
+ jaeger_marsh:0 "Mud Training"
+ jaeger_generic2:0 "Foxhole Warfare"
+ jaeger_jungle:0 "Jungle Training"
+ jaeger_forest2:0 "Intense Forest training"
+ jaeger_generic3:0 "Forest Reconnaissance"
 
  #GERMANY
  GER_mp_38:0 "MP 38"

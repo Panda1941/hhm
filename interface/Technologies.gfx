@@ -1259,6 +1259,109 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/marines_expeditionary_support_medium.dds"
 		alwaystransparent = yes
 	}
+	
+	SpriteType = {
+		name = "GFX_special_forces_shock_troops_medium"
+		texturefile = "gfx/interface/technologies/special_forces_shock_troops_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_special_forces_jaeger_medium"
+		texturefile = "gfx/interface/technologies/special_forces_rangers_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_shock_troops_cities_medium"
+		texturefile = "gfx/interface/technologies/shock_troops_cities_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_shock_troops_forts_medium"
+		texturefile = "gfx/interface/technologies/shock_troops_forts_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_shock_troops_generic1_medium"
+		texturefile = "gfx/interface/technologies/shock_troops_generic1_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_shock_troops_generic2_medium"
+		texturefile = "gfx/interface/technologies/shock_troops_generic2_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_shock_troops_offense_medium"
+		texturefile = "gfx/interface/technologies/shock_troops_offense_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_shock_troops_offense2_medium"
+		texturefile = "gfx/interface/technologies/shock_troops_offense2_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_shock_troops_defence_medium"
+		texturefile = "gfx/interface/technologies/shock_troops_defence_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_shock_troops_defence2_medium"
+		texturefile = "gfx/interface/technologies/shock_troops_defence2_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_jaeger_generic1_medium"
+		texturefile = "gfx/interface/technologies/jaeger_generic1_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_jaeger_forest_medium"
+		texturefile = "gfx/interface/technologies/jaeger_forest_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_jaeger_marsh_medium"
+		texturefile = "gfx/interface/technologies/jaeger_marsh_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_jaeger_generic2_medium"
+		texturefile = "gfx/interface/technologies/jaeger_generic2_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_jaeger_jungle_medium"
+		texturefile = "gfx/interface/technologies/jaeger_jungle_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_jaeger_forest2_medium"
+		texturefile = "gfx/interface/technologies/jaeger_forest2_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_jaeger_generic3_medium"
+		texturefile = "gfx/interface/technologies/jaeger_generic3_medium.dds"
+		alwaystransparent = yes
+	}
+	 
 
 			  
 	### Soviet Aircrafts ###
