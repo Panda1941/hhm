@@ -1755,7 +1755,7 @@ war_measures = {
 		cost = GER_war_bonds_var?50
 
 		modifier = {
-			consumer_goods_factor = -0.15
+			consumer_goods_factor = -0.2
 		}
 
 		ai_will_do = {
@@ -1798,7 +1798,7 @@ war_measures = {
 				limit = {
 					check_variable = {
 						var = GER_war_bonds_var
-						value = 100
+						value = 125
 						compare = greater_than_or_equals
 					}
 					check_variable = {
