@@ -39,7 +39,7 @@ sub_units = {
 		suppression = 1.5
 		weight = 0.5
 		
-		supply_consumption = 0.06
+		supply_consumption = 0.07
 	
 		need = {
 			infantry_equipment = 100
@@ -122,6 +122,89 @@ sub_units = {
 		}
 		amphibious = {
 			movement = -0.05
+		}
+	}
+	
+	infantry_mot = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 40
+		default_morale = 0.3
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 2.2
+		weight = 0.75
+		supply_consumption = 0.08
+		breakthrough = 0.03
+		
+		own_equipment_fuel_consumption_mult = 0.25
+		
+		hardness = -0.5
+		maximum_speed = 1.0
+		#supply_consumption_factor = 0.05
+		
+		transport =	infantry_equipment
+	
+		need = {
+			infantry_equipment = 100
+			motorized_equipment = 15
+		}
+		essential = {
+		    infantry_equipment
+			motorized_equipment
+		}
+
+		forest = {
+			attack = -0.1
+			movement = -0.5
+		}
+		mountain = {
+			attack = -0.30
+			defence = -0.40
+		}
+		jungle = {
+			attack = -0.30
+			defence = -0.40
+			movement = -0.5
+		}
+		marsh = {
+			attack = -0.1
+			movement = -0.3
+		}
+		urban = {
+			attack = -0.1
+			defence = -0.1
+		}
+		river = {
+			attack = -0.1
+			movement = -0.1
+		}
+		amphibious = {
+			attack = -0.2
 		}
 	}
 	

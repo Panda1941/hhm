@@ -2059,6 +2059,7 @@ technologies = {
 
 		enable_subunits = {
 			motorized
+			infantry_mot
 		}
 
 		enable_equipments = {
