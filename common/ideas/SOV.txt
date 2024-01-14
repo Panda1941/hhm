@@ -861,7 +861,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_buildings_factor = 0.18
+				production_speed_buildings_factor = 0.08
 				conscription = 0.025
 			}
 		}
@@ -882,11 +882,11 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_buildings_factor = 0.18
+				production_speed_buildings_factor = 0.08
 				conscription = 0.025
 
 				communism_drift = 0.05
-				consumer_goods_factor = -0.125
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -1117,8 +1117,8 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.15
 				consumer_goods_factor = 0.15
-				production_speed_industrial_complex_factor = 0.20
-				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.16
+				production_speed_arms_factory_factor = 0.12
 				industrial_concern_cost_factor = -0.15
 				industrial_capacity_factory = -0.05
 			}
