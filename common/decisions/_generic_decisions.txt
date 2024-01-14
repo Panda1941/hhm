@@ -86,7 +86,7 @@ political_actions = {
 
 		modifier = {
 			stability_weekly = 0.005
-			consumer_goods_factor = 0.15
+			consumer_goods_factor = 0.10
 			industrial_capacity_factory = -0.1
 		}
 
@@ -1561,7 +1561,8 @@ war_measures = {
 
 		visible = {
 			has_defensive_war = yes
-			has_offensive_war = no			
+			has_offensive_war = no		
+			num_of_controlled_states > 0		
 		}
 
 		fire_only_once = no
@@ -1689,7 +1690,7 @@ war_measures = {
             }
         }
         modifier = {
-            conscription = 0.03
+			industrial_capacity_factory = 0.05
             stability_factor = -0.05
         }
         ai_will_do = {
