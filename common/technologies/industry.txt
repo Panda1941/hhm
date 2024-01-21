@@ -310,16 +310,15 @@ technologies = {
 		}
 	}
 
-	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 	
 		
 		
 		on_research_complete = {
-			hidden_effect = { 
+			#hidden_effect = { 
 				add_ideas = heavy_industry
-			}
-			custom_effect_tooltip = ATT_tooltip_heavy_industry
+			#}
+			#custom_effect_tooltip = ATT_tooltip_heavy_industry
 		}
 		
 
@@ -365,10 +364,10 @@ technologies = {
 		
 		
 		on_research_complete = {
-			hidden_effect = { 
+			#hidden_effect = { 
 				add_ideas = heavy_industry_1
-			}
-			custom_effect_tooltip = ATT_tooltip_heavy_industry_1
+			#}
+			#custom_effect_tooltip = ATT_tooltip_heavy_industry_1
 		}
 		
 		XOR = {
@@ -408,10 +407,10 @@ technologies = {
 		
 		
 		on_research_complete = {
-			hidden_effect = { 
+			#hidden_effect = { 
 				add_ideas = heavy_industry_2
-			}
-			custom_effect_tooltip = ATT_tooltip_heavy_industry_2
+			#}
+			#custom_effect_tooltip = ATT_tooltip_heavy_industry_2
 		}
 		
 		XOR = {
@@ -450,10 +449,10 @@ technologies = {
 	improved_equipment_conversion1 = {
 	
 		on_research_complete = {
-			hidden_effect = { 
+			#hidden_effect = { 
 				add_ideas = small_arms_industry
-			}
-			custom_effect_tooltip = ATT_tooltip_small_arms_industry
+			#}
+			#custom_effect_tooltip = ATT_tooltip_small_arms_industry
 		}
 
 		allow_branch = {
@@ -495,10 +494,10 @@ technologies = {
 	advanced_equipment_conversion2 = {
 		
 		on_research_complete = {
-			hidden_effect = { 
+			#hidden_effect = { 
 				add_ideas = small_arms_industry_1
-			}
-			custom_effect_tooltip = ATT_tooltip_small_arms_industry_1
+			#}
+			#custom_effect_tooltip = ATT_tooltip_small_arms_industry_1
 		}
 		
 		XOR = {
@@ -536,10 +535,10 @@ technologies = {
 	advanced_equipment_conversion3 = {
 		
 		on_research_complete = {
-			hidden_effect = { 
+			#hidden_effect = { 
 				add_ideas = small_arms_industry_2
-			}
-			custom_effect_tooltip = ATT_tooltip_small_arms_industry_2
+			#}
+			#custom_effect_tooltip = ATT_tooltip_small_arms_industry_2
 		}
 		
 		XOR = {
