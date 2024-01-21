@@ -671,7 +671,7 @@ if = {
 			fixed_auxiliary_weapon_slot_3 = empty
 			engine_type_slot = engine_2_2x
 			special_type_slot_1 = lmg_defense_turret_2x
-			special_type_slot_2 = lmg_defense_turret_2x
+			special_type_slot_2 = empty
 			special_type_slot_3 = empty
 			special_type_slot_4 = empty
 		}
