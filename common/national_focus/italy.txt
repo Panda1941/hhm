@@ -4037,18 +4037,6 @@ focus_tree = {
 								}
 							}
 						}
-						create_wargoal = {
-							type = take_state_focus
-							target = 458.controller
-							generator = { 458 665 }
-						}
-					}
-					else = { #Each Tunisian states have different controllers
-						create_wargoal = {
-							type = take_state_focus
-							target = 458.controller
-							generator = { 458 }
-						}
 					}
 				}
 			}
@@ -4068,11 +4056,6 @@ focus_tree = {
 								NOT = { is_guaranteed_by = ROOT }
 							}
 						}
-					}
-					create_wargoal = {
-						type = take_state_focus
-						target = 665.controller
-						generator = { 665 }
 					}
 				}
 			}
@@ -4102,18 +4085,8 @@ focus_tree = {
 								}
 							}
 						}
-						create_wargoal = {
-							type = take_state_focus
-							target = 103.controller
-							generator = { 103 105 }
-						}
 					}
 					else = { #Each Yugoslavian states have different controllers
-						create_wargoal = {
-							type = take_state_focus
-							target = 103.controller
-							generator = { 103 }
-						}
 					}
 					
 				}
@@ -4134,11 +4107,6 @@ focus_tree = {
 								NOT = { is_guaranteed_by = ROOT }
 							}
 						}
-					}
-					create_wargoal = {
-						type = take_state_focus
-						target = 105.controller
-						generator = { 105 }
 					}
 				}
 			}
@@ -4168,18 +4136,8 @@ focus_tree = {
 								}
 							}
 						}
-						create_wargoal = {
-							type = take_state_focus
-							target = 44.controller
-							generator = { 44 805 }
-						}
 					}
 					else = { #Each Albanian states have different controllers
-						create_wargoal = {
-							type = take_state_focus
-							target = 44.controller
-							generator = { 44 }
-						}
 					}
 					
 				}
@@ -4200,11 +4158,6 @@ focus_tree = {
 								NOT = { is_guaranteed_by = ROOT }
 							}
 						}
-					}
-					create_wargoal = {
-						type = take_state_focus
-						target = 805.controller
-						generator = { 805 }
 					}
 				}
 			}
