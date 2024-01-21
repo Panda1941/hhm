@@ -62,6 +62,15 @@ equipments = {
 					ship_dp_secondaries
 				}
 			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_dp_secondaries
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
 		}
 
 		module_count_limit = {
@@ -169,6 +178,15 @@ equipments = {
 					ship_carrier_armor
 				}
 			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_dp_secondaries
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
 		}
 
 		default_modules = {
@@ -222,6 +240,15 @@ equipments = {
 				}
 			}
 			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_dp_secondaries
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+			mid_3_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_secondaries
