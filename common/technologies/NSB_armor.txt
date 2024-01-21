@@ -1004,10 +1004,10 @@ technologies = {
 	improved_medium_tank_chassis_2 = { #Panzer IV J
 
 		enable_equipments = {
-			medium_tank_chassis_5
-			medium_tank_destroyer_chassis_5
-			medium_tank_artillery_chassis_5
-			medium_tank_aa_chassis_5
+			medium_tank_chassis_4
+			medium_tank_destroyer_chassis_4
+			medium_tank_artillery_chassis_4
+			medium_tank_aa_chassis_4
 		}
 		enable_equipment_modules = {
 			tank_medium_cannon_3
@@ -1096,10 +1096,10 @@ technologies = {
 	improved_medium_tank_chassis_3 = { #Panzer IV K
 
 		enable_equipments = {
-			medium_tank_chassis_4
-			medium_tank_destroyer_chassis_4
-			medium_tank_artillery_chassis_4
-			medium_tank_aa_chassis_4
+			medium_tank_chassis_5
+			medium_tank_destroyer_chassis_5
+			medium_tank_artillery_chassis_5
+			medium_tank_aa_chassis_5
 		}
 		enable_equipment_modules = {
 			tank_medium_cannon_4	
