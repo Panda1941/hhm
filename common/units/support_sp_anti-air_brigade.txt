@@ -41,7 +41,7 @@ sub_units = {
 		#support unit nerf
 		breakthrough = -0.6
 		defense = -0.50
-		armor_value = -0.75
+		#armor_value = -0.75
 		same_support_type = anti_air
 		
 		amphibious = {
@@ -86,7 +86,7 @@ sub_units = {
 		#support unit nerf
 		breakthrough = -0.6
 		defense = -0.50
-		armor_value = -0.75
+		#armor_value = -0.75
 		same_support_type = anti_air
 		
 		amphibious = {
@@ -131,7 +131,7 @@ sub_units = {
 		#support unit nerf
 		breakthrough = -0.6
 		defense = -0.50
-		armor_value = -0.75
+		#armor_value = -0.75
 		same_support_type = anti_air
 		
 		amphibious = {
@@ -175,7 +175,7 @@ sub_units = {
 		#support unit nerf
 		breakthrough = -0.6
 		defense = -0.50
-		armor_value = -0.75
+		#armor_value = -0.75
 		same_support_type = anti_air
 		
 		amphibious = {
@@ -220,7 +220,7 @@ sub_units = {
 		#support unit nerf
 		breakthrough = -0.6
 		defense = -0.50
-		armor_value = -0.75
+		#armor_value = -0.75
 
 		same_support_type = anti_air
 		
