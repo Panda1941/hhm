@@ -2319,7 +2319,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = tactical_bomber	
+				category = medium_air	
 			}
 			add_doctrine_cost_reduction = {
 				name = op_dest_bonus
@@ -2351,7 +2351,7 @@ focus_tree = {
 				name = GER_long_range_escorts
 				bonus = 2.0
 				uses = 1
-				category = cat_heavy_fighter
+				category = medium_air
 			}
 		}
 	}
@@ -2365,7 +2365,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_tactical_air_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2375,12 +2375,6 @@ focus_tree = {
 		completion_reward = {
 			mio:GER_dornier_organization = { add_mio_size = 1 }
 			add_ideas = Luftwaffe_marine
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-			}
 		}
 	}
 
@@ -2408,7 +2402,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 2
-				category = cat_strategic_bomber
+				category = heavy_air
 			}
 			add_doctrine_cost_reduction = {
 				name = strat_dest_bonus

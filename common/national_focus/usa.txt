@@ -2076,23 +2076,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			USA_congress_large_opposition = yes
-			custom_effect_tooltip = available_political_advisor
-		    show_ideas_tooltip = charles_coughlin
 		    add_popularity = { ideology = fascism popularity = 0.25 }
 			add_stability = -0.1
-		     if = {
-		    	limit = {
-		    		is_ai = yes
-		    		OR = {
-						has_country_flag = USA_AI_RANDOM_FASCIST
-						has_game_rule = {
-							rule = USA_ai_behavior
-							option = FASCIST
-						}
-					}
-		    	}
-		    	add_ideas = charles_coughlin
-		    }
 		}
 	}
 	focus = {
@@ -3059,8 +3044,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = tank_destroyer_board
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				mio:USA_tank_destroyer_board_organization = {
+					add_mio_size = 2
+				}
+			}
 			
 			add_tech_bonus = {
 				name = USA_armored_infantry
@@ -3097,8 +3088,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = detroit_arsenal
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				mio:USA_detroit_arsenal_organization = {
+					add_mio_size = 2
+				}
+			}
 			
 			add_tech_bonus = {
 				name = USA_armored_infantry
@@ -3225,7 +3222,7 @@ focus_tree = {
 				name = CAS_effort
 				uses = 1
 				bonus = 1.0
-				category = cas_bomber
+				category = light_air
 			}
 		}
 	}
@@ -3345,7 +3342,7 @@ focus_tree = {
 				name = USA_escort_fighters
 				bonus = 3.0
 				uses = 1
-				category = cat_heavy_fighter
+				category = medium_air
 			}
 		}
 	}
@@ -3786,6 +3783,17 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_doctrine_cost_reduction = {
+					name = USA_expand_the_USMC
+					cost_reduction = 0.25
+					uses = 2
+					category = special_forces_doctrine
+				}
+			}
 			add_tech_bonus = {
 				name = USA_expand_the_USMC
 				bonus = 1.0

@@ -1861,13 +1861,13 @@
 				name = JAP_fighter_modernization
 				bonus = 1.0
 				uses = 1
-				category = light_fighter		
+				category = light_air		
 			}
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
 				bonus = 1.0
 				uses = 1
-				category = cat_heavy_fighter	
+				category = medium_air	
 			}
 		}
 	}
@@ -1900,8 +1900,20 @@
 
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = aichi
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = JAP_aichi_organization
+				mio:JAP_aichi_organization = {
+					add_mio_funds = 1500
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = aichi
+			}
 		}
 	}
 
@@ -1937,8 +1949,20 @@
 
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = mitsubishi
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = JAP_mitsubishi_organization
+				mio:JAP_mitsubishi_organization = {
+					add_mio_funds = 1500
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = mitsubishi
+			}
 		}
 	}
 
@@ -2037,8 +2061,8 @@
 				name = JAP_bomber_modernization
 				bonus = 1.0
 				uses = 1
-				category = cas_bomber
-				category = tactical_bomber					
+				category = light_air
+				category = medium_air					
 			}
 		}
 	}
@@ -2351,14 +2375,23 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_doctrine_cost_reduction = {
+					name = JAP_expand_the_snlf
+					cost_reduction = 0.25
+					uses = 2
+					category = special_forces_doctrine
+				}
+			}
 			set_variable = {
 				var = special_forces_xp_to_add
 				value = 40
 				tooltip = add_positive_amount_of_special_forces_xp_tt
 			}
 			add_set_amount_of_special_forces_xp = yes
-			add_ideas = JAP_expand_the_snlf
 			add_tech_bonus = {
 				name = JAP_expand_the_snlf
 				bonus = 1.0
@@ -2372,6 +2405,7 @@
 				uses = 2
 				category = tp_tech
 			}
+			add_ideas = JAP_expand_the_snlf
 		}
 	}
 
@@ -2482,8 +2516,18 @@
 				uses = 1
 				category = bb_tech
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = kure_naval_arsenal
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				mio:JAP_kure_naval_arsenal_organization = {
+					add_mio_size = 2
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = kure_naval_arsenal
+			}
 		}
 	}
 

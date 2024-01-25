@@ -201,7 +201,7 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 1
 				uses = 1
-				category = motorized_equipment
+				category = cat_mechanized_equipment
 			}
 		}
 	}
@@ -1206,9 +1206,8 @@ focus_tree = {
 				add_tech_bonus = {
 					name = fighter_command_focus
 					bonus = 1
-					uses = 2
-					category = light_fighter
-					category = cat_heavy_fighter
+					uses = 1
+					category = light_air
 				}
 			}
 			else_if = {
@@ -1220,8 +1219,7 @@ focus_tree = {
 					name = fighter_command_focus
 					bonus = 1
 					uses = 1
-					category = light_fighter
-					category = cat_heavy_fighter
+					category = light_air
 				}
 				add_doctrine_cost_reduction = {
 					name = ENG_fighter_command_focus					#land_doc_bonus
@@ -1262,9 +1260,9 @@ focus_tree = {
 				add_tech_bonus = {
 					name = bomber_command_focus
 					bonus = 1
-					uses = 2
-					category = cat_strategic_bomber
-					category = tactical_bomber
+					uses = 1
+					category = heavy_air
+					category = medium_air
 				}
 			}
 			else_if = {
@@ -1276,8 +1274,8 @@ focus_tree = {
 					name = bomber_command_focus
 					bonus = 1
 					uses = 1
-					category = cat_strategic_bomber
-					category = tactical_bomber
+					category = heavy_air
+					category = medium_air
 				}
 				add_doctrine_cost_reduction = {
 					name = ENG_bomber_command_focus					#land_doc_bonus
@@ -1318,9 +1316,8 @@ focus_tree = {
 				add_tech_bonus = {
 					name = coastal_command_focus
 					bonus = 1
-					uses = 2
-					category = naval_bomber
-					category = cas_bomber
+					uses = 1
+					category = light_air
 				}
 			}
 			else_if = {
@@ -1332,8 +1329,7 @@ focus_tree = {
 					name = coastal_command_focus
 					bonus = 1
 					uses = 1
-					category = naval_bomber
-					category = cas_bomber
+					category = light_air
 				}
 				add_doctrine_cost_reduction = {
 					name = ENG_coastal_command_focus					#land_doc_bonus

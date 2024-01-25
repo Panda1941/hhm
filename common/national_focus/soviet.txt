@@ -1031,9 +1031,7 @@
 				name = air_bonus
 				bonus = 1.0
 				uses = 1
-				category = light_air
-				category = medium_air
-				category = heavy_air
+				category = air_equipment
 			}
 		}
 	}
