@@ -1037,6 +1037,39 @@
 	}
 
 	focus = {
+		id = SOV_air_innovation
+		icon = GFX_goal_generic_air_fighter2
+		x = 1
+		y = 1
+		text = "Air Innovations"
+		prerequisite = { focus = SOV_transpolar_flights }
+		relative_position_id = SOV_transpolar_flights
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			date > 1940.06.01
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			#add_research_slot = 1		#This might be too op so i'll leave it out for now
+
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 0.75
+				ahead_reduction = 1.5
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
 		id = SOV_peoples_commissariat
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = SOV_anti_fascist_diplomacy }
