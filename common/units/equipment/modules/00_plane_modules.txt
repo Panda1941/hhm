@@ -974,9 +974,6 @@ equipment_modules = {
 		mission_type_stats = {
 			limit = {
 				cas
-			}
-			add_stats = {
-				air_ground_attack = 4
 				attack_logistics
 			}
 			add_stats = {
