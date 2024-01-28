@@ -248,10 +248,10 @@ technologies = {
 			custom_effect_tooltip = spam_inf_tt
 		}
 		
-		path = {
-			leads_to_tech = mass_assault_overall_2 
-			research_cost_coeff = 1
-		}
+		#path = {
+		#	leads_to_tech = mass_assault_overall_2 
+		#	research_cost_coeff = 1
+		#}
 
 		doctrine = yes
 

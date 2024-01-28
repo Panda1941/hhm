@@ -1090,6 +1090,11 @@ technologies = {
 			light_mg_4x
 			lmg_defense_turret
 			lmg_defense_turret_2x
+			heavy_mg_2x
+			heavy_mg_4x
+			hmg_defense_turret
+			hmg_defense_turret_2x
+			tank_buster_1
 		}
 		
 		research_cost = 1
@@ -1105,10 +1110,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = aa_cannon_1
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = aa_hmg
 			research_cost_coeff = 1
 		}
 		
@@ -1139,40 +1140,6 @@ technologies = {
 			}
 		}
 	}
-	aa_hmg = {
-
-		enable_equipment_modules = {
-			heavy_mg_2x
-			heavy_mg_4x
-			hmg_defense_turret
-			hmg_defense_turret_2x
-			tank_buster_1
-		}
-		
-		research_cost = 1
-		start_year = 1939
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 0 y = 4 }
-		}
-
-		categories = {
-			air_equipment
-			plane_modules_tech
-			cat_air_guns
-			mio_cat_all_light_fighter_and_modules
-			mio_cat_all_medium_aircraft_and_modules
-			mio_cat_all_heavy_aircraft_and_modules
-			mio_cat_all_light_aircraft_and_modules
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	
 
 	aa_cannon_1 = {
 
@@ -1192,7 +1159,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 1 y = 6 }
+			position = { x = 0 y = 6 }
 		}
 		path = {
 			leads_to_tech = aa_cannon_2
@@ -1246,7 +1213,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 8 }
+			position = { x = 1 y = 8 }
 		}
 
 		categories = {
@@ -1281,7 +1248,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 8 }
+			position = { x = -1 y = 8 }
 		}
 
 		categories = {
