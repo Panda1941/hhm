@@ -350,88 +350,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_threat = 1
-			if = {
-				limit = { 
-					FRA = { 
-						has_completed_focus = FRA_strengthen_the_little_entente 
-						exists = yes
-						is_subject = no
-					} 
-
-				}
-				FRA = { country_event = { id = DOD_hungary.40 } }
-			}
-			if = {
-				limit = { 
-					OR = {
-						NOT = { FRA = { has_completed_focus = FRA_strengthen_the_little_entente } } 
-						FRA = { exists = no }
-						FRA = { is_subject = yes }
-					}
-				} #Romania gets the event if France not engaged in Balkans
-				ROM = { country_event = { id = DOD_hungary.40 } }	 
-			}
 			
-			#make Horthy or King dude leader. depending on focus picked earlier
-			
-			if = {
-				limit = {
-					has_completed_focus = HUN_strengthen_fascists
-				}
-				if = {
-					#Retire Horthy if neutral leader
-					limit = {
-						has_country_leader = { character = HUN_miklos_horthy }
-					}
-					hidden_effect = { 
-						retire_country_leader = yes 
-					}
-				}
-				hidden_effect = {
-					add_country_leader_role = {
-						character = "HUN_miklos_horthy"
-						country_leader={
-							ideology=fascism_ideology
-							traits={ anti_communist }
-							expire="1965.1.1.1"
-							id=503
-						}
-						promote_leader = yes
-					}
-				}
-			}
+			remove_ideas = HUN_treaty_of_triannon
 
-			if = {
-				limit = {
-					has_completed_focus = HUN_elect_a_fascist_king
-				}
-				if = {
-					#Retire Franz if he neutral leader
-					limit = {
-						has_country_leader = { character = HUN_franz_friedrich }
-					}
-					hidden_effect = { retire_country_leader = yes }
-					add_country_leader_role = {
-						character = "HUN_franz_friedrich"
-						country_leader = {
-						  ideology=nazism
-						  expire="1965.1.1"
-						}
-						promote_leader = yes
-					}
-				}
-
-				#Undecided
-				if = {
-					limit = {
-						NOT = { has_completed_focus = HUN_elect_a_fascist_king }
-						NOT = { has_completed_focus = HUN_strengthen_fascists }
-					}
-					custom_effect_tooltip = HUN_renounce_the_treaty_of_trianon_tt
-				}
-
-				
-			}
 			if = {
 				limit = {
 					NOT = { has_government = fascism }
@@ -1348,21 +1269,6 @@ focus_tree = {
 					NOT = { has_idea = HUN_treaty_of_triannon_2 }
 				}
 				has_idea = HUN_treaty_of_triannon_3
-				AND = {
-					ROM = {
-						OR = {
-							exists = no
-							is_puppet = yes
-						}
-					}
-					FRA = {
-						OR = {
-							exists = no
-							is_puppet = yes
-							NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
-						}
-					}
-				}
 			}
 		}
 		cancel_if_invalid = yes
@@ -1371,20 +1277,21 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			
 			if = {
-				limit = {
-					FRA = { has_completed_focus = FRA_strengthen_the_little_entente }
+				limit = { has_idea = HUN_treaty_of_triannon }
+				swap_ideas = {
+					remove_idea = HUN_treaty_of_triannon
+					add_idea = HUN_treaty_of_triannon_3
 				}
-				FRA = { country_event = DOD_hungary.140 }
 			}
 			if = {
-				limit = {
-					NOT = { FRA = { has_completed_focus = FRA_strengthen_the_little_entente } }
+				limit = { has_idea = HUN_treaty_of_triannon_2 }
+				swap_ideas = {
+					remove_idea = HUN_treaty_of_triannon_2
+					add_idea = HUN_treaty_of_triannon_3
 				}
-				ROM = { country_event = DOD_hungary.140 }
 			}
-
-			custom_effect_tooltip = HUN_bled_agreement_custom_effect_tooltip
 		}
 	}
 

@@ -7,7 +7,7 @@ technologies = {
 		
 		# EFFECT ########
 		category_mountaineers = {
-			supply_consumption_factor = -0.1
+			supply_consumption = -0.01
 			max_organisation = 3
 		}
 		###########
@@ -582,6 +582,7 @@ technologies = {
 		marine = {
 			max_organisation = 5
 			max_strength = 0.1
+			supply_consumption = -0.01
 		}
 		
 		doctrine = yes	
@@ -1177,6 +1178,7 @@ technologies = {
 		paratrooper = {
 			max_organisation = 8
 			breakthrough = 0.05
+			supply_consumption = -0.01
 		}
 		
 		
@@ -1516,7 +1518,6 @@ technologies = {
 		
 		category_paratroopers = {
 			max_organisation = 5
-			supply_consumption_factor = -0.1
 		}
 			
 		doctrine = yes	
@@ -1564,7 +1565,6 @@ technologies = {
 		
 		category_paratroopers = {
 			max_organisation = 5
-			supply_consumption_factor = -0.1
 		}
 		
 		doctrine = yes	
@@ -1700,7 +1700,7 @@ technologies = {
 		shock_troops = {
 			max_organisation = 2
 			breakthrough = 0.02
-			supply_consumption_factor = -0.1
+			supply_consumption = -0.01
 		}
 		
 		
@@ -2131,7 +2131,7 @@ technologies = {
 
 		jaeger = {
 			max_organisation = 4
-			supply_consumption_factor = -0.1
+			supply_consumption = -0.01
 		}
 		
 		

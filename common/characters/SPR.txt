@@ -738,10 +738,6 @@ characters={
 					original_tag = SPR
 				}
 				visible = {
-					NOT = {
-						tag = SPD
-						tag = SPC
-					}
 				}
 				available = {
 				}
@@ -760,13 +756,6 @@ characters={
 				logistics_skill=5
 				legacy_id=1112
 				visible = {
-					OR = {
-						NOT = { has_global_flag = spanish_civil_war }
-						AND = {
-							tag = SPA
-							has_global_flag = spanish_civil_war
-						}
-					}
 				}
 			}
 		}
