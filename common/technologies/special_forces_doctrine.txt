@@ -1191,12 +1191,12 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = paras_dispersed_drop
+			leads_to_tech = paras_dispersed_drop_hhm
 			research_cost_coeff = 1
 		}
 		
 		path = {
-			leads_to_tech = paras_combat_drop
+			leads_to_tech = paras_combat_drop_hhm
 			research_cost_coeff = 1
 		}
 
@@ -1229,7 +1229,7 @@ technologies = {
 		}
 	}
 	
-	paras_dispersed_drop = {
+	paras_dispersed_drop_hhm = {
 
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -1259,7 +1259,7 @@ technologies = {
 		#special_forces_min = 14
 		
 		on_research_complete = {
-			custom_effect_tooltip = SF_PARAS_sabotage_effect_tt
+			#custom_effect_tooltip = SF_PARAS_sabotage_effect_tt
 		}
 		
 		categories = {
@@ -1282,7 +1282,7 @@ technologies = {
 		}
 	}
 	
-	paras_combat_drop = {
+	paras_combat_drop_hhm = {
 
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -1312,7 +1312,7 @@ technologies = {
 		#special_forces_min = 14
 		
 		on_research_complete = {
-			custom_effect_tooltip = SF_PARAS_combat_effect_tt
+			#custom_effect_tooltip = SF_PARAS_combat_effect_tt
 		}
 		
 		categories = {

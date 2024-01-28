@@ -7,9 +7,6 @@ technologies = {
 		
 		#doctrine_name = "MOBILE_WARFARE_OVERALL"
 
-		dependencies = {
-			mobile_warfare = 1
-		}
 		allow = {
 			tag = GER 			
 		}
@@ -86,9 +83,6 @@ technologies = {
 		
 		#doctrine_name = "SUPERIOR_FIREPOWER_OVERALL"
 
-		dependencies = {
-			superior_firepower = 1
-		}
 		allow = {
 		        OR = {
 			tag = ENG 
@@ -163,9 +157,6 @@ technologies = {
 		
 		#doctrine_name = "GRAND_BATTLEPLAN_OVERALL"
 
-		dependencies = {
-			trench_warfare = 1
-		}
 		allow = {
 		OR = {
 			tag = ITA 
@@ -221,9 +212,6 @@ technologies = {
 		
 		#doctrine_name = "MASS_ASSAULT_OVERALL"
 
-		dependencies = {
-			mass_assault = 1
-		}
 		allow = {
 			tag = SOV 			
 		}
@@ -291,37 +279,37 @@ technologies = {
 		
 	}
 	
-	mass_assault_overall_2 = {
-		
-		#doctrine_name = "MASS_ASSAULT_OVERALL"
-		
-		allow = {
-			tag = SOV 
-            date > 1942.03.01			
-		}
-
-		doctrine = yes
-
-		research_cost = 1
-		xp_research_type = army
-		xp_unlock_cost = 50
-		
-		categories = {
-			land_doctrine
-		}
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 0 y = 3 }
-		}
-		
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-
-		# Effects
-		industrial_capacity_factory = 0.2
-	}
+	#mass_assault_overall_2 = {
+	#	
+	#	#doctrine_name = "MASS_ASSAULT_OVERALL"
+	#	
+	#	allow = {
+	#		tag = SOV 
+    #        date > 1942.03.01			
+	#	}
+#
+	#	doctrine = yes
+#
+	#	research_cost = 1
+	#	xp_research_type = army
+	#	xp_unlock_cost = 50
+	#	
+	#	categories = {
+	#		land_doctrine
+	#	}
+#
+	#	folder = {
+	#		name = land_doctrine_folder
+	#		position = { x = 0 y = 3 }
+	#	}
+	#	
+	#	
+	#	
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+#
+	#	# Effects
+	#	industrial_capacity_factory = 0.2
+	#}
 }

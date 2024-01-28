@@ -5923,8 +5923,8 @@ leader_traits = {
 	industrial_concern = {
 		random = no
 
-		industrial_capacity_factory = 0.08
-		industrial_capacity_dockyard = 0.08
+		industrial_capacity_factory = 0.04
+		industrial_capacity_dockyard = 0.04
 
 		ai_will_do = {
 			factor = 1
@@ -5961,7 +5961,7 @@ leader_traits = {
 	refinery_concern = {
 		random = no
 
-		fuel_gain_factor = 0.1
+		fuel_gain_factor = 0.08
 
 		ai_will_do = {
 			factor = 1
@@ -5971,7 +5971,7 @@ leader_traits = {
 	electronics_concern = {
 		random = no
 
-		research_speed_factor = 0.06
+		research_speed_factor = 0.04
 
 		ai_will_do = {
 			factor = 1
