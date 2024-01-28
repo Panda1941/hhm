@@ -1,4 +1,17 @@
 ﻿l_english:
+ EQ_MOD_CAT_light_fighter_weapon_TITLE:0 "Light Fighter Weapons"
+ EQ_MOD_CAT_plane_special_module_extra_TITLE:0 "Special Extra Module"
+
+ increased_ammo_storage_small:0 "Anti-Air Missiles"
+ bomb_fuses_small:0 "Anti-Surface Missiles"
+ magnetic_torpedoes_small:0 "Anti-Ship Missiles"
+ overclocked_engine_small:0 "Engine Supercharger"
+ efficient_fuel_small:0 "Efficient Fuel Systems"
+ improved_maneuverability_small:0 "Improved Maneuverability"
+
+
+
+
  industry_late:0 "Late Game Industry"
 
  tank_medium_cannon_3:0 "Advanced Medium Cannon"

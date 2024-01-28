@@ -21,6 +21,40 @@ spriteTypes = {
 		#### MODULES ####
 
 	spriteType = {
+		name = "GFX_EMI_increased_ammo_storage_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/increased_ammo_storage_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_bomb_fuses_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/bomb_fuses_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_magnetic_torpedoes_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/magnetic_torpedoes_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_overclocked_engine_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/overclocked_engine_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_efficient_fuel_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/efficient_fuel_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_improved_maneuverability_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/improved_maneuverability_small.dds"
+		legacy_lazy_load = no
+	}
+
+
+
+
+	spriteType = {
 		name = "GFX_EMI_light_mg_2x"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_light_mg_2_icon.dds"
 		legacy_lazy_load = no
@@ -454,8 +488,18 @@ spriteTypes = {
 	#### Category
 
 	spriteType = {
+		name = "GFX_EMI_plane_special_module_extra"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/overclocked_engine_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_light_fighter_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_light_mg_2_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_fighter_weapon"
-		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_heavy_mg_4_icon.dds"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_heavy_mg_2_icon.dds"
 		legacy_lazy_load = no
 	}
 		spriteType = {

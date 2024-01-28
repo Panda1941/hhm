@@ -324,6 +324,7 @@ if = {
 		set_technology = {
 			iw_small_airframe = 1
 			aa_lmg = 1
+			aa_hmg = 1
 			aa_cannon_1 = 1
 			early_bombs = 1
 			

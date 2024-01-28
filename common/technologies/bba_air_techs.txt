@@ -158,6 +158,13 @@ technologies = {
 		enable_equipment_modules = {
 			engine_3_1x
 			engine_3_2x
+			
+			increased_ammo_storage_small
+			bomb_fuses_small
+			magnetic_torpedoes_small
+			overclocked_engine_small
+			efficient_fuel_small
+			improved_maneuverability_small
 		}	
 
 		research_cost = 2
@@ -947,41 +954,6 @@ technologies = {
 			}
 		}
 	}
-	
-	photo_reconnaisance = {
-		enable_equipment_modules = {
-			recon_camera
-		}
-		
-		research_cost = 1
-		xp_research_type = air
-		xp_boost_cost = 50
-		xp_research_bonus = 0.50
-		start_year = 1922
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 0 y = 2 }
-		}
-
-		allow_branch = { has_dlc = "La Resistance" }
-		
-		categories = {
-			air_equipment
-			plane_modules_tech
-			mio_cat_all_medium_aircraft_and_modules
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					has_tech = basic_medium_airframe
-				}
-				factor = 5
-			}
-		}
-	}
 
 	air_torpedoe_1 = {
 		enable_equipment_modules = {
@@ -996,7 +968,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 2 }
+			position = { x = 1 y = 2 }
 		}
 
 		path = {
@@ -1040,7 +1012,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 1 y = 6 }
 		}
 
 		path = {
@@ -1084,7 +1056,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 10 }
+			position = { x = 1 y = 10 }
 		}
 
 		categories = {
@@ -1118,11 +1090,6 @@ technologies = {
 			light_mg_4x
 			lmg_defense_turret
 			lmg_defense_turret_2x
-			heavy_mg_2x
-			heavy_mg_4x
-			hmg_defense_turret
-			hmg_defense_turret_2x
-			tank_buster_1
 		}
 		
 		research_cost = 1
@@ -1138,6 +1105,10 @@ technologies = {
 
 		path = {
 			leads_to_tech = aa_cannon_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aa_hmg
 			research_cost_coeff = 1
 		}
 		
@@ -1168,6 +1139,38 @@ technologies = {
 			}
 		}
 	}
+	aa_hmg = {
+
+		enable_equipment_modules = {
+			heavy_mg_2x
+			heavy_mg_4x
+			hmg_defense_turret
+			hmg_defense_turret_2x
+			tank_buster_1
+		}
+		
+		research_cost = 1
+		start_year = 1939
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 4 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	
 
@@ -1189,7 +1192,11 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 1 y = 6 }
+		}
+		path = {
+			leads_to_tech = aa_cannon_2
+			research_cost_coeff = 1
 		}
 		path = {
 			leads_to_tech = aa_cannon_3
@@ -1225,12 +1232,45 @@ technologies = {
 			}
 		}
 	}
-	
-	aa_cannon_3 = {
+	aa_cannon_2 = {
 
 		enable_equipment_modules = {
 			large_aircraft_cannon_1x
 			large_aircraft_cannon_2x
+			cannon_defense_turret
+			cannon_defense_turret_2x
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 8 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	aa_cannon_3 = {
+
+		enable_equipment_modules = {
+			aircraft_cannon_2_1x
+			aircraft_cannon_2_2x
+			cannon_defense_turret
+			cannon_defense_turret_2x
 		}
 		
 		research_cost = 1.0
@@ -1278,23 +1318,32 @@ technologies = {
 	aircraft_construction = {
 
 		enable_equipment_modules = {
-			fuel_tanks_small
-			fuel_tanks_medium
-			fuel_tanks_large
-			drop_tanks
-			dive_brakes_small
-			non_strategic_materials_small
+			# Construction Modules
 			floats
-			non_strategic_materials_medium
+			dive_brakes_small
 			flying_boat_medium
-			non_strategic_materials_large
 			flying_boat_large
+			
+			non_strategic_materials_small
+			non_strategic_materials_medium
+			non_strategic_materials_large
+
+			# Range Modules
+			#fuel_tanks_small
+			#fuel_tanks_medium
+			#fuel_tanks_large
+			#drop_tanks
+
+			# Survivability Modules
 			self_sealing_fuel_tanks_small
 			self_sealing_fuel_tanks_medium
 			self_sealing_fuel_tanks_large
 			armor_plate_small
 			armor_plate_medium
 			armor_plate_large
+
+			# Recon
+			recon_camera
 		}
 		
 		research_cost = 1

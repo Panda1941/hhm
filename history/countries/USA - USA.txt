@@ -434,8 +434,8 @@ if = {
 		name = "P-35A" #
 		type = small_plane_airframe_1
 		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+			fixed_main_weapon_slot = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}
