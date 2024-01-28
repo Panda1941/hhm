@@ -202,9 +202,9 @@ equipments = {
 		module_slots = inherit
 		priority = 5
 
-		air_range = 500
-		maximum_speed = 0
-		air_agility = 56
+		air_range = 400
+		maximum_speed = 400
+		air_agility = 35
 		air_defence = 7
 		weight = 3
 		naval_strike_attack = 1
@@ -220,9 +220,9 @@ equipments = {
 		parent = small_plane_airframe_0
 		priority = 5
 
-		air_range = 650
-		maximum_speed = 0
-		air_agility = 62
+		air_range = 550
+		maximum_speed = 425
+		air_agility = 40
 		air_defence = 9
 		weight = 4
 		naval_strike_attack = 1
@@ -298,9 +298,9 @@ equipments = {
 		parent = small_plane_airframe_1
 		priority = 5
 
-		air_range = 900
-		maximum_speed = 0
-		air_agility = 70
+		air_range = 650
+		maximum_speed = 450
+		air_agility = 45
 		air_defence = 11
 		weight = 5
 		naval_strike_attack = 1
@@ -391,9 +391,9 @@ equipments = {
 		parent = small_plane_airframe_2
 		priority = 5
 
-		air_range = 1100
-		maximum_speed = 0
-		air_agility = 74
+		air_range = 750
+		maximum_speed = 475
+		air_agility = 50
 		air_defence = 12
 		weight = 6
 		naval_strike_attack = 1
@@ -507,11 +507,11 @@ equipments = {
 		parent = small_plane_airframe_3
 		priority = 5
 
-		air_range = 2000
-		maximum_speed = 0
-		air_agility = 72
+		air_range = 900
+		maximum_speed = 500
+		air_agility = 55
 		air_defence = 18
-		weight = 7
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 42
@@ -827,11 +827,11 @@ equipments = {
 		module_slots = inherit
 		priority = 5
 
-		air_range = 450
-		maximum_speed = 0
-		air_agility = 54
+		air_range = 400
+		maximum_speed = 400
+		air_agility = 30
 		air_defence = 7
-		weight = 5
+		weight = 4
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		lend_lease_cost = 8			 
@@ -846,11 +846,11 @@ equipments = {
 		parent = cv_small_plane_airframe_0
 		priority = 5
 
-		air_range = 570
-		maximum_speed = 0
-		air_agility = 60
+		air_range = 550
+		maximum_speed = 425
+		air_agility = 35
 		air_defence = 9
-		weight = 6
+		weight = 5
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 34
@@ -923,11 +923,11 @@ equipments = {
 		parent = cv_small_plane_airframe_1
 		priority = 5
 
-		air_range = 750
-		maximum_speed = 0
-		air_agility = 66
+		air_range = 650
+		maximum_speed = 450
+		air_agility = 40
 		air_defence = 11
-		weight = 7
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 36
@@ -1015,11 +1015,11 @@ equipments = {
 		parent = cv_small_plane_airframe_2
 		priority = 5
 
-		air_range = 900
-		maximum_speed = 0
-		air_agility = 70
+		air_range = 750
+		maximum_speed = 475
+		air_agility = 45
 		air_defence = 12
-		weight = 8
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 38
@@ -1125,11 +1125,11 @@ equipments = {
 		parent = cv_small_plane_airframe_3
 		priority = 5
 
-		air_range = 1700
-		maximum_speed = 0
-		air_agility = 70
+		air_range = 900
+		maximum_speed = 500
+		air_agility = 50
 		air_defence = 18
-		weight = 9
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 42
@@ -1439,27 +1439,27 @@ equipments = {
 
 		module_count_limit = {
 			module = small_bomb_bay
-			count < 4
+			count < 3
 		}
 
 		module_count_limit = {
 			module = torpedo_mounting
-			count < 4
+			count < 3
 		}
 
 		module_count_limit = {
 			module = tank_buster_1
-			count < 3
+			count < 4
 		}
 
 		module_count_limit = {
 			module = tank_buster_2
-			count < 3
+			count < 2
 		}
 
 		module_count_limit = {
 			module = medium_bomb_bay
-			count < 4
+			count < 3
 		}
 
 		module_count_limit = {
@@ -1469,7 +1469,7 @@ equipments = {
 
 		module_count_limit = {
 			category = nav_bomber_weapon
-			count < 4
+			count < 3
 		}
 
 		module_count_limit = {
@@ -1515,9 +1515,9 @@ equipments = {
 		module_slots = inherit
 		priority = 5
 
-		air_range = 1200
-		maximum_speed = 0
-		air_agility = 15
+		air_range = 750
+		maximum_speed = 200
+		air_agility = 25
 		air_defence = 15
 		weight = 8
 		naval_strike_attack = 1
@@ -1534,11 +1534,11 @@ equipments = {
 		parent = medium_plane_airframe_0
 		priority = 5
 
-		air_range = 2200
-		maximum_speed = 0
+		air_range = 900
+		maximum_speed = 325
 		air_agility = 30
 		air_defence = 18
-		weight = 10
+		weight = 8
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 32
@@ -1669,8 +1669,8 @@ equipments = {
 		parent = medium_plane_airframe_1
 		priority = 5
 
-		air_range = 2400
-		maximum_speed = 0
+		air_range = 1100
+		maximum_speed = 375
 		air_agility = 35
 		air_defence = 20
 		weight = 12
@@ -1821,8 +1821,8 @@ equipments = {
 		parent = medium_plane_airframe_2
 		priority = 5
 
-		air_range = 2800
-		maximum_speed = 0
+		air_range = 1300
+		maximum_speed = 425
 		air_agility = 40
 		air_defence = 24
 		weight = 14
@@ -1986,9 +1986,9 @@ equipments = {
 		parent = medium_plane_airframe_3
 		priority = 5
 
-		air_range = 3000
-		maximum_speed = 0
-		air_agility = 50
+		air_range = 1500
+		maximum_speed = 500
+		air_agility = 45
 		air_defence = 24
 		weight = 16
 		naval_strike_attack = 1
@@ -2374,6 +2374,11 @@ equipments = {
 			count < 2
 		}
 
+		module_count_limit = {
+			category = plane_special_module_defense_turret
+			count < 7
+		}
+
 		default_modules = {
 			fixed_main_weapon_slot = empty
 			fixed_auxiliary_weapon_slot_1 = empty
@@ -2391,11 +2396,11 @@ equipments = {
 		module_slots = inherit
 		priority = 5
 
-		air_range = 2000
-		maximum_speed = 0
-		air_agility = 25
-		air_defence = 15
-		weight = 20
+		air_range = 1000
+		maximum_speed = 200
+		air_agility = 20
+		air_defence = 20
+		weight = 16
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 	}
@@ -2409,11 +2414,11 @@ equipments = {
 		parent = large_plane_airframe_0
 		priority = 5
 
-		air_range = 2500
-		maximum_speed = 0
-		air_agility = 30
-		air_defence = 20
-		weight = 25
+		air_range = 1500
+		maximum_speed = 225
+		air_agility = 25
+		air_defence = 25
+		weight = 18
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 34
@@ -2549,11 +2554,11 @@ equipments = {
 		parent = large_plane_airframe_1
 		priority = 5
 
-		air_range = 3500
-		maximum_speed = 0
-		air_agility = 35
-		air_defence = 30
-		weight = 30
+		air_range = 2000
+		maximum_speed = 300
+		air_agility = 30
+		air_defence = 35
+		weight = 20
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 38
@@ -2715,11 +2720,11 @@ equipments = {
 		parent = large_plane_airframe_2
 		priority = 5
 
-		air_range = 5000
-		maximum_speed = 0
-		air_agility = 45
-		air_defence = 45
-		weight = 35
+		air_range = 3000
+		maximum_speed = 350
+		air_agility = 35
+		air_defence = 50
+		weight = 22
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 42
@@ -2880,11 +2885,11 @@ equipments = {
 		parent = large_plane_airframe_3
 		priority = 5
 
-		air_range = 7000
-		maximum_speed = 0
-		air_agility = 55
+		air_range = 3600
+		maximum_speed = 400
+		air_agility = 40
 		air_defence = 55
-		weight = 42
+		weight = 24
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 46
