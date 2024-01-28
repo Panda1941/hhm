@@ -78,7 +78,18 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
+					plane_special_defence_module_small
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_small
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 				}
 			}
@@ -253,10 +264,22 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
+					plane_special_defence_module_small
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_small
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 				}
 			}
@@ -318,15 +341,26 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
+					plane_special_defence_module_small
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_small
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 				}
 			}
-
-			special_type_slot_2 = {
+			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_extra
@@ -392,15 +426,27 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
+					plane_special_defence_module_small
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_small
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 				}
 			}
 
-			special_type_slot_2 = {
+			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_extra
@@ -466,22 +512,26 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
-					plane_special_module_defense_turret
+					plane_special_defence_module_small
 				}
 			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_extra
-					plane_special_module_radio_navigation
+					plane_special_range_module_small
 				}
 			}
 			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_defense_turret
+				}
+			}
+			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_extra
@@ -567,11 +617,23 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
-					plane_special_module_bomb_sights
+					plane_special_defence_module_small
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_small
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_defense_turret
 				}
 			}
 		}
@@ -628,7 +690,7 @@ equipments = {
 
 		module_count_limit = {
 			module = floats #can't put floats on carrier planes, that would be silly
-			count < 1
+			count < 2
 		}
 
 		module_count_limit = {
@@ -747,10 +809,22 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
+					plane_special_defence_module_small
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_small
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 				}
 			}
@@ -811,10 +885,22 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
+					plane_special_defence_module_small
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_small
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 				}
 			}
@@ -876,10 +962,22 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
+					plane_special_defence_module_small
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_small
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 				}
 			}
@@ -940,10 +1038,22 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
+					plane_special_defence_module_small
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_small
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 				}
 			}
@@ -1023,12 +1133,22 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					mine_warfare_defense
-					plane_special_module_radio_navigation
-					plane_special_module_medium
+					plane_special_defence_module_medium
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_medium
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
 				}
@@ -1139,7 +1259,7 @@ equipments = {
 		priority = 5
 
 		air_range = 750
-		maximum_speed = 200
+		maximum_speed = 350
 		air_agility = 25
 		air_defence = 15
 		weight = 8
@@ -1158,7 +1278,7 @@ equipments = {
 		priority = 5
 
 		air_range = 900
-		maximum_speed = 325
+		maximum_speed = 400
 		air_agility = 30
 		air_defence = 18
 		weight = 8
@@ -1202,12 +1322,23 @@ equipments = {
 				}
 			}
 
+			
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					mine_warfare_defense
-					plane_special_module_radio_navigation
-					plane_special_module_medium
+					plane_special_defence_module_medium
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_medium
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
 				}
@@ -1225,7 +1356,7 @@ equipments = {
 		priority = 5
 
 		air_range = 1100
-		maximum_speed = 375
+		maximum_speed = 425
 		air_agility = 35
 		air_defence = 20
 		weight = 12
@@ -1272,23 +1403,37 @@ equipments = {
 				}
 			}
 
+			
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					mine_warfare_defense
-					plane_special_module_radio_navigation
-					plane_special_module_medium
+					plane_special_defence_module_medium
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_medium
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_medium
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
 				}
 			}
-
-			special_type_slot_2 = {
+			special_type_slot_5 = {
 				required = no
 				allowed_module_categories = {
-					mine_warfare_defense
 					plane_special_module_radio_navigation
-					plane_special_module_medium
+					plane_special_module_extra
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
 				}
@@ -1306,7 +1451,7 @@ equipments = {
 		priority = 5
 
 		air_range = 1300
-		maximum_speed = 425
+		maximum_speed = 450
 		air_agility = 40
 		air_defence = 24
 		weight = 14
@@ -1356,20 +1501,33 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					mine_warfare_defense
-					plane_special_module_radio_navigation
-					plane_special_module_medium
+					plane_special_defence_module_medium
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_medium
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_medium
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
 				}
 			}
-
-			special_type_slot_2 = {
+			special_type_slot_5 = {
 				required = no
 				allowed_module_categories = {
-					mine_warfare_defense
 					plane_special_module_radio_navigation
-					plane_special_module_medium
+					plane_special_module_extra
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
 				}
@@ -1437,30 +1595,33 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					mine_warfare_defense
-					plane_special_module_radio_navigation
-					plane_special_module_medium
-					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
+					plane_special_defence_module_medium
 				}
 			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					mine_warfare_defense
-					plane_special_module_radio_navigation
-					plane_special_module_medium
-					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
+					plane_special_range_module_medium
 				}
 			}
 			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					mine_warfare_defense
+					plane_special_range_module_medium
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_defense_turret
+					plane_special_module_defense_turret_x2
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_radio_navigation
-					plane_special_module_medium
+					plane_special_module_extra
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
 				}
@@ -1538,14 +1699,35 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
+					plane_special_defence_module_large
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
-					plane_special_module_bomb_sights
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_defense_turret
+					plane_special_module_defense_turret_x2
+
 					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_large
-					mine_warfare_defense
 				}
 			}
 		}
@@ -1644,8 +1826,8 @@ equipments = {
 
 		air_range = 1000
 		maximum_speed = 200
-		air_agility = 20
-		air_defence = 20
+		air_agility = 15
+		air_defence = 15
 		weight = 16
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
@@ -1662,8 +1844,8 @@ equipments = {
 
 		air_range = 1500
 		maximum_speed = 225
-		air_agility = 25
-		air_defence = 25
+		air_agility = 20
+		air_defence = 20
 		weight = 18
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
@@ -1698,15 +1880,40 @@ equipments = {
 				}
 			}
 
+			
+
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_large
+					plane_special_defence_module_large
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_defense_turret
+					plane_special_module_defense_turret_x2
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
 
 					plane_special_module_radio_navigation
-					mine_warfare_defense
 				}
 			}
 		}
@@ -1723,8 +1930,8 @@ equipments = {
 
 		air_range = 2000
 		maximum_speed = 300
-		air_agility = 30
-		air_defence = 35
+		air_agility = 25
+		air_defence = 25
 		weight = 20
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
@@ -1763,27 +1970,47 @@ equipments = {
 				}
 			}
 
+			
+
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_large
-					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
-					
-					plane_special_module_radio_navigation
-					mine_warfare_defense
+					plane_special_defence_module_large
 				}
 			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_large
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
-					
+				}
+			}
+			special_type_slot_6 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_defense_turret
+					plane_special_module_defense_turret_x2
+
 					plane_special_module_radio_navigation
-					mine_warfare_defense
+					plane_special_module_extra
 				}
 			}
 		}
@@ -1800,8 +2027,8 @@ equipments = {
 
 		air_range = 3000
 		maximum_speed = 350
-		air_agility = 35
-		air_defence = 50
+		air_agility = 30
+		air_defence = 30
 		weight = 22
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
@@ -1839,27 +2066,47 @@ equipments = {
 				}
 			}
 
+			
+
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_large
-					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
-					
-					plane_special_module_radio_navigation
-					mine_warfare_defense
+					plane_special_defence_module_large
 				}
 			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_large
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
 					plane_special_module_defense_turret
 					plane_special_module_defense_turret_x2
-					
+				}
+			}
+			special_type_slot_6 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_defense_turret
+					plane_special_module_defense_turret_x2
+
 					plane_special_module_radio_navigation
-					mine_warfare_defense
+					plane_special_module_extra
 				}
 			}
 		}
@@ -1876,8 +2123,8 @@ equipments = {
 
 		air_range = 3600
 		maximum_speed = 400
-		air_agility = 40
-		air_defence = 55
+		air_agility = 30
+		air_defence = 35
 		weight = 24
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
@@ -1919,30 +2166,42 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_large
-					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
-					
-					plane_special_module_radio_navigation
-					mine_warfare_defense
+					plane_special_defence_module_large
 				}
 			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_large
-					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
-					
-					plane_special_module_radio_navigation
-					mine_warfare_defense
+					plane_special_range_module_large
 				}
 			}
 			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_range_module_large
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_defense_turret
+					plane_special_module_defense_turret_x2
+				}
+			}
+			special_type_slot_6 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_defense_turret
+					plane_special_module_defense_turret_x2
+
 					plane_special_module_radio_navigation
+					plane_special_module_extra
 				}
 			}
 		}

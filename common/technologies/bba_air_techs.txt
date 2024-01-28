@@ -467,6 +467,13 @@ technologies = {
 			engine_3_2x
 			engine_3_3x
 			engine_3_4x
+			
+			increased_ammo_storage_small
+			bomb_fuses_small
+			magnetic_torpedoes_small
+			overclocked_engine_small
+			efficient_fuel_small
+			improved_maneuverability_small
 		}
 	
 		path = {
@@ -710,6 +717,13 @@ technologies = {
 		
 		enable_equipment_modules = {
 			engine_3_6x
+			
+			increased_ammo_storage_small
+			bomb_fuses_small
+			magnetic_torpedoes_small
+			overclocked_engine_small
+			efficient_fuel_small
+			improved_maneuverability_small
 		}
 	
 		path = {
@@ -919,14 +933,14 @@ technologies = {
 
 	armor_piercing_bombs = {
 		enable_equipment_modules = {
-					armor_piercing_bomb_locks
+			armor_piercing_bomb_locks
 		}
 			
 		research_cost = 2
 		xp_research_type = air
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
-		start_year = 1937
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1008,7 +1022,7 @@ technologies = {
 		xp_research_type = air
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1052,7 +1066,7 @@ technologies = {
 		xp_research_type = air
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1209,6 +1223,9 @@ technologies = {
 		}
 		
 		research_cost = 1.5
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		start_year = 1943
 
 		folder = {
@@ -1296,10 +1313,10 @@ technologies = {
 			non_strategic_materials_large
 
 			# Range Modules
-			#fuel_tanks_small
-			#fuel_tanks_medium
-			#fuel_tanks_large
-			#drop_tanks
+			fuel_tanks_small
+			fuel_tanks_medium
+			fuel_tanks_large
+			drop_tanks
 
 			# Survivability Modules
 			self_sealing_fuel_tanks_small
