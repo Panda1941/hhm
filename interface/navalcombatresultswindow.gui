@@ -271,8 +271,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "attacker_details"
-			position = { x = -280 y = 30 }
-			size = { width = 290 height = 99%% }
+			position = { x = -400 y = 30 }
+			size = { width = 420 height = 200%% }
 			background = {
 				name = "Background"
 				spriteType ="GFX_mini_tooltip"
@@ -282,10 +282,10 @@ guiTypes = {
 				position = {x=10 y=10}
 				font = "hoi_16mbs"
 				text = ""
-				maxWidth = 261
-				maxHeight = 480
+				maxWidth = 400
+				maxHeight = 1000
 				format = left
-				Orientation = "UPPER_LEFT"
+				Orientation = "UPPER_CENTER"
 				scrollbartype = "standardlistbox_slider"
 				#alwaystransparent = yes
 			}	
@@ -294,7 +294,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "defender_details"
 			position = { x = 698 y = 30 }
-			size = { width = 290 height = 99%% }
+			size = { width = 420 height = 200%% }
 			verticalScrollbar = "right_vertical_slider"
 			background = {
 				name = "Background"
@@ -305,10 +305,10 @@ guiTypes = {
 				position = {x=10 y=10}
 				font = "hoi_16mbs"
 				text = ""
-				maxWidth = 261
-				maxHeight = 480
-				format = left
-				Orientation = "UPPER_LEFT"
+				maxWidth = 400
+				maxHeight = 1000
+				format = right
+				Orientation = "UPPER_CENTER"
 				scrollbartype = "standardlistbox_slider"
 				#alwaystransparent = yes
 			}	
