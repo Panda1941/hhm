@@ -90,22 +90,7 @@ technologies = {
 	
 	infantry_weapons2 = {
 
-		category_light_infantry = {
-			soft_attack = 0.05
-		}
-		
-		cavalry = {
-			soft_attack = 0.05
-		}
-		
-		motorized = {
-			soft_attack = 0.05
-		}
-		
-		mechanized = {
-			soft_attack = 0.05
-		}
-		amphibious_mechanized = {
+		category_all_infantry = {
 			soft_attack = 0.05
 		}
 		
@@ -204,22 +189,7 @@ technologies = {
 	}
 	improved_infantry_weapons_2 = {
 
-		category_light_infantry = {
-			soft_attack = 0.05
-		}
-		
-		cavalry = {
-			soft_attack = 0.05
-		}
-		
-		motorized = {
-			soft_attack = 0.05
-		}
-		
-		mechanized = {
-			soft_attack = 0.05
-		}
-		amphibious_mechanized = {
+		category_all_infantry = {
 			soft_attack = 0.05
 		}
 		
@@ -439,21 +409,9 @@ technologies = {
 	
 	advanced_infantry_weapons2 = {
 
-		category_light_infantry = {
+		category_all_infantry = {
 			soft_attack = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.05
-		}		
-		motorized = {
-			soft_attack = 0.05
-		}
-		mechanized = {
-			soft_attack = 0.05
-		}
-		amphibious_mechanized = {
-			soft_attack = 0.05
-		}	
 
         path = {
 			leads_to_tech = advanced_infantry_weapons3
@@ -496,21 +454,7 @@ technologies = {
 	
 	advanced_infantry_weapons3 = {
 
-		category_light_infantry = {
-			soft_attack = 0.05
-		}
-		
-		cavalry = {
-			soft_attack = 0.05
-		}		
-
-		motorized = {
-			soft_attack = 0.05
-		}
-		mechanized = {
-			soft_attack = 0.05
-		}
-		amphibious_mechanized = {
+		category_all_infantry = {
 			soft_attack = 0.05
 		}
 
@@ -555,21 +499,7 @@ technologies = {
 	
 	advanced_infantry_weapons4 = {
 
-		category_light_infantry = {
-			soft_attack = 0.05
-		}
-		
-		cavalry = {
-			soft_attack = 0.05
-		}		
-
-		motorized = {
-			soft_attack = 0.05
-		}
-		mechanized = {
-			soft_attack = 0.05
-		}
-		amphibious_mechanized = {
+		category_all_infantry = {
 			soft_attack = 0.05
 		}
 
@@ -614,21 +544,7 @@ technologies = {
 	
 	advanced_infantry_weapons5 = {
 
-		category_light_infantry = {
-			soft_attack = 0.05
-		}
-		
-		cavalry = {
-			soft_attack = 0.05
-		}		
-
-		motorized = {
-			soft_attack = 0.05
-		}
-		mechanized = {
-			soft_attack = 0.05
-		}
-		amphibious_mechanized = {
+		category_all_infantry = {
 			soft_attack = 0.05
 		}
 
