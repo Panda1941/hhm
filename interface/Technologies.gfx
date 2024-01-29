@@ -1147,13 +1147,13 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_paras_dispersed_drop_hhm_medium"
+		name = "GFX_paras_dispersed_drop_medium"
 		texturefile = "gfx/interface/technologies/paras_dispersed_drop_medium.dds"
 		alwaystransparent = yes
 	}
 
 	SpriteType = {
-		name = "GFX_paras_combat_drop_hhm_medium"
+		name = "GFX_paras_combat_drop_medium"
 		texturefile = "gfx/interface/technologies/paras_combat_drop_medium.dds"
 		alwaystransparent = yes
 	}

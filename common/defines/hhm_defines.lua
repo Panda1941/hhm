@@ -531,16 +531,16 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 5.0
 NDefines.NDiplomacy.EMBARGO_COST = 10 -- 100
 NDefines.NDiplomacy.EMBARGO_THREAT_THRESHOLD = -1 -- 30
 
---All of this AI stuff doesn't affect strategy, just used to increase performance
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 90  --7 the ai will check what the best doctrine they can have is once every month
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 90  --7 the ai will check what the best division template they can have is once every month
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_EQUIPMENT = 90 --7 the ai will check what the best equipment they can have is once every month
-NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 30 --7 the ai will refreshes need scores based on country situation
-NDefines.NAI.AI_UPDATE_ROLES_FREQUENCY_HOURS = 480  --48 the ai will change templates less frequently
-NDefines.NAI.UPDATE_SUPPLY_MOTORIZATION_FREQUENCY_HOURS = 360    --52 every 5 days the ai will check weather they should increase supply motorization
-NDefines.NAI.UPDATE_SUPPLY_BOTTLENECKS_FREQUENCY_HOURS = 480    --168 every 20 days the ai will check for supply related bottlenecks and try to fix them
+--All of this AI stuff doesn't affect strategy, just used to increase performance -- AI WILL NOT TOUCH ANYTHING
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 9999  --7 the ai will check what the best doctrine they can have is once every month
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 9999  --7 the ai will check what the best division template they can have is once every month
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_EQUIPMENT = 9999 --7 the ai will check what the best equipment they can have is once every month
+NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 9999 --7 the ai will refreshes need scores based on country situation
+NDefines.NAI.AI_UPDATE_ROLES_FREQUENCY_HOURS = 9999  --48 the ai will change templates less frequently
+NDefines.NAI.UPDATE_SUPPLY_MOTORIZATION_FREQUENCY_HOURS = 9999    --52 every 5 days the ai will check weather they should increase supply motorization
+NDefines.NAI.UPDATE_SUPPLY_BOTTLENECKS_FREQUENCY_HOURS = 9999    --168 every 20 days the ai will check for supply related bottlenecks and try to fix them
 
--- AI fixing
+-- AI will defend cities as well
 NDefines.NAI.AREA_DEFENSE_SETTING_VP = true --False (AI will garrison cities)
 NDefines.NAI.AREA_DEFENSE_SETTING_COASTLINES = false
 

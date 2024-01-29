@@ -9,10 +9,7 @@
  efficient_fuel_small:0 "Efficient Fuel Systems"
  improved_maneuverability_small:0 "Improved Maneuverability"
 
- paras_dispersed_drop_hhm:0 "Reconnaissance and Sabotage"
- paras_dispersed_drop_hhm_desc:0 "The nature of our operations mandates that our airborne troops specialize in highly dispersed airdrops, allowing for significant sabotage to take place before the enemy are even aware of our presence."
- paras_combat_drop_hhm:0 "Combat Insertion"
- paras_combat_drop_hhm_desc:0 "While dangerous, training our elite forces in direct forced entry techniques can give us significant combat advantages in combination with conventional assault."
+
 
 
  industry_late:0 "Late Game Industry"

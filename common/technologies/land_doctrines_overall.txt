@@ -7,6 +7,14 @@ technologies = {
 		
 		#doctrine_name = "MOBILE_WARFARE_OVERALL"
 
+		#dependencies = {
+		#	OR = {
+		#		mobile_warfare = 1
+		#		superior_firepower = 1
+		#		trench_warfare = 1
+		#		mass_assault = 1
+		#	}
+		#}
 		allow = {
 			tag = GER 			
 		}
@@ -83,11 +91,19 @@ technologies = {
 		
 		#doctrine_name = "SUPERIOR_FIREPOWER_OVERALL"
 
+		#dependencies = {
+		#	OR = {
+		#		mobile_warfare = 1
+		#		superior_firepower = 1
+		#		trench_warfare = 1
+		#		mass_assault = 1
+		#	}
+		#}
 		allow = {
-		        OR = {
-			tag = ENG 
-			tag = USA
-		        }		
+		    OR = {
+				tag = ENG 
+				tag = USA
+		    }		
 		}
 		
 		support_light_sp_artillery = {   
@@ -157,6 +173,14 @@ technologies = {
 		
 		#doctrine_name = "GRAND_BATTLEPLAN_OVERALL"
 
+		#dependencies = {
+		#	OR = {
+		#		mobile_warfare = 1
+		#		superior_firepower = 1
+		#		trench_warfare = 1
+		#		mass_assault = 1
+		#	}
+		#}
 		allow = {
 		OR = {
 			tag = ITA 
@@ -212,6 +236,14 @@ technologies = {
 		
 		#doctrine_name = "MASS_ASSAULT_OVERALL"
 
+		#dependencies = {
+		#	OR = {
+		#		mobile_warfare = 1
+		#		superior_firepower = 1
+		#		trench_warfare = 1
+		#		mass_assault = 1
+		#	}
+		#}
 		allow = {
 			tag = SOV 			
 		}
@@ -247,11 +279,6 @@ technologies = {
 		on_research_complete = { 
 			custom_effect_tooltip = spam_inf_tt
 		}
-		
-		#path = {
-		#	leads_to_tech = mass_assault_overall_2 
-		#	research_cost_coeff = 1
-		#}
 
 		doctrine = yes
 
@@ -276,40 +303,5 @@ technologies = {
 
 		# Effects
 		land_reinforce_rate = 0.04
-		
 	}
-	
-	#mass_assault_overall_2 = {
-	#	
-	#	#doctrine_name = "MASS_ASSAULT_OVERALL"
-	#	
-	#	allow = {
-	#		tag = SOV 
-    #        date > 1942.03.01			
-	#	}
-#
-	#	doctrine = yes
-#
-	#	research_cost = 1
-	#	xp_research_type = army
-	#	xp_unlock_cost = 50
-	#	
-	#	categories = {
-	#		land_doctrine
-	#	}
-#
-	#	folder = {
-	#		name = land_doctrine_folder
-	#		position = { x = 0 y = 3 }
-	#	}
-	#	
-	#	
-	#	
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-#
-	#	# Effects
-	#	industrial_capacity_factory = 0.2
-	#}
 }
