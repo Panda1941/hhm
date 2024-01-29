@@ -798,7 +798,7 @@ equipment_modules = {
 			air_agility = -2
 			weight = 4
 		}
-		xp_cost = 1
+		xp_cost = 0
 		allow_mission_type = {
 			air_superiority
 			interception
@@ -1381,7 +1381,7 @@ equipment_modules = {
 
 		add_stats = {
 			air_defence = -2
-			build_cost_ic = 8
+			build_cost_ic = 4
 			weight = 2
 		}
 		multiply_stats = {
@@ -1566,7 +1566,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.1
+			maximum_speed = 0.08
 		}
 
 
