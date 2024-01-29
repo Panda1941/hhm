@@ -600,7 +600,7 @@ equipment_modules = {
 
 	light_mg_2x = {
 		abbreviation = "lmg2"
-		category = light_fighter_weapon
+		category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { fighter heavy_fighter }
 
@@ -618,7 +618,7 @@ equipment_modules = {
 
 	light_mg_4x = {
 		abbreviation = "lmg4"
-		category = light_fighter_weapon
+		category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { fighter heavy_fighter }
 
