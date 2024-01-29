@@ -327,6 +327,18 @@ equipments = {
 				}
 			}
 
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					recon_camera
+					light_fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					kamikaze_bomber_weapon
+				}
+			}
+
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -418,6 +430,18 @@ equipments = {
 				}
 			}
 
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					recon_camera
+					light_fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					kamikaze_bomber_weapon
+				}
+			}
+
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -498,6 +522,18 @@ equipments = {
 			}
 
 			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					recon_camera
+					light_fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					kamikaze_bomber_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_2 = { 
 				required = no
 				allowed_module_categories = {
 					recon_camera
