@@ -176,7 +176,7 @@ focus_tree = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5693,7 +5693,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5702,7 +5702,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5711,7 +5711,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5720,7 +5720,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5729,7 +5729,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5738,7 +5738,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5747,7 +5747,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5756,7 +5756,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5765,7 +5765,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5774,7 +5774,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5783,7 +5783,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5792,7 +5792,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5801,7 +5801,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5810,7 +5810,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5819,7 +5819,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5828,7 +5828,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5837,7 +5837,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5846,7 +5846,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5855,7 +5855,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5864,7 +5864,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 2
 					}
@@ -5902,7 +5902,7 @@ focus_tree = {
 		}
 		
  		completion_reward = {
-		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume 15 trains and 300 trucks."
+		custom_effect_tooltip = "For the duration of the focus we will gain 8% consumer goods as well as consume 15 trains and 300 trucks."
 		add_command_power = -10
 		
 		
@@ -5926,45 +5926,53 @@ focus_tree = {
 			15 = { 
 				 
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
-add_building_construction = {
-            	    	    type = bunker
-            	    	    province = {
-            	    	        all_provinces = yes
-            	    	        limit_to_victory_point = yes
-            	    	    }
-            	    	    level = 2
-            	    	    instant_build = yes
-            	    	}							
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
+				add_building_construction = {
+            	        type = bunker
+            	        province = {
+            	            all_provinces = yes
+            	            limit_to_victory_point = yes
+            	        }
+            	        level = 2
+            	        instant_build = yes
+            	    }							
 				}
 			14 = { 
 				 
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -5978,19 +5986,23 @@ add_building_construction = {
             30 = { 
 				
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6008,7 +6020,7 @@ add_building_construction = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 3
 					}
@@ -6045,7 +6057,7 @@ add_building_construction = {
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
-		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume 15 trains and 300 trucks."
+		custom_effect_tooltip = "For the duration of the focus we will gain 8% consumer goods as well as consume 15 trains and 300 trucks."
 		add_command_power = -10
 		
 		
@@ -6064,19 +6076,23 @@ add_building_construction = {
 			23 = { 
 				 
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6090,19 +6106,23 @@ add_building_construction = {
 			19 = { 
 				 
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6116,19 +6136,23 @@ add_building_construction = {
             806 = { 
 				
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6146,7 +6170,7 @@ add_building_construction = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 3
 					}
@@ -6183,7 +6207,7 @@ add_building_construction = {
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
-		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume 30 trains and 600 trucks."
+		custom_effect_tooltip = "For the duration of the focus we will gain 8% consumer goods as well as consume 30 trains and 600 trucks."
 		add_command_power = -10
 		
 		
@@ -6203,19 +6227,23 @@ add_building_construction = {
 			29 = { 
 				 
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6229,19 +6257,23 @@ add_building_construction = {
 			785 = { 
 				 
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6255,19 +6287,23 @@ add_building_construction = {
             6 = { 
 				
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6281,19 +6317,23 @@ add_building_construction = {
 				35 = { 
 				
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6307,19 +6347,23 @@ add_building_construction = {
 				7 = { 
 				
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6333,19 +6377,23 @@ add_building_construction = {
 				36 = { 
 				
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6363,7 +6411,7 @@ add_building_construction = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 6
 					}
@@ -6402,7 +6450,7 @@ add_building_construction = {
 		}
 		
  		completion_reward = {
-		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume 20 trains and 450 trucks."
+		custom_effect_tooltip = "For the duration of the focus we will gain 8% consumer goods as well as consume 20 trains and 450 trucks."
 		add_command_power = -10
 		
 		
@@ -6423,19 +6471,23 @@ add_building_construction = {
 			56 = { 
 				 
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6449,19 +6501,23 @@ add_building_construction = {
 			59 = { 
 				 
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6475,19 +6531,23 @@ add_building_construction = {
             58 = { 
 				
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6501,19 +6561,23 @@ add_building_construction = {
 				99 = { 
 				
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6531,7 +6595,7 @@ add_building_construction = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 4
 					}
@@ -6569,7 +6633,7 @@ add_building_construction = {
 			add_ideas = Fuel_the_atlantik_construction
 		}
  		completion_reward = {
-		custom_effect_tooltip = "For the duration of the focus we will gain 2% consumer goods as well as consume 15 trains and 300 trucks."
+		custom_effect_tooltip = "For the duration of the focus we will gain 8% consumer goods as well as consume 15 trains and 300 trucks."
 		add_command_power = -10
 		
 		
@@ -6589,19 +6653,23 @@ add_building_construction = {
 			110 = { 
 				 
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6615,19 +6683,23 @@ add_building_construction = {
 			142 = { 
 				 
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6641,19 +6713,23 @@ add_building_construction = {
             143 = { 
 				
 
-				set_building_level = {
+				add_building_construction= {
 						type = coastal_bunker
 						level = 2
+            	        instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
 							level < 5
 						}
 					}
-				set_building_level = {
-						type = anti_air_building
-						level = 2
-					}
+				
+				add_building_construction = {
+            	        type = anti_air_building
+            	        level = 2
+            	        instant_build = yes
+            	   				
+				}
 add_building_construction = {
             	    	    type = bunker
             	    	    province = {
@@ -6671,7 +6747,7 @@ add_building_construction = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 3
 					}
@@ -6909,7 +6985,7 @@ add_building_construction = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 3
 					}
@@ -6921,7 +6997,7 @@ add_building_construction = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 3
 					}
@@ -6933,7 +7009,7 @@ add_building_construction = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 6
 					}
@@ -6945,7 +7021,7 @@ add_building_construction = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 4
 					}
@@ -6957,7 +7033,7 @@ add_building_construction = {
 				
 				
 					create_unit = {
-						division = "division_template = \"Volkssturm\" start_experience_factor = -0.25 start_equipment_factor = 1.0"
+						division = "division_template = \"Volkssturm\" start_experience_factor = 0 start_equipment_factor = 1.0"
 						owner = GER
 						count = 3
 					}

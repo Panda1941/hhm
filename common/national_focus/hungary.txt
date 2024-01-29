@@ -491,7 +491,6 @@ focus_tree = {
 		}
 
 		available = {
-			is_puppet = no
 		}
 
 		bypass = {
@@ -2029,7 +2028,7 @@ focus_tree = {
 		icon = GFX_focus_HUN_german_anti_tank
 		relative_position_id = HUN_danuvia_submachine_guns
 		prerequisite = { focus = HUN_danuvia_submachine_guns focus = HUN_danuvia_submachine_guns_2  }
-		x = -2
+		x = -3
 		y = 1
 
 		cost = 10
@@ -2143,7 +2142,7 @@ focus_tree = {
 		icon = GFX_focus_rocketry
 		relative_position_id = HUN_artillery_effort
 		prerequisite = { focus = HUN_artillery_effort focus = HUN_artillery_effort_2 }
-		x = -2
+		x = -3
 		y = 1
 
 		cost = 10
@@ -2404,8 +2403,8 @@ focus_tree = {
 		id = HUN_form_shock_troops_battalions
 		text = "Grenadier Training"
 		icon = GFX_focus_HUN_form_shock_troops_battalions
-		prerequisite = { focus = HUN_home_defense }
-		x = 2
+		prerequisite = { focus = HUN_heavy_infantry_divisions_doctrine }
+		x = 1
 		y = 1
 		relative_position_id = HUN_heavy_infantry_divisions_doctrine
 
@@ -2521,7 +2520,7 @@ focus_tree = {
 	focus = {
 		id = HUN_assault_gun_focus
 		icon = GFX_focus_HUN_assault_gun_focus
-		prerequisite = { focus = HUN_form_shock_troops_battalions focus = HUN_form_mechanized_battalions }
+		prerequisite = { focus = HUN_danuvia_submachine_guns_2 }
 		x = -2
 		y = 2
 		relative_position_id = HUN_form_shock_troops_battalions
