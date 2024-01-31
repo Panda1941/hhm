@@ -1325,7 +1325,7 @@ operations = {
 					is_core_of = BRA
 					is_controlled_by = ENG
 				}
-				add_compliance = 50
+				add_compliance = 15
 			}
 		}
 	}
