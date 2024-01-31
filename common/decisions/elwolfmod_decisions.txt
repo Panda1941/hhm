@@ -1282,6 +1282,53 @@ operations = {
 			}
 		}
 	}
+	annex_brazil = {
+		# icon = generic_operation
+		allowed = {
+			tag = ENG
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			BRA = {
+				is_ai = yes
+			}
+		}
+		targets = {
+			BRA
+		}
+		complete_effect = {
+			BRA = {
+				transfer_units_fraction = {
+					target = ENG
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			ENG = {
+				annex_country = {
+					target = BRA
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BRA
+					is_controlled_by = ENG
+				}
+				add_compliance = 50
+			}
+		}
+	}
 	annex_canada = {
 		# icon = generic_operation
 		allowed = {
