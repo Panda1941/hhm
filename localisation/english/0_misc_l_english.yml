@@ -9,7 +9,9 @@
  efficient_fuel_small:0 "Efficient Fuel Systems"
  improved_maneuverability_small:0 "Improved Maneuverability"
 
-
+ 
+ more_slots_on_equipment:0 "g\nThis chassis has more special module slots.!"
+ more_slots_on_equipment_plane:0 "g\nThis airframe has more module slots.!"
 
 
  industry_late:0 "Late Game Industry"
