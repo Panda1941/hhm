@@ -747,7 +747,7 @@ sub_units = {
 		transport = mechanized_chassis
 
 		need = {
-			mechanized_chassis = 35
+			mechanized_chassis = 40
 			infantry_equipment = 100
 		}
 
