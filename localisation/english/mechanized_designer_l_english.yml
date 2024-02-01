@@ -4,9 +4,20 @@
 
  tank_designer_mechanized_chassis:0 "Mechanized Equipment"
 
+ mechanized_chassis:0 "Mechanized"
  mechanized_chassis_0:0 "Mechanized Chassis 1"
  mechanized_chassis_1:0 "Mechanized Chassis 2"
  mechanized_chassis_2:0 "Mechanized Chassis 3"
+
+ 
+ mechanized_amtrac_chassis:0 "Amphibious Mechanized"
+ mechanized_amtrac_chassis_0:0 "Amphibious Mechanized Chassis 1"
+ mechanized_amtrac_chassis_1:0 "Amphibious Mechanized Chassis 2"
+ mechanized_amtrac_chassis_2:0 "Amphibious Mechanized Chassis 3"
+
+ amphibious_mechanized_equipment_0:0 "Amphibious Mechanized 1"
+ amphibious_mechanized_equipment_1:0 "Amphibious Mechanized 2"
+ amphibious_mechanized_equipment_2:0 "Amphibious Mechanized 3"
 
  mech_gasoline_engine:0 "Gasoline Engine"
  mech_diesel_engine:0 "Diesel Engine"

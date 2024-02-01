@@ -84,7 +84,7 @@ equipments = {
 			}
 			
 			special_type_slot_1 = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					mech_special_module
 					mech_radio_module
@@ -92,7 +92,7 @@ equipments = {
 			}
 			
 			special_type_slot_2 = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					mech_special_module
 					mech_radio_module
@@ -148,7 +148,7 @@ equipments = {
 		module_slots = {
 			
 			special_type_slot_3 = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					mech_special_module
 					mech_radio_module
@@ -176,7 +176,7 @@ equipments = {
 		module_slots = {
 			
 			special_type_slot_4 = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					mech_special_module
 					mech_radio_module
