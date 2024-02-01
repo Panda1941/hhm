@@ -43,16 +43,17 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			fuel_consumption = 3.0
-			build_cost_ic = 1.5
+			fuel_consumption = 3.5
+			build_cost_ic = 4.5
 			reliability = -0.075
 			fuel_capacity = 60
+
+			defense = 2
+			breakthrough = 2
 		}
 		multiply_stats = {
-			breakthrough = 0.10
-			defense = 0.10
-			build_cost_ic = 0.05
-			maximum_speed = -0.04
+			build_cost_ic = 0.04
+			maximum_speed = 0.2
 		}
 	}
 
