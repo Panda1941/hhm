@@ -66,7 +66,7 @@ generic_tank_organization = {
 		}
 	}
 
-	equipment_type = { armor }
+	equipment_type = { mio_cat_eq_all_tank }
 	research_categories = { armor }
 
 	tree_header_text = {
@@ -7378,7 +7378,7 @@ generic_motorized_mechanized_organization = {
 
 	equipment_type = {
 		motorized_equipment
-		mechanized_equipment
+		mechanized_chassis
 		motorized_rocket_equipment
 	}
 	

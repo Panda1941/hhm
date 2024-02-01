@@ -7,7 +7,7 @@ guiTypes = {
 
 		iconType = {
 			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_light_tank_chassis"
+			spriteType = "GFX_TC_mech_chassis"
 			position = { x=0 y=0 }
 		}
 
@@ -35,7 +35,7 @@ guiTypes = {
 
 					iconType = {
 						name = "blueprint"
-						spriteType = "GFX_TM_light_tank_chassis_main_armament_slot"
+						spriteType = "GFX_TM_mech_chassis_main_armament_slot"
 						position = { x=0 y=0 }
 					}
 				}
@@ -47,24 +47,6 @@ guiTypes = {
 				name = "turret_type_slot"
 				position = { x=0 y=0 }
 				size = { width=100% height=100% }
-
-				containerWindowType = {
-					name = "turret_type_slot"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-				}
-
-				containerWindowType = {
-					name = "turret_type_slot@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-
-					iconType = {
-						name = "blueprint"
-						spriteType = "GFX_TM_light_tank_chassis_turret_type_slot"
-						position = { x=0 y=0 }
-					}
-				}
 
 			}
 
@@ -117,7 +99,7 @@ guiTypes = {
 
 					iconType = {
 						name = "blueprint"
-						spriteType = "GFX_TM_light_tank_chassis_suspension_type_slot"
+						spriteType = "GFX_TM_mech_chassis_suspension_type_slot"
 						position = { x=0 y=0 }
 					}
 				}
@@ -142,18 +124,11 @@ guiTypes = {
 					size = { width=100% height=100% }
 
 					iconType = {
-						name = "blueprint_generic"
-						spriteType = "GFX_TM_tank_armor"
-						position = { x=0 y=0 }
-					}
-
-					iconType = {
 						name = "blueprint"
-						spriteType = "GFX_TM_light_tank_chassis_armor_type_slot"
+						spriteType = "GFX_TM_mech_chassis_armor_type_slot"
 						position = { x=0 y=0 }
 					}
 				}
-
 			}
 
 			################# MODULE SLOT: Engine #################
@@ -163,25 +138,19 @@ guiTypes = {
 				size = { width=100% height=100% }
 
 				containerWindowType = {
-					name = "tank_engine_type"
+					name = "mech_engine_type"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 				}
 
 				containerWindowType = {
-					name = "tank_engine_type@highlight"
+					name = "mech_engine_type@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 
 					iconType = {
-						name = "blueprint_generic"
-						spriteType = "GFX_TM_tank_engine"
-						position = { x=0 y=0 }
-					}
-
-					iconType = {
 						name = "blueprint"
-						spriteType = "GFX_TM_light_tank_chassis_engine_type_slot"
+						spriteType = "GFX_TM_mech_chassis_engine_type_slot"
 						position = { x=0 y=0 }
 					}
 				}
@@ -194,25 +163,23 @@ guiTypes = {
 				size = { width=100% height=100% }
 
 				containerWindowType = {
-					name = "roadwheels_type_slot"
+					name = "mech_roadwheels_type_slot"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 				}
 
 				containerWindowType = {
-					name = "roadwheels_type_slot@highlight"
+					name = "mech_roadwheels_type@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 
 					iconType = {
 						name = "blueprint"
-						spriteType = "GFX_TM_medium_tank_chassis_roadwheels_type_slot"
+						spriteType = "GFX_TM_mech_chassis_roadwheel_type_slot"
 						position = { x=0 y=0 }
 					}
 				}
-
 			}
-
 		}
 	}
 }

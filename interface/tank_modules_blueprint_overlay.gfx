@@ -2,6 +2,39 @@ spriteTypes = {
 
 	# generic ####################################################################
 
+	# generic mech
+
+	spriteType = {
+		name = "GFX_TC_mech_chassis"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/generic/generic_mech_chassis_blueprint.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_mech_chassis_armor_type_slot"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/generic/generic_mech_house.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_mech_chassis_engine_type_slot"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/generic/generic_mech_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_mech_chassis_main_armament_slot"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/generic/generic_mech_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_mech_chassis_suspension_type_slot"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/generic/generic_mech_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_mech_chassis_roadwheel_type_slot"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/generic/generic_mech_roadwheel.dds"
+		legacy_lazy_load = no
+	}
+
 	# generic light_tank_chassis
 
 	spriteType = {

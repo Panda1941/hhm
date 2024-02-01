@@ -30,6 +30,17 @@ mio_cat_eq_all_heavy_tank = { #Includes Super Heavy Tank Chassis
 	}
 }
 
+mio_cat_eq_all_tank = {
+	equipment_type = {
+		light_tank_chassis
+		amphibious_tank_chassis
+		medium_tank_chassis
+		modern_tank_chassis
+		heavy_tank_chassis
+		super_heavy_tank_chassis
+	}
+}
+
 mio_cat_eq_all_tank_destroyers = { #Includes Super Heavy Tank Chassis
 	equipment_type = {
 		light_tank_destroyer_chassis 

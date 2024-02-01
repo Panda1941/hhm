@@ -62,7 +62,6 @@ technologies = {
 		
 		enable_equipment_modules = { 
 			tank_radio_1
-			mech_radio_1
 		}
 
 		folder = {
@@ -146,7 +145,6 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_radar_1
 			tank_radio_2
-			mech_radio_2
 		}
 		folder = {
 			name = electronics_folder
@@ -238,7 +236,6 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_radar_3
 			tank_radio_3
-			mech_radio_3
 		}
 
 		static_anti_air_hit_chance_factor = 0.2

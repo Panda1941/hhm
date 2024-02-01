@@ -11,6 +11,35 @@ equipments = {
 		interface_category = interface_category_land
 		priority = 40
 
+		module_count_limit = {
+			category = mech_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			module = mech_armor_skirts
+			count < 2
+		}	
+		module_count_limit = {
+			module = mech_amphibious_drive
+			count < 2
+		}
+		module_count_limit = {
+			module = mech_wet_ammo_storage
+			count < 2
+		}
+		module_count_limit = {
+			module = mech_easy_maintenance
+			count < 2
+		}
+		module_count_limit = {
+			module = mech_stabilizer
+			count < 2
+		}
+		module_count_limit = {
+			module = mech_expanded_fuel_tank
+			count < 2
+		}
+
 		module_slots = {
 			main_armament_slot = {
 				required = yes
@@ -81,7 +110,7 @@ equipments = {
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 6.5
+		maximum_speed = 6
 		build_cost_ic = 4
 		reliability = 0.8
 		hardness = 0.55
