@@ -809,7 +809,7 @@ focus_tree = {
 					instant_build = yes
 				}	
 			}
-			82 = {
+			81 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
