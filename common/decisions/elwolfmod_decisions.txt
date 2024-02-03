@@ -1296,6 +1296,7 @@ operations = {
 			BRA = {
 				is_ai = yes
 			}
+			always = no
 		}
 		targets = {
 			BRA
