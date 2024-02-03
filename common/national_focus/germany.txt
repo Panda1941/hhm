@@ -1797,14 +1797,7 @@ focus_tree = {
 					}
 				}
 				HUN = {
-					random_owned_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = arms_factory
-								size > 3
-								include_locked = yes
-							}
-						}
+					capital_scope = {
 						add_extra_state_shared_building_slots = 4
 						add_building_construction = {
 							type = arms_factory
@@ -1813,7 +1806,7 @@ focus_tree = {
 						}
 					}
 					GER = {
-						puppet = PREV
+						set_autonomy = { target = HUN autonomy_state = autonomy_satellite }
 						random_owned_controlled_state = {
 							limit = {
 								free_building_slots = {
@@ -1840,14 +1833,7 @@ focus_tree = {
 					}
 				}
 				ROM = {
-					random_owned_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = arms_factory
-								size > 3
-								include_locked = yes
-							}
-						}
+					capital_scope = {
 						add_extra_state_shared_building_slots = 4
 						add_building_construction = {
 							type = arms_factory
@@ -1856,7 +1842,7 @@ focus_tree = {
 						}
 					}
 					GER = {
-						puppet = PREV
+						set_autonomy = { target = ROM autonomy_state = autonomy_satellite }
 						random_owned_controlled_state = {
 							limit = {
 								free_building_slots = {
@@ -1883,14 +1869,7 @@ focus_tree = {
 					}
 				}
 				BUL = {
-					random_owned_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = arms_factory
-								size > 3
-								include_locked = yes
-							}
-						}
+					capital_scope = {
 						add_extra_state_shared_building_slots = 4
 						add_building_construction = {
 							type = arms_factory
@@ -1899,7 +1878,7 @@ focus_tree = {
 						}
 					}
 					GER = {
-						puppet = PREV
+						set_autonomy = { target = BUL autonomy_state = autonomy_satellite }
 						random_owned_controlled_state = {
 							limit = {
 								free_building_slots = {
