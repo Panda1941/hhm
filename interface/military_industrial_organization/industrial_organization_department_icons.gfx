@@ -156,7 +156,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_military_industrial_organization_mechanized_equipment"
+		name = "GFX_military_industrial_organization_mechanized_chassis"
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_mechanized.dds"
 	}		
 	
@@ -365,6 +365,11 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_mio_cat_eq_all_medium_tank"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mio_cat_eq_all_tank"
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
 	}	
 	

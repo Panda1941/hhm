@@ -54,13 +54,16 @@ upgrades = {
 				has_tech = armor_tech_1
 			}
 			3 = {
-			OR = {
-				has_tech = improved_heavy_tank_chassis
-				has_tech = advanced_medium_tank_chassis_1
-			}
+				OR = {
+					has_tech = improved_heavy_tank_chassis
+					has_tech = advanced_medium_tank_chassis_1
+				}
 			}
 			4 = {
-				has_tech = advanced_heavy_tank_chassis
+				OR = {
+					has_tech = advanced_heavy_tank_chassis_1
+					has_tech = advanced_heavy_tank_chassis
+				}
 			}
 			5 = {
 				has_tech = advanced_heavy_tank_chassis_1

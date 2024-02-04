@@ -323,7 +323,7 @@ sub_units = {
 		}
 
 		need = {
-			light_tank_chassis = 24
+			light_tank_chassis = 30
 		}
 
 		forest = {
