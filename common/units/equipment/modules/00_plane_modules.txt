@@ -695,7 +695,7 @@ equipment_modules = {
 		add_stats = {
 			air_attack = 10
 			build_cost_ic = 5
-			air_agility = -1
+			air_agility = -1.5
 			weight = 3
 		}
 		xp_cost = 0
@@ -714,7 +714,7 @@ equipment_modules = {
 		add_stats = {
 			air_attack = 20
 			build_cost_ic = 10
-			air_agility = -2
+			air_agility = -3
 			weight = 6
 		}
 		xp_cost = 0
@@ -745,7 +745,7 @@ equipment_modules = {
 		add_stats = {
 			air_attack = 12
 			build_cost_ic = 8
-			air_agility = -0.5
+			air_agility = -0.75
 			weight = 3
 		}
 		xp_cost = 0
@@ -764,7 +764,7 @@ equipment_modules = {
 		add_stats = {
 			air_attack = 24
 			build_cost_ic = 16
-			air_agility = -1
+			air_agility = -1.5
 			weight = 6
 		}
 		xp_cost = 0
@@ -795,7 +795,7 @@ equipment_modules = {
 		add_stats = {
 			air_attack = 14
 			build_cost_ic = 8
-			air_agility = -2
+			air_agility = -3
 			weight = 4
 		}
 		xp_cost = 0
@@ -814,7 +814,7 @@ equipment_modules = {
 		add_stats = {
 			air_attack = 28
 			build_cost_ic = 16
-			air_agility = -4
+			air_agility = -6
 			weight = 8
 		}
 		xp_cost = 0

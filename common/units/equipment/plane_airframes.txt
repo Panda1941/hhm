@@ -1367,7 +1367,7 @@ equipments = {
 		priority = 5
 
 		air_range = 750
-		maximum_speed = 350
+		maximum_speed = 325
 		air_agility = 25
 		air_defence = 15
 		weight = 8
@@ -1386,7 +1386,7 @@ equipments = {
 		priority = 5
 
 		air_range = 1000
-		maximum_speed = 400
+		maximum_speed = 350
 		air_agility = 30
 		air_defence = 18
 		weight = 8
@@ -1483,7 +1483,7 @@ equipments = {
 		priority = 5
 
 		air_range = 1250
-		maximum_speed = 425
+		maximum_speed = 375
 		air_agility = 35
 		air_defence = 20
 		weight = 12
@@ -1602,7 +1602,7 @@ equipments = {
 		priority = 5
 
 		air_range = 1500
-		maximum_speed = 450
+		maximum_speed = 400
 		air_agility = 40
 		air_defence = 24
 		weight = 14
@@ -1719,7 +1719,7 @@ equipments = {
 		priority = 5
 
 		air_range = 1500
-		maximum_speed = 500
+		maximum_speed = 425
 		air_agility = 45
 		air_defence = 24
 		weight = 16
