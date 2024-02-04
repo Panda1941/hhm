@@ -843,7 +843,7 @@ equipment_modules = {
 		add_equipment_type = cas
 
 		add_stats = {
-			build_cost_ic = 6
+			build_cost_ic = 4
 			weight = 4
 			air_agility = -15
 		}
@@ -883,7 +883,7 @@ equipment_modules = {
 		add_equipment_type = cas
 
 		add_stats = {
-			build_cost_ic = 8
+			build_cost_ic = 4
 			air_agility = -20
 			weight = 6
 		}
@@ -923,7 +923,7 @@ equipment_modules = {
 		add_equipment_type = cas
 
 		add_stats = {
-			build_cost_ic = 8
+			build_cost_ic = 4
 			air_agility = -20
 			weight = 6
 		}
