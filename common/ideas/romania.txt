@@ -1487,7 +1487,7 @@ ideas = {
 				motorized_equipment = {
 					maximum_speed = 0.05
 				}
-				mechanized_equipment = {
+				mechanized_chassis = {
 					maximum_speed = 0.05
 				}
 			}
@@ -1520,7 +1520,7 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.05
 				}
-				mechanized_equipment = {
+				mechanized_chassis = {
 					build_cost_ic = -0.05
 				}
 			}
@@ -1605,7 +1605,7 @@ ideas = {
 				motorized_equipment = {
 					reliability = 0.1
 				}
-				mechanized_equipment = {
+				mechanized_chassis = {
 					reliability = 0.1
 				}
 			}

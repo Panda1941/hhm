@@ -18,7 +18,7 @@ ideas = {
 			picture = FRA_motorized_focus
 
 			equipment_bonus = {
-				mechanized_equipment = {
+				mechanized_chassis = {
 					instant = yes
 					reliability = 0.15
 					hardness = 0.025
