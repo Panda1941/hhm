@@ -330,13 +330,13 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			defense = 3
-			breakthrough = 0.5
-			build_cost_ic = 1.75
+			defense = 3.0
+			breakthrough = 1.0
+			build_cost_ic = 2.0
 		}
 		xp_cost = 0
 		multiply_stats = {
-			defense = 0.2
+			defense = 0.1
 			breakthrough = 0.1
 		}
 	}
@@ -348,14 +348,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
-			defense = 3.5
-			breakthrough = 1.0
-			build_cost_ic = 2.75
+			defense = 4.0
+			breakthrough = 1.5
+			build_cost_ic = 3.0
 		}
 		xp_cost = 0
 		multiply_stats = {
-			defense = 0.3
-			breakthrough = 0.2
+			defense = 0.2
+			breakthrough = 0.15
 		}
 	}
 
@@ -366,14 +366,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			defense = 4
-			breakthrough = 1.5
-			build_cost_ic = 3.5
+			defense = 5.0
+			breakthrough = 2.0
+			build_cost_ic = 4.0
 		}
 		xp_cost = 0
 		multiply_stats = {
-			defense = 0.4
-			breakthrough = 0.3
+			defense = 0.3
+			breakthrough = 0.2
 		}
 	}
 

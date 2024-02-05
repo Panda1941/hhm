@@ -20,6 +20,10 @@ equipments = {
 			count < 2
 		}	
 		module_count_limit = {
+			module = mech_module_camouflage
+			count < 2
+		}	
+		module_count_limit = {
 			module = mech_amphibious_drive
 			count < 2
 		}
