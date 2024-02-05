@@ -610,7 +610,7 @@ equipments = {
 	}
 	
 	medium_tank_chassis_6 = {
-		abbreviation = "mt6"
+		abbreviation = "mt4"
 		derived_variant_name = medium_tank_equipment_3
 		visual_level = 3
 		year = 1943
@@ -645,7 +645,7 @@ equipments = {
 	}
 	
 	medium_tank_chassis_7 = {
-		abbreviation = "mt7"
+		abbreviation = "mt5"
 		derived_variant_name = medium_tank_equipment_7
 		visual_level = 4
 		year = 1945

@@ -325,14 +325,14 @@ sub_units = {
 			category_artillery
 		}
 		combat_width = 2
-		transport = mechanized_equipment		
+		transport = mechanized_chassis		
 		manpower = 500
 		need = {
 			artillery_equipment = 28
-			mechanized_equipment = 28
+			mechanized_chassis = 28
 		}
 		essential = {
-			mechanized_equipment
+			mechanized_chassis
 		}
 		
 		
@@ -406,13 +406,13 @@ sub_units = {
 			category_artillery
 		}		
 		combat_width = 2
-		transport = mechanized_equipment
+		transport = mechanized_chassis
 		need = {
 			rocket_artillery_equipment = 28
-			mechanized_equipment = 28
+			mechanized_chassis = 28
 		}
 		essential = {
-			mechanized_equipment
+			mechanized_chassis
 		}		
 		manpower = 500
 		max_organisation = 10

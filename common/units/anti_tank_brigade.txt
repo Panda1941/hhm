@@ -169,13 +169,13 @@ sub_units = {
 		}
         hardness = 0.2		
 		combat_width = 2
-		transport = mechanized_equipment
+		transport = mechanized_chassis
 		need = {
 			anti_tank_equipment = 36
-			mechanized_equipment = 20
+			mechanized_chassis = 20
 		}
 		essential = { 
-			mechanized_equipment 
+			mechanized_chassis 
 		}
 		manpower = 500
 		max_organisation = 0
