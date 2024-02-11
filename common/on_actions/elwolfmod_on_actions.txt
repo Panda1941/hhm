@@ -142,6 +142,20 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
+			# SPAIN DMZ
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = SPR
+				}
+				set_demilitarized_zone = yes
+				add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+			}
+			41 = {
+				set_demilitarized_zone = no
+			}
+
+
+
 			ENG = {
 				remove_resource_rights = 676
 				remove_resource_rights = 291

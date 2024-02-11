@@ -966,6 +966,42 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SPA_air_defence
+		available = {
+			is_in_faction_with = GER
+			has_war_with = ENG
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = SPA_adopt_the_26_points }
+
+		text = "Anti-Air focus"
+		
+		icon = GFX_focus_generic_air_defense
+		x = 3
+		y = 1
+		relative_position_id = SPA_adopt_the_26_points
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			add_war_support = 0.05
+			
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = SPR
+				}
+				add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+			}
+			41 = {
+				add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+			}
+		}
+	}
+
 	
 
 	focus = {

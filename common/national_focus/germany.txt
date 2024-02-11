@@ -805,7 +805,7 @@ focus_tree = {
 			}
 		}
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = GER_west_wall
 		cost = 5
 		ai_will_do = {
@@ -1674,8 +1674,8 @@ focus_tree = {
 		id = GER_align_romania
 		icon = GFX_focus_GER_align_romania
 		prerequisite = { focus = GER_grosraumwirtschaft }
-		x = -1
-		y = 2
+		x = -2
+		y = 1
 		relative_position_id = GER_grosraumwirtschaft
 		cost = 2
 		
@@ -1753,11 +1753,50 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_align_spain
+		icon = GFX_focus_GER_align_romania
+		prerequisite = { focus = GER_grosraumwirtschaft }
+		x = -1
+		y = 2
+		relative_position_id = GER_grosraumwirtschaft
+		cost = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_war_with = SPR }
+		}
+
+		bypass = {
+			SPR = {
+				OR = {
+					exists = no
+					is_subject = yes
+					
+				}
+			}
+		}
+
+		text = "Align Spain"
+		
+		completion_reward = {
+			SPR = {
+				add_timed_idea = { idea = GER_align_romania days = 730 }
+
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = GER_align_romania
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = GER_integrate_war_economies
 		icon = GFX_focus_GER_integrate_war_economies
-		prerequisite = { focus = GER_align_hungary }
-		prerequisite = { focus = GER_align_romania }
-		prerequisite = { focus = GER_align_bulgaria }
+		prerequisite = { focus = GER_align_hungary focus = GER_align_romania focus = GER_align_bulgaria focus = GER_align_spain }
 		x = 0
 		y = 2
 		relative_position_id = GER_align_hungary
@@ -1782,6 +1821,10 @@ focus_tree = {
 					is_in_faction_with = ROOT
 					is_free_or_subject_of_root = yes
 				}
+				SPR = {
+					is_in_faction_with = ROOT
+					is_free_or_subject_of_root = yes
+				}
 			}
 		}
 
@@ -1789,6 +1832,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			custom_effect_tooltip = GER_integrate_war_economies_mod_tt
 			if = {
 				limit = {
 					HUN = {
@@ -1879,6 +1923,42 @@ focus_tree = {
 					}
 					GER = {
 						set_autonomy = { target = BUL autonomy_state = autonomy_satellite }
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = arms_factory
+									size > 3
+									include_locked = yes
+								}
+							}
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+								type = arms_factory
+								level = 4
+								instant_build = yes
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					SPR = {
+						is_in_faction_with = ROOT
+						is_free_or_subject_of_root = yes
+					}
+				}
+				SPR = {
+					capital_scope = {
+						add_extra_state_shared_building_slots = 4
+						add_building_construction = {
+							type = arms_factory
+							level = 4
+							instant_build = yes
+						}
+					}
+					GER = {
+						set_autonomy = { target = SPR autonomy_state = autonomy_satellite }
 						random_owned_controlled_state = {
 							limit = {
 								free_building_slots = {
