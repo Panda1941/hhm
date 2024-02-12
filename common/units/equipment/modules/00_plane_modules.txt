@@ -11,7 +11,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 11
-			build_cost_ic = 26
+			build_cost_ic = 22
 			fuel_consumption = 0.24
 		}
 	}
@@ -23,7 +23,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 19
-			build_cost_ic = 34
+			build_cost_ic = 30
 			fuel_consumption = 0.4
 		}
 	}
@@ -35,7 +35,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 23
-			build_cost_ic = 48
+			build_cost_ic = 44
 			fuel_consumption = 0.6
 		}
 	}
@@ -47,7 +47,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 32
-			build_cost_ic = 60
+			build_cost_ic = 56
 			fuel_consumption = 1.0
 		}
 	}
@@ -59,7 +59,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 41
-			build_cost_ic = 80
+			build_cost_ic = 76
 			fuel_consumption = 1.0
 		}
 	}
@@ -72,7 +72,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 16
-			build_cost_ic = 30
+			build_cost_ic = 26
 			fuel_consumption = 0.24
 		}
 
@@ -94,7 +94,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 25
-			build_cost_ic = 44
+			build_cost_ic = 40
 			fuel_consumption = 0.4
 		}
 
@@ -116,7 +116,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 32
-			build_cost_ic = 60
+			build_cost_ic = 56
 			fuel_consumption = 0.6
 		}
 
@@ -138,7 +138,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 40
-			build_cost_ic = 74
+			build_cost_ic = 70
 			fuel_consumption = 1.0
 		}
 
@@ -159,7 +159,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 56
-			build_cost_ic = 96
+			build_cost_ic = 92
 			fuel_consumption = 1.0
 		}
 
@@ -181,7 +181,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 25
-			build_cost_ic = 38
+			build_cost_ic = 34
 			fuel_consumption = 0.24
 		}
 
@@ -203,7 +203,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 38
-			build_cost_ic = 54
+			build_cost_ic = 50
 			fuel_consumption = 0.4
 		}
 
@@ -225,7 +225,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 51
-			build_cost_ic = 72
+			build_cost_ic = 68
 			fuel_consumption = 0.6
 		}
 
@@ -247,7 +247,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 64
-			build_cost_ic = 88
+			build_cost_ic = 84
 			fuel_consumption = 1.0
 		}
 
@@ -269,7 +269,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 90
-			build_cost_ic = 112
+			build_cost_ic = 108
 			fuel_consumption = 1.0
 		}
 
@@ -291,7 +291,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 30
-			build_cost_ic = 46
+			build_cost_ic = 42
 			fuel_consumption = 0.24
 		}
 
@@ -313,7 +313,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 45
-			build_cost_ic = 68
+			build_cost_ic = 64
 			fuel_consumption = 0.4
 		}
 
@@ -335,7 +335,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 60
-			build_cost_ic = 84
+			build_cost_ic = 80
 			fuel_consumption = 0.6
 		}
 
@@ -357,7 +357,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 75
-			build_cost_ic = 102
+			build_cost_ic = 98
 			fuel_consumption = 1.0
 		}
 
@@ -379,7 +379,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 105
-			build_cost_ic = 128
+			build_cost_ic = 124
 			fuel_consumption = 1.0
 		}
 
@@ -401,7 +401,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 25
-			build_cost_ic = 54
+			build_cost_ic = 50
 			fuel_consumption = 0.3
 		}
 
@@ -429,7 +429,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 38
-			build_cost_ic = 74
+			build_cost_ic = 70
 			fuel_consumption = 0.6
 		}
 
@@ -457,7 +457,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 51
-			build_cost_ic = 96
+			build_cost_ic = 90
 			fuel_consumption = 0.9
 		}
 
@@ -485,7 +485,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 64
-			build_cost_ic = 116
+			build_cost_ic = 110
 			fuel_consumption = 1.2
 		}
 
@@ -512,7 +512,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 90
-			build_cost_ic = 144
+			build_cost_ic = 140
 			fuel_consumption = 1.8
 		}
 
@@ -538,7 +538,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 20
-			build_cost_ic = 34
+			build_cost_ic = 30
 
 		}
 		multiply_stats = {
@@ -558,7 +558,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 25
-			build_cost_ic = 40
+			build_cost_ic = 36
 		}
 		multiply_stats = {
 			air_range = -0.75
@@ -578,7 +578,7 @@ equipment_modules = {
 		add_stats = {
 
 			thrust = 30
-			build_cost_ic = 46
+			build_cost_ic = 42
 		}
 		multiply_stats = {
 			air_range = -0.7
@@ -1063,7 +1063,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 6
+				air_bombing = 5
 			}
 		}
 		dismantle_cost_ic = 7
@@ -1089,7 +1089,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 15
+				air_bombing = 10
 			}
 		}
 		dismantle_cost_ic = 12
@@ -1919,7 +1919,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 5
+				air_bombing = 3
 				night_penalty = -0.1
 			}
 		}
@@ -1931,8 +1931,8 @@ equipment_modules = {
 				naval_patrol
 			}
 			add_stats = {
-				surface_detection = 10
-				sub_detection = 5
+				surface_detection = 8
+				sub_detection = 3
 			}
 		}
 		xp_cost = 0
@@ -1965,7 +1965,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 10
+				air_bombing = 6
 				night_penalty = -0.1
 			}
 		}
@@ -1977,8 +1977,8 @@ equipment_modules = {
 				naval_patrol
 			}
 			add_stats = {
-				surface_detection = 20
-				sub_detection = 10
+				surface_detection = 16
+				sub_detection = 6
 			}
 		}
 		xp_cost = 0
