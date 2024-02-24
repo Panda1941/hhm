@@ -4243,62 +4243,60 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			add_ideas = {
-				CZE_skoda_works
-			}
 			hidden_effect = {
-			HUN = {
-				transfer_state = 664
-				add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
-			}
-			every_other_country = {
-				limit = {
-					is_faction_leader = yes
+				HUN = {
+					transfer_state = 664
+					add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
 				}
-				reverse_add_opinion_modifier = { target = HUN modifier = GER_first_vienna_award_other }
-			}
-			GER = {
-				transfer_state = 75
-				75 = { set_compliance = 50 }
-				transfer_state = 9
-				9 = { set_compliance = 50 }
-			}
-			POL = {
-				transfer_state = 72
-			}
-			72 = {
-				add_core_of = POL
-			}
-			HUN = {
-				transfer_state = 70
-				70 = { set_compliance = 50 }
-				transfer_state = 71
-				71 = { set_compliance = 50 }
-				transfer_state = 73
-				73 = { set_compliance = 50 }
-				transfer_state = 664
-				664 = { set_compliance = 50 }
-			}
-			ENG = {
-				add_war_support = 0.1
-			}
-			FRA = {
-				add_war_support = 0.1
-			}
-			if = {
-				limit = {
-					has_DLC = "Death or Dishonor"
-					country_exists = YUG
-					YUG = { has_war = no }
+				every_other_country = {
+					limit = {
+						is_faction_leader = yes
+					}
+					reverse_add_opinion_modifier = { target = HUN modifier = GER_first_vienna_award_other }
 				}
 				GER = {
-					country_event = {
-						id = DOD_yugoslavia.32
-						hours = 6
+					transfer_state = 75
+					75 = { set_compliance = 50 }
+					transfer_state = 9
+					9 = { set_compliance = 50 }
+				}
+				POL = {
+					transfer_state = 72
+				}
+				72 = {
+					add_core_of = POL
+				}
+				HUN = {
+					transfer_state = 70
+					70 = { set_compliance = 50 }
+					transfer_state = 71
+					71 = { set_compliance = 50 }
+					transfer_state = 73
+					73 = { set_compliance = 50 }
+					transfer_state = 664
+					664 = { set_compliance = 50 }
+				}
+				ENG = {
+					add_war_support = 0.1
+				}
+				FRA = {
+					add_war_support = 0.1
+				}
+				if = {
+					limit = {
+						has_DLC = "Death or Dishonor"
+						country_exists = YUG
+						YUG = { has_war = no }
+					}
+					GER = {
+						country_event = {
+							id = DOD_yugoslavia.32
+							hours = 6
+						}
 					}
 				}
 			}
-			}
+
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 64070 }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 46 }
 			create_equipment_variant = {
@@ -4323,7 +4321,7 @@ focus_tree = {
 				
 				icon = "gfx/interface/technologies/cze_basic_main_tank.dds"
 			}
-			add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 1850 producer = GER variant_name = "Panzer 38(t)" }
+			add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 2160 producer = GER variant_name = "Panzer 38(t)" }
 			hidden_effect = {
 				country_event = { hours = 6 id = news.60 }
 				add_to_variable = { var = GER_mefo_bill_counter value = -5 }

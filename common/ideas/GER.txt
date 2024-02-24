@@ -588,10 +588,13 @@ ideas = {
 				ship_hull_heavy = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = 0.30
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = 0.2
 				consumer_goods_factor = 0.10
 			}
 		}
@@ -611,7 +614,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 			}
 		}
 
@@ -683,8 +686,8 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = -0.3
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = -0.2
 				consumer_goods_factor = -0.1
 			}
 		}
@@ -886,7 +889,7 @@ ideas = {
 
 			modifier = {
 				training_time_army_factor = -0.10
-				industrial_capacity_factory = 0.05
+				experience_gain_army_factor = 0.05
 			}
 		}
 
@@ -1032,7 +1035,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.2
 				production_speed_synthetic_refinery_factor = -0.1
 				political_power_cost = 0.2
@@ -1055,7 +1058,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.1
@@ -1080,7 +1083,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1105,7 +1108,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1130,7 +1133,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1155,7 +1158,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1180,7 +1183,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1205,7 +1208,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1230,7 +1233,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1255,7 +1258,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1280,7 +1283,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1305,7 +1308,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1330,7 +1333,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1355,7 +1358,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1380,7 +1383,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1405,7 +1408,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1430,7 +1433,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -1455,7 +1458,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 				production_speed_buildings_factor = 0.20
 				production_speed_synthetic_refinery_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2

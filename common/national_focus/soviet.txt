@@ -1952,7 +1952,7 @@ date > 1940.09.01
 		x = -1
 		y = 1
 		relative_position_id = SOV_nkvd_divisions
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 			modifier = {

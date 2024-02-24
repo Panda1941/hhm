@@ -550,7 +550,6 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.05
 				local_resources_factor = 0.1
 				conscription_factor = 0.05
 			}
