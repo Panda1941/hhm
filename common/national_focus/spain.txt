@@ -1377,6 +1377,9 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = SPR_MIO
+			GER = {
+				add_to_faction = SPR
+			}
 		}
 	}
 

@@ -1712,7 +1712,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_align_bulgaria
-		icon = GFX_focus_GER_align_romania
+		icon = GFX_focus_generic_befriend_bulgaria
 		prerequisite = { focus = GER_grosraumwirtschaft }
 		x = 1
 		y = 2
@@ -1754,7 +1754,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_align_spain
-		icon = GFX_focus_GER_align_romania
+		icon = GFX_focus_generic_befriend_nationalist_spain_focus
 		prerequisite = { focus = GER_grosraumwirtschaft }
 		x = -1
 		y = 2

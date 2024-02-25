@@ -298,4 +298,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11554;417;impassable;-1;-1;-1;-1;-1;;slovak
 581;417;impassable;-1;-1;-1;-1;-1;;slovak
 3550;417;impassable;-1;-1;-1;-1;-1;;slovak
+
+9767;6521;land;-1;-1;-1;-1;-1;;SPAIN
 -1;-1;;-1;-1;-1;-1;-1;-1
