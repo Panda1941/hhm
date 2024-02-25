@@ -2164,6 +2164,16 @@ equipments = {
 					
 				}
 			}
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					strat_weapon
+					recon_camera
+					nav_bomber_weapon
+					mine_warfare_offense
+					
+				}
+			}
 
 			engine_type_slot = {
 				required = yes
@@ -2267,6 +2277,16 @@ equipments = {
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					strat_weapon
+					recon_camera
+					nav_bomber_weapon
+					mine_warfare_offense
+					
+				}
+			}
+			fixed_auxiliary_weapon_slot_3 = { 
 				required = no
 				allowed_module_categories = {
 					strat_weapon
@@ -2381,6 +2401,16 @@ equipments = {
 			}
 
 			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					strat_weapon
+					recon_camera
+					nav_bomber_weapon
+					mine_warfare_offense
+					
+				}
+			}
+			fixed_auxiliary_weapon_slot_3 = { 
 				required = no
 				allowed_module_categories = {
 					strat_weapon
