@@ -866,7 +866,7 @@ technologies = {
 		
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.15
+		industry_air_damage_factor = -0.25
 		
 		
 		
@@ -945,7 +945,7 @@ technologies = {
 
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.1
+		industry_air_damage_factor = -0.15
 		
 		
 		
@@ -1036,10 +1036,6 @@ technologies = {
 
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
-		
-		
-		
 		
 		path = {
 			leads_to_tech = dispersed_industry5 
@@ -1082,11 +1078,6 @@ technologies = {
 
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
-		
-		
-		
-		
 		
 		research_cost = 1.5
 		start_year = 1943
@@ -1131,11 +1122,6 @@ technologies = {
 		
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
-		
-		
-		
-		
 		
 		research_cost = 1.5
 		start_year = 1945

@@ -1210,6 +1210,7 @@ technologies = {
 	}
 
 	interwar_antiair = {
+		industry_air_damage_factor = -0.050
 
 		enable_equipments = {
 			anti_air_equipment_1
@@ -1307,6 +1308,8 @@ technologies = {
 		support_modern_sp_anti_air= { air_attack = 0.05 }
 
 		tech_air_damage_factor = -0.02
+		
+		industry_air_damage_factor = -0.05
 
 		path = {
 			leads_to_tech = antiair2
@@ -1359,6 +1362,9 @@ technologies = {
 
 		static_anti_air_damage_factor = 0.1
 		navy_anti_air_attack_factor = 0.05
+
+		
+		industry_air_damage_factor = -0.05
 
 		enable_equipment_modules = {
 			ship_anti_air_2
@@ -1414,7 +1420,6 @@ technologies = {
 	}
 
 	antiair3 = {
-
 		anti_air = {
 			hard_attack = 0.08
 			ap_attack = 0.4
@@ -1442,6 +1447,7 @@ technologies = {
 		#}
 
 		tech_air_damage_factor = -0.02
+		industry_air_damage_factor = -0.05
 
 		path = {
 			leads_to_tech = antiair2
@@ -1507,6 +1513,7 @@ technologies = {
 		support_modern_sp_anti_air= { air_attack = 0.05 }
 
 		tech_air_damage_factor = -0.02
+		industry_air_damage_factor = -0.05
 
 		path = {
 			leads_to_tech = antiair5
@@ -1559,6 +1566,7 @@ technologies = {
 
 		static_anti_air_damage_factor = 0.1
 		navy_anti_air_attack_factor = 0.1
+		industry_air_damage_factor = -0.05
 
 		enable_equipment_modules = {
 			ship_anti_air_3
@@ -1639,6 +1647,7 @@ technologies = {
 		support_modern_sp_anti_air= { air_attack = 0.05 }
 
 		tech_air_damage_factor = -0.02
+		industry_air_damage_factor = -0.05
 
 		path = {
 			leads_to_tech = antiair5
@@ -1759,6 +1768,7 @@ technologies = {
 		support_modern_sp_anti_air= { air_attack = 0.05 }
 
 		tech_air_damage_factor = -0.02
+		industry_air_damage_factor = -0.05
 
 		path = {
 			leads_to_tech = antiair7
@@ -1828,6 +1838,7 @@ technologies = {
 		support_modern_sp_anti_air= { air_attack = 0.05 }
 
 		tech_air_damage_factor = -0.02
+		industry_air_damage_factor = -0.05
 
 		path = {
 			leads_to_tech = antiair7
