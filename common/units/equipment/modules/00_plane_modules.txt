@@ -1063,7 +1063,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 8
+				air_bombing = 6
 			}
 		}
 		dismantle_cost_ic = 7
@@ -1089,7 +1089,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 15
+				air_bombing = 10
 			}
 		}
 		dismantle_cost_ic = 12

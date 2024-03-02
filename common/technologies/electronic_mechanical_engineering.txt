@@ -1166,7 +1166,7 @@ technologies = {
 	
 	atomic_research = {
 
-		research_speed_factor = 0.075
+		research_speed_factor = 0.04
 		
 		path = {
 			leads_to_tech = nuclear_reactor 
@@ -1253,7 +1253,7 @@ technologies = {
 	nuclear_reactor = {
 
 		# can build reactors
-		research_speed_factor = 0.025
+		#research_speed_factor = 0.025
 		
 		start_year = 1943
 		research_cost = 5
@@ -1291,7 +1291,7 @@ technologies = {
 		start_year = 1945
 		research_cost = 5
 
-		research_speed_factor = 0.05
+		#research_speed_factor = 0.05
 		
 		folder = {
 			name = electronics_folder
