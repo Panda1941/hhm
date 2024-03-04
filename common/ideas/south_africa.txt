@@ -19,8 +19,8 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.01
 				consumer_goods_factor = 0.15
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.08
+				industrial_capacity_dockyard = -0.08
 				production_speed_arms_factory_factor = -0.15
 				production_speed_industrial_complex_factor = -0.075
 			}
@@ -41,8 +41,6 @@ ideas = {
 
 			modifier = {
 			    consumer_goods_factor = 0.10
-				industrial_capacity_factory = -0.075
-				industrial_capacity_dockyard = -0.075
 			}
 		}
 
@@ -182,7 +180,6 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 			}
-
 		}
 
 		SAF_cheap_labor_1 = {
