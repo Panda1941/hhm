@@ -6,14 +6,13 @@ state={
 	
 	state_category = wasteland
 
-history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
+	history={ 1936.1.1.13 = { owner = ENG add_core_of = SWE }
 		victory_points = {
 			8066 1
 		}
 		owner = RAJ
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 2
 		}
 		add_core_of = RAJ
 	}

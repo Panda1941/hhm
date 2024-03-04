@@ -524,20 +524,19 @@ operations = {
 		}
 		
 		complete_effect = {
-		ENG = {
-		annex_country = {
-					target = IRQ
-					transfer_troops = no
+			ENG = {
+				annex_country = {
+						target = IRQ
+						transfer_troops = no
+					}
+				every_state = {
+					limit = {
+						is_core_of = IRQ
+						is_controlled_by = ENG
+					}
+					add_compliance = 40
 				}
-			every_state = {
-				limit = {
-					is_core_of = IRQ
-					is_controlled_by = ENG
-				}
-				add_compliance = 40
 			}
-			
-		}
 		}
 	}
 	conquer_and_divide = {
@@ -552,7 +551,7 @@ operations = {
 		}
 		available = {
 			FRA = {has_completed_focus = FRA_appeal_to_the_french_nation} 
-			}
+		}
 			
 		
 		complete_effect = {
@@ -578,7 +577,7 @@ operations = {
 		}
 		available = {
 			SPR = {has_war_with = ENG} 
-			}
+		}
 			
 		
 		complete_effect = {
