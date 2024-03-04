@@ -1095,7 +1095,7 @@ threat > 0.25
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_canada_wheat_board }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = CAN_canada_wheat_board
 
@@ -1215,7 +1215,7 @@ threat > 0.25
 		id = CAN_uranium_mining
 		icon = GFX_focus_CAN_uranium_mining
 		prerequisite = { focus = CAN_national_steel_car }
-		x = 2
+		x = -2
 		y = 1
 		relative_position_id = CAN_national_steel_car
 
@@ -1385,7 +1385,7 @@ date > 1941.01.01
 		id = CAN_a_modest_reaarmament
 		text = "Increased Military Budget"
 		icon = GFX_focus_generic_treaty
-		x = 42
+		x = 35
 		y = 0
 
 		mutually_exclusive = {focus = CAN_keep_the_current_military_budget}
@@ -1542,7 +1542,7 @@ date > 1941.01.01
 		id = CAN_keep_the_current_military_budget
 		text = "Keep The Current Military Budget"
 		icon = GFX_goal_generic_neutrality_focus
-		x = 32
+		x = 31
 		y = 0
 
 		mutually_exclusive = {focus = CAN_a_modest_reaarmament}
@@ -1758,7 +1758,7 @@ date > 1941.01.01
 		id = CAN_enact_war_measures
 		text = "Enact War Measures"
 		icon = GFX_goal_generic_propaganda
-		x = -5
+		x = -2
 		y = 4
 
 		prerequisite = { focus = CAN_prioritize_canadian_defense focus = CAN_prioritize_the_commonwealth}
@@ -1833,7 +1833,7 @@ date > 1941.01.01
 		id = CAN_mechanize_the_cavalry
 		text = "Mechanize The Cavalry"
 		icon = GFX_focus_CAN_a_canadian_cruiser
-		x = -7
+		x = -5
 		y = 1
 
 		prerequisite = { focus = CAN_national_resources_mobilization_act_2}
@@ -1861,7 +1861,7 @@ date > 1941.01.01
 				name = CAN_a_canadian_cruiser			
 				bonus = 1.00
 				uses = 1
-				category = cat_medium_armor
+				category = armor
 			}
 		    
 			add_ideas = CAN_army
@@ -1879,7 +1879,7 @@ date > 1941.01.01
 		id = CAN_adopt_the_war_of_movement
 		text = "Austin MK5"
 		icon = GFX_goal_generic_army_doctrines
-		x = 4
+		x = 3
 		y = 1
 
 		prerequisite = { focus = CAN_mechanize_the_cavalry focus = CAN_mobile_artillery}
@@ -1992,6 +1992,7 @@ date > 1941.01.01
 				bonus = 2.0
 				uses = 1
 				category = motorized_equipment
+				category = cat_mechanized_equipment
 			}
 		}
 	}
@@ -2000,7 +2001,7 @@ date > 1941.01.01
 		id = CAN_a_canadian_cruiser
 		text = "Canadian Cruiser"
 		icon = GFX_focus_SAF_crusader
-		x = -2
+		x = -1
 		y = 1
 
 		prerequisite = {focus = CAN_mechanize_the_cavalry}
@@ -2050,7 +2051,7 @@ date > 1941.01.01
 		id = CAN_infantry_tank_production
 		text = "Infantry Tank"
 		icon = GFX_focus_SAF_infantry_support
-		x = 2
+		x = 1
 		y = 1
 
 		prerequisite = {focus = CAN_mechanize_the_cavalry}
@@ -2220,7 +2221,7 @@ date > 1941.01.01
 		id = CAN_replace_the_ross
 		text = "Replace The Ross Rifle"
 		icon = GFX_goal_generic_small_arms
-		x = 3
+		x = 2
 		y = 1
 
 		prerequisite = { focus = CAN_mobile_artillery focus = CAN_send_in_the_zombies}
@@ -2474,7 +2475,7 @@ CAN = {
 	focus = {
 		id = CAN_send_in_the_zombies
 		icon = GFX_goal_generic_demand_territory
-		x = 6
+		x = 5
 		y = 1
 
 		prerequisite = { focus = CAN_national_resources_mobilization_act_2 }
@@ -2486,9 +2487,9 @@ CAN = {
 		}
 
 		available = {
-CAN = {
-						has_completed_focus = CAN_no_man_gone_to_waste
-					}
+			CAN = {
+				has_completed_focus = CAN_no_man_gone_to_waste
+			}
 		}
 		
 		bypass = {
@@ -3095,7 +3096,7 @@ CAN = {
 		id = CAN_rebuild_the_royal_canadian_airforce
 		text = "Royal Canadian Airforce"
 		icon = GFX_goal_generic_build_airforce
-		x = 52
+		x = 42
 		y = 0
 
 		relative_position_id = CAN_king_or_chaos
@@ -3165,7 +3166,7 @@ CAN = {
 	focus = {
 		id = CAN_expand_trenton_airforce_base
 		text = "Expand Treton Airforce Base"
-		icon = GFX_goal_generic_airport
+		icon = GFX_goal_generic_air_doctrine
 		x = 0
 		y = 1
 
@@ -3210,7 +3211,7 @@ CAN = {
 	focus = {
 		id = CAN_air_wireless_development
 		text = "Fighter Development"
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_goal_generic_air_fighter2
 		x = -1
 		y = 1
 
@@ -3352,7 +3353,7 @@ CAN = {
 		id = CAN_the_plan
 		text = "The Plan"
 		icon = GFX_focus_research
-		x = 15
+		x = 9
 		y = 1
 
 		prerequisite = { focus = CAN_enact_war_measures}
@@ -3514,8 +3515,8 @@ CAN = {
 		id = CAN_set_the_canadian_shipyards_on_war_footing
 		text = "Halifax Shipyards"
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 22
-		y = 2
+		x = 23
+		y = 0
 
 		relative_position_id = CAN_king_or_chaos
 		cost = 3
@@ -4066,28 +4067,23 @@ CAN = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
-			add_timed_idea = {
-         		idea = CAN_fleet_modernization
-         		days = 365
-			}
 			
 			create_equipment_variant = {
-		name = "E/F/G/H Class"
-		type = ship_hull_light_2
-		name_group = ENG_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = dp_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = ship_sonar_1
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
+				name = "E/F/G/H Class"
+				type = ship_hull_light_2
+				name_group = ENG_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_depth_charge_1
+				}
+			}
 
 			add_equipment_production = {
 				equipment = {

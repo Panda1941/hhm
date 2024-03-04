@@ -56,6 +56,15 @@ on_actions = {
 				FRA = {
 					remove_ideas = Naval_treaty_allies
 				}
+				CAN = {
+					remove_ideas = Naval_treaty_allies
+				}
+				SAF = {
+					remove_ideas = Naval_treaty_allies
+				}
+				BRA = {
+					remove_ideas = Naval_treaty_allies
+				}
 			}
 			if = {
 				limit = {
@@ -1217,27 +1226,30 @@ on_actions = {
 				}
 			}
 			ENG = {
-			add_ideas = Naval_treaty_allies
+				add_ideas = Naval_treaty_allies
 			}
 			FRA = {
-			add_ideas = Naval_treaty_allies
+				add_ideas = Naval_treaty_allies
 			}
+			CAN = { add_ideas = Naval_treaty_allies }
+			SAF = { add_ideas = Naval_treaty_allies }
+			BRA = { add_ideas = Naval_treaty_allies }
 			USA = {
-			add_ideas = Naval_treaty_allies
+				add_ideas = Naval_treaty_allies
 			}
 		}
 	}
-	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					FROM = { tag = FRA }
-					FROM.FROM = { is_core_of = FRA }
-					FRA = { surrender_progress	> 0.65 } 
-    		        date < 1940.03.01						
-				}
-				tp_divs_out_of_france = yes
-			}
-		}
-	}
+	#on_state_control_changed = {
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				FROM = { tag = FRA }
+	#				FROM.FROM = { is_core_of = FRA }
+	#				FRA = { surrender_progress	> 0.65 } 
+    #		        date < 1940.03.01						
+	#			}
+	#			tp_divs_out_of_france = yes
+	#		}
+	#	}
+	#}
 }

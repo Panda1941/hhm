@@ -12,11 +12,10 @@ state={
 			infrastructure = 2
 			5139 = {
 				naval_base = 1
-
 			}
-
+			industrial_complex = 2
+			arms_factory = 1	
 		}
-
 	}
 
 	provinces={

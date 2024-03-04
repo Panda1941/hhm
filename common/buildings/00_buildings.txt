@@ -17,6 +17,7 @@ buildings = {
 		allied_build = yes
 
 		infrastructure_construction_effect = yes
+		damage_factor = 1.0
 	}
 
 	arms_factory = {
@@ -29,6 +30,7 @@ buildings = {
 		shares_slots = yes
 		value = 8
 		infrastructure_construction_effect = yes
+		damage_factor = 1.0
 	}
 
 	industrial_complex = {
@@ -41,6 +43,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
+		damage_factor = 1.0
 	}
 
 	air_base = {
@@ -81,6 +84,7 @@ buildings = {
 		max_level = 1
 		infrastructure_construction_effect = yes
 		value = 3
+		damage_factor = 0.1
 	}
 	
 	naval_base = {
@@ -97,7 +101,7 @@ buildings = {
 		value = 1
 		allied_build = yes
 		infrastructure_construction_effect = yes
-		damage_factor = 0.25
+		damage_factor = 0.15
 	}
 
 	bunker = {
@@ -112,6 +116,7 @@ buildings = {
 		max_level = 5
 		value = 1
 		infrastructure_construction_effect = yes
+		damage_factor = 1.0
 	}
 	
 	coastal_bunker = {
@@ -127,6 +132,7 @@ buildings = {
 		max_level = 5
 		value = 1
 		infrastructure_construction_effect = yes
+		damage_factor = 1.0
 	}
 
 	dockyard = {
@@ -141,6 +147,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
+		damage_factor = 0.75
 	}
 
 	
@@ -187,7 +194,7 @@ buildings = {
 		shares_slots = no
 		value = 10
 		infrastructure_construction_effect = yes
-		damage_factor = 0.12
+		damage_factor = 0.15
 		
 		show_modifier = yes
 		fuel_gain_from_states = 4 #per hour
@@ -203,7 +210,7 @@ buildings = {
 		shares_slots = no
 		value = 10
 		infrastructure_construction_effect = yes
-		damage_factor = 0.12
+		damage_factor = 0.15
 		
 		show_modifier = yes
 	}
@@ -218,7 +225,7 @@ buildings = {
 		shares_slots = no
 		value = 10
 		infrastructure_construction_effect = yes
-		damage_factor = 0.12
+		damage_factor = 0.15
 		
 		show_modifier = yes
 	}
@@ -234,7 +241,7 @@ buildings = {
 		shares_slots = no
 		value = 10
 		infrastructure_construction_effect = yes
-		damage_factor = 0.12
+		damage_factor = 0.15
 		
 		show_modifier = yes
 	}
@@ -247,7 +254,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		damage_factor = 0.5
+		damage_factor = 0.25
 		fuel_silo = yes
 		
 		show_modifier = yes
@@ -279,6 +286,7 @@ buildings = {
 		shares_slots = yes
 		value = 1
 		infrastructure_construction_effect = yes
+		damage_factor = 0.75
 	}
 
 	nuclear_reactor = {
@@ -291,5 +299,6 @@ buildings = {
 		shares_slots = yes
 		value = 10
 		infrastructure_construction_effect = yes
+		damage_factor = 0.75
 	}
 }

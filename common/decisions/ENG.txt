@@ -8930,6 +8930,302 @@ political_actions = {
 }
 
 operations = {
+	operation_compass = {
+
+		icon = generic_operation
+
+		name = "Operation Compass"
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			has_war_with = GER
+			date > 1940.04.01
+
+			OR = {
+				NOT = { ENG ={controls_state =451 }}
+				NOT = { ENG ={controls_state =450 }}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+		}
+		
+		complete_effect = {
+		
+			custom_effect_tooltip = "Minors will also benefit from the operation buff"
+			add_timed_idea = { idea = ENG_compass  days = 90 }
+			hidden_effect = {
+				CAN = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+				SAF = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+				FRA = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+				RAJ = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+				AST = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+				BRA = {add_timed_idea = { idea = ENG_compass  days = 90 }}
+			}
+
+			every_army_leader = {
+				add_logistics = 1
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = armor_officer
+				}
+				add_unit_leader_trait = panzer_leader
+				add_unit_leader_trait = desert_fox				
+			}
+
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = CAN
+						original_tag = SAF
+						original_tag = AST
+					}
+				}
+				every_army_leader = {
+					add_logistics = 1
+				}
+				every_army_leader = {
+					limit = {
+						OR = {
+							has_trait = armor_officer
+							has_trait = commando
+						}
+					}
+					add_unit_leader_trait = panzer_leader				
+				}
+			}
+		}
+	}
+	operation_crusader = {
+
+		icon = generic_operation
+		name = "Operation Crusader"
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			has_war_with = GER
+
+ 			NOT = { ENG ={controls_state = 451 }}
+ 			date > 1941.1.1
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = "Minors will also benefit from the operation buff"
+			add_timed_idea = { idea = ENG_crusader  days = 90 }
+			hidden_effect = {
+				CAN = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+				SAF = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+				FRA = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+				RAJ = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+				AST = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+				BRA = {add_timed_idea = { idea = ENG_crusader  days = 90 }}
+			}
+			every_country = {
+				limit = {
+					or = {
+						original_tag = ENG
+						original_tag = CAN
+						original_tag = RAJ
+						original_tag = AST
+						original_tag = SAF
+					}
+				}
+				every_army_leader = {
+					limit = {
+						OR = {
+							has_trait = desert_fox
+							has_trait = infantry_officer
+						}
+					}
+					add_unit_leader_trait = infantry_leader 
+					add_unit_leader_trait = desert_fox
+				}
+			}
+		}
+	}
+
+	operation_market_garden = {
+
+		icon = generic_operation
+		name = "Operation Market Garden"
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			AND ={
+ 				NOT = { ENG ={controls_state = 35 }}
+				NOT = { ENG ={controls_state = 7 }}
+				NOT = { ENG ={controls_state = 8 }}
+				NOT = { ENG ={controls_state = 6 }}
+				NOT = { ENG ={controls_state = 34 }}
+				NOT = { ENG ={controls_state = 36 }}
+ 				date > 1942.1.1
+ 			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = "Minors will also benefit from the operation buff"
+			add_timed_idea = { idea = ENG_market_garden  days = 90 }
+			hidden_effect = {
+				CAN = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
+				SAF = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
+				FRA = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
+				RAJ = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
+				AST = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
+				BRA = {add_timed_idea = { idea = ENG_market_garden  days = 90 }}
+			}
+
+			every_country = {
+				limit = {
+					or = {
+						original_tag = ENG
+						original_tag = CAN
+						original_tag = AST
+					}
+				}
+				every_army_leader = {
+					limit = {
+						OR = {
+							has_trait = commando
+							has_trait = infantry_officer
+						}
+					}
+					add_unit_leader_trait = commando 
+					add_unit_leader_trait = naval_invader
+				}
+			}
+		}
+	}
+
+	operation_torch = {
+
+		icon = generic_operation
+		name = "Operation Torch"
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			OR ={
+				AND = {
+ 					ENG ={controls_state = 448 }
+					ENG ={controls_state = 450 }
+					ENG ={controls_state = 451 }
+				}
+ 				date > 1942.01.01
+ 			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+		}
+		
+		complete_effect = {
+		
+			custom_effect_tooltip = "Minors will also benefit from the operation buff"
+			add_timed_idea = { idea = ENG_torch  days = 90 }
+			hidden_effect = {
+				CAN = {add_timed_idea = { idea = ENG_torch  days = 90 }}
+				SAF = {add_timed_idea = { idea = ENG_torch  days = 90 }}
+				FRA = {add_timed_idea = { idea = ENG_torch  days = 90 }}
+				AST = {add_timed_idea = { idea = ENG_torch  days = 90 }}
+			}
+			if = {
+				limit = {
+					country_exists = FRA
+				}
+				
+				FRA = { 
+					transfer_state = 461
+					transfer_state = 462
+				}
+			}
+			else = {
+				ENG = { 
+					transfer_state = 461
+					transfer_state = 462
+				}
+			}
+			ITA = { 
+				transfer_state = 513
+				transfer_state = 460
+				transfer_state = 459
+			}
+			461 = { set_building_level = { type = air_base level = 10 }}
+			458 = { set_building_level = { type = air_base level = 10 }}
+
+
+			every_army_leader = {
+				limit = {
+					has_trait = trickster
+				}
+				add_unit_leader_trait = commando 
+				add_unit_leader_trait = naval_invader
+				add_unit_leader_trait = trait_mountaineer 
+				add_unit_leader_trait = hill_fighter
+				add_unit_leader_trait = trait_engineer
+			}
+			CAN = {
+				every_army_leader = {
+					limit = {
+						has_trait = commando
+					}
+					add_unit_leader_trait = trait_engineer				
+				}
+			}
+		}
+	}
 
 	operation_fork = {
 

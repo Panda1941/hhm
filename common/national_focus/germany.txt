@@ -4297,7 +4297,8 @@ focus_tree = {
 			}
 
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 64070 }
-			add_equipment_to_stockpile = { type = support_equipment_1 amount = 46 }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 968 }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1254 }
 			create_equipment_variant = {
 				name = "Panzer 38(t)"
 				type = light_tank_chassis_2

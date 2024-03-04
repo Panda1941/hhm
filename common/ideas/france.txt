@@ -340,7 +340,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			modifier = {	consumer_goods_factor = -0.15	}
+			modifier = {	consumer_goods_factor = -0.15 stability_factor = -0.05	}
 		}
 		FRA_global_investments = {
 			picture = generic_exploit_mines
@@ -515,8 +515,10 @@ ideas = {
 					build_cost_ic = -0.1 instant = yes
 				}
 				artillery_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
+					build_cost_ic = -0.1 instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 
