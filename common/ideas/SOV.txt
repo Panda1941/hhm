@@ -776,10 +776,7 @@ ideas = {
 			
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.08 instant = yes
-				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = -0.08 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 		}
@@ -821,6 +818,8 @@ ideas = {
 			}
 
 			modifier = {
+				army_org_factor = 0.075
+				communism_drift = 0.08
 			}
 		}
 
@@ -1016,11 +1015,6 @@ ideas = {
 				acclimatization_cold_climate_gain_factor = 0.15
 				acclimatization_hot_climate_gain_factor = 0.15
 				terrain_penalty_reduction = 0.05
-
-				
-				army_org_regain = 0.1
-				army_org_factor = 0.075
-				communism_drift = 0.08
 			}
 		}
 		SOV_lessons_of_war = {
@@ -1061,8 +1055,6 @@ ideas = {
 
 			modifier = {
 				army_org_regain = 0.1
-				army_org_factor = 0.075
-				communism_drift = 0.08
 			}
 		}
 		SOV_expert_camouflage = {
@@ -1084,18 +1076,6 @@ ideas = {
 				max_dig_in = 5
 				dig_in_speed_factor = 0.05
 				cas_damage_reduction = 0.05
-
-				
-				heat_attrition_factor = -0.1
-				winter_attrition_factor = -0.1
-				acclimatization_cold_climate_gain_factor = 0.15
-				acclimatization_hot_climate_gain_factor = 0.15
-				terrain_penalty_reduction = 0.05
-
-				
-				army_org_regain = 0.1
-				army_org_factor = 0.075
-				communism_drift = 0.08
 			}
 		}
 		SOV_glory_of_red_army = {
@@ -1115,10 +1095,12 @@ ideas = {
 
 			modifier = {
 				land_doctrine_cost_factor = -0.1
-				army_core_attack_factor = 0.1
-				army_speed_factor = 0.1
 			}
 			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.04 instant = yes 
+				}
+
 			}
 		}
 		SOV_five_year_plan_hhm = { 

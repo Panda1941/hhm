@@ -1984,11 +1984,11 @@ date > 1940.09.01
 			if = { limit = { has_idea = officers_purged_8 } remove_ideas = officers_purged_8 }
 			if = { limit = { has_idea = officers_purged_9 } remove_ideas = officers_purged_9 }
 			if = { limit = { has_idea = officers_purged_10 } remove_ideas = officers_purged_10 }			
-			#if = { limit = { has_idea = SOV_great_patriotic_war } remove_ideas = SOV_great_patriotic_war }
-			#if = { limit = { has_idea = SOV_great_patriotic_war_2 } remove_ideas = SOV_great_patriotic_war_2 }
-			#if = { limit = { has_idea = SOV_great_patriotic_war_3 } remove_ideas = SOV_great_patriotic_war_3 }
-			#if = { limit = { has_idea = SOV_great_patriotic_war_4 } remove_ideas = SOV_great_patriotic_war_4 }
-			#if = { limit = { has_idea = SOV_great_patriotic_war_5 } remove_ideas = SOV_great_patriotic_war_5 }			
+			if = { limit = { has_idea = SOV_great_patriotic_war } remove_ideas = SOV_great_patriotic_war }
+			if = { limit = { has_idea = SOV_great_patriotic_war_2 } remove_ideas = SOV_great_patriotic_war_2 }
+			if = { limit = { has_idea = SOV_great_patriotic_war_3 } remove_ideas = SOV_great_patriotic_war_3 }
+			if = { limit = { has_idea = SOV_great_patriotic_war_4 } remove_ideas = SOV_great_patriotic_war_4 }
+			if = { limit = { has_idea = SOV_great_patriotic_war_5 } remove_ideas = SOV_great_patriotic_war_5 }			
 		}
 	}
 
@@ -2468,6 +2468,7 @@ date > 1940.09.01
 
 		completion_reward = {
 			add_ideas = SOV_barrier_troops
+			add_ideas = SOV_war_heroes_ns
 		}
 	}
 
@@ -2487,10 +2488,7 @@ date > 1940.09.01
 		search_filters = {}
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = SOV_adaptable_army
-				remove_idea = SOV_barrier_troops
-			}
+			add_ideas = SOV_adaptable_army
 		}
 	}
 
@@ -2510,10 +2508,7 @@ date > 1940.09.01
 		search_filters = {}
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = SOV_expert_camouflage
-				remove_idea = SOV_adaptable_army
-			}
+			add_ideas = SOV_expert_camouflage
 		}
 	}
 
@@ -2535,16 +2530,13 @@ date > 1940.09.01
 
 		available = {
 			
-			surrender_progress > 0.5
+			surrender_progress > 0.25
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = SOV_glory_of_red_army
-				days = 365
-			}
+			add_ideas = SOV_glory_of_red_army
 
 			army_experience = 75
 

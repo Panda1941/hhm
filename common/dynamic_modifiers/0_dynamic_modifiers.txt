@@ -1238,12 +1238,40 @@ RAJ_industrialized_personnel = {
 	state_production_speed_buildings_factor = 0.15
 }
 
+frontline_state = {
+	enable = { always = yes }
+
+	icon = SOV_war_zone_modifier_icon
+
+	army_core_defence_factor = -0.15
+
+}
+
+2ndline_state = {
+	enable = { always = yes }
+
+	icon = SOV_war_zone_modifier_icon
+
+	army_core_defence_factor = -0.10
+
+}
+
+3rdline_state = {
+	enable = { always = yes }
+
+	icon = SOV_war_zone_modifier_icon
+
+	army_core_defence_factor = 0.05
+
+}
+
 lastline_state = {
 	enable = { always = yes }
 
 	icon = SOV_war_zone_modifier_icon
 
-	army_core_defence_factor = 0.06
+	army_core_defence_factor = 0.10
+
 }
 
 defence_of_moscow = {
