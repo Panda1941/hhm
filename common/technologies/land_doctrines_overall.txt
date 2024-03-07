@@ -75,7 +75,7 @@ technologies = {
 			need = { motorized_equipment = -7 }
 		}
 		mechanized = {
-			need = { mechanized_equipment = -7 }
+			need = { mechanized_chassis = -7 }
 		}
 		supply_consumption_factor = -0.05
 		land_reinforce_rate = 0.02

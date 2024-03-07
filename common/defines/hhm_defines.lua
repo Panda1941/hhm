@@ -385,6 +385,9 @@ NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values whil
 		10000,	-- I am death incarnate!
 	}
 -- Air Balance
+-- Air Supply
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.05 -- 0.01 Conversion scale for planes to air supply
+
 NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 6          -- how often carrier planes do battle inside naval combat
 NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.3			-- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 2					-- Balancing value to convert damage ( nanaval_strike_attackval_strike_attack * hits ) to Strength reduction.
@@ -421,7 +424,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 		0.0, -- NAVAL_KAMIKAZE
         0.0, -- PORT_STRIKE
 		0.0, -- ATTACK_LOGISTICS
-		0.0, -- AIR_SUPPLY
+		0.05, -- AIR_SUPPLY
 		0.0, -- TRAINING
 		0.0, -- NAVAL_MINES_PLANTING
 		0.0, -- NAVAL_MINES_SWEEPING

@@ -2063,6 +2063,15 @@ equipments = {
 					mine_warfare_offense
 				}
 			}
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					recon_camera
+					strat_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+				}
+			}
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {

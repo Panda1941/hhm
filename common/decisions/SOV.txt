@@ -553,6 +553,31 @@ SOV_great_patriotic_war = {
 }
 
 operations = {
+	SOV_operation_iran = {
+		name = "Iran Front"
+		icon = generic_operation
+		allowed = {
+			tag = SOV
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			GER = { has_war_with = SOV }
+			907 = { NOT = { is_owned_and_controlled_by = ENG }}
+			266 = { is_owned_and_controlled_by = WST }
+		}
+
+		
+		complete_effect = {
+			SOV = {
+				transfer_state = 420
+				transfer_state = 419
+			}
+		}
+	}
 
 	SOV_seize_manchuria = {
 
