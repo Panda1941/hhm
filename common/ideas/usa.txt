@@ -2318,6 +2318,26 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
+		
+		USA_union_pacific_railway = {
+
+			text = "Union Pacific Railway"
+
+			picture = idea_USA_union_pacific_railway
+
+			allowed = {
+				original_tag = USA
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				industry = 0.05
+			}
+
+			traits = { railway_company }
+		}
 	}
 	
 	

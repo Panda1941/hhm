@@ -7288,4 +7288,57 @@ spriteTypes = {
 		name = "GFX_idea_usa_island_hopping"
 		textureFile = "gfx/interface/ideas/ideas_usa_island_hopping.dds"
 	}
+
+
+
+		spriteType = {
+		name = "GFX_idea_CAN_canadian_pacific_railway"
+		texturefile = "gfx/interface/ideas/idea_CAN_canadian_pacific_railway.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAR_president_carlos_antonio_lopez_railways"
+		texturefile = "gfx/interface/ideas/idea_PAR_president_carlos_antonio_lopez_railways.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_administracion_de_ferrocarriles_del_estado"
+		texturefile = "gfx/interface/ideas/idea_URG_administracion_de_ferrocarriles_del_estado.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_union_pacific_railway"
+		texturefile = "gfx/interface/ideas/idea_USA_union_pacific_railway.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHL_fuerza_aerea_de_chile"
+		texturefile = "gfx/interface/ideas/idea_CHL_fuerza_aerea_de_chile.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHL_armada_de_chile"
+		texturefile = "gfx/interface/ideas/idea_CHL_armada_de_chile.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_army"
+		texturefile = "gfx/interface/ideas/idea_ARG_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_navy"
+		texturefile = "gfx/interface/ideas/idea_ARG_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_air_force"
+		texturefile = "gfx/interface/ideas/idea_ARG_air_force.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_army"
+		texturefile = "gfx/interface/ideas/idea_BRA_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_navy"
+		texturefile = "gfx/interface/ideas/idea_BRA_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_air_force"
+		texturefile = "gfx/interface/ideas/idea_BRA_air_force.dds"
+	}
+
+
 }

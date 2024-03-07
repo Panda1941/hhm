@@ -162,15 +162,27 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			
-		}
-
 		completion_reward = {
 			
 			swap_ideas = {
 				remove_idea = CAN_great_depression_1
 				add_idea = CAN_great_depression_2		
+			}
+			
+
+			IF = {
+				limit = {
+					has_country_leader = {
+						ruling_only = yes
+						character = CAN_mackenzie_king
+					}
+				}
+
+				add_trait = {
+					character = CAN_mackenzie_king
+					trait = CAN_father_of_the_canadian_welfare_state
+					ideology = liberalism 
+				}
 			}
 		}
 	}
@@ -4239,6 +4251,144 @@ CAN = {
 				bonus = 1
 				uses = 2
 				category = naval_equipment
+			}
+		}
+	}
+
+
+
+
+
+
+
+	focus = {
+		id = CAN_dominion_rifle_association
+		icon = GFX_focus_CAN_rifle_association
+		x = 2
+		y = 1
+		prerequisite = { focus = CAN_shadow_factories }
+		relative_position_id = CAN_shadow_factories
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			OR = {
+				threat > 0.15
+				is_subject = no
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			add_ideas = CAN_dominion_rifle_association_idea
+
+		}
+	}
+
+	focus = {
+		id = CAN_canadian_citizenship_act
+		icon = GFX_focus_eng_decolonization
+		x = 0
+		y = 1
+		prerequisite = { focus = CAN_supply_the_empire }
+		relative_position_id = CAN_supply_the_empire
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 5
+				is_subject = no 
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			add_ideas = CAN_canadian_citizenship
+
+		}
+	}
+
+	focus = {
+		id = CAN_newfoundland_act
+		icon = GFX_focus_chi_british_cooperation
+		x = 0
+		y = 1
+		prerequisite = { focus = CAN_canadian_citizenship_act }
+		relative_position_id = CAN_canadian_citizenship_act
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 5
+				is_subject = no 
+			}
+		}
+
+		available = {
+			any_country = {
+				OR = {
+					has_subject = ROOT
+					original_tag = ENG
+				}
+				owns_state = 332
+				owns_state = 331
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_stability = 0.05
+			add_political_power = 50
+
+			transfer_state = 332
+			transfer_state = 331
+
+			add_opinion_modifier = {
+				target = ENG
+				modifier = huge_increase
+			}
+
+			ENG = {
+				add_timed_idea = {
+					idea = CAN_consumer_goods_for_newfoundland
+					days = 365
+				}
 			}
 		}
 	}

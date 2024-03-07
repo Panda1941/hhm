@@ -1493,7 +1493,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				air_naval_strike_2
+				air_close_air_support_2
 			}
 			cost = 100
 			ai_will_do = {

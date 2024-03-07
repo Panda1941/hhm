@@ -61,8 +61,8 @@ spriteTypes = {
 	}			
 	
 	spriteType = {
-		name = "GFX_trait_mine_layer"
-		texturefile = "gfx/interface/traits/trait_admiral_mine_layer.dds"
+		name = "GFX_trait_mine_craft"
+		texturefile = "gfx/interface/traits/trait_admiral_mine_craft.dds"
 	}			
 	
 	spriteType = {

@@ -1336,7 +1336,7 @@ characters = {
 				original_tag = SOV
 			}
 			traits = {
-				air_air_combat_training_2
+				air_bomber_interception_2
 			}
 				cost = 100
 			ai_will_do = {
@@ -1646,9 +1646,9 @@ characters = {
 				original_tag = SOV
 			}
 			traits = {
-				air_airborne_1
+				air_close_air_support_2
 			}
-			cost = 50
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}

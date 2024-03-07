@@ -3,8 +3,14 @@
 
 
 
-
-
+ #Random canada shit
+ CAN_canadian_citizenship_act: "The Canadian Citizenship Act"
+ CAN_canadian_citizenship_act_desc: "As it currently stands, who is and isn't a Canadian citizen is based on British laws, and a Canadian citizen is no different from a British Subject. We must ensure that the Canadian nationals and citizens are no longer simply regarded as sub-classes of the British subject status."
+ CAN_newfoundland_act: "The Newfoundland Act"
+ CAN_newfoundland_act_desc: "The regions of Newfoundland and Labrador are close to us both culturally and geographically, yet they continue to be under British rule. It is high time that we put forth a request to unite with the territories, and assist in governing them."
+ CAN_dominion_rifle_association: "Dominion of Canada Rifle Association"
+ CAN_dominion_rifle_association_desc: "The Dominion of Canada Rifle Association was founded in 1868 and incorporated by an act of parliament in 1900. We should support the expansion of this organization, so that more Canadian men can learn how to handle firearms."
+ #End of Random canada shit
 
  EQ_MOD_CAT_light_fighter_weapon_TITLE:0 "Light Fighter Weapons"
  EQ_MOD_CAT_plane_special_module_extra_TITLE:0 "Special Extra Module"
