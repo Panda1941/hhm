@@ -435,6 +435,10 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
 
+-- Static AA buff
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.85 -- 0.8 Anti Air Gun Damage factor
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.25 -- 0.1 Anti Air Gun hit chance
+
 -- CAS DAMAGE
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.034   -- 0.032
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.046   -- 0.032

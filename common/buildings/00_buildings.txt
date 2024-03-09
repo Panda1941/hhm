@@ -17,7 +17,7 @@ buildings = {
 		allied_build = yes
 
 		infrastructure_construction_effect = yes
-		damage_factor = 2.0
+		damage_factor = 2.25
 	}
 
 	arms_factory = {
@@ -30,7 +30,7 @@ buildings = {
 		shares_slots = yes
 		value = 8
 		infrastructure_construction_effect = yes
-		damage_factor = 1.5
+		damage_factor = 2.0
 	}
 
 	industrial_complex = {
@@ -43,7 +43,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		damage_factor = 2.0
+		damage_factor = 2.5
 	}
 
 	air_base = {

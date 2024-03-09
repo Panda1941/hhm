@@ -1849,8 +1849,9 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
+					add_ideas = GER_integrated_economy
 					GER = {
-						set_autonomy = { target = HUN autonomy_state = autonomy_satellite }
+						#set_autonomy = { target = HUN autonomy_state = autonomy_satellite }
 						random_owned_controlled_state = {
 							limit = {
 								free_building_slots = {
@@ -1885,8 +1886,9 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
+					add_ideas = GER_integrated_economy
 					GER = {
-						set_autonomy = { target = ROM autonomy_state = autonomy_satellite }
+						#set_autonomy = { target = ROM autonomy_state = autonomy_satellite }
 						random_owned_controlled_state = {
 							limit = {
 								free_building_slots = {
@@ -1921,8 +1923,9 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
+					add_ideas = GER_integrated_economy
 					GER = {
-						set_autonomy = { target = BUL autonomy_state = autonomy_satellite }
+						#set_autonomy = { target = BUL autonomy_state = autonomy_satellite }
 						random_owned_controlled_state = {
 							limit = {
 								free_building_slots = {
@@ -1957,6 +1960,7 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
+					add_ideas = GER_integrated_economy
 					GER = {
 						random_owned_controlled_state = {
 							limit = {
