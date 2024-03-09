@@ -308,12 +308,12 @@ ideas = {
 						}
 					}
 				}
-				#if = {
-				#	limit = {
-				#		original_tag = SOV
-				#	}
-				#	has_war_with = GER
-				#}
+				if = {
+					limit = {
+						original_tag = SOV
+					}
+					has_war_with = GER
+				}
 			}
 
 			cost = 150
