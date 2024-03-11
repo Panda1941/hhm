@@ -104,7 +104,13 @@ scripted_gui = {
 						if={limit={check_variable={Root.selected_cheat=18}} capital_scope = { add_resource = { type = steel amount = 5}} }
 						if={limit={check_variable={Root.selected_cheat=19}} capital_scope = { add_resource = { type = chrominum amount = 5}} }
 						if={limit={check_variable={Root.selected_cheat=20}} capital_scope = { add_resource = { type = oil amount = 5}} }
-						if={limit={check_variable={Root.selected_cheat=21}} set_country_flag = elwolf_eff_flag }
+						if={
+							limit={check_variable={Root.selected_cheat=21}}
+										add_timed_idea = {
+										idea = starting_efficiency
+										days = 1
+								}
+							}
 						}
 					}
 					GER={
