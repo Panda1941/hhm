@@ -1665,6 +1665,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 80
 
+		xor = { sup_regimental_combat_teams }
 	
 		category_support_battalions = {
 			max_organisation = 3
@@ -1672,10 +1673,6 @@ technologies = {
 			air_attack = 0.05
 		}
 		
-		path = {
-			leads_to_tech = regimental_combat_teams 
-			research_cost_coeff = 1
-		}
 		path = {
 			leads_to_tech = concentrated_fp_sup 
 			research_cost_coeff = 1
@@ -1690,7 +1687,6 @@ technologies = {
 			cat_superior_firepower
 		}
 
-		xor = { sup_regimental_combat_teams }
 		folder = {
 			name = land_doctrine_folder
 			position = { x = -2 y = 10 }
