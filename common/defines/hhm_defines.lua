@@ -105,6 +105,8 @@ NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.05 -- How much equipment fr
 -- Army Balance
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5
 
+NDefines.NMilitary.UNIT_EXP_LEVELS = { 0, 0.3, 0.75, 0.9 }		-- Experience needed to progress to the next level
+
 NDefines.NMilitary.TRAINING_ATTRITION = 0  -- vanilla 0.06
 NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 72							-- base hours needed to prepare an invasion
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.10
@@ -385,6 +387,7 @@ NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values whil
 		10000,	-- I am death incarnate!
 	}
 -- Air Balance
+NDefines.NAir.AIR_WING_XP_LEVELS = { 0, 300, 700, 900 }
 -- Air Supply
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.05 -- 0.01 Conversion scale for planes to air supply
 
@@ -466,6 +469,23 @@ NDefines.NAir.ESCORT_FACTOR = 4  		-- cas enters battle earlier, fucks a lot of 
 
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5                  -- VANILLA 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.50							-- Higher value = more shot down planes
+
+
+---- COMPLIANCE
+NDefines.NResistance.INITIAL_STATE_COMPLIANCE = 0.2
+NDefines.NResistance.COMPLIANCE_DECAY_AT_MAX_COMPLIANCE = 0	
+NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.1
+NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 3
+
+---- RESISTANCE
+NDefines.NResistance.RESISTANCE_TARGET_BASE = 40.0								-- base resistance target percentage -- 35.0
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_PER_STABILITY_LOSS = 0.225		-- resistance target modifier per stability below 100% -- 0.2
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_PER_COMPLIANCE = -0.25		-- resistance target modifier per compliance %
+NDefines.NResistance.RESISTANCE_DECAY_BASE = 0.125 								-- base resistance decay -- 0.1
+NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.175		
+
+
+
 
 
 -- Intel
