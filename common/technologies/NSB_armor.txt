@@ -323,7 +323,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 6 }
+			position = { x = -2 y = 5 }
 		}
 
 		ai_will_do = {
@@ -406,7 +406,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 8 }
+			position = { x = -2 y = 7 }
 		}
 
 		ai_will_do = {
@@ -603,7 +603,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 11 }
+			position = { x = -2 y = 10 }
 		}
 
 		ai_will_do = {
@@ -839,159 +839,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 3
-
-			modifier = {
-				factor = 2
-				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
-				}
-			}
-			modifier = {
-				date < "1941.1.1"
-				factor = 0.3
-			}
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1942.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1943.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1944.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			cat_medium_armor
-			mio_cat_tech_medium_armor_and_modules
-		}
-	}
-	
-	improved_medium_tank_chassis_2 = { #Panzer IV J
-
-		enable_equipments = {
-			medium_tank_chassis_4
-			medium_tank_destroyer_chassis_4
-			medium_tank_artillery_chassis_4
-			medium_tank_aa_chassis_4
-		}
-		enable_equipment_modules = {
-			tank_medium_cannon_3
-			tank_high_velocity_cannon_3
-			tank_rocket_launcher_2
-			tank_medium_howitzer_2
-			##stabilizer
-			tank_anti_air_cannon_3
-		}
-
-		path = {
-			leads_to_tech = improved_medium_tank_chassis_3
-			research_cost_coeff = 1
-		}
-		
-
-		research_cost = 2
-		start_year = 1941
-
-		folder = {
-			name = nsb_armour_folder
 			position = { x = 6 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 3
-
-			modifier = {
-				factor = 2
-				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
-				}
-			}
-			modifier = {
-				date < "1941.1.1"
-				factor = 0.3
-			}
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1942.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1943.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1944.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			cat_medium_armor
-			mio_cat_tech_medium_armor_and_modules
-		}
-	}
-	
-	improved_medium_tank_chassis_3 = { #Panzer IV K
-
-		enable_equipments = {
-			medium_tank_chassis_5
-			medium_tank_destroyer_chassis_5
-			medium_tank_artillery_chassis_5
-			medium_tank_aa_chassis_5
-		}
-		enable_equipment_modules = {
-			tank_medium_cannon_4	
-			#stabilizer
-		}
-
-		research_cost = 2
-		start_year = 1943
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 6 y = 10 }
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		ai_will_do = {
@@ -1068,7 +916,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = 10 }
+			position = { x = 6 y = 10 }
 		}
 
 		on_research_complete = {
@@ -1134,7 +982,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = 12 }
+			position = { x = 6 y = 12 }
 		}
 
 		ai_will_do = {
@@ -1184,7 +1032,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = 14 }
+			position = { x = 6 y = 14 }
 		}
 
 		ai_will_do = {
@@ -1244,7 +1092,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 12 y = 4 }
+			position = { x = 10 y = 4 }
 		}
 
 		ai_will_do = {
@@ -1322,7 +1170,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 12 y = 8 }
+			position = { x = 10 y = 8 }
 		}
 
 		
@@ -1426,70 +1274,6 @@ technologies = {
 			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
-	
-	advanced_heavy_tank_chassis_1 = { #Löwe
-
-		enable_equipments = {
-			heavy_tank_chassis_4
-			heavy_tank_destroyer_chassis_4
-			heavy_tank_artillery_chassis_4
-			heavy_tank_aa_chassis_4
-		}
-		
-		enable_equipment_modules = {
-			tank_heavy_cannon_3
-			tank_high_velocity_cannon_5
-			tank_heavy_howitzer_2
-			#auto_loader
-			tank_anti_air_cannon_3
-		}
-
-		path = {
-			leads_to_tech = super_heavy_tank_chassis_1
-			research_cost_coeff = 1
-		}
-		
-		on_research_complete = {
-			custom_effect_tooltip = armor_tech_4_tt
-		}
-		on_research_complete = {
-			custom_effect_tooltip = more_slots_on_equipment
-		}
-		show_effect_as_desc = yes
-
-		research_cost = 2.5
-		start_year = 1943
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 14 y = @1943 }
-		}
-
-		ai_will_do = {
-			factor = 0.8
-
-			modifier = {
-				factor = 1.2
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1945.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
-		}
-	}
 
 	super_heavy_tank_chassis = { #Maus
 
@@ -1514,42 +1298,6 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 10 y = @1945 }
-		}
-
-		ai_will_do = {
-			factor = 0 # Hitler cries on the inside
-		}
-
-		categories = {
-			armor
-			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
-		}
-	}
-	
-	super_heavy_tank_chassis_1 = { #E-100
-
-		enable_equipments = {
-			super_heavy_tank_chassis_2
-			super_heavy_tank_destroyer_chassis_2
-			super_heavy_tank_artillery_chassis_2
-			super_heavy_tank_aa_chassis_2
-		}
-
-		enable_subunits = {
-			super_heavy_armor
-		}
-
-		enable_equipment_modules = {
-			tank_super_heavy_cannon_2
-			tank_super_heavy_turret
-		}
-
-		research_cost = 2.5
-		start_year = 1943
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 14 y = @1945 }
 		}
 
 		ai_will_do = {
