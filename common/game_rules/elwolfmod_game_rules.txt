@@ -107,12 +107,12 @@ max_submarine_tech = {
 	name = "Max Submarine Tech"
 	group = "elwolfmod Rules"
 	icon = "GFX_decision_generic_research"
-	default = {
+	option = {
 		name = sub2
 		text = "G1936"
 		desc = "Submarine 3 and Snorkel 1 banned (Reccomended)"
 	}
-	option = {
+	default = {
 		name = sub3
 		text = "R1940"
 		desc = "Submarine 3 and Snorkel 1 allowed (Not Reccomended)"

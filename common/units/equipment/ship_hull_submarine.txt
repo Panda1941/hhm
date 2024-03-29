@@ -180,7 +180,7 @@ equipments = {
 		}
 		
 		sub_visibility = 24
-		naval_speed = 18
+		naval_speed = 12
 		reliability = 0.75
 		
 		naval_range = 5000
@@ -189,7 +189,7 @@ equipments = {
 
 
 		
-		build_cost_ic = 420
+		build_cost_ic = 480
 		resources = {
 			steel = 2
 		}

@@ -1389,7 +1389,7 @@ equipment_modules = {
 		
 		
 		add_stats = {
-			naval_speed = 10
+			naval_speed = 6
 			fuel_consumption = 11
 			build_cost_ic = 120
 		}
@@ -1412,7 +1412,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			naval_speed = 12
+			naval_speed = 8
 			fuel_consumption = 14
 			build_cost_ic = 140
 		}
@@ -1440,15 +1440,13 @@ equipment_modules = {
 
 		
 		add_stats = {
-			#naval_speed = 5
+			naval_speed = 10
 			fuel_consumption = 10
 			build_cost_ic = 160
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.15
-			
-			sub_visibility = -0.1
+			sub_visibility = -0.06
 		}
 		
 		can_convert_from = {
@@ -1469,15 +1467,13 @@ equipment_modules = {
 
 		
 		add_stats = {
-			#naval_speed = 5
+			naval_speed = 12
 			fuel_consumption = 10
 			build_cost_ic = 180
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.2
-			
-			sub_visibility = -0.15
+			sub_visibility = -0.09
 		}
 		
 		can_convert_from = {
@@ -2201,7 +2197,7 @@ equipment_modules = {
 		}
 		
 		add_stats = {
-			build_cost_ic = 50
+			build_cost_ic = 120
 		}
 	}
 	ship_sub_snorkel_2 = {
@@ -2214,12 +2210,12 @@ equipment_modules = {
 		}
 		
 		add_stats = {
-			build_cost_ic = 70
+			build_cost_ic = 160
 		}
 
 		can_convert_from = {
 			module_category = ship_sub_snorkel
-			convert_cost_ic = 30
+			convert_cost_ic = 40
 		}
 	}
 
