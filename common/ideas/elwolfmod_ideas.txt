@@ -719,7 +719,7 @@ ideas = {
 			picture = MTG_naval_treaty_adherent
 			
 			modifier = {
-				industrial_capacity_dockyard = -0.175
+				industrial_capacity_dockyard = -0.10
 				production_speed_dockyard_factor = -0.20
 			}
 		}
