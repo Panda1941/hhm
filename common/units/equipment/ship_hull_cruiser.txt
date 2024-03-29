@@ -74,6 +74,15 @@ equipments = {
 					ship_depth_charge
 				}
 			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_anti_air
+					ship_secondaries
+					ship_airplane_launcher
+				}
+			}
 		}
 		
 		module_count_limit = {
@@ -217,6 +226,15 @@ equipments = {
 					ship_medium_battery
 				}
 			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_anti_air
+					ship_secondaries
+					ship_airplane_launcher
+				}
+			}
 		}
 
 		default_modules = {
@@ -301,6 +319,15 @@ equipments = {
 					ship_medium_battery
 				}
 			}
+			rear_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_anti_air
+					ship_secondaries
+					ship_airplane_launcher
+				}
+			}
 		}
 
 		default_modules = {
@@ -374,6 +401,15 @@ equipments = {
 				}
 			}
 			rear_2_custom_slot = rear_1_custom_slot
+			rear_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_anti_air
+					ship_secondaries
+					ship_airplane_launcher
+				}
+			}
 		}
 
 		default_modules = {

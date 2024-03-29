@@ -16,14 +16,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
-			lg_attack = 1.5
+			lg_attack = 2.0
 			build_cost_ic = 100	
 		}
 		multiply_stats = {
 			naval_speed = -0.005
 		}
 		add_average_stats = {
-			lg_armor_piercing = 1.5
+			lg_armor_piercing = 2
 			
 		}
 		
@@ -42,7 +42,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
-			lg_attack = 3
+			lg_attack = 4
 			build_cost_ic = 120
 			
 		}
@@ -50,7 +50,7 @@ equipment_modules = {
 			naval_speed = -0.005
 		}
 		add_average_stats = {
-			lg_armor_piercing = 3
+			lg_armor_piercing = 4
 			
 		}
 		
@@ -73,12 +73,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
-			lg_attack = 5
+			lg_attack = 6
 			build_cost_ic = 140			
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 5
+			lg_armor_piercing = 6
 			
 		}
 		multiply_stats = {
@@ -103,7 +103,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
-			lg_attack = 7
+			lg_attack = 8
 			build_cost_ic = 160	
 		}
 		build_cost_resources = {
@@ -113,7 +113,7 @@ equipment_modules = {
 			naval_speed = -0.005
 		}
 		add_average_stats = {
-			lg_armor_piercing = 7
+			lg_armor_piercing = 8
 			
 		}
 		
@@ -136,7 +136,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
-			lg_attack = 1
+			lg_attack = 2
 			anti_air_attack = 1
 			build_cost_ic = 120
 		}
@@ -147,7 +147,7 @@ equipment_modules = {
 			steel = 1
 		}
 		add_average_stats = {
-			lg_armor_piercing = 1
+			lg_armor_piercing = 2
 		}
 		
 		can_convert_from = {
@@ -164,7 +164,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
-			lg_attack = 1.5
+			lg_attack = 3
 			anti_air_attack = 2
 			build_cost_ic = 140
 		}
@@ -175,7 +175,7 @@ equipment_modules = {
 			steel = 1
 		}
 		add_average_stats = {
-			lg_armor_piercing = 2
+			lg_armor_piercing = 3
 		}
 		
 		can_convert_from = {
@@ -197,7 +197,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
-			lg_attack = 2
+			lg_attack = 4
 			anti_air_attack = 3
 			build_cost_ic = 160
 		}
@@ -208,7 +208,7 @@ equipment_modules = {
 			steel = 1
 		}
 		add_average_stats = {
-			lg_armor_piercing = 3
+			lg_armor_piercing = 4
 		}
 		
 		can_convert_from = {
@@ -230,7 +230,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
-			lg_attack = 2.5
+			lg_attack = 5
 			anti_air_attack = 4
 			build_cost_ic = 180
 		}
@@ -241,7 +241,7 @@ equipment_modules = {
 			steel = 1
 		}
 		add_average_stats = {
-			lg_armor_piercing = 4
+			lg_armor_piercing = 5
 		}
 		
 		can_convert_from = {
@@ -435,7 +435,7 @@ equipment_modules = {
 		add_stats = {
 			hg_attack = 7.0
 			lg_attack = 3.5
-			build_cost_ic = 725
+			build_cost_ic = 625
 			#surface_visibility = 3.5
 		}
 		multiply_stats = {
@@ -475,7 +475,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			hg_attack = 9.0
-			lg_attack = 5.0
+			lg_attack = 5.5
 			build_cost_ic = 675
 			#surface_visibility = 3.5
 		}
@@ -516,7 +516,7 @@ equipment_modules = {
 
 		add_stats = {
 			hg_attack = 11.0
-			lg_attack = 6.5
+			lg_attack = 8.0
 			build_cost_ic = 725
 			#surface_visibility = 3.5
 		}
@@ -713,7 +713,7 @@ equipment_modules = {
 			
 			lg_attack = 10.0
 			
-			build_cost_ic = 775
+			build_cost_ic = 500
 		}
 		multiply_stats = {
 			naval_speed = -0.015
@@ -807,7 +807,7 @@ equipment_modules = {
 		}
 
 		add_average_stats = {
-			lg_armor_piercing = 4
+			lg_armor_piercing = 5
 		}
 		
 		can_convert_from = {
@@ -832,7 +832,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 6
+			lg_armor_piercing = 7
 		}
 		
 		can_convert_from = {
@@ -859,7 +859,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 4
+			lg_armor_piercing = 5
 		}
 		
 		can_convert_from = {
@@ -892,7 +892,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 6
+			lg_armor_piercing = 7
 		}
 		
 		can_convert_from = {
@@ -925,7 +925,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 3
+			lg_armor_piercing = 7
 		}
 		
 		can_convert_from = {
@@ -958,7 +958,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 4
+			lg_armor_piercing = 7
 		}
 		
 		can_convert_from = {
