@@ -596,7 +596,7 @@ on_actions = {
 						amount = 16000
 					}
 					add_research_slot = 1
-					add_offsite_building = { type = industrial_complex level = 30 }
+					add_offsite_building = { type = industrial_complex level = 22 }
 				}
 
 

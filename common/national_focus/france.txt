@@ -1138,6 +1138,40 @@ if = {
 			}
 		}
 	}
+	
+	focus = {
+		id = FRA_assume_control_of_west_africa
+		icon = GFX_focus_generic_africa_liberation
+		text = "Assume control of Western Africa"
+		x = 2
+		y = 2
+
+		cost = 5
+		prerequisite = { 
+			focus = FRA_continue_the_fight
+		}
+		relative_position_id = FRA_continue_the_fight
+		
+		available = {  }
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			
+			transfer_state = 900
+			transfer_state = 901
+			transfer_state = 902
+			transfer_state = 558
+			transfer_state = 274
+			transfer_state = 700
+			transfer_state = 297
+			transfer_state = 298
+		}
+	}
+
+
+
 	focus = {
 		id = FRA_the_free_french_navy
 		icon = GFX_goal_generic_build_navy
