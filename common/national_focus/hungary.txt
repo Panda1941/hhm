@@ -705,7 +705,7 @@ focus_tree = {
 		id = HUN_reintegrate_the_railroads
 		icon = GFX_focus_HUN_reintegrate_the_railroads
 		prerequisite = {  }
-		x = 18
+		x = 14
 		y = 0
 
 		cost = 5
@@ -1040,7 +1040,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_reintegrate_the_railroads
 
-		cost = 15
+		cost = 10
 
 		ai_will_do = {
 			factor = 70
@@ -1183,7 +1183,7 @@ focus_tree = {
 	focus = {
 		id = HUN_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 30
+		x = 24
 		y = 0
 
 		cost = 5
@@ -1917,8 +1917,8 @@ focus_tree = {
 		icon = GFX_goal_generic_radar
 		relative_position_id = HUN_home_defense
 		prerequisite = { focus = HUN_home_defense }
-		x = 6
-		y = 1
+		x = 5
+		y = 3
 
 		cost = 10
 
@@ -2546,6 +2546,175 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = HUN_assault_gun_focus
 			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = HUN_establish_the_air_force
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = HUN_bled_agreement }
+		x = 13
+		y = 1
+		relative_position_id = HUN_bled_agreement
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			air_experience = 25
+			add_doctrine_cost_reduction = {
+				name = HUN_establish_the_air_force
+				cost_reduction = 0.33
+				uses = 3
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = HUN_indigenous_designs
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = HUN_establish_the_air_force }
+		prerequisite = { focus = HUN_boost_hungarian_aviation_industry }
+		x = 0
+		y = 1
+		relative_position_id = HUN_establish_the_air_force
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_ideas = HUN_indigenous_designs
+		}
+	}
+
+	focus = {
+		id = HUN_heavy_fighter_effort
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = HUN_indigenous_designs }
+		mutually_exclusive = { focus = HUN_light_fighter_effort }
+		x = -1
+		y = 1
+		relative_position_id = HUN_indigenous_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = HUN_heavy_fighter_effort
+				bonus = 0.5
+				ahead_reduction = 2
+				uses = 1
+				category = medium_air
+			}
+		}
+	}
+
+	focus = {
+		id = HUN_light_fighter_effort
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HUN_indigenous_designs }
+		mutually_exclusive = { focus = HUN_heavy_fighter_effort }
+		x = 1
+		y = 1
+		relative_position_id = HUN_indigenous_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = HUN_light_fighter_effort
+				bonus = 0.5
+				ahead_reduction = 2
+				uses = 1
+				category = light_air
+			}
 		}
 	}
 }

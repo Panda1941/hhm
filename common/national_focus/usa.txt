@@ -2341,19 +2341,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -17
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_dlc = "Man the Guns"
-				has_completed_focus = USA_continue_the_new_deal
-			}
-		}
-		offset = {
-			x = -2
+			x = -10
 			y = 0
 			trigger = {
 				has_game_rule = {

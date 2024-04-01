@@ -196,6 +196,21 @@ bookmarks = {
 				BUL_found_the_brannik
 			}
 		}
+
+		"BRA"={
+			minor = yes
+			history = "BRAZIL AAAAAAAAAAAAAAA"
+			ideology = democratic
+			ideas = {
+				BRA_separatism_idea
+				USA_monroe_doctrine_idea
+			}
+			focuses = {
+				BRA_end_the_state_of_emergency
+				BRA_estado_novo
+				BRA_estado_moderno
+			}
+		}
 		#"ETH"={
 		#	minor = yes
 		#	history = "ETH_GATHERING_STORM_DESC"

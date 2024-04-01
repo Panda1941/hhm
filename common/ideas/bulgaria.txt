@@ -1434,6 +1434,7 @@ ideas = {
 				conscription_factor = 0.05
 				mobilization_laws_cost_factor = -0.35
 				economy_cost_factor = -0.35
+				army_attack_factor = 0.05
 			}
 		}
 
@@ -1456,12 +1457,13 @@ ideas = {
 				conscription_factor = 0.05
 				mobilization_laws_cost_factor = -0.35
 				economy_cost_factor = -0.35
+				army_attack_factor = 0.05
 			}
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.03
-				defense_bonus_against = 0.03
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
 			}
 		}
 
