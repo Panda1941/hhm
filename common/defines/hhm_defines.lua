@@ -471,19 +471,6 @@ NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5                  -- VANILLA 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.50							-- Higher value = more shot down planes
 
 
----- COMPLIANCE
-NDefines.NResistance.INITIAL_STATE_COMPLIANCE = 0.2
-NDefines.NResistance.COMPLIANCE_DECAY_AT_MAX_COMPLIANCE = 0	
-NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.1
-NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 3
-
----- RESISTANCE
-NDefines.NResistance.RESISTANCE_TARGET_BASE = 40.0								-- base resistance target percentage -- 35.0
-NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_PER_STABILITY_LOSS = 0.225		-- resistance target modifier per stability below 100% -- 0.2
-NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_PER_COMPLIANCE = -0.25		-- resistance target modifier per compliance %
-NDefines.NResistance.RESISTANCE_DECAY_BASE = 0.125 								-- base resistance decay -- 0.1
-NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.175		
-
 
 
 
