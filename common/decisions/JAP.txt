@@ -374,6 +374,7 @@ JAP_interservice_rivalry = {
 		}
 		modifier = {
 			conscription = 0.02
+			industrial_capacity_factory = 0.025
 		}
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
@@ -410,7 +411,7 @@ JAP_interservice_rivalry = {
 		}
 		modifier = {
 			industrial_capacity_factory = 0.05
-			industrial_capacity_dockyard = 0.05
+			industrial_capacity_dockyard = 0.075
 		}
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
@@ -446,7 +447,7 @@ JAP_interservice_rivalry = {
 			}
 		}
 		modifier = {
-			special_forces_cap = 0.02
+			special_forces_cap = 0.04
 		}
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }

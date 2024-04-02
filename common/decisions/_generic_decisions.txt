@@ -90,13 +90,13 @@ political_actions = {
 			industrial_capacity_factory = -0.1
 		}
 
-		days_remove = 180
-		days_re_enable = 540
+		days_remove = 140
+		days_re_enable = 460
 
-		cost = 100
+		cost = 80
 
 		complete_effect = {
-
+			custom_effect_tooltip = "Will give a total of 10% stability"
 		}
 
 		ai_will_do = {
