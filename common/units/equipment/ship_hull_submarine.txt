@@ -71,12 +71,12 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 30
-		naval_speed = 4
+		naval_speed = 12
 		reliability = 0.60
 		
 		naval_range = 2500
 		
-		max_strength = 20
+		max_strength = 10
 		
 
 		fuel_consumption = 1
@@ -130,7 +130,7 @@ equipments = {
 			fixed_ship_engine_slot = sub_ship_engine_2
 		}
 		sub_visibility = 27
-		naval_speed = 8
+		naval_speed = 16
 		reliability = 0.70
 
 		naval_range = 4000
@@ -180,12 +180,12 @@ equipments = {
 		}
 		
 		sub_visibility = 24
-		naval_speed = 12
+		naval_speed = 17
 		reliability = 0.75
 		
 		naval_range = 5000
 		
-		max_strength = 20
+		max_strength = 25
 
 
 		
@@ -227,7 +227,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 15
+		sub_visibility = 20
 		naval_speed = 18
 		reliability = 0.80
 
@@ -286,13 +286,13 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 20
+		sub_visibility = 26
 		naval_speed = 16
 		reliability = 0.75
 		
 		naval_range = 5000
 		
-		max_strength = 20
+		max_strength = 30
 
 
 		
@@ -325,18 +325,18 @@ equipments = {
 			fixed_ship_engine_slot = inherit
 		}
 		
-		sub_visibility = 15
+		sub_visibility = 21
 		naval_speed = 8.3
 		reliability = 0.65
 		
 		naval_range = 500
 		
-		max_strength = 10
+		max_strength = 5
 
 		manpower = 100
 
 		
-		build_cost_ic = 200
+		build_cost_ic = 150
 		resources = {
 			steel = 1
 		}
