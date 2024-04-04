@@ -14,7 +14,7 @@ sub_units = {
 			}
 		}
 
-		max_organisation = 100
+		max_organisation = 180
 
 		supply_consumption = 0.12
 		
