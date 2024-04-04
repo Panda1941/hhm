@@ -10,7 +10,7 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5                          -- Defau
 
 -- QOL
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                           -- Up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
-NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.20, 0.15, 0.045, 0.0 }
+NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.24, 0.17, 0.055, 0.0 }
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 14
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 21
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 							    -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
@@ -47,18 +47,6 @@ NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2000		                     -- WAS 500 |
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0					-- Free license
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                        -- Free license
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0						    -- Base IC cost for lended license
-
-NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
-	0.0/360.0, 1.0, 1.0,	--red
-	10.0/360.0, 1.0, 1.0,	--orange
-	60.0/360.0, 1.0, 1.0,	--yellow
-	120.0/360.0, 1.0, 1.0,	--green
-	180.0/360.0, 1.0, 1.0,	--turq
-	235.0/360.0, 1.0, 1.0,	--blue
-	260.0/360.0, 1.0, 1.0,	--dark purple
-	300.0/360.0, 1.0, 1.0,	--light purple
-	330.0/360.0, 0, 1.0		--white
-}
 -- Slots
 NDefines.NBuildings.MAX_SHARED_SLOTS = 28
 
@@ -241,14 +229,14 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 3                       
 NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 15                           -- how much score factor from low AA guns (scales between 0->this number)
 NDefines.NNavy.ANTI_AIR_TARGETING = 1.0                                       -- how good ships are at hitting aircraft
 
-NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
+NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 24.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 10                             -- scoring for target picking for planes inside naval combat, one define per ship typ
 
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.1	                    				-- basic speed control
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- org will clamped to this ratio on manual move
 NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0.1	-- org will clamped to this ratio on manual move
 
-NDefines.NNavy.BASE_JOIN_COMBAT_HOURS						= 12				-- the taskforces that wants to join existing combats will wait for at least this amount
+NDefines.NNavy.BASE_JOIN_COMBAT_HOURS						= 4				-- the taskforces that wants to join existing combats will wait for at least this amount
 NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION		= 4.0				-- low org of the ships will be factored in when a taskforce wants to join combat
 		
 NDefines.NNavy.BASE_POSITIONING												= 0.8	-- base value for positioning
@@ -274,13 +262,13 @@ NDefines.NNavy.SUBMARINE_REVEAL_ON_MINIMUM_POSITIONING                      = 1 
 NDefines.NNavy.CARRIER_STACK_PENALTY = 6 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.1 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 ---------------------------------------------------------------------------------------------------------------------------------------
-NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
-NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.025 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
+NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
+NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
 ------------------------------------------------------------------------------------------------------------------------------
 NDefines.NNavy.SPEED_TO_ESCAPE_SPEED = 1.5
 NDefines.NNavy.BASE_ESCAPE_SPEED = 0.25 
 NDefines.NNavy.AGGRESION_MULTIPLIER_FOR_COMBAT = 1.5				-- ships are more aggresive in combat
-NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.1								-- random factor in damage. So if max damage is fe. 10, and randomness is 30%, then damage will be between 7-10.
+NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.2								-- random factor in damage. So if max damage is fe. 10, and randomness is 30%, then damage will be between 7-10.
 NDefines.NNavy.COMBAT_MAX_GROUPS = 1										-- Max amount of "Fire Exchange" groups (FEX).
 NDefines.NNavy.COMBAT_MIN_DURATION = 24										-- Min combat duration before we can retreat. It's a balancing variable so it's not possible to always run with our weak ships agains big flotillas.
 NDefines.NNavy.COMBAT_RETREAT_DECISION_CHANCE = 0.01 							-- There is also random factor in deciding if we should retreat or not. That causes a delay in taking decision, that sooner or later will be picked. It's needed so damaged fast ships won't troll the combat.
@@ -303,7 +291,7 @@ NDefines.NNavy.CONVOY_HIT_PROFILE = 120.0  	-- convoys has this contant hit prof
 NDefines.NNavy.HIT_PROFILE_MULT = 65.0  	-- multiplies hit profile of every ship
 NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR = 0.4		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult) 												
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		80,	-- big guns
+		80,		-- big guns
 		100,	-- torpedos	
 		45,	    -- small guns
 	}
@@ -375,9 +363,9 @@ NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {	-- 0 armor will alway
 }
 NDefines.NNavy.MIN_REPAIR_FOR_JOINING_COMBATS = { -- strikeforces/patrol forces will not join combats if they are not repaired enough
 		0.0,	-- do not repair
-		0.6,	-- low
-		0.8,	-- medium
-		0.95,	-- high
+		0.5,	-- low
+		0.7,	-- medium
+		0.9,	-- high
 }
 NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values while deciding to attack enemies
 		0,		-- do not engage
@@ -391,6 +379,7 @@ NDefines.NAir.AIR_WING_XP_LEVELS = { 0, 300, 700, 900 }
 -- Air Supply
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.05 -- 0.01 Conversion scale for planes to air supply
 
+-- Carriers
 NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 6          -- how often carrier planes do battle inside naval combat
 NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.3			-- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 2					-- Balancing value to convert damage ( nanaval_strike_attackval_strike_attack * hits ) to Strength reduction.
@@ -399,12 +388,16 @@ NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 8              -- damage bonus w
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.03		-- Max planes that can join a combat comparing to the total strength of the ships
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.09 -- max extra plane % that ca n join every day
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 20			-- Min cap for planes that can join naval combat
+NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 75.0						-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
+
+-- Max air wing stats
 NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 200
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 200
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 200
 NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 1200
-NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 75.0						-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
+
+--
 NDefines.NAir.PORT_STRIKES_DELAY_MULTIPLIER = 4                 -- multplies HOURS_DELAY_AFTER_EACH_COMBAT (4 in vanilla) if port strikes
 
 NDefines.NAir.MAX_QUICK_WING_SELECTION = 4 -- 3
@@ -443,8 +436,8 @@ NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.85 -- 0.8 Anti Air Gun Damage fac
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.25 -- 0.1 Anti Air Gun hit chance
 
 -- CAS DAMAGE
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.034   -- 0.032
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.046   -- 0.032
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.038   -- 0.032
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.048   -- 0.032
 
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.56 -- how many CAS/TAC can enter a combat depending on enemy width there
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
@@ -468,7 +461,7 @@ NDefines.NAI.AIR_SUPERIORITY_FOR_FRIENDLY_CAS_RATIO = 0.30		-- Demand at least t
 NDefines.NAir.ESCORT_FACTOR = 4  		-- cas enters battle earlier, fucks a lot of shit up
 
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5                  -- VANILLA 3
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.50							-- Higher value = more shot down planes
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.40							-- Higher value = more shot down planes
 
 
 
@@ -476,15 +469,16 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.50							-- Higher value = more shot down 
 
 
 -- Intel
-NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MAXIMUMS =	{20, 20, 20, 20}	--MAXIMUMS controls the maximum value that the pool can contribute to the final intel values.
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MAXIMUMS =	{25, 25, 25, 25}	--MAXIMUMS controls the maximum value that the pool can contribute to the final intel values.
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_ABSOLUTE_MAXIMUMS =	{30, 30, 30, 30}	--ABSOLUTE_MAXIMUMS defines a ceiling for the intel in the pool that will never be exceeded. They are meant to be greater or equal to MAXIMUMS. If the array is empty, no absolute maximum is defined.
 NDefines.NIntel.RECON_PLANE_INTEL_BASE = 0.04 				-- intel base amount for a strategic area per plane
 NDefines.NIntel.RECON_PLANE_LAND_DISTRIBUTION = { 15.0, 10.0, 0.0, 10.0 }    -- controls for land and sea zones how much of each intel typee is given (civ, army, navy, air)
 NDefines.NIntel.RECON_PLANE_SEA_DISTRIBUTION = { 0.0, 0.0, 15.0, 0.0 }
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.1 
-NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.7 -- min required intel to focus tree with taken focuses
-NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4  -- min required intel to show currently focus
-NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS_PROGRESS = 0.5  -- min required intel to show current focus progress
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.15
+-- Reverted values bellow to vanilla, makes sense that way
+-- NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.7 -- min required intel to focus tree with taken focuses
+-- NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4  -- min required intel to show currently focus
+-- NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS_PROGRESS = 0.5  -- min required intel to show current focus progress
 
 -- Flicker Bombing
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.05    -- How much efficiency to regain per day. Gain applied hourly.
@@ -498,25 +492,26 @@ NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 6
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 12
 
 -- Anti-Autism
-NDefines.NOperatives.BOOST_IDEOLOGY_NATIONAL_COVERAGE_FACTOR = 0
-NDefines.NOperatives.BOOST_IDEOLOGY_MAX_DRIFT_BY_OPERATIVE = 0
-NDefines.NOperatives.BOOST_IDEOLOGY_DRIFT_STACKING_FACTOR = 0
-NDefines.NOperatives.BOOST_IDEOLOGY_DAILY_XP_GAIN = 0
-NDefines.NOperatives.OPERATIVE_BASE_PROPAGANDA_POWER = 0
-NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0
-NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0
-NDefines.NOperatives.PROPAGANDA_DAILY_XP_GAIN = 0
-NDefines.NOperatives.MIN_NATIONAL_COVERAGE_FOR_PROPAGANDA = 100
-NDefines.NOperatives.PROPAGANDA_SUB_NETWORK_STRENGTH_FACTOR = 0
-NDefines.NOperatives.OPERATIVE_BASE_CONTROL_TRADE_DRIFT = 0
-NDefines.NOperatives.CONTROL_TRADE_STACKING_FACTOR = 0
-NDefines.NOperatives.CONTROL_TRADE_MAX_INFLUENCE = 0
-NDefines.NOperatives.CONTROL_TRADE_INFLUENCE_DAILY_DECAY = 0
-NDefines.NOperatives.CONTROL_TRADE_DAILY_XP_GAIN = 0
-NDefines.NOperatives.OPERATIVE_BASE_DIPLOMATIC_PRESSURE_AI_ACCEPTANCE_SCORE_DRIFT = 0
-NDefines.NOperatives.DIPLOMATIC_PRESSURE_MAX_AI_ACCEPTANCE_SCORE_INCREASE = 0
-NDefines.NOperatives.DIPLOMATIC_PRESSURE_MAX_TENSION_REQUIREMENTS_DECREASE = 0
-NDefines.NOperatives.DIPLOMATIC_PRESSURE_DAILY_XP_GAIN = 0
+-- Removed these, because these missions don't really exist anymore
+-- NDefines.NOperatives.BOOST_IDEOLOGY_NATIONAL_COVERAGE_FACTOR = 0
+-- NDefines.NOperatives.BOOST_IDEOLOGY_MAX_DRIFT_BY_OPERATIVE = 0
+-- NDefines.NOperatives.BOOST_IDEOLOGY_DRIFT_STACKING_FACTOR = 0
+-- NDefines.NOperatives.BOOST_IDEOLOGY_DAILY_XP_GAIN = 0
+-- NDefines.NOperatives.OPERATIVE_BASE_PROPAGANDA_POWER = 0
+-- NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0
+-- NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0
+-- NDefines.NOperatives.PROPAGANDA_DAILY_XP_GAIN = 0
+-- NDefines.NOperatives.MIN_NATIONAL_COVERAGE_FOR_PROPAGANDA = 100
+-- NDefines.NOperatives.PROPAGANDA_SUB_NETWORK_STRENGTH_FACTOR = 0
+-- NDefines.NOperatives.OPERATIVE_BASE_CONTROL_TRADE_DRIFT = 0
+-- NDefines.NOperatives.CONTROL_TRADE_STACKING_FACTOR = 0
+-- NDefines.NOperatives.CONTROL_TRADE_MAX_INFLUENCE = 0
+-- NDefines.NOperatives.CONTROL_TRADE_INFLUENCE_DAILY_DECAY = 0
+-- NDefines.NOperatives.CONTROL_TRADE_DAILY_XP_GAIN = 0
+-- NDefines.NOperatives.OPERATIVE_BASE_DIPLOMATIC_PRESSURE_AI_ACCEPTANCE_SCORE_DRIFT = 0
+-- NDefines.NOperatives.DIPLOMATIC_PRESSURE_MAX_AI_ACCEPTANCE_SCORE_INCREASE = 0
+-- NDefines.NOperatives.DIPLOMATIC_PRESSURE_MAX_TENSION_REQUIREMENTS_DECREASE = 0
+-- NDefines.NOperatives.DIPLOMATIC_PRESSURE_DAILY_XP_GAIN = 0
 
 -- Attache
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100
@@ -530,13 +525,219 @@ NDefines.NDiplomacy.EMBARGO_COST = 10 -- 100
 NDefines.NDiplomacy.EMBARGO_THREAT_THRESHOLD = -1 -- 30
 
 --All of this AI stuff doesn't affect strategy, just used to increase performance -- AI WILL NOT TOUCH ANYTHING
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 9999  --7 the ai will check what the best doctrine they can have is once every month
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 9999  --7 the ai will check what the best division template they can have is once every month
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_EQUIPMENT = 9999 --7 the ai will check what the best equipment they can have is once every month
-NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 9999 --7 the ai will refreshes need scores based on country situation
-NDefines.NAI.AI_UPDATE_ROLES_FREQUENCY_HOURS = 9999  --48 the ai will change templates less frequently
-NDefines.NAI.UPDATE_SUPPLY_MOTORIZATION_FREQUENCY_HOURS = 9999    --52 every 5 days the ai will check weather they should increase supply motorization
-NDefines.NAI.UPDATE_SUPPLY_BOTTLENECKS_FREQUENCY_HOURS = 9999    --168 every 20 days the ai will check for supply related bottlenecks and try to fix them
+NDefines.NMilitary.GENERATE_AI_DIV_COMMAND_HISTORY_ENTRIES = false	--Should we generate history entries for the AI (may cause savegame bloat)
+NDefines.NMilitary.HISTORICAL_ORDER_NAME_EXHAUSTION = false	-- Do historically chosen order instances exhaust their case names? If false ie, Operation Barbarossa will appear for any orders fulfilling the conditions for Germany
+NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
+NDefines.NAI.MAX_REQUEST_EXPEDITIONARIES_ARMY_RATIO = 1				-- AI will not accept expeditionary requests if its expeditions are above this ratio
+NDefines.NAI.CASUALTY_RATIO_TO_PULL_EXPEDITIONARIES_BACK = 1			-- AI will pull expeditioniries back if its casualties is aboce this ratio compared to their total deployed manpower
+NDefines.NAI.CASUALTY_RATIO_TO_NOT_SEND_EXPEDITIONARIES = 1			-- AI will not send expeditioniries if its casualties is aboce this ratio compared to their total deployed manpower
+NDefines.NAI.SURRENDER_LEVEL_TO_PULL_EXPEDITIONARIES_BACK = 1			-- AI will pull expeditioniries back if its surrender level is above this ratio
+NDefines.NAI.SURRENDER_LEVEL_TO_NOT_SEND_EXPEDITIONARIES = 1			-- AI will not send expeditioniries if its surrender level is above this ratio
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0       -- WAS 1
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0       -- WAS 1
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0     -- WAS 2
+NDefines.NAI.GIVE_STATE_CONTROL_BASE_SCORE = 1         -- WAS 50
+NDefines.NAI.MINIMUM_EQUIPMENT_TO_ASK_LEND_LEASE = -1950066 -- WAS 100, changed to prevent exploiting AI for ~150k guns at the start of WW2 | AI will accept to lend lease this equipment only if our stockpile is less than that.
+NDefines.NAI.JOIN_ALLY_BASE_DESIRE = -500					-- exactly what it says
+NDefines.NAI.JOIN_ALLY_DEMOCRATIC_DESIRE = -500			-- Desire to call ally added for democratic AI
+NDefines.NAI.JOIN_ALLY_NEUTRAL_DESIRE = -500			-- Desire to call ally added for neutral AI
+NDefines.NAI.JOIN_ALLY_FASCIST_DESIRE = -500				-- Desire to call ally added for fascist AI
+NDefines.NAI.JOIN_ALLY_COMMUNIST_DESIRE = -500			-- Desire to call ally added for communist AI
+NDefines.NAI.CALL_ALLY_BASE_DESIRE = -500					-- exactly what it says
+NDefines.NAI.CALL_ALLY_DEMOCRATIC_DESIRE = -500			-- Desire to call ally added for democratic AI
+NDefines.NAI.CALL_ALLY_NEUTRAL_DESIRE = -500			-- Desire to call ally added for neutral AI
+NDefines.NAI.CALL_ALLY_FASCIST_DESIRE = -500				-- Desire to call ally added for fascist AI
+NDefines.NAI.CALL_ALLY_COMMUNIST_DESIRE = -500			-- Desire to call ally added for communist AI
+NDefines.NAI.DIPLOMATIC_ACTION_RANDOM_FACTOR = 0 		-- How much of the AI diplomatic action scoring is randomly determined (1.0 = half random, 2.0 = 2/3rd random, etc)
+NDefines.NAI.RESEARCH_NEW_WEIGHT_FACTOR = 0 			-- Impact of previously unexplored tech weights. Higher means more random exploration.
+NDefines.NAI.INVASION_DISTANCE_RANDOMNESS = 0					-- This higher the value, the more unpredictable the invasions. Compares to actual map distance in pixels.
+NDefines.NAI.FASCISTS_BEFRIEND_FASCISTS = 0
+NDefines.NAI.FASCISTS_BEFRIEND_DEMOCRACIES = 0
+NDefines.NAI.DIPLOMACY_REJECTED_WAIT_MONTHS_BASE = 24                --up from 4 | should cut down on AI spam
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0
+NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
+NDefines.NAI.DILPOMATIC_ACTION_DECLARE_WAR_WARGOAL_BASE = 0
+NDefines.NAI.RESEARCH_LAND_DOCTRINE_NEED_GAIN_FACTOR = 0
+NDefines.NAI.RESEARCH_NAVAL_DOCTRINE_NEED_GAIN_FACTOR = 0
+NDefines.NAI.RESEARCH_AIR_DOCTRINE_NEED_GAIN_FACTOR = 0
+NDefines.NAI.RESEARCH_AHEAD_BONUS_FACTOR = 0
+NDefines.NAI.RESEARCH_BONUS_FACTOR = 0
+NDefines.NAI.MAX_AHEAD_RESEARCH_PENALTY = 0
+NDefines.NAI.RESEARCH_AHEAD_OF_TIME_FACTOR = 0
+NDefines.NAI.RESEARCH_BASE_DAYS = 0
+NDefines.NAI.DECLARE_WAR_RELATIVE_FORCE_FACTOR = 0
+NDefines.NAI.TRADEABLE_FACTORIES_FRACTION = 0
+NDefines.NAI.MIN_DELIVERED_TRADE_FRACTION = 0
+--NDefines.NAI.SEA_PATH_LENGTH_SCORE_BASE = 0
+NDefines.NAI.MINIMUM_GOOD_TRADE_RATIO_PER_CIV = 0
+NDefines.NAI.NAVAL_DOCKYARDS_SHIP_FACTOR = 0
+NDefines.NAI.PRODUCTION_EQUIPMENT_SURPLUS_FACTOR = 0
+NDefines.NAI.PRODUCTION_EQUIPMENT_SURPLUS_FACTOR_GARRISON = 0
+NDefines.NAI.AIR_SUPERIORITY_FACTOR = 0
+NDefines.NAI.ROCKET_MIN_ASSIGN_SCORE = 0
+NDefines.NAI.ROCKET_MIN_PRIO_ASSIGN_SCORE = 0
+NDefines.NAI.ROCKET_ASSIGN_SCORE_REDUCTION_PER_ASSIGNMENT = 0
+NDefines.NAI.MAX_VOLUNTEER_ARMY_FRACTION = 0
+NDefines.NAI.WANTED_UNITS_INDUSTRY_FACTOR = 0
+NDefines.NAI.PLAN_AVG_PREPARATION_TO_EXECUTE = 1
+NDefines.NAI.DEPLOY_MIN_TRAINING_SURRENDER_FACTOR = 0
+NDefines.NAI.DEPLOY_MIN_EQUIPMENT_SURRENDER_FACTOR = 0
+NDefines.NAI.DEPLOY_MIN_TRAINING_PEACE_FACTOR = 0
+NDefines.NAI.DEPLOY_MIN_EQUIPMENT_PEACE_FACTOR = 0
+NDefines.NAI.DEPLOY_MIN_TRAINING_WAR_FACTOR = 0
+NDefines.NAI.DEPLOY_MIN_EQUIPMENT_WAR_FACTOR = 0
+NDefines.NAI.DYNAMIC_STRATEGIES_THREAT_FACTOR = 0
+NDefines.NAI.LOCATION_BALANCE_TO_ADVANCE = 0
+NDefines.NAI.DIVISION_UPGRADE_MIN_XP = 0
+NDefines.NAI.DIVISION_CREATE_MIN_XP = 0
+NDefines.NAI.VARIANT_UPGRADE_MIN_XP = 0
+NDefines.NAI.UPGRADE_XP_RUSH_UPDATE = 0
+NDefines.NAI.FOCUS_TREE_CONTINUE_FACTOR = 0
+NDefines.NAI.DECLARE_WAR_NOT_NEIGHBOR_FACTOR = 0
+NDefines.NAI.JOIN_FACTION_BOTH_LOSING = 0
+NDefines.NAI.LENDLEASE_FRACTION_OF_PRODUCTION = 0
+NDefines.NAI.LENDLEASE_FRACTION_OF_STOCKPILE = 0 
+NDefines.NAI.MINIMUM_CONVOY_TO_ASK_LEND_LEASE = 0
+NDefines.NAI.MINIMUM_FUEL_DAYS_TO_ASK_LEND_LEASE = 0
+NDefines.NAI.MINIMUM_FUEL_DAYS_TO_ACCEPT_LEND_LEASE = 0
+NDefines.NAI.POLITICAL_IDEA_MIN_SCORE = 0  
+NDefines.NAI.MIN_AI_SCORE_TO_MOBILIZATION_LAW_OVERRIDE_HARD_CODED_SCORE = 0
+NDefines.NAI.MIN_AI_SCORE_TO_ECONOMY_LAW_OVERRIDE_HARD_CODED_SCORE = 0
+NDefines.NAI.MIN_AI_SCORE_TO_TRADE_LAW_OVERRIDE_HARD_CODED_SCORE = 0
+NDefines.NAI.MIN_AI_SCORE_TO_ALL_LAWS_OVERRIDE_HARD_CODED_SCORE = 0.
+NDefines.NAI.AT_WAR_THREAT_FACTOR = 0
+NDefines.NAI.NEIGHBOUR_WAR_THREAT_FACTOR =0 
+NDefines.NAI.POTENTIAL_ALLY_JOIN_WAR_FACTOR = 0
+NDefines.NAI.POTENTIAL_FUTURE_ENEMY_FACTOR = 0
+NDefines.NAI.NEUTRAL_THREAT_PARANOIA = 0
+NDefines.NAI.DIFFERENT_FACTION_THREAT = 0
+NDefines.NAI.MAX_THREAT_FOR_FIRST_YEAR_CIVILIAN_MODE = 0
+NDefines.NAI.SEND_VOLUNTEER_EVAL_BASE_DISTANCE = 0
+NDefines.NAI.SEND_VOLUNTEER_EVAL_MAJOER_POWER = 0
+NDefines.NAI.SEND_VOLUNTEER_EVAL_CONTAINMENT_FACTOR = 0
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0 
+NDefines.NAI.DIPLOMATIC_ACTION_BREAK_SCORE = 0
+NDefines.NAI.DIPLO_DISTANCE_BETWEEN_CAPITALS = 0
+NDefines.NAI.DIPLO_SHOW_FACTION_JOIN_WARNING_THRESHOLD = 0
+NDefines.NAI.DIPLO_MAX_CONTAINMENT_ACCEPTANCE = 0
+NDefines.NAI.DIPLOMACY_ACCEPT_CONDITIONAL_SURRENDER_MANPOWER_IN_FIELD = 0	-- Scale multiplied by difference in manpower in field
+NDefines.NAI.DIPLOMACY_ACCEPT_CONDITIONAL_SURRENDER_GLOBAL_TENSION = 0	-- Multiplied by WT
+NDefines.NAI.DIPLOMACY_ACCEPT_CONDITIONAL_SURRENDER_WAR_SUPPORT = 0		-- Multiplied by recipient WS
+NDefines.NAI.DIPLOMACY_ACCEPT_CONDITIONAL_SURRENDER_EMBARGO = 0				-- Multiplied by num embargo, max 5 embargo
+NDefines.NAI.DIPLOMACY_ACCEPT_CONDITIONAL_SURRENDER_OWN_SURRENDER_LIMIT = 0 -- Multiplied by recipient nation's surrender level
+NDefines.NAI.DIPLOMACY_ACCEPT_CONDITIONAL_SURRENDER_MINOR_WAR = 0			-- Applied if recipient is a minor nation (and therefore there are no majors in this war)
+NDefines.NAI.NUM_RESOURCES_TO_ALLOW_MINOR_EMBARGO = 0	--If we or any of our puppets have more total resources of a single category that this, we will consider embargoing countries
+NDefines.NAI.EMBARGO_WORLD_TENSION_THREAT_DIVISOR = 0		--A divisor to generated world tension when applying how much we care about it in AI desire
+NDefines.NAI.OPINION_CUTOFF_FOR_IMPROVE_RELATIONS = 0	
+NDefines.NAI.DIPLO_ACCEPTABLE_DISTANCE_BETWEEN_CAPITALS = 0
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 7000       -- Recalculate desired best doctrine to unlock with this many days inbetween.
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 7000       -- Recalculate desired best template to upgrade with this many days inbetween.
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_EQUIPMENT = 7000      -- Recalculate desired best equipment to upgrade with this many days inbetween.
+NDefines.NAI.HOURS_BETWEEN_ENCIRCLEMENT_DISCOVERY = 700000	-- Per army, interval in hours between refresh of which provinces it considers make up potential encirclement points
+NDefines.NAI.WANTED_UNITS_THREAT_MAX = 0                            -- Normalized threat is clamped to this
+NDefines.NAI.WANTED_UNITS_THREAT_BASE = 0                            -- Normalized threat is clamped to this
+NDefines.NAI.WANTED_UNITS_WAR_THREAT_FACTOR = 0                      -- Factor threat with this if country are fascist, communist or at war
+NDefines.NAI.WANTED_UNITS_DANGEROUS_NEIGHBOR_FACTOR = 0              -- Factor if has dangerous neighbor
+NDefines.NAI.WANTED_UNITS_MANPOWER_DIVISOR = 5000000                     -- Normalizing divisor for AI manpower. (below this they will be careful making more divisions, above they want more)
+NDefines.NAI.OIL_WANT_PER_POTENTIAL_LAND_CONSUMPTION_K = 0     	-- how much extra oil requested on top of balance for country's potential oil consumptions
+NDefines.NAI.OIL_WANT_PER_POTENTIAL_NAVY_CONSUMPTION_K = 0      	
+NDefines.NAI.OIL_WANT_PER_POTENTIAL_AIR_CONSUMPTION_K = 0      	
+NDefines.NAI.OIL_WANT_PER_POTENTIAL_MISC_CONSUMPTION_K = 0 
+NDefines.NAI.WANTED_UNITS_WEIGHT_FRONTS_WANT = 0                     -- Weight of front needs when computing final nr wanted units
+NDefines.NAI.WANTED_UNITS_WEIGHT_FACTORIES = 0                       -- Weight of military factories when computing final nr wanted units
+NDefines.NAI.WANTED_UNITS_WEIGHT_MANPOWER = 0                     -- Weight of manpower availability when computing final nr wanted units
+NDefines.NAI.WANTED_UNITS_MIN_DEFENCE_FACTOR = 0					-- Factor on units required for min defence
+NDefines.NAI.WANTED_UNITS_MAX_WANTED_CAP = 0	
+NDefines.NAI.PROPOSE_LEND_LEASE_AIDESIRE_SAME_IDEOLOGY = 0				-- Added to AI desire to propose lend lease if recipent is same ideology (and AI can't declare war on recipient)
+NDefines.NAI.PROPOSE_LEND_LEASE_AIDESIRE_SAME_IDEOLOGY_CIVIL_WAR = 0 -- Added to AI desire to propose lend lease if recipent is same ideology and they are currently in civil war
+NDefines.NAI.SEND_VOLUNTEER_AIDESIRE_SAME_IDEOLOGY = 0					-- Added to AI desire to send volunteers if recipent is same ideology (and AI can't declare war on recipient)
+NDefines.NAI.SEND_VOLUNTEER_AIDESIRE_SAME_IDEOLOGY_CIVIL_WAR = 0
+NDefines.NAI.OIL_WANT_AT_PEACE_PER_POTENTIAL_LAND_CONSUMPTION_K = 0  
+NDefines.NAI.OIL_WANT_AT_PEACE_PER_POTENTIAL_NAVY_CONSUMPTION_K = 0  
+NDefines.NAI.OIL_WANT_AT_PEACE_PER_POTENTIAL_AIR_CONSUMPTION_K = 0  
+NDefines.NAI.OIL_WANT_AT_PEACE_PER_POTENTIAL_MISC_CONSUMPTION_K = 0   
+NDefines.NAI.AI_UPDATE_ROLES_FREQUENCY_HOURS = 48000000               -- Update the roles for a country AI this often (affects performance)
+NDefines.NAI.UPDATE_SUPPLY_MOTORIZATION_FREQUENCY_HOURS = 50000000     -- Check if activating motorization would improve supply situation this often.
+NDefines.NAI.UPDATE_SUPPLY_BOTTLENECKS_FREQUENCY_HOURS = 168000     -- Check for and try to fix supply bottlenecks this often. (168 hours = 1 week)
+NDefines.NAI.DIPLOMACY_CREATE_FACTION_FACTOR = 0
+NDefines.NAI.DIPLOMACY_FACTION_WRONG_IDEOLOGY_PENALTY = 0
+NDefines.NAI.DIPLOMACY_FACTION_SAME_IDEOLOGY_MAJOR = 0
+NDefines.NAI.DIPLOMACY_FACTION_NEUTRALITY_PENALTY = 0
+NDefines.NAI.DIPLOMACY_FACTION_GLOBAL_TENSION_FACTOR = 0
+NDefines.NAI.DIPLOMACY_FACTION_WAR_RELUCTANCE = 0
+NDefines.NAI.DIPLOMACY_FACTION_TAKE_OVER_RELUCTANCE_VERSUS_HUMAN = 0
+NDefines.NAI.DIPLOMACY_SCARED_MINOR_EXTRA_RELUCTANCE = 0
+NDefines.NAI.DIPLOMACY_FACTION_PLAYER_JOIN = 0
+NDefines.NAI.DIPLOMACY_BOOST_PARTY_COST_FACTOR = 0
+NDefines.NAI.DIPLOMACY_IMPROVE_RELATION_COST_FACTOR = 0
+NDefines.NAI.DIPLOMACY_IMPROVE_RELATION_PP_FACTOR = 0
+NDefines.NAI.DIPLOMACY_SEND_ATTACHE_COST_FACTOR = 0
+NDefines.NAI.DIPLOMACY_SEND_ATTACHE_PP_FACTOR = 0
+NDefines.NAI.DIPLOMACY_LEND_LEASE_MONTHS_TO_CANCEL = 0
+NDefines.NAI.DIPLOMACY_CALL_ALLY_VALIDITY_DURATION = 0
+NDefines.NAI.DIPLOMACY_SEND_MAX_FACTION  = 0
+NDefines.NAI.DIPLOMACY_ACCEPT_VOLUNTEERS_BASE = 100
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0
+NDefines.NAI.DIPLOMACY_FACTION_MAJOR_AT_WAR = 0
+NDefines.NAI.DIPLOMATIC_ACTION_PROPOSE_SCORE = 500		-- AI must score a diplomatic action at least this highly to propose it themselves
+NDefines.NAI.FASCISTS_BEFRIEND_COMMUNISTS = 0
+NDefines.NAI.FASCISTS_ALLY_FASCISTS = 0
+NDefines.NAI.FASCISTS_ALLY_DEMOCRACIES = 0
+NDefines.NAI.FASCISTS_ALLY_COMMUNISTS = 0
+NDefines.NAI.FASCISTS_ANTAGONIZE_FASCISTS = 0
+NDefines.NAI.FASCISTS_ANTAGONIZE_DEMOCRACIES = 0
+NDefines.NAI.FASCISTS_ANTAGONIZE_COMMUNISTS = 0
+NDefines.NAI.DEMOCRACIES_BEFRIEND_FASCISTS = 0
+NDefines.NAI.DEMOCRACIES_BEFRIEND_DEMOCRACIES = 0
+NDefines.NAI.DEMOCRACIES_BEFRIEND_COMMUNISTS = 0
+NDefines.NAI.DEMOCRACIES_ALLY_FASCISTS = 0
+NDefines.NAI.DEMOCRACIES_ALLY_DEMOCRACIES = 0
+NDefines.NAI.DEMOCRACIES_ALLY_COMMUNISTS = 0 
+NDefines.NAI.GIVE_STATE_CONTROL_BASE_SCORE = 0
+NDefines.NAI.GIVE_STATE_CONTROL_DIFF_FACTOR = 0
+NDefines.NAI.GIVE_STATE_CONTROL_NEIGHBOR_SCORE = 0
+NDefines.NAI.GIVE_STATE_CONTROL_NEIGHBOR_ACTOR_SCORE = 0
+NDefines.NAI.GIVE_STATE_CONTROL_NEIGHBOR_OTHER_SCORE = 0
+NDefines.NAI.GIVE_STATE_CONTROL_MAX_SCORE_DIST = 0
+NDefines.NAI.GIVE_STATE_CONTROL_DIST_SCORE_MULT = 0
+NDefines.NAI.RELATIVE_STRENGTH_TO_INVADE = 0
+NDefines.NAI.RELATIVE_STRENGTH_TO_INVADE_DEFENSIVE = 0 
+NDefines.NAI.DEMOCRACIES_ANTAGONIZE_FASCISTS = 0
+NDefines.NAI.DEMOCRACIES_ANTAGONIZE_DEMOCRACIES = 0
+NDefines.NAI.DEMOCRACIES_ANTAGONIZE_COMMUNISTS = 0
+NDefines.NAI.COMMUNISTS_BEFRIEND_FASCISTS = 0
+NDefines.NAI.COMMUNISTS_BEFRIEND_DEMOCRACIES = 0	
+NDefines.NAI.COMMUNISTS_BEFRIEND_COMMUNISTS = 0
+NDefines.NAI.COMMUNISTS_ALLY_FASCISTS = 0
+NDefines.NAI.COMMUNISTS_ALLY_DEMOCRACIES = 0
+NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 30     -- Refreshes need scores based on country situation.
+NDefines.NAI.COMMUNISTS_ALLY_COMMUNISTS = 0
+NDefines.NAI.COMMUNISTS_ANTAGONIZE_FASCISTS = 0
+NDefines.NAI.COMMUNISTS_ANTAGONIZE_DEMOCRACIES = 0
+NDefines.NAI.COMMUNISTS_ANTAGONIZE_COMMUNISTS = 0  
+NDefines.NAI.NUM_SILOS_PER_CIVILIAN_FACTORIES = 0					-- ai will try to build a silo per this ratio of civ factories
+NDefines.NAI.NUM_SILOS_PER_MILITARY_FACTORIES = 0					-- ai will try to build a silo per this ratio of mil factories
+NDefines.NAI.NUM_SILOS_PER_DOCKYARDS = 0			
+NDefines.NAI.GENERATE_WARGOAL_THREAT_BASELINE = 0 
+NDefines.NAI.TOO_INSIGNIFICANT_ARMY_RATIO_BEGIN = 0					-- if army ratio is of a country is larger than this threshold, it will be less reluctant to accept certain diplo actions
+NDefines.NAI.TOO_INSIGNIFICANT_MAX_PENALTY = 0						-- max penalty that will be applied for thinking a country is too insignificant
+NDefines.NAI.START_TRAINING_EQUIPMENT_LEVEL = 0               -- ai will not start to train if equipment drops below this level
+NDefines.NAI.STOP_TRAINING_EQUIPMENT_LEVEL = 0                -- ai will not train if equipment drops below this level
+NDefines.NAI.BUILD_REFINERY_LACK_OF_RESOURCE_MODIFIER = 0	-- How much lack of resources are worth when evaluating what to build.                          
+NDefines.NAI.DIPLOMACY_COMMUNIST_NOT_NEIGHBOUR = 0
+NDefines.NAI.ACCESS_SCORE_PENALTY_PER_EXISTING_ACCESS_AT_WAR = 0		
+NDefines.NAI.ACCESS_SCORE_PENALTY_PER_EXISTING_ACCESS = 0				
+NDefines.NAI.RESERVE_TO_COMMITTED_BALANCE = 0 
+NDefines.NAI.MAIN_ENEMY_FRONT_IMPORTANCE = 0
+NDefines.NAI.EASY_TARGET_FRONT_IMPORTANCE = 0
+NDefines.NAI.AI_FRONT_MOVEMENT_FACTOR_FOR_READY = 0		
+NDefines.NAI.MICRO_POCKET_SIZE = 0		-- Pockets with a size equal to or lower than this will be mocroed by the AI, for efficiency.
+NDefines.NAI.DECLARE_WAR_MIN_FRONT_SIZE_TO_CONSIDER_FOR_NOT_READY = 0
+NDefines.NAI.ACCESS_SCORE_FOR_DEMOCRATIC_COUNTRIES = 0	 ----------GOOD------------					
+NDefines.NAI.BASE_DISTANCE_TO_CARE = 0                -- Countries that are too far away are less interesting in diplomacy
+
 
 -- AI will defend cities as well
 NDefines.NAI.AREA_DEFENSE_SETTING_VP = true --False (AI will garrison cities)
@@ -583,7 +784,7 @@ NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 15000000    -- Increased s
 --NDefines.NBuildings.MAX_SHARED_SLOTS = 99 -- WAS 25 | Increased to accommodate Germany/Japan building slot changes in order to support more of their eco being in their cores.
 NDefines.NDiplomacy.CAPITAL_CAPITULATE_BONUS_SCORE = 10000			-- vanilla 150, changed in attempt to make capitulations look more reasonable. extra bonus when deciding who to capitulate to (applied to capital holder)
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12           -- Cuts annoying spam from players like WestWood ~Thrasymachus
-NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0						-- When you pass once you should get enough points to finish the peace deal
+-- NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0						-- When you pass once you should get enough points to finish the peace deal
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0            -- WAS 0.2 | Most rulesets ban deleting encircled troops, but at least this prevents some manpower from returning | Deleting encircled divisions is always banned anyways, so this reduces unfair play | percentage of manpower returned when an encircled unit is disbanded
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = 0					-- WAS -100 this group reduces the number of opinion/trade factor changes the game tracks| This is added to the factor value when anti-monopoly threshold is exceeded; cucks majors often if the value is vanilla
 NDefines.NTrade.PARTY_SUPPORT_TRADE_FACTOR = 0			-- Trade factor bonus at the other side having 100 % party popularity for my party
@@ -595,71 +796,115 @@ NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all 
 
 NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 4.9
 
--- NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
--- NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
--- NDefines_Graphics.NAirGfx.MAX_PATROL_SCENARIOS = 0
--- NDefines_Graphics.NAirGfx.MAX_DOGFIGHTS_SCENARIOS = 0
--- NDefines_Graphics.NAirGfx.MAX_TRANSPORT_SCENARIOS = 0
-NDefines_Graphics.NGraphics.CAMERA_ZOOM_SPEED_DISTANCE_MULT = 20
-NDefines_Graphics.NGraphics.MAPICON_GROUP_STRATEGIC_SIZE = 1000
-NDefines_Graphics.NGraphics.MAP_ICONS_STATE_HUGE = 100
-NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 30
--- NDefines_Graphics.NGraphics.DECISION_MAP_ICON_DISTANCE_CUTOFF = 100
-NDefines_Graphics.NGraphics.NAVAL_COMBAT_DISTANCE_CUTOFF = 1200
-NDefines_Graphics.NGraphics.PROVINCE_ANIM_TEXT_DISTANCE_CUTOFF = 200
-NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.8
-NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 600
-NDefines_Graphics.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 600
-NDefines_Graphics.NGraphics.RADAR_ICON_DISTANCE_CUTOFF = 150
+
+
+
+
+
+
+
+
+-- Horst graphics defines
+NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.75 -- Vanilla 0.6   HFU 0.9
+NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.85 -- Vanilla 0.8   HFU 0.9
+NDefines.NGraphics.NAVAL_MINES_DISTANCE_CUTOFF = 600
+NDefines.NGraphics.NAVAL_MINES_CLUMPING = 1 -- The higher value, the more likely the 3d naval mines will clamp together
+NDefines.NGraphics.NAVAL_MINES_CLUMP_NEAR_TERRITORY = 25 -- Higher chance to spawn 3d naval mine near our territory
+NDefines.NGraphics.NAVAL_MINES_COUNT_TO_VISUAL_ASPECT = 0.1 -- How many in-game-naval-mines is one visual 3d naval mine?
+
+NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
+	0.0/360.0, 1.0, 1.0,	--red
+	10.0/360.0, 1.0, 1.0,	--orange
+	60.0/360.0, 1.0, 1.0,	--yellow
+	120.0/360.0, 0.75, 1.0,	--green
+	180.0/360.0, 1.0, 1.0,	--turq
+	235.0/360.0, 1.0, 1.0,	--blue
+	260.0/360.0, 1.0, 1.0,	--dark purple
+	300.0/360.0, 1.0, 1.0,	--light purple
+	330.0/360.0, 0, 1.0		--white
+}
+
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_REFRESH_FREQ = 0.2
+NDefines_Graphics.NGraphics.BORDER_WIDTH = 1 --vanilla 1.25
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 50
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_COUNTRY_HIGH = 20 --vanilla 25
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_COUNTRY_CENTER_THICKNESS = 1.75 --vanilla 2
+
+NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
+NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
+NDefines_Graphics.NAirGfx.MAX_PATROL_SCENARIOS = 0
+NDefines_Graphics.NAirGfx.MAX_DOGFIGHTS_SCENARIOS = 0
+NDefines_Graphics.NAirGfx.MAX_TRANSPORT_SCENARIOS = 0
+
 NDefines_Graphics.NAirGfx.AIRPLANES_ANIMATION_GLOBAL_SPEED_PER_GAMESPEED = {0.3, 0.3, 0.3, 0.3, 0.3, 0.3}
-NDefines_Graphics.NGraphics.DRAW_MAP_OBJECTS_CUTOFF = 1.0
-NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {200, 350, 500}
-NDefines_Graphics.NGraphics.MAX_MESHES_LOADED_PER_FRAME = 5
-NDefines_Graphics.NMapMode.RADAR_ROTATION_SPEED = 0.0
-NDefines_Graphics.NMapMode.AIR_RANGE_INDICATOR_ROTATION_SPEED = 0.0000
 NDefines_Graphics.NAirGfx.AIRPLANES_SMOOTH_INTERPOLATION_MOVE = 0.02
 NDefines_Graphics.NAirGfx.AIRPLANES_SMOOTH_INTERPOLATION_TURN = 0.02
-NDefines_Graphics.NInterface.GRIDBOX_ELEMENTS_INTERPOLATION_SPEED = 0.2
-NDefines_Graphics.NGraphics.TREE_FADE_NEAR = 150.0
-NDefines_Graphics.NGraphics.TREE_FADE_FAR = 250.0
-NDefines_Graphics.NGraphics.RESOURCE_MAP_ICON_TEXT_CUTOFF = 400
-NDefines_Graphics.NGraphics.UNITS_DISTANCE_CUTOFF = 100
+NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 1 
+NDefines_Graphics.NMapMode.RADAR_ROTATION_SPEED = 0.0
+NDefines_Graphics.NMapMode.AIR_RANGE_INDICATOR_ROTATION_SPEED = 0.0000
+NDefines_Graphics.NGraphics.CAMERA_ZOOM_SPEED_DISTANCE_MULT = 12
+NDefines_Graphics.NGraphics.MAPICON_GROUP_STRATEGIC_SIZE = 1000
+NDefines_Graphics.NGraphics.MAP_ICONS_STATE_HUGE = 100
+NDefines_Graphics.NGraphics.DECISION_MAP_ICON_DISTANCE_CUTOFF = 1000
+NDefines_Graphics.NGraphics.NAVAL_COMBAT_DISTANCE_CUTOFF = 1200
+NDefines_Graphics.NGraphics.PROVINCE_ANIM_TEXT_DISTANCE_CUTOFF = 200
+NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 1000
+NDefines_Graphics.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 600
+NDefines_Graphics.NGraphics.RADAR_ICON_DISTANCE_CUTOFF = 500
+NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {250, 500, 1250}  -- At what camera distance the VP name text disappears.
+NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {250, 500, 1250}
+
+NDefines_Graphics.NGraphics.CAMERA_ZOOM_KEY_SCALE = 0.10
+
+NDefines_Graphics.NGraphics.RAILWAY_CAMERA_CUTOFF = 250
+
+NDefines_Graphics.NGraphics.ACCLIMATIZATION_CAMO_SHOW_AT = 0				-- vanilla 0.5 |  The moment at which the division gains enough acclimatization to change it's model to the camouflage one.
+
+NDefines_Graphics.NGraphics.RESOURCE_MAP_ICON_TEXT_CUTOFF = 1000
+NDefines_Graphics.NGraphics.UNITS_DISTANCE_CUTOFF = 250
 NDefines_Graphics.NGraphics.SHIPS_DISTANCE_CUTOFF = 200
 NDefines_Graphics.NGraphics.UNIT_ARROW_DISTANCE_CUTOFF = 500
-NDefines_Graphics.NGraphics.UNITS_ICONS_DISTANCE_CUTOFF = 700
-NDefines_Graphics.NGraphics.NAVAL_COMBAT_DISTANCE_CUTOFF = 1000
-NDefines_Graphics.NGraphics.ADJACENCY_RULE_DISTANCE_CUTOFF = 1300
+NDefines_Graphics.NGraphics.UNITS_ICONS_DISTANCE_CUTOFF = 500
+NDefines_Graphics.NGraphics.ADJACENCY_RULE_DISTANCE_CUTOFF = 1000
 NDefines_Graphics.NGraphics.LAND_COMBAT_DISTANCE_CUTOFF = 800
 NDefines_Graphics.NGraphics.SUPPLY_ICON_DISTANCE_CUTOFF = 1500
 NDefines_Graphics.NGraphics.PROV_CONSTRUCTION_ICON_DISTANCE_CUTOFF = 300
 NDefines_Graphics.NGraphics.STATE_CONSTRUCTION_ICON_DISTANCE_CUTOFF = 600
-NDefines_Graphics.NGraphics.GRADIENT_BORDERS_REFRESH_FREQ = 0.2
-NDefines_Graphics.NGraphics.BORDER_WIDTH = 1 --vanilla 1.25
 NDefines_Graphics.NGraphics.MAPICON_GROUP_PASSES = 5
 NDefines_Graphics.NGraphics.DRAW_REFRACTIONS_CUTOFF = 0
-NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 40
-NDefines_Graphics.NGraphics.WEATHER_DISTANCE_CUTOFF = 50
+
+NDefines_Graphics.NGraphics.WEATHER_DISTANCE_CUTOFF = 800
+NDefines.NGraphics.WEATHER_ZOOM_IN_CUTOFF = 0
+NDefines.NGraphics.WEATHER_PLAYBACK_RATE = 0.15
+
 NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 100
 NDefines_Graphics.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 300
 NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 400
 NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_AREA_HUGE = 250
 NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 300
 NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 0
+
 NDefines_Graphics.NGraphics.BLOOM_WIDTH = 0
 NDefines_Graphics.NGraphics.BLOOM_SCALE = 0
 NDefines_Graphics.NGraphics.BRIGHT_THRESHOLD = 0
 NDefines_Graphics.NGraphics.EMISSIVE_BLOOM_STRENGTH = 0
-NDefines_Graphics.NGraphics.DAY_NIGHT_FEATHER = 0.024
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
-NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
+NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0 --475 lennard 
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 
-NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_BAD = {0.65, 0, 0, 1}
-NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_GOOD = {0, 0.65, 0, 1}
-NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_AVERAGE = {0.65, 0.65, 0, 1}
-NDefines_Graphics.NGraphics.STRATEGIC_AIR_COLOR_NEUTRAL = {130.0/255, 130.0/255, 130.0/255, 1}
 
-NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {300, 500, 1500}
-NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {300, 500, 1500}
-NDefines_Graphics.NGraphics.CAPITAL_ICON_CUTOFF = 1000	-- At what camera distance capital icons disappears
+NDefines_Graphics.NGraphics.SUN_HEIGHT_WATER  = 1000 
+NDefines_Graphics.NGraphics.SUN_INTENSITY = 1.20
+NDefines.NMapMode.SUPPLY_MAP_MODE_REACH_COLOR = {
+		0.0,   0.45, 0.00, 0.20, 1.0, 		-- #990066 dark purple
+		0.02,  0.35, 0.12, 0.45, 1.0, 		-- #332B85 dark purple blue
+		0.12,  0.20, 0.15, 0.45, 1.0,		-- #0A2B99 dark blue
+		0.2,   0.27, 0.27, 0.50, 1.0,		-- #215CA6 blue
+		
+		0.4,   0.15, 0.25, 0.40, 1.0,		-- #1C8FBF light blue
+		0.6,   0.20, 0.42, 0.60, 1.0,		-- #40B5C2 teal
+		0.8,   0.35, 0.50, 0.30, 1.0,		-- #78CCBA light teal
+		1.0,   0.15, 0.54, 0.15, 1.0,		-- #99D199 light green
+	}
+	
