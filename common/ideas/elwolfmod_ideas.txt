@@ -196,6 +196,7 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 100
 				min_export = -1
 				research_speed_factor = -0.5
+				political_power_gain_factor = -0.99
 			}
 		}
 		artificial_intelligence = {
