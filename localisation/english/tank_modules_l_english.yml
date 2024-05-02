@@ -512,7 +512,7 @@
  ammo_ap:0 "Armor Piercing Round"
  ammo_apcr:0 "Armor Piercing Composite Rigid Round"
  ammo_he:0 "Hight Explosive Round"
- AAAPCR:0 "High Explosie Squash Head"
+ AAAPCR:0 "High Explosive Squash Head"
  AAAP:0 "Armor Piercing Round (small cal.)"
  AAHE:0 "Hight Explosive Round (small cal.)"
  tank_module_camouflage_desert:0 "Desert Camouflage"

@@ -1992,8 +1992,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 2.5
-			breakthrough = 8
+			build_cost_ic = 2
+			breakthrough = 5
 		}
 		xp_cost = 0
 
@@ -2006,7 +2006,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 1.25
-			defense = 4
+			defense = 3
 		}
 		xp_cost = 0
 		multiply_stats = {
@@ -2020,7 +2020,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			initiative = 0.005
-			breakthrough = 4
+			breakthrough = 3
 			defense = 1
 			build_cost_ic = 2.5
 		}
@@ -2038,7 +2038,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1.25
 			reliability = -0.05
-			breakthrough = 5
+			breakthrough = 4
 		}
 		xp_cost = 0
 	}
@@ -2085,9 +2085,9 @@ equipment_modules = {
 
 		add_stats = {
 			hardness = 0.025
-			armor_value = 10
-			defense = 3.5
-			build_cost_ic = 2.25
+			armor_value = 6
+			breakthrough = 3
+			build_cost_ic = 2.0
 		}
 		xp_cost = 0
 		multiply_stats = {
@@ -2118,8 +2118,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 4
-			breakthrough = 9
+			build_cost_ic = 3
+			breakthrough = 7
 			defense = 2
 		}
 		xp_cost = 0
@@ -2147,9 +2147,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 2
+			soft_attack = 1
 			defense = 2
-			build_cost_ic = 1.0
+			build_cost_ic = 0.75
 		}
 		xp_cost = 0
 		multiply_stats = {
@@ -2164,7 +2164,7 @@ equipment_modules = {
 
 		add_stats = {
 			fuel_capacity = 100
-			build_cost_ic = 2.25
+			build_cost_ic = 2.0
 			maximum_speed = -0.1
 			reliability = -0.05
 		}

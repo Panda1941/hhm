@@ -2398,7 +2398,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			mech_AAAP
-			mech_AAAPCR
 
 			mech_auto_cannon
 			mech_armor_skirts
