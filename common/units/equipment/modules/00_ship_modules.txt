@@ -982,7 +982,7 @@ equipment_modules = {
 		add_equipment_type = anti_air
 		
 		add_stats = {
-			anti_air_attack = 2.5
+			anti_air_attack = 2.0
 			build_cost_ic = 80
 		}
 		
@@ -1029,7 +1029,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = anti_air
 		add_stats = {
-			anti_air_attack = 4.5
+			anti_air_attack = 5.0
 			build_cost_ic = 120
 		}
 		
@@ -1055,7 +1055,7 @@ equipment_modules = {
 
 		add_equipment_type = anti_air
 		add_stats = {
-			anti_air_attack = 5.5
+			anti_air_attack = 6.5
 			build_cost_ic = 140
 		}
 		
