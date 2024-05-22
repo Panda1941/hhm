@@ -2497,9 +2497,8 @@ focus_tree = {
 			add_tech_bonus = {
                 name = improved_medium_tank			
 				bonus = 0.75
-				uses = 2
+				uses = 1
 				technology = improved_medium_tank_chassis_1
-				technology = improved_medium_tank_chassis_2
 			}
 			#add_tech_bonus = {
 			#    name = mech_150
@@ -2588,7 +2587,7 @@ focus_tree = {
 		prerequisite = { focus = GER_army_innovation_2 }
 		
 		available = {
-		date > 1942.01.01	
+		date > 1941.06.01	
 		}
 		
 		x = 0
@@ -2606,32 +2605,12 @@ focus_tree = {
 			army_experience = 20
 				
 			
-			set_technology = {
-				improved_medium_tank_chassis_3 = 1
+			add_tech_bonus = {
+                name = improved_medium_tank			
+				bonus = 1.5
+				uses = 1
+				technology = advanced_medium_tank_chassis
 			}
-			
-		create_equipment_variant = {
-		name = "Panzer IV Ausf. F"
-		type = medium_tank_chassis_4
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_medium_cannon_4
-			turret_type_slot = tank_medium_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_large_roadwheels
-			armor_type_slot = tank_welded_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-			special_type_slot_2 = squeezebore_adaptor
-			special_type_slot_3 = tank_radio_3
-			special_type_slot_4 = improved_armor_skirts
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 4
-			tank_nsb_armor_upgrade = 3
-		}
-		icon = "GFX_GER_medium_tank_chassis_4"
-	}
 		}
 	}
 	

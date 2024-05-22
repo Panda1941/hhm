@@ -1632,7 +1632,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			equipment_bonus = {
-			    mechanized = {
+			    mechanized_chassis = {
 					build_cost_ic = -0.05 instant = yes
 					
 				}

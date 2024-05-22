@@ -2239,12 +2239,12 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_ideas = SOV_t34_programe
+			#add_ideas = SOV_t34_programe
 			add_tech_bonus = {
                 name = t34			
 				bonus = 1.0
 				uses = 1
-				category = armor
+				category = cat_medium_armor
 			}
 		}
 	}
@@ -2266,12 +2266,12 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_ideas = SOV_kv_programe
+			#add_ideas = SOV_kv_programe
 			add_tech_bonus = {
                 name = SOV_kv1			
 				bonus = 1.0
 				uses = 1
-				category = armor
+				category = cat_heavy_armor
 			}
 		}
 	}
@@ -2283,7 +2283,7 @@
 		prerequisite = { focus = SOV_t34 }
 		
 		available = {
-		date > 1942.01.01	
+		date > 1941.09.01	
 		}
 		x = -1
 		y = 2
@@ -2300,8 +2300,12 @@
 			army_experience = 20
 				
 			
-			set_technology = {
-				improved_medium_tank_chassis_3 = 1
+			
+			add_tech_bonus = {
+                name = improved_medium_tank			
+				bonus = 1.5
+				uses = 1
+				technology = advanced_medium_tank_chassis
 			}
 		}
 	}
