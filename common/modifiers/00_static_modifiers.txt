@@ -359,17 +359,19 @@ war_support_good_modifier = {
 	mobilization_speed = 0.30 #in 1/1000 of 1 %
 	army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.1
-	command_power_gain_mult = 0.5
+	command_power_gain_mult = 0.33
+	conscription_factor = 0.05
 }
 
 war_support_bad_modifier = {
 	mobilization_speed = -0.500 # Reduce mobilization speed by half.
-	command_power_gain_mult = -0.95
-	surrender_limit = -0.3	
+	command_power_gain_mult = -0.99
+	surrender_limit = -0.33
+	conscription_factor = -0.25
 }
 
 war_support_during_war = { #Applied during war, scaled from 0-100% with war support, not split.
-	stability_factor = -0.3
+	stability_factor = -0.6
 }
 
 
@@ -502,24 +504,31 @@ country_is_at_war = {
 passive_decryption_modifier = {
 	air_detection = 0.05
 	air_intercept_efficiency = 0.25
-	civilian_intel_decryption_bonus = 10
-	army_intel_decryption_bonus = 10
-	navy_intel_decryption_bonus = 10
-	airforce_intel_decryption_bonus = 10
+	
+	# Reduced active, but increased passive
+	civilian_intel_decryption_bonus = 20
+	army_intel_decryption_bonus = 20
+	navy_intel_decryption_bonus = 20
+	airforce_intel_decryption_bonus = 20
 }
 
 # targeted modifiers that will apply when you have activated your active decryption bonuses against a country
 active_decryption_modifier = {
-	# attack_bonus_against = 0.15
 	defense_bonus_against = 0.15
 	breakthrough_bonus_against = 0.15
 	naval_invasion_prep_speed = 0.5
 	naval_invasion_penalty = -0.15
 	planning_speed = 0.5
-	civilian_intel_decryption_bonus = 50
-	army_intel_decryption_bonus = 50
-	navy_intel_decryption_bonus = 50
-	airforce_intel_decryption_bonus = 50
+
+	# Added so you don't loose the passive bonuses
+	air_detection = 0.05
+	air_intercept_efficiency = 0.25
+
+	# Reduced active, but increased passive
+	civilian_intel_decryption_bonus = 25
+	army_intel_decryption_bonus = 25
+	navy_intel_decryption_bonus = 25
+	airforce_intel_decryption_bonus = 25
 }
 
 # modifiers applied to allied divisions entering the intel network

@@ -85,18 +85,18 @@ political_actions = {
 		fire_only_once = no
 
 		modifier = {
-			stability_weekly = 0.005
+			stability_weekly = 0.0075
 			consumer_goods_factor = 0.10
 			industrial_capacity_factory = -0.1
 		}
 
 		days_remove = 140
-		days_re_enable = 460
+		days_re_enable = 420
 
-		cost = 80
+		cost = 100
 
 		complete_effect = {
-			custom_effect_tooltip = "Will give a total of 10% stability"
+			custom_effect_tooltip = "Will give a total of 15% stability"
 		}
 
 		ai_will_do = {
@@ -204,30 +204,33 @@ economy_decisions = {
 		icon = GFX_decision_generic_construction
 
 		visible = {
-			OR = {
+			OR = {	# Making this one available one time for EVERYONE not just like germany italy and minors (uk buff)
 				is_major = no
-				AND = {
-					is_faction_leader = yes
-					num_of_factories < 51					#would be a minor if it wasn't for faction leader status
-				}
-				AND = {
-					tag = JAP
-					OR = {
-						SIA = {
-							is_ai = yes
-						}
-						NOT = {
-							country_exists = SIA
-						}
-					}
-				}
-				tag = ITA
-				tag = GER
+				is_major = yes
+				#AND = {
+				#	is_faction_leader = yes
+				#	num_of_factories < 51					#would be a minor if it wasn't for faction leader status
+				#}
+				#AND = {
+				#	tag = JAP
+				#	OR = {
+				#		SIA = {
+				#			is_ai = yes
+				#		}
+				#		NOT = {
+				#			country_exists = SIA
+				#		}
+				#	}
+				#}
+				#tag = ITA
+				#tag = GER
 			}
 		}
 		fire_only_once = yes
 
 		days_remove = 120
+
+		cost = 50	# Since its available for everyone it now has a cost
 
 		ai_will_do = {
 			factor = 1
@@ -256,7 +259,7 @@ economy_decisions = {
 		icon = GFX_decision_hol_draw_up_staff_plans	
 
 		visible = { 
-			num_of_factories < 60
+			num_of_factories < 80
 		}
 		
 		available = {
@@ -291,7 +294,7 @@ propaganda_efforts = {
 
 		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
-			has_war_support < 0.5
+			has_war_support < 0.6
 			
 			if = {
 				limit = {
@@ -312,27 +315,19 @@ propaganda_efforts = {
 		}
 
 		visible = {
-			OR = {
-				has_war_with_non_exiled_country = yes  
-				any_neighbor_country = {
-					AND = {
-						NOT = { has_government = ROOT }
-						has_offensive_war = yes
-						has_added_tension_amount > 10
-					}
-				}
-			}
+			has_war_with_non_exiled_country = yes
 		}
 
 		fire_only_once = no
 
-		days_remove = 90
-		days_re_enable = 180
+		# These are now all 140 days so its clear how much it adds (if its 180 then it adds 25 times, now it adds 20 times, cost scaled down)
+		days_remove = 35
+		days_re_enable = 120
 
-		cost = 150
+		cost = 75
 
 		modifier = {
-			war_support_weekly = 0.005
+			war_support_weekly = 0.01
 		}
 
 		complete_effect = {
@@ -362,19 +357,18 @@ propaganda_efforts = {
 		}
 
 		visible = {
-			# has_war = yes
 			has_war_with_non_exiled_country = yes
 		}
 
 		fire_only_once = no
 
-		days_remove = 180
+		days_remove = 140
 		
 		remove_trigger = {
 			has_war = no
         }
 		
-		cost = 100
+		cost = 75
 
 		modifier = {
 			weekly_casualties_war_support = 0.006
@@ -432,19 +426,18 @@ propaganda_efforts = {
 		}
 
 		visible = {
-			# has_war = yes
 			has_war_with_non_exiled_country = yes
 		}
 
 		fire_only_once = no
 
-		days_remove = 180
+		days_remove = 140
 		
 		remove_trigger = {
 			has_war = no
         }
 		
-		cost = 100
+		cost = 75
 
 		modifier = {
 			weekly_convoys_war_support = 0.006
@@ -487,19 +480,18 @@ propaganda_efforts = {
 		}
 
 		visible = {
-			# has_war = yes
 			has_war_with_non_exiled_country = yes
 		}
 
 		fire_only_once = no
 
-		days_remove = 180
+		days_remove = 140
 		
 		remove_trigger = {
 			has_war = no
         }
 		
-		cost = 100
+		cost = 75
 
 		modifier = {
 			weekly_bombing_war_support = 0.006
@@ -577,7 +569,7 @@ propaganda_efforts = {
 
 		fire_only_once = yes
 
-		cost = 75
+		cost = 50
 
 		complete_effect = {
 			add_war_support = 0.05
@@ -636,15 +628,10 @@ propaganda_efforts = {
 
 		fire_only_once = yes
 
-		cost = 100 
+		cost = 75 
 
 		complete_effect = {
-			effect_tooltip = {
-				add_war_support = 0.10
-			}
-			hidden_effect = {
-				country_event = political.33
-			}
+			add_war_support = 0.10
 		}
 
 		ai_will_do = {
@@ -1601,7 +1588,6 @@ war_measures = {
 		complete_effect = {
 			replace_civ_with_arms_factories = yes
 			add_war_support = -0.05
-			add_stability = -0.03
 		}
 		ai_will_do = {
 			factor = 0
@@ -1681,7 +1667,7 @@ war_measures = {
         visible = {
             has_war = yes
         }
-        cost = 100
+        cost = 125
         days_remove = -1
         remove_trigger = {
         	OR = {
@@ -1753,7 +1739,7 @@ war_measures = {
 
 		days_remove = 180
 
-		cost = GER_war_bonds_var?50
+		cost = GER_war_bonds_var?75
 
 		modifier = {
 			consumer_goods_factor = -0.2
@@ -1782,13 +1768,13 @@ war_measures = {
 				limit = {
 					check_variable = {
 						var = GER_war_bonds_var
-						value = 50
+						value = 75
 						compare = less_than
 					}
 				}
 				set_variable = {
 					var = GER_war_bonds_var
-					value = 50
+					value = 75
 				}
 			}
 			add_to_variable = {
@@ -1799,7 +1785,7 @@ war_measures = {
 				limit = {
 					check_variable = {
 						var = GER_war_bonds_var
-						value = 125
+						value = 150
 						compare = greater_than_or_equals
 					}
 					check_variable = {
@@ -1838,7 +1824,7 @@ foreign_politics = {
             has_dlc = "Waking the Tiger"
         }
 
-        cost = 50
+        cost = 150
         fire_only_once = no
 
         days_re_enable = 30

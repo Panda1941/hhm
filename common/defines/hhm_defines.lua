@@ -529,6 +529,10 @@ NDefines.NDiplomacy.EMBARGO_DIFFERENT_IDEOLOGY_AT_OFFENSIVE_WAR_AI_WEIGHT = -20 
 NDefines.NDiplomacy.EMBARGO_RECIPIENT_IS_MAJOR_AI_WEIGHT = 1 -- 10
 NDefines.NDiplomacy.EMBARGO_NEIGHBOUR_AI_WEIGHT =  1 -- 10
 
+-- War Support
+NDefines.NCountry.MAX_HEROES_BEING_KILLED_WAR_SUPPORT_IMPACT = -0.5 -- -0.3
+NDefines.NCountry.MAX_BOMBING_WAR_SUPPORT_IMPACT = -0.4 -- -0.3
+
 
 
 --All of this AI stuff doesn't affect strategy, just used to increase performance -- AI WILL NOT TOUCH ANYTHING
