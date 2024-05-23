@@ -1,0 +1,21 @@
+﻿l_english:
+ explain_navy:0 "HHM Navy"
+ startingevent.1.t:0 "Naval Fleet Size §0(Important)§!"
+ startingevent.1.desc:0 "1) You should have multiple fleets, with no fleet exceeding a Command Limit of 150.\n2) Fleets should have high screening values for capitals and carriers\n3) You need 1 destroyer for every 2 convoys in a battle, and one for every 40 convoys in a space for escort efficiency.\n4)Your host should require an admiral on all fleets\n\n§BFleet Command Limit§!\n\nEvery ship class has a 'command limit' value. A fleet (all taskforces underneath one admiral) can support at most 150 'command limit'. As long as you are at or below your command limit value for every fleet with an admiral leading it, then you will not have special debuffs applied to your admiral and country. Any admiral which is leading a fleet will appear in a list just right of the admiral portraits. This list contains useful information about your fleets so that you can easily adhere to this system.\n\nDestroyers/Submarines - 1 command limit\nLight Cruisers/Heavy Cruisers - 2 command limit\nBattleships and Battlecruisers - 6 command limit\nCarriers/Super Heavy Battleships - 8 command limit\nSuper Heavy Carriers - 14 command limit.\n\n§RIf you are over the cap you will deal 5% less damage, and for each Command Limit you are over the cap, your country will deal an additional 1% less naval damage.§! Command Limit is recalculated every week when there is no war, so you may need to wait to see the changes update. Once at war it will update the calculation daily."
+ 
+ GetAdmiralNameTitle_def:0 "[THIS.GetName]"
+ GetShipCount_def:0 "£fleet_texticon Ship Count: [?THIS.get_num_ships]"
+ GetCommandLimit_under_def:0 "£command_power_texticon §GCommand Limit: [?THIS.command_limit_used]/150§!"
+ GetCommandLimit_equal_def:0 "£command_power_texticon §HCommand Limit: [?THIS.command_limit_used]/150§!"
+ GetCommandLimit_over_def:0 "£command_power_texticon §RCommand Limit: [?THIS.command_limit_used]/150§!"
+ GetScreens_under_def:0 "§G[?THIS.screen_count]§!"
+ GetScreens_equal_def:0 "§H[?THIS.screen_count]§!"
+ GetScreens_over_def:0 "§R[?THIS.screen_count]§!"
+ GetScreensNeeded_under_def:0 "§GScreens Needed: [?THIS.needed_screen_count]§!"
+ GetScreensNeeded_equal_def:0 "§HScreens Needed: [?THIS.needed_screen_count]§!"
+ GetScreensNeeded_over_def:0 "§RScreens Needed: [?THIS.needed_screen_count]§!"
+ GetCommandLimit_disabled:0 "£command_power_texticon §RCmd Limit: §0(DISABLED)§!"
+ #GetCommandLimit_2:0 "[?THIS.fleet_overstack_naval_damage_factor]"
+ GetAdmiralPortrait_tt:0 "[GetAdmiralPortrait]"
+ 
+ cap_over_on:0 "§ROVER NAVAL CAP§!"

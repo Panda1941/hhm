@@ -1,0 +1,17 @@
+add_namespace = startingevent
+add_namespace = news
+
+# Navy Decision
+country_event = {
+	id = startingevent.1
+	title = startingevent.1.t
+	desc = startingevent.1.desc
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "I will just do patrol bombers"	
+	}
+}

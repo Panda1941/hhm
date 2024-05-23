@@ -8,7 +8,29 @@ templates_retards_ai = {
 		visible = { ROOT = { has_country_flag = host } }
 		complete_effect = { every_country = { add_equipment_to_stockpile = { type = convoy amount = 1 } } }
 	}
-	
+
+	explain_navy = {
+		icon = generic_propaganda
+
+		allowed = {
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = { country_event = { id = startingevent.1 } }
+		}
+	}
+
 	inf_templates = {
 	
 		available = { 

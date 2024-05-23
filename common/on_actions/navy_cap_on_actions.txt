@@ -1,0 +1,34 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = { 
+				limit = { 
+					OR = {
+						tag = GER
+						tag = ITA
+						tag = USA
+						tag = ENG
+						tag = JAP
+						tag = FRA
+						tag = SOV
+					}
+				}
+				country_event = { 
+					id = startingevent.1
+				}
+			}
+			every_country = {
+				add_dynamic_modifier = { modifier = fleet_overstack_dynamic_modifier  }
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+				HMP_check_fleet_size = yes 
+		}
+	}
+	
+}
+
