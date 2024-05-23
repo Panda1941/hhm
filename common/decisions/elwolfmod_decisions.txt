@@ -9,7 +9,7 @@ templates_retards_ai = {
 		complete_effect = { every_country = { add_equipment_to_stockpile = { type = convoy amount = 1 } } }
 	}
 
-	explain_navy = {
+	explain_navy = { 
 		icon = generic_propaganda
 
 		allowed = {
