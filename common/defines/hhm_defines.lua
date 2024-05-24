@@ -65,6 +65,10 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 	--Base cost to unlock a support slot
 
+-- Refit
+NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0			-- DEFAULT: 0.2 - Minimum fraction of an equipment type's base industry capacity cost to use when converting a naval equipment, such as through ship refitting.
+NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0		-- DEFAULT: 0.2 - Minimum fraction of an equipment type's base strategic resource cost to use when converting a naval equipment, such as through ship refitting.
+
 -- Free Designs
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0				    -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
@@ -220,7 +224,7 @@ NDefines.NMilitary.SLOWEST_SPEED = 4
 	
 
 -- Navy Balance
-NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.4
+NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.5
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 500
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 100
@@ -236,7 +240,7 @@ NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.1	                    				-- basic speed
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- org will clamped to this ratio on manual move
 NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0.1	-- org will clamped to this ratio on manual move
 
-NDefines.NNavy.BASE_JOIN_COMBAT_HOURS						= 4				-- the taskforces that wants to join existing combats will wait for at least this amount
+NDefines.NNavy.BASE_JOIN_COMBAT_HOURS						= 1				-- the taskforces that wants to join existing combats will wait for at least this amount
 NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION		= 4.0				-- low org of the ships will be factored in when a taskforce wants to join combat
 		
 NDefines.NNavy.BASE_POSITIONING												= 0.8	-- base value for positioning
@@ -245,18 +249,18 @@ NDefines.NNavy.RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR				= 0.1	-- mult
 NDefines.NNavy.MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION					= 0.1  -- will clamp the bonus that you get from detection
 	
 NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.25 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO				= 0.95  -- maximum penalty to get from larger fleets
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO				= 1  -- maximum penalty to get from larger fleets
 
-NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR				= 0.1  -- penalty if other side has stronger carrier air force 
-NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR 				= 0.3  -- max penalty from stronger carrier air force
+NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR				= 0  -- penalty if other side has stronger carrier air force 
+NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR 				= 0  -- max penalty from stronger carrier air force
 	
-NDefines.NNavy.POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS	= 0.4 -- each ship that joins the combat will have this penalty to be added into positioning
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS 			    = 0.2  -- the accumulated penalty from new ships will be clamped to this value
-NDefines.NNavy.POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS	    = 0.5-- the accumulated penalty from new ships will decay hourly by this value
+NDefines.NNavy.POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS	= 0 -- each ship that joins the combat will have this penalty to be added into positioning
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS 			    = 0  -- the accumulated penalty from new ships will be clamped to this value
+NDefines.NNavy.POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS	    = 1 -- the accumulated penalty from new ships will decay hourly by this value
 	
-NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING 					    = 0.95	-- damage penalty at 0% positioning
-NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING		    = 0.3  -- screening efficiency (screen to capital ratio) at 0% positioning
-NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				    = 0.4  -- AA penalty at 0% positioning
+NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING 					    = 1	-- damage penalty at 0% positioning
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING		    = 0.5  -- screening efficiency (screen to capital ratio) at 0% positioning
+NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				    = 0.5  -- AA penalty at 0% positioning
 NDefines.NNavy.SUBMARINE_REVEAL_ON_MINIMUM_POSITIONING                      = 1  -- submarine reveal change on 0% positioning 
 --------------------------------------------------------------------
 NDefines.NNavy.CARRIER_STACK_PENALTY = 6 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.

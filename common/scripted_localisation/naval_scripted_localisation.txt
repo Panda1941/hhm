@@ -619,7 +619,7 @@ defined_text = {
 
 }
 
-defined_text = { 
+defined_text = {
 	name = GetCommandLimit
 	text = {
 		trigger = { 
@@ -640,4 +640,28 @@ defined_text = {
 		localization_key = GetCommandLimit_over_def
 	}	
 
+}
+
+defined_text = {
+	name = GetCurrentPenalty
+	text = {
+		trigger = {
+			add_to_temp_variable = {
+				var = fleet_overstack_naval_damage_factor_tooltip
+				value = ROOT.fleet_overstack_naval_damage_factor
+			}
+			multiply_temp_variable = {
+				var = fleet_overstack_naval_damage_factor_tooltip
+				value = 100
+			}
+			check_variable = { fleet_overstack_naval_damage_factor_tooltip = 0 }
+		}
+		localization_key = GetCurrentPenalty_equal_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { fleet_overstack_naval_damage_factor_tooltip < 0 }
+		}
+		localization_key = GetCurrentPenalty_under_def
+	}
 }

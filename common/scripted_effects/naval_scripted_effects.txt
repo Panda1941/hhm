@@ -229,11 +229,10 @@ HMP_check_fleet_size = {
 				var = command_limit_penalty_calc
 				value = -0.01
 			}
-			add_to_variable ={
+			add_to_variable = {
 				var = PREV.PREV.fleet_overstack_naval_damage_factor
 				value =  command_limit_penalty_calc
 			}
-		
 		}
 	}
 	

@@ -41,7 +41,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "admirals_with_fleets_list"
 		position = { x = 0 y = 0}	
-		size = { width = 470 height = 90 }
+		size = { width = 470 height = 120 }
 		background = {
 			name = "Background"		
 			quadTextureSprite = "GFX_tiled_plain_bg"
@@ -78,6 +78,16 @@ guiTypes = {
 			position = { x = 50 y = 45 }
 			font = "hoi_18mbs"
 			text = "[GetCommandLimit]" 
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "GetCurrentPenalty"
+			position = { x = 50 y = 65 }
+			font = "hoi_18mbs"
+			text = "[GetCurrentPenalty]" 
 			format = left
 			maxWidth = 200
 			maxHeight = 24
@@ -164,18 +174,8 @@ guiTypes = {
 			fixedsize = yes		
 		}
 		instantTextBoxType = {
-			name = "shcv"
-			position = { x = 370 y = 45 }
-			font = "hoi_18mbs"
-			text = "SHCV: [?shcv_count]" 
-			format = left
-			maxWidth = 65
-			maxHeight = 24
-			fixedsize = yes		
-		}
-		instantTextBoxType = {
 			name = "Capitals"
-			position = { x = 50 y = 65 }
+			position = { x = 50 y = 85 }
 			font = "hoi_18mbs"
 			text = "Capitals: [?capital_count]" 
 			format = left
@@ -185,7 +185,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "Screens Have"
-			position = { x = 160 y = 65 } 
+			position = { x = 160 y = 85 } 
 			font = "hoi_18mbs"
 			text = "Screens: [GetScreenCount]" 
 			format = left
@@ -195,7 +195,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "Screens Needed"
-			position = { x = 270 y = 65 }
+			position = { x = 270 y = 85 }
 			font = "hoi_18mbs"
 			text = "[GetScreensNeededCount]" 
 			format = left
@@ -203,7 +203,6 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes		
 		}	
-
 	}
 
 	containerWindowType = {
