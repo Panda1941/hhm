@@ -705,7 +705,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			engine_type_slot = engine_1_3x
-			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_3 = lmg_defense_turret
 		}
 		obsolete = yes
 		icon = "GFX_ITA_early_bomber_old_medium"
@@ -717,7 +717,7 @@ if = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = bomb_locks
 			engine_type_slot = engine_1_3x
-			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_3 = lmg_defense_turret_2x
 		}
 		obsolete = yes
 		icon = "GFX_ITA_early_bomber_old_medium"
@@ -729,7 +729,7 @@ if = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
 			engine_type_slot = engine_1_3x
-			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_3 = lmg_defense_turret_2x
 		}
 		icon = "GFX_ITA_early_bomber_medium"
 	}
@@ -740,7 +740,7 @@ if = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
 			engine_type_slot = engine_2_3x
-			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_3 = lmg_defense_turret_2x
 		}
 		icon = "GFX_ITA_naval_bomber1_medium"
 	}

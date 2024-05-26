@@ -546,7 +546,7 @@ if = {
 		name = "Ki-10"
 		type = small_plane_airframe_0
 		modules = {
-			fixed_main_weapon_slot = light_mg_2x
+			fixed_main_weapon_slot = light_mg_4x
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
 		}
@@ -557,7 +557,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
 			engine_type_slot = engine_1_2x
-			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_3 = lmg_defense_turret
 		}
 		icon = "GFX_JAP_CAS1_medium"
 	}
@@ -567,7 +567,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			engine_type_slot = engine_1_2x
-			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_3 = lmg_defense_turret
 		}
 	}
 	create_equipment_variant = {
@@ -576,7 +576,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
 			engine_type_slot = engine_1_1x
-			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_3 = lmg_defense_turret
 		}
 		icon = "GFX_JAP_CAS1_medium"
 	}
