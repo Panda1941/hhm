@@ -10,7 +10,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 11
+			thrust = 12
 			build_cost_ic = 22
 			fuel_consumption = 0.24
 		}
@@ -22,7 +22,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 19
+			thrust = 20
 			build_cost_ic = 30
 			fuel_consumption = 0.4
 		}
@@ -34,7 +34,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 23
+			thrust = 24
 			build_cost_ic = 44
 			fuel_consumption = 0.6
 		}
@@ -58,7 +58,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 41
+			thrust = 42
 			build_cost_ic = 76
 			fuel_consumption = 1.0
 		}
@@ -71,7 +71,7 @@ equipment_modules = {
 		parent = engine_1_1x
 
 		add_stats = {
-			thrust = 16
+			thrust = 18
 			build_cost_ic = 26
 			fuel_consumption = 0.24
 		}
@@ -93,7 +93,7 @@ equipment_modules = {
 		parent = engine_1_2x
 
 		add_stats = {
-			thrust = 25
+			thrust = 26
 			build_cost_ic = 40
 			fuel_consumption = 0.4
 		}
@@ -180,7 +180,7 @@ equipment_modules = {
 		parent = engine_2_1x
 
 		add_stats = {
-			thrust = 25
+			thrust = 26
 			build_cost_ic = 34
 			fuel_consumption = 0.24
 		}
@@ -202,7 +202,7 @@ equipment_modules = {
 		parent = engine_2_2x
 
 		add_stats = {
-			thrust = 32
+			thrust = 33
 			build_cost_ic = 50
 			fuel_consumption = 0.4
 		}
