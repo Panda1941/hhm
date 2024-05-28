@@ -1218,8 +1218,8 @@ equipment_modules = {
 				naval_kamikaze
 			}
 			add_stats = {
-				naval_strike_attack = 6
-				naval_strike_targetting = 10
+				naval_strike_attack = 14
+				naval_strike_targetting = 11
 			}
 		}
 		dismantle_cost_ic = 4
