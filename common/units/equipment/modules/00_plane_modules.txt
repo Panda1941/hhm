@@ -696,7 +696,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 4
-			weight = 4
+			weight = 6
 			air_agility = -10
 		}
 		xp_cost = 0
@@ -737,7 +737,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 8
 			air_agility = -15
-			weight = 6
+			weight = 9
 		}
 		
 		allow_mission_type = {
@@ -777,7 +777,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 			air_agility = -15
-			weight = 6
+			weight = 9
 		}
 		
 		allow_mission_type = {
@@ -816,7 +816,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 8
-			weight = 2
+			weight = 3
 		}
 		xp_cost = 0
 		allow_mission_type = {
@@ -844,7 +844,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 6
 			air_agility = -10
-			weight = 6
+			weight = 9
 		}
 		xp_cost = 0
 		allow_mission_type = {
@@ -955,7 +955,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 8
-			weight = 8
+			weight = 12
 			air_agility = -20
 		}
 		xp_cost = 0
@@ -983,7 +983,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 10
-			weight = 10
+			weight = 16
 			air_agility = -20
 		}
 		xp_cost = 0
@@ -1011,7 +1011,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 12
-			weight = 12
+			weight = 20
 			air_agility = -20
 		}
 		xp_cost = 0
@@ -1326,7 +1326,7 @@ equipment_modules = {
 			}
 			add_stats = {
 				air_ground_attack = 2
-				air_defence = 2
+				air_defence = 4
 			}
 		}
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
