@@ -1054,10 +1054,10 @@ equipment_modules = {
 				port_strike
 			}
 			add_stats = {
-				naval_strike_attack = 10
+				naval_strike_attack = 9
 			}
 			add_average_stats = {
-				naval_strike_targetting = 5
+				naval_strike_targetting = 6
 			}
 		}
 		dismantle_cost_ic = 1.5
@@ -1086,10 +1086,10 @@ equipment_modules = {
 				port_strike
 			}
 			add_stats = {
-				naval_strike_attack = 14
+				naval_strike_attack = 12
 			}
 			add_average_stats = {
-				naval_strike_targetting = 9
+				naval_strike_targetting = 10
 			}
 		}
 		dismantle_cost_ic = 1.5
@@ -1118,10 +1118,10 @@ equipment_modules = {
 				port_strike
 			}
 			add_stats = {
-				naval_strike_attack = 20
+				naval_strike_attack = 15
 			}
 			add_average_stats = {
-				naval_strike_targetting = 12
+				naval_strike_targetting = 13
 			}
 		}
 		dismantle_cost_ic = 1.5
