@@ -1266,6 +1266,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			air_range = 0.4
+			maximum_speed = -0.01	# Due to extra weight, the speed is lower
 		}
 		xp_cost = 0
 		dismantle_cost_ic = 0.5
@@ -1302,6 +1303,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			air_range = 0.2
+			maximum_speed = -0.02	# Would be less air dynamic, so slower
 		}
 		xp_cost = 0
 	}
@@ -1456,6 +1458,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			air_range = 0.4
+			maximum_speed = -0.02
 		}
 		xp_cost = 0
 		dismantle_cost_ic = 1
@@ -1545,7 +1548,7 @@ equipment_modules = {
 			weight = 7
 		}
 		multiply_stats = {
-			air_range = -0.05
+			maximum_speed = -0.05
 		}
 		xp_cost = 0
 		dismantle_cost_ic = 1
@@ -1564,6 +1567,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			air_range = 0.4
+			maximum_speed = -0.02
 		}
 		xp_cost = 0
 		dismantle_cost_ic = 1.5
