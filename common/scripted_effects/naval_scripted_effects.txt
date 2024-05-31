@@ -47,11 +47,6 @@ HMP_check_fleet_size = {
 			var = shbb_count
 			value = num_ships_with_type@sh_battleship
 		}
-		clear_variable = shcv_count 
-		add_to_variable = { 
-			var = shcv_count
-			value = num_ships_with_type@sh_carrier
-		}
 
 		# New stuff I added
 		clear_variable = capital_count 
@@ -149,7 +144,7 @@ HMP_check_fleet_size = {
 			value = battleship_count 
 		}
 		multiply_temp_variable  = { 
-			var =  battleship_count_temp value = 6
+			var =  battleship_count_temp value = 4
 		}
 		add_to_temp_variable = {
 			var = command_limit_used_temp
@@ -161,7 +156,7 @@ HMP_check_fleet_size = {
 			value = battlecruiser_count 
 		}
 		multiply_temp_variable  = { 
-			var =  battlecruiser_count_temp value = 6
+			var =  battlecruiser_count_temp value = 4
 		}
 		add_to_temp_variable = {
 			var = command_limit_used_temp
@@ -173,7 +168,7 @@ HMP_check_fleet_size = {
 			value = carrier_count 
 		}
 		multiply_temp_variable  = { 
-			var = carrier_count_temp value = 8
+			var = carrier_count_temp value = 6
 		}
 		add_to_temp_variable = {
 			var = command_limit_used_temp
@@ -184,22 +179,11 @@ HMP_check_fleet_size = {
 			value = shbb_count
 		}
 		multiply_temp_variable = {
-			var = shbb_count_temp value = 8
+			var = shbb_count_temp value = 6
 		}
 		add_to_temp_variable = {
 			var = command_limit_used_temp
 			value = shbb_count_temp
-		}
-		set_temp_variable ={
-			var = shcv_count_temp
-			value = shcv_count
-		}
-		multiply_temp_variable = {
-			var = shcv_count_temp value = 14
-		}
-		add_to_temp_variable = {
-			var = command_limit_used_temp
-			value = shcv_count_temp
 		}
 		set_temp_variable = {
 			var = submarine_count_temp

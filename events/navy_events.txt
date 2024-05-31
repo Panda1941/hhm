@@ -12,6 +12,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "I will just do patrol bombers"	
+		name = "I will just make patrol bombers"	
 	}
 }
