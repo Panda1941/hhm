@@ -207,6 +207,7 @@ ideas = {
 				production_speed_steel_refinery_factor = 0.1
 				production_speed_aluminium_refinery_factor = 0.1
 				production_speed_advanced_steel_refinery_factor = 0.1
+				production_speed_rail_way_factor = 0.1
 			}
 		}
 
@@ -255,6 +256,7 @@ ideas = {
 				production_speed_steel_refinery_factor = 0.1
 				production_speed_aluminium_refinery_factor = 0.1
 				production_speed_advanced_steel_refinery_factor = 0.1
+				production_speed_rail_way_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 			}
