@@ -2921,41 +2921,6 @@ focus_tree = {
 			}
 
 			add_ideas = { GER_winterdebuff }
-
-			hidden_effect = {
-				#####################################last line modifier
-				195 = { add_dynamic_modifier = { modifier = lastline_state}}
-				244 = { add_dynamic_modifier = { modifier = lastline_state}}
-				264 = { add_dynamic_modifier = { modifier = lastline_state}}
-				248 = { add_dynamic_modifier = { modifier = lastline_state}}
-				247 = { add_dynamic_modifier = { modifier = lastline_state}}
-				351 = { add_dynamic_modifier = { modifier = lastline_state}}
-				219 = { add_dynamic_modifier = { modifier = lastline_state}}
-				253 = { add_dynamic_modifier = { modifier = lastline_state}}
-				254 = { add_dynamic_modifier = { modifier = lastline_state}}
-				252 = { add_dynamic_modifier = { modifier = lastline_state}}
-				255 = { add_dynamic_modifier = { modifier = lastline_state}}
-				257 = { add_dynamic_modifier = { modifier = lastline_state}}
-				217 = { add_dynamic_modifier = { modifier = lastline_state}}
-				265 = { add_dynamic_modifier = { modifier = lastline_state}}
-				829 = { add_dynamic_modifier = { modifier = lastline_state}}
-				410 = { add_dynamic_modifier = { modifier = lastline_state}}
-				239 = { add_dynamic_modifier = { modifier = lastline_state}}
-				250 = { add_dynamic_modifier = { modifier = lastline_state}}
-				251 = { add_dynamic_modifier = { modifier = lastline_state}}
-				249 = { add_dynamic_modifier = { modifier = lastline_state}}
-				256 = { add_dynamic_modifier = { modifier = lastline_state}}
-				833 = { add_dynamic_modifier = { modifier = lastline_state}}
-				401 = { add_dynamic_modifier = { modifier = lastline_state}}
-				407 = { add_dynamic_modifier = { modifier = lastline_state}}
-				406 = { add_dynamic_modifier = { modifier = lastline_state}}
-				652 = { add_dynamic_modifier = { modifier = lastline_state}}
-				651 = { add_dynamic_modifier = { modifier = lastline_state}}
-				339 = { add_dynamic_modifier = { modifier = lastline_state}}
-				400 = { add_dynamic_modifier = { modifier = lastline_state}}
-				398 = { add_dynamic_modifier = { modifier = lastline_state}}
-				399 = { add_dynamic_modifier = { modifier = lastline_state}}
-			}	
 		}
 	}
 
