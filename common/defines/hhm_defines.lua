@@ -144,12 +144,12 @@ NDefines.NMilitary.OUT_OF_SUPPLY_SPEED = -0.6					--0.8
 NDefines.NMilitary.OUT_OF_FUEL_SPEED_MULT = 0.4					--0.4
 NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = 0.00	--0.05
 
--- RADARS
-NDefines.NBuildings.RADAR_RANGE_BASE = 100
-NDefines.NBuildings.RADAR_RANGE_MIN = 100
-NDefines.NBuildings.RADAR_RANGE_MAX = 100
-NDefines.NBuildings.RADAR_INTEL_EFFECT = 1000
-NDefines.NIntel.RADAR_LEVEL_INTEL_FACTOR = 10
+-- RADAR
+
+NDefines.NIntel.STATIC_INTEL_SOURCE_RADAR_MAXIMUMS = { 10.0, 255.0, 20.0, 20.0} -- Vanilla 10/10/20/20
+NDefines.NIntel.RADAR_BASE_INTEL_VALUES_FOR_COVERED_LAND_PROVINCES = { 5.0, 255.0, 0.0, 12.0} -- Vanilla 5/5/0/12
+NDefines.NIntel.RADAR_BASE_INTEL_VALUES_FOR_COUNTRY_COVERAGE_PERCENTAGE = { 9.0, 4.5, 0.0, 18.0} -- Vanilla 9/9/0/18
+
 
 --Supply and combat changes
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.25 |  attack combat penalty for attacker if out of supply
