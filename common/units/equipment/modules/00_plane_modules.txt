@@ -759,7 +759,7 @@ equipment_modules = {
 				naval_bomber
 			}
 			add_stats = {
-				naval_strike_attack = 3
+				naval_strike_attack = 4
 			}
 			add_average_stats = {
 				naval_strike_targetting = 4
@@ -799,7 +799,7 @@ equipment_modules = {
 				naval_bomber
 			}
 			add_stats = {
-				naval_strike_attack = 8
+				naval_strike_attack = 4
 			}
 			add_average_stats = {
 				naval_strike_targetting = 12
