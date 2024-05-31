@@ -1067,7 +1067,7 @@ equipments = {
 
 		module_count_limit = {
 			module = torpedo_mounting
-			count < 3
+			count < 2
 		}
 
 		module_count_limit = {
