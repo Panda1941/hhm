@@ -742,9 +742,13 @@ if = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-		add_ideas = tot_economic_mobilisation
-		add_ideas = closed_economy
-		add_ideas = FRA_la_deluge 
+			add_ideas = tot_economic_mobilisation
+			add_ideas = closed_economy
+			add_ideas = FRA_la_deluge 
+			add_timed_idea = {
+				idea = FRA_a_new_world
+				days = 120
+			}
 		}
 	}
 	focus = {

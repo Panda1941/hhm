@@ -11,7 +11,7 @@ state={
 		}
 		set_state_flag = JAP_controls
 		owner = JAP
-		add_core_of = JAP
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 2
 			air_base = 1

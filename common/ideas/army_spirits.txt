@@ -655,6 +655,7 @@ ideas = {
 		operational_reserve_spirit = {
 			ledger = army
 			available = { has_tech = mass_assault }
+			visible = { always = no }
 			modifier = {
 				army_strength_factor = 0.2
 				cas_damage_reduction = 0.05

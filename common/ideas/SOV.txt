@@ -714,33 +714,6 @@ ideas = {
 			}
 		}
 
-		SOV_adaptable_army = {
-			name = "An Adaptable Army"
-
-			picture = generic_communist_army
-
-			removal_cost = -1
-
-			allowed = {
-				always = no # Added via event
-			}
-
-			allowed_civil_war = {
-				tag = SOV #Main SOV
-			}
-
-			modifier = {
-				heat_attrition_factor = -0.1
-				winter_attrition_factor = -0.1
-				terrain_penalty_reduction = 0.05
-
-				
-				army_org_regain = 0.05
-				army_org_factor = 0.05
-				communism_drift = 0.08
-			}
-		}
-
 		SOV_lessons_of_war = {
 			name = "Lessons of War"
 
@@ -782,6 +755,34 @@ ideas = {
 				communism_drift = 0.08
 			}
 		}
+
+		SOV_adaptable_army = {
+			name = "An Adaptable Army"
+
+			picture = generic_communist_army
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				tag = SOV #Main SOV
+			}
+
+			modifier = {
+				heat_attrition_factor = -0.1
+				winter_attrition_factor = -0.1
+				terrain_penalty_reduction = 0.05
+
+				
+				army_org_regain = 0.05
+				army_org_factor = 0.05
+				communism_drift = 0.08
+			}
+		}
+
 		SOV_expert_camouflage = {
 			name = "Experts In Camouflage"
 
@@ -799,7 +800,7 @@ ideas = {
 
 			modifier = {
 				dig_in_speed_factor = 0.1
-				cas_damage_reduction = 0.05
+				max_dig_in = 1
 
 				
 				heat_attrition_factor = -0.1

@@ -355,6 +355,20 @@ operations = {
 					count = 20
 				}
 			}
+
+			if = {
+				limit = {
+					date < 1937.06.01
+				}
+				capital_scope = {
+					create_unit = {
+						allow_spawning_on_enemy_provs = no
+						division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
+						owner = ROOT
+						count = 10
+					}
+				}
+			}
 		}
 	}
 	
@@ -380,6 +394,20 @@ operations = {
 					count = 20
 				}
 			}
+
+			if = {
+				limit = {
+					date < 1938.06.01
+				}
+				capital_scope = {
+					create_unit = {
+						allow_spawning_on_enemy_provs = no
+						division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
+						owner = ROOT
+						count = 10
+					}
+				}
+			}
 		}
 	}
 	
@@ -403,6 +431,20 @@ operations = {
 					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
 					owner = ROOT
 					count = 30
+				}
+			}
+
+			if = {
+				limit = {
+					date < 1938.09.01
+				}
+				capital_scope = {
+					create_unit = {
+						allow_spawning_on_enemy_provs = no
+						division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
+						owner = ROOT
+						count = 15
+					}
 				}
 			}
 		}

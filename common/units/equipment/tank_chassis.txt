@@ -141,7 +141,7 @@ equipments = {
 		maximum_speed = 8
 		build_cost_ic = 1
 		reliability = 0.8
-		hardness = 0.6
+		hardness = 0.5
 		armor_value = 5
 		resources = {
 			steel = 1
@@ -446,7 +446,7 @@ equipments = {
 		reliability = 0.90
 		armor_value = 0
 		defense = 1
-		hardness = 0.70
+		hardness = 0.55
 		resources = {
 			steel = 1
 		}
@@ -485,6 +485,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		armor_value = 30
+		hardness = 0.65
 		build_cost_ic = 9
 	}
 	medium_tank_chassis_2 = {
@@ -752,7 +753,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 25
 		defense = 4
-		hardness = 0.8
+		hardness = 0.7
 		resources = {
 			steel = 1
 		}
@@ -790,6 +791,7 @@ equipments = {
 		module_slots = inherit
 		build_cost_ic = 26
 		armor_value = 59
+		hardness = 0.8
 		
 		module_slots = {
 

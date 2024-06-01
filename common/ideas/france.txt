@@ -465,7 +465,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-							production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
@@ -488,9 +488,30 @@ ideas = {
 			}
 		}
 		
+		FRA_a_new_world = {
+			name = "A New World"
+			picture = FRA_down_marianne
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				original_tag = FRA
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 1
+				consumer_goods_factor = -0.5
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
 		
 		fra_legit_idea = {
-					picture = generic_disjointed_gov
+			picture = generic_disjointed_gov
 			allowed = {	original_tag = FRA	}
 			allowed_civil_war = {	original_tag = FRA	}
 			removal_cost = -1
