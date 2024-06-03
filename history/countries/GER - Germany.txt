@@ -75,8 +75,8 @@ set_technology = {
 	pack = 1
 	interwar_antitank = 1
 	
-	electronic_mechanical_engineering = 1
-	radio = 1
+	#electronic_mechanical_engineering = 1
+	#radio = 1
 }
 if = {
 	limit = {
