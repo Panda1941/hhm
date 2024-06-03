@@ -4,9 +4,11 @@ state={
 	manpower = 17835200
 	state_category = city
 	resources={
-		tungsten=8 # was: 10
-		steel= 28 # was: 20
-		chromium = 12 # was: 4
+		tungsten=13 # was: 10
+		steel= 45 # was: 20
+		chromium = 14 # was: 4
+		oil=2.000
+		aluminium=2 # was: 2
 	}
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
