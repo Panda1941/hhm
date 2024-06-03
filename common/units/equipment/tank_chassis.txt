@@ -24,6 +24,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament_tier_1
+					tank_small_main_armament_tier_2
 					tank_flamethrower
 				}
 			}
@@ -187,6 +188,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_small_main_armament_tier_1
 					tank_small_main_armament_tier_2
+					tank_small_main_armament_tier_3
 					tank_flamethrower
 				}
 			}
@@ -226,6 +228,7 @@ equipments = {
 					tank_small_main_armament_tier_1
 					tank_small_main_armament_tier_2
 					tank_small_main_armament_tier_3
+					tank_small_main_armament_tier_4
 					tank_flamethrower
 				}
 			}
@@ -266,6 +269,7 @@ equipments = {
 					tank_small_main_armament_tier_2
 					tank_small_main_armament_tier_3
 					tank_small_main_armament_tier_4
+					tank_small_main_armament_tier_5
 					tank_flamethrower
 				}
 			}
@@ -418,6 +422,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_medium_main_armament_tier_1
+					tank_medium_main_armament_tier_2
 					tank_flamethrower
 				}
 			}
@@ -584,6 +589,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_medium_main_armament_tier_1
 					tank_medium_main_armament_tier_2
+					tank_medium_main_armament_tier_3
 					tank_flamethrower
 				}
 			}
@@ -623,6 +629,7 @@ equipments = {
 					tank_medium_main_armament_tier_1
 					tank_medium_main_armament_tier_2
 					tank_medium_main_armament_tier_3
+					tank_medium_main_armament_tier_4
 					tank_flamethrower
 				}
 			}
@@ -673,6 +680,7 @@ equipments = {
 					tank_medium_main_armament_tier_2
 					tank_medium_main_armament_tier_3
 					tank_medium_main_armament_tier_4
+					tank_medium_main_armament_tier_5
 					tank_flamethrower
 				}
 			}
@@ -725,6 +733,7 @@ equipments = {
 					tank_medium_main_armament_tier_3
 					tank_medium_main_armament_tier_4
 					tank_medium_main_armament_tier_5
+					tank_medium_main_armament_tier_6
 					tank_flamethrower
 				}
 			}
@@ -778,6 +787,7 @@ equipments = {
 					tank_medium_main_armament_tier_3
 					tank_medium_main_armament_tier_4
 					tank_medium_main_armament_tier_5
+					tank_medium_main_armament_tier_6
 					tank_flamethrower
 				}
 			}
@@ -814,6 +824,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_heavy_main_armament_tier_1
+					tank_heavy_main_armament_tier_2
 					tank_flamethrower
 				}
 			}
@@ -981,6 +992,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_heavy_main_armament_tier_1
 					tank_heavy_main_armament_tier_2
+					tank_heavy_main_armament_tier_3
 					tank_flamethrower
 				}
 			}
