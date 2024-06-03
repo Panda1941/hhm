@@ -23,7 +23,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament
+					tank_small_main_armament_tier_1
 					tank_flamethrower
 				}
 			}
@@ -174,7 +174,6 @@ equipments = {
 		archetype = light_tank_chassis
 		parent = light_tank_chassis_0
 		priority = 2000
-		module_slots = inherit
 		maximum_speed = 8.0
 		build_cost_ic = 2
 		reliability = 0.85
@@ -183,6 +182,22 @@ equipments = {
 		
 		
 		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament_tier_1
+					tank_small_main_armament_tier_2
+					tank_flamethrower
+				}
+			}
+			
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
 		}
 	}
 
@@ -194,7 +209,6 @@ equipments = {
 		archetype = light_tank_chassis
 		parent = light_tank_chassis_1
 		priority = 2000
-		module_slots = inherit
 		build_cost_ic = 3
 		maximum_speed = 8.0
 		reliability = 0.95
@@ -205,6 +219,25 @@ equipments = {
 			steel = 1
 		}
 		
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament_tier_1
+					tank_small_main_armament_tier_2
+					tank_small_main_armament_tier_3
+					tank_flamethrower
+				}
+			}
+			
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+		}
 	}
 
 	light_tank_chassis_3 = {
@@ -215,7 +248,6 @@ equipments = {
 		archetype = light_tank_chassis
 		parent = light_tank_chassis_2
 		priority = 2000
-		module_slots = inherit
 		build_cost_ic = 4
 		fuel_consumption = 0.25
 		maximum_speed = 8.0
@@ -227,6 +259,25 @@ equipments = {
 			steel = 2
 		}
 		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament_tier_1
+					tank_small_main_armament_tier_2
+					tank_small_main_armament_tier_3
+					tank_small_main_armament_tier_4
+					tank_flamethrower
+				}
+			}
+
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+
 
             special_type_slot_2 = {
 				required = no
@@ -236,7 +287,6 @@ equipments = {
 					tank_secondary_turret
 				}
 			}
-			
 		}
 	}
 	
@@ -248,7 +298,6 @@ equipments = {
 		archetype = light_tank_chassis
 		parent = light_tank_chassis_3
 		priority = 2000
-		module_slots = inherit
 		build_cost_ic = 5
 		fuel_consumption = 0.25
 		maximum_speed = 8.0
@@ -261,6 +310,27 @@ equipments = {
 		}	
 		
 		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament_tier_1
+					tank_small_main_armament_tier_2
+					tank_small_main_armament_tier_3
+					tank_small_main_armament_tier_4
+					tank_small_main_armament_tier_5
+					tank_flamethrower
+				}
+			}
+
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+
 
 			special_type_slot_3 = {
 				required = no
@@ -280,7 +350,6 @@ equipments = {
 		archetype = light_tank_chassis
 		parent = light_tank_chassis_4
 		priority = 2000
-		module_slots = inherit
 		build_cost_ic = 8
 		fuel_consumption = 0.25
 		maximum_speed = 8.0
@@ -293,6 +362,28 @@ equipments = {
 		}
 
         module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament_tier_1
+					tank_small_main_armament_tier_2
+					tank_small_main_armament_tier_3
+					tank_small_main_armament_tier_4
+					tank_small_main_armament_tier_5
+					tank_flamethrower
+				}
+			}
+
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+
 
 			special_type_slot_4 = {
 				required = no
@@ -326,7 +417,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament
+					tank_medium_main_armament_tier_1
 					tank_flamethrower
 				}
 			}
@@ -483,10 +574,28 @@ equipments = {
 		archetype = medium_tank_chassis
 		parent = medium_tank_chassis_0
 		priority = 2000
-		module_slots = inherit
 		armor_value = 30
 		hardness = 0.65
 		build_cost_ic = 9
+		
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_medium_main_armament_tier_1
+					tank_medium_main_armament_tier_2
+					tank_flamethrower
+				}
+			}
+
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+		}
 	}
 	medium_tank_chassis_2 = {
 		abbreviation = "mt2"
@@ -496,7 +605,6 @@ equipments = {
 		parent = medium_tank_chassis_1
 		archetype = medium_tank_chassis
 		priority = 2000
-		module_slots = inherit
 		fuel_consumption = 0.25
 		maximum_speed = 6
 		build_cost_ic = 10
@@ -509,6 +617,23 @@ equipments = {
 		}
 		
 		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_medium_main_armament_tier_1
+					tank_medium_main_armament_tier_2
+					tank_medium_main_armament_tier_3
+					tank_flamethrower
+				}
+			}
+
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
 
             special_type_slot_2 = {
 				required = no
@@ -517,7 +642,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 				}
-			}		
+			}	
 		}
 	}
 
@@ -529,7 +654,6 @@ equipments = {
 		parent = medium_tank_chassis_2
 		archetype = medium_tank_chassis
 		priority = 2000
-		module_slots = inherit
 		fuel_consumption = 1.25
 		maximum_speed = 6
 		build_cost_ic = 11
@@ -540,7 +664,26 @@ equipments = {
 		resources = {
 			steel = 3
 		}
+		
 		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_medium_main_armament_tier_1
+					tank_medium_main_armament_tier_2
+					tank_medium_main_armament_tier_3
+					tank_medium_main_armament_tier_4
+					tank_flamethrower
+				}
+			}
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+            special_type_slot_2 = inherit
 
 			special_type_slot_3 = {
 				required = no
@@ -550,7 +693,6 @@ equipments = {
 					tank_radio_module
 				}
 			}
-			
 		}
 	}
 	
@@ -575,6 +717,26 @@ equipments = {
 		}
 		
 		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_medium_main_armament_tier_1
+					tank_medium_main_armament_tier_2
+					tank_medium_main_armament_tier_3
+					tank_medium_main_armament_tier_4
+					tank_medium_main_armament_tier_5
+					tank_flamethrower
+				}
+			}
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+            special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 
 			special_type_slot_4 = {
 				required = no
@@ -584,9 +746,7 @@ equipments = {
 					tank_radio_module
 				}
 			}
-			
 		}
-		
 	}
 	
 	medium_tank_chassis_7 = {
@@ -609,6 +769,29 @@ equipments = {
 		resources = {
 			steel = 3
 		}
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_medium_main_armament_tier_1
+					tank_medium_main_armament_tier_2
+					tank_medium_main_armament_tier_3
+					tank_medium_main_armament_tier_4
+					tank_medium_main_armament_tier_5
+					tank_flamethrower
+				}
+			}
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+            special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
 	}
 
 	heavy_tank_chassis = {
@@ -630,7 +813,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament
+					tank_heavy_main_armament_tier_1
 					tank_flamethrower
 				}
 			}
@@ -788,12 +971,26 @@ equipments = {
 		archetype = heavy_tank_chassis
 		parent = heavy_tank_chassis_0
 		priority = 2000
-		module_slots = inherit
 		build_cost_ic = 26
 		armor_value = 59
 		hardness = 0.8
 		
 		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_heavy_main_armament_tier_1
+					tank_heavy_main_armament_tier_2
+					tank_flamethrower
+				}
+			}
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
 
 			special_type_slot_2 = {
 				required = no
@@ -803,7 +1000,6 @@ equipments = {
 					tank_radio_module
 				}
 			}
-
 		}
 	}
 
@@ -815,7 +1011,6 @@ equipments = {
 		archetype = heavy_tank_chassis
 		parent = heavy_tank_chassis_1
 		priority = 2000
-		module_slots = inherit
 		build_cost_ic = 30
 		maximum_speed = 4
 		fuel_consumption = 2.75
@@ -829,6 +1024,23 @@ equipments = {
 		}
 		
 		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_heavy_main_armament_tier_1
+					tank_heavy_main_armament_tier_2
+					tank_heavy_main_armament_tier_3
+					tank_flamethrower
+				}
+			}
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
 
 			special_type_slot_3 = {
 				required = no
@@ -849,7 +1061,6 @@ equipments = {
 		archetype = heavy_tank_chassis
 		parent = heavy_tank_chassis_2
 		priority = 2000
-		module_slots = inherit
 		build_cost_ic = 34
 		maximum_speed = 4
 		fuel_consumption = 3.25
@@ -863,6 +1074,24 @@ equipments = {
 		}
 		
 		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_heavy_main_armament_tier_1
+					tank_heavy_main_armament_tier_2
+					tank_heavy_main_armament_tier_3
+					tank_flamethrower
+				}
+			}
+
+			turret_type_slot = inherit
+			suspension_type_slot = inherit
+			roadwheels_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 
 			special_type_slot_4 = {
 				required = no
@@ -895,7 +1124,12 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament
+					tank_medium_main_armament_tier_1
+					tank_medium_main_armament_tier_2
+					tank_medium_main_armament_tier_3
+					tank_medium_main_armament_tier_4
+					tank_medium_main_armament_tier_5
+					tank_medium_main_armament_tier_6
 				}
 			}
 
@@ -1075,7 +1309,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament
+					tank_super_heavy_main_armament
 				}
 			}
 
@@ -1255,7 +1489,10 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament
+					tank_small_main_armament_tier_1
+					tank_small_main_armament_tier_2
+					tank_small_main_armament_tier_3
+					tank_small_main_armament_tier_4
 				}
 			}
 

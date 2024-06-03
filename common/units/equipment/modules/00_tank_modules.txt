@@ -333,7 +333,12 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
+				tank_medium_main_armament_tier_1
+				tank_medium_main_armament_tier_2
+				tank_medium_main_armament_tier_3
+				tank_medium_main_armament_tier_4
+				tank_medium_main_armament_tier_5
+				tank_medium_main_armament_tier_6
 			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
@@ -393,7 +398,12 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
+				tank_medium_main_armament_tier_1
+				tank_medium_main_armament_tier_2
+				tank_medium_main_armament_tier_3
+				tank_medium_main_armament_tier_4
+				tank_medium_main_armament_tier_5
+				tank_medium_main_armament_tier_6
 			}
 		}
 		add_stats = {
@@ -413,7 +423,12 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
+				tank_medium_main_armament_tier_1
+				tank_medium_main_armament_tier_2
+				tank_medium_main_armament_tier_3
+				tank_medium_main_armament_tier_4
+				tank_medium_main_armament_tier_5
+				tank_medium_main_armament_tier_6
 			}
 		}
 		add_stats = {
@@ -436,8 +451,16 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
-				tank_heavy_main_armament
+				tank_medium_main_armament_tier_1
+				tank_medium_main_armament_tier_2
+				tank_medium_main_armament_tier_3
+				tank_medium_main_armament_tier_4
+				tank_medium_main_armament_tier_5
+				tank_medium_main_armament_tier_6
+
+				tank_heavy_main_armament_tier_1
+				tank_heavy_main_armament_tier_2
+				tank_heavy_main_armament_tier_3
 			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
@@ -471,8 +494,12 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
-				tank_heavy_main_armament
+				tank_medium_main_armament_tier_1
+				tank_medium_main_armament_tier_2
+				tank_medium_main_armament_tier_3
+				tank_medium_main_armament_tier_4
+				tank_medium_main_armament_tier_5
+				tank_medium_main_armament_tier_6
 			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
@@ -507,8 +534,16 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
-				tank_heavy_main_armament
+				tank_medium_main_armament_tier_1
+				tank_medium_main_armament_tier_2
+				tank_medium_main_armament_tier_3
+				tank_medium_main_armament_tier_4
+				tank_medium_main_armament_tier_5
+				tank_medium_main_armament_tier_6
+
+				tank_heavy_main_armament_tier_1
+				tank_heavy_main_armament_tier_2
+				tank_heavy_main_armament_tier_3
 			}
 		}
 
@@ -548,8 +583,16 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
-				tank_heavy_main_armament
+				tank_medium_main_armament_tier_1
+				tank_medium_main_armament_tier_2
+				tank_medium_main_armament_tier_3
+				tank_medium_main_armament_tier_4
+				tank_medium_main_armament_tier_5
+				tank_medium_main_armament_tier_6
+
+				tank_heavy_main_armament_tier_1
+				tank_heavy_main_armament_tier_2
+				tank_heavy_main_armament_tier_3
 			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
@@ -581,8 +624,16 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
-				tank_heavy_main_armament
+				tank_medium_main_armament_tier_1
+				tank_medium_main_armament_tier_2
+				tank_medium_main_armament_tier_3
+				tank_medium_main_armament_tier_4
+				tank_medium_main_armament_tier_5
+				tank_medium_main_armament_tier_6
+
+				tank_heavy_main_armament_tier_1
+				tank_heavy_main_armament_tier_2
+				tank_heavy_main_armament_tier_3
 				tank_super_heavy_main_armament
 			}
 		}
@@ -620,8 +671,16 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
-				tank_heavy_main_armament
+				tank_medium_main_armament_tier_1
+				tank_medium_main_armament_tier_2
+				tank_medium_main_armament_tier_3
+				tank_medium_main_armament_tier_4
+				tank_medium_main_armament_tier_5
+				tank_medium_main_armament_tier_6
+
+				tank_heavy_main_armament_tier_1
+				tank_heavy_main_armament_tier_2
+				tank_heavy_main_armament_tier_3
 				tank_super_heavy_main_armament
 			}
 		}
@@ -645,8 +704,16 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
-				tank_heavy_main_armament
+				tank_medium_main_armament_tier_1
+				tank_medium_main_armament_tier_2
+				tank_medium_main_armament_tier_3
+				tank_medium_main_armament_tier_4
+				tank_medium_main_armament_tier_5
+				tank_medium_main_armament_tier_6
+
+				tank_heavy_main_armament_tier_1
+				tank_heavy_main_armament_tier_2
+				tank_heavy_main_armament_tier_3
 			}
 		}
 		add_stats = {
@@ -667,7 +734,8 @@ equipment_modules = {
 
 	tank_heavy_machine_gun = {
 		abbreviation = "hmg"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_1
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -679,7 +747,7 @@ equipment_modules = {
 		dismantle_cost_ic = 0.5
 
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_1
 			convert_cost_ic = 0.5
 		}
 		xp_cost = 0
@@ -698,7 +766,7 @@ equipment_modules = {
 		dismantle_cost_ic = 0.5
 
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_1
 			convert_cost_ic = 0.5
 		}
 		xp_cost = 0
@@ -706,7 +774,8 @@ equipment_modules = {
 
 	tank_auto_cannon = {
 		abbreviation = "ac1"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_1
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -719,14 +788,15 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_1
 			convert_cost_ic = 1.5
 		}
 	}
 
 	tank_auto_cannon_2 = {
 		abbreviation = "ac2"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_2
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_auto_cannon
 		add_stats = {
@@ -739,7 +809,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_1
 			convert_cost_ic = 2
 		}
 		build_cost_resources = {
@@ -749,7 +819,8 @@ equipment_modules = {
 
 	tank_auto_cannon_3 = {
 		abbreviation = "ac3"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_3
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_auto_cannon_2
 		add_stats = {
@@ -762,7 +833,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_2
 			convert_cost_ic = 2
 		}
 		build_cost_resources = {
@@ -772,7 +843,8 @@ equipment_modules = {
 	
 	tank_auto_cannon_4 = {
 		abbreviation = "ac4"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_4
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_auto_cannon_3
 		add_stats = {
@@ -785,7 +857,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_3
 			convert_cost_ic = 2
 		}
 		build_cost_resources = {
@@ -795,7 +867,8 @@ equipment_modules = {
 
 	tank_anti_air_cannon = {
 		abbreviation = "aa1"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_1
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
@@ -811,14 +884,15 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_1
 			convert_cost_ic = 2
 		}
 	}
 
 	tank_anti_air_cannon_2 = {
 		abbreviation = "aa2"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_2
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
@@ -834,7 +908,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_1
 			convert_cost_ic = 3
 		}
 		build_cost_resources = {
@@ -845,7 +919,8 @@ equipment_modules = {
 
 	tank_anti_air_cannon_3 = {
 		abbreviation = "aa3"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_3
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
@@ -861,7 +936,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_2
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -872,7 +947,8 @@ equipment_modules = {
 	
 	tank_anti_air_cannon_4 = {
 		abbreviation = "aa4"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_4
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
@@ -888,7 +964,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_3
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -899,7 +975,8 @@ equipment_modules = {
 
 	tank_small_cannon = {
 		abbreviation = "sc1"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_2
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -913,14 +990,15 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_1
 			convert_cost_ic = 1.5
 		}
 	}
 
 	tank_small_cannon_2 = {
 		abbreviation = "sc2"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_3
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_small_cannon
 		add_stats = {
@@ -934,7 +1012,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_2
 			convert_cost_ic = 3
 		}
 		
@@ -945,7 +1023,8 @@ equipment_modules = {
 
 	tank_small_cannon_3 = {
 		abbreviation = "sc3"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_4
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_small_cannon_2
 		add_stats = {
@@ -959,7 +1038,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_3
 			convert_cost_ic = 3
 		}
 		build_cost_resources = {
@@ -969,7 +1048,8 @@ equipment_modules = {
 	
 	tank_small_cannon_4 = {
 		abbreviation = "sc4"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_5
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_small_cannon_3
 		add_stats = {
@@ -983,7 +1063,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_4
 			convert_cost_ic = 3
 		}
 		build_cost_resources = {
@@ -993,7 +1073,8 @@ equipment_modules = {
 
 	tank_close_support_gun = {
 		abbreviation = "cs"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_1
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		add_stats = {
@@ -1007,7 +1088,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_1
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -1017,7 +1098,8 @@ equipment_modules = {
 
 	tank_close_support_gun_2 = {
 		abbreviation = "cs2"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_2
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		parent = tank_close_support_gun
@@ -1032,7 +1114,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_2
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -1043,7 +1125,8 @@ equipment_modules = {
 	
 	tank_close_support_gun_3 = {
 		abbreviation = "cs3"
-		category = tank_small_main_armament
+		category = tank_small_main_armament_tier_3
+		gui_category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		parent = tank_close_support_gun_2
@@ -1058,7 +1141,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_small_main_armament_tier_3
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -1069,7 +1152,8 @@ equipment_modules = {
 
 	tank_high_velocity_cannon = {
 		abbreviation = "hv1"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_1
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 
@@ -1084,7 +1168,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_1
 			convert_cost_ic = 3
 		}
 		build_cost_resources = {
@@ -1095,7 +1179,8 @@ equipment_modules = {
 
 	tank_high_velocity_cannon_2 = {
 		abbreviation = "hv2"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_2
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_high_velocity_cannon
@@ -1111,7 +1196,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_1
 			convert_cost_ic = 5
 		}
 		build_cost_resources = {
@@ -1123,7 +1208,8 @@ equipment_modules = {
 
 	tank_high_velocity_cannon_3 = {
 		abbreviation = "hv3"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_3
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_high_velocity_cannon_2
@@ -1139,7 +1225,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_2
 			convert_cost_ic = 7
 		}
 		build_cost_resources = {
@@ -1151,7 +1237,8 @@ equipment_modules = {
 	
 	tank_high_velocity_cannon_4 = {
 		abbreviation = "hv4"
-		category = tank_heavy_main_armament
+		category = tank_heavy_main_armament_tier_2
+		gui_category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_high_velocity_cannon_3
@@ -1167,11 +1254,11 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_2
 			convert_cost_ic = 5
 		}
 		can_convert_from = {
-			module_category = tank_heavy_main_armament
+			module_category = tank_heavy_main_armament_tier_1
 			convert_cost_ic = 5
 		}
 		build_cost_resources = {
@@ -1183,7 +1270,8 @@ equipment_modules = {
 	
 	tank_high_velocity_cannon_5 = {
 		abbreviation = "hv5"
-		category = tank_heavy_main_armament
+		category = tank_heavy_main_armament_tier_3
+		gui_category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_high_velocity_cannon_4
@@ -1199,11 +1287,11 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_3
 			convert_cost_ic = 5
 		}
 		can_convert_from = {
-			module_category = tank_heavy_main_armament
+			module_category = tank_heavy_main_armament_tier_2
 			convert_cost_ic = 5
 		}
 		build_cost_resources = {
@@ -1215,7 +1303,8 @@ equipment_modules = {
 
 	tank_medium_cannon = {
 		abbreviation = "mc1"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_1
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 
@@ -1231,7 +1320,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_1
 			convert_cost_ic = 3
 		}
 
@@ -1243,7 +1332,8 @@ equipment_modules = {
 
 	tank_medium_cannon_2 = {
 		abbreviation = "mc2"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_2
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_medium_cannon
@@ -1260,7 +1350,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_1
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -1272,7 +1362,8 @@ equipment_modules = {
 
 	tank_medium_cannon_3 = {
 		abbreviation = "mc3"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_3
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_medium_cannon_2
@@ -1289,7 +1380,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_2
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -1301,7 +1392,8 @@ equipment_modules = {
 	
 	tank_medium_cannon_4 = {
 		abbreviation = "mc4"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_4
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_medium_cannon_3
@@ -1318,7 +1410,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_3
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -1330,7 +1422,8 @@ equipment_modules = {
 	
 	tank_medium_cannon_5 = {
 		abbreviation = "mc5"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_5
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_medium_cannon_4
@@ -1347,7 +1440,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_4
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -1359,7 +1452,8 @@ equipment_modules = {
 
 	tank_medium_howitzer = {
 		abbreviation = "mh1"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_1
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 
@@ -1375,7 +1469,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_1
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -1386,7 +1480,8 @@ equipment_modules = {
 
 	tank_medium_howitzer_2 = {
 		abbreviation = "mh2"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_2
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		parent = tank_medium_howitzer
@@ -1402,7 +1497,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_1
 			convert_cost_ic = 5.5
 		}
 		build_cost_resources = {
@@ -1414,7 +1509,8 @@ equipment_modules = {
 	
 	tank_medium_howitzer_3 = {
 		abbreviation = "mh3"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_3
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		parent = tank_medium_howitzer_2
@@ -1430,7 +1526,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_2
 			convert_cost_ic = 5.5
 		}
 		build_cost_resources = {
@@ -1442,7 +1538,8 @@ equipment_modules = {
 
 	tank_rocket_launcher = {
 		abbreviation = "rk1"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_1
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		#forbid_equipment_type_exact_match = armor
@@ -1459,7 +1556,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_1
 			convert_cost_ic = 4
 		}
 
@@ -1471,7 +1568,8 @@ equipment_modules = {
 
 	tank_rocket_launcher_2 = {
 		abbreviation = "rk2"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_2
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		parent = tank_rocket_launcher
@@ -1488,7 +1586,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_1
 			convert_cost_ic = 5
 		}
 		build_cost_resources = {
@@ -1499,7 +1597,8 @@ equipment_modules = {
 	
 	tank_rocket_launcher_3 = {
 		abbreviation = "rk3"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_3
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		parent = tank_rocket_launcher_2
@@ -1516,7 +1615,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_2
 			convert_cost_ic = 5
 		}
 		build_cost_resources = {
@@ -1527,7 +1626,8 @@ equipment_modules = {
 
 	tank_heavy_cannon = {
 		abbreviation = "hc1"
-		category = tank_heavy_main_armament
+		category = tank_heavy_main_armament_tier_1
+		gui_category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 
@@ -1542,7 +1642,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_heavy_main_armament
+			module_category = tank_heavy_main_armament_tier_1
 			convert_cost_ic = 6
 		}
 		build_cost_resources = {
@@ -1554,7 +1654,8 @@ equipment_modules = {
 
 	tank_heavy_cannon_2 = {
 		abbreviation = "hc2"
-		category = tank_heavy_main_armament
+		category = tank_heavy_main_armament_tier_2
+		gui_category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_heavy_cannon
@@ -1569,7 +1670,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_heavy_main_armament
+			module_category = tank_heavy_main_armament_tier_1
 			convert_cost_ic = 7
 		}
 		build_cost_resources = {
@@ -1581,7 +1682,8 @@ equipment_modules = {
 
 	tank_heavy_cannon_3 = {
 		abbreviation = "hc3"
-		category = tank_heavy_main_armament
+		category = tank_heavy_main_armament_tier_3
+		gui_category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_heavy_cannon_2
@@ -1596,7 +1698,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_heavy_main_armament
+			module_category = tank_heavy_main_armament_tier_2
 			convert_cost_ic = 8
 		}
 		build_cost_resources = {
@@ -1608,7 +1710,8 @@ equipment_modules = {
 
 	tank_heavy_howitzer = {
 		abbreviation = "hh1"
-		category = tank_heavy_main_armament
+		category = tank_heavy_main_armament_tier_1
+		gui_category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 
@@ -1624,7 +1727,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_heavy_main_armament
+			module_category = tank_heavy_main_armament_tier_1
 			convert_cost_ic = 7
 		}
 
@@ -1637,7 +1740,8 @@ equipment_modules = {
 	
 	tank_heavy_howitzer_2 = {
 		abbreviation = "hh2"
-		category = tank_heavy_main_armament
+		category = tank_heavy_main_armament_tier_2
+		gui_category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		parent = tank_heavy_howitzer
@@ -1654,7 +1758,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_heavy_main_armament
+			module_category = tank_heavy_main_armament_tier_1
 			convert_cost_ic = 7
 		}
 
@@ -1716,7 +1820,8 @@ equipment_modules = {
 
 	tank_modern_cannon = {
 		abbreviation = "modc"
-		category = tank_medium_main_armament
+		category = tank_medium_main_armament_tier_6
+		gui_category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		dismantle_cost_ic = 1
 		add_stats = {
@@ -1729,7 +1834,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_medium_main_armament_tier_5
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
