@@ -26,11 +26,6 @@
 #	can be added to countries, states or unit leaders
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
-fleet_overstack_dynamic_modifier = {
-	naval_damage_factor = fleet_overstack_naval_damage_factor
-}
-
-
 sabotaged_resources = {
 	remove_trigger = { 
 		ROOT = {
