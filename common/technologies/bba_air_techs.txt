@@ -372,6 +372,7 @@ technologies = {
 			engine_1_3x
 			engine_1_4x
 			flying_boat_medium
+			drop_tanks_medium
 			fuel_tanks_medium
 			self_sealing_fuel_tanks_medium
 			armor_plate_medium

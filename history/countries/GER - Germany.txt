@@ -74,6 +74,9 @@ set_technology = {
 	air_torpedoe_1 = 1
 	pack = 1
 	interwar_antitank = 1
+	
+	electronic_mechanical_engineering = 1
+	radio = 1
 }
 if = {
 	limit = {

@@ -772,13 +772,11 @@ ideas = {
 			}
 
 			modifier = {
-				heat_attrition_factor = -0.1
-				winter_attrition_factor = -0.1
-				terrain_penalty_reduction = 0.05
-
+				heat_attrition_factor = -0.08
+				winter_attrition_factor = -0.08
 				
 				army_org_regain = 0.05
-				army_org_factor = 0.05
+				army_org_factor = 0.10
 				communism_drift = 0.08
 			}
 		}
@@ -800,16 +798,15 @@ ideas = {
 
 			modifier = {
 				dig_in_speed_factor = 0.1
-				max_dig_in = 1
+				cas_damage_reduction = 0.05
 
 				
-				heat_attrition_factor = -0.1
-				winter_attrition_factor = -0.1
-				terrain_penalty_reduction = 0.05
+				heat_attrition_factor = -0.08
+				winter_attrition_factor = -0.08
 
 				
 				army_org_regain = 0.05
-				army_org_factor = 0.05
+				army_org_factor = 0.10
 				communism_drift = 0.08
 			}
 		}

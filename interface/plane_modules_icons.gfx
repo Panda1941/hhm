@@ -375,6 +375,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_drop_tanks_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_drop_tanks_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_floats"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_floats_icon.dds"
 		legacy_lazy_load = no

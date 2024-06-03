@@ -191,6 +191,8 @@
  non_strategic_materials_small_desc:0 "By substituting specially-treated wood or fabric for aluminum wherever possible, we can drastically reduce the usage of strategic materials. However, wood and fabric don't stand up very well to modern weapons."
  drop_tanks:0 "Drop Tanks"
  drop_tanks_desc:0 "Small, disposable tanks that hold extra fuel give our fighters some extra range when on offensive missions. Since they are dropped before combat, they don't impede combat performance."
+ drop_tanks_medium:0 "Drop Tanks"
+ drop_tanks_medium_desc:0 "Small, disposable tanks that hold extra fuel"
  dive_brakes_small:0 "Dive Brakes"
  dive_brakes_small_desc:1 "A set of spoilers along the trailing edge of the wing deploy when the plane enters a dive, reducing overall speed and allowing the plane to pull out of steep dives without ripping its wings off. This, in turn, allows the plane to attack from a near-vertical dive, drastically increasing accuracy."
  non_strategic_materials_medium:0 "$non_strategic_materials_small$"
