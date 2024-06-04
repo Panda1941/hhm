@@ -366,6 +366,18 @@ country_event = {
 			custom_effect_tooltip = usa_congress_elections_tt_bad
 			country_event = usa.30
 		}
+		if = {
+			limit = {
+				NOT = { has_idea = new_deal }
+			}
+			add_ideas = new_deal
+		}
+		if = {
+			limit = {
+				has_idea = landons_new_deal
+			}
+			remove_ideas = landons_new_deal
+		}
 	}
 
 	option = {
@@ -380,9 +392,9 @@ country_event = {
 		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		if = {
 			limit = {
-				has_idea = landons_new_deal
+				NOT = { has_idea = landons_new_deal }
 			}
-			remove_ideas = landons_new_deal
+			add_ideas = landons_new_deal
 		}
 		if = {
 			limit = {
@@ -390,7 +402,6 @@ country_event = {
 			}
 			remove_ideas = new_deal
 		}
-		add_ideas = wilkies_new_deal
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
 		add_political_power = 120
@@ -472,6 +483,7 @@ country_event = {
 		name = usa.8.b
 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 		add_ideas = new_deal
+		remove_ideas = landons_new_deal
 		retire_country_leader = yes
 		add_political_power = 120
 		set_variable = { election_factor = random }
@@ -551,6 +563,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}		
+		add_ideas = landons_new_deal
 		remove_ideas = new_deal
 		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		set_variable = { election_factor = random }
@@ -631,6 +644,7 @@ country_event = {
 	option = { 
 		name = usa.10.b
 		add_ideas = new_deal
+		remove_ideas = landons_new_deal
 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }

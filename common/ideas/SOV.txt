@@ -732,6 +732,7 @@ ideas = {
 			modifier = {
 				experience_gain_army_factor = 0.1
 				experience_loss_factor = -0.25
+				army_defence_factor = -0.05				
 			}
 		}
 		SOV_barrier_troops = {

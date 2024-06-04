@@ -79,7 +79,7 @@ technologies = {
 		}
 		supply_consumption_factor = -0.05
 		land_reinforce_rate = 0.02
-		cas_damage_reduction = 0.10
+		air_cas_present_factor = 0.2
 	}
 	
 	
