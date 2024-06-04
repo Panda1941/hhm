@@ -434,7 +434,6 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 0.75
 			breakthrough = 6
-			defence = 2
 		}
 		xp_cost = 0
 
