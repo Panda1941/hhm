@@ -484,21 +484,7 @@ GER_reichskommissariats = {
 
 
 		complete_effect = {
-
-			every_state = {
-
-                limit = {
-
-                    is_core_of = NOR
-
-                    is_controlled_by = GER
-
-                }
-
-                add_compliance = 55
-
-		    }
-
+			add_manpower = 140000
 		}
 
 	}
@@ -556,21 +542,7 @@ GER_reichskommissariats = {
 
 
 		complete_effect = {
-
-			every_state = {
-
-                limit = {
-
-                    is_core_of = HOL
-
-                    is_controlled_by = GER
-
-                }
-
-                add_compliance = 55
-
-		    }
-
+			add_manpower = 150000
 		}
 
 	}
@@ -628,23 +600,7 @@ GER_reichskommissariats = {
 
 
 		complete_effect = {
-
-			every_state = {
-
-                limit = {
-
-                    is_core_of = BEL
-
-                    is_controlled_by = GER
-
-                }
-
-                add_compliance = 55
-
-			}
-
-			29 = { add_compliance = 55 }
-
+			add_manpower = 130000
 		}
 
 		
@@ -730,55 +686,7 @@ GER_reichskommissariats = {
 
 
 		complete_effect = {
-
-			97 = { add_compliance = 55 }
-
-			94 = { add_compliance = 55 }
-
-			95 = { add_compliance = 55 }
-
-			96 = { add_compliance = 55 }
-
-			194 = { add_compliance = 55 }
-
-			204 = { add_compliance = 55 }
-
-			206 = { add_compliance = 55 }
-
-			207 = { add_compliance = 55 }
-
-			241 = { add_compliance = 55 }
-
-			11 = { add_compliance = 55 }
-
-			784 = { add_compliance = 55 }
-
-			189 = { add_compliance = 55 }
-
-			12 = { add_compliance = 55 }
-
-			190 = { add_compliance = 55 }
-
-			13 = { add_compliance = 55 }
-
-			191 = { add_compliance = 55 }
-
-			814 = { add_compliance = 55 }
-
-			815 = { add_compliance = 55 }
-
-			809 = { add_compliance = 55 }
-
-			808 = { add_compliance = 55 }
-
-			810 = { add_compliance = 55 }
-
-			813 = { add_compliance = 55 }
-
-			812 = { add_compliance = 55 }
-
-			811 = { add_compliance = 55 }
-
+			add_manpower = 200000
 		}
 
 	}
@@ -854,45 +762,7 @@ GER_reichskommissariats = {
 
 
 		complete_effect = {
-
-			93 = { add_compliance = 55 }
-
-			91 = { add_compliance = 55 }
-
-			89 = { add_compliance = 55 }
-
-			199 = { add_compliance = 55 }
-
-			201 = { add_compliance = 55 }
-
-			198 = { add_compliance = 55 }
-
-			202 = { add_compliance = 55 }
-
-			193 = { add_compliance = 55 }
-
-			192 = { add_compliance = 55 }
-
-			203 = { add_compliance = 55 }
-
-			197 = { add_compliance = 55 }
-
-			225 = { add_compliance = 55 }
-
-			259 = { add_compliance = 55 }
-
-			226 = { add_compliance = 55 }
-
-			196 = { add_compliance = 55 }
-
-			200 = { add_compliance = 55 }
-
-			221 = { add_compliance = 55 }
-
-			228 = { add_compliance = 55 }
-
-			227 = { add_compliance = 55 }
-
+			add_manpower = 200000
 		}
 
 	}
