@@ -16,10 +16,8 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = -0.1
-				local_resources_factor = 0.15
-				min_export = 0.1
-				consumer_goods_factor = -0.15
+				local_resources_factor = 0.2
+				min_export = 0.10
 			}
 		}
 
@@ -37,10 +35,10 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.05
 				local_resources_factor = 0.2
 				min_export = 0.15
-				consumer_goods_factor = -0.225
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -58,10 +56,10 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = -0.2
+				stability_factor = -0.05
 				local_resources_factor = 0.25
-				min_export = 0.2
-				consumer_goods_factor = -0.30
+				min_export = 0.20
+				consumer_goods_factor = -0.10
 			}
 		}
 		
@@ -119,14 +117,13 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.1 
+				industry = 0.1
 			}
 			
 			modifier = {
-				max_fuel_factor = 0.10
-				industrial_capacity_factory = 0.02
-				production_factory_max_efficiency_factor = 0.02
-				production_speed_buildings_factor = 0.03						
+				max_fuel_factor = 0.2
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.05						
 			}
 		}
 
@@ -143,14 +140,13 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.1 
+				industry = 0.15
 			}
 			
 			modifier = {
-				max_fuel_factor = 0.25
-				industrial_capacity_factory = 0.05
-				production_factory_max_efficiency_factor = 0.05
-				production_speed_buildings_factor = 0.07					
+				max_fuel_factor = 0.2
+				industrial_capacity_factory = 0.10
+				production_speed_arms_factory_factor = 0.10
 			}
 		}
 	
@@ -574,7 +570,7 @@ ideas = {
 				political_power_gain = -0.25 
 				stability_factor = -0.2 
 				fascism_drift = 0.01 
-				conscription = 0.035
+				conscription = 0.025
 				
 			}
 		}
@@ -622,8 +618,10 @@ ideas = {
 			
 			modifier = {				
 				political_power_gain = -0.25 
-				stability_factor = 0.05 
-				fascism_drift = 0.03
+				fascism_drift = 0.05
+				stability_factor = -0.1
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
 			}
 		}
 
@@ -660,9 +658,7 @@ ideas = {
 
 			
 			modifier = {
-				#production_factory_max_efficiency_factor = 0.05
-				#production_factory_efficiency_gain_factor = 0.1
-				stability_factor = 0.15
+				stability_factor = 0.2
 			}
 		}
 		
@@ -686,7 +682,30 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.2
-				political_power_gain = 0.05
+				drift_defence_factor = 0.50 										
+			}
+		}
+		
+		ROM_preserve_greater_romania3 = {
+
+			picture = ROM_preserve_greater_romania
+			name = ROM_preserve_greater_romania
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+			}
+
+			rule = {
+				can_join_factions = no 
+			}
+
+			modifier = {
+				stability_factor = 0.1
 				drift_defence_factor = 0.50 										
 			}
 		}
@@ -990,6 +1009,15 @@ ideas = {
 			allowed_civil_war = {
 
 			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.075 instant = yes 
+				}
+				mechanized_chassis = {
+					build_cost_ic = -0.075 instant = yes 
+				}
+			}
 			
 			modifier = {
 				license_production_speed = 0.05
@@ -1008,6 +1036,15 @@ ideas = {
 
 			allowed_civil_war = {
 
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.075 instant = yes 
+				}
+				mechanized_chassis = {
+					build_cost_ic = -0.075 instant = yes 
+				}
 			}
 			
 			modifier = {
@@ -1031,18 +1068,17 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.05 instant = yes 
+					build_cost_ic = -0.075 instant = yes 
 				}
 				armor = {
-					build_cost_ic = -0.05 instant = yes 
+					build_cost_ic = -0.075 instant = yes 
 				}
 				mechanized_chassis = {
-					build_cost_ic = -0.05 instant = yes 
+					build_cost_ic = -0.075 instant = yes 
 				}
 				motorized = {
-					build_cost_ic = -0.05 instant = yes 
+					build_cost_ic = -0.075 instant = yes 
 				}
-				
 			}
 	
 			
@@ -1067,16 +1103,16 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.125 instant = yes
 				}
 				armor = {
-					build_cost_ic = -0.1 instant = yes 
+					build_cost_ic = -0.125 instant = yes 
 				}
 				mechanized_chassis = {
-					build_cost_ic = -0.1 instant = yes 
+					build_cost_ic = -0.125 instant = yes 
 				}
 				motorized = {
-					build_cost_ic = -0.1 instant = yes 
+					build_cost_ic = -0.125 instant = yes 
 				}
 			}
 			
@@ -1103,16 +1139,16 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.125 instant = yes
 				}
 				armor = {
-					build_cost_ic = -0.1 instant = yes 
+					build_cost_ic = -0.125 instant = yes 
 				}
 				mechanized_chassis = {
-					build_cost_ic = -0.1 instant = yes 
+					build_cost_ic = -0.125 instant = yes 
 				}
 				motorized = {
-					build_cost_ic = -0.1 instant = yes 
+					build_cost_ic = -0.125 instant = yes 
 				}
 			}
 			
@@ -1295,13 +1331,13 @@ ideas = {
 		
 		
 		ROM_ROMLOC = {
-		
-			picture = industrial_concern_1
+			
+			picture = generic_industrial_concern_1
+
+			name = "ROMLOC"
 			
 			allowed = {
-				#original_tag = ROM
-				#has_dlc = "Death or Dishonor"
-				always = no
+				original_tag = ROM
 			}
 			
 			research_bonus = {
@@ -1318,7 +1354,7 @@ ideas = {
 			picture = reichswerke_hermann_goring 
 
 			allowed = {
-					original_tag = ROM
+				original_tag = ROM
 			}
 
 			traits = { trait_industrial_concern }
@@ -1328,8 +1364,8 @@ ideas = {
 			}
 
 			modifier = {	
-				industrial_capacity_factory = 0.1
-				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.10
+				local_resources_factor = 0.15
 				political_power_cost = 0.1
 				stability_factor = -0.1 
 			}
@@ -1338,10 +1374,8 @@ ideas = {
 				factor = 100
 			}
 
-			cost = 100 
-		}
-
-				
+			cost = 75
+		}	
 	}
 
 	naval_manufacturer = { 			

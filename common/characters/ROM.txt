@@ -625,7 +625,7 @@ characters={
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					has_completed_focus = ROM_appoint_german_friendly_government 
+					has_completed_focus = ROM_elections_of_1937 
 				}
 				if = {
 					limit = {
