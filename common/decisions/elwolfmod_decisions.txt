@@ -1,12 +1,14 @@
 templates_retards_ai = {
     
 	FIX_convoys = {
+		icon = SWE_set_navy_budget
 		fire_only_once = no
 		cost = 0
-		days_re_enable = 0
+		days_remove = 1
 		available = { ROOT = { has_country_flag = host } }
 		visible = { ROOT = { has_country_flag = host } }
-		complete_effect = { every_country = { add_equipment_to_stockpile = { type = convoy amount = 1 } } }
+		complete_effect = { every_country = { add_equipment_to_stockpile = { type = convoy amount = 1 } add_manpower = 1 } }
+		remove_effect = { every_country = { add_equipment_to_stockpile = { type = convoy amount = -1 } add_manpower = -1 } }
 	}
 	
 	inf_templates = {
