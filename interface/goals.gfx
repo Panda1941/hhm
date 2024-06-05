@@ -550,6 +550,11 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_focus_rocketry"
 	texturefile = "gfx/interface/goals/focus_rocketry.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_focus_generic_jet_planes"
+	texturefile = "gfx/interface/goals/focus_generic_jet_planes.dds"			
 	}	
 	
 	SpriteType = {
@@ -583,7 +588,13 @@ spriteTypes = {
 	name = "GFX_goal_generic_build_tank"
 	texturefile = "gfx/interface/goals/goal_generic_build_tank.dds"
 			
-	}			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_generic_build_airforce"
+	texturefile = "gfx/interface/goals/goal_generic_build_airforce.dds"
+			
+	}		
 	
 	SpriteType = {
 	name = "GFX_goal_generic_axis_build_infantry"
@@ -1975,7 +1986,7 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_generic_attack_communist_spain_focus"
+		name = "GFX_focus_generic_attack_communist_spain"
 		texturefile = "gfx/interface/goals/focus_generic_attack_communist_spain.dds"
 	}
 
@@ -1985,7 +1996,7 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_generic_attack_republican_spain_focus"
+		name = "GFX_focus_generic_attack_republican_spain"
 		texturefile = "gfx/interface/goals/focus_generic_attack_republican_spain.dds"
 	}
 
@@ -2005,7 +2016,7 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_generic_attack_vichy_france_focus"
+		name = "GFX_focus_generic_attack_vichy_france"
 		texturefile = "gfx/interface/goals/focus_generic_attack_vichy_france.dds"
 	}
 
@@ -3651,9 +3662,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_ETH_expand_the_kebur_zabagna.dds"
 	}
 
-	
 
 	### SWITZERLAND ###
+
 
 	SpriteType = { 
 		name = "GFX_focus_SWI_the_national_redoubt"
@@ -5966,18 +5977,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_NOR_vote_of_no_confidence.dds"
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 		#####  ##    ##  
 		  #   #  #  #  #  
 		  #   #  #  ####  
