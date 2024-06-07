@@ -1070,13 +1070,13 @@ ideas = {
 				infantry_equipment = {
 					build_cost_ic = -0.075 instant = yes 
 				}
-				armor = {
+				support_equipment = {
 					build_cost_ic = -0.075 instant = yes 
 				}
-				mechanized_chassis = {
+				artillery_equipment = {
 					build_cost_ic = -0.075 instant = yes 
 				}
-				motorized = {
+				rocket_artillery_equipment = {
 					build_cost_ic = -0.075 instant = yes 
 				}
 			}
@@ -1105,13 +1105,13 @@ ideas = {
 				infantry_equipment = {
 					build_cost_ic = -0.125 instant = yes
 				}
-				armor = {
+				support_equipment = {
 					build_cost_ic = -0.125 instant = yes 
 				}
-				mechanized_chassis = {
+				artillery_equipment = {
 					build_cost_ic = -0.125 instant = yes 
 				}
-				motorized = {
+				rocket_artillery_equipment = {
 					build_cost_ic = -0.125 instant = yes 
 				}
 			}
@@ -1141,13 +1141,13 @@ ideas = {
 				infantry_equipment = {
 					build_cost_ic = -0.125 instant = yes
 				}
-				armor = {
+				support_equipment = {
 					build_cost_ic = -0.125 instant = yes 
 				}
-				mechanized_chassis = {
+				artillery_equipment = {
 					build_cost_ic = -0.125 instant = yes 
 				}
-				motorized = {
+				rocket_artillery_equipment = {
 					build_cost_ic = -0.125 instant = yes 
 				}
 			}
