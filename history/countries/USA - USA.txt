@@ -143,12 +143,6 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 
-#Monroe Doctrine
-give_guarantee = CAN
-give_guarantee = MEX
-give_guarantee = BRA
-
-
 set_convoys = 500
 
 

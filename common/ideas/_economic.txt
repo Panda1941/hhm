@@ -19,21 +19,15 @@ ideas = {
 				production_speed_dockyard_factor = -0.5
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
-				generate_wargoal_tension = 1.00
-				join_faction_tension = 0.20
-				lend_lease_tension = 0.50
-				send_volunteers_tension = 0.20
-				guarantee_tension = 0.75
 				max_fuel_factor = -0.45
 				fuel_gain_factor = -0.6
-				agency_upgrade_time = 1.0
 			}
 
 			allowed_to_remove = {
 				OR = {
 					has_war_support > 0.5
 					has_war = yes
-					has_completed_focus = USA_limited_intervention
+					has_completed_focus = USA_limited_intervention_landon
 				}
 			}
 
@@ -54,19 +48,14 @@ ideas = {
 				production_speed_dockyard_factor = -0.4
 				conversion_cost_civ_to_mil_factor= 0.4
 				conversion_cost_mil_to_civ_factor = 0.4
-				generate_wargoal_tension = 1.00
-				join_faction_tension = 0.20
-				send_volunteers_tension = 0.20
-				guarantee_tension = 0.5
 				max_fuel_factor = -0.35
 				fuel_gain_factor = -0.5
-				agency_upgrade_time = 0.8
 			}
 			allowed_to_remove = {
 				OR = {
 					has_war_support > 0.75
 					has_war = yes
-					has_completed_focus = USA_limited_intervention
+					has_completed_focus = USA_limited_intervention_landon
 				}
 			}
 
@@ -108,7 +97,7 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						has_completed_focus = USA_limited_intervention_landon
 						has_defensive_war = no
 					}
 					has_war_support > 0.3
@@ -132,7 +121,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
-						has_completed_focus = USA_limited_intervention
+						has_completed_focus = USA_limited_intervention_landon
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -202,7 +191,7 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						has_completed_focus = USA_limited_intervention_landon
 						has_defensive_war = no
 					}
 					has_war_support > 0.5
@@ -238,7 +227,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
-						has_completed_focus = USA_limited_intervention
+						has_completed_focus = USA_limited_intervention_landon
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -289,7 +278,7 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						has_completed_focus = USA_limited_intervention_landon
 						has_defensive_war = no
 					}
 					has_war_support > 0.75
@@ -329,7 +318,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
-						has_completed_focus = USA_limited_intervention
+						has_completed_focus = USA_limited_intervention_landon
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -476,8 +465,7 @@ ideas = {
 				min_export = 0.25
 				consumer_goods_expected_value  = 0.05
 				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 40.0
-				agency_upgrade_time = 0.15
+				navy_intel_to_others = 40.0	
 			}
 
 			allowed_to_remove = {
@@ -542,10 +530,10 @@ ideas = {
 
 			modifier = {
 				min_export = 0.8
-				industrial_capacity_factory = 0.12
-				industrial_capacity_dockyard = 0.12
-				production_speed_buildings_factor = 0.12
-				research_speed_factor = 0.08
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.075
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 20.0
 			}
@@ -607,10 +595,10 @@ ideas = {
 
 			modifier = {
 				min_export = 0.5
-				industrial_capacity_factory = 0.08
-				industrial_capacity_dockyard = 0.08
-				production_speed_buildings_factor = 0.08
-				research_speed_factor = 0.04
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+				production_speed_buildings_factor = 0.075
+				research_speed_factor = 0.05
 				civilian_intel_to_others = 20.0
 				navy_intel_to_others = 10.0
 			}
@@ -690,10 +678,10 @@ ideas = {
 
 			modifier = {
 				min_export = 0.25
-				industrial_capacity_factory = 0.04
-				industrial_capacity_dockyard = 0.04
-				production_speed_buildings_factor = 0.04
-				research_speed_factor = 0.02
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.025
 				civilian_intel_to_others = 10.0
 				navy_intel_to_others = 5
 			}

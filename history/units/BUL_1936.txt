@@ -39,44 +39,6 @@
 }
 
 division_template = {
-	name = "Pekhotna Divizija"			# Infantry Division
-
-	division_names_group = BUL_INF_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }   
-	}
-}
-
-division_template = {
-	name = "Konna Divizija" 			# Cavalry Division
-
-	division_names_group = BUL_CAV_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-	}
-}
-
-
-
-division_template = {
 	name = "50W"
 
 	regiments = {
