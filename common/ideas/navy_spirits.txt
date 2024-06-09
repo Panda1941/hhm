@@ -211,8 +211,7 @@ ideas = {
 		naval_refit_yards_spirit = {
 			ledger = navy
 			modifier = {
-				refit_speed = 0.25
-				repair_speed_factor = 0.15
+				repair_speed_factor = 0.2
 			}
 			ai_will_do = {
 				factor = 1

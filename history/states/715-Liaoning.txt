@@ -3,7 +3,7 @@ state={
 	name="STATE_715"
 	manpower = 3643373
 	
-	state_category = town
+	state_category = large_city
 
 history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = MAN
@@ -12,8 +12,8 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		add_core_of = MAN
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 1
+			arms_factory = 2
+			industrial_complex = 2
 		}
 
 	}

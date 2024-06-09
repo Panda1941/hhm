@@ -1055,8 +1055,7 @@ ideas = {
 			}
 
 			modifier = {
-				repair_speed_factor = 0.2
-				refit_speed = 0.2
+				repair_speed_factor = 0.25
 			}
 		}
 
@@ -2438,8 +2437,7 @@ ideas = {
 			traits = { coastal_defence_naval_manufacturer }
 
 			modifier = {
-				repair_speed_factor = 0.1
-				refit_speed = 0.1
+				repair_speed_factor = 0.15
 				naval_manufacturer_cost_factor = -1
 			}
 		}
