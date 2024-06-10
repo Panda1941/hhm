@@ -1148,7 +1148,7 @@ focus_tree = {
 			BRA_remove_economy_modifier = yes	
 			add_tech_bonus = {
 				name = BRA_electronics_bonus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = electronics
 			}			
@@ -1186,7 +1186,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BRA_resource_extraction_bonus
-				bonus = 0.75
+				bonus = 0.50
 				uses = 2
 				category = excavation_tech
 			}
@@ -1271,7 +1271,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BRA_industry_bonus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = industry
 			}			
@@ -3022,7 +3022,7 @@ focus_tree = {
 		
 		}
 
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_research_slot = 1

@@ -767,6 +767,7 @@ if = {
 		name = "Fiat 3000"
 		type = light_tank_chassis_0
 		parent_version = 0
+		obsolete = yes
 		modules = {
 			main_armament_slot = tank_auto_cannon
 			turret_type_slot = tank_light_breakthrough_turret_1
@@ -780,12 +781,20 @@ if = {
 			#tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 1
 		}
-		icon = "GFX_ITA_basic_light_tank_medium"
+		icon = "GFX_gwtank_medium"
 	}
+
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		amount = 150
+		variant_name = "Fiat 3000"
+	}
+
 	create_equipment_variant = {
 		name = "Fiat 3000B"
 		type = light_tank_chassis_0
-		parent_version = 0
+		parent_version = 1
+		obsolete = yes
 		modules = {
 			main_armament_slot = tank_small_cannon
 			turret_type_slot = tank_light_breakthrough_turret_1
@@ -799,8 +808,15 @@ if = {
 			#tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 1
 		}
-		icon = "GFX_ITA_basic_light_tank_medium"
+		icon = "GFX_gwtank_medium"
 	}
+
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		amount = 40
+		variant_name = "Fiat 3000B"
+	}
+
 	create_equipment_variant = {
 		name = "L3/35"
 		type = light_tank_chassis_1

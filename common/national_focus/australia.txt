@@ -127,9 +127,17 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_royal_australian_artillery
-				bonus = 0.75
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = artillery
+			}
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 1
+					category = special_forces_doctrine
+				}
 			}
 		}
 	}
@@ -214,7 +222,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 1.5
+				bonus = 1.00
 				category = motorized_equipment
 			}
 		}
@@ -258,7 +266,7 @@
 			add_tech_bonus = {
 				name = AST_hmas_assault
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = marine_tech
 			}
 		}
@@ -294,8 +302,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_specialize_equipment
-				bonus = 0.75
-				uses = 3
+				bonus = 1.0
+				uses = 1
 				category = infantry_weapons
 				category = artillery
 			}
@@ -365,8 +373,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_fund_owen_gun_research
-				bonus = 3.0
-				uses = 2
+				bonus = 1.0
+				uses = 3
 				technology = tech_logistics_company
 				technology = tech_logistics_company2
 				technology = tech_logistics_company3
@@ -407,8 +415,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_fund_owen_gun_research
-				bonus = 0.75
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = infantry_weapons
 			}
 		}
@@ -444,8 +452,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_sentinel_tank_project
-				bonus = 2.0
-				uses = 1
+				bonus = 1.0
+				uses = 2
 				category = armor
 			}
 		}
@@ -482,9 +490,17 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_airborne_defence
-				bonus = 2.0
+				bonus = 1.0
 				uses = 1
 				category = para_tech
+			}
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 1
+					category = special_forces_doctrine
+				}
 			}
 		}
 	}
@@ -517,17 +533,38 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			army_experience = 50
-			add_doctrine_cost_reduction = {
-				name = AST_introduce_unconventional_warfare
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
+			army_experience = 35
+			navy_experience = 35
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				custom_effect_tooltip = CHL_skip_one_line_tt
+				add_potential_special_forces_tree = yes
+				custom_effect_tooltip = CHL_skip_one_line_tt
+				add_doctrine_cost_reduction = {
+					name = AST_introduce_unconventional_warfare
+					cost_reduction = 0.5
+					uses = 1
+					category = special_forces_doctrine
+				}
+			}
+			else = {
+				add_doctrine_cost_reduction = {
+					name = AST_introduce_unconventional_warfare
+					cost_reduction = 0.5
+					uses = 1
+					category = land_doctrine
+				}
+				add_doctrine_cost_reduction = {
+					name = AST_introduce_unconventional_warfare
+					cost_reduction = 0.5
+					uses = 1
+					category = naval_doctrine
+				}
 			}
 		}
 	}
 
-		focus = {
+	focus = {
 		id = AST_z_special_unit
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = AST_introduce_unconventional_warfare }
@@ -557,10 +594,18 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_z_special_unit
-				bonus = 3.0
+				bonus = 1.0
 				uses = 1
 				category = marine_tech
 				category = para_tech
+			}
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 1
+					category = special_forces_doctrine
+				}
 			}
 		}
 	}
@@ -602,6 +647,14 @@
 				technology = tech_recon2
 				technology = tech_recon3
 				technology = tech_recon4
+			}
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 1
+					category = special_forces_doctrine
+				}
 			}
 		}
 	}
@@ -1347,6 +1400,50 @@
 
 		completion_reward = {
 			add_ideas = AST_australian_arms_production
+		}
+	}
+
+	focus = {
+		id = AST_uranium_mining
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = AST_australian_arms_production }
+		x = 1
+		y = 5
+		relative_position_id = AST_standard_gauge_railway
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_uranium_mining
+				bonus = 0.5
+				uses = 2
+				category = nuclear
+			}
+			custom_effect_tooltip = CHL_skip_one_line_tt
+			add_tech_bonus = {
+				name = AST_uranium_mining
+				bonus = 1.0
+				uses = 2
+				category = excavation_tech
+			}
 		}
 	}
 

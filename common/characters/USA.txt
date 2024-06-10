@@ -28,6 +28,19 @@ characters={
 		}
 	}
 
+	# NATIVE AMERICAN COUNCIL
+	USA_native_american_council = { 
+		name = USA_native_american_council
+		portraits = {
+			civilian = {
+				large = GFX_portrait_native_american_usa_council
+				#small = GFX_portrait_AFA_mohamed_yayyo_small
+			}
+			
+		}
+		
+	}
+
 	USA_carnot_wheeler={
 		name=USA_carnot_wheeler
 		portraits={
@@ -111,6 +124,13 @@ characters={
 					NOT  = {
 						has_dlc = "Man the Guns"
 					}
+					factor  = 0.000
+				}
+				modifier  = {
+					NOT  = {
+						has_dlc = "Man the Guns"
+					}
+					has_idea_with_trait = fascist_demagogue
 					factor  = 0.000
 				}
 			}
@@ -1204,7 +1224,11 @@ characters={
 			army={
 				small=GFX_portrait_USA_charles_lindbergh_small
 			}
+			civilian={
+				large = GFX_portrait_USA_charles_lindbergh
+			}
 		}
+
 		advisor={
 			slot = high_command
 			idea_token = USA_charles_lindbergh
@@ -1654,6 +1678,13 @@ characters={
 					NOT  = {
 						has_dlc = "Man the Guns"
 					}
+					factor  = 0.000
+				}
+				modifier  = {
+					NOT  = {
+						has_dlc = "Man the Guns"
+					}
+					has_idea_with_trait = communist_revolutionary
 					factor  = 0.000
 				}
 			}

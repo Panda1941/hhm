@@ -5922,7 +5922,7 @@ generic_high_agility_fighter_aircraft_organization = {
 		}
 
 		equipment_bonus = {
-			reliability_factor = 0.05
+			reliability = 0.05
 			air_agility = 0.05
 		}
 	}
@@ -6077,7 +6077,7 @@ generic_range_focused_aircraft_organization = {
 
 		equipment_bonus = {
 			air_range = 0.10
-			reliability_factor = 0.10
+			reliability = 0.10
 		}
 	}
 
@@ -6162,7 +6162,7 @@ generic_range_focused_aircraft_organization = {
 		}
 
 		equipment_bonus = {
-			reliability_factor = 0.10
+			reliability = 0.07
 		}
 
 		production_bonus = {

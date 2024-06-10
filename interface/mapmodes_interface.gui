@@ -1293,7 +1293,7 @@ guiTypes = {
 	# A window with the list of all possible map modes that is attached to the main map-modes window.
 	containerWindowType =  {
 		name = "WindowWithAllMapModes_Standalone"
-		position = { x=-255 y=-300 }	
+		position = { x=-255 y=-270 }	
 		size = { width=180 height=274 }
 		Orientation = lower_RIGHT
 		fade_time = 1
