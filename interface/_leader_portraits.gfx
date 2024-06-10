@@ -621,15 +621,6 @@ spriteTypes = {
 	###RAJ
 
 	spriteType = {
-		name = "GFX_RAJ_kodendera_subayya_thimayya"
-		texturefile = "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
-	}
-
-	spriteType = {
-		name = "GFX_RAJ_kodendera_subayya_thimayya_small"
-		texturefile = "gfx/interface/ideas/idea_RAJ_army_generic.dds"
-	}
-	spriteType = {
 		name = "GFX_RAJ_orde_wingate"
 		textureFile = "gfx//leaders//ENG//Portrait_Britain_Generic_land_3.dds"
 	}
@@ -687,16 +678,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_RAJ_lakshmi_sahgal_small"
 		texturefile = "gfx/interface/ideas/idea_ARG_fanny_schoonheyt.dds"
-	}
-
-	spriteType = {
-		name = "GFX_RAJ_kodandera_madappa_cariappa"
-		texturefile = "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
-	}
-
-	spriteType = {
-		name = "GFX_RAJ_kodandera_madappa_cariappa_small"
-		texturefile = "gfx/interface/ideas/idea_RAJ_army_generic.dds"
 	}
 
 	spriteType = {
@@ -831,10 +812,6 @@ spriteTypes = {
 		name = "GFX_portrait_romania_constantin_sanatescu_small"
 		texturefile = "gfx/interface/ideas/idea_europe_generic_land_5.dds"
 	}
-	spriteType = {
-		name = "GFX_Portrait_romania_corneliu_zelea_codreanu"
-		texturefile = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
-	}
 
 	spriteType = {
 		name = "GFX_Portrait_romania_ion_antonescu"
@@ -842,11 +819,6 @@ spriteTypes = {
 	}
 
 	#NSB 
-
-	spriteType = {
-		name = "GFX_Portrait_romania_corneliu_zelea_codreanu"
-		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	}
 
 	spriteType = {
 		name = "GFX_Portrait_romania_gheorghe_tatarescu"
@@ -1320,31 +1292,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_ice_sveinn_bjornsson_small"
 		texturefile = "gfx/interface/ideas/idea_ICE_sveinn_bjornsson.dds"
-	}
-
-	##### XSM #####
-
-	spriteType = {
-		name = "GFX_portrait_xsm_ma_bufang"
-		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	}
-
-	spriteType = {
-		name = "GFX_portrait_xsm_ma_bufang_small"
-		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
-	}
-
-
-	##### YUN #####
-
-	spriteType = {
-		name = "GFX_portrait_yun_long_yun"
-		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
-	}
-
-	spriteType = {
-		name = "GFX_portrait_yun_long_yun_small"
-		texturefile = "gfx/interface/ideas/idea_asia_generic_warlord1.dds"
 	}
 
 	##### GXC #####
@@ -2598,16 +2545,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_ger_hans_von_luck_small"
 		texturefile = "gfx/interface/ideas/idea_GER_hans_von_luck.dds"
-	}
-
-	spriteType = {
-		name = "GFX_portrait_kur_seyid_riza"
-		texturefile = "gfx/leaders/KUR/portrait_kur_seyid_riza.dds"
-	}
-
-	spriteType = {
-		name = "GFX_portrait_irq_rashid_al_gaylani"
-		texturefile = "gfx/leaders/IRQ/portrait_irq_rashid_al_gaylani.dds"
 	}
 
 # New for NSB
@@ -4166,10 +4103,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/FIN/portrait_FIN_prince_wolfgang_von_hesse.dds"
 	}
 
-	spriteType = {
-		name = GFX_portrait_FIN_risto_ryti
-		texturefile = "gfx/leaders/FIN/Portrait_Finland_Risto_Heikki_Ryti.dds"
-	}
+	#spriteType = { #Old Portrait, updated in AAT
+	#	name = GFX_portrait_FIN_UNUSED_risto_ryti #renamed to "UNUSED" so it doesn't show up in searches
+	#	texturefile = "gfx/leaders/FIN/Portrait_Finland_Risto_Heikki_Ryti.dds"
+	#}
 
 	spriteType = {
 		name = GFX_portrait_FIN_aimo_aaltonen
@@ -4194,16 +4131,6 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_FIN_carl_mannerheim
 		texturefile = "gfx/leaders/FIN/portrait_fin_carl_mannerheim.dds"
-	}
-
-	spriteType = {
-		name = GFX_portrait_FIN_erik_heinrichs
-		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	}
-
-	spriteType = {
-		name = GFX_portrait_FIN_erik_heinrichs_small
-		texturefile = "gfx/interface/ideas/idea_europe_generic_land_2.dds"
 	}
 	
 	spriteType = {
@@ -5146,10 +5073,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ITA/Portrait_Italy_Alberto_Da_Zara.dds"
 	}
 
-	spriteType = {
-		name = GFX_portrait_ITA_giuseppe_fioravanzo
-		texturefile = "gfx/leaders/ITA/Portrait_Italy_Giuseppe_Fioravanzo.dds"
-	}
+	#spriteType = { #OLD (wrong) portrait
+	#	name = GFX_portrait_ITA_UNUSED_giuseppe_fioravanzo #Rename to "UNUSED" so ti doesn't show up in searches
+	#	texturefile = "gfx/leaders/ITA/Portrait_Italy_Giuseppe_Fioravanzo.dds"
+	#}
 
 	spriteType = {
 		name = GFX_portrait_ITA_carlo_bergamini
@@ -5937,6 +5864,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_portrait_NOR_edvard_christian_danielsen
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_4.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_NOR_edvard_christian_danielsen_small
+		texturefile = "gfx/interface/ideas/idea_europe_generic_navy_4.dds"
+	}
+
+	spriteType = {
 		name = GFX_portrait_NOR_henry_diesen
 		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	}
@@ -6289,11 +6226,6 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_RAJ_kodandera_madappa_cariappa_small
 		texturefile = "gfx/interface/ideas/idea_RAJ_kodandera_madappa_cariappa.dds"
-	}
-
-	spriteType = {
-		name = GFX_portrait_RAJ_kodandera_subayya_thimayya_small
-		texturefile = "gfx/interface/ideas/idea_RAJ_k_s_thimayya.dds"
 	}
 
 	spriteType = {
@@ -7492,11 +7424,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_portrait_YUN_long_yun_small
-		texturefile = "gfx/interface/ideas/idea_YUN_long_yun.dds"
-	}
-
-	spriteType = {
 		name = GFX_portrait_YUN_lu_han_small
 		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
 	}
@@ -8456,5 +8383,16 @@ spriteTypes = {
 		name = "GFX_portrait_MNT_blazo_dukanovic"
 		texturefile = "gfx/leaders/ITA/portrait_MNT_blazo_dukanovic.dds"
 	}
-	
+
+
+
+###TOA###
+
+
+	spriteType = {
+		name = "GFX_portrait_BRA_mascarenhas_de_morais_1"
+		texturefile = "gfx/leaders/BRA/portrait_BRA_mascarenhas_de_morais_1.dds"
+	}
+
+
 }

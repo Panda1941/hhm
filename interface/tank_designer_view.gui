@@ -253,6 +253,7 @@ guiTypes = {
 			pdx_tooltip = "DESIGNER_SELECT_NICHE"
 			pdx_tooltip_delayed = "DESIGNER_SELECT_NICHE_DELAYED"
 		}
+		
 		ButtonType = {
 			name = "historical_design_button"
 			position = { x=24 y=404 }
@@ -260,7 +261,7 @@ guiTypes = {
 			buttonText = "HISTORICAL_PRESET"
 			buttonFont = "hoi_18mbs"
 			#clicksound = "ui_tank_designer_save"
-		}		
+		}
 
 		iconType = {
 			name = "design_company_icon"
@@ -280,7 +281,8 @@ guiTypes = {
 			name = "design_team_button"
 			spriteType = "GFX_idea_slot_tank_manufacturer"
 			position = { x = 461 y = 382 }
-		}								   
+		}
+
 		# right hand side stats
 		containerWindowType = {
 			name = "info"
@@ -420,6 +422,7 @@ guiTypes = {
 			clicksound = "ui_tank_designer_select_3d_model"
 
 		}	
+		
 		containerWindowType = {
 			name = "icon_selection_container"
 			position = { x=340 y=68 }
@@ -441,8 +444,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-						 
-
+		
 		containerWindowType = {
 			name = "equipment_select_model"
 			position = { x=538 y=40 }
@@ -510,7 +512,6 @@ guiTypes = {
 			}
 		}
 			
-			
 		containerWindowType = {
 			name = "equipment_select_sprite"
 			position = { x=538 y=40 }
@@ -571,6 +572,7 @@ guiTypes = {
 				}
 			}
 		}
+		
 		containerWindowType = {
 			name = "historical_select_design"
 			position = { x=538 y=40 }
@@ -631,7 +633,7 @@ guiTypes = {
 				}
 			}
 		}
-		  
+
 		containerWindowType = {
 			name = "niche_icon_selector"
 			position = { x=515 y=141 }
@@ -705,6 +707,22 @@ guiTypes = {
 			clicksound = click_checkbox
 			frame = 1
 		}
+		
+		iconType = {
+			name = "nubbin"
+			quadTextureSprite ="GFX_tank_designer_nubbin"
+			position = { x=300 y =74 }
+			scale = 1.0
+		}
+		
+		buttonType = {
+			name = "dynamic_version_checkbox_button"
+			position = { x=310 y =63 }
+			quadTextureSprite ="GFX_generic_checkbox3"
+			pdx_tooltip = "EQUIPMENT_DESIGNER_DYNAMIC_VERSION_CHECKBOX_BUTTON_DESC"
+			clicksound = click_checkbox
+			frame = 1
+		}
 
 		ButtonType = {
 			name = "save_button"
@@ -737,22 +755,22 @@ guiTypes = {
 				name = "name"
 				position = { x = 35 y = 5 }
 				font = "hoi_18mbs"
-				size = { x=230 y=20 }
+				size = { x=178 y=20 }
 			}
-
-			buttonType = {
-				name = "name_reset"
-				position = { x = -31 y = -1 }
-				quadTextureSprite ="GFX_NV_btn_reset"
-				clicksound = "ui_tank_designer_reset"
-				orientation = "upper_right"
-			}
-
+			
 			iconType = {
 				name = "tank_design_icon"
 				spriteType = "GFX_tank_design_icon"
 				position = { x = 5 y = 1 }
 				alwaystransparent = yes
+			}
+			
+			buttonType = {
+				name = "name_reset"
+				position = { x = 2 y = -1 }
+				quadTextureSprite ="GFX_NV_btn_reset"
+				clicksound = "ui_tank_designer_reset"
+				orientation = "upper_left"
 			}
 
 			expandedWindow = {
@@ -761,7 +779,7 @@ guiTypes = {
 				show_position = { x = 10 y = 27 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 0
+				animation_time = 300
 				size = { width=230 height=325 }
 				verticalScrollbar = "right_vertical_slider"
 				margin = { top = 7 bottom = 7 right = 6 }
@@ -785,6 +803,18 @@ guiTypes = {
 
 				}
 			}
+		}
+		
+		instantTextboxType = {
+			name = "position_version"
+			position = { x = 212 y = 65 }
+			font = "hoi_18mbs"
+			text_color_code = g
+			maxWidth = 71
+			maxHeight = 18
+			alwaystransparent = yes
+			multiline = no
+			format = right
 		}
 
 		# chassi name
