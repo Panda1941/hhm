@@ -219,7 +219,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_industria_della_gomma_sintetica
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
 				category = cat_synth_oil
 			}
@@ -777,8 +777,8 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_redirect_alfa_romeo_production
-				bonus = 1.0
-				uses = 1
+				bonus = 0.50
+				uses = 2
 				category = motorized_equipment
 				category = light_air
 			}
@@ -1049,7 +1049,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_increase_artillery_production
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
 				category = artillery
 			}
@@ -1118,7 +1118,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = ITA_a_bandits_war
-				cost_reduction = 0.75
+				cost_reduction = 0.5
 				uses = 2
 				category = cat_mobile_warfare
 			}
@@ -1126,7 +1126,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_a_bandits_war
 				uses = 2
-				bonus = 0.75
+				bonus = 0.5
 				category = motorized_equipment
 				category = recon_tech
 			}
@@ -1137,7 +1137,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = ITA_a_bandits_war
-					bonus = 1.5
+					bonus = 1
 					uses = 1
 					category = cat_armored_cars
 				}
@@ -1296,7 +1296,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_italian_tankettes
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = armor
 			}
@@ -1385,7 +1385,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_divisioni_alpine
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = mountaineers_tech
 			}
@@ -1434,7 +1434,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_fanti_dell_aria
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = para_tech
 			}
@@ -1470,8 +1470,8 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_self_propelled_guns
-				bonus = 1
-				uses = 2
+				bonus = 0.5
+				uses = 3
 				category = artillery
 			}
 
@@ -1585,8 +1585,8 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_ferrea_mole_ferreo_cuore
-				bonus = 2
-				uses = 1
+				bonus = 1
+				uses = 2
 				category = armor
 			}
 
@@ -1637,7 +1637,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_air_innovations_bba #fighter_bonus
-				bonus = 0.8
+				bonus = 0.5
 				uses = 1
 				category = light_air
 			}
@@ -1669,8 +1669,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_citta_dell_aria
-				bonus = 1.0
-				uses = 1
+				bonus = 0.33
+				uses = 3
 				category = air_equipment
 			}
 
@@ -1817,7 +1817,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ITA_diving_bombers
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = light_air
 			}	
@@ -2365,11 +2365,24 @@ focus_tree = {
 			add_to_variable = { ITA_rm_navy_submarine_attack_factor = 0.05 }
 			custom_effect_tooltip = ITA_intensify_torpedo_manufacturing_rm_tt
 
-			add_tech_bonus = {
-				name = ITA_intensify_torpedo_manufacturing
-				bonus = 1.0
-				uses = 2
-				category = cat_torpedoes
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = ITA_intensify_torpedo_manufacturing
+					bonus = 1.0
+					uses = 1
+					category = cat_torpedoes
+				}
+			}
+			else = {
+				add_doctrine_cost_reduction = {
+					name = ITA_intensify_torpedo_manufacturing
+					cost_reduction = 0.5
+					uses = 2
+					category = cat_trade_interdiction
+				}
 			}
 		}
 	}
@@ -2847,7 +2860,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_incrociatori_leggeri
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = cl_tech
 			}
@@ -2892,7 +2905,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_incrociatori_pesanti
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = ca_tech
 			}
@@ -2922,6 +2935,13 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 1
 				category = trade_interdiction_tree
+			}
+
+			add_tech_bonus = {
+				name = ITA_cruiser_submarines
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
 			}
 
 			if = {

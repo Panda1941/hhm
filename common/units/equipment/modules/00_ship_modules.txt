@@ -1147,7 +1147,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		
 		add_stats = {
-			hg_attack = 36
+			hg_attack = 32
 			build_cost_ic = 2000
 		}
 		build_cost_resources = {

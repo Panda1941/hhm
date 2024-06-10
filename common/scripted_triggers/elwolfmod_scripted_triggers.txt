@@ -19,6 +19,7 @@ is_playable_country = {
 		original_tag = MEX
 		original_tag = VIC
 		original_tag = BRA
+		original_tag = MAN
 	}
 }
 
@@ -35,7 +36,6 @@ is_limited_country = {
 		original_tag = VEN
 		original_tag = WST
 		original_tag = IRQ
-		original_tag = MAN
 		original_tag = NZL
 		original_tag = SIA
 		original_tag = IRE

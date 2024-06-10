@@ -2461,7 +2461,6 @@ ideas = {
 				equipment_capture = 0.03
 				equipment_capture_factor = 0.25
 				equipment_conversion_speed = 0.25
-				refit_speed = 0.15
 			}
 		}
 
@@ -3595,8 +3594,7 @@ ideas = {
 
 			modifier = {
 				naval_equipment_upgrade_xp_cost = -0.25
-				refit_speed = 0.15
-				repair_speed_factor = 0.1
+				repair_speed_factor = 0.25
 				naval_manufacturer_cost_factor = -1
 			}
 		}

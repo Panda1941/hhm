@@ -3889,10 +3889,9 @@ country_event = {
 		SOV = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.75
-				uses = 2
-				technology = basic_medium_tank_chassis
-				technology = improved_medium_tank_chassis
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
 			}
 		}
 	}

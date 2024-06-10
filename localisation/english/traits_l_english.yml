@@ -596,6 +596,10 @@
  lone_wolf_desc:0 "§LWhile organising a large fleet is a difficult task, so is using a small force to its maximum potential.§!"
  concealment_expert:0 "Concealment Expert"
  concealment_expert_desc:0 "§LThis officer has completed the government-mandated training course on how not to be seen.§!"
+ mine_sweeper:0 "Mine Sweeper" #obsolete, refer to mine_craft
+ mine_sweeper_desc:0 "§LAny ship can be a minesweeper once. Making it sweep several mines takes skill.§!" #obsolete, refer to mine_craft
+ mine_layer:0 "Mine Layer" #obsolete, refer to mine_craft
+ mine_layer_desc:0 "§LDropping highly explosive mines designed to sink ships out of a ship you're on requires a certain mental fortitude. This officer has plenty of it.§!" #obsolete, refer to mine_craft
  mine_craft:0 "Mine Craft" 
  mine_craft_desc:0 "§LAll sailors know the terror of these creeping weapons, the low hiss of the fuse, and the sudden BLAST!§!"
  cruiser_captain:0 "Cruiser Captain"
@@ -688,7 +692,7 @@
  SPOTTER_TRIGGER_TT:0 "Spotting the enemy"
  FLY_SWATTER_TRIGGER_TT:0 "Fighting enemy air units"
  IRONSIDE_TRIGGER_TT:0 "Commanding or fighting capital ships"
- BLOCKADE_RUNNER_TRIGGER_TT:0 "Bravely retreating in the face of overwhelming force"
+ BLOCKADE_RUNNER_TRIGGER_TT: "Have a task force in combat where every ship in it has over 37 knots speed"
  leider:0 "Leider"
  comintern_workhorse:0 "Comintern Workhorse"
  veteran_communist:0 "Veteran Communist"
@@ -1054,6 +1058,7 @@
  international_anarchist:0 "International Anarchist"
  minister_of_the_interior:0 "Minister of the Interior"
  minister_of_the_interior_aregai:0 "$minister_of_the_interior$"
+ minister_of_the_interior_aregai_no_lar:0 "$minister_of_the_interior$"
  minister_of_the_interior_abate:0 "$minister_of_the_interior$"
  japanizer:0 "Japanizer"
  anti_unionist_pure_anarchist:0 "Anti-Unionist Pure Anarchist"
@@ -1125,7 +1130,7 @@
  ITA_head_of_the_national_committee:0 "Head of the National Committee"
  indisposed_political_scientist:0 "Indisposed Political Scientist"
  indisposed_political_scientist_tt:0 "Antonio Gramsci needs time to recover from his severe illness, this trait will be significantly improved in the future."
- cultural_hegemony_theorist:0 "Cultural Hegeomny Theorist"
+ cultural_hegemony_theorist: "Cultural Hegemony Theorist"
  supreme_pontiff:0 "Supreme Pontiff"
  temperamental:0 "Temperamental"
  grand_master_of_the_equestrian_order_of_the_holy_sepulcher_of_jerusalem:0 "Grand Master of the Equestrian Order of the Holy Sepulcher of Jerusalem"
@@ -1385,8 +1390,9 @@
  NOR_fascist_advocate: "Fascist Advocate"
  NOR_callous_engineer: "Callous Engineer"
  NOR_tobacco_industrialist: "Tobacco Industrialist"
+ NOR_tobacco_industrialist_leader: "The Tobacco Tycoon"
  NOR_compliant_politician: "Compliant Politician"
- NOR_conservative_businessman: "Conservative Businessman"
+ NOR_conservative_businessman: "The Father"
  NOR_germanophile_officer: "Germanophile Officer"
  NOR_defeatist_commander_in_chief: "Defeatist Commander"
  NOR_ruthless_police_captain: "Ruthless Police Captain"
@@ -1399,6 +1405,8 @@
  NOR_vigilant_fort_commander: "Vigilant Fort Commander"
  NOR_ruthless_administrator: "Ruthless Administrator"
  JAN_polarizing_leader: "Polarizing Leader"
+ NOR_temperate_miners_unionist: "Temperate Miners Unionist"
+ NOR_popular_reformer: "Popular Reformer"
  
  # ICELAND
  ICE_hot_tempered_reformer: "Hot Tempered Reformer"
@@ -1423,16 +1431,34 @@
  viceroy_emeritus_desc:0 "Lord Halifax served as viceroy of India for a prolonged period. His governorship was not without controversy, yet his diplomatic talent appears to produce results."
  viceroy_emeritus_tt:0 "\nIf §HLord Halifax§! is our country leader, the autonomy effects of this focus will be doubled."
  viceroy_emeritus_downside_tt:0 "\nDue to Lord Halifax' controversial history in India:"
- skilled_staffer_sov_ger:0 "Genius Staffer"
- skilled_staffer_sov_ger_desc:0 "§LExperienced staffer for large infantry fronts."
 
- 
+ ### Canada ###
  CAN_liberal_corporatist: "Liberal Corporatist"
  CAN_father_of_the_canadian_welfare_state: "Father of the Canadian Welfare State"
  CAN_canadian_fuhrer: "The Canadian Führer"
  CAN_social_gospel: "Pioneer of the Canadian Social Gospel"
 
- 
+ ### ARGENTINA ###
+ ARG_fraudulent_industrialist: "Fraudulent Industrialist"
+ ARG_radical_antipersonnel: "Radical Antipersonnel"
+ ARG_conservative_traditionalist: "Conservative Traditionalist"
+ ARG_moderate_dictator: "Moderate Dictator"
+ ARG_brigadier_general: "Brigadier General"
+ ARG_argentine_nationalist: "Argentine Nationalist"
+ ARG_harsh_democrat: "Harsh Democrat"
+ ARG_feminist_revolutionary: "Feminist Revolutionary"
+ ARG_communist_insurrectionist: "Communist Insurrectionist"
+ ARG_anarchosyndicalist: "Anarcho-syndicalist"
+ ARG_socialist_feminist: "Socialist Feminist"
+ ARG_university_rector: "University Rector"
+ ARG_nobel_peace_prize_winner: "Nobel Peace Prize Winner"
+ ARG_bolivar_agent: "Bolívar Agent"
+ ARG_prominent_centrist: "Prominent Centrist"
+ ARG_father_of_argentine_democracy: "Father of Argentine Democracy"
+ ARG_peronism_trait: "$ARG_peronism$"
+ ARG_womans_peronist: "Women's Peronist Advocate"
+ ARG_argentine_fascist: "Argentine Fascist"
+
  # Brazil
  BRA_father_of_the_poor: "Father of the Poor" 
  BRA_reluctant_integralist: "Reluctant Integralist"

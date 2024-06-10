@@ -823,7 +823,7 @@
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -872,10 +872,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = JAP_nationalize_war_industry_IC
@@ -1221,6 +1221,15 @@
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			IF = {
+				limit = { country_exists = MAN }
+				
+				MAN = {				
+					add_stability = 0.1
+					add_war_support = 0.1
+					add_political_power = 150
+				} 
+			}
 			add_stability = 0.025
 			add_war_support = 0.025
 			add_political_power = 75
@@ -1242,8 +1251,13 @@
 		}
 
 		available = {
-			716 = { is_fully_controlled_by = ROOT }
-			#MAN = { is_subject_of = ROOT }
+			OR = {
+				716 = { is_fully_controlled_by = ROOT }
+				AND = {
+					716 = { is_fully_controlled_by = MAN }
+					MAN = { is_subject_of = ROOT }
+				}
+			}
 		}
 
 		bypass = {
@@ -1286,7 +1300,13 @@
 		}
 
 		available = {
-			328 = { is_fully_controlled_by = ROOT }
+			OR = {
+				328 = { is_fully_controlled_by = ROOT }
+				AND = {
+					328 = { is_fully_controlled_by = MAN }
+					MAN = { is_subject_of = ROOT }
+				}
+			}
 		}
 
 		bypass = {
@@ -1681,7 +1701,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_armored_divisions
-				bonus = 1.5
+				bonus = 0.75
 				uses = 2
 				category = armor	
 			}
@@ -2016,8 +2036,6 @@
 						allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_main_weapon_slot = aircraft_cannon_1_2x
-							fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-							fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
 							engine_type_slot = engine_3_1x
 							special_type_slot_1 = drop_tanks
 							special_type_slot_2 = fuel_tanks_small
@@ -2568,7 +2586,7 @@
 				}
 				add_tech_bonus = {
 					name = JAP_the_ultimate_battleship
-					bonus = 3.0
+					bonus = 2.0
 					uses = 1
 					category = shbb_tech	
 				}
@@ -2664,7 +2682,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_cruiser_modernization
-				bonus = 3.0
+				bonus = 2.0
 				uses = 1
 				category = cl_tech	
 				category = ca_tech	

@@ -595,7 +595,6 @@ on_actions = {
 						type = infantry_equipment_1
 						amount = 16000
 					}
-					add_research_slot = 1
 					add_offsite_building = { type = industrial_complex level = 22 }
 				}
 
@@ -1225,18 +1224,12 @@ on_actions = {
 					amount = 156
 				}
 			}
-			ENG = {
-				add_ideas = Naval_treaty_allies
-			}
-			FRA = {
-				add_ideas = Naval_treaty_allies
-			}
-			CAN = { add_ideas = Naval_treaty_allies }
-			SAF = { add_ideas = Naval_treaty_allies }
-			BRA = { add_ideas = Naval_treaty_allies }
-			USA = {
-				add_ideas = Naval_treaty_allies
-			}
+			# ENG = { add_ideas = Naval_treaty_allies }
+			# FRA = { add_ideas = Naval_treaty_allies }
+			# CAN = { add_ideas = Naval_treaty_allies }
+			# SAF = { add_ideas = Naval_treaty_allies }
+			# BRA = { add_ideas = Naval_treaty_allies }
+			# USA = { add_ideas = Naval_treaty_allies }
 		}
 	}
 	#on_state_control_changed = {

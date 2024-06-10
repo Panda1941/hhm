@@ -2369,24 +2369,20 @@ focus_tree = {
 				custom_effect_tooltip = needs_approval
 				# Actual reward effects added in event if Soviets approve
 				effect_tooltip = {
-					# Trade influence with the USSR? Or simply let the opinion mod do the work
-					
-				add_tech_bonus = {
-				name = armor_bonus
-				bonus = 0.75
-				uses = 2
-				technology = basic_medium_tank_chassis
-				technology = improved_medium_tank_chassis
-			}
+					add_tech_bonus = {
+						name = armor_bonus
+						bonus = 1.0
+						uses = 1
+						category = cat_medium_armor
+					}
 				}
 			}
 
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.75
-				uses = 2
-				technology = basic_medium_tank_chassis
-				technology = improved_medium_tank_chassis
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
 			}
 			add_ideas = {GER_soviet_military_exercises}
 		}
@@ -2496,24 +2492,10 @@ focus_tree = {
 			}
 			add_tech_bonus = {
                 name = improved_medium_tank			
-				bonus = 0.75
+				bonus = 1.0
 				uses = 1
-				technology = improved_medium_tank_chassis_1
+				category = cat_medium_armor
 			}
-			#add_tech_bonus = {
-			#    name = mech_150
-			#	bonus = 1.5
-			#	uses = 1
-			#	name = mech_army_bonus
-			#	technology = mechanised_infantry
-			#}
-			#add_tech_bonus = {
-			#	name = armored_car_100
-			#	bonus = 1.0
-			#	uses = 2
-			#	category = cat_armored_cars
-			#}
-			#add_ideas = {GER_prepare_the_afrikakorps}
 		}
 	}
 	
@@ -2539,7 +2521,7 @@ focus_tree = {
                 name = advanced_light_tank			
 				bonus = 0.75
 				uses = 1
-				technology = improved_light_tank_chassis_1
+				category = cat_light_armor
 			}
 			add_ideas = {GER_Pz2_idea}
 		}
@@ -2587,7 +2569,7 @@ focus_tree = {
 		prerequisite = { focus = GER_army_innovation_2 }
 		
 		available = {
-		date > 1941.06.01	
+
 		}
 		
 		x = 0
@@ -2607,9 +2589,9 @@ focus_tree = {
 			
 			add_tech_bonus = {
                 name = improved_medium_tank			
-				bonus = 1.5
+				bonus = 1.0
 				uses = 1
-				technology = advanced_medium_tank_chassis
+				category = cat_medium_armor
 			}
 		}
 	}

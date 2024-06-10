@@ -998,7 +998,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 10
-			weight = 17
+			weight = 15
 			air_agility = -20
 		}
 		xp_cost = 0
@@ -1026,7 +1026,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 12
-			weight = 21
+			weight = 18
 			air_agility = -20
 		}
 		xp_cost = 0

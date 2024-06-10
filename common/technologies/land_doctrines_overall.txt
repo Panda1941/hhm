@@ -44,39 +44,40 @@ technologies = {
 		}
 
 		# Effects
-		support_light_sp_artillery = {   
-		    need = { light_tank_artillery_chassis = -4 }   
-		}
-	    support_medium_sp_artillery = {   
-			need = { medium_tank_artillery_chassis = -4 }   
-		}
-		support_heavy_sp_artillery = {   
-			need = { heavy_tank_artillery_chassis = -4 }   
-		}
-		support_modern_sp_artillery = {   
-			need = { modern_tank_artillery_chassis = -4 }   
-		}
-		light_flame_tank = {  
-			need = {  light_tank_flame_chassis = -4 } 
-		}
-		medium_flame_tank = {  
-			need = {   medium_tank_flame_chassis = -4 }  
-		}
-		heavy_flame_tank = {  
-			need = { heavy_tank_flame_chassis  = -4 } 
-		}
-		on_research_complete = {   
-		custom_effect_tooltip = spam_tank_tt  
-		}
-		on_research_complete = { 
+		# SPG
+		support_light_sp_artillery = { need = { light_tank_artillery_chassis = -4 } }
+	    support_medium_sp_artillery = { need = { medium_tank_artillery_chassis = -4 } }
+		support_heavy_sp_artillery = { need = { heavy_tank_artillery_chassis = -4 } }
+		support_super_heavy_sp_artillery = { need = { super_heavy_tank_artillery_chassis = -4} }
+		support_modern_sp_artillery = { need = { modern_tank_artillery_chassis = -4 } }
+
+		# SPAA
+		support_light_sp_anti_air = { need = { light_tank_aa_chassis = -4 } }
+		support_medium_sp_anti_air = { need = { medium_tank_aa_chassis = -4 } }
+		support_heavy_sp_anti_air = { need = { heavy_tank_aa_chassis = -4 } }
+		support_super_heavy_sp_anti_air = { need = { super_heavy_tank_aa_chassis = -4 } }
+		support_modern_sp_anti_air = { need = { modern_tank_aa_chassis = -4 } }
+
+		# SPTD
+		support_light_tank_destroyer = { need = { light_tank_destroyer_chassis = -4 } }
+		support_medium_tank_destroyer = { need = { medium_tank_destroyer_chassis = -4 } }
+		support_heavy_tank_destroyer = { need = { heavy_tank_destroyer_chassis = -4 } }
+		support_super_heavy_tank_destroyer = { need = { super_heavy_tank_destroyer_chassis = -4 } }
+		support_modern_tank_destroyer = { need = { modern_tank_destroyer_chassis = -4 } }
+		
+		# FLAME
+		light_flame_tank = { need = {  light_tank_flame_chassis = -4 } }
+		medium_flame_tank = { need = {   medium_tank_flame_chassis = -4 } }
+		heavy_flame_tank = { need = { heavy_tank_flame_chassis  = -4 } }
+		
+		on_research_complete = {
+			custom_effect_tooltip = spam_tank_tt
 			custom_effect_tooltip = spam_truck_tt
 		}
-		motorized = {
-			need = { motorized_equipment = -7 }
-		}
-		mechanized = {
-			need = { mechanized_chassis = -8 }
-		}
+		
+		motorized = { need = { motorized_equipment = -8 } }
+		mechanized = { need = { mechanized_chassis = -8 } }
+
 		supply_consumption_factor = -0.05
 		land_reinforce_rate = 0.02
 		air_cas_present_factor = 0.2
@@ -105,16 +106,7 @@ technologies = {
 				tag = USA
 		    }		
 		}
-		
-		support_light_sp_artillery = {   
-		    need = { light_tank_artillery_chassis = 4 }   
-		}
-	    support_medium_sp_artillery = {   
-			need = { medium_tank_artillery_chassis = 4 }   
-		}
-		support_heavy_sp_artillery = {   
-			need = { heavy_tank_artillery_chassis = 4 }   
-		}
+
 		artillery_brigade = {
 			need = { artillery_equipment = 6 }
 		}	
@@ -124,6 +116,7 @@ technologies = {
 		pack_artillery = {
 			need = { pack_artillery_equipment = 6 }
 		}
+
 		on_research_complete = { 
 			custom_effect_tooltip = spam_arty_tt
 		}
@@ -160,6 +153,7 @@ technologies = {
 		# Effects
 		category_army = {
 			soft_attack = 0.08
+			hard_attack = 0.02
 		}
 
 	}
@@ -191,24 +185,29 @@ technologies = {
 		on_research_complete = { 
 			custom_effect_tooltip = spam_trench_tt
 		}
-		marine= {
-			need = { support_equipment = -5 special_forces_equipment -10 }
-		}
-		marine_commando= {
-			need = { support_equipment = -5 special_forces_equipment -10 }
-		}
-		mountaineers= {
-			need = { support_equipment = -5 special_forces_equipment -10 }
-		}
-		paratrooper= {
-			need = { support_equipment = -5 special_forces_equipment -10 }
-		}
-		shock_troops= {
-			need = { support_equipment = -5 special_forces_equipment -10 }
-		}
-		jaeger= {
-			need = { support_equipment = -5 special_forces_equipment -10 }
-		}
+
+		# BATALIONS
+		marine= { need = { support_equipment = -5 special_forces_equipment -10 } }
+		marine_commando= { need = { support_equipment = -5 special_forces_equipment -10 } }
+		mountaineers= { need = { support_equipment = -5 special_forces_equipment -10 } }
+		paratrooper= { need = { support_equipment = -5 special_forces_equipment -10 } }
+		shock_troops= { need = { support_equipment = -5 special_forces_equipment -10 } }
+		jaeger= { need = { support_equipment = -5 special_forces_equipment -10 } }
+
+		# SUPPORT COMPANIES
+		field_hospital = { need = { support_equipment = -5 } }
+		logistics_company = { need = { support_equipment = -5 } }
+		logistics_company_infantry = { need = { support_equipment = -5 } }
+		maintenance_company = { need = { support_equipment = -5 } }
+		military_police = { need = { support_equipment = -5 } }
+		recon = { need = { support_equipment = -5 } }
+		mot_recon = { need = { support_equipment = -5 } }
+		armored_car_recon = { need = { support_equipment = -5 } }
+		light_tank_recon = { need = { support_equipment = -5 } }
+		rangers_support = { need = { support_equipment = -5 } }
+		winter_logistics_support = { need = { support_equipment = -5 } }
+		long_range_patrol_support = { need = { support_equipment = -5 } }
+		signal_company = { need = { support_equipment = -5 } }
 
 		doctrine = yes
 
@@ -258,45 +257,34 @@ technologies = {
 			tag = SOV 			
 		}
 
-		artillery_brigade = {
-			need = { artillery_equipment = -4 }
-		}	
-		rocket_artillery_brigade = {
-			need = { rocket_artillery_equipment = -4 }
-		}
-		anti_tank_brigade ={
-			need = { anti_tank_equipment = -4 }
-		}
-		anti_air_brigade = {
-			need = { anti_air_equipment = -5 }
-		}
 		infantry = {
-			need = { infantry_equipment = -15 }
+			need = { infantry_equipment = -10 }
 		}
 		penal_battalion= {
-			need = { infantry_equipment = -8 }
+			need = { infantry_equipment = -10 }
 		}
 		marine= {
-			need = { infantry_equipment = -50 }
+			need = { infantry_equipment = -20 }
 		}
 		marine_commando= {
-			need = { infantry_equipment = -50 }
+			need = { infantry_equipment = -20 }
 		}
 		mountaineers= {
-			need = { infantry_equipment = -50 }
+			need = { infantry_equipment = -20 }
 		}
 		paratrooper= {
-			need = { infantry_equipment = -50 }
+			need = { infantry_equipment = -20 }
 		}
 		shock_troops= {
-			need = { infantry_equipment = -50 }
+			need = { infantry_equipment = -20 }
 		}
 		jaeger= {
-			need = { infantry_equipment = -50 }
+			need = { infantry_equipment = -20 }
 		}
 		
 		on_research_complete = { 
 			custom_effect_tooltip = spam_inf_tt
+			custom_effect_tooltip = spam_inf2_tt
 		}
 
 		doctrine = yes

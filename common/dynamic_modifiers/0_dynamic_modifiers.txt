@@ -1314,7 +1314,8 @@ france_early_core = {
 
 	icon = GFX_generic_wall_line
 
-	army_core_defence_factor = 0.05
+	army_core_defence_factor = 0.15
+	army_core_attack_factor = 0.10
 }
 
 BRA_state_of_the_economy = { #NATIONAL SPIRIT

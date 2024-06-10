@@ -1021,7 +1021,7 @@ focus_tree = {
 		relative_position_id = ROM_for_the_preservation_of_greater_romania
 		mutually_exclusive = { focus = ROM_institute_a_royal_dictatorship }
 		prerequisite = { focus = ROM_elections_of_1937 }
-		x = 4
+		x = 3
 		y = 3
 
 		cost = 5
@@ -1058,7 +1058,7 @@ focus_tree = {
 		icon = GFX_focus_ROM_national_legionary_state
 		relative_position_id = ROM_ask_codreanue_to_form_government
 		prerequisite = { focus = ROM_ask_codreanue_to_form_government }
-		x = -2
+		x = -1
 		y = 1
 
 		cost = 5
@@ -1097,7 +1097,7 @@ focus_tree = {
 		icon = GFX_focus_rom_preserve_romania
 		relative_position_id = ROM_national_legionary_state
 		prerequisite = { focus = ROM_national_legionary_state }
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 5
@@ -1129,7 +1129,7 @@ focus_tree = {
 		icon = GFX_focus_rom_preserve_romania
 		relative_position_id = ROM_ask_codreanue_to_form_government
 		prerequisite = { focus = ROM_ask_codreanue_to_form_government }
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 5
@@ -1151,8 +1151,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
-			remove_ideas = ROM_preserve_greater_romania2
+			swap_ideas = {
+				add_idea = ROM_preserve_greater_romania3
+				remove_idea = ROM_preserve_greater_romania2
+			}
 		}
 	}
 
@@ -1162,7 +1164,7 @@ focus_tree = {
 		icon = GFX_focus_ROM_detente_the_entente
 		relative_position_id = ROM_secure_our_territorial_integrity
 		prerequisite = { focus = ROM_secure_our_territorial_integrity }
-		x = 0
+		x = 1
 		y = 1
 
 		cost = 5
@@ -1292,7 +1294,7 @@ focus_tree = {
 		relative_position_id = ROM_for_the_preservation_of_greater_romania
 		mutually_exclusive = { focus = ROM_ask_codreanue_to_form_government }
 		prerequisite = { focus = ROM_elections_of_1937 }
-		x = -4
+		x = -3
 		y = 3
 
 		cost = 5
@@ -1347,38 +1349,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ROM_arrest_general_antonescu
-		text = "Arrest general Antonescu"
-		icon = GFX_focus_ROM_imprison_antonescu
-		relative_position_id = ROM_institute_a_royal_dictatorship
-		prerequisite = { focus = ROM_institute_a_royal_dictatorship }
-		x = 4
-		y = 1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 9
-		}
-
-		available = {
-			has_idea = ROM_army_tensions 
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			remove_ideas = ROM_army_tensions
-		}
-	}
-
-	focus = {
 		id = ROM_imprison_the_iron_guard
 		text = "Night of the vampires"
 		icon = GFX_focus_ROM_imprison_the_iron_guard
@@ -1394,7 +1364,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_completed_focus = ROM_antonescus_coup_detat}
 
 		}
 
@@ -1440,7 +1409,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_completed_focus = ROM_antonescus_coup_detat}
 
 		}
 
@@ -1478,7 +1446,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_completed_focus = ROM_antonescus_coup_detat}
 
 		}
 
@@ -1502,8 +1469,8 @@ focus_tree = {
 		icon = GFX_focus_ROM_the_royal_foundation
 		relative_position_id = ROM_operetta_fascism
 		prerequisite = { focus = ROM_operetta_fascism }
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 
 		cost = 10
 
@@ -1512,7 +1479,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_completed_focus = ROM_arrest_general_antonescu}
 
 		}
 
@@ -1542,14 +1508,13 @@ focus_tree = {
 		x = -1
 		y = 2
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
 		}
 
 		available = {
-			NOT = { has_completed_focus = ROM_antonescus_coup_detat}
 
 		}
 
@@ -1606,7 +1571,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_completed_focus = ROM_arrest_general_antonescu}
 
 		}
 
@@ -1634,71 +1598,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ROM_antonescus_coup_detat
-		text = "Antonescus coup detat"
-		icon = GFX_focus_ROM_antonescus_coup_detat
-		relative_position_id = ROM_arrest_general_antonescu
-		mutually_exclusive = { focus = ROM_pressure_antonescu_into_becoming_prime_minister }
-		prerequisite = { focus = ROM_arrest_general_antonescu }
-		x = 0
-		y = 2
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 9
-		}
-
-		available = {
-			has_stability < 0.4
-			fascism > 0.3
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			create_country_leader = {
-				name = "Ion Antonescu"
-				desc = "POLITICS_ION_ANTONESCU_DESC"
-				picture = "Portrait_Romania_Ion_Antonescu.dds"
-				expire = "1965.1.1"
-				ideology = fascism_ideology
-				traits = {
-					#
-				}
-			}
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
-			}	
-			remove_ideas = neutrality_idea 
-			
-			if = {
-				limit = {
-					has_idea = ROM_army_tensions
-				}
-				remove_ideas = ROM_army_tensions
-			}
-		}
-	}
-
-	focus = {
 		id = ROM_pressure_antonescu_into_becoming_prime_minister
 		text = "Pressure Antonescu into prime minister"
 		icon = GFX_focus_ROM_pressure_antonescu
 		relative_position_id = ROM_institute_a_royal_dictatorship
-		mutually_exclusive = { focus = ROM_antonescus_coup_detat }
-		prerequisite = { focus = ROM_sentinels_of_the_motherland focus = ROM_form_the_front_of_national_rebirth focus = ROM_fascist_economics }
+		mutually_exclusive = { }
+		prerequisite = { focus = ROM_sentinels_of_the_motherland }
+		prerequisite = { focus = ROM_form_the_front_of_national_rebirth }
+		prerequisite = { focus = ROM_fascist_economics }
 		x = 0
 		y = 3
 
@@ -1713,7 +1620,6 @@ focus_tree = {
 				FRA = { has_capitulated = yes }
 				NOT = { country_exists = FRA }
 			}
-			NOT = { has_completed_focus = ROM_arrest_general_antonescu}
 		}
 
 		bypass = {
@@ -1763,8 +1669,8 @@ focus_tree = {
 		text = "Force the king to abdicate"
 		icon = GFX_focus_rom_coup
 		relative_position_id = ROM_institute_a_royal_dictatorship
-		prerequisite = { focus = ROM_pressure_antonescu_into_becoming_prime_minister focus = ROM_antonescus_coup_detat focus = ROM_co_conducator }
-		x = 4
+		prerequisite = { focus = ROM_pressure_antonescu_into_becoming_prime_minister focus = ROM_co_conducator }
+		x = 3
 		y = 4
 
 		cost = 5
@@ -2070,7 +1976,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ROM_expand_small_arms_manufacturing
-				bonus = 0.75
+				bonus = 1.0
 				uses = 2
 				category = infantry_weapons
 			}
@@ -2112,60 +2018,7 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = ROM_expand_the_army
 				add_idea = ROM_reserve_divisions
-			}
-
-			#hidden_effect = {
-				division_template = {
-					name = "Reserve Divisions"
-					division_names_group = ROM_INF_01
-					priority = 2
-	
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-			
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-						
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-			
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						anti_tank_brigade = { x = 3 y = 3 }
-					}
-					support = { 
-						engineer = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
-						maintenance_company = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
-						field_hospital = { x = 1 y = 2 }
-					}
-				}
-					
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 46 }
-					create_unit = {
-						division = "name = \"Reserve Divisions\" division_template = \"Reserve Divisions\" start_experience_factor = 0.1 start_equipment_factor = 1.0" 
-						owner = ROM
-					}
-					create_unit = {
-						division = "name = \"Reserve Divisions\" division_template = \"Reserve Divisions\" start_experience_factor = 0.1 start_equipment_factor = 1.0" 
-						owner = ROM
-					}
-					create_unit = {
-						division = "name = \"Reserve Divisions\" division_template = \"Reserve Divisions\" start_experience_factor = 0.1 start_equipment_factor = 1.0" 
-						owner = ROM
-					}				
-				}
-			#}						
+			}						
 		}
 	}
 
@@ -2199,11 +2052,12 @@ focus_tree = {
 		available = { 	
 			has_tech = heavy_arty_1 
 			has_equipment = {
-    artillery_equipment_1 > 199
-}
+				artillery_equipment_1 > 199
+			}
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = "Completing the focus will convert 200 units of artillery I into heavy artillery I"
 			ROM = {			
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = -200 producer = ROM }
 				add_equipment_to_stockpile = { type = heavy_artillery_equipment_1 amount = 200 producer = ROM }			
@@ -2211,7 +2065,7 @@ focus_tree = {
 			add_tech_bonus = {
 				category = artillery
 				uses = 1
-				bonus = 0.5
+				bonus = 1.0
 				name = ROM_import_and_convert_antique_artillery
 			}
 		}
@@ -2509,7 +2363,7 @@ focus_tree = {
 			add_tech_bonus = {
 				category = cat_mechanized_equipment
 				uses = 1
-				bonus = 0.75
+				bonus = 1.5
 				name = ROM_mechanization_of_our_soldiers
 			}
 			
@@ -2558,10 +2412,9 @@ focus_tree = {
 			add_ideas = ROM_acquire_modern_tanks
 			army_experience = 50 
 			add_tech_bonus = {
-				uses = 2
-				bonus = 0.75
+				uses = 1
+				bonus = 1.5
 				category = armor
-		
 			}
 		}
 	}
@@ -2692,16 +2545,10 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_the_R_series
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
 				category = armor
-				ahead_reduction = 0.5
-			}
-			add_tech_bonus = {
-				name = ROM_the_R_series
-				bonus = 0.5
-				uses = 1
-				category = tank_upgrade
+				ahead_reduction = 1.0
 			}
 
 			swap_ideas = {
@@ -2936,7 +2783,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-mio:ROM_Braila_organization = {
+			mio:ROM_Braila_organization = {
 				add_mio_funds = 1000
 			}		
 			custom_effect_tooltip = available_designer
@@ -2992,7 +2839,7 @@ mio:ROM_Braila_organization = {
 		y = 1
 		relative_position_id = ROM_expand_the_army
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3021,7 +2868,7 @@ mio:ROM_Braila_organization = {
 
 			set_variable = {
 				var = special_forces_xp_to_add
-				value = 25
+				value = 50
 				tooltip = add_positive_amount_of_special_forces_xp_tt
 			}
 			add_set_amount_of_special_forces_xp = yes
