@@ -1224,18 +1224,12 @@ on_actions = {
 					amount = 156
 				}
 			}
-			ENG = {
-				add_ideas = Naval_treaty_allies
-			}
-			FRA = {
-				add_ideas = Naval_treaty_allies
-			}
-			CAN = { add_ideas = Naval_treaty_allies }
-			SAF = { add_ideas = Naval_treaty_allies }
-			BRA = { add_ideas = Naval_treaty_allies }
-			USA = {
-				add_ideas = Naval_treaty_allies
-			}
+			# ENG = { add_ideas = Naval_treaty_allies }
+			# FRA = { add_ideas = Naval_treaty_allies }
+			# CAN = { add_ideas = Naval_treaty_allies }
+			# SAF = { add_ideas = Naval_treaty_allies }
+			# BRA = { add_ideas = Naval_treaty_allies }
+			# USA = { add_ideas = Naval_treaty_allies }
 		}
 	}
 	#on_state_control_changed = {
