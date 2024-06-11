@@ -197,7 +197,10 @@ ideas = {
 			name = RAJ_british_rail_investors
 
 			allowed = {
-				original_tag = RAJ
+				OR = {
+					original_tag = RAJ
+					original_tag = ENG
+				}
 			}
 
 			allowed_civil_war = {
@@ -209,7 +212,12 @@ ideas = {
 				}
 			}
 
-			available = { is_subject_of = ENG }
+			available = { 
+				OR = {
+					original_tag = RAJ
+					original_tag = ENG
+				} 
+			}
 
 			removal_cost = -1
 
@@ -224,7 +232,10 @@ ideas = {
 			picture = generic_build_infrastructure
 
 			allowed = {
-				original_tag = RAJ
+				OR = {
+					original_tag = RAJ
+					original_tag = ENG
+				}
 			}
 
 			allowed_civil_war = {
@@ -236,7 +247,12 @@ ideas = {
 				}
 			}
 
-			available = { is_subject_of = ENG }
+			available = { 
+				OR = {
+					original_tag = RAJ
+					original_tag = ENG
+				} 
+			}
 
 			removal_cost = -1
 
