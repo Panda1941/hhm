@@ -185,7 +185,7 @@ buildings = {
 
 	synthetic_refinery = {
 		show_on_map = 1
-		base_cost = 9250
+		base_cost = 8000
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
@@ -202,7 +202,7 @@ buildings = {
 
 	steel_refinery = {
 		show_on_map = 1
-		base_cost = 9250
+		base_cost = 8000
 		icon_frame = 17
 		local_resources_steel = 12 # May use local_resources_ + any resource name
 		refinery = yes
@@ -217,7 +217,7 @@ buildings = {
 
 	aluminium_refinery = {
 		show_on_map = 1
-		base_cost = 9250
+		base_cost = 8000
 		icon_frame = 19
 		local_resources_aluminium = 10 # May use local_resources_ + any resource name
 		refinery = yes
@@ -232,7 +232,7 @@ buildings = {
 
 	advanced_steel_refinery = {
 		show_on_map = 1
-		base_cost = 9250
+		base_cost = 8000
 		icon_frame = 18
 		local_resources_chromium = 6 # May use local_resources_ + any resource name
 		local_resources_tungsten = 6 # May use local_resources_ + any resource name

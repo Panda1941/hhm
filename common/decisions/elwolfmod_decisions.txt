@@ -1091,6 +1091,41 @@ operations = {
 			}
 		}
 	}
+	two_emperors_of_asia = {
+		# icon = generic_operation
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			MAN = {
+				is_ai = no
+			}
+			609 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			608 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			date > 1938.06.01
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = JAP
+		}
+		targets = {
+			MAN
+		}
+		complete_effect = {
+			MAN = {
+				transfer_state = 609
+				transfer_state = 608
+			}
+		}
+	}
 	annex_manchukuo = {
 		# icon = generic_operation
 		allowed = {

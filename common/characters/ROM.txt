@@ -111,7 +111,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ logistics_wizard offensive_doctrine }
+			traits={ logistics_wizard offensive_doctrine cavalry_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -131,12 +131,48 @@ characters={
 		}
 		corps_commander={
 			traits={ hill_fighter commando }
-			skill=3
+			skill=4
 			attack_skill=2
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=2
 			legacy_id=-1
+		}
+	}
+
+	ROM_generic_general_1 = {
+		name="Robert Costiniu"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_5"
+				small="GFX_Portrait_Europe_Generic_land_5_small"
+			}
+		}
+		corps_commander={
+			traits={ organizer hill_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
+	ROM_generic_general_2 = {
+		name="Remus Galca"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_4"
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer infantry_leader offensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
 		}
 	}
 

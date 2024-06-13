@@ -112,6 +112,42 @@ characters={
 		}
 	}
 
+	RAJ_generic_general_1 = {
+		name="Ranjit Sarkar"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_1"
+				small="GFX_Portrait_Europe_Generic_land_1_small"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trait_engineer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
+	RAJ_generic_general_2 = {
+		name="Rura Goyal"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_2"
+				small="GFX_Portrait_Europe_Generic_land_2_small"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader trait_mountaineer ranger }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
 	RAJ_herbert_fitzherbert={
 		name=RAJ_herbert_fitzherbert
 		portraits={

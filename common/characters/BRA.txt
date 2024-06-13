@@ -193,10 +193,6 @@ characters={
 					has_dlc = "Trial of Allegiance"
 				}
 				available = {
-					OR = { 
-						has_completed_focus = BRA_posts_for_generals 
-						has_completed_focus = BRA_issue_lordships
-					}
 					is_country_leader = NO
 				}
 				traits = {
@@ -1027,7 +1023,6 @@ characters={
 			}
 			available  = {
 				has_government = democratic
-				has_completed_focus = BRA_free_speech
 			}
 			traits  = {
 				BRA_anti_authoritarian
@@ -1050,7 +1045,6 @@ characters={
 			}
 			available  = {
 				has_government = democratic
-				has_completed_focus = BRA_free_speech
 			}
 			traits  = {
 				BRA_academic_writer
@@ -1082,7 +1076,6 @@ characters={
 			}
 			available  = {
 				has_government = democratic
-				has_completed_focus = BRA_free_speech
 				is_country_leader = no
 			}
 			traits  = {
@@ -1112,7 +1105,6 @@ characters={
 			}
 			available  = {
 				has_government = democratic
-				has_completed_focus = BRA_free_speech
 				is_country_leader = no
 			}
 			traits  = {

@@ -79,6 +79,9 @@ recruit_character = RAJ_mahatma_mohandas_gandhi
 recruit_character = RAJ_sir_mohammed_iqbal
 recruit_character = RAJ_john_mathai
 
+recruit_character = RAJ_generic_general_1
+recruit_character = RAJ_generic_general_2
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"

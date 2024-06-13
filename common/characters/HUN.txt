@@ -157,6 +157,42 @@ characters={
 		}
 	}
 
+	HUN_generic_general_1 = {
+		name="Somogyi Márió"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_5"
+				small="GFX_Portrait_Europe_Generic_land_5_small"
+			}
+		}
+		corps_commander={
+			traits={ ranger hill_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
+	HUN_generic_general_2 = {
+		name="Veres István"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_4"
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer cavalry_leader offensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
 	HUN_karoly_beregfy={
 		name=HUN_karoly_beregfy
 		portraits={

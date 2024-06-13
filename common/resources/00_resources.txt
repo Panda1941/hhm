@@ -2,37 +2,37 @@ resources = {
 
 	oil = {
 		icon_frame = 1
-		cic = 0.0625
-		convoys = 0.1
+		cic = 0.0416
+		convoys = 0.09
 	}
 
 	aluminium = {
 		icon_frame = 2
-		cic = 0.0625
-		convoys = 0.1
+		cic = 0.0416
+		convoys = 0.09
 	}
 
 	rubber = {
 		icon_frame = 3
-		cic = 0.0625
-		convoys = 0.1
+		cic = 0.0416
+		convoys = 0.09
 	}
 	
 	tungsten = {
 		icon_frame = 4
-		cic = 0.0625
-		convoys = 0.1
+		cic = 0.0416
+		convoys = 0.09
 	}
 	
 	steel = {
 		icon_frame = 5
-		cic = 0.0625
-		convoys = 0.1
+		cic = 0.0416
+		convoys = 0.09
 	}
 	
 	chromium = {
 		icon_frame = 6
-		cic = 0.0625
-		convoys = 0.1
+		cic = 0.0416
+		convoys = 0.09
 	}
 }

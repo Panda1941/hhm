@@ -124,3 +124,8 @@ recruit_character = SAF_nicolaas_havenga
 recruit_character = SAF_sir_patrick_duncan
 recruit_character = SAF_abram_fischer
 
+recruit_character = SAF_generic_general_1
+recruit_character = SAF_generic_general_2
+recruit_character = SAF_generic_general_3
+recruit_character = SAF_generic_general_4
+

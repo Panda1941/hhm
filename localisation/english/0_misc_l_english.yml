@@ -5,7 +5,7 @@
 
  GER_integrate_war_economies_mod_tt:0 "If an axis minor (YHungary, Romania, Spain, Bulgaria!) is in faction with germany, they will become a puppet and get 4 mils in their capital.\n\nYGermany! will receive 4 mils per minor (up to 16)\n"
 
-
+ two_emperors_of_asia:0 "The Two Emperors of Asia"
 
  #Random canada shit
  CAN_canadian_citizenship_act: "The Canadian Citizenship Act"

@@ -78,12 +78,12 @@ characters={
 			}
 		}
 		corps_commander={
-		    traits={ infantry_officer }
+		    traits={ infantry_leader naval_invader }
 			skill=4
 			attack_skill=4
 			defense_skill=2
 			planning_skill=5
-			logistics_skill=2
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -97,7 +97,7 @@ characters={
 			}
 		}
 		corps_commander={
-		    traits={ infantry_officer }
+		    traits={ panzer_leader trait_engineer}
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -116,7 +116,7 @@ characters={
 			}
 		}
 		corps_commander={
-		     traits={ infantry_officer }
+		     traits={ cavalry_leader commando }
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -135,7 +135,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter infantry_officer }
+			traits={ hill_fighter infantry_leader }
 			skill=3
 			attack_skill=2
 			defense_skill=4
@@ -615,7 +615,7 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				quartermaster_general 
+				captain_of_industry 
 			}
 		}		
 	}
@@ -658,7 +658,6 @@ characters={
 				smooth_talking_charmer 
 			}
 			available = {
-				has_completed_focus = AST_never_another_gallipoli 
 			}
 		}		
 	}
@@ -681,12 +680,6 @@ characters={
 				silent_workhorse 
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = AST_support_the_policy_of_appeasement 
-				}
 			}
 		}		
 	}

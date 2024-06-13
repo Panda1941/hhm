@@ -91,6 +91,42 @@ characters={
 		}
 	}
 
+	CAN_generic_general_1 = {
+		name="Aidan Robins"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_1"
+				small="GFX_Portrait_Europe_Generic_land_1_small"
+			}
+		}
+		corps_commander={
+			traits={ panzer_expert trait_engineer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
+	CAN_generic_general_2 = {
+		name="Brandon Till"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_2"
+				small="GFX_Portrait_Europe_Generic_land_2_small"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader offensive_doctrine organizer }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
 	CAN_charles_foulkes={
 		name=CAN_charles_foulkes
 		portraits={

@@ -124,6 +124,78 @@ characters={
 		}
 	}
 
+	SAF_generic_general_1 = {
+		name="Bast Young"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_1"
+				small="GFX_Portrait_Europe_Generic_land_1_small"
+			}
+		}
+		corps_commander={
+			traits={ panzer_expert trait_engineer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
+	SAF_generic_general_2 = {
+		name="Bash Blaauw"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_2"
+				small="GFX_Portrait_Europe_Generic_land_2_small"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader offensive_doctrine organizer }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
+	SAF_generic_general_3 = {
+		name="Eon Rogers"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_5"
+				small="GFX_Portrait_Europe_Generic_land_5_small"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader hill_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
+	SAF_generic_general_4 = {
+		name="Helouise Strydom"
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_4"
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer infantry_leader defensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
 
 	### THEORISTS ###
 

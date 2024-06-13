@@ -125,7 +125,6 @@ IF = {
 	}
 	#Political
 	recruit_character = BRA_armando_de_sales_oliveira
-	recruit_character = BRA_domingos_bras
 	recruit_character = BRA_jose_linhares
 	recruit_character = BRA_benedito_valadres
 	recruit_character = BRA_alfred_agache
@@ -142,16 +141,9 @@ IF = {
 	recruit_character = BRA_pedro_de_alcantara
 	recruit_character = BRA_alianca_nacional_libertadora_council
 	recruit_character = BRA_minervino_de_oliveira
-	recruit_character = BRA_olga_benario_prestes
-	recruit_character = BRA_apolonio_de_carvalho
 	recruit_character = BRA_war_industrialist
 	recruit_character = BRA_captain_of_industry
-	recruit_character = BRA_leoncio_basbaum
-	recruit_character = BRA_geremia_lunarelli
 	recruit_character = BRA_henry_ford
-	recruit_character = BRA_gustavo_barroso
-	recruit_character = BRA_miguel_reale
-	recruit_character = BRA_oliveria_viana
 	#Army
 	recruit_character = BRA_augusto_fragoso
 	recruit_character = BRA_alvaro_de_castro
@@ -290,7 +282,6 @@ recruit_character = BRA_ismael_motta_paes
 recruit_character = BRA_jorge_martins
 recruit_character = BRA_newton_cavalcanti
 recruit_character = BRA_afranio_de_mello_franco
-recruit_character = BRA_washington_luis_pereira
 recruit_character = BRA_osvaldo_aranha
 recruit_character = BRA_arlindo_veiga_dos_santos
 recruit_character = BRA_random_army_chief

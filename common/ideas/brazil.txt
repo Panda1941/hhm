@@ -1285,7 +1285,7 @@ ideas = {
 			}
 			traits = { central_bank } 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.2
 			}
 		}
 
@@ -1306,7 +1306,7 @@ ideas = {
 			removal_cost = 10
 			research_bonus = {
 				electronics = 0.15
-				#radar_tech = 0.05
+				radar_tech = 0.05
 			}
 			traits = { electronics_concern } 
 		}
@@ -1380,7 +1380,7 @@ ideas = {
 			}
 			traits = { industrial_concern } 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 	}

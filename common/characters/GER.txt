@@ -1443,10 +1443,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan 
-				not = {
-					has_completed_focus = GER_demand_sudetenland 
-				}
+				has_completed_focus = GER_four_year_plan
 			}
 			traits = {
 				captain_of_industry 
