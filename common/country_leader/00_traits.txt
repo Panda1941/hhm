@@ -7804,6 +7804,17 @@ leader_traits = {
 		}
 	}
 
+	USA_general_motors_trait = {
+		random = no
+
+		industrial_capacity_factory = 0.10
+		industrial_capacity_dockyard = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	railway_company = {
 		random = no
 		production_speed_rail_way_factor = 0.15
@@ -7825,6 +7836,7 @@ leader_traits = {
 
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
+		production_speed_buildings_factor = 0.025
 
 		ai_will_do = {
 			factor = 1

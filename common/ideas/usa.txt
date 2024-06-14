@@ -2296,32 +2296,26 @@ ideas = {
 			modifier = {
 			}
 		}
+
 		USA_general_motors = {
 			
 			picture = usa_general_motors
 			allowed = {
 				original_tag = USA
 			}
+			
 			available = {
 				has_completed_focus = USA_wartime_industry
 			}
-			
-
 			
 			research_bonus = {
 				industry = 0.15
 			}
 			
-			traits = { industrial_concern }
-			
-			modifier = {
-				industrial_capacity_factory = 0.05
-			}
+			traits = { USA_general_motors_trait }
 		}
 		
 		USA_union_pacific_railway = {
-
-			text = "Union Pacific Railway"
 
 			picture = idea_USA_union_pacific_railway
 
@@ -2338,8 +2332,27 @@ ideas = {
 
 			traits = { railway_company }
 		}
+		
+		USA_caterpillar = {
+
+			name = "Caterpillar"
+
+			cost = 100
+
+			picture = USA_caterpillar
+
+			allowed = {
+				original_tag = USA
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				industry = 0.10
+			}
+
+			traits = { construction_company }
+		}
 	}
-	
-	
-	
 }

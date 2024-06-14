@@ -297,12 +297,6 @@ ideas = {
 						}
 					}
 				}
-				#if = {
-				#	limit = {
-				#		original_tag = SOV
-				#	}
-				#	has_war_with = GER
-				#}
 			}
 
 			cost = 150
@@ -406,7 +400,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value  = 0.15
+				consumer_goods_expected_value = 0.15
 				production_speed_buildings_factor = -0.15
 
 			}
@@ -435,7 +429,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value  = 0.10
+				consumer_goods_expected_value = 0.10
 				production_speed_buildings_factor = -0.2
 				global_building_slots_factor = 0.1
 			}
@@ -461,11 +455,17 @@ ideas = {
 			removal_cost = -1
 			picture = isolation
 
+			rule = {
+				can_access_market = no
+			}
+
 			modifier = {
 				min_export = 0.25
-				consumer_goods_expected_value  = 0.05
+				consumer_goods_expected_value = 0.05
 				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 40.0	
+				navy_intel_to_others = 40.0
+				agency_upgrade_time = 0.15
+				cic_construction_boost = 0.15
 			}
 
 			allowed_to_remove = {
@@ -535,7 +535,7 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 				research_speed_factor = 0.075
 				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 20.0
+				navy_intel_to_others = 20.0	
 			}
 
 			cancel_if_invalid = no
@@ -749,11 +749,6 @@ ideas = {
 
 			modifier = {
 				min_export = 0
-				#civilian_intel_to_others = 0.0
-			}
-
-			on_add = {
-				custom_effect_tooltip = closed_economy_TT
 			}
 
 			cancel_if_invalid = no
