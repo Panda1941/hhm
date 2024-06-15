@@ -1571,9 +1571,8 @@ operations = {
 			factor = 0
 		}
 		available = {
-			NZL = {
-				is_ai = yes
-			}
+			NZL = { is_ai = yes }
+			AST = { is_ai = yes }
 		}
 		targets = {
 			NZL
