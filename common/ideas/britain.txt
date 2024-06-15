@@ -1938,6 +1938,39 @@ ideas = {
 			modifier = {
 			}
 		}
+
+		
+		british_petroleum = {
+			
+			picture = ENG_BP
+			name = "British Petroleum"
+			allowed = { original_tag = ENG }
+
+			cost = 100
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+		}
+
+		
+		british_railrilways = {
+			
+			picture = ENG_railways
+			name = "British Railways"
+			allowed = { original_tag = ENG }
+			
+			cost = 100
+
+			research_bonus = {
+				industry = 0.05
+			}
+
+			traits = { railway_company }
+		}
 		
 	}	
 

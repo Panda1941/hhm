@@ -653,7 +653,7 @@ focus_tree = {
 				has_war = yes
 				GER = {
 					has_completed_focus = GER_anschluss
-				}
+				}	
 			}
 		}
 		continue_if_invalid = yes

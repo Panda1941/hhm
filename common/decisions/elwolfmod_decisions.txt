@@ -1024,13 +1024,6 @@ operations = {
 			hidden_effect = {
 				ITA_end_the_italo_ethiopian_war = yes
 			}
-			every_state = {
-				limit = {
-					is_core_of = ETH
-					is_controlled_by = ITA
-				}
-				add_compliance = 100
-			}
 			delete_unit_template_and_units = {
 				division_template = "Chitet Sefari"
 				disband = yes				# if yes, equipment will be returned to country equipment. default is no
@@ -1081,13 +1074,6 @@ operations = {
 					target = SIA
 					transfer_troops = yes
 				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = SIA
-					is_controlled_by = JAP
-				}
-				add_compliance = 100
 			}
 		}
 	}
@@ -1167,13 +1153,6 @@ operations = {
 					transfer_troops = yes
 				}
 			}
-			every_state = {
-				limit = {
-					is_core_of = MAN
-					is_controlled_by = JAP
-				}
-				add_compliance = 100
-			}
 		}
 	}
 	annex_bulgaria = {
@@ -1213,13 +1192,6 @@ operations = {
 					target = BUL
 					transfer_troops = yes
 				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = BUL
-					is_controlled_by = ROM
-				}
-				add_core_of = ROM
 			}
 		}
 	}
@@ -1261,6 +1233,7 @@ operations = {
 					transfer_troops = yes
 				}
 			}
+			# Australia gets new zealand as cores, UK doesn't
 			every_state = {
 				limit = {
 					is_core_of = NZL
@@ -1306,13 +1279,6 @@ operations = {
 					target = SAF
 				}
 			}
-			every_state = {
-				limit = {
-					is_core_of = SAF
-					is_controlled_by = CAN
-				}
-				add_compliance = 50
-			}
 		}
 	}
 	annex_can_saf = {
@@ -1350,13 +1316,6 @@ operations = {
 				annex_country = {
 					target = CAN
 				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = CAN
-					is_controlled_by = SAF
-				}
-				add_compliance = 50
 			}
 		}
 	}
@@ -1399,13 +1358,6 @@ operations = {
 					transfer_troops = yes
 				}
 			}
-			every_state = {
-				limit = {
-					is_core_of = BRA
-					is_controlled_by = ENG
-				}
-				add_compliance = 15
-			}
 		}
 	}
 	annex_canada = {
@@ -1446,12 +1398,45 @@ operations = {
 					transfer_troops = yes
 				}
 			}
-			every_state = {
-				limit = {
-					is_core_of = CAN
-					is_controlled_by = ENG
+		}
+	}
+	annex_ireland = {
+		# icon = generic_operation
+		allowed = {
+			tag = ENG
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			IRE = {
+				is_ai = yes
+			}
+		}
+		targets = {
+			IRE
+		}
+		complete_effect = {
+			IRE = {
+				transfer_units_fraction = {
+					target = ENG
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
 				}
-				add_compliance = 50
+			}
+			ENG = {
+				annex_country = {
+					target = IRE
+					transfer_troops = yes
+				}
 			}
 		}
 	}
@@ -1493,13 +1478,6 @@ operations = {
 					transfer_troops = yes
 				}
 			}
-			every_state = {
-				limit = {
-					is_core_of = SAF
-					is_controlled_by = ENG
-				}
-				add_compliance = 50
-			}
 		}
 	}
 	annex_british_raj = {
@@ -1539,13 +1517,6 @@ operations = {
 					target = RAJ
 					transfer_troops = yes
 				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = RAJ
-					is_controlled_by = ENG
-				}
-				add_compliance = 50
 			}
 		}
 	}
@@ -1587,12 +1558,45 @@ operations = {
 					transfer_troops = yes
 				}
 			}
-			every_state = {
-				limit = {
-					is_core_of = AST
-					is_controlled_by = ENG
+		}
+	}
+	annex_new_zealand_eng = {
+		# icon = generic_operation
+		allowed = {
+			tag = ENG
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NZL = {
+				is_ai = yes
+			}
+		}
+		targets = {
+			NZL
+		}
+		complete_effect = {
+			NZL = {
+				transfer_units_fraction = {
+					target = ENG
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
 				}
-				add_compliance = 50
+			}
+			ENG = {
+				annex_country = {
+					target = NZL
+					transfer_troops = yes
+				}
 			}
 		}
 	}
@@ -1633,13 +1637,6 @@ operations = {
 					target = PHI
 					transfer_troops = yes
 				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = PHI 
-					is_controlled_by = USA
-				}
-				add_compliance = 100
 			}
 		}
 	}

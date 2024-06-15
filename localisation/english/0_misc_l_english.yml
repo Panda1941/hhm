@@ -7,6 +7,9 @@
  tank_buster_3:0 "Anti-Tank Cannon III"
 
 
+ annex_ireland:0 "Annex Ireland"
+ annex_new_zealand_eng:0 "Annex New Zealand"
+
 
  GER_integrate_war_economies_mod_tt:0 "If an axis minor (YHungary, Romania, Spain, Bulgaria!) is in faction with germany, they will become a puppet and get 4 mils in their capital.\n\nYGermany! will receive 4 mils per minor (up to 16)\n"
 

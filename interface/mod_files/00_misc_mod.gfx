@@ -4,5 +4,13 @@ spriteTypes = {
 		name = "GFX_idea_USA_caterpillar"
 		texturefile = "gfx/interface/ideas/USA/idea_USA_caterpillar.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_ENG_BP"
+		texturefile = "gfx/interface/ideas/ENG/idea_ENG_BP.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_railways"
+		texturefile = "gfx/interface/ideas/ENG/idea_ENG_railways.dds"
+	}
 	
 }
