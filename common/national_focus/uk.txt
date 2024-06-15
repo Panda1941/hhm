@@ -651,9 +651,8 @@ focus_tree = {
 			OR = {
 				threat > 0.1
 				has_war = yes
-				has_idea = ENG_no_further_appeasement_idea
 				GER = {
-					has_completed_focus = GER_demand_sudetenland
+					has_completed_focus = GER_anschluss
 				}
 			}
 		}
