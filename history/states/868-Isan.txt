@@ -8,6 +8,10 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = SIA
 		buildings = {
 			infrastructure = 1
+
+			# Added half of what they would get from the generic focus tree
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		victory_points = {
 			10438 1 

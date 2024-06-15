@@ -1978,7 +1978,7 @@ leader_traits = {
 		}
 		cost = 700
 		modifier = {
-			navy_submarine_attack_factor = 0.2 # +X% stronger damage for submarines
+			navy_submarine_attack_factor = 0.15 # +X% stronger damage for submarines
 		}
 		custom_gain_xp_trigger_tooltip = SEAWOLF_TRIGGER_TT
 		
@@ -2022,7 +2022,7 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = FLEET_PROTECTOR_TRIGGER_TT
 		cost = 500
 		modifier = {
-			screening_efficiency = 0.2
+			screening_efficiency = 0.15
 		}
 		
 		slot = high_command
@@ -2044,7 +2044,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			positioning = 0.10
+			positioning = 0.05
 		}
 		custom_gain_xp_trigger_tooltip = SUPERIOR_TACTICIAN_TRIGGER_TT
 		
@@ -2070,7 +2070,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			navy_carrier_air_targetting_factor = 0.1 # Airplanes from carriers has better naval targetting
+			navy_carrier_air_targetting_factor = 0.05 # Airplanes from carriers has better naval targetting
 			sortie_efficiency = 0.1
 		}
 		
@@ -2094,7 +2094,7 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = IRONSIDE_TRIGGER_TT
 		cost = 500
 		modifier = {
-			navy_capital_ship_defence_factor = 0.1
+			navy_capital_ship_defence_factor = 0.05
 		}
 
 		ai_will_do = {
@@ -2111,7 +2111,7 @@ leader_traits = {
 	concealment_expert = { 
 		type = navy
 		modifier = {
-			navy_visibility = -0.2
+			navy_visibility = -0.1
 		}
 				
 		ai_will_do = {
@@ -2276,7 +2276,7 @@ leader_traits = {
 	flight_deck_manager = { 
 		type = navy
 		modifier = {
-			 sortie_efficiency = 0.1
+			sortie_efficiency = 0.1
 		}
 		
 		slot = high_command
@@ -2299,7 +2299,7 @@ leader_traits = {
 	ground_pounder = { 
 		type = navy
 		modifier = {
-			shore_bombardment_bonus = 0.25 
+			shore_bombardment_bonus = 0.25
 		}
 				
 		ai_will_do = {
@@ -2316,7 +2316,7 @@ leader_traits = {
 	big_guns_expert = { 
 		type = navy
 		modifier = {
-			navy_capital_ship_attack_factor = 0.15
+			navy_capital_ship_attack_factor = 0.075
 		}
 				
 		slot = high_command
@@ -2361,6 +2361,7 @@ leader_traits = {
 		type = navy
 		modifier = {
 			naval_retreat_chance = 0.25
+			naval_retreat_speed = 0.10
 		}
 		
 		ai_will_do = {
@@ -2400,7 +2401,7 @@ leader_traits = {
 	loading_drill_master = { 
 		type = navy
 		modifier = {
-			naval_torpedo_cooldown_factor = -0.25
+			naval_torpedo_cooldown_factor = -0.33 # every 2 hours instead of every 3 hours
 		}
 				
 		ai_will_do = {
@@ -2438,7 +2439,7 @@ leader_traits = {
 	fly_swatter = {
 		type = navy
 		modifier = {
-			navy_anti_air_attack_factor = 0.1
+			navy_anti_air_attack_factor = 0.125
 		}
 
 		trait_type = assignable_trait
@@ -2459,7 +2460,7 @@ leader_traits = {
 	fighter_director = { 
 		type = navy
 		modifier = {
-			fighter_sortie_efficiency = 0.2
+			fighter_sortie_efficiency = 0.25
 		}
 				
 		ai_will_do = {
@@ -2555,7 +2556,7 @@ leader_traits = {
 	crisis_magician = { 
 		type = navy
 		modifier = {
-			 naval_critical_effect_factor = -0.5
+			naval_critical_effect_factor = -0.5
 		}
 				
 		ai_will_do = {
@@ -2701,8 +2702,8 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			naval_enemy_retreat_chance = 0.2
-			navy_org = 5
+			naval_enemy_retreat_chance = 0.1
+			navy_org_factor = 0.05
 		}
 		new_commander_weight = {
 			factor = 1  
@@ -2749,8 +2750,8 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			naval_damage_factor = 0.2
-			naval_defense_factor = -0.1
+			naval_damage_factor = 0.1
+			naval_defense_factor = -0.05
 		}
 		new_commander_weight = {
 			factor = 1  
@@ -2794,8 +2795,8 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			naval_has_potf_in_combat_attack = 0.1
-			naval_has_potf_in_combat_defense = 0.1
+			naval_has_potf_in_combat_attack = 0.05
+			naval_has_potf_in_combat_defense = 0.05
 		}
 		new_commander_weight = {
 			factor = 1  
@@ -2817,8 +2818,8 @@ leader_traits = {
 		trait_type = personality_trait
 	
 		modifier = { # WARNING! Changing the value of these modifiers requires changing them also in the tooltip ITA_flotta_d_evasione_admiral_traits_tt
-			naval_damage_factor = 0.05
-			naval_speed_factor = 0.1
+			naval_damage_factor = 0.025
+			naval_speed_factor = 0.05
 		}
 		new_commander_weight = {
 			factor = 1  
@@ -2862,8 +2863,8 @@ leader_traits = {
 		trait_type = personality_trait
 	
 		modifier = {
-			navy_capital_ship_attack_factor = 0.1
-			navy_anti_air_attack_factor = -0.2	
+			navy_capital_ship_attack_factor = 0.05
+			navy_anti_air_attack_factor = -0.1
 		}
 		new_commander_weight = {
 			factor = 1  
@@ -2910,7 +2911,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			ships_at_battle_start = -0.25
+			ships_at_battle_start = -0.15
 		}
 		new_commander_weight = {
 			factor = 1  
@@ -2933,7 +2934,7 @@ leader_traits = {
 	
 		modifier = {
 			naval_retreat_chance = 0.25
-			naval_damage_factor = -0.05 
+			naval_damage_factor = -0.025 
 		}
 		new_commander_weight = {
 			factor = 1  

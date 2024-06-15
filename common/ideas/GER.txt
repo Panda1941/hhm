@@ -254,8 +254,8 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = -0.15
-				local_resources_factor = 0.1
+				#consumer_goods_factor = -0.15
+				#local_resources_factor = 0.1
 			}
 		}
 
@@ -1062,9 +1062,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.2
-				production_speed_synthetic_refinery_factor = -0.1
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.05
 				political_power_cost = 0.2
 			}
 		}
@@ -1085,11 +1084,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_infrastructure_factor = -0.1
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 0.35
 			}
 		}
@@ -1110,11 +1106,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 0.5
 			}
 		}
@@ -1135,11 +1128,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 0.65
 			}
 		}
@@ -1160,11 +1150,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 0.8
 			}
 		}
@@ -1185,11 +1172,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 0.95
 			}
 		}
@@ -1210,11 +1194,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 1.1
 			}
 		}
@@ -1235,11 +1216,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 1.25
 			}
 		}
@@ -1260,11 +1238,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 1.4
 			}
 		}
@@ -1285,11 +1260,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 1.55
 			}
 		}
@@ -1310,11 +1282,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 1.7
 			}
 		}
@@ -1335,11 +1304,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 1.85
 			}
 		}
@@ -1360,11 +1326,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 2
 			}
 		}
@@ -1385,11 +1348,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 2.15
 			}
 		}
@@ -1410,11 +1370,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 2.3
 			}
 		}
@@ -1435,11 +1392,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 2.45
 			}
 		}
@@ -1460,11 +1414,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 2.6
 			}
 		}
@@ -1485,11 +1436,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.20
-				production_speed_synthetic_refinery_factor = -0.1
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.050
 				political_power_cost = 2.75
 			}
 		}

@@ -2863,8 +2863,17 @@ focus_tree = {
 		will_lead_to_war_with = SOV
 		
 		available = {
-			date > 1941.6.14
-			is_subject = no
+			OR = {
+				date > 1941.6.14
+				AND = {
+					16 = {is_controlled_by_ROOT_or_ally = yes}
+					118 = {is_controlled_by_ROOT_or_ally = yes}
+					116 = {is_controlled_by_ROOT_or_ally = yes}
+					183 = {is_controlled_by_ROOT_or_ally = yes}
+					126 = {is_controlled_by_ROOT_or_ally = yes}
+					date > 1940.6.14
+				}
+			}
 		}
 		x = 6
 		y = 2

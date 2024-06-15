@@ -880,14 +880,7 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = { NOT = { has_government = fascism } }
-				compare_autonomy_state > autonomy_colony
-			}
-			if = {
-				limit = { has_government = fascism }
-				compare_autonomy_state > autonomy_reichsprotectorate
-			}
+			
 		}
 
 		bypass = {
@@ -1188,8 +1181,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
-			num_of_factories > 50
+			num_of_factories > 119
 		}
 
 		bypass = {

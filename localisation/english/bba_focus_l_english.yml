@@ -1040,7 +1040,7 @@
  ITA_austrian_guarantees_tt:1 "In the event that Germany attempts to do the Anschluss, Italy will get an option to intervene."
  ITA_all_eth_initial_states_controlled_tt:0 "All initial Ethiopian states are controlled by §Y[ROOT.GetFlag][ROOT.GetNameDef]§! or an §Y[ROOT.GetAdjective] ally§!."
  ITA_fronte_militare_clandestino_modifier_tt:0 "Add §Y$ITA_fronte_militare_clandestino_modifier$ (Italy)§! (§Y730§! days) which grants: \n   $MODIFIER_RESISTANCE_GROWTH_ON_OUR_OCCUPIED_STATES$: §G+10%§! \n   $MODIFIER_REQUIRED_GARRISON_FACTOR$: §R+15%§! \n\n"
- ITA_flotta_d_evasione_admiral_traits_tt:0 "Two random Admirals will gain the trait §Y$bold$§!: \n- $MODIFIER_NAVAL_SPEED$: §G+10%§! \n- $MODIFIER_NAVAL_DAMAGE_FACTOR$: §G+5.00%§! \n\n"
+ ITA_flotta_d_evasione_admiral_traits_tt:0 "Two random Admirals will gain the trait §Y$bold$§!: \n- $MODIFIER_NAVAL_SPEED$: §G+5%§! \n- $MODIFIER_NAVAL_DAMAGE_FACTOR$: §G+2.50%§! \n\n"
  ITA_heroes_of_the_nation_general_traits_tt:0 "\nThree random Generals will gain the trait §Y$war_hero$§!: \n- $MODIFIER_UNIT_LEADER_PROMOTE_COST_FACTOR$: §G-50.0%§! \n- $MODIFIER_REASSIGNMENT_DURATION_FACTOR$: §R+50.0%§! \n\n"
  ITA_mussolini_becomes_field_marshal_tt:0 "$ITA_benito_mussolini$ becomes a Field Marshal."
 

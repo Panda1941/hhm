@@ -182,19 +182,19 @@ set_variable = { ITA_ultimatum_days = 14 }
 }
 
 #RICOSTRUZIONE INDUSTRIALE
-set_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.10 }
+set_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
 set_variable = { ITA_iri_industrial_concern_cost_factor = -0.35 }
 set_variable = { ITA_iri_tank_manufacturer_cost_factor = -0.15 }
 set_variable = { ITA_iri_materiel_manufacturer_cost_factor = -0.15 }
 set_variable = { ITA_iri_aircraft_manufacturer_cost_factor = -0.15 }
 set_variable = { ITA_iri_naval_manufacturer_cost_factor = -0.15 }
 
-set_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
-set_variable = { ITA_iri_consumer_goods_factor = 0.03 }
+set_variable = { ITA_iri_production_speed_arms_factory_factor = 0 }
+set_variable = { ITA_iri_consumer_goods_factor = 0 }
 set_variable = { ITA_iri_local_resources_factor = 0 }
 set_variable = { ITA_iri_production_speed_infrastructure_factor = 0 }
 set_variable = { ITA_re_supply_node_range = 0 }
-set_variable = { ITA_iri_production_speed_dockyard_factor = 0.05 }
+set_variable = { ITA_iri_production_speed_dockyard_factor = 0 }
 
 add_dynamic_modifier = { modifier = ITA_ricostruzione_industriale_dynamic_modifier }
 
@@ -203,7 +203,7 @@ add_dynamic_modifier = { modifier = ITA_ricostruzione_industriale_dynamic_modifi
 set_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = -0.05 }
 set_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = -0.1 }
 set_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = -0.05 }
-set_variable = { ITA_military_industry_dm_industrial_capacity_factory = -0.05 }
+set_variable = { ITA_military_industry_dm_industrial_capacity_factory = -0.1 }
 
 set_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = 0 }
 set_variable = { ITA_military_industry_dm_production_lack_of_resource_penalty_factor = 0 }
@@ -219,7 +219,7 @@ add_ideas = ITA_hidden_research_penalties_ns #TODO_Manu: Hidden NS to apply rese
 #set_variable = { ITA_re_army_experience_loss_factor = -0.1 }
 set_variable = { ITA_re_army_max_dig_in_factor = 0.1 }
 set_variable = { ITA_re_land_doctrine_cost_factor = 0.1 }
-#set_variable = { ITA_re_land_reinforce_rate = 0.05 }
+#set_variable = { ITA_re_land_reinforce_rate = -0.05 }
 set_variable = { ITA_re_army_speed_factor = -0.1 }
 set_variable = { ITA_re_army_army_org_factor = -0.1 }
 set_variable = { ITA_re_org_loss_when_moving = 0.15 }
@@ -245,7 +245,7 @@ set_variable = { ITA_re_modifier_army_sub_unit_militia_defence_factor = 0 }
 set_variable = { ITA_re_modifier_army_sub_unit_militia_attack_factor = 0 }
 set_variable = { ITA_re_modifier_army_sub_unit_militia_speed_factor = 0 }
 set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = 0 }
-set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = 0 }
+set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor = 0 }
 set_variable = { ITA_re_special_forces_out_of_supply_factor = 0 }
 set_variable = { ITA_re_conscription_factor = 0 }
 set_variable = { ITA_re_command_power_gain_mult = 0 }
@@ -281,7 +281,7 @@ add_dynamic_modifier = { modifier = ITA_regia_aeronautica_dynamic_modifier }
 
 
 #REGIA MARINA
-set_variable = { ITA_rm_naval_has_potf_in_combat_attack = 0.1 }
+set_variable = { ITA_rm_naval_has_potf_in_combat_attack = 0.0 }
 set_variable = { ITA_rm_screening_efficiency = 0.05 }
 set_variable = { ITA_rm_naval_doctrine_cost_factor = 0.1 }
 set_variable = { ITA_rm_naval_coordination = -0.05 }
@@ -652,6 +652,18 @@ if = {
 	ITA_create_francesco_de_martini_operative = yes
 	ITA_create_paolo_caccia_dominioni_operative = yes
 }
+
+
+### STOCKPILE ###
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 150
+}
+add_equipment_to_stockpile = {
+	type = gw_armored_car_equipment
+	amount = 150
+}
+
 
 ### VARIANTS ###
 # 1936 Start #

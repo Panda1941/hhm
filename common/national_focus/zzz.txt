@@ -66,6 +66,14 @@ focus_tree = {
 			add = 20
 			tag = ETH
 		}
+		modifier = {
+			add = 20
+			tag = IRE
+		}
+		modifier = {
+			add = 20
+			tag = SIA
+		}
 	}
 
 	default = no

@@ -13,7 +13,7 @@
 @tank_3_Y = 4
 #BONUSES
 @tank_max_speed = 0.05
-@tank_production_capacity_factor = 0.06
+@tank_production_capacity_factor = 0.1
 @tank_soft_attack = 0.05
 
 

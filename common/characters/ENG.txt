@@ -849,7 +849,7 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ gunnery_expert bold navy_career_officer blockade_runner superior_tactician }
+			traits={ gunnery_expert bold navy_career_officer blockade_runner superior_tactician  }
 			skill=5
 			attack_skill=5
 			defense_skill=4
@@ -1317,7 +1317,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				navy_chief_decisive_battle_1
+				navy_chief_decisive_battle_2
 			}
 			cost =  50
 			ai_will_do = {
