@@ -74,6 +74,18 @@ focus_tree = {
 			add = 20
 			tag = SIA
 		}
+		modifier = {
+			add = 20
+			tag = BEL
+		}
+		modifier = {
+			add = 20
+			tag = LUX
+		}
+		modifier = {
+			add = 20
+			tag = HOL
+		}
 	}
 
 	default = no
