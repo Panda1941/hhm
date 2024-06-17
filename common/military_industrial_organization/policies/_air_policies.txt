@@ -17,8 +17,8 @@ mio_policy_air_perfect_finish = {
 	available = { has_mio_size > 5}
 	equipment_bonus = {
 		same_as_mio = {
-				maximum_speed = 0.05
-			}
+			maximum_speed = 0.05
+		}
 	}
 }
 

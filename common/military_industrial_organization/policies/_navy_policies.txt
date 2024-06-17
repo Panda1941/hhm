@@ -37,7 +37,7 @@ mio_policy_navy_space_efficient_design = {
 	available = { has_mio_size > 5}
 	equipment_bonus = {
 		ship_hull_carrier = {
-			carrier_size = 1
+			carrier_size = 2
 		}
 		same_as_mio = {
 			naval_range = 0.25
@@ -108,8 +108,8 @@ mio_policy_navy_coastal_battlefleet = {
 	available = { has_mio_size > 5}
 	equipment_bonus = {
 		same_as_mio = {
-			build_cost_ic = -0.1
-			naval_range = -0.25
+			build_cost_ic = -0.075
+			naval_range = -0.15
 		}
 	}
 }

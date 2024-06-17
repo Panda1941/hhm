@@ -86,8 +86,8 @@ mio_policy_land_factory_applied_camouflage  = {
 	available = { has_mio_size > 5}
 	equipment_bonus = {
 		same_as_mio = {
-			defense = 0.02
-			breakthrough = 0.02
+			defense = 0.025
+			breakthrough = 0.05
 		}
 	}
 }
@@ -110,11 +110,7 @@ mio_policy_land_cutting_corners  = {
 	available = { has_mio_size > 5}
 	equipment_bonus = {
 		same_as_mio = {
-			build_cost_ic = -0.06
-			reliability = -0.15
-			soft_attack = -0.08
-			hard_attack = -0.08
-			armor_value = -0.15
+			build_cost_ic = -0.025
 		}
 	}
 }
