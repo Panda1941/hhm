@@ -613,15 +613,12 @@ ideas = {
 
 			equipment_bonus = {
 				ship_hull_heavy = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				ship_hull_carrier = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.15 instant = yes
 				}
 			}
 			modifier = {
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = 0.2
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = 0.15
 				consumer_goods_factor = 0.10
 			}
 		}
@@ -713,8 +710,8 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = -0.15
 				consumer_goods_factor = -0.1
 			}
 		}

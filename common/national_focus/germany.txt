@@ -33,7 +33,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_four_year_plan
-				bonus = 1.5
+				bonus = 1.0
 				uses = 2
 				category = industry_late
 			}
@@ -1174,13 +1174,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_autarky
-				bonus = 1.5
+				bonus = 1.0
 				uses = 3
 				technology = excavation1
 				technology = excavation2
 				technology = excavation3
 				technology = excavation4
 				technology = excavation5
+				technology = excavation6
 			}
 			add_ideas = GER_autarky_idea
 		}
@@ -1390,7 +1391,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_coal_liquidization
-				bonus = 3.0
+				bonus = 2.0
 				uses = 2
 				category = synth_resources
 			}
@@ -2042,8 +2043,9 @@ focus_tree = {
 				name = air_sup_bonus
 				cost_reduction = 0.25
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
+
 			air_experience = 25
 
 			random_owned_controlled_state = {
@@ -2107,22 +2109,17 @@ focus_tree = {
 			add_ideas = Luftwaffe_tac
 			
 			add_tech_bonus = {
-				name = GER_air_innovation
+				name = GER_tactical_air_effort
 				bonus = 1.0
 				uses = 1
+				category = medium_air
 				category = light_air
-			}
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 1
-				category = medium_air	
 			}
 			add_doctrine_cost_reduction = {
 				name = op_dest_bonus
 				cost_reduction = 0.25
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 		}
 	}
@@ -2146,7 +2143,7 @@ focus_tree = {
 			add_ideas = Luftwaffe_interceptor
 			add_tech_bonus = {
 				name = GER_long_range_escorts
-				bonus = 2.0
+				bonus = 1.5
 				uses = 1
 				category = medium_air
 			}
@@ -2197,15 +2194,15 @@ focus_tree = {
 			
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 1.0
-				uses = 2
+				bonus = 1.5
+				uses = 1
 				category = heavy_air
 			}
 			add_doctrine_cost_reduction = {
 				name = strat_dest_bonus
 				cost_reduction = 0.25
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 		}
 	}
@@ -2230,7 +2227,7 @@ focus_tree = {
 			
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.5
+				cost_reduction = 0.25
 				uses = 2
 				category = land_doctrine
 			}
@@ -2287,7 +2284,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = GER_mp_38
-				bonus = 0.75
+				bonus = 1.0
 				uses = 2
 				category = artillery
 			}
@@ -2490,7 +2487,7 @@ focus_tree = {
 			army_experience = 20
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.5
+				cost_reduction = 0.25
 				uses = 2
 				category = land_doctrine
 			}
@@ -2523,7 +2520,7 @@ focus_tree = {
 			army_experience = 20
 			add_tech_bonus = {
                 name = advanced_light_tank			
-				bonus = 0.75
+				bonus = 1.0
 				uses = 1
 				category = cat_light_armor
 			}
@@ -2652,13 +2649,13 @@ focus_tree = {
 			army_experience = 50
 			add_tech_bonus = {
                 name = GER_tiger			
-				bonus = 1.25
+				bonus = 1.0
 				uses = 1
 				technology = improved_heavy_tank_chassis
 			}
 			add_tech_bonus = {
                 name = GER_tiger			
-				bonus = 0.75
+				bonus = 1.0
 				uses = 1
 				technology = advanced_heavy_tank_chassis
 				technology = advanced_heavy_tank_chassis_1
@@ -2726,8 +2723,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				ahead_reduction = 1.5
-				bonus = 1.50
+				ahead_reduction = 2.0
+				bonus = 1.0
 				uses = 1
 				technology = atomic_research
 			}
@@ -2748,18 +2745,16 @@ focus_tree = {
 		available_if_capitulated = yes	
 
 		available = { 
-		OR = {
-			AND = {
-				has_tech = advanced_small_airframe
-				
-				DATE > 1943.01.01
+			OR = {
+				AND = {
+					has_tech = advanced_small_airframe
+					
+					DATE > 1943.01.01
+				}
 			}
-			has_tech = jet_engines
-		}
 		}
 		completion_reward = {
 			set_technology = {
-			    aa_cannon_2 = 1
 				jet_engines = 1
 				modern_small_airframe = 1
 			}
@@ -2834,12 +2829,11 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }	
 		completion_reward = {
-			42 = { set_demilitarized_zone = no
-			}
-			51 = { set_demilitarized_zone = no
-       		}
-			51 = { add_dynamic_modifier = {
-				modifier = GER_ruhr_valley
+			42 = { set_demilitarized_zone = no }
+			51 = { set_demilitarized_zone = no }
+			51 = { 
+				add_dynamic_modifier = {
+					modifier = GER_ruhr_valley
 				}
        		}
 			
@@ -2851,6 +2845,7 @@ focus_tree = {
 			GER = { add_war_support = 0.1 }
 			ENG = { add_opinion_modifier = { target = GER modifier = protest_action } }
 			FRA = { add_opinion_modifier = { target = GER modifier = protest_action } }
+
 			hidden_effect = {
 				news_event = { hours = 6 id = news.25 }
 			}
@@ -2879,7 +2874,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 6
+		x = 5
 		y = 2
 		relative_position_id = GER_rhineland
 		cost = 1
@@ -3195,8 +3190,7 @@ focus_tree = {
 			
 			add_tech_bonus = {
 				name = tp_bonus
-				bonus = 1.0
-				ahead_reduction = 2
+				bonus = 3.0
 				uses = 1
 				category = tp_tech
 			}
@@ -3581,12 +3575,12 @@ focus_tree = {
 					transfer_state = 82
 				}
 			}
-			HUN = {
-				add_timed_idea = {
-					idea = HUN_overeliance_german_trade
-					days = 365
-				}
-			}
+			#HUN = {
+			#	add_timed_idea = {
+			#		idea = HUN_overeliance_german_trade
+			#		days = 365
+			#	}
+			#}
 			
 		}
 	}
@@ -3639,12 +3633,12 @@ focus_tree = {
 					#transfer_state = 82
 				}
 			}
-			HUN = {
-				add_timed_idea = {
-					idea = HUN_overeliance_german_trade
-					days = 365
-				}
-			}
+			#HUN = {
+			#	add_timed_idea = {
+			#		idea = HUN_overeliance_german_trade
+			#		days = 365
+			#	}
+			#}
 			
 		}
 	}
@@ -3758,7 +3752,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearmament
-		x = 50
+		x = 49
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -3782,30 +3776,9 @@ focus_tree = {
 				}
 			}
 		}
-
-		complete_tooltip = {
-			every_state = {
-				limit = {	has_state_flag = GER_naval_rearmament_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = {	has_state_flag = GER_naval_rearmament_1dockyard }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		navy_experience = 50
+			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -3879,33 +3852,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-			navy_experience = 25
-			every_state = {
-				limit = { has_state_flag = GER_naval_effort_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.5
-				uses = 1
-				category = dd_tech
-			}
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.5
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			navy_experience = 25
@@ -3956,17 +3902,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_naval_effort_2dockyards }
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -4022,25 +3957,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			navy_experience = 150
-			every_state = {
-				limit = { has_state_flag = GER_plan_z_dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = bb_bonus
-				ahead_reduction = 1.2
-				uses = 1
-				category = bb_tech
-				category = shbb_tech
-			}
-		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 		
@@ -4063,9 +3979,26 @@ focus_tree = {
 				}
 				set_state_flag = GER_plan_z_dockyards
 			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_plan_z_dockyards
+			}
 			add_tech_bonus = {
 				name = bb_bonus
-				ahead_reduction = 1.5
+				bonus = 1.0
 				uses = 1
 				category = bb_tech
 				category = shbb_tech
@@ -4086,38 +4019,52 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_tech = early_ship_hull_carrier
+
 		}
 		
 		completion_reward = {
-
-			create_equipment_variant = {
-					name = "Graf Zeppelin"
-					type = ship_hull_carrier_conversion_bb
-					name_group = GER_CV_HISTORICAL
-					parent_version = 0
-					allow_without_tech = yes
-					modules = {
-						fixed_ship_deck_slot_1 = ship_deck_space
-						fixed_ship_deck_slot_2 = ship_deck_space
-						fixed_ship_anti_air_slot = ship_anti_air_2
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = carrier_ship_engine_2
-						fixed_ship_secondaries_slot = ship_secondaries_2
-						mid_1_custom_slot = ship_armor_carrier_deck
-					}
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 1.0
+				uses = 1
+				category = cv_tech
 			}
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_carrier_conversion_bb
-					creator = "GER"
-					version_name = "Graf Zeppelin"
+			
+			if = {
+				limit = {
+					has_tech = early_ship_hull_carrier
 				}
-				name = "Graf Zeppelin"
-				requested_factories = 5
-				progress = 0.80
-				amount = 1
-			}	
+				create_equipment_variant = {
+						name = "Graf Zeppelin"
+						type = ship_hull_carrier_conversion_bb
+						name_group = GER_CV_HISTORICAL
+						parent_version = 0
+						allow_without_tech = yes
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_2
+							fixed_ship_secondaries_slot = ship_secondaries_2
+							mid_1_custom_slot = ship_armor_carrier_deck
+						}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_conversion_bb
+						creator = "GER"
+						version_name = "Graf Zeppelin"
+					}
+					name = "Graf Zeppelin"
+					requested_factories = 5
+					progress = 0.80
+					amount = 1
+				}	
+			}
+			else = {
+				custom_effect_tooltip = "If we already have the 1st carrier tech, we will create the Graf Zeppelin"
+			}
 		}
 	}
 	
@@ -4133,55 +4080,68 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-		date>1939.1.1
-			has_tech = improved_ship_hull_heavy
 		}
 		
 		completion_reward = {
 			
-			create_equipment_variant = {
-				name = "Bismarck Class"
-				type 	= ship_hull_heavy_3
-				name_group = GER_BB_HISTORICAL
-				allow_without_tech = yes
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = ship_heavy_battery_3
-					fixed_ship_anti_air_slot = ship_anti_air_2
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-					fixed_ship_radar_slot = empty
-					fixed_ship_engine_slot = heavy_ship_engine_3
-					fixed_ship_secondaries_slot = ship_secondaries_2
-					fixed_ship_armor_slot = ship_armor_bb_3
-					front_1_custom_slot = ship_heavy_battery_3
-					mid_1_custom_slot = ship_heavy_battery_3
-					mid_2_custom_slot = ship_secondaries_2
-					mid_3_custom_slot = ship_secondaries_2
-					rear_1_custom_slot = ship_heavy_battery_3
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+			}
+			
+			if = {
+				limit = {
+					has_tech = early_ship_hull_carrier
+				}
+				create_equipment_variant = {
+					name = "Bismarck Class"
+					type 	= ship_hull_heavy_3
+					name_group = GER_BB_HISTORICAL
+					allow_without_tech = yes
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_3
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_3
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bb_3
+						front_1_custom_slot = ship_heavy_battery_3
+						mid_1_custom_slot = ship_heavy_battery_3
+						mid_2_custom_slot = ship_secondaries_2
+						mid_3_custom_slot = ship_secondaries_2
+						rear_1_custom_slot = ship_heavy_battery_3
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_3
+						creator = "GER"
+						version_name = "Bismarck Class"
+					}
+					name = "Bismarck"
+					requested_factories = 5
+					progress = 0.75
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_3
+						creator = "GER"
+						version_name = "Bismarck Class"
+					}
+					name = "Bismarck"
+					requested_factories = 5
+					progress = 0.50
+					amount = 1
 				}
 			}
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_heavy_3
-					creator = "GER"
-					version_name = "Bismarck Class"
-				}
-				name = "Bismarck"
-				requested_factories = 5
-				progress = 0.75
-				amount = 1
-			}
-            add_equipment_production = {
-				equipment = {
-					type = ship_hull_heavy_3
-					creator = "GER"
-					version_name = "Bismarck Class"
-				}
-				name = "Bismarck"
-				requested_factories = 5
-				progress = 0.50
-				amount = 1
-			}			
+			else = {
+				custom_effect_tooltip = "If we already have the improved battleship technology, we will create two Bismarck class ships"
+			}	
 		}
 	}
 	
@@ -4190,11 +4150,9 @@ focus_tree = {
 		icon = GFX_focus_GER_crossing_the_atlantic
 		prerequisite = { focus = GER_plan_z focus = GER_modular_construction }
 		available = {
-
-			AND = {
-					has_war_with = SOV
-                    date > 1941.12.11
-			}
+			has_war_with = SOV
+			has_war_with = USA
+			has_war_with = ENG
 		}
 		cancel_if_invalid = yes
 		x = -3
@@ -4206,85 +4164,18 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			custom_effect_tooltip = "Every core coastal state that's in europe will have one dockyard built"
 			every_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
 					is_on_continent = europe
 					is_coastal = yes
-					arms_factory < 1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				custom_effect_tooltip = GER_crossing_the_atlantic_2_factories_tt
-				hidden_effect = {
-					random_state = {
-						limit = {
-							is_fully_controlled_by = ROOT
-							is_on_continent = europe
-							NOT = { is_coastal = yes }
-							arms_factory > 1
-						}
-						remove_building = {
-							type = arms_factory
-							level = 2
-						}
-					}
-				}
-			}
-			every_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_on_continent = europe
-					is_coastal = yes
-					AND = {
-						arms_factory < 2
-						arms_factory > 0
-					}
 				}
 				add_extra_state_shared_building_slots = 1
-				remove_building = {
-						type = arms_factory
-						level = 1
-					}
 				add_building_construction = {
 					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				custom_effect_tooltip = GER_crossing_the_atlantic_1_factory_tt
-				hidden_effect = {
-					random_state = {
-						limit = {
-							is_fully_controlled_by = ROOT
-							is_on_continent = europe
-							NOT = { is_coastal = yes }
-							arms_factory > 0
-						}
-						remove_building = {
-							type = arms_factory
-							level = 1
-						}
-					}
-				}
-			}
-			every_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_on_continent = europe
-					is_coastal = yes
-					arms_factory > 1
-				}
-				remove_building = {
-						type = arms_factory
-						level = 2
-					}
-				add_building_construction = {
-					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -4304,30 +4195,6 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		complete_tooltip = {
-			navy_experience = 25
-			every_state = {
-				limit = { has_state_flag = GER_u_boat_effort_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = GER_u_boat_effort
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
-		}
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -4351,7 +4218,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = GER_u_boat_effort
-				bonus = 1.0
+				bonus = 2.0
 				uses = 1
 				category = ss_tech
 			}
@@ -4371,7 +4238,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_u_boat_effort
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
