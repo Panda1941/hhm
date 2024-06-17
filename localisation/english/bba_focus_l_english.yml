@@ -1333,10 +1333,10 @@
  ITA_ascari_desc:1 "Regular divisions made up of local troops from Africa have proven to be highly efficient in performing different roles, not only as garrisons or reserves but also in military operations in difficult terrain where other divisions would struggle."
 
  ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro:0 "Modify §Y$ITA_ricostruzione_industriale_dynamic_modifier$§! by"
- ITA_ricostruzione_industriale_cg_penalty_tt:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y+3.0%§! \n\n"
+ ITA_ricostruzione_industriale_cg_penalty_tt:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y+2.0%§! \n\n"
  ITA_steel_industry_in_terni_ricostruzione_industriale_tt:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n$modifier_production_speed_arms_factory_factor$: §G+5.00%§! \n\n"
  ITA_power_plants_in_terni_ricostruzione_industriale_tt:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n$modifier_production_speed_industrial_complex_factor$: §G+8.00%§! \n\n"
- ITA_investments_in_edison_ricostruzione_industriale_tt:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-12.0%§! \n\n"
+ ITA_investments_in_edison_ricostruzione_industriale_tt:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-10.0%§! \n\n"
 
  ITA_modify_military_industry_dynamic_modifier_ns_intro:0 "Modify §Y$ITA_military_industry_dynamic_modifier$§! by"
  ITA_increase_production_military_industry_tt:2 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR$: §G+20.00%§! \n$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY$: §G+5.00%§! \n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §R-4.00%§! \n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+5.00%§! \n\n"
