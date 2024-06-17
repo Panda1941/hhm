@@ -3656,8 +3656,6 @@ generic_general_aircraft_organization = {
 
 		all_parents = { generic_mio_trait_fighter_aircraft_specialists }
 
-		mutually_exclusive = { generic_mio_trait_agility_wing_design }
-
 		limit_to_equipment_type = { mio_cat_eq_only_light_fighter_no_cv medium_plane_fighter_airframe medium_plane_scout_plane_airframe }
 
 		equipment_bonus = {
@@ -3674,8 +3672,6 @@ generic_general_aircraft_organization = {
 		relative_position_id = generic_mio_trait_fighter_aircraft_specialists
 
 		all_parents = { generic_mio_trait_fighter_aircraft_specialists }
-
-		mutually_exclusive = { generic_mio_trait_high_speed_design }
 
 		limit_to_equipment_type = { mio_cat_eq_only_light_fighter_no_cv medium_plane_fighter_airframe medium_plane_scout_plane_airframe }
 
@@ -3712,7 +3708,7 @@ generic_general_aircraft_organization = {
 		all_parents = { generic_mio_trait_conservative_designs }
 
 		limit_to_equipment_type = { small_plane_cas_airframe mio_cat_eq_only_tactical_bomber mio_cat_eq_only_strategic_bomber }
-	equipment_bonus = {
+		equipment_bonus = {
 			air_range = 0.05
 		}
 	}
@@ -3726,8 +3722,6 @@ generic_general_aircraft_organization = {
 		relative_position_id = generic_mio_trait_bomber_aircraft_specialists
 
 		all_parents = { generic_mio_trait_bomber_aircraft_specialists }
-
-		mutually_exclusive = { generic_mio_trait_fast_bombers }
 
 		limit_to_equipment_type = { small_plane_cas_airframe mio_cat_eq_only_tactical_bomber mio_cat_eq_only_strategic_bomber }
 
@@ -3745,8 +3739,6 @@ generic_general_aircraft_organization = {
 		relative_position_id = generic_mio_trait_bomber_aircraft_specialists
 
 		all_parents = { generic_mio_trait_bomber_aircraft_specialists }
-
-		mutually_exclusive = { generic_mio_trait_bomb_trucks }
 
 		limit_to_equipment_type = { small_plane_cas_airframe mio_cat_eq_only_tactical_bomber mio_cat_eq_only_strategic_bomber }
 
@@ -3799,8 +3791,6 @@ generic_general_aircraft_organization = {
 
 		all_parents = { generic_mio_trait_naval_aircraft_specialists }
 
-		mutually_exclusive = { generic_mio_trait_naval_air_patrol }
-
 		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
 
 		equipment_bonus = {
@@ -3817,8 +3807,6 @@ generic_general_aircraft_organization = {
 		relative_position_id = generic_mio_trait_naval_aircraft_specialists
 
 		all_parents = { generic_mio_trait_naval_aircraft_specialists }
-
-		mutually_exclusive = { generic_mio_trait_naval_strike }
 
 		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
 
@@ -4034,10 +4022,10 @@ generic_light_aircraft_organization = {
 		mutually_exclusive = { generic_mio_trait_maximum_wing_loads generic_mio_trait_gun_pods }
 
 		equipment_bonus = {
-			air_attack = 0.05
-			air_ground_attack = 0.05
-			naval_strike_attack = 0.05
-			air_defence = 0.05
+			air_attack = 0.02
+			air_ground_attack = 0.02
+			naval_strike_attack = 0.02
+			air_defence = 0.10
 		}
 	}
 
@@ -4073,8 +4061,8 @@ generic_light_aircraft_organization = {
 
 		equipment_bonus = {
 			air_ground_attack = 0.1
-			air_agility = -0.03
-			air_attack = 0.05
+			air_agility = -0.04
+			air_attack = 0.1
 		}
 	}
 
@@ -4165,7 +4153,6 @@ generic_light_aircraft_organization = {
 		equipment_bonus = {
 			air_range = 0.05
 			maximum_speed = 0.05
-			air_attack = 0.05
 		}
 	}
 
@@ -4310,8 +4297,6 @@ generic_medium_aircraft_organization = {
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_mixed_material_construction
 
-		mutually_exclusive = { generic_mio_trait_reinforced_wing_braces }
-
 		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
 
 		equipment_bonus = {
@@ -4326,8 +4311,6 @@ generic_medium_aircraft_organization = {
 
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_twin_tail
-
-		mutually_exclusive = { generic_mio_trait_twin_tail }
 
 		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
 
@@ -4346,8 +4329,6 @@ generic_medium_aircraft_organization = {
 
 		any_parent = { generic_mio_trait_twin_tail generic_mio_trait_reinforced_wing_braces }
 
-		mutually_exclusive = { generic_mio_trait_metal_nose_replacement }
-
 		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
 
 		equipment_bonus = {
@@ -4365,8 +4346,6 @@ generic_medium_aircraft_organization = {
 		relative_position_id = generic_mio_trait_reinforced_wing_braces
 
 		any_parent = { generic_mio_trait_twin_tail generic_mio_trait_reinforced_wing_braces }
-
-		mutually_exclusive = { generic_mio_trait_expanded_cockpit }
 
 		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
 
@@ -4716,8 +4695,6 @@ generic_heavy_aircraft_organization = {
 
 		any_parent = { generic_mio_trait_extended_rear_fuselage }
 
-		mutually_exclusive = { generic_mio_trait_air_deployed_sonobuoys }
-
 		limit_to_equipment_type = { large_plane_airframe large_plane_maritime_patrol_plane_airframe }
 
 		equipment_bonus = {
@@ -4734,8 +4711,6 @@ generic_heavy_aircraft_organization = {
 		relative_position_id = generic_mio_trait_extended_rear_fuselage
 
 		any_parent = { generic_mio_trait_extended_rear_fuselage }
-
-		mutually_exclusive = { generic_mio_trait_auto_levelled_bombsights }
 
 		limit_to_equipment_type = { large_plane_airframe large_plane_maritime_patrol_plane_airframe }
 
@@ -5129,12 +5104,11 @@ generic_naval_aircraft_organization = {
 
 		all_parents = { generic_mio_trait_navigation_equipment }
 
-		mutually_exclusive = { generic_mio_trait_internal_torpedo_mountings }
-
 		limit_to_equipment_type = { small_plane_naval_bomber_airframe cv_small_plane_naval_bomber_airframe }
 
 		equipment_bonus = {
 			air_range = 0.05
+			naval_strike_targetting = 0.02
 		}
 	}
 
@@ -5148,12 +5122,11 @@ generic_naval_aircraft_organization = {
 
 		all_parents = { generic_mio_trait_navigation_equipment }
 
-		mutually_exclusive = { generic_mio_trait_patrol_fuel_tanks }
-
 		limit_to_equipment_type = { small_plane_naval_bomber_airframe cv_small_plane_naval_bomber_airframe }
 
 		equipment_bonus = {
 			maximum_speed = 0.05
+			naval_strike_attack = 0.02
 		}
 	}
 
@@ -5187,6 +5160,7 @@ generic_naval_aircraft_organization = {
 		equipment_bonus = {
 			reliability = 0.05
 			air_defence = 0.05
+			naval_strike_attack = 0.02
 		}
 	}
 
@@ -5199,8 +5173,6 @@ generic_naval_aircraft_organization = {
 		relative_position_id = generic_mio_trait_reinforced_fuselage
 
 		all_parents = { generic_mio_trait_reinforced_fuselage }
-
-		mutually_exclusive = { generic_mio_strength_wing_design }
 
 		equipment_bonus = {
 			air_range = 0.05
@@ -5217,8 +5189,6 @@ generic_naval_aircraft_organization = {
 		relative_position_id = generic_mio_trait_reinforced_fuselage
 
 		all_parents = { generic_mio_trait_reinforced_fuselage }
-
-		mutually_exclusive = { generic_mio_agility_wing_design }
 
 		equipment_bonus = {
 			air_range = 0.05
@@ -5238,6 +5208,7 @@ generic_naval_aircraft_organization = {
 
 		equipment_bonus = {
 			air_attack = 0.05
+			naval_strike_attack = 0.02
 		}
 	}
 
@@ -5253,6 +5224,7 @@ generic_naval_aircraft_organization = {
 
 		equipment_bonus = {
 			air_ground_attack = 0.05
+			naval_strike_attack = 0.02
 		}
 	}
 
@@ -5747,6 +5719,7 @@ generic_high_agility_fighter_aircraft_organization = {
 
 		equipment_bonus = {
 			air_agility = 0.05
+			maximum_speed = 0.05
 		}
 	}
 
@@ -5959,6 +5932,7 @@ generic_high_agility_fighter_aircraft_organization = {
 		equipment_bonus = {
 			air_range = 0.10
 			air_attack = 0.05
+			maximum_speed = 0.02
 		}
 	}
 }
