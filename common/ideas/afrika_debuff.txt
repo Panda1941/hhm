@@ -570,7 +570,7 @@ ideas = {
 			
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.05
+				attack_bonus_against = 0.03
 				#defense_bonus_against = 0.05
 			}
 	
@@ -594,7 +594,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = -0.05
+				attack_bonus_against = -0.025
 				#defense_bonus_against = 0.05
 			}
 			
@@ -618,7 +618,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = -0.04
+				attack_bonus_against = -0.02
 				#defense_bonus_against = 0.05
 			}
 			
@@ -642,7 +642,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = -0.03
+				attack_bonus_against = -0.015
 				#defense_bonus_against = 0.05
 			}
 			
@@ -667,7 +667,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = -0.02
+				attack_bonus_against = -0.01
 				#defense_bonus_against = 0.05
 			}
 			
@@ -694,7 +694,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = -0.015
+				attack_bonus_against = -0.005
 				#defense_bonus_against = 0.05
 			}
 			
@@ -744,7 +744,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.01
+				attack_bonus_against = 0.005
 				#defense_bonus_against = 0.05
 			}
 			
@@ -768,7 +768,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.015
+				attack_bonus_against = 0.01
 				#defense_bonus_against = 0.05
 			}
 			
@@ -792,7 +792,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.02
+				attack_bonus_against = 0.015
 				#defense_bonus_against = 0.05
 			}
 			
@@ -816,7 +816,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.03
+				attack_bonus_against = 0.02
 				#defense_bonus_against = 0.05
 			}
 			
@@ -840,7 +840,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.04
+				attack_bonus_against = 0.025
 				#defense_bonus_against = 0.05
 			}
 			
@@ -864,7 +864,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.05
+				attack_bonus_against = 0.03
 				#defense_bonus_against = 0.05
 			}
 			
@@ -888,7 +888,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.06
+				attack_bonus_against = 0.035
 				#defense_bonus_against = 0.05
 			}
 			
@@ -912,7 +912,7 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.07
+				attack_bonus_against = 0.04
 				#defense_bonus_against = 0.05
 			}
 			
@@ -936,7 +936,7 @@ ideas = {
 		
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.08
+				attack_bonus_against = 0.045
 				#defense_bonus_against = 0.05
 			}
 			
@@ -960,7 +960,7 @@ ideas = {
 		
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.09
+				attack_bonus_against = 0.05
 				#defense_bonus_against = 0.05
 			}
 			
@@ -984,7 +984,7 @@ ideas = {
 		
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.10
+				attack_bonus_against = 0.055
 				#defense_bonus_against = 0.05
 			}
 			
