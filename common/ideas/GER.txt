@@ -15,7 +15,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.025
+				production_speed_arms_factory_factor = 0.025
 				political_power_cost = 0.1
 			}
 
@@ -23,8 +23,6 @@ ideas = {
 				tag = GER
 				extra_trade_to_target_factor = 0.2
 				trade_cost_for_target_factor = -0.20
-				#cic_to_target_factor = 0.05
-				#mic_to_target_factor = 0.05
 			}
 		}
 
@@ -126,13 +124,18 @@ ideas = {
 			picture = generic_air_bonus
 			
 			modifier = {
-				cat_battlefield_support_cost_factor = -0.075
+				air_doctrine_cost_factor = -0.05
 			}
 			
 			research_bonus = {
 				jet_technology = 0.10
 			}
 
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
 		}	
 
 		GER_rocketry_idea = {

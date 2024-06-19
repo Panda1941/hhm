@@ -11,7 +11,7 @@
  annex_new_zealand_eng:0 "Annex New Zealand"
 
 
- GER_integrate_war_economies_mod_tt:0 "If an axis minor (YHungary, Romania, Spain, Bulgaria!) is in faction with germany, they will become a puppet and get 4 mils in their capital.\n\nYGermany! will receive 4 mils per minor (up to 16)\n"
+ GER_integrate_war_economies_mod_tt:0 "If an axis minor (YHungary, Romania, Spain, Bulgaria!) is in faction with germany, they will get 2 YMilitary Factories! in their capital, this does not turn them into a puppet.\n\nYGermany! will receive 2 YMilitary Factories! per minor (up to 8)\n"
 
  two_emperors_of_asia:0 "The Two Emperors of Asia"
 
