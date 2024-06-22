@@ -16,7 +16,7 @@ equipment_modules = {
 			fuel_capacity = 20
 		}
 		multiply_stats = { 
-			maximum_speed = 0.06
+			maximum_speed = 0.05
 		}
 	}
 
@@ -32,8 +32,8 @@ equipment_modules = {
 			fuel_capacity = 40
 		}
 		multiply_stats = {
-			maximum_speed = 0.12
-			build_cost_ic = 0.02
+			maximum_speed = 0.10
+			build_cost_ic = 0.025
 		}
 	}
 
@@ -45,7 +45,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 3.5
 			build_cost_ic = 4.5
-			reliability = -0.075
+			reliability = -0.1
 			maximum_speed = 1.0
 			fuel_capacity = 60
 
@@ -53,8 +53,8 @@ equipment_modules = {
 			breakthrough = 2
 		}
 		multiply_stats = {
-			build_cost_ic = 0.04
-			maximum_speed = 0.2
+			build_cost_ic = 0.05
+			maximum_speed = 0.25
 		}
 	}
 
@@ -67,12 +67,12 @@ equipment_modules = {
 
 		add_stats = {
 			defense = 1
-			reliability = -0.10
+			reliability = -0.1
 		}
 		xp_cost = 0
 		multiply_stats = {
-		    hardness = -0.05
-			build_cost_ic = -0.08
+		    hardness = -0.02
+			build_cost_ic = -0.02
 		}
 	}
 
@@ -88,6 +88,7 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 1
 		multiply_stats = {
+
 		}
 	}
 
@@ -97,15 +98,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			defense = 3
-			breakthrough = 2
+			defense = 4
+			breakthrough = 1
             reliability = 0.10
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		multiply_stats = {
-		    hardness = 0.05
-			build_cost_ic = 0.10
+		    hardness = 0.02
+			build_cost_ic = 0.08
 		}
 	}
 
@@ -117,13 +118,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			defense = 2.0
-			reliability = -0.05
+			defense = 3.0
 			build_cost_ic = 1.5
 		}
 		multiply_stats = {
-			maximum_speed = -0.025
-			hardness = 0.05
+			maximum_speed = -0.02
+			hardness = 0.06
 		}
 		dismantle_cost_ic  = 1
 
@@ -138,13 +138,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			reliability = 0.05
-			defense = 3.5
-			build_cost_ic = 2.25
+			defense = 4
+			build_cost_ic = 2.0
 		}
 		multiply_stats = {
-			maximum_speed = -0.05
-			hardness = 0.05
+			maximum_speed = -0.02
+			hardness = 0.06
 		}
 		xp_cost = 0
 		dismantle_cost_ic  = 1
@@ -160,8 +159,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			defense = 3.0
-			build_cost_ic = 1.25
+			defense = 3
+			build_cost_ic = 1.0
 		}
 		dismantle_cost_ic  = 0.5
 
@@ -178,9 +177,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			defense = 1.5
+			defense = 1.0
 			reliability = -0.1
-			build_cost_ic = 1.0
+			build_cost_ic = 0.75
 		}
 		dismantle_cost_ic  = 0.5
 
@@ -200,17 +199,16 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			breakthrough = 2.5
+			breakthrough = 3.0
 			hardness = 0.03
-			reliability = -0.05
-			defense = 1.5
-			build_cost_ic = 2.5
+			reliability = -0.10
+			build_cost_ic = 2.0
 		}
 		xp_cost = 0
 		dismantle_cost_ic  = 1
 
 		multiply_stats =  {
-        	maximum_speed = -0.05
+        	maximum_speed = -0.08
 		}
 
 		can_convert_from = {
@@ -224,15 +222,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			breakthrough = 2.5
-			reliability = -0.02
-			build_cost_ic = 1.75
+			breakthrough = 3.0
+			reliability = -0.05
+			build_cost_ic = 2.0
 		}
 		xp_cost = 0
 		dismantle_cost_ic  = 1
 
 		multiply_stats =  {
-        	maximum_speed = 0.05
+        	maximum_speed = 0.08
 		}
 
 		can_convert_from = {
@@ -247,14 +245,13 @@ equipment_modules = {
 
 		add_stats = {
 			breakthrough = 1.0
-			defense = 1.5
 			build_cost_ic = 1.0
 		}
 		xp_cost = 0
 		dismantle_cost_ic  = 1
 
 		multiply_stats =  {
-		#maximum_speed = 0.025
+			
 		}
 
 	}
@@ -267,7 +264,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 3
+			soft_attack = 2
 			build_cost_ic = 0.75
 		}
 		dismantle_cost_ic = 0.5
@@ -288,7 +285,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 4
 			hard_attack = 2
-			ap_attack = 6
+			ap_attack = 4
 			build_cost_ic = 1.0
 			reliability = -0.08
 		}
@@ -306,9 +303,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		parent = mech_auto_cannon
 		add_stats = {
-			soft_attack = 5
+			soft_attack = 6
 			hard_attack = 4
-			ap_attack = 12
+			ap_attack = 8
 			build_cost_ic = 1.25
 			reliability = -0.08
 		}
@@ -400,13 +397,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 0.75
-			reliability = -0.05
+			build_cost_ic = 1.0
 		}
 		xp_cost = 0
 		multiply_stats = {
-			soft_attack = 0.05
-			build_cost_ic = 0.02
+			soft_attack = 0.1
 		}
 	}
 	
@@ -416,13 +411,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
-			build_cost_ic = 0.75
-			reliability = -0.05
+			build_cost_ic = 1.0
 		}
 		xp_cost = 0
 		multiply_stats = {
-			hard_attack = 0.05
-			build_cost_ic = 0.02
+			hard_attack = 0.1
 		}
 	}
 
