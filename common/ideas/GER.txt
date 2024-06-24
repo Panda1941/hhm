@@ -620,7 +620,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				industrial_capacity_factory = -0.075
+				industrial_capacity_factory = -0.025
 				industrial_capacity_dockyard = 0.15
 				consumer_goods_factor = 0.10
 			}
@@ -1084,7 +1084,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 0.35
 			}
@@ -1106,7 +1105,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 0.5
 			}
@@ -1128,7 +1126,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 0.65
 			}
@@ -1150,7 +1147,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 0.8
 			}
@@ -1172,7 +1168,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 0.95
 			}
@@ -1194,7 +1189,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 1.1
 			}
@@ -1216,7 +1210,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 1.25
 			}
@@ -1238,7 +1231,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 1.4
 			}
@@ -1260,7 +1252,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 1.55
 			}
@@ -1282,7 +1273,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 1.7
 			}
@@ -1304,7 +1294,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 1.85
 			}
@@ -1326,7 +1315,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 2
 			}
@@ -1348,7 +1336,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 2.15
 			}
@@ -1370,7 +1357,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 2.3
 			}
@@ -1392,7 +1378,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 2.45
 			}
@@ -1414,7 +1399,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 2.6
 			}
@@ -1436,7 +1420,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.20
 				political_power_cost = 2.75
 			}

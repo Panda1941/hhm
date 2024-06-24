@@ -48,10 +48,6 @@ focus_tree = {
 		}
 		modifier = {
 			add = 10
-			tag = DEN
-		}
-		modifier = {
-			add = 10
 			tag = SWE
 		}
 		modifier = {
@@ -75,17 +71,21 @@ focus_tree = {
 			tag = SIA
 		}
 		modifier = {
-			add = 20
-			tag = BEL
+			add = 10
+			tag = DEN
 		}
-		modifier = {
-			add = 20
-			tag = LUX
-		}
-		modifier = {
-			add = 20
-			tag = HOL
-		}
+		#modifier = {
+		#	add = 20
+		#	tag = BEL
+		#}
+		#modifier = {
+		#	add = 20
+		#	tag = LUX
+		#}
+		#modifier = {
+		#	add = 20
+		#	tag = HOL
+		#}
 	}
 
 	default = no
