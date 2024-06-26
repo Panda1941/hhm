@@ -2636,28 +2636,15 @@ focus_tree = {
 		completion_reward = {
 
 			army_experience = 50
-			add_tech_bonus = {
-                name = GER_tiger			
-				bonus = 1.0
-				uses = 1
-				technology = improved_heavy_tank_chassis
-			}
-			add_tech_bonus = {
-                name = GER_tiger			
-				bonus = 1.0
-				uses = 1
-				technology = advanced_heavy_tank_chassis
-				technology = advanced_heavy_tank_chassis_1
-				
-			}
-			add_tech_bonus = {
-			    name = mech_100
-				ahead_reduction = 1.0
-				uses = 1
-				category = motorized_equipment
-			}
-			add_ideas = GER_heavy_research
 			
+			add_tech_bonus = {
+                name = GER_tiger			
+				bonus = 1.0
+				uses = 2
+				category = cat_heavy_armor
+			}
+
+			#add_ideas = GER_heavy_research
 		}
 	}
 

@@ -1732,6 +1732,26 @@ ideas = {
 		}
 		
 		
+		ger_heavy_research = {
+			picture = generic_armor
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+			}
+		}
+		
 	}
 
 	# TECHNOLOGY
