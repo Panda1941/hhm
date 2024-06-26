@@ -1708,12 +1708,7 @@ ideas = {
 
 			cost = 150
 
-			traits = { construction_company }
-
-			modifier = {
-				production_speed_buildings_factor = 0.075
-				consumer_goods_factor = -0.05
-			}
+			traits = { gosproyektstroy_trait }
 		}
 	}
 }

@@ -7826,6 +7826,19 @@ leader_traits = {
 		}
 	}
 
+	gosproyektstroy_trait = {
+		random = no
+
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+		production_speed_buildings_factor = 0.075
+		consumer_goods_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	construction_company = {
 		random = no
 
