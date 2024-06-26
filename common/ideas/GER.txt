@@ -1062,7 +1062,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.333
-				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.2
 				political_power_cost = 0.2
 			}
