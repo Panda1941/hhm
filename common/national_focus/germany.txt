@@ -3823,7 +3823,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_rearmament
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -3926,7 +3926,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = GER_naval_effort
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 0.25
 		}	
@@ -4134,7 +4134,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = GER_modular_construction
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 10
 		}
