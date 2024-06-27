@@ -3549,7 +3549,6 @@ focus_tree = {
 		id = USA_battleship_primacy
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = USA_escort_effort }
-		mutually_exclusive = { focus = USA_carrier_primacy }
 		x = -1
 		y = 1
 		relative_position_id = USA_escort_effort
@@ -3565,13 +3564,22 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_battleship_primacy
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = bb_tech
 			}
-
-			swap_ideas = {
-				add_idea = bureau_of_ships_focus_heavy_ship
-				remove_idea = bureau_of_ships_focus
+			
+			if = {
+				limit = { has_idea = bureau_of_ships_focus_carrier_ship }
+				swap_ideas = { 
+					add_idea = bureau_of_ships_focus_heavy_carrier_ship
+					remove_idea = bureau_of_ships_focus_carrier_ship
+				}
+			}
+			else = { 
+				swap_ideas = {
+					add_idea = bureau_of_ships_focus_heavy_ship
+					remove_idea = bureau_of_ships_focus
+				}
 			}
 		}
 	}
@@ -3579,7 +3587,6 @@ focus_tree = {
 		id = USA_carrier_primacy
 		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = USA_escort_effort }
-		mutually_exclusive = { focus = USA_battleship_primacy }
 		x = 1
 		y = 1
 		relative_position_id = USA_escort_effort
@@ -3595,13 +3602,22 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_carrier_primacy
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cv_tech
 			}
-
-			swap_ideas = {
-				add_idea = bureau_of_ships_focus_carrier_ship
-				remove_idea = bureau_of_ships_focus
+			
+			if = {
+				limit = { has_idea = bureau_of_ships_focus_heavy_ship }
+				swap_ideas = { 
+					add_idea = bureau_of_ships_focus_heavy_carrier_ship
+					remove_idea = bureau_of_ships_focus_heavy_ship
+				}
+			}
+			else = { 
+				swap_ideas = {
+					add_idea = bureau_of_ships_focus_carrier_ship
+					remove_idea = bureau_of_ships_focus
+				}
 			}
 		}
 	}

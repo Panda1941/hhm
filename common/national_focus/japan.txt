@@ -932,7 +932,7 @@
 		id = JAP_national_mobilization_law
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = JAP_guide_the_zaibatsus }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = JAP_guide_the_zaibatsus
 
@@ -979,7 +979,7 @@
 		icon = GFX_focus_research
 		prerequisite = { focus = JAP_national_mobilization_law }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = JAP_national_mobilization_law
 
 		cost = 10
@@ -1010,7 +1010,7 @@
 		id = JAP_national_defense_state
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = JAP_nationalize_war_industry }
-		x = 2
+		x = -1
 		y = 1
 		relative_position_id = JAP_nationalize_war_industry
 
@@ -1034,152 +1034,15 @@
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			if = {
-				limit = {
-					has_war_support < 0.8
-				}
-				add_war_support = 0.1
-			}
-			else_if = {
-				limit = {
-					has_idea = tot_economic_mobilisation
-				}
-				add_political_power = 150
-			}
-			else = {
-				add_ideas = tot_economic_mobilisation
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_spiritual_mobilization
-		icon = GFX_focus_jap_spiritual_mobilization
-		prerequisite = { focus = JAP_national_defense_state }
-		x = -1
-		y = 1
-		relative_position_id = JAP_national_defense_state
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_MANPOWER }
-		completion_reward = {
+			add_ideas = tot_economic_mobilisation
 			add_ideas = spiritual_mobilization_idea
-		}
-	}
-
-	focus = {
-		id = JAP_warrior_spirit
-		icon = GFX_focus_generic_japanese_imperial_glory
-		prerequisite = { focus = JAP_national_defense_state }
-		x = 1
-		y = 1
-		relative_position_id = JAP_national_defense_state
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_war = no
-			}
-			modifier = {
-				factor = 10
-				surrender_progress > 0.9
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			hidden_effect = {
-				set_rule = {
-					can_use_kamikaze_pilots = yes
-				}
-			}
-			custom_effect_tooltip = kamikaze_focus_tooltip
-			if = { 
-				limit = {
-					has_dlc = "Waking the Tiger"
-				}
-				custom_effect_tooltip = cost_reduced_last_stand 
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_strengthen_the_divine_wind
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = JAP_spiritual_mobilization }
-		prerequisite = { focus = JAP_warrior_spirit }
-		x = 1
-		y = 1
-		relative_position_id = JAP_spiritual_mobilization
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-			has_tech = rocket_engines
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
-				}
-				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
-				hidden_effect = { set_technology = { suicide_craft = 1 } }
-			}
-			else = {
-				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect_bba
-				hidden_effect = { set_technology = { suicide_charge = 1 popup = no} }
-			}
 		}
 	}
 
 	focus = {
 		id = JAP_the_manchurian_project
 		icon = GFX_focus_jap_manchurian_project
-		x = 8
+		x = 7
 		y = 0
 		relative_position_id = JAP_purge_the_kodoha_faction
 		offset = {
