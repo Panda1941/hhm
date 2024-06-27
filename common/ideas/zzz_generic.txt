@@ -1447,6 +1447,7 @@ ideas = {
 				NOT = {
 					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
 					tag = ROM
+					tag = ITA
 				}
 			}
 			
@@ -1467,6 +1468,7 @@ ideas = {
 			allowed = {
 				NOT = {
 					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
+					tag = ITA
 				}
 			}
 			

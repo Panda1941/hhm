@@ -7809,6 +7809,17 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	ITA_danieli_trait = {
+		random = no
+
+		industrial_capacity_factory = 0.08
+		industrial_capacity_dockyard = 0.08
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	railway_company = {
 		random = no
@@ -7821,6 +7832,18 @@ leader_traits = {
 				armor_value = 0.15
 			}
 		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	construction_company = {
+		random = no
+
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+		production_speed_buildings_factor = 0.025
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -7839,12 +7862,24 @@ leader_traits = {
 		}
 	}
 
-	construction_company = {
+	ITA_italcementi_trait = {
 		random = no
 
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
-		production_speed_buildings_factor = 0.025
+		production_speed_buildings_factor = 0.075
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ITA_astaldi_trait = {
+		random = no
+
+		production_speed_infrastructure_factor = 0.2
+		production_speed_rail_way_factor = 0.2
+		production_speed_dockyard_factor = 0.1
 
 		ai_will_do = {
 			factor = 1
