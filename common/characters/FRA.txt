@@ -1163,26 +1163,6 @@ characters={
 				small="GFX_idea_rene_massigli"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = rene_massigli
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_confirm_eastern_commitments 
-				has_government  = democratic 
-			}
-			cost  = 75.000
-			traits  = {
-				hawk 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
 	}
 
 	FRA_georges_bonnet={
@@ -1190,25 +1170,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_georges_bonnet"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = georges_bonnet
-			allowed  = {
-				original_tag = FRA
-			}
-			available  = {
-				has_completed_focus = FRA_buy_time
-			}
-			cost  = 75.000
-			traits  = {
-				appeaser 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
 			}
 		}
 	}
@@ -1219,33 +1180,7 @@ characters={
 			army={
 				small=GFX_portrait_FRA_charles_maurras_small
 			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = charles_maurras
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_integralism 
-				or  = {
-					has_government  = fascism 
-					has_government  = neutrality 
-				}
-			}
-			visible  = {
-				has_dlc = "La Resistance"
-			}
-			cost  = 75.000
-			traits  = {
-				national_integralist 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}		
+		}	
 	}
 
 	FRA_philippe_henriot={
@@ -1253,29 +1188,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_FRA_philippe_henriot"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_philippe_henriot
-			allowed  = {
-				original_tag  = FRA
-			}
-			visible  = {
-				has_dlc = "La Resistance"
-			}
-			available  = {
-				has_completed_focus  = FRA_national_regeneration 
-				has_government  = fascism 
-			}
-			cost  = 75.000
-			traits  = {
-				propaganda_expert 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
 			}
 		}
 	}
@@ -1294,9 +1206,6 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				not  = {
-					has_government  = communism 
-				}
 			}
 			cost  = 150.000
 			traits  = {

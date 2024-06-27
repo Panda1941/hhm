@@ -442,13 +442,6 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				if = {
-					limit = { has_dlc = "By Blood Alone" }
-					OR = {
-						NOT = { has_government = communism }
-						has_completed_focus = ITA_common_ground
-					}
-				}
 			}
 			traits = {
 				mobile_warfare_expert
@@ -1605,7 +1598,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			traits = {
 				navy_chief_commerce_raiding_2
@@ -1873,12 +1866,6 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-				NOT = { has_completed_focus = ITA_disband_the_blackshirts }
-				has_completed_focus = ITA_army_leaders
 			}
 			traits = {
 				army_logistics_1 # Blackshirt related trait instead?
@@ -1920,7 +1907,7 @@ characters = {
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_foreign_affairs
 				}
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			cost = 75
 			traits = {
@@ -1979,7 +1966,7 @@ characters = {
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_justice
 				}
-				ITA_government_is_somewhat_fascist = yes
+				
 				if =  {
 					limit = { 
 						has_dlc = "By Blood Alone"
@@ -2097,7 +2084,7 @@ characters = {
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_corporations
 				}
-				ITA_government_is_really_fascist = yes
+				
 			}
 			cost = 75
 			traits = {
@@ -2156,7 +2143,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				army_regrouping_1
@@ -2175,7 +2162,6 @@ characters = {
 			}
 			available = {
 				has_intelligence_agency = yes
-				ITA_government_is_really_fascist = yes
 			}
 			traits = {
 				head_of_intelligence 
@@ -2202,7 +2188,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { ITA_government_is_really_fascist = yes }
+			visible = {  }
 		}
 	}
 
@@ -2225,7 +2211,6 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
 			}
 			traits = {
 				prince_of_terror
@@ -2262,7 +2247,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				war_industrialist 
@@ -2301,7 +2286,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			traits = {
 				quartermaster_general 
@@ -2341,7 +2326,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				armaments_organizer
@@ -2381,16 +2366,6 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-					if = {
-						limit = {
-							has_dlc = "By Blood Alone"
-						}
-						has_completed_focus = ITA_cooperate_with_moderates
-					}
-				}
 			}
 			traits = {
 				captain_of_industry
@@ -2428,12 +2403,6 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_government = fascism
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-				}
 			}
 			traits = {
 				financial_expert
@@ -2474,7 +2443,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			traits = {
 				silent_workhorse
@@ -2514,19 +2483,6 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					OR = {
-						has_government = fascism
-						has_completed_focus = ITA_utilize_the_blackshirts
-						has_completed_focus = ITA_cooperate_with_moderates
-					}
-				}
-				else = {
-					has_government = fascism
-				}
 			}
 			traits = {
 				editor
@@ -2565,7 +2521,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				ideological_crusader 
@@ -2605,7 +2561,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				backroom_backstabber 
@@ -2644,15 +2600,6 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
 			}
 			traits = {
 				fascist_demagogue 
@@ -2740,13 +2687,6 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					AND = {
-						has_government = democratic
-						has_completed_focus = ITA_army_leaders
-					}
-					has_completed_focus = ITA_meritocracy
-				}
 			}
 			traits = {
 				army_chief_drill_2
@@ -2860,10 +2800,6 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_meritocracy
-					has_completed_focus = ITA_bring_back_exiled_intellectuals
-				}
 			}
 			research_bonus = {
 				nuclear = 0.15
@@ -3470,13 +3406,6 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				OR = {
-					has_government = communism
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = democratic
-					}
-				}
 			}
 			cost = 50
 			traits = {
