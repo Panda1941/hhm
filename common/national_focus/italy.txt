@@ -242,7 +242,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
-		cost = 8
+		cost = 10
 		available = {
 		}
 
@@ -284,6 +284,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
+			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			ITA_replace_designers_by_improved_version_north = yes
 		}
 	}
 
@@ -295,7 +299,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
-		cost = 8
+		cost = 6
 		available = {
 		}
 
@@ -355,9 +359,17 @@ focus_tree = {
 			162 = {
 				add_resource = {
 					type = steel
+					amount = 24
+				}
+			}
+			156 = {
+				add_resource = {
+					type = steel
 					amount = 12
 				}
 			}
+
+			ITA_replace_designers_by_improved_version_south = yes
 		}
 	}
 
