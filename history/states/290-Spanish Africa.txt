@@ -6,7 +6,6 @@ state={
 	
 	
 	state_category = rural
-	impassable = yes
 	
 	resources={
 		steel=23 # was: 20 . Changed to 23 (from 15) due to Portugal Setup

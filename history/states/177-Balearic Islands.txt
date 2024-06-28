@@ -5,7 +5,6 @@ state=
 	manpower = 365500
 	
 	state_category = rural
-	impassable = yes
 	
 	history=
 	{
@@ -25,7 +24,9 @@ state=
 		}
 		add_core_of = SPR
 	}
-	provinces= { 7114 9793 9845 }
+	provinces=
+	{
+7114 9793 9845 	}
 
 	local_supplies=0.0 
 }
