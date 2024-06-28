@@ -5,6 +5,7 @@ state={
 	manpower = 2295085
 	
 	state_category = city
+	impassable = yes
 
 	history={
 		owner = SPR

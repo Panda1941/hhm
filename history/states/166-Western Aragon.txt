@@ -31,6 +31,7 @@ state={
 	manpower=668365
 	buildings_max_level_factor=1.000
 	state_category=town
+	impassable = yes
 
 	local_supplies=13.0 
 }
