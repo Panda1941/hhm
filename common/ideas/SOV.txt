@@ -296,6 +296,44 @@ ideas = {
 				army_defence_factor = -0.05
 			}
 		}
+		officers_purged_2 = {
+			removal_cost = -1
+			name = officers_purged
+			picture = officers_purged
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+
+			modifier = {
+				army_org_factor = -0.10
+				army_attack_factor = -0.025
+				army_defence_factor = -0.025
+			}
+		}
+		officers_purged_3 = {
+			removal_cost = -1
+			name = officers_purged
+			picture = officers_purged
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+
+			modifier = {
+				army_org_factor = -0.05
+			}
+		}
 
 
 		SOV_molotov_ribbentrop_pact = { 

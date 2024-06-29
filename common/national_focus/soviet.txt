@@ -1973,7 +1973,10 @@
 				uses = 2
 				category = land_doctrine
 			}
-			remove_ideas = officers_purged
+			swap_ideas = {
+				remove_idea = officers_purged
+				add_idea = officers_purged_2
+			}
 		}
 	}
 
@@ -2464,6 +2467,10 @@
 
 		completion_reward = {
 			add_ideas = SOV_barrier_troops
+			swap_ideas = {
+				remove_idea = officers_purged_2
+				add_idea = officers_purged_3
+			}
 		}
 	}
 
@@ -2487,6 +2494,7 @@
 				add_idea = SOV_adaptable_army
 				remove_idea = SOV_barrier_troops
 			}
+			remove_ideas = officers_purged_3
 		}
 	}
 
