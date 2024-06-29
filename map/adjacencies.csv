@@ -1,6 +1,6 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
-13228;4135;impassable;-1;-1;-1;-1;-1;;Gibraltar
-13228;13299;impassable;-1;-1;-1;-1;-1;;Gibraltar
+1048;13228;impassable;-1;-1;-1;-1;-1;;Gibraltar
+10094;13228;impassable;-1;-1;-1;-1;-1;;Gibraltar
 10094;4135;impassable;-1;-1;-1;-1;-1;;Gibraltar
 10094;13299;impassable;-1;-1;-1;-1;-1;;Gibraltar
 7153;4135;impassable;-1;-1;-1;-1;-1;;Gibraltar
@@ -321,8 +321,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5382;9815;impassable;-1;-1;-1;-1;-1;;SPAIN
 5382;4080;impassable;-1;-1;-1;-1;-1;;SPAIN
 5382;1048;impassable;-1;-1;-1;-1;-1;;SPAIN
-5382;13228;impassable;-1;-1;-1;-1;-1;;SPAIN
-5407;13228;impassable;-1;-1;-1;-1;-1;;SPAIN
 5407;7153;impassable;-1;-1;-1;-1;-1;;SPAIN
 5407;9979;impassable;-1;-1;-1;-1;-1;;SPAIN
 5407;7068;impassable;-1;-1;-1;-1;-1;;SPAIN
