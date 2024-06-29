@@ -1,9 +1,14 @@
 ideas = {
 
-hidden_ideas = {
-	no_navy_spain = {
-		modifier = {production_speed_air_base_factor = -1.1 navy_max_range_factor = -1 industrial_capacity_dockyard = -0.50 production_speed_dockyard_factor = -1.1 }
-	}
+	hidden_ideas = {
+		no_navy_spain = {
+			name = "No Navy Spain"
+			modifier = {
+				navy_max_range_factor = -1 
+				industrial_capacity_dockyard = -0.50 
+				production_speed_dockyard_factor = -1.1 
+			}
+		}
 	}
 
 	hidden_ideas = { # Used to prevent AI to hold outside of the Iberian Peninsula during the SCW

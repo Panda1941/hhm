@@ -1317,3 +1317,11 @@ france_early_core = {
 	army_core_defence_factor = 0.15
 	army_core_attack_factor = 0.10
 }
+
+SPR_cant_build_airports = {
+	enable = { always = yes }
+
+	icon = GFX_generic_wall_line
+
+	state_production_speed_air_base_factor = -3.14159
+}

@@ -219,15 +219,6 @@ if = {
 	recruit_character = SPA_fidel_davila_arrondo
 	recruit_character = SPA_manuel_hedilla
 	recruit_character = SPA_mauricio_de_sivatte
-	165 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-	}
-	171 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-	}
-	792 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-	}
 
 	SPR_enrique_lister = {
 		set_character_flag = SPR_do_not_align_me_flag
