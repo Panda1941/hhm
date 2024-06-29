@@ -852,20 +852,22 @@ focus_tree = {
 			    ideology = fascism
 			    popularity = 0.1
 			}
+
+			custom_effect_tooltip = SPA_adopt_the_26_points_tooltip
+
 			if = {
 				limit = {
 					NOT = {
-						has_idea = war_economy
-						has_idea = tot_economic_mobilisation
+						OR = {
+							has_idea = war_economy
+							has_idea = tot_economic_mobilisation
+						}
 					}
 				}
 				add_ideas = war_economy
 			}
-			if = {
-				limit = {
-					has_idea = limited_conscription
-				}
-				add_ideas = extensive_conscription
+			else = {
+				add_political_power = 75
 			}
 			if = {
 				limit = {
@@ -873,15 +875,8 @@ focus_tree = {
 				}
 				add_ideas = limited_conscription
 			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						state = 165
-						state = 171
-						state = 792
-					}
-				}
-				remove_dynamic_modifier = { modifier = autonomous_state }
+			else = {
+				add_political_power = 75
 			}
 		}
 	}

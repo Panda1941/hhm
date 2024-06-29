@@ -783,7 +783,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 10
 
 			random_owned_controlled_state = {
 				limit = {
@@ -897,11 +897,11 @@ focus_tree = {
 			add_to_variable = { ITA_re_modifier_army_sub_unit_infantry_defence_factor = 0.05 }
 			custom_effect_tooltip = ITA_preserve_army_traditions_re_tt
 
-			army_experience = 25
+			army_experience = 10
 
 			set_variable = {
 				var = special_forces_xp_to_add
-				value = 25
+				value = 10
 				tooltip = add_positive_amount_of_special_forces_xp_tt
 			}
 			add_set_amount_of_special_forces_xp = yes
@@ -1057,7 +1057,7 @@ focus_tree = {
 			add_to_variable = { ITA_re_unit_camelry_design_cost_factor = -0.25 }
 			custom_effect_tooltip = ITA_carica_di_isbuscenskij_re_tt
 
-			army_experience = 100
+			army_experience = 50
 		}
 	}
 
@@ -1083,7 +1083,7 @@ focus_tree = {
 			add_to_variable = { ITA_re_army_speed_factor = 0.05 }
 			custom_effect_tooltip = ITA_army_leaders_re_tt
 
-			army_experience = 25
+			army_experience = 10
 
 			if = {
 				limit = {
@@ -1138,7 +1138,7 @@ focus_tree = {
 
 			custom_effect_tooltip = ITA_superesercito_re_tt
 
-			army_experience = 50
+			army_experience = 25
 			#if = {
 			#	limit = {
 			#		has_dlc = "No Step Back"
@@ -1218,7 +1218,7 @@ focus_tree = {
 			add_to_variable = { ITA_re_special_forces_defence_factor = 0.03 }
 			custom_effect_tooltip = ITA_bersaglieri_re_tt
 
-			army_experience = 15
+			army_experience = 10
 
 			add_tech_bonus = {
 				name = ITA_bersaglieri
@@ -1251,11 +1251,11 @@ focus_tree = {
 			add_to_variable = { ITA_re_modifier_army_sub_unit_mountaineers_max_org_factor = 0.05 }
 			custom_effect_tooltip = ITA_divisioni_alpine_re_tt
 
-			army_experience = 15
+			army_experience = 10
 
 			set_variable = {
 				var = special_forces_xp_to_add
-				value = 25
+				value = 20
 				tooltip = add_positive_amount_of_special_forces_xp_tt
 			}
 			add_set_amount_of_special_forces_xp = yes
@@ -1291,11 +1291,11 @@ focus_tree = {
 			add_to_variable = { ITA_re_modifier_army_sub_unit_paratrooper_max_org_factor = 0.05 }
 			custom_effect_tooltip = ITA_fanti_dell_aria_re_tt
 
-			army_experience = 15
+			army_experience = 10
 
 			set_variable = {
 				var = special_forces_xp_to_add
-				value = 25
+				value = 20
 				tooltip = add_positive_amount_of_special_forces_xp_tt
 			}
 			add_set_amount_of_special_forces_xp = yes
@@ -1458,7 +1458,7 @@ focus_tree = {
 				add_ideas = ITA_hidden_ferrea_mole_ns
 			}
 
-			army_experience = 50
+			army_experience = 25
 
 			add_tech_bonus = {
 				name = ITA_ferrea_mole_ferreo_cuore

@@ -76,7 +76,7 @@
 		}
 
 		available = {
-			threat > 0.15
+			threat > 0.10
 		}
 		
 		bypass = {

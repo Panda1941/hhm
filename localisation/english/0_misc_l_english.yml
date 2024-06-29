@@ -18,6 +18,8 @@
 
  GER_integrate_war_economies_mod_tt:0 "If an axis minor (YHungary, Romania, Spain, Bulgaria!) is in faction with germany, they will get 2 YMilitary Factories! in their capital, this does not turn them into a puppet.\n\nYGermany! will receive 2 YMilitary Factories! per minor (up to 8)\n"
 
+ SPA_adopt_the_26_points_tooltip:0 "\ngWill give us YWar Economy! if we don't have it already, will add G+75! YPolitical Power! otherwise.\n\nWill add YLimited Conscription! if we don't already have it, otherwise we'll get G+75! YPolitical Power!! \n\n"
+
  two_emperors_of_asia:0 "The Two Emperors of Asia"
 
  #Random canada shit
