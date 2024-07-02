@@ -129,39 +129,8 @@
 
 		cost = 10
 
-		available = { 
-			is_puppet = no 
-			NOT = { has_war_with = CHI }
-
+		available = {
 			date > 1937.06.01
-		}
-		bypass = {
-			OR = {
-				AND = {
-					608 = {
-						NOT = {
-							is_controlled_by = CHI
-							is_controlled_by = PRC
-							is_controlled_by = SHX
-						}
-					}
-					597 = {
-						NOT = {
-							is_controlled_by = CHI
-							is_controlled_by = PRC
-							is_controlled_by = SHX
-						}
-					}
-					614 = {
-						NOT = {
-							is_controlled_by = CHI
-							is_controlled_by = PRC
-							is_controlled_by = SHX
-						}
-					}
-				}
-				has_war_with = CHI
-			}
 		}
 
 		will_lead_to_war_with = CHI
@@ -181,20 +150,16 @@
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_war_support = 0.05
-			create_wargoal = {
-				type = annex_everything
-				target = CHI
-			}
+
 			USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
-			if = {
-				limit = {
-					has_country_leader = { id = 700 ruling_only = yes }
-				}
-				remove_country_leader_trait = imperial_sanction
-			}
+
 			add_named_threat = { threat = 15 name = JAP_intervene_in_china }
-			add_ideas = JAP_intervene_in_china_5
-			unlock_decision_tooltip = JAP_china_step_up_war_effort
+
+			transfer_state = 608
+			transfer_state = 614
+			transfer_state = 597
+			transfer_state = 743
+
 			hidden_effect = {
 				country_event = { days = 5 id = news.1 }
 			}
@@ -209,7 +174,7 @@
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -220,17 +185,7 @@
 		}
 
 		available = {
-			CHI = {
-				surrender_progress > 0.3
-			}
-			has_war_with = USA
-		}
-
-		bypass = {
-			OR = {
-				NOT = { JAP_has_idea_JAP_intervene_in_china = yes }
-				CHI = { has_capitulated = yes }
-			}
+			date > 1938.06.01
 		}
 
 		cancel_if_invalid = yes
@@ -239,10 +194,17 @@
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			JAP_intervene_in_china_remove = yes
 			add_named_threat = { threat = 15 name = JAP_secure_china }		
+
 			USA = { add_war_support = 0.05 }	
-			unlock_decision_tooltip = JAP_ichi_go
+
+			transfer_state = 598
+			transfer_state = 606
+			transfer_state = 613
+			transfer_state = 749
+			transfer_state = 596
+			transfer_state = 595
+			transfer_state = 600
 		}
 	}
 
@@ -261,12 +223,7 @@
 		}
 
 		available = {
-			has_full_control_of_state = 593
-			has_full_control_of_state = 592
-		}
-
-		bypass = {
-
+			date > 1939.06.01
 		}
 
 		cancel_if_invalid = yes
@@ -275,6 +232,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_named_threat = { threat = 15 name = JAP_develop_chinese_resources }		
 			593 = {
 				add_resource = {
 					type = aluminium
@@ -291,6 +249,13 @@
 				limit = { has_dlc = "Waking the Tiger" }
 				unlock_decision_category_tooltip = prospect_for_resources
 			}
+
+			transfer_state = 593
+			transfer_state = 602
+			transfer_state = 599
+			transfer_state = 592
+			transfer_state = 594
+			transfer_state = 591
 		}
 	}
 

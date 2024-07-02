@@ -105,6 +105,24 @@ ideas = {
 				global_building_slots_factor = 0.2
 			}
 		}
+		nerd_on_country = {
+			picture = generic_spy_political
+			name = "Nerd on Country"
+			allowed = {
+				original_tag = ENG
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.03
+				production_speed_buildings_factor = -0.02
+				industrial_capacity_factory = -0.02
+				production_factory_max_efficiency_factor = -0.02
+			}
+		}
 		YUG_air_payment = {
 			picture = generic_fighter_production_diverted
 			allowed = {

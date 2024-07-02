@@ -287,148 +287,6 @@ political_actions = {
 }
 
 operations = {
-	china_division_deployment = {
-		# icon = generic_operation
-		# a get around AI not being able to build divisions, every week china will spawn one unequiped division in their capital scope
-		allowed = {
-			tag = CHI
-		}
-		fire_only_once = no
-		days_re_enable = 0
-		days_mission_timeout = 12
-		is_good = yes
-		available = {
-			always = no
-		}
-		timeout_effect 	 = {
-			capital_scope = {
-				create_unit = {
-					allow_spawning_on_enemy_provs = no
-					division = "name = \"Chineese Infantry\" division_template = \"Sanjiao Jun\" start_experience_factor = 0.0 start_equipment_factor = 0.001" 
-					owner = ROOT
-					count = 1
-				}
-			}
-		}
-	}
-	
-	china_wave_1 = {
-		# icon = generic_operation
-		allowed = {
-			tag = CHI
-		}
-		fire_only_once = yes
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			surrender_progress > 0.1
-		}
-		complete_effect = {
-			capital_scope = {
-				create_unit = {
-					allow_spawning_on_enemy_provs = no
-					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
-					owner = ROOT
-					count = 20
-				}
-			}
-
-			if = {
-				limit = {
-					date < 1937.06.01
-				}
-				capital_scope = {
-					create_unit = {
-						allow_spawning_on_enemy_provs = no
-						division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
-						owner = ROOT
-						count = 10
-					}
-				}
-			}
-		}
-	}
-	
-	china_wave_2 = {
-		# icon = generic_operation
-		allowed = {
-			tag = CHI
-		}
-		fire_only_once = yes
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			surrender_progress > 0.35
-		}
-		complete_effect = {
-			capital_scope = {
-				create_unit = {
-					allow_spawning_on_enemy_provs = no
-					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
-					owner = ROOT
-					count = 20
-				}
-			}
-
-			if = {
-				limit = {
-					date < 1938.06.01
-				}
-				capital_scope = {
-					create_unit = {
-						allow_spawning_on_enemy_provs = no
-						division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
-						owner = ROOT
-						count = 10
-					}
-				}
-			}
-		}
-	}
-	
-	china_wave_3 = {
-		# icon = generic_operation
-		allowed = {
-			tag = CHI
-		}
-		fire_only_once = yes
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			surrender_progress > 0.80
-		}
-		complete_effect = {
-			capital_scope = {
-				create_unit = {
-					allow_spawning_on_enemy_provs = no
-					division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
-					owner = ROOT
-					count = 30
-				}
-			}
-
-			if = {
-				limit = {
-					date < 1938.09.01
-				}
-				capital_scope = {
-					create_unit = {
-						allow_spawning_on_enemy_provs = no
-						division = "name = \"Chineese Wave\" division_template = \"Juntuán\" start_experience_factor = 0.0"
-						owner = ROOT
-						count = 15
-					}
-				}
-			}
-		}
-	}
-	
 	japanese_invasion_of_china = {
 		# icon = generic_operation
 		allowed = {
@@ -447,7 +305,7 @@ operations = {
 		}
 		complete_effect = {
 			add_named_threat = {
-			    threat = 20
+			    threat = 15
 			    name = "Japaneese Invasion of China"
 			}
 		}
@@ -470,7 +328,7 @@ operations = {
 		}
 		complete_effect = {
 			add_named_threat = {
-			    threat = 10
+			    threat = 15
 			    name = "Japaneese Invasion of China 2"
 			}
 		}
@@ -945,28 +803,6 @@ operations = {
 				declare_war_on = { target = FRA type = annex_everything }
 				declare_war_on = { target = ENG type = topple_government }
 				#country_event = LaR_france_vichy_notification_events.11
-			}
-		}
-	}
-	steal_soviet_anti_tank_research = {
-		icon = GFX_decision_generic_tank
-		allowed = {
-			tag = GER
-		}
-		visible = {
-			tag = GER
-			has_game_rule = {
-				rule = german_anti_tank_bonus
-				option = on
-			}
-		}
-		fire_only_once = yes
-		complete_effect = {
-			add_tech_bonus = {
-				name = SOV_soviet_artillery_tech_bonus_name_default
-				bonus = 1
-				uses = 2
-				category = artillery
 			}
 		}
 	}

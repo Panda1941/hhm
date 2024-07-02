@@ -137,15 +137,7 @@ on_actions = {
 	}
 	on_capitulation = {
 		effect = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = free_collabs
-						option = on
-					}
-				}
-				elwolfmod_capitulations_on_actions_collab = yes
-			}
+			elwolfmod_capitulations_on_actions_collab = yes
 			elwolfmod_capitulations_on_actions = yes
 		}
 	}
@@ -230,6 +222,17 @@ on_actions = {
 					# from ai trade in vanilla
 				}
 			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = ger_boost
+						option = nerd
+					}
+				}
+				GER = {
+					add_ideas = nerd_on_country
+				}
+			}
 			# Soviet boost
 			if = {
 				limit = {
@@ -289,6 +292,17 @@ on_actions = {
 						level = 4
 					}
 					# from ai trade in vanilla
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = sov_boost
+						option = nerd
+					}
+				}
+				SOV = {
+					add_ideas = nerd_on_country
 				}
 			}
 			# Greece dockyards
@@ -474,42 +488,12 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = japan_closed_eco
-						option = on
-					}
-				}
-				JAP = {
-					add_ideas = SOV_collectivized_society
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
 						rule = sov_closed_eco
 						option = on
 					}
 				}
 				SOV = {
 					add_ideas = SOV_collectivized_society
-				}
-				561 = {
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = industrial_complex
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = germany_research_slot
-						option = on
-					}
-				}
-				GER = {
-					add_research_slot = 1
 				}
 			}
 			if = {
@@ -679,93 +663,8 @@ on_actions = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = vichy_france
-						option = banned
-					}
-				}
-				FRA = {
-					load_oob = "FRA_1936_naval_mtg"
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = vichy_france
-						option = forced 
-					}
-				}
-				VIC = {
-					transfer_state = 1
-					transfer_state = 514
-					514 = { set_compliance = 70 }
-					transfer_state = 665
-					665 = { set_compliance = 70 }
-					transfer_state = 458
-					458 = { set_compliance = 70 }
-					transfer_state = 513
-					513 = { set_compliance = 70 }
-					transfer_state = 460
-					460 = { set_compliance = 70 }
-					transfer_state = 459
-					459 = { set_compliance = 70 }
-					transfer_state = 462
-					462 = { set_compliance = 70 }
-					transfer_state = 461
-					461 = { set_compliance = 70 }
-					add_equipment_to_stockpile = {
-						type = motorized_equipment_1 
-						amount = 100
-					}
-					add_equipment_to_stockpile = {
-						type = infantry_equipment_1
-						amount = 10000
-					}
-					load_oob = "VIC_1936_nsb"
-					load_oob = "FRA_1936_naval_mtg"
-				}
-				FRA = {
-					load_oob = "FRA_WS_PRIDE"
-					add_offsite_building = { type = industrial_complex level = 3 }
-					set_nationality={
-						target_country = VIC
-						character = FRA_philippe_petain
-					}
-					set_nationality={
-						target_country = VIC
-						character = FRA_charles_huntziger
-					}
-					set_nationality={
-						target_country = VIC
-						character = FRA_gastonhenri_billotte
-					}
-					set_nationality={
-						target_country = VIC
-						character = FRA_henry_freydenberg
-					}
-					set_nationality={
-						target_country = VIC
-						character = FRA_rene_olry
-					}
-					#set_nationality={
-					#	target_country = VIC
-					#	character = FRA_maurice_gamelin
-					#}
-					#set_nationality={
-					#	target_country = VIC
-					#	character = FRA_maxime_weygand
-					#}
-					set_nationality={
-						target_country = VIC
-						character = FRA_alphonse_georges
-					}
-					set_nationality={
-						target_country = VIC
-						character = FRA_antoinemariebenoit_besson
-					}
-				}
+			FRA = {
+				load_oob = "FRA_1936_naval_mtg"
 			}
 			##### Turning King Edward's abdication into an on_startup event instead of MTTH to help performance####
 			ENG = {
@@ -810,20 +709,6 @@ on_actions = {
 				country_event = {
 					id = DOD_yugoslavia.20
 					days = 912
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = allied_engine_bonus
-							option = on
-						}
-					}
-					add_tech_bonus = {
-						name = elwolf_allied_engine_bonus_name
-						bonus = 1.0
-						uses = 1
-						technology = engines_4
-					}
 				}
 			}
 			GER = {
@@ -947,20 +832,6 @@ on_actions = {
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 106
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = allied_engine_bonus
-							option = on
-						}
-					}
-					add_tech_bonus = {
-						name = elwolf_allied_engine_bonus_name
-						bonus = 1.0
-						uses = 1
-						technology = engines_4
-					}
 				}
 			}
 			HUN = {

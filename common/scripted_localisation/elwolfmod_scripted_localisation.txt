@@ -37,6 +37,15 @@ defined_text = {
 		localization_key = check_gamerules_four
 	}
 	text = {
+		trigger = {
+			has_game_rule = {
+				rule = sov_boost
+				option = nerd
+			}
+		}
+		localization_key = check_gamerules_nerd
+	}
+	text = {
 		localization_key = check_gamerules_zero
 	}
 }
@@ -71,40 +80,19 @@ defined_text = {
 		localization_key = check_gamerules_four
 	}
 	text = {
+		trigger = {
+			has_game_rule = {
+				rule = ger_boost
+				option = nerd
+			}
+		}
+		localization_key = check_gamerules_nerd
+	}
+	text = {
 		localization_key = check_gamerules_zero
 	}
 }
 
-defined_text = {
-	name = GetAlliedEngineBonusStatus
-	text = {
-		trigger = {
-			has_game_rule = {
-				rule = allied_engine_bonus
-				option = on
-			}
-		}
-		localization_key = check_gamerules_on
-	}
-	text = {
-		localization_key = check_gamerules_off
-	}
-}
-defined_text = {
-	name = GetGermanAntiTankBonusStatus
-	text = {
-		trigger = {
-			has_game_rule = {
-				rule = german_anti_tank_bonus
-				option = on
-			}
-		}
-		localization_key = check_gamerules_on
-	}
-	text = {
-		localization_key = check_gamerules_off
-	}
-}
 defined_text = {
 	name = GetTechStealingStatus
 	text = {
@@ -134,37 +122,5 @@ defined_text = {
 	}
 	text = {
 		localization_key = check_gamerules_thirtysix
-	}
-}
-
-defined_text = {
-	name = GetFreeCollabsStatus
-	text = {
-		trigger = {
-			has_game_rule = {
-				rule = free_collabs
-				option = on
-			}
-		}
-		localization_key = check_gamerules_on
-	}
-	text = {
-		localization_key = check_gamerules_off
-	}
-}
-
-defined_text = {
-	name = GetVichyFranceStatus
-	text = {
-		trigger = {
-			has_game_rule = {
-				rule = vichy_france
-				option = forced
-			}
-		}
-		localization_key = check_gamerules_on
-	}
-	text = {
-		localization_key = check_gamerules_off
 	}
 }

@@ -1,6 +1,6 @@
 sov_boost = {
 	name = "Soviet Factory Boost"
-	group = "elwolfmod Rules"
+	group = "HHM Rules"
 	icon = "GFX_decision_SOV_socialism_in_one_country"
 	option = {
 		name = sixteen
@@ -27,27 +27,32 @@ sov_boost = {
 		text = "G0"
 		desc = "0 Civ boost (Reccomended)"
 	}
+	option = {
+		name = nerd
+		text = "RNERD"
+		desc = "Small nerf to the country (Not Reccomended)"
+	}
 }
 
 sov_closed_eco = {
 	name = "Soviets Closed Eco"
-	group = "elwolfmod Rules"
+	group = "HHM Rules"
 	icon = "GFX_decision_SOV_socialism_in_one_country"
 	option = {
 		name = off
-		text = "GOff"
-		desc = "Soviets start on export focus (Reccomended)"
+		text = "ROff"
+		desc = "Soviets start on export focus (Not Reccomended)"
 	}
 	default = {
 		name = on
-		text = "ROn"
-		desc = "Soviets start the game on closed eco, free trade bonuses, and 5 extra civs (Not Reccomended)"
+		text = "GOn"
+		desc = "Soviets start the game on closed eco, free trade bonuses (Reccomended)"
 	}
 }
 
 ger_boost = {
 	name = "German Factory Boost"
-	group = "elwolfmod Rules"
+	group = "HHM Rules"
 	icon = "GFX_decision_generic_army_support"
 	option = {
 		name = twelve
@@ -69,27 +74,16 @@ ger_boost = {
 		text = "G0"
 		desc = "0 Civ boost (Reccomended)"
 	}
-}
-
-japan_closed_eco = {
-	name = "Japan Closed Eco"
-	group = "elwolfmod Rules"
-	icon = "GFX_decision_jap_pacific_guardian"
-	default = {
-		name = off
-		text = "GOff"
-		desc = "Japan starts on limited exports (Reccomended)"
-	}
 	option = {
-		name = on
-		text = "ROn"
-		desc = "Japan start the game on closed eco, free trade bonuses (Not Reccomended)"
+		name = nerd
+		text = "RNERD"
+		desc = "Small nerf to the country (Not Reccomended)"
 	}
 }
 
 techstealing = {
 	name = "Tech Stealing"
-	group = "elwolfmod Rules"
+	group = "HHM Rules"
 	icon = "GFX_decision_generic_research"
 	default = {
 		name = banned
@@ -105,17 +99,17 @@ techstealing = {
 
 max_submarine_tech = {
 	name = "Max Submarine Tech"
-	group = "elwolfmod Rules"
+	group = "HHM Rules"
 	icon = "GFX_decision_generic_research"
 	option = {
 		name = sub2
-		text = "G1936"
-		desc = "Submarine 3 and Snorkel 1 banned (Reccomended)"
+		text = "R1936"
+		desc = "Submarine 3 and Snorkel 1 banned (Not Reccomended)"
 	}
 	default = {
 		name = sub3
-		text = "R1940"
-		desc = "Submarine 3 and Snorkel 1 allowed (Not Reccomended)"
+		text = "G1940"
+		desc = "Submarine 3 and Snorkel 1 allowed (Reccomended)"
 	}
 	option = {
 		name = sub4
@@ -124,35 +118,19 @@ max_submarine_tech = {
 	}
 }
 
-free_collabs = {
-	name = "Free Collabs"
-	group = "elwolfmod Rules"
-	icon = "GFX_decision_eng_trade_unions_support"
-	default = {
-		name = on
-		text = "ROn"
-		desc = "Italy free compliance on greece/yugo and Japan free compliance on China (Not Reccomended)"
-	}
-	option = {
-		name = off
-		text = "GOff"
-		desc = "Countries need to do their own collaboration governments (Reccomended)"
-	}
-}
-
 tradebacks = {
 	name = "Tradeback Idea"
-	group = "elwolfmod Rules"
+	group = "HHM Rules"
 	icon = "GFX_decision_eng_trade_unions_support"
 	option = {
 		name = off
-		text = "GOff"
-		desc = "No tradeback idea (Reccomended)"
+		text = "ROff"
+		desc = "No tradeback idea (Not Reccomended)"
 	}
 	default = {
 		name = on
-		text = "ROn"
-		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty until September 1939 (Not Reccomended)"
+		text = "GOn"
+		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty until September 1939 (Reccomended)"
 	}
 	option = {
 		name = not_allies
@@ -164,48 +142,32 @@ tradebacks = {
 
 force_attack_last_stand = {
 	name = "Force Attack Last Stand"
-	group = "elwolfmod Rules"
+	group = "HHM Rules"
 	icon = "GFX_decision_eng_trade_unions_support"
 	option = {
 		name = on
-		text = "GOn"
-		desc = "Normal like vanilla (Reccomended)"
+		text = "ROn"
+		desc = "Normal like vanilla (Not Reccomended)"
 	}
 	default = {
 		name = off
-		text = "ROff"
-		desc = "Banned (Not Reccomended)"
-	}
-}
-
-vichy_france = {
-	name = "Vichy France"
-	group = "elwolfmod Rules"
-	icon = "GFX_decision_eng_trade_unions_support"
-	option = {
-		name = forced
-		text = "RForce"
-		desc = "Germany has to make Vichy (Not Reccomended)"
-	}
-	default = {
-		name = banned
-		text = "GBanned"
-		desc = "Germany can't make Vichy (Reccomended)"
+		text = "GOff"
+		desc = "Banned (Reccomended)"
 	}
 }
 
 elwolf_guerrilla_tactics = {
 	name = "Guerilla Tactics"
-	group = "elwolfmod Rules"
+	group = "HHM Rules"
 	icon = "GFX_decision_hol_war_on_pacifism"
 	option = {
 		name = ALLOWED
-		text = "GAllowed"
+		text = "RAllowed"
 		desc = "Gurilla Tatics are able to be Selected"
 	}
 	default = {
 		name = BLOCKED
-		text = "RBanned"
+		text = "GBanned"
 		desc = "Gurilla Tatics are not able to be Selected"
 	}
 }

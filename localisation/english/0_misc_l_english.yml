@@ -214,6 +214,7 @@
  check_gamerules_eight:0 "8"
  check_gamerules_four:0 "4"
  check_gamerules_zero:0 "0"
+ check_gamerules_nerd:0 "NERD"
 
  SOV_behead_the_snake_lar_tt:0 "GTrotsky will be assasinated 100 days after completing the focus.!"
  continuous_recruitment_drive:0 "Recruitment Drive"

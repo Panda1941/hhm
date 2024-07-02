@@ -6,66 +6,43 @@ guiTypes = {
 	containerWindowType = {
 		name = "check_gamerules_decision_ui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 210 }
+		size = { width = 100% height= 180 }
 
 		######################
 		iconType = {
 			name ="sov_boost_icon"
 			spriteType = "GFX_decision_SOV_socialism_in_one_country"
-			position = { x = @GAMERULE_ICONS_X y = 30 }
+			position = { x = @GAMERULE_ICONS_X y = 10 }
 		}
 
 		instantTextBoxType = {
 			name ="sov_boost_name_text"
-			position = { x = @GAMERULE_NAMES_X y = 40 }
+			position = { x = @GAMERULE_NAMES_X y = 20 }
 			font = "hoi_18mbs"
-			text = "Soviet Factory Boost (AI Vanilla Trade)"
+			text = "Soviet Factory Boost"
 			format = left
 			maxHeight = 24
 		}
 
 		instantTextBoxType = {
 			name ="sov_boost_icon_status"
-			position = { x = @STATUS_TEXT_X y = 40 }
+			position = { x = @STATUS_TEXT_X y = 20 }
 			font = "hoi_18mbs"
 			text = "sov_boost_status"
 			format = center
 			maxwidth = 110
 		}
-		######################
-		iconType = {
-			name ="allied_engine_bonus_icon"
-			spriteType = "GFX_decision_hol_war_on_pacifism"
-			position = { x = @GAMERULE_ICONS_X y = 75 }
-		}
 
-		instantTextBoxType = {
-			name ="allied_engine_bonus_text"
-			position = { x = @GAMERULE_NAMES_X y = 85 }
-			font = "hoi_18mbs"
-			text = "Allied Engine 4 Bonus"
-			format = left
-			maxHeight = 24
-		}
-
-		instantTextBoxType = {
-			name ="allied_engine_bonus_status"
-			position = { x = @STATUS_TEXT_X y = 85 }
-			font = "hoi_18mbs"
-			text = "allied_engine_bonus_status"
-			format = center
-			maxwidth = 110
-		}
 		######################
 		iconType = {
 			name ="ger_boost_icon"
 			spriteType = "GFX_decision_generic_army_support"
-			position = { x = @GAMERULE_ICONS_X y = 120 }
+			position = { x = @GAMERULE_ICONS_X y = 50 }
 		}
 
 		instantTextBoxType = {
 			name ="ger_boost_name_text"
-			position = { x = @GAMERULE_NAMES_X y = 130 }
+			position = { x = @GAMERULE_NAMES_X y = 60 }
 			font = "hoi_18mbs"
 			text = "German Factory Boost"
 			format = left
@@ -75,53 +52,23 @@ guiTypes = {
 		instantTextBoxType = {
 			name ="ger_boost_icon_status"
 			
-				position = { x = @STATUS_TEXT_X y = 130 }
+				position = { x = @STATUS_TEXT_X y = 60 }
 			font = "hoi_18mbs"
 			text = "ger_boost_status"
 			format = center
 			maxwidth = 110
 		}
+
 		######################
-		iconType = {
-			name ="german_anti_tank_bonus_icon"
-			spriteType = "GFX_decision_generic_army_support"
-			position = { x = @GAMERULE_ICONS_X y = 165 }
-		}
-	
-		instantTextBoxType = {
-			name ="german_anti_tank_bonus_name_text"
-			position = { x = @GAMERULE_NAMES_X y = 175 }
-			font = "hoi_18mbs"
-			text = "German Anti-Tank Research Bonuses"
-			format = left
-			maxHeight = 24
-		}
-	
-		instantTextBoxType = {
-			name ="german_anti_tank_bonus_status"
-			position = { x = @STATUS_TEXT_X y = 175 }
-			font = "hoi_18mbs"
-			text = "german_anti_tank_bonus_status"
-			format = center
-			maxwidth = 110
-		}
-		
-	}
-
-	containerWindowType = {
-		name = "check_gamerules_two_decision_ui_window"
-		position = { x = 0 y = 0 }
-		size = { width = 100% height= 210 }
-
 		iconType = {
 			name ="techstealing_icon"
 			spriteType = "GFX_decision_generic_research"
-			position = { x = @GAMERULE_ICONS_X y = 30 }
+			position = { x = @GAMERULE_ICONS_X y = 90 }
 		}
 
 		instantTextBoxType = {
 			name ="teachstealing_name_text"
-			position = { x = @GAMERULE_NAMES_X y = 40 }
+			position = { x = @GAMERULE_NAMES_X y = 100 }
 			font = "hoi_18mbs"
 			text = "Tech Stealing"
 			format = left
@@ -130,81 +77,34 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="techstealing_status"
-			position = { x = @STATUS_TEXT_X y = 40 }
+			position = { x = @STATUS_TEXT_X y = 100 }
 			font = "hoi_18mbs"
 			text = "techstealing_status"
 			format = center
 			maxwidth = 110
 		}
+
 		######################
 		iconType = {
 			name ="max_submarine_tech_icon"
 			spriteType = "GFX_decision_generic_research"
-			position = { x = @GAMERULE_ICONS_X y = 75 }
+			position = { x = @GAMERULE_ICONS_X y = 130 }
 		}
 	
 		instantTextBoxType = {
 			name ="max_submarine_tech_name_text"
-			position = { x = @GAMERULE_NAMES_X y = 85 }
+			position = { x = @GAMERULE_NAMES_X y = 140 }
 			font = "hoi_18mbs"
-			text = "Max Submarine Text"
+			text = "Max Submarine Tech"
 			format = left
 			maxHeight = 24
 		}
 
 		instantTextBoxType = {
 			name ="max_submarine_tech_status"
-			position = { x = @STATUS_TEXT_X y = 85 }
+			position = { x = @STATUS_TEXT_X y = 140 }
 			font = "hoi_18mbs"
 			text = "max_submarine_tech_status"
-			format = center
-			maxwidth = 110
-		}
-		######################
-		iconType = {
-			name ="free_collabs_icon"
-			spriteType = "GFX_decision_eng_trade_unions_support"
-			position = { x = @GAMERULE_ICONS_X y = 120 }
-		}
-	
-		instantTextBoxType = {
-			name ="free_collabs_name_text"
-			position = { x = @GAMERULE_NAMES_X y = 130 }
-			font = "hoi_18mbs"
-			text = "Free Collabs"
-			format = left
-			maxHeight = 24
-		}
-
-		instantTextBoxType = {
-			name ="free_collabs_status"
-			position = { x = @STATUS_TEXT_X y = 130 }
-			font = "hoi_18mbs"
-			text = "free_collabs_status"
-			format = center
-			maxwidth = 110
-		}
-			######################
-		iconType = {
-			name ="vichy_france_icon"
-			spriteType = "GFX_decision_eng_trade_unions_support"
-			position = { x = @GAMERULE_ICONS_X y = 165 }
-		}
-	
-		instantTextBoxType = {
-			name ="vichy_france_name_text"
-			position = { x = @GAMERULE_NAMES_X y = 175 }
-			font = "hoi_18mbs"
-			text = "Vichy France"
-			format = left
-			maxHeight = 24
-		}
-	
-		instantTextBoxType = {
-			name ="vichy_france_status"
-			position = { x = @STATUS_TEXT_X y = 175 }
-			font = "hoi_18mbs"
-			text = "vichy_france_status"
 			format = center
 			maxwidth = 110
 		}
