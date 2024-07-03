@@ -911,7 +911,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 36
-			max_strength = 90
+			max_strength = 100
 		}
 		build_cost_resources = {
 			steel = 1
@@ -991,7 +991,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 40
-			max_strength = 90
+			max_strength = 110
 		}
 		build_cost_resources = {
 			steel = 1
@@ -1071,7 +1071,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 44
-			max_strength = 90
+			max_strength = 120
 		}
 		build_cost_resources = {
 			steel = 1 
@@ -1159,7 +1159,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 48
-			max_strength = 90
+			max_strength = 120
 		}
 		can_convert_from = {
 			module = ship_anti_air_1
@@ -1237,7 +1237,7 @@ equipment_modules = {
 		add_average_stats = {
 			lg_armor_piercing = 5.5
 			hg_armor_piercing = 22
-			max_strength = 90
+			max_strength = 80
 		}
 		build_cost_resources = {
 			steel = 1
@@ -1567,7 +1567,7 @@ equipment_modules = {
 		add_average_stats = {
 			lg_armor_piercing = 8.0
 			hg_armor_piercing = 29
-			max_strength = 90
+			max_strength = 100
 		}
 		build_cost_resources = {
 			steel = 1
@@ -1736,7 +1736,7 @@ equipment_modules = {
 		add_average_stats = {
 			lg_armor_piercing = 9.0
 			hg_armor_piercing = 34
-			max_strength = 90
+			max_strength = 110
 		}
 		build_cost_resources = {
 			steel = 1
@@ -1905,7 +1905,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			lg_armor_piercing = 5.0
-			max_strength = 25
+			max_strength = 20
 		}
 
 		forbid_module_categories = {
@@ -2165,7 +2165,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			lg_armor_piercing = 7.0
-			max_strength = 25
+			max_strength = 30
 		}
 		build_cost_resources = {
 			steel = 1
@@ -2316,7 +2316,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			lg_armor_piercing = 9.0
-			max_strength = 25
+			max_strength = 35
 		}
 		build_cost_resources = {
 			steel = 1
@@ -2474,7 +2474,7 @@ equipment_modules = {
 		
 		add_average_stats = {
 			lg_armor_piercing = 8.0
-			max_strength = 25
+			max_strength = 35
 		}
 
 		forbid_module_categories = {
@@ -2976,7 +2976,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.02
 		}
 		can_convert_from = {
 			module = ship_depth_charge_1
@@ -3104,9 +3104,11 @@ equipment_modules = {
 			anti_air_attack = 2.5
 			build_cost_ic = 300
 		}
-
 		multiply_stats = {
 			naval_speed = -0.03
+		}
+		add_average_stats = {
+			lg_armor_piercing = 6
 		}
 		can_convert_from = {
 			module = ship_depth_charge_1
@@ -3147,9 +3149,6 @@ equipment_modules = {
 		can_convert_from = {
 			module = ship_torpedo_4
 			convert_cost_ic = 125
-		}
-		add_average_stats = {
-			lg_armor_piercing = 6
 		}
 		can_convert_from = {
 			module = ship_anti_air_1
