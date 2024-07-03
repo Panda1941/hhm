@@ -2630,7 +2630,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			lg_attack = 2.0
+			lg_attack = 2.5
 			build_cost_ic = 120
 		}
 		
@@ -2715,7 +2715,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			lg_attack = 3.0
+			lg_attack = 4.0
 			build_cost_ic = 240
 		}
 		multiply_stats = {
@@ -5749,7 +5749,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			build_cost_ic = 0.125
-			naval_speed = -0.0
+			#naval_speed = -0.0
 			max_strength = 0.05
 
 		}
@@ -5820,7 +5820,7 @@ equipment_modules = {
 		parent = ship_armor_bc_1
 		multiply_stats = {
 			build_cost_ic = 0.1
-			naval_speed = -0.0
+			naval_speed = 0.025
 			max_strength = 0.075
 		}
 		build_cost_resources = {
@@ -5869,7 +5869,7 @@ equipment_modules = {
 		parent = ship_armor_bc_2
 		multiply_stats = {
 			build_cost_ic = 0.125
-			naval_speed = -0.10
+			#naval_speed = -0.0
 			max_strength = 0.125
 		}
 		build_cost_resources = {
