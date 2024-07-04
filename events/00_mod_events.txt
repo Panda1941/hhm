@@ -1,0 +1,50 @@
+add_namespace = hhm_event
+country_event = { # Basics
+	id = hhm_event.1
+	title = "Mod Information"
+	desc = hhm_event.1.d
+
+	timeout_days = 90
+
+	is_triggered_only = yes
+	option = { name = "Ground Forces" country_event = hhm_event.2 }
+	option = { name = "Airforce" country_event = hhm_event.3 }
+	option = { name = "Navy" country_event = hhm_event.4 }
+	option = { name = "Enough is enough" }
+}
+
+country_event = { # Ground Forces
+	id = hhm_event.2
+	title = "Mod Information - Ground Forces"
+	desc = hhm_event.2.d
+	
+	timeout_days = 90
+	
+	is_triggered_only = yes
+	option = { name = "Back to page one" country_event = hhm_event.1 }
+	option = { name = "Enough is enough" }
+}
+
+country_event = { # Airforce
+	id = hhm_event.3
+	title = "Mod Information - Airforce"
+	desc = hhm_event.3.d
+	
+	timeout_days = 90
+	
+	is_triggered_only = yes
+	option = { name = "Back to page one" country_event = hhm_event.1 }
+	option = { name = "Enough is enough" }
+}
+
+country_event = { # Navy
+	id = hhm_event.4
+	title = "Mod Information - Navy"
+	desc = hhm_event.4.d
+	
+	timeout_days = 90
+	
+	is_triggered_only = yes
+	option = { name = "Back to page one" country_event = hhm_event.1 }
+	option = { name = "Enough is enough" }
+}

@@ -15,6 +15,10 @@
  annex_ireland:0 "Annex Ireland"
  annex_new_zealand_eng:0 "Annex New Zealand"
 
+ hhm_event.1.d:0 "Basics:\n- RMod is 30 Combat Width!, Make sure all your divisions are 30 width\n- IC is lowered across the board, so don't expect to have infinite tanks / planes etc.\n- Rushing techs is less benefitial, as their ahead of time research penalty is higher than in vanilla"
+ hhm_event.2.d:0 "Tanks are reworked:\n- RTank costs are increased!, Africa usually is ~8(allies) vs 10(axis)\n- Better chassies have more modules and can have better guns\n- ROnly +1 lvl of gun can be added on the chassis!, so no modern cannons on interwar tanks\n- There are preset templates for medium tanks, they should be your go-to if you don't know what you are doing"
+ hhm_event.3.d:0 "Air is reworked:\n- Only one gun can be added on an airframe\n- RCannon II > Cannon I > HMG > LMG!\n- One range, one defence and one special module can be added on every airframe\n- Airfield size is 100 * airport level, because fewer planes exist, this is done to simplify air micro"
+ hhm_event.4.d:0 "Navy is slightly reworked:\n- RRefitting is now always worth!, since you only pay what you change (even refiting armour / engine is fine)\n- RCarrier limit is 6!, carriers are strong and should be present in every fleet"
 
  GER_integrate_war_economies_mod_tt:0 "If an axis minor (YHungary, Romania, Spain, Bulgaria!) is in faction with germany, they will get 2 YMilitary Factories! in their capital, this does not turn them into a puppet.\n\nYGermany! will receive 2 YMilitary Factories! per minor (up to 8)\n"
 

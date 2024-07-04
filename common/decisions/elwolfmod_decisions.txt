@@ -11,14 +11,23 @@ templates_retards_ai = {
 		remove_effect = { every_country = { add_equipment_to_stockpile = { type = convoy amount = -1 } add_manpower = -1 } }
 	}
 	
-	inf_templates = {
+	guide_decision = {
 	
 		available = { 
 			
 		}
-
-		ai_will_do = {
-			base = 1
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			country_event = hhm_event.1
+		}
+	}
+	
+	inf_templates = {
+	
+		available = { 
+			
 		}
 		
 		fire_only_once = yes
