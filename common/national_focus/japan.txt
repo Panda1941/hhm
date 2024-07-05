@@ -162,6 +162,10 @@
 
 			hidden_effect = {
 				country_event = { days = 5 id = news.1 }
+				
+				every_country = {
+					army_experience = 20
+				}
 			}
 		}
 	}
@@ -205,6 +209,12 @@
 			transfer_state = 596
 			transfer_state = 595
 			transfer_state = 600
+
+			hidden_effect = {
+				every_country = {
+					army_experience = 20
+				}
+			}
 		}
 	}
 
@@ -256,6 +266,12 @@
 			transfer_state = 592
 			transfer_state = 594
 			transfer_state = 591
+
+			hidden_effect = {
+				every_country = {
+					army_experience = 20
+				}
+			}
 		}
 	}
 
