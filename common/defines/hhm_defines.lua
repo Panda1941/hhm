@@ -95,6 +95,8 @@ NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3.5				-- Base factory speed multi
 
 NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.05 -- How much equipment from deployed divisions will be transferred on capitulation
 
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300 -- 150 how many mils u can put on a line
+
 -- Army Balance
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5
 
