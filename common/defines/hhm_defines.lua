@@ -387,7 +387,7 @@ NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values whil
 NDefines.NAir.AIR_WING_XP_LEVELS = { 0, 300, 700, 900 }
 
 -- Training accidents removed
-NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0
+NDefines.NAir.ACCIDENT_CHANCE_BASE = 0
 -- Air Supply
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.05 -- 0.01 Conversion scale for planes to air supply
 
