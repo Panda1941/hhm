@@ -1177,7 +1177,6 @@ operations = {
 			BRA = {
 				is_ai = yes
 			}
-			always = no
 		}
 		targets = {
 			BRA
@@ -1195,11 +1194,20 @@ operations = {
 						always = no
 					}
 				}
+				add_ideas = { artificial_intelligence }
+				add_ideas = { ai_limiter }
 			}
-			ENG = {
-				annex_country = {
-					target = BRA
-					transfer_troops = yes
+			123 = {
+				add_building_construction = {
+					type=industrial_complex level=4 instant_build=yes
+				}
+				add_building_construction = {
+					type=arms_factory level=4 instant_build=yes
+				}
+			}
+			131 = {
+				add_building_construction = {
+					type=industrial_complex level=3 instant_build=yes
 				}
 			}
 		}
@@ -1216,6 +1224,9 @@ operations = {
 		}
 		available = {
 			CAN = {
+				is_ai = yes
+			}
+			SAF = {
 				is_ai = yes
 			}
 		}
@@ -1296,6 +1307,9 @@ operations = {
 		}
 		available = {
 			SAF = {
+				is_ai = yes
+			}
+			CAN = {
 				is_ai = yes
 			}
 		}
