@@ -330,8 +330,8 @@ GER_man_organization = {
 		all_parents = { generic_mio_trait_simplified_turret_design }
 		
 		equipment_bonus = {
-			hard_attack = 0.05
-			soft_attack = 0.1
+			hard_attack = 0.04
+			soft_attack = 0.04
 			ap_attack = 0.1
 		}
 		
