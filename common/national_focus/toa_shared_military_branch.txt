@@ -1885,9 +1885,9 @@ shared_focus = {
 			}
 			IF = {
 				limit = {
-					NOT = { has_tech = amphibious_tank }
+					NOT = { has_tech = amphibious_tank_chassis }
 				}
-				set_technology = { amphibious_tank = 1}
+				set_technology = { amphibious_tank_chassis = 1}
 			}
 			ELSE_IF = {
 				limit = {
