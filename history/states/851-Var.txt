@@ -13,16 +13,13 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			dockyard = 3
 			911 = {
 				naval_base = 10
 				coastal_bunker = 1
 			}
 		}
 		add_core_of = FRA
-add_core_of = VIC
-		add_core_of = FRA
-add_core_of = VIC
+		add_core_of = VIC
 		1939.1.1 = {
 			buildings = {
 				dockyard = 1
