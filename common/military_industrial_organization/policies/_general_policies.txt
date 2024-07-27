@@ -4,12 +4,11 @@ mio_policy_general_vertical_integration = {
 	available = { has_mio_size > 3}
 	production_bonus = {
 		same_as_mio = {
-			reliability = 0.05
-			production_resource_need_factor = -0.05
+			reliability = 0.10
+			production_capacity_factor = 0.025
 		}
 	}
 	organization_modifier = {
-		military_industrial_organization_funds_gain = 0.05
-		military_industrial_organization_research_bonus = 0.05
+		military_industrial_organization_research_bonus = 0.1
 	}
 }
