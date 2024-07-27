@@ -229,6 +229,8 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
+
+			add_ideas = ENG_cheaper_tanks
 		}
 	}
 	focus = {

@@ -456,6 +456,8 @@
 				uses = 2
 				category = armor
 			}
+
+			add_ideas = AST_cheaper_tanks
 		}
 	}
 

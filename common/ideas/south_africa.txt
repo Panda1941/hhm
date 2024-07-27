@@ -516,7 +516,7 @@ ideas = {
 
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.05 instant = yes 
+					build_cost_ic = -0.08 instant = yes 
 				}
 				mechanized_chassis = {
 					build_cost_ic = -0.05 instant = yes 

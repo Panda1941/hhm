@@ -1,6 +1,22 @@
 ideas = {
 
 	country = {
+		ENG_cheaper_tanks = {
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			name = "Tank Factories"
+			
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
 		george_v = {
 			
 			allowed = {
