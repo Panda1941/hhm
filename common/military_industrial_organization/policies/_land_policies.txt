@@ -88,7 +88,7 @@ mio_policy_land_cutting_corners  = {
 	available = { has_mio_size > 3}
 	equipment_bonus = {
 		same_as_mio = {
-			build_cost_ic = -0.03
+			production_cost_factor = -0.02
 		}
 	}
 }
