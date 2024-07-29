@@ -1803,22 +1803,10 @@ focus_tree = {
 			is_subject = no
 			GER = { has_completed_focus = GER_danzig_or_war }	
 			OR = {
-				HUN = {
-					is_in_faction_with = ROOT
-					is_free_or_subject_of_root = yes
-				}
-				ROM = {
-					is_in_faction_with = ROOT
-					is_free_or_subject_of_root = yes
-				}
-				BUL = {
-					is_in_faction_with = ROOT
-					is_free_or_subject_of_root = yes
-				}
-				SPR = {
-					is_in_faction_with = ROOT
-					is_free_or_subject_of_root = yes
-				}
+				HUN = { is_in_faction_with = ROOT }
+				ROM = { is_in_faction_with = ROOT }
+				BUL = { is_in_faction_with = ROOT }
+				SPR = { is_in_faction_with = ROOT }
 			}
 		}
 
@@ -1830,13 +1818,8 @@ focus_tree = {
 
 			if = {
 				limit = {
-					HUN = {
-						is_in_faction_with = ROOT
-						is_free_or_subject_of_root = yes
-					}
-					GER = {
-						has_completed_focus = GER_align_hungary
-					}
+					HUN = { is_in_faction_with = ROOT }
+					GER = { has_completed_focus = GER_align_hungary }
 				}
 				HUN = {
 					capital_scope = {
@@ -1870,13 +1853,8 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					ROM = {
-						is_in_faction_with = ROOT
-						is_free_or_subject_of_root = yes
-					}
-					GER = {
-						has_completed_focus = GER_align_romania
-					}
+					ROM = { is_in_faction_with = ROOT }
+					GER = { has_completed_focus = GER_align_romania }
 				}
 				ROM = {
 					capital_scope = {
@@ -1910,13 +1888,8 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					BUL = {
-						is_in_faction_with = ROOT
-						is_free_or_subject_of_root = yes
-					}
-					GER = {
-						has_completed_focus = GER_align_bulgaria
-					}
+					BUL = { is_in_faction_with = ROOT }
+					GER = { has_completed_focus = GER_align_bulgaria }
 				}
 				BUL = {
 					capital_scope = {
@@ -1950,13 +1923,8 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					SPR = {
-						is_in_faction_with = ROOT
-						is_free_or_subject_of_root = yes
-					}
-					GER = {
-						has_completed_focus = GER_align_spain
-					}
+					SPR = { is_in_faction_with = ROOT }
+					GER = { has_completed_focus = GER_align_spain }
 				}
 				SPR = {
 					capital_scope = {
