@@ -656,7 +656,8 @@ ideas = {
 			ledger = army
 			available = { has_tech = mass_assault }
 			modifier = {
-				army_strength_factor = 0.2
+				army_strength_factor = 0.1
+				supply_consumption_factor = -0.033
 			}
 			ai_will_do = {
 				base = 1
