@@ -450,8 +450,8 @@ NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.85 -- 0.8 Anti Air Gun Damage fac
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.25 -- 0.1 Anti Air Gun hit chance
 
 -- CAS DAMAGE
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.040   -- 0.032
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.050   -- 0.032
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.036   -- 0.032
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.038   -- 0.032
 
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.56 -- how many CAS/TAC can enter a combat depending on enemy width there
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
