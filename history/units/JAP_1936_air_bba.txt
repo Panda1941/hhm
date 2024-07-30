@@ -43,51 +43,36 @@ air_wings = {
 			amount = 100
 			version_name = "Ki-3"
 		}
-		cv_small_plane_cas_airframe_0 = {
+		small_plane_cas_airframe_0 =  {
 			owner = "JAP" 
 			amount = 100
-			version_name = "Aichi D1A2"
+			version_name = "Ki-3"
 		}
-		cv_small_plane_cas_airframe_0 = {
+		small_plane_cas_airframe_0 =  {
 			owner = "JAP" 
 			amount = 100
-			version_name = "Aichi D1A2"
+			version_name = "Ki-3"
 		}
-		cv_small_plane_airframe_0 = {
+		small_plane_airframe_0 = {
 			owner = "JAP" 
 			amount = 100
-			version_name = "A4N"
+			version_name = "Ki-10"
 		}
-		cv_small_plane_airframe_0 =  {
+		small_plane_airframe_0 = {
 			owner = "JAP" 
 			amount = 100
-			version_name = "A4N"
+			version_name = "Ki-10"
 		}
-	}
-
-	"Ryujo"  = { 
-		cv_small_plane_airframe_0 =  { owner = "JAP" amount = 10 version_name = "A4N" } # historical 24
-		cv_small_plane_airframe_0 =  { owner = "JAP" amount = 10 version_name = "A4N" } # historical 24
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } # historical 28
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } # historical 28
-	}
-			
-	"Kaga"  = { 
-		cv_small_plane_airframe_0 =  { owner = "JAP" amount = 10 version_name = "A4N" } # historical 16
-		cv_small_plane_airframe_0 =  { owner = "JAP" amount = 10 version_name = "A4N" } # historical 16
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } # historical 28
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } # historical 28
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } # historical 28
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } # historical 28
-	}
-			
-	"Akagi"  = { 
-		cv_small_plane_airframe_0 =  { owner = "JAP" amount = 10 version_name = "A4N" } 	# historical 12
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } # historical 28
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } # historical 28
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } 	# historical 36
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } 	# historical 36
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "JAP" amount = 10 version_name = "B2M" } 	# historical 36
+		small_plane_airframe_0 = {
+			owner = "JAP" 
+			amount = 100
+			version_name = "Ki-10"
+		}
+		small_plane_airframe_0 = {
+			owner = "JAP" 
+			amount = 100
+			version_name = "Ki-10"
+		}
 	}
 }
 
@@ -107,17 +92,6 @@ instant_effect =
 		}
 		requested_factories = 1
 		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = cv_small_plane_naval_bomber_airframe_1
-			creator = "JAP" 
-			version_name = "B4Y"
-		}
-		requested_factories = 1
-		progress = 0.2
 		efficiency = 50
 	}
 }
