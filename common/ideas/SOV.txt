@@ -903,6 +903,7 @@ ideas = {
 
 			modifier = {
 				army_org_factor = 0.05
+				political_power_gain = 0.25
 			}
 		}
 		SOV_great_patriotic_war_4 = {
@@ -921,6 +922,7 @@ ideas = {
 			modifier = {
 				army_org_factor = 0.05
 				army_core_defence_factor = 0.05
+				political_power_gain = 0.25
 			}
 		}
 
