@@ -44,8 +44,7 @@ ideas = {
 		}
 		fleet_in_being_academy_spirit = {
 			ledger = navy
-			available = { has_naval_academy = yes }
-			visible = { has_tech = fleet_in_being }
+			available = { has_naval_academy = yes has_tech = fleet_in_being }
 			modifier = {
 				custom_modifier_tooltip = fleet_in_being_academy_spirit_tt
 				trait_ironside_xp_gain_factor = 0.2
@@ -61,8 +60,7 @@ ideas = {
 		}
 		trade_interdiction_academy_spirit = {
 			ledger = navy
-			available = { has_naval_academy = yes }
-			visible = { has_tech = trade_interdiction }
+			available = { has_naval_academy = yes has_tech = trade_interdiction }
 			modifier = {
 				custom_modifier_tooltip = trade_interdiction_academy_spirit_tt
 				trait_seawolf_xp_gain_factor = 0.2
@@ -78,8 +76,7 @@ ideas = {
 		}
 		base_strike_academy_spirit = {
 			ledger = navy
-			available = { has_naval_academy = yes }
-			visible = { has_tech = base_strike }
+			available = { has_naval_academy = yes has_tech = base_strike }
 			modifier = {
 				custom_modifier_tooltip = base_strike_academy_spirit_tt
 				trait_air_controller_xp_gain_factor = 0.2
@@ -183,7 +180,7 @@ ideas = {
 		}
 		integrated_designers_spirit = {
 			ledger = navy
-			visible = { has_dlc = "Man the Guns" }
+			available = { has_dlc = "Man the Guns" }
 			research_bonus = {
 				ship_modules_tech = 0.20
 			}
@@ -228,7 +225,7 @@ ideas = {
 		#}
 		fleet_in_being_navy_spirit = {
 			ledger = navy
-			visible = { has_tech = fleet_in_being }
+			available = { has_tech = fleet_in_being }
 			research_bonus = {
 				bb_tech = 0.20
 				ca_tech = 0.20 
@@ -246,7 +243,7 @@ ideas = {
 		}
 		trade_interdiction_navy_spirit = {
 			ledger = navy
-			visible = { has_tech = trade_interdiction }
+			available = { has_tech = trade_interdiction }
 			research_bonus = {
 				ss_tech = 0.20
 			}
@@ -263,7 +260,7 @@ ideas = {
 		}
 		base_strike_navy_spirit = {
 			ledger = navy
-			visible = { has_tech = base_strike }
+			available = { has_tech = base_strike }
 			research_bonus = {
 				cv_tech = 0.20
 			}
@@ -329,7 +326,7 @@ ideas = {
 		}
 		surprise_attacks_spirit = { 
 			ledger = navy
-			visible = { has_tech = base_strike }
+			available = { has_tech = base_strike }
 			modifier = {
 				naval_retreat_speed_after_initial_combat = 0.1
 				naval_retreat_chance_after_initial_combat = 0.1
@@ -363,7 +360,7 @@ ideas = {
 		#}
 		surface_raiders_spirit = {
 			ledger = navy
-			visible = { has_tech = trade_interdiction }
+			available = { has_tech = trade_interdiction }
 			modifier = {
 				screening_without_screens = 0.2
 				naval_retreat_speed = 0.1
@@ -379,7 +376,7 @@ ideas = {
 		}
 		decisive_battle_spirit = {
 			ledger = navy
-			visible = { has_tech = fleet_in_being }
+			available = { has_tech = fleet_in_being }
 			modifier = {
 				naval_retreat_chance = -0.1
 				naval_retreat_speed = -0.1
