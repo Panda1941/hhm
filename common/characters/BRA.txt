@@ -200,7 +200,7 @@ characters={
 				}
 			}	
 			corps_commander={
-				traits={ ranger }
+				traits={ ranger infantry_leader }
 				skill=3
 				attack_skill=2
 				defense_skill=3
@@ -221,7 +221,7 @@ characters={
 				}
 			}
 			corps_commander={
-				traits={ ranger }
+				traits={ ranger infantry_leader }
 				skill=3
 				attack_skill=2
 				defense_skill=3
@@ -245,7 +245,7 @@ characters={
 				}
 			}
 			corps_commander={
-				traits={ jungle_rat }
+				traits={ jungle_rat infantry_leader commando }
 				skill=4
 				attack_skill=2
 				defense_skill=4
@@ -268,7 +268,7 @@ characters={
 				}
 			}
 			corps_commander={
-				traits={ jungle_rat }
+				traits={ jungle_rat infantry_leader commando }
 				skill=4
 				attack_skill=2
 				defense_skill=4
@@ -1560,7 +1560,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
+			traits={ cavalry_leader }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -1579,7 +1579,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ career_officer offensive_doctrine jungle_rat }
+			traits={ career_officer offensive_doctrine jungle_rat logistics_wizard }
 			skill=2
 			attack_skill=3
 			defense_skill=1
@@ -1598,7 +1598,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
+			traits={ panzer_leader organizer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -1712,7 +1712,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
+			traits={ skilled_staffer desert_fox }
 			skill=2
 			attack_skill=1
 			defense_skill=2
