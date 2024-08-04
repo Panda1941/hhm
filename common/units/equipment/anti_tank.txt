@@ -28,7 +28,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 4
 		hard_attack = 28
-		ap_attack = 40
+		ap_attack = 34
 		air_attack = 0
 
 		#Space taken in convoy
@@ -57,8 +57,9 @@ equipments = {
 		priority = 90
 		visual_level = 1
 		
+		soft_attack = 5
 		hard_attack = 32
-		ap_attack = 80
+		ap_attack = 62
 		
 		build_cost_ic = 7
 		resources = {
@@ -76,8 +77,9 @@ equipments = {
 		priority = 90
 		visual_level = 2
 		
+		soft_attack = 6
 		hard_attack = 36
-		ap_attack = 120
+		ap_attack = 96
 		
 		build_cost_ic = 8
 		resources = {
@@ -95,8 +97,9 @@ equipments = {
 		priority = 90
 		visual_level = 2
 		
+		soft_attack = 7
 		hard_attack = 40
-		ap_attack = 140
+		ap_attack = 112
 		
 		build_cost_ic = 9
 		resources = {
@@ -130,8 +133,9 @@ equipments = {
 		hardness = 0.1
 
 		#Offensive Abilities
+		soft_attack = 4
 		hard_attack = 40
-		ap_attack = 120
+		ap_attack = 96
 
 		#Space taken in convoy
 		lend_lease_cost = 3
@@ -159,8 +163,9 @@ equipments = {
 		priority = 90
 		visual_level = 1
 		
+		soft_attack = 6
 		hard_attack = 60
-		ap_attack = 160
+		ap_attack = 126
 		
 		build_cost_ic = 31
 		resources = {
