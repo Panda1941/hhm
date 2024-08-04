@@ -1174,55 +1174,13 @@ technologies = {
 		path = {
 			leads_to_tech = pack3
 			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = pack2
-			research_cost_coeff = 1
-		}
+		}	
 
 		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = infantry_folder
 			position = { x = 1 y = 1 }
-		}
-		
-		categories = {
-			infantry_tech
-			mountaineers_tech
-			para_tech
-			artillery
-			mio_cat_all_artillery_equipment
-		}
-		
-		ai_will_do = {
-			factor = 0.7
-		}
-	}
-	
-	pack2 = {
-		pack_artillery = {
-			hard_attack = 4.0
-			ap_attack = 30.0
-		}
-		
-		on_research_complete = {
-			hidden_effect = { 
-				add_ideas = pack_at
-			}
-			custom_effect_tooltip = ATT_tooltip_pack_at
-		}
-		
-        xor = { pack3 }
-		
-		research_cost = 1.5
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 0.50
-		start_year = 1941
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = @1938 }
 		}
 		
 		categories = {
@@ -1248,8 +1206,6 @@ technologies = {
 			leads_to_tech = pack4
 			research_cost_coeff = 1
 		}
-		
-        xor = { pack2 }
 		
 		research_cost = 2.0
 		start_year = 1939
