@@ -256,7 +256,7 @@ NDefines.NNavy.RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR				= 0.1	-- mult
 NDefines.NNavy.MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION					= 0.1  -- will clamp the bonus that you get from detection
 	
 NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.45 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO				= 0.95  -- maximum penalty to get from larger fleets
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO				= 0.75  -- maximum penalty to get from larger fleets
 
 NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR				= 0  -- penalty if other side has stronger carrier air force 
 NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR 				= 0  -- max penalty from stronger carrier air force
@@ -270,8 +270,8 @@ NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING		    = 0.5  -
 NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				    = 0.5  -- AA penalty at 0% positioning
 NDefines.NNavy.SUBMARINE_REVEAL_ON_MINIMUM_POSITIONING                      = 1  -- submarine reveal change on 0% positioning 
 --------------------------------------------------------------------
-NDefines.NNavy.CARRIER_STACK_PENALTY = 6 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
-NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.2 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
+NDefines.NNavy.CARRIER_STACK_PENALTY = 2 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
+NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.25 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 ---------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
