@@ -461,7 +461,7 @@ focus_tree = {
 					country_leader = {
 						ideology = moderatism
 						expire = "1965.1.1.1"
-						traits = { war_industrialist }
+						traits = { BRA_minister_of_defense }
 					}
 				} 
 				promote_leader = yes
