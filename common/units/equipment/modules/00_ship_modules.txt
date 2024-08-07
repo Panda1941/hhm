@@ -827,7 +827,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		
 		add_stats = {
-			hg_attack = 16
+			hg_attack = 12
 			build_cost_ic = 1550
 		}
 		multiply_stats = {
@@ -903,7 +903,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		
 		add_stats = {
-			hg_attack = 20
+			hg_attack = 16
 			build_cost_ic = 1650
 		}
 		multiply_stats = {
@@ -983,7 +983,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		
 		add_stats = {
-			hg_attack = 24
+			hg_attack = 20
 			build_cost_ic = 1750
 		}
 		multiply_stats = {
@@ -1063,7 +1063,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		
 		add_stats = {
-			hg_attack = 28
+			hg_attack = 24
 			build_cost_ic = 1850
 		}
 		multiply_stats = {
@@ -1226,8 +1226,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = capital_ship
 		add_stats = {
-			hg_attack = 6.0
-			lg_attack = 3.0
+			hg_attack = 4.0
+			lg_attack = 2.0
 			build_cost_ic = 650
 		}
 		multiply_stats = {
@@ -1390,8 +1390,8 @@ equipment_modules = {
 
 		add_equipment_type = capital_ship
 		add_stats = {
-			hg_attack = 8.0
-			lg_attack = 4.0
+			hg_attack = 6.0
+			lg_attack = 3.0
 			build_cost_ic = 700
 		}
 		multiply_stats = {
@@ -1555,8 +1555,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			hg_attack = 10.0
-			lg_attack = 5.0
+			hg_attack = 8.0
+			lg_attack = 4.0
 			build_cost_ic = 725
 			#surface_visibility = 3.5
 		}
@@ -1725,8 +1725,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			hg_attack = 12.0
-			lg_attack = 6.5
+			hg_attack = 11.0
+			lg_attack = 5.0
 			build_cost_ic = 800
 		}
 		multiply_stats = {
@@ -1897,7 +1897,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {	
-			lg_attack = 4.0
+			lg_attack = 3.0
 			build_cost_ic = 300
 		}
 		multiply_stats = {
@@ -2013,7 +2013,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {	
-			lg_attack = 5.0
+			lg_attack = 4.0
 			build_cost_ic = 350
 		}
 		multiply_stats = {
@@ -2157,7 +2157,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
-			lg_attack = 6.0
+			lg_attack = 5.0
 			build_cost_ic = 375
 		}
 		multiply_stats = {
@@ -2308,7 +2308,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		parent = ship_light_medium_battery_3
 		add_stats = {
-			lg_attack = 8.0
+			lg_attack = 7.0
 			build_cost_ic = 425
 		}
 		multiply_stats = {
@@ -2463,7 +2463,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		parent = ship_light_medium_battery_3
 		add_stats = {
-			lg_attack = 7.5
+			lg_attack = 5.0
 			anti_air_attack = 4.5
 			build_cost_ic = 475
 		}
@@ -2630,7 +2630,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			lg_attack = 2.5
+			lg_attack = 1.5
 			build_cost_ic = 120
 		}
 		
@@ -2715,7 +2715,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			lg_attack = 4.0
+			lg_attack = 2.5
 			build_cost_ic = 240
 		}
 		multiply_stats = {
@@ -2843,7 +2843,7 @@ equipment_modules = {
 		gfx = dp_secondary_battery_1
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 1.5
+			lg_attack = 1.0
 			anti_air_attack = 1
 			build_cost_ic = 180
 		}
@@ -2970,7 +2970,7 @@ equipment_modules = {
 		gfx = dp_secondary_battery_2
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 2
+			lg_attack = 1.5
 			anti_air_attack = 2
 			build_cost_ic = 240
 		}
@@ -3100,7 +3100,7 @@ equipment_modules = {
 		gfx = dp_secondary_battery_3
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 2.5
+			lg_attack = 2.0
 			anti_air_attack = 2.5
 			build_cost_ic = 300
 		}
@@ -3233,7 +3233,7 @@ equipment_modules = {
 		gfx = dp_secondary_battery_4
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 3
+			lg_attack = 2.5
 			anti_air_attack = 3
 			build_cost_ic = 360
 		}
@@ -3953,7 +3953,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 20
+			torpedo_attack = 18
 			build_cost_ic = 100
 		}
 		multiply_stats = {
@@ -4021,7 +4021,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 26
+			torpedo_attack = 24
 			naval_torpedo_hit_chance_factor = 0.01
 			build_cost_ic = 125
 		}
@@ -4114,7 +4114,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 34
+			torpedo_attack = 32
 			build_cost_ic = 150
 			naval_torpedo_hit_chance_factor = 0.02
 		}
@@ -4220,7 +4220,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 42
+			torpedo_attack = 38
 			build_cost_ic = 175
 			naval_torpedo_hit_chance_factor = 0.03
 		}
@@ -4337,7 +4337,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 8
+			torpedo_attack = 10
 			build_cost_ic = 120
 		}
 
@@ -4363,7 +4363,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 12
+			torpedo_attack = 14
 			build_cost_ic = 160
 			naval_torpedo_hit_chance_factor = 0.01
 		}
@@ -4390,7 +4390,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 16
+			torpedo_attack = 18
 			build_cost_ic = 200
 			naval_torpedo_hit_chance_factor = 0.02
 		}
@@ -4418,7 +4418,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 20
+			torpedo_attack = 22
 			build_cost_ic = 240
 			naval_torpedo_hit_chance_factor = 0.03
 		}
@@ -4459,7 +4459,7 @@ equipment_modules = {
 		
 		add_stats = {
 			mines_planting = 0.5
-			build_cost_ic = 90
+			build_cost_ic = 160
 		}
 		multiply_stats = {
 			naval_speed = -0.02			
@@ -4473,7 +4473,7 @@ equipment_modules = {
 		
 		add_stats = {
 			mines_planting = 0.5
-			build_cost_ic = 90
+			build_cost_ic = 160
 			naval_speed = -0.02
 		}
 	}
@@ -4494,7 +4494,7 @@ equipment_modules = {
 		
 		add_stats = {
 			mines_sweeping = 0.5
-			build_cost_ic = 60
+			build_cost_ic = 100
 		}
 
 		multiply_stats = {
@@ -4924,72 +4924,70 @@ equipment_modules = {
 		add_stats = {
 			surface_detection = 12
 			sub_detection = 6
-			build_cost_ic = 180
-			naval_light_gun_hit_chance_factor = 0.05
-			naval_heavy_gun_hit_chance_factor = 0.05
+			build_cost_ic = 80
 		}
 		multiply_stats = {
 			naval_speed = -0.01
 		}
 		can_convert_from = {
 			module = ship_torpedo_1
-			convert_cost_ic = 80
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module = ship_torpedo_2
-			convert_cost_ic = 55
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module = ship_torpedo_3
-			convert_cost_ic = 30
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module = ship_torpedo_4
-			convert_cost_ic = 5
+			convert_cost_ic = 0
 		}
 		can_convert_from = {
 			module = ship_anti_air_1
-			convert_cost_ic = 100
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module = ship_anti_air_2
-			convert_cost_ic = 80
+			convert_cost_ic = 0
 		}
 		can_convert_from = {
 			module = ship_anti_air_3
-			convert_cost_ic = 60
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module = ship_anti_air_4
-			convert_cost_ic = 40
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module = ship_light_battery_1
-			convert_cost_ic = 80 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = ship_light_battery_2
-			convert_cost_ic = 60 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = ship_light_battery_3
-			convert_cost_ic = 40 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = ship_light_battery_4
-			convert_cost_ic = 20 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = dp_light_battery_1
-			convert_cost_ic = 80 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}		
 		can_convert_from = {
 			module = dp_light_battery_2
-			convert_cost_ic = 50 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = dp_light_battery_3
-			convert_cost_ic = 20 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module_category = dp_light_battery
@@ -5009,7 +5007,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module = ship_secondaries_1
-			convert_cost_ic = 60
+			convert_cost_ic = 0
 		}
 		can_convert_from = {
 			module_category = ship_airplane_launcher
@@ -5024,80 +5022,78 @@ equipment_modules = {
 		add_stats = {
 			surface_detection = 16
 			sub_detection = 8
-			build_cost_ic = 220
-			naval_light_gun_hit_chance_factor = 0.1
-			naval_heavy_gun_hit_chance_factor = 0.1
+			build_cost_ic = 120
 		}
 		multiply_stats = {
 			naval_speed = -0.02
 		}
 		can_convert_from = {
 			module = ship_torpedo_1
-			convert_cost_ic = 120
+			convert_cost_ic = 20
 		}		
 		can_convert_from = {
 			module = ship_torpedo_2
-			convert_cost_ic = 95
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module = ship_torpedo_3
-			convert_cost_ic = 70
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module = ship_torpedo_4
-			convert_cost_ic = 45
+			convert_cost_ic = 0
 		}
 		can_convert_from = {
 			module = ship_anti_air_1
-			convert_cost_ic = 140
+			convert_cost_ic = 10
 		}		
 		can_convert_from = {
 			module = ship_anti_air_2
-			convert_cost_ic = 120
+			convert_cost_ic = 20
 		}
 		can_convert_from = {
 			module = ship_anti_air_3
-			convert_cost_ic = 100
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module = ship_anti_air_4
-			convert_cost_ic = 80
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module = ship_light_battery_1
-			convert_cost_ic = 120 #conversion cost from that specific module
+			convert_cost_ic = 20 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = ship_light_battery_2
-			convert_cost_ic = 100 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = ship_light_battery_3
-			convert_cost_ic = 80 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = ship_light_battery_4
-			convert_cost_ic = 60 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = dp_light_battery_1
-			convert_cost_ic = 120 #conversion cost from that specific module
+			convert_cost_ic = 20 #conversion cost from that specific module
 		}		
 		can_convert_from = {
 			module = dp_light_battery_2
-			convert_cost_ic = 90 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = dp_light_battery_3
-			convert_cost_ic = 60 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = dp_light_battery_4
-			convert_cost_ic = 30 #conversion cost from that specific module
+			convert_cost_ic = 0 #conversion cost from that specific module
 		}
 		can_convert_from = {
 			module = dp_ship_secondaries_1
-			convert_cost_ic = 40
+			convert_cost_ic = 0
 		}		
 		can_convert_from = {
 			module_category = ship_dp_secondaries
@@ -5113,7 +5109,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module = ship_secondaries_1
-			convert_cost_ic = 100
+			convert_cost_ic = 0
 		}
 		can_convert_from = {
 			module = ship_airplane_launcher_1
