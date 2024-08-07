@@ -6497,7 +6497,8 @@ generic_artillery_organization = {
 		}
 
 		equipment_bonus = {
-			hard_attack = 1
+			hard_attack = 0.5
+			soft_attack = 0.05
 			breakthrough = 0.05
 		}
 	}
