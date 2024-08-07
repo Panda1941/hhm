@@ -26,7 +26,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			artillery_equipment = 18
+			artillery_equipment = 20
 		}
 		manpower = 300
 		training_time = 120
@@ -135,7 +135,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			rocket_artillery_equipment = 16
+			rocket_artillery_equipment = 20
 		}
 		
 		same_support_type = artillery
@@ -186,8 +186,8 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			motorized_rocket_equipment = 22
-			motorized_equipment = 8
+			motorized_rocket_equipment = 20
+			motorized_equipment = 20
 		}
 		
 		manpower = 300

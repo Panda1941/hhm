@@ -108,13 +108,13 @@ technologies = {
 		}
 
 		artillery_brigade = {
-			need = { artillery_equipment = 6 }
+			need = { artillery_equipment = -4 }
 		}	
 		rocket_artillery_brigade = {
-			need = { rocket_artillery_equipment = 6 }
+			need = { rocket_artillery_equipment = -4 }
 		}
 		pack_artillery = {
-			need = { pack_artillery_equipment = 6 }
+			need = { pack_artillery_equipment = -4 }
 		}
 
 		on_research_complete = { 
