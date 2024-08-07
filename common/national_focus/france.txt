@@ -875,7 +875,7 @@ if = {
 	
 	
 	
-		focus = {
+	focus = {
 		id = FRA_refus_absurde
 		icon = GFX_goal_generic_demand_territory
 		x = 13
@@ -883,7 +883,8 @@ if = {
 
 		cost = 5
 
-		available = { NOT = { 16 = { is_controlled_by = FRA } } date > 1940.06.01 }
+		available = { NOT = { 16 = { is_controlled_by = FRA } } date > 1940.01.01 }
+		bypass = { NOT = { has_ideas = FRA_defeatism } }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no

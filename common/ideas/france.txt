@@ -71,7 +71,7 @@ ideas = {
 				weekly_casualties_war_support  = 0.001 
 			}
 		}
-				FRA_defeatism = {
+		FRA_defeatism = {
 			picture = generic_army_problems
 			allowed = {
 				original_tag = FRA 
@@ -103,6 +103,7 @@ ideas = {
 			
 			modifier = {
 				global_building_slots_factor = 0.2 
+				consumer_goods_factor = -0.5
 			}
 		}
 		FRA_national_council_of_the_resistance = {
