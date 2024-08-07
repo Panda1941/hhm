@@ -230,6 +230,7 @@ NDefines.NMilitary.SLOWEST_SPEED = 4
 
 -- Training accidents removed
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
+NDefines.NNavy.ACCIDENTS_CHANCE_BALANCE_FACTOR = 0
 
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.5
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0
@@ -301,13 +302,15 @@ NDefines.NNavy.REPAIR_AND_RETURN_UNIT_DYING_STR = 0.2							-- Str below this po
 NDefines.NNavy.CONVOY_HIT_PROFILE = 120.0  	-- convoys has this contant hit profile
 NDefines.NNavy.HIT_PROFILE_MULT = 65.0  	-- multiplies hit profile of every ship
 NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR = 0.4		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult) 												
+NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.25	-- 0.1 || 25% of torpedo hits will be 2.5x damage (crit)
+NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 2.5	-- 2.0
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80,		-- big guns
-		85,		-- torpedos	
+		95,		-- torpedos	
 		45,	    -- small guns
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
-		1.0,	-- big guns
+		1.5,	-- big guns
 		3.0,	-- torpedos
 		1.0,	-- small guns
 	}
@@ -385,6 +388,11 @@ NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values whil
 		2.0,	-- high
 		10000,	-- I am death incarnate!
 	}
+
+-- Navy QoL
+NDefines.NNavy.MAX_SUBMARINES_PER_AUTO_TASK_FORCE = 10	-- 30
+NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12	-- 6
+NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.25	-- 0.1
 -- Air Balance
 NDefines.NAir.AIR_WING_XP_LEVELS = { 0, 300, 700, 900 }
 

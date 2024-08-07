@@ -1227,11 +1227,11 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			hg_attack = 4.0
-			lg_attack = 2.0
+			lg_attack = 1.5
 			build_cost_ic = 650
 		}
 		multiply_stats = {
-			naval_speed = -0.04
+			naval_speed = -0.06
 			#max_strength = 0.3
 		}
 		add_average_stats = {
@@ -1391,11 +1391,11 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			hg_attack = 6.0
-			lg_attack = 3.0
+			lg_attack = 2.0
 			build_cost_ic = 700
 		}
 		multiply_stats = {
-			naval_speed = -0.06
+			naval_speed = -0.07
 			#max_strength = 0.35
 		}
 		add_average_stats = {
@@ -1556,12 +1556,12 @@ equipment_modules = {
 
 		add_stats = {
 			hg_attack = 8.0
-			lg_attack = 4.0
+			lg_attack = 2.5
 			build_cost_ic = 725
 			#surface_visibility = 3.5
 		}
 		multiply_stats = {
-			naval_speed = -0.07
+			naval_speed = -0.08
 			#max_strength = 0.4
 		}
 		add_average_stats = {
@@ -1726,11 +1726,11 @@ equipment_modules = {
 
 		add_stats = {
 			hg_attack = 11.0
-			lg_attack = 5.0
+			lg_attack = 3.5
 			build_cost_ic = 800
 		}
 		multiply_stats = {
-			naval_speed = -0.08
+			naval_speed = -0.09
 			#max_strength = 0.45
 		}
 		add_average_stats = {
