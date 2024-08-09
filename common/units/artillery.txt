@@ -94,14 +94,7 @@ sub_units = {
 		#same_support_type = artillery
 
 		can_be_parachuted = no
-		
-		amphibious = {
-			attack = -0.50
-		}
-		river = {
-			#attack = 0.05
-			movement = -0.25
-		}
+
 		urban = {
 			attack = 0.10
 		}
