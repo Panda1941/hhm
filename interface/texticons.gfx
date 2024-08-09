@@ -429,7 +429,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_unit_logistics_company_infantry_icon_small"
-		texturefile = "gfx/texticons/support_logistics_small.dds"
+		texturefile = "gfx/texticons/support_infantry_logistics_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
