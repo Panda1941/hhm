@@ -1057,7 +1057,7 @@ technologies = {
 			hard_attack = 0.01
 		}
 		
-		max_planning = -0.15
+		max_planning = -0.10
 		category_line_artillery = {
 			supply_consumption_factor = 0.08
 		}
