@@ -741,7 +741,7 @@ equipment_modules = {
 			soft_attack = 5
 			hard_attack = 2.5
 			ap_attack = 5
-			build_cost_ic = 0.5
+			build_cost_ic = 0.45
 		}
 		dismantle_cost_ic = 0.5
 
@@ -760,7 +760,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 5
-			build_cost_ic = 2.0
+			build_cost_ic = 1.8
 		}
 		dismantle_cost_ic = 0.5
 
@@ -781,7 +781,7 @@ equipment_modules = {
 			soft_attack = 13.5
 			hard_attack = 6.75
 			ap_attack = 20
-			build_cost_ic = 2.0
+			build_cost_ic = 1.8
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -802,7 +802,7 @@ equipment_modules = {
 			soft_attack = 18
 			hard_attack = 9
 			ap_attack = 35
-			build_cost_ic = 2.5
+			build_cost_ic = 2.25
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -826,7 +826,7 @@ equipment_modules = {
 			soft_attack = 24.75
 			hard_attack = 11.25
 			ap_attack = 50
-			build_cost_ic = 3.0
+			build_cost_ic = 2.7
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -850,7 +850,7 @@ equipment_modules = {
 			soft_attack = 29.25
 			hard_attack = 13.5
 			ap_attack = 65
-			build_cost_ic = 3.5
+			build_cost_ic = 3.15
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -877,7 +877,7 @@ equipment_modules = {
 			hard_attack = 1.8
 			ap_attack = 10
 			air_attack = 12
-			build_cost_ic = 2.5
+			build_cost_ic = 2.25
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -901,7 +901,7 @@ equipment_modules = {
 			hard_attack = 4.5
 			ap_attack = 20
 			air_attack = 20
-			build_cost_ic = 3.5
+			build_cost_ic = 3.15
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -929,7 +929,7 @@ equipment_modules = {
 			hard_attack = 4.5
 			ap_attack = 30
 			air_attack = 32
-			build_cost_ic = 4.5
+			build_cost_ic = 4.05
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -957,7 +957,7 @@ equipment_modules = {
 			hard_attack = 4.5
 			ap_attack = 40
 			air_attack = 40
-			build_cost_ic = 5.5
+			build_cost_ic = 4.95
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -982,7 +982,7 @@ equipment_modules = {
 			soft_attack = 18
 			hard_attack = 13.5
 			ap_attack = 25
-			build_cost_ic = 2.0
+			build_cost_ic = 1.8
 			maximum_speed = -0.1
 			reliability = -0.1
 		}
@@ -1004,7 +1004,7 @@ equipment_modules = {
 			soft_attack = 22.5
 			hard_attack = 16.75
 			ap_attack = 50
-			build_cost_ic = 3.0
+			build_cost_ic = 2.7
 			maximum_speed = -0.1
 			reliability = -0.1
 		}
@@ -1030,7 +1030,7 @@ equipment_modules = {
 			soft_attack = 27
 			hard_attack = 20.25
 			ap_attack = 75
-			build_cost_ic = 4.0
+			build_cost_ic = 3.6
 			maximum_speed = -0.1
 			reliability = -0.1
 		}
@@ -1055,7 +1055,7 @@ equipment_modules = {
 			soft_attack = 31.5
 			hard_attack = 23.5
 			ap_attack = 100
-			build_cost_ic = 5.0
+			build_cost_ic = 4.5
 			maximum_speed = -0.1
 			reliability = -0.1
 		}
@@ -1080,7 +1080,7 @@ equipment_modules = {
 			soft_attack = 31.5
 			hard_attack = 4.5
 			ap_attack = 10
-			build_cost_ic = 4.00
+			build_cost_ic = 3.6
 			maximum_speed = -0.2
 			reliability = -0.1
 		}
@@ -1106,7 +1106,7 @@ equipment_modules = {
 			soft_attack = 40.5
 			hard_attack = 5.4
 			ap_attack = 15
-			build_cost_ic = 6
+			build_cost_ic = 5.4
 			maximum_speed = -0.2
 			reliability = -0.1
 		}
@@ -1133,7 +1133,7 @@ equipment_modules = {
 			soft_attack = 49.5
 			hard_attack = 6.3
 			ap_attack = 20
-			build_cost_ic = 8
+			build_cost_ic = 7.2
 			maximum_speed = -0.2
 			reliability = -0.1
 		}
@@ -1160,7 +1160,7 @@ equipment_modules = {
 			soft_attack = 12.6
 			hard_attack = 31.5
 			ap_attack = 85
-			build_cost_ic = 2.0
+			build_cost_ic = 1.8
 			maximum_speed = -0.1
 			reliability = -0.15
 		}
@@ -1188,7 +1188,7 @@ equipment_modules = {
 			soft_attack = 14.4
 			hard_attack = 36
 			ap_attack = 125
-			build_cost_ic = 4.0
+			build_cost_ic = 3.6
 			maximum_speed = -0.3
 			reliability = -0.15
 		}
@@ -1217,7 +1217,7 @@ equipment_modules = {
 			soft_attack = 16.2
 			hard_attack = 40.5
 			ap_attack = 135
-			build_cost_ic = 6.0
+			build_cost_ic = 5.4
 			maximum_speed = -0.3
 			reliability = -0.15
 		}
@@ -1246,7 +1246,7 @@ equipment_modules = {
 			soft_attack = 19.8
 			hard_attack = 49.5
 			ap_attack = 185
-			build_cost_ic = 8.0
+			build_cost_ic = 7.2
 			maximum_speed = -0.4
 			reliability = -0.175
 		}
@@ -1279,7 +1279,7 @@ equipment_modules = {
 			soft_attack = 23.4
 			hard_attack = 58.5
 			ap_attack = 225
-			build_cost_ic = 10.0
+			build_cost_ic = 9.0
 			maximum_speed = -0.5
 			reliability = -0.2
 		}
@@ -1311,7 +1311,7 @@ equipment_modules = {
 			soft_attack = 27
 			hard_attack = 16.2
 			ap_attack = 60
-			build_cost_ic = 3
+			build_cost_ic = 2.7
 			maximum_speed = -0.2
 			reliability = -0.15
 			breakthrough = 2
@@ -1341,7 +1341,7 @@ equipment_modules = {
 			soft_attack = 31.5
 			hard_attack = 18.9
 			ap_attack = 90
-			build_cost_ic = 4.0
+			build_cost_ic = 3.6
 			maximum_speed = -0.3
 			reliability = -0.15
 			breakthrough = 4
@@ -1371,7 +1371,7 @@ equipment_modules = {
 			soft_attack = 36
 			hard_attack = 21.6
 			ap_attack = 105
-			build_cost_ic = 5.0
+			build_cost_ic = 4.5
 			maximum_speed = -0.4
 			reliability = -0.15
 			breakthrough = 6
@@ -1401,7 +1401,7 @@ equipment_modules = {
 			soft_attack = 40.5
 			hard_attack = 24.3
 			ap_attack = 125
-			build_cost_ic = 6.0
+			build_cost_ic = 5.4
 			maximum_speed = -0.5
 			reliability = -0.15
 			breakthrough = 8
@@ -1431,7 +1431,7 @@ equipment_modules = {
 			soft_attack = 45
 			hard_attack = 27
 			ap_attack = 145
-			build_cost_ic = 7.0
+			build_cost_ic = 6.3
 			maximum_speed = -0.6
 			reliability = -0.15
 			breakthrough = 10
@@ -1459,7 +1459,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 36
 			ap_attack = 20
-			build_cost_ic = 4
+			build_cost_ic = 3.6
 			maximum_speed = -0.3
 			reliability = -0.2
 		}
@@ -1485,7 +1485,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 45
 			ap_attack = 30
-			build_cost_ic = 6
+			build_cost_ic = 5.4
 			maximum_speed = -0.4
 			reliability = -0.2
 		}
@@ -1512,7 +1512,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 54
 			ap_attack = 40
-			build_cost_ic = 8
+			build_cost_ic = 7.2
 			maximum_speed = -0.5
 			reliability = -0.2
 		}
@@ -1539,7 +1539,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 40.5
-			build_cost_ic = 6
+			build_cost_ic = 5.4
 			maximum_speed = -0.1
 			reliability = -0.1
 		}
@@ -1566,7 +1566,7 @@ equipment_modules = {
 		#forbid_equipment_type_exact_match = armor
 		add_stats = {
 			soft_attack = 49.5
-			build_cost_ic = 8
+			build_cost_ic = 7.2
 			maximum_speed = -0.2
 			reliability = -0.1
 		}
@@ -1592,7 +1592,7 @@ equipment_modules = {
 		#forbid_equipment_type_exact_match = armor
 		add_stats = {
 			soft_attack = 58.5
-			build_cost_ic = 10
+			build_cost_ic = 9.0
 			reliability = -0.1
 			maximum_speed = -0.3
 		}
@@ -1619,7 +1619,7 @@ equipment_modules = {
 			soft_attack = 23.4
 			hard_attack = 29.7
 			ap_attack = 90
-			build_cost_ic = 6
+			build_cost_ic = 5.4
 			maximum_speed = -0.3
 			reliability = -0.25
 		}
@@ -1647,7 +1647,7 @@ equipment_modules = {
 			soft_attack = 35.1
 			hard_attack = 45
 			ap_attack = 125
-			build_cost_ic = 7
+			build_cost_ic = 6.3
 			maximum_speed = -0.4
 			reliability = -0.25
 		}
@@ -1675,7 +1675,7 @@ equipment_modules = {
 			soft_attack = 46.8
 			hard_attack = 59.4
 			ap_attack = 170
-			build_cost_ic = 8
+			build_cost_ic = 7.2
 			maximum_speed = -0.5
 			reliability = -0.3
 		}
@@ -1702,7 +1702,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 49.5
 			ap_attack = 60
-			build_cost_ic = 7
+			build_cost_ic = 6.3
 			maximum_speed = -0.5
 			reliability = -0.3
 			breakthrough = -4
@@ -1732,7 +1732,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 58.5
 			ap_attack = 90
-			build_cost_ic = 9
+			build_cost_ic = 8.1
 			maximum_speed = -0.6
 			reliability = -0.5
 			breakthrough = -4
@@ -1761,7 +1761,7 @@ equipment_modules = {
 			soft_attack = 54
 			hard_attack = 54
 			ap_attack = 225
-			build_cost_ic = 10
+			build_cost_ic = 9.0
 			maximum_speed = -0.6
 			reliability = -0.30
 		}
@@ -1785,7 +1785,7 @@ equipment_modules = {
 			soft_attack = 54
 			hard_attack = 72
 			ap_attack = 255
-			build_cost_ic = 12
+			build_cost_ic = 10.8
 			maximum_speed = -0.8
 			reliability = -0.30
 		}
@@ -1810,7 +1810,7 @@ equipment_modules = {
 			soft_attack = 40.5
 			hard_attack = 54
 			ap_attack = 200
-			build_cost_ic = 10
+			build_cost_ic = 9.0
 			breakthrough = 8
 		}
 		dismantle_cost_ic = 1
