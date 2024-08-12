@@ -127,7 +127,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -166,7 +166,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = mtgnavalfolder
@@ -345,7 +345,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -388,7 +388,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = mtgnavalfolder
@@ -623,7 +623,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -663,7 +663,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = mtgnavalfolder
@@ -923,7 +923,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		ai_will_do = {
 			factor = 1
@@ -957,7 +957,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -995,7 +995,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = mtgnavalfolder
@@ -1233,7 +1233,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -1270,7 +1270,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1.5
 
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = mtgnavalfolder
@@ -1418,7 +1418,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -1456,7 +1456,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1944
+		start_year = 1942
 		allow = {
 			has_game_rule = {
 				rule = max_submarine_tech
@@ -1508,7 +1508,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -1566,7 +1566,7 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = mtgnavalfolder

@@ -288,7 +288,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1942
 
 		enable_equipment_modules = {
 			ship_light_battery_4
@@ -506,7 +506,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1942
 
 		enable_equipment_modules = {
 			ship_medium_battery_4
@@ -636,7 +636,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1942
 
 		enable_equipment_modules = {
 			ship_heavy_battery_4
@@ -857,7 +857,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1942
 
 		enable_equipment_modules = {
 			dp_light_battery_4
@@ -900,7 +900,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1944
+		start_year = 1942
 
 		enable_equipment_modules = {
 			dp_ship_medium_1
@@ -1128,7 +1128,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 2.5
 
-		start_year = 1940
+		start_year = 1939
 
 
 		naval_torpedo_reveal_chance_factor = -0.25
@@ -1208,7 +1208,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		path = {
 			leads_to_tech = modern_ship_torpedo_launcher
@@ -1251,7 +1251,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1944
+		start_year = 1942
 
 		enable_equipment_modules = {
 			ship_torpedo_4
@@ -1694,7 +1694,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1939
 
 		submarine = {
 			mines_planting = 0.2
@@ -1994,7 +1994,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1942
 
 		category_nav_bomber = {
 			mines_sweeping = 0.1
@@ -2027,7 +2027,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1942
 
 		enable_equipment_modules = {
 			demining_coil
@@ -2119,7 +2119,7 @@ technologies = {
 		show_equipment_icon = yes
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalsupportfolder
@@ -2186,7 +2186,7 @@ technologies = {
 		naval_invasion_capacity = 100
 
 		research_cost = 2
-		start_year = 1944
+		start_year = 1942
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = 19 }
