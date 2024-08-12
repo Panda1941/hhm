@@ -399,8 +399,7 @@ ideas = {
 			available = { has_tech = superior_firepower  }
 			ledger = army
 			modifier = {
-				army_artillery_attack_factor = 0.09
-				army_artillery_defence_factor = 0.09
+				army_artillery_attack_factor = 0.05
 				breakthrough_factor = 0.05
 			}
 			ai_will_do = {
@@ -611,8 +610,8 @@ ideas = {
 			available = { has_tech = superior_firepower }
 			modifier = {
 				breakthrough_factor = 0.03
-				army_artillery_attack_factor = 0.08
-				special_forces_attack_factor = 0.08
+				army_artillery_attack_factor = 0.05
+				special_forces_attack_factor = 0.05
 			}
 			ai_will_do = {
 				base = 1
