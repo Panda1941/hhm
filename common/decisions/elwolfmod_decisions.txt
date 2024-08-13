@@ -310,12 +310,16 @@ operations = {
 			JAP = {
 				exists = no
 			}
-			date > 1937.09.01
+			date > 1937.08.01
 		}
 		complete_effect = {
 			add_named_threat = {
 			    threat = 15
 			    name = "Japaneese Invasion of China"
+			}
+			country_event = { days = 5 id = news.1 }
+			every_country = {
+				army_experience = 20
 			}
 		}
 	}
@@ -333,12 +337,35 @@ operations = {
 			JAP = {
 				exists = no
 			}
-			date > 1938.06.01
+			date > 1938.08.01
 		}
 		complete_effect = {
-			add_named_threat = {
-			    threat = 15
-			    name = "Japaneese Invasion of China 2"
+			add_named_threat = { threat = 15 name = JAP_secure_china }	
+			every_country = {
+				army_experience = 20
+			}
+		}
+	}
+	japanese_invasion_of_china3 = {
+		# icon = generic_operation
+		allowed = {
+			tag = WST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			JAP = {
+				exists = no
+			}
+			date > 1939.08.01
+		}
+		complete_effect = {
+			add_named_threat = { threat = 15 name = JAP_develop_chinese_resources }		
+			every_country = {
+				army_experience = 20
 			}
 		}
 	}
