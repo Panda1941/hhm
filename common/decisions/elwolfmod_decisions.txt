@@ -1247,9 +1247,9 @@ operations = {
 				annex_country = {
 					target = BRA
 				}
+			}
 		}
 	}
-}
 	annex_canada = {
 		# icon = generic_operation
 		allowed = {
