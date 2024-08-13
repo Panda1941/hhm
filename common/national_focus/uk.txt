@@ -654,11 +654,11 @@ focus_tree = {
 				threat > 0.1
 				has_war = yes
 				GER = {
-					#OR = {		# MAYBE IN THE FUTURE MAKE SMTH LIKE THIS?
+					OR = {		# MAYBE IN THE FUTURE MAKE SMTH LIKE THIS? yes
 						has_completed_focus = GER_anschluss
-					#	has_completed_focus = GER_soviet_treaty
-					#	has_completed_focus = GER_german_war_economy
-					#}
+						has_completed_focus = GER_soviet_treaty
+						has_completed_focus = GER_german_war_economy
+					}
 				}	
 			}
 		}
@@ -1191,7 +1191,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 8
+		cost = 10
 		ai_will_do = {
 			factor = 3
 		}
@@ -1244,7 +1244,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 8
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1654,7 +1654,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 7
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
