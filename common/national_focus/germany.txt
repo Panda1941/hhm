@@ -2113,7 +2113,7 @@ focus_tree = {
 			add_ideas = Luftwaffe_interceptor
 			add_tech_bonus = {
 				name = GER_long_range_escorts
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = medium_air
 			}

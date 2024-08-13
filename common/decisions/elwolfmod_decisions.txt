@@ -1243,6 +1243,10 @@ operations = {
 					instant_build = yes
 				}
 			}
+			WST = {
+				annex_country = {
+					target = BRA
+				}
 		}
 	}
 	annex_canada = {

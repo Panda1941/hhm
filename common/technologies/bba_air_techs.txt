@@ -1129,7 +1129,7 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 3.0
+		research_cost = 2.0
 		xp_research_type = air
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
