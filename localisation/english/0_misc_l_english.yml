@@ -1054,7 +1054,7 @@
  spam_truck_tt:0 "Motorized and Mechanized batallions need §G-8 Motorized / Mechanized equipment.§!"
  spam_arty_tt:0 "All Arillery brigades now require §G-4 Artillery equipment.§!"
  spam_tank_tt:0 "Armor Support Companies will require §G-4 Support Tanks§! §g(This includes SPG, TD, SPAA, Flame Tanks)§!"
- spam_trench_tt:0 "Leg Special Forces battalions require §G-5 Support Equipment and -10 Special Forces Equipment§!. \nAll support companies §g(Engineers, recon, etc.)§! Now require §G-5 Support Equipment§!"
+ spam_trench_tt:0 "Leg Special Forces battalions require §G-10 Special Forces Equipment§!. \nAll support companies §g(Engineers, recon, etc.)§! Now require §G-5 Support Equipment§!"
  SPR_MIO:0 "§GCan use§! §YGerman Armored Military Industry Organizations.§!"
 
  

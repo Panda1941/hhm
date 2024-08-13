@@ -10,6 +10,7 @@ technologies = {
 			supply_consumption = -0.01
 			max_organisation = 3
 		}
+        special_forces_min = 36
 		###########
 		
 		force_use_small_tech_layout = yes
@@ -584,6 +585,7 @@ technologies = {
 			max_strength = 0.1
 			supply_consumption = -0.01
 		}
+        special_forces_min = 36
 		
 		doctrine = yes	
 		research_cost = 0
@@ -1180,6 +1182,7 @@ technologies = {
 			breakthrough = 0.05
 			supply_consumption = -0.01
 		}
+        special_forces_min = 36
 		
 		
 		
@@ -1702,6 +1705,7 @@ technologies = {
 			breakthrough = 0.02
 			supply_consumption = -0.01
 		}
+        special_forces_min = 36
 		
 		
 		
@@ -2133,6 +2137,7 @@ technologies = {
 			max_organisation = 4
 			supply_consumption = -0.01
 		}
+        special_forces_min = 36
 		
 		
 		

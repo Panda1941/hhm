@@ -187,12 +187,12 @@ technologies = {
 		}
 
 		# BATALIONS
-		marine= { need = { support_equipment = -5 special_forces_equipment -10 } }
-		marine_commando= { need = { support_equipment = -5 special_forces_equipment -10 } }
-		mountaineers= { need = { support_equipment = -5 special_forces_equipment -10 } }
-		paratrooper= { need = { support_equipment = -5 special_forces_equipment -10 } }
-		shock_troops= { need = { support_equipment = -5 special_forces_equipment -10 } }
-		jaeger= { need = { support_equipment = -5 special_forces_equipment -10 } }
+		marine= { need = { special_forces_equipment -10 } }
+		marine_commando= { need = { special_forces_equipment -10 } }
+		mountaineers= { need = { special_forces_equipment -10 } }
+		paratrooper= { need = { special_forces_equipment -10 } }
+		shock_troops= { need = { special_forces_equipment -10 } }
+		jaeger= { need = { special_forces_equipment -10 } }
 
 		# SUPPORT COMPANIES
 		field_hospital = { need = { support_equipment = -5 } }

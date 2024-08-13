@@ -257,10 +257,8 @@ sub_units = {
 		#hard_attack = -0.5
 	
 		need = {
-			infantry_equipment = 350
-			support_equipment = 25
+			infantry_equipment = 150
 			special_forces_equipment = 40
-			#pack_artillery_equipment = 12
 		}
 		essential = {
 		    infantry_equipment
@@ -324,8 +322,7 @@ sub_units = {
 		soft_attack = 0.05
 	
 		need = {
-			infantry_equipment = 400
-			support_equipment = 50
+			infantry_equipment = 200
 			special_forces_equipment = 50
 		}
 		essential = {
@@ -392,10 +389,8 @@ sub_units = {
 		#hard_attack = -0.5
 	
 		need = {
-			infantry_equipment = 350
-			support_equipment = 25
+			infantry_equipment = 150
 			special_forces_equipment = 40
-			#pack_artillery_equipment = 12
 		}
 		essential = {
 		    infantry_equipment
@@ -463,10 +458,8 @@ sub_units = {
 		can_be_parachuted = yes
 
 		need = {
-			infantry_equipment = 350	# More expensive than any other sp force
-			support_equipment = 25
+			infantry_equipment = 150
 			special_forces_equipment = 40
-			#pack_artillery_equipment = 12
 		}
 		essential = {
 		    infantry_equipment
@@ -527,11 +520,8 @@ sub_units = {
 		
 	
 		need = {
-			infantry_equipment = 350
-			support_equipment = 25
+			infantry_equipment = 150
 			special_forces_equipment = 40
-			#mechanized_equipment = 10
-			#pack_artillery_equipment = 12
 		}
 		
 		essential = {
@@ -598,10 +588,8 @@ sub_units = {
 		#hard_attack = -0.5
 
 		need = {
-			infantry_equipment = 350
-			support_equipment = 25
+			infantry_equipment = 150
 			special_forces_equipment = 40
-			#pack_artillery_equipment = 12
 		}
 		essential = {
 		    infantry_equipment
