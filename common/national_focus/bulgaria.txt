@@ -628,10 +628,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 		
 		completion_reward = {
-		add_named_threat = {
-			    threat = 1
-			    name = "Bulgarian Rearmament"
-			}
+			
 			remove_ideas = BUL_army_restrictions_panda
 			custom_effect_tooltip = yugo_war 
 			
@@ -725,10 +722,7 @@ always = false
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-		add_named_threat = {
-			    threat = 1
-			    name = "Bulgarian Rearmament"
-			}
+		
 			remove_ideas = BUL_army_restrictions_panda
 		}
 	}
