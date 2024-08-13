@@ -2888,11 +2888,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			hidden_effect = {
-				add_named_threat = { threat = 10 name = germany.4.t }
 				GER_mefo_bills_level_down = yes
 				GER_mefo_bills_level_down = yes
 				news_event = { hours = 6 id = news.36 }
 			}
+				add_named_threat = { threat = 10 name = germany.4.t }
 			
 			army_experience = 10	
 			add_political_power = 75
