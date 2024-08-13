@@ -391,7 +391,7 @@ NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values whil
 
 -- Navy QoL
 NDefines.NNavy.MAX_SUBMARINES_PER_AUTO_TASK_FORCE = 10	-- 30
-NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12	-- 6
+NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 6	-- 6
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.25	-- 0.1
 -- Air Balance
 NDefines.NAir.AIR_WING_XP_LEVELS = { 0, 300, 700, 900 }
@@ -588,7 +588,7 @@ NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 620									-- Funds needed
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 180						-- How much each level mutliplies the funds for size up 
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_POW = 2.1							-- the power we applie to the mio size when calculating funds to level up. 	
 NDefines.NIndustrialOrganisation.UNLOCKED_TRAITS_PER_SIZE_UP = 1							-- Number of points for unlocking traits obtained when the MIO increments its size
-NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 5								-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0								-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
 NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 320     	-- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
 NDefines.NIndustrialOrganisation.FUNDS_FOR_CREATING_EQUIPMENT_VARIANT = 0					-- Funds added to MIO when a new variant is created with the Design Team assigned to it
 NDefines.NIndustrialOrganisation.FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.1				-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.
