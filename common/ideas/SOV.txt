@@ -639,6 +639,7 @@ ideas = {
 			modifier = {
 				line_change_production_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		SOV_pcdi_idea2 = {
@@ -667,6 +668,7 @@ ideas = {
 			modifier = {
 				line_change_production_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1 
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		SOV_pcdi_idea3 = {
@@ -707,6 +709,7 @@ ideas = {
 			modifier = {
 				line_change_production_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1 
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		SOV_pcdi_idea4 = {
@@ -771,6 +774,7 @@ ideas = {
 			modifier = {
 				line_change_production_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1 
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 
