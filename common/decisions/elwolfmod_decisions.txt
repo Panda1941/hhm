@@ -1249,6 +1249,7 @@ operations = {
 				}
 		}
 	}
+}
 	annex_canada = {
 		# icon = generic_operation
 		allowed = {
