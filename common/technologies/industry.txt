@@ -46,15 +46,6 @@ technologies = {
 			leads_to_tech = advanced_machine_tools 
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = improved_equipment_conversion
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = improved_equipment_conversion1
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 1.5
 		start_year = 1937
@@ -85,14 +76,6 @@ technologies = {
 		
 		path = {
 			leads_to_tech = assembly_line_production 
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = advanced_equipment_conversion0
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = advanced_equipment_conversion2
 			research_cost_coeff = 1
 		}
 		
@@ -135,15 +118,6 @@ technologies = {
 		
 		path = {
 			leads_to_tech = streamlined_line
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = advanced_equipment_conversion4
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = advanced_equipment_conversion3
 			research_cost_coeff = 1
 		}
 		
