@@ -11,6 +11,7 @@ history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
+			arms_factory = 1
 			air_base = 6
 			12211 = {
 				naval_base = 3
