@@ -23,25 +23,6 @@ mio_policy_air_perfect_finish = {
 	}
 }
 
-mio_policy_air_heavy_gantry_cranes = {
-	icon = GFX_mio_policy_heavy_gantry_cranes_air
-	allowed = {
-		OR = {
-			has_mio_equipment_type = medium_plane_airframe
-			has_mio_equipment_type = large_plane_airframe
-			has_mio_equipment_type = medium_plane_fighter_airframe
-			has_mio_equipment_type = medium_plane_scout_plane_airframe
-			has_mio_equipment_type = large_plane_maritime_patrol_plane_airframe
-		}
-	}
-	available = { has_mio_size > 3}
-	production_bonus = {
-		same_as_mio = {
-			production_efficiency_cap_factor = 0.1
-		}
-	}
-}
-
 mio_policy_air_modular_assembly  = {
 	icon = GFX_mio_policy_modular_assembly
 	allowed = {
