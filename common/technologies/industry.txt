@@ -2,7 +2,7 @@ technologies = {
 
 	basic_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.08
+		production_factory_max_efficiency_factor = 0.1
 
 		
 		path = {
@@ -40,7 +40,7 @@ technologies = {
 	#Machine tools branch	
 	improved_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.08
+		production_factory_max_efficiency_factor = 0.1
 
 		path = {
 			leads_to_tech = advanced_machine_tools 
@@ -61,7 +61,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 3 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -81,7 +81,7 @@ technologies = {
 	
 	advanced_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.08
+		production_factory_max_efficiency_factor = 0.1
 		
 		path = {
 			leads_to_tech = assembly_line_production 
@@ -101,7 +101,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 5 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -121,7 +121,7 @@ technologies = {
 	
 	assembly_line_production = {
 	
-		production_factory_max_efficiency_factor = 0.08
+		production_factory_max_efficiency_factor = 0.1
 		
 		#path = {
 		#	leads_to_tech = improved_machine_tools 
@@ -153,7 +153,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 7 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -174,7 +174,7 @@ technologies = {
 	
 	flexible_line = {
 
-		production_factory_max_efficiency_factor = 0.04
+		production_factory_max_efficiency_factor = 0.05
 		line_change_production_efficiency_factor = 0.25
 		production_factory_start_efficiency_factor = 0.1
 		
@@ -213,7 +213,7 @@ technologies = {
 	
 	streamlined_line = {
 
-		production_factory_max_efficiency_factor = 0.16
+		production_factory_max_efficiency_factor = 0.15
 		production_factory_efficiency_gain_factor = 0.1
 			
 		research_cost = 1.5
@@ -252,7 +252,7 @@ technologies = {
 	
 	flexible_line2 = {
 
-		production_factory_max_efficiency_factor = 0.04
+		production_factory_max_efficiency_factor = 0.05
 		line_change_production_efficiency_factor = 0.25
 		production_factory_start_efficiency_factor = 0.15
 		
@@ -282,7 +282,7 @@ technologies = {
 	
 	streamlined_line2 = {
 
-		production_factory_max_efficiency_factor = 0.16
+		production_factory_max_efficiency_factor = 0.15
 		production_factory_efficiency_gain_factor = 0.1
 			
 		research_cost = 2
@@ -306,269 +306,6 @@ technologies = {
 		categories = {
 			industry
 			industry_late
-			cat_production
-		}
-	}
-
-	improved_equipment_conversion = {
-	
-		
-		
-		on_research_complete = {
-			#hidden_effect = { 
-				add_ideas = heavy_industry
-			#}
-			#custom_effect_tooltip = ATT_tooltip_heavy_industry
-		}
-		
-
-		allow_branch = {
-			has_dlc = "Death or Dishonor"
-		}
-
-		XOR = {
-			improved_equipment_conversion1
-		}
-		
-		research_cost = 2.5
-		start_year = 1937
-		
-		folder = {
-			name = industry_folder
-			position = { x = 2 y = 4 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
-			}
-		}
-		
-		categories = {
-			industry
-			cat_production
-		}
-	}
-	
-	advanced_equipment_conversion0 = {
-		
-		
-		
-		
-		on_research_complete = {
-			#hidden_effect = { 
-				add_ideas = heavy_industry_1
-			#}
-			#custom_effect_tooltip = ATT_tooltip_heavy_industry_1
-		}
-		
-		XOR = {
-			advanced_equipment_conversion2
-		}
-
-		research_cost = 2.5
-		start_year = 1939
-		
-		folder = {
-			name = industry_folder
-			position = { x = 2 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
-			}
-		}
-		
-		categories = {
-			industry
-			cat_production
-		}
-	}
-	
-	advanced_equipment_conversion4 = {
-		
-		
-		
-		on_research_complete = {
-			#hidden_effect = { 
-				add_ideas = heavy_industry_2
-			#}
-			#custom_effect_tooltip = ATT_tooltip_heavy_industry_2
-		}
-		
-		XOR = {
-			advanced_equipment_conversion3
-		}
-
-		research_cost = 2.5
-		start_year = 1941
-		
-		folder = {
-			name = industry_folder
-			position = { x = 2 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
-			}
-		}
-		
-		categories = {
-			industry
-			cat_production
-		}
-	}
-	
-	#Conversion branch - Enabled in DoD
-	improved_equipment_conversion1 = {
-	
-		on_research_complete = {
-			#hidden_effect = { 
-				add_ideas = small_arms_industry
-			#}
-			#custom_effect_tooltip = ATT_tooltip_small_arms_industry
-		}
-
-		allow_branch = {
-			has_dlc = "Death or Dishonor"
-		}
-
-		XOR = {
-			improved_equipment_conversion
-		}
-		
-		research_cost = 2.5
-		start_year = 1937
-		
-		folder = {
-			name = industry_folder
-			position = { x = -2 y = 4 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
-			}
-		}
-		
-		categories = {
-			industry
-			cat_production
-		}
-	}
-	
-	advanced_equipment_conversion2 = {
-		
-		on_research_complete = {
-			#hidden_effect = { 
-				add_ideas = small_arms_industry_1
-			#}
-			#custom_effect_tooltip = ATT_tooltip_small_arms_industry_1
-		}
-		
-		XOR = {
-			advanced_equipment_conversion0
-		}
-
-		research_cost = 2.5
-		start_year = 1939
-		
-		folder = {
-			name = industry_folder
-			position = { x = -2 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
-			}
-		}
-		
-		categories = {
-			industry
-			cat_production
-		}
-	}
-	
-	advanced_equipment_conversion3 = {
-		
-		on_research_complete = {
-			#hidden_effect = { 
-				add_ideas = small_arms_industry_2
-			#}
-			#custom_effect_tooltip = ATT_tooltip_small_arms_industry_2
-		}
-		
-		XOR = {
-			advanced_equipment_conversion4
-		}
-
-		research_cost = 2.5
-		start_year = 1941
-		
-		folder = {
-			name = industry_folder
-			position = { x = -2 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
-			}
-		}
-		
-		categories = {
-			industry
 			cat_production
 		}
 	}
