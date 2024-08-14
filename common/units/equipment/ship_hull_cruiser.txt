@@ -401,7 +401,8 @@ equipments = {
 				}
 			}
 			rear_2_custom_slot = rear_1_custom_slot
-			rear_3_custom_slot = {
+			rear_3_custom_slot = rear_2_custom_slot
+			rear_4_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo

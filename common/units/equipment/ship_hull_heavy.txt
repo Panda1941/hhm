@@ -473,6 +473,7 @@ equipments = {
 					ship_airplane_launcher
 				}
 			}
+			rear_2_custom_slot = rear_1_custom_slot
 		}
 
 		default_modules = {
