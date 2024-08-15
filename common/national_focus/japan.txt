@@ -1888,30 +1888,20 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			custom_effect_tooltip = JAP_the_zero_tt
-			hidden_effect = { 
-				if = {
-					limit = {
-						NOT = {
-							has_dlc = "By Blood Alone"
-						}
-					}
-					set_technology = { cv_fighter2 = 1 } 
-				}
-				else = {
-					create_equipment_variant = {
-						name = "A6M Zero-Sen"
-						type = cv_small_plane_airframe_2
-						allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
-						modules = {
-							fixed_main_weapon_slot = aircraft_cannon_1_2x
-							engine_type_slot = engine_3_1x
-							special_type_slot_1 = drop_tanks
-							special_type_slot_2 = fuel_tanks_small
-						}
-						icon = "GFX_JAP_cv_fighter2_medium"
-					}
-				}
+			custom_effect_tooltip = JAP_the_zero_tt_mod
+			add_tech_bonus = {
+				name = JAP_the_zero
+				bonus = 9.99
+				ahead_reduction = 2
+				uses = 1
+				technology = improved_small_airframe
+			}
+			add_tech_bonus = {
+				name = JAP_the_zero
+				bonus = 9.99
+				ahead_reduction = 2
+				uses = 1
+				technology = aa_cannon_1
 			}
 		}
 	}
