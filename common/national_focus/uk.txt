@@ -653,13 +653,8 @@ focus_tree = {
 			OR = {
 				threat > 0.1
 				has_war = yes
-				GER = {
-					OR = {		# MAYBE IN THE FUTURE MAKE SMTH LIKE THIS? yes
-						has_completed_focus = GER_anschluss
-						has_completed_focus = GER_soviet_treaty
-						has_completed_focus = GER_german_war_economy
-					}
-				}	
+				GER = { has_completed_focus = GER_anschluss }	# Reverted from earlier
+				date > 1937.08.01	# This is here so you don't get cucked out of this focus in asia scenario
 			}
 		}
 		continue_if_invalid = yes
