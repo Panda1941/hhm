@@ -143,6 +143,13 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				army_experience = 10
+			}
+
 			# SPAIN DMZ
 			every_state = {
 				limit = {
