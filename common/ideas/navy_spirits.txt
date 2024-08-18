@@ -130,9 +130,7 @@ ideas = {
 			research_bonus = {
 				dd_tech = 0.20
 			}
-			#modifier = {
-			#	ship_hull_light_design_cost_factor = -0.6
-			#}
+			cost = 25
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -141,26 +139,6 @@ ideas = {
 				}
 			}
 		}
-		#big_gun_club_spirit = {
-		#	modifier = {
-		#		ship_hull_heavy_design_cost_factor = -0.6
-		#	}
-		#}
-		#aviation_enthusiasts_spirit = {
-		#	modifier = {
-		#		ship_hull_carrier_design_cost_factor = -0.6
-		#	}
-		#}
-		#cruiser_warfare_spirit = {
-		#	modifier = {
-		#		ship_hull_cruiser_design_cost_factor = -0.6
-		#	}
-		#}
-		#wolfpacks_spirit = {
-		#	modifier = {
-		#		ship_hull_submarine_design_cost_factor = -0.6
-		#	}
-		#}
 		flexible_contracts_spirit = {
 			ledger = navy
 			research_bonus = {
@@ -168,8 +146,8 @@ ideas = {
 			}
 			modifier = {
 				naval_manufacturer_cost_factor = -0.8
-				#ship_hull_cruiser_design_cost_factor = -0.6
 			}
+			cost = 25
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -184,6 +162,7 @@ ideas = {
 			research_bonus = {
 				ship_modules_tech = 0.20
 			}
+			cost = 25
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -197,6 +176,7 @@ ideas = {
 			modifier = {
 				experience_gain_navy_factor = 0.15
 			}
+			cost = 25
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -210,6 +190,7 @@ ideas = {
 			modifier = {
 				repair_speed_factor = 0.2
 			}
+			cost = 25
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -218,11 +199,6 @@ ideas = {
 				}
 			}
 		}
-		#naval_modernism_spirit = {
-		#	research_bonus = {
-		#		naval_equipment = 0.10
-		#	}
-		#}
 		fleet_in_being_navy_spirit = {
 			ledger = navy
 			available = { has_tech = fleet_in_being }
@@ -230,6 +206,7 @@ ideas = {
 				bb_tech = 0.20
 				ca_tech = 0.20 
 			}
+			cost = 25
 			#modifier = {
 			#	ship_hull_heavy_design_cost_factor = -0.6
 			#}
@@ -247,6 +224,7 @@ ideas = {
 			research_bonus = {
 				ss_tech = 0.20
 			}
+			cost = 25
 			#modifier = {
 			#	ship_hull_submarine_design_cost_factor = -0.6
 			#}
@@ -264,6 +242,7 @@ ideas = {
 			research_bonus = {
 				cv_tech = 0.20
 			}
+			cost = 25
 			#modifier = {
 			#	ship_hull_carrier_design_cost_factor = -0.6
 			#}
@@ -301,6 +280,7 @@ ideas = {
 				navy_screen_attack_factor = 0.05
 				naval_torpedo_screen_penetration_factor = 0.05
 			}
+			cost = 30
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -316,6 +296,7 @@ ideas = {
 				naval_night_attack = 0.1
 				navy_visibility = -0.05
 			}
+			cost = 30
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -331,6 +312,7 @@ ideas = {
 				naval_retreat_speed_after_initial_combat = 0.1
 				naval_retreat_chance_after_initial_combat = 0.1
 			}
+			cost = 30
 			ai_will_do = {
 				factor = 1.5
 				modifier = {
@@ -344,6 +326,7 @@ ideas = {
 			modifier = {
 				positioning = 0.05
 			}
+			cost = 30
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -366,6 +349,7 @@ ideas = {
 				naval_retreat_speed = 0.1
 				naval_retreat_chance = 0.1
 			}
+			cost = 30
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -383,6 +367,7 @@ ideas = {
 				naval_torpedo_hit_chance_factor = 0.1
 				naval_hit_chance = 0.1
 			}
+			cost = 30
 			ai_will_do = {
 				factor = 1.5
 				modifier = {
@@ -396,6 +381,7 @@ ideas = {
 			modifier = {
 				navy_weather_penalty = -0.4
 			}
+			cost = 30
 			ai_will_do = {
 				factor = 1.5
 				modifier = {
@@ -410,6 +396,7 @@ ideas = {
 				naval_critical_score_chance_factor = 0.15
 				naval_retreat_chance = -0.05
 			}
+			cost = 30
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -424,6 +411,7 @@ ideas = {
 			modifier = {
 				naval_torpedo_hit_chance_factor = -0.1
 			}
+			cost = 30
 			ai_will_do = {
 				factor = 0
 			}
