@@ -26,7 +26,7 @@ technologies = {
 
 		research_cost = 1
 		xp_research_type = army
-		xp_unlock_cost = 50
+		xp_unlock_cost = 40
 		
 		categories = {
 			land_doctrine
@@ -134,7 +134,7 @@ technologies = {
 
 		research_cost = 1
 		xp_research_type = army
-		xp_unlock_cost = 50
+		xp_unlock_cost = 40
 		
 		categories = {
 			land_doctrine
@@ -213,7 +213,7 @@ technologies = {
 
 		research_cost = 1
 		xp_research_type = army
-		xp_unlock_cost = 50
+		xp_unlock_cost = 40
 		
 		categories = {
 			land_doctrine
@@ -234,6 +234,7 @@ technologies = {
 		#industrial_capacity_factory = 0.05
 		planning_speed = 0.1
 		max_dig_in = 1
+        special_forces_min = 36
 	}
 	
 	
@@ -291,7 +292,7 @@ technologies = {
 
 		research_cost = 1
 		xp_research_type = army
-		xp_unlock_cost = 50
+		xp_unlock_cost = 40
 		
 		categories = {
 			land_doctrine
