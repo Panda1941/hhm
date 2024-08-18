@@ -585,6 +585,11 @@ technologies = {
 			max_strength = 0.1
 			supply_consumption = -0.01
 		}
+		marine_commando = {
+			max_organisation = 5
+			max_strength = 0.1
+			supply_consumption = -0.01
+		}
         special_forces_min = 36
 		
 		doctrine = yes	
@@ -743,6 +748,9 @@ technologies = {
 		}
 
 		marine = {
+			max_organisation = 5
+		}
+		marine_commando = {
 			max_organisation = 5
 		}
 
@@ -908,10 +916,9 @@ technologies = {
 		}
 		
 		marine_commando = {
-			breakthrough = 0.15
-			max_organisation = 3
-			max_strength = 0.1
-			soft_attack = 0.05
+			breakthrough = 0.10
+			soft_attack = 0.02
+			max_organisation = 2
 		}
 		
 		doctrine = yes	
@@ -1021,9 +1028,9 @@ technologies = {
 		}
 		
 		marine_commando = {
+			soft_attack = 0.02
 			breakthrough = 0.05
-			soft_attack = 0.1
-			hard_attack = 0.02
+			max_organisation = 2
 		}
 		
 		

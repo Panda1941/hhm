@@ -781,6 +781,10 @@ technologies = {
 			max_organisation = 5
 			soft_attack = 0.05
 		}
+		marine_commando = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
 		path = {
 			leads_to_tech = marines3
 			research_cost_coeff = 1
@@ -817,6 +821,13 @@ technologies = {
 	marines3 = {
 
 		marine = {
+			max_organisation = 5
+			soft_attack = 0.05
+			hard_attack = 0.05
+			recon = 1.0
+		}
+
+		marine_commando = {
 			max_organisation = 5
 			soft_attack = 0.05
 			hard_attack = 0.05
