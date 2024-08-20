@@ -143,11 +143,13 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
-			every_country = {
+			every_country = {	# Adding starting XP
 				limit = {
 					is_playable_country = yes
 				}
 				army_experience = 10
+				navy_experience = 10
+				air_experience = 10
 			}
 
 			# SPAIN DMZ
