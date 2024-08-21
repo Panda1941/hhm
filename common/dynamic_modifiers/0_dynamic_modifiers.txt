@@ -1324,4 +1324,5 @@ SPR_cant_build_airports = {
 	icon = GFX_generic_wall_line
 
 	state_production_speed_air_base_factor = -3.14159
+	state_production_speed_naval_base_factor = -3.14159
 }

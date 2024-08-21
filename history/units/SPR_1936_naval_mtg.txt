@@ -1,15 +1,4 @@
-﻿
-units= {
+﻿units= {
 
-	##### NAVAL UNITS #####
-	fleet = {
-		name = "Base Naval El Ferrol"
-		naval_base = 758  # Ferrol/Coruna
-		task_force = {
-			name = "Escuadrón de El Ferrol"
-			location = 758  # Ferrol/Coruna
-			ship = { name = "ARE España" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
-		}
-	}
-} 
+}
 
