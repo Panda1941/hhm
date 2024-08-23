@@ -287,7 +287,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ offensive_doctrine }
+			traits={ offensive_doctrine organizer hill_fighter }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -435,10 +435,10 @@ characters={
 
 		corps_commander={
 		    traits={ trickster organizer cavalry_leader panzer_leader }
-			skill=3
-			attack_skill=3
+			skill=4
+			attack_skill=4
 			defense_skill=2
-			planning_skill=2
+			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
 		}

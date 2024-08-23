@@ -81,7 +81,7 @@ characters={
 			}
 		}
 		corps_commander={
-		traits={ commando  }
+		traits={ commando infantry_leader  }
 			skill=4
 			attack_skill=2
 			defense_skill=3
@@ -100,7 +100,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ panzer_expert trait_engineer }
+			traits={ panzer_leader panzer_expert trait_engineer }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -136,7 +136,7 @@ characters={
 			}
 		}
 		field_marshal={
-		traits={ trickster infantry_officer armor_officer }
+			traits={ trickster infantry_officer armor_officer organizer panzer_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=2

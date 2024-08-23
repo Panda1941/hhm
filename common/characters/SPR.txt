@@ -156,11 +156,11 @@ characters={
 				}
 			}
 			corps_commander={
-				traits={ brilliant_strategist }
-				skill=3
-				attack_skill=3
+				traits={ brilliant_strategist organizer infantry_leader skilled_staffer }
+				skill=4
+				attack_skill=4
 				defense_skill=2
-				planning_skill=2
+				planning_skill=3
 				logistics_skill=3
 				legacy_id=1102
 			}
@@ -365,9 +365,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader }
-			skill=3
-			attack_skill=2
+			traits={ harsh_leader bearer_of_artillery urban_assault_specialist infantry_leader }
+			skill=4
+			attack_skill=4
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
@@ -384,12 +384,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ politically_connected infantry_leader trickster }
-			skill=3
-			attack_skill=2
-			defense_skill=4
+			traits={ politically_connected infantry_leader trickster organizer }
+			skill=5
+			attack_skill=4
+			defense_skill=5
 			planning_skill=2
-			logistics_skill=2
+			logistics_skill=3
 			legacy_id=1119
 		}
 	}

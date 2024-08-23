@@ -267,11 +267,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless cavalry_leader }
-			skill = 3
+			traits = { trait_reckless cavalry_leader ranger }
+			skill = 4
 			attack_skill = 4
-			defense_skill = 2
-			planning_skill = 3
+			defense_skill = 3
+			planning_skill = 4
 			logistics_skill = 3
 			legacy_id = 1205
 		}
@@ -286,7 +286,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { old_guard infantry_leader }
+			traits = { old_guard infantry_leader engineer }
 			skill = 5
 			attack_skill = 6
 			defense_skill = 4
@@ -357,10 +357,10 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_cautious trait_BUL_tsar_loyalist }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
+			traits = { trait_cautious trait_BUL_tsar_loyalist commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
 			planning_skill = 1
 			logistics_skill = 2
 			legacy_id = 1209
@@ -395,10 +395,10 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { organizer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			traits = { organizer skilled_staffer infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 1211

@@ -140,7 +140,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist cavalry_officer war_hero trickster }
+			traits={ brilliant_strategist cavalry_officer war_hero trickster cavalry_leader organizer }
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -345,7 +345,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ media_personality harsh_leader armor_officer }
+			traits={ media_personality harsh_leader armor_officer infantry_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -382,7 +382,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer trait_reckless armor_officer }
+			traits={ career_officer trait_reckless armor_officer panzer_leader }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -426,7 +426,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer trait_cautious infantry_officer trickster }
+			traits={ career_officer trait_cautious infantry_officer trickster infantry_leader }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -466,7 +466,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ old_guard infantry_officer }
+			traits={ old_guard infantry_officer infantry_leader engineer }
 			skill=3
 			attack_skill=3
 			defense_skill=1
@@ -485,7 +485,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard trait_cautious infantry_officer }
+			traits={ old_guard trait_cautious infantry_officer engineer trait_mountaineer }
 			skill=2
 			attack_skill=1
 			defense_skill=3
@@ -523,7 +523,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard infantry_officer trait_mountaineer }
+			traits={ old_guard infantry_officer trait_mountaineer commando hill_fighter }
 			skill=3
 			attack_skill=2
 			defense_skill=4

@@ -206,7 +206,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ inflexible_strategist career_officer }
+			traits={ inflexible_strategist career_officer infantry_leader }
 			skill=5
 			attack_skill=3
 			defense_skill=5
@@ -225,7 +225,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist armor_officer politically_connected }
+			traits={ inflexible_strategist armor_officer politically_connected panzer_leader organizer }
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -262,7 +262,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ war_hero trickster }
+			traits={ war_hero trickster infantry_leader hill_fighter }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -362,7 +362,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ politically_connected }
+			traits={ politically_connected desert_fox }
 			skill=5
 			attack_skill=4
 			defense_skill=4
@@ -493,7 +493,7 @@ characters={
 		}
 
 		corps_commander={
-			traits={ trait_cautious politically_connected }
+			traits={ trait_cautious politically_connected commando }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -512,7 +512,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard politically_connected }
+			traits={ old_guard politically_connected naval_invader infantry_leader swamp_fox }
 			skill=4
 			attack_skill=2
 			defense_skill=4
@@ -531,7 +531,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist armor_officer war_hero }
+			traits={ inflexible_strategist armor_officer war_hero panzer_leader }
 			skill=3
 			attack_skill=2
 			defense_skill=3

@@ -214,12 +214,12 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { trait_cautious politically_connected offensive_doctrine desert_fox }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
+			traits = { trait_cautious politically_connected offensive_doctrine desert_fox infantry_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
 			planning_skill = 2
-			logistics_skill = 1
+			logistics_skill = 2
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -255,11 +255,11 @@ characters = {
 
 		field_marshal = {
 			traits = { old_guard inflexible_strategist politically_connected defensive_doctrine organizer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -293,12 +293,12 @@ characters = {
 		}
 		
 		field_marshal = {
-			traits = { old_guard trait_cautious politically_connected defensive_doctrine }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { old_guard trait_cautious politically_connected defensive_doctrine trait_mountaineer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -344,11 +344,11 @@ characters = {
 		}
 		
 		field_marshal = {
-			traits = { career_officer politically_connected trait_reckless media_personality }
-			skill = 1
-			attack_skill = 1
+			traits = { career_officer politically_connected trait_reckless media_personality inspirational_leader }
+			skill = 2
+			attack_skill = 2
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 2
 			logistics_skill = 1
 			legacy_id = 0
 			visible = {
@@ -410,11 +410,11 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard career_officer trait_cautious organisational_leader }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 2
+			traits = { old_guard career_officer trait_cautious organisational_leader infantry_leader engineer}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
 		}
@@ -449,12 +449,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { inflexible_strategist career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			traits = { inflexible_strategist career_officer organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -473,12 +473,12 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { career_officer trait_cautious }
-			skill = 1
-			attack_skill = 1
+			traits = { career_officer trait_cautious desert_fox hill_fighter trickster }
+			skill = 3
+			attack_skill = 3
 			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -498,12 +498,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_officer career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			traits = { infantry_officer career_officer infantry_leader skilled_staffer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 3
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -523,12 +523,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard career_officer }
-			skill = 1
+			traits = { old_guard career_officer cavalry_leader }
+			skill = 3
 			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -563,12 +563,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { cavalry_officer }
-			skill = 1
-			attack_skill = 1
+			traits = { cavalry_officer cavalry_leader }
+			skill = 3
+			attack_skill = 2
 			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -611,9 +611,9 @@ characters = {
 		
 		corps_commander = {
 			traits = { old_guard }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
@@ -636,10 +636,10 @@ characters = {
 		
 		corps_commander = {
 			traits = { old_guard inflexible_strategist }
-			skill = 1
+			skill = 2
 			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
+			defense_skill = 2
+			planning_skill = 2
 			logistics_skill = 1
 			legacy_id = 0
 			visible = { has_government = fascism }
@@ -661,11 +661,11 @@ characters = {
 		
 		corps_commander = {
 			traits = { old_guard trait_reckless war_hero } #Always sick really need to do something about it
-			skill = 1
+			skill = 2
 			attack_skill = 1
 			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -685,11 +685,11 @@ characters = {
 		
 		corps_commander = {
 			traits = { old_guard trait_engineer }
-			skill = 1
-			attack_skill = 1
+			skill = 2
+			attack_skill = 2
 			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -709,11 +709,11 @@ characters = {
 		
 		corps_commander = {
 			traits = { armor_officer } #Representing how he died
-			skill = 1
+			skill = 2
 			attack_skill = 1
-			defense_skill = 1
+			defense_skill = 2
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -734,9 +734,9 @@ characters = {
 		
 		corps_commander = {
 			traits = { cavalry_leader combined_arms_expert } #Motorized
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
@@ -759,11 +759,11 @@ characters = {
 		
 		corps_commander = {
 			traits = { infantry_officer organizer } #Logistics and Infantry
-			skill = 1
+			skill = 2
 			attack_skill = 1
 			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
