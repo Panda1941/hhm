@@ -105,13 +105,13 @@ equipments = {
 		}
 		
 		default_modules = {
-			main_armament_slot = mech_heavy_machine_gun
+			main_armament_slot = empty
 			turret_type_slot = mech_AAHE
 			suspension_type_slot = mech_half_track_suspension
 			roadwheels_type_slot = mech_small_roadwheels
 			armor_type_slot = mech_welded_armor
 			engine_type_slot = mech_gasoline_engine
-			special_type_slot_1 = mech_smoke_launchers
+			special_type_slot_1 = empty
 		}
 
 		fuel_consumption = 0
