@@ -1,4 +1,4 @@
-version="1"
+version="0.5.1"
 tags={
 	"Historical"
 	"Balance"
@@ -24,5 +24,5 @@ replace_path="interface/"
 replace_path="map/strategicregions"
 name="Historical Hoi4 Mod"
 picture="thumbnail.png"
-supported_version="1.14.7"
+supported_version="1.14.8"
 remote_file_id="3003221309"
