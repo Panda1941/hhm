@@ -308,7 +308,7 @@ sub_units = {
 		supply_consumption = 0.5
 		
 		breakthrough = -0.25
-        soft_attack = 0.09
+        soft_attack = 0.09 
 
 		suppression = 1.5
 
