@@ -1,236 +1,237 @@
-sub_units = {
-
-	support_light_sp_artillery = {
-		sprite = light_armor
-		map_icon_category = armored
-		priority = 0
-		ai_priority = 0
-		active = yes
-		
-		type = {
-			armor
-			artillery
-			support
-		}
-		
-		group = support
-
-		categories = {
-			category_support_battalions
-			category_all_armor
-			category_army
-		}	
-
-		combat_width = 0
-
-		need = {
-			light_tank_artillery_chassis = 38
-		}
-		
-		can_be_parachuted = yes
-		
-		manpower = 300
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.3
-		training_time = 180
-		weight = 0.5
-		supply_consumption = 0.2
-		
-		#support unit nerf
-		defense = -0.50	#Don't nerf this stat
-		breakthrough = -0.6
-		#armor_value = -0.75
-		
-		amphibious = {
-			attack = -0.5
-		}
-
-		
-		same_support_type = artillery
-	}
-	
-	support_medium_sp_artillery = {
-		sprite = medium_armor
-		map_icon_category = armored
-		priority = 0
-		ai_priority = 0
-		active = yes
-		
-		type = {
-			armor
-			artillery
-			support
-		}
-		
-		group = support
-
-		categories = {
-			category_support_battalions
-			category_all_armor
-			category_army
-		}	
-		combat_width = 0
-
-		need = {
-			medium_tank_artillery_chassis = 34
-		}
-		manpower = 300
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.3
-		training_time = 180
-		weight = 0.75
-		supply_consumption = 0.22
-		
-		#support unit nerf
-		defense = -0.50	#Don't nerf this stat
-		breakthrough = -0.6
-		#armor_value = -0.75
-		
-		amphibious = {
-			attack = -0.5
-		}
-		
-		same_support_type = artillery
-	}
-	
-	support_heavy_sp_artillery = {
-		sprite = heavy_armor
-		map_icon_category = armored
-		priority = 0
-		ai_priority = 0
-		active = yes
-		training_time = 180
-		
-		type = {
-			armor
-			artillery
-			support
-		}
-		
-		group = support
-		
-		categories = {
-			category_support_battalions
-			category_all_armor
-			category_army
-		}
-
-		combat_width = 0
-
-		need = {
-			heavy_tank_artillery_chassis = 26
-		}
-		manpower = 300
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.3
-		weight = 1.0
-		supply_consumption = 0.3
-		
-		#support unit nerf
-		defense = -0.50	#Don't nerf this stat
-		breakthrough = -0.6
-		#armor_value = -0.75
-		
-		amphibious = {
-			attack = -0.5
-		}
-		
-		same_support_type = artillery
-	}
-	
-	support_super_heavy_sp_artillery = {
-		sprite = heavy_armor
-		map_icon_category = armored
-		priority = 0
-		ai_priority = 0
-		active = yes
-		
-		type = {
-			armor
-			artillery
-			support
-		}
-		
-		group = support
-		
-		categories = {
-			category_support_battalions
-			category_all_armor
-			category_army
-		}
-		
-
-		combat_width = 0
-
-		need = {
-			super_heavy_tank_artillery_chassis = 16
-		}
-		manpower = 300
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.3
-		training_time = 180
-		weight = 1.3
-		supply_consumption = 0.5
-		
-		#support unit nerf
-		defense = -0.50	#Don't nerf this stat
-		breakthrough = -0.6
-		#armor_value = -0.75
-		
-		amphibious = {
-			attack = -0.5
-		}
-		
-		same_support_type = artillery
-	}
-	
-	support_modern_sp_artillery = {
-		sprite = medium_armor
-		map_icon_category = armored
-		priority = 0
-		ai_priority = 0
-		active = yes
-		
-		type = {
-			armor
-			artillery
-			support
-		}
-		
-		group = support
-		
-		categories = {
-			category_support_battalions
-			category_all_armor
-			category_army
-		}
-
-		combat_width = 0
-
-		need = {
-			modern_tank_artillery_chassis = 26
-		}
-		manpower = 300
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.3
-		training_time = 180
-		weight = 1.0
-		supply_consumption = 0.3
-		
-		#support unit nerf
-		defense = -0.50	#Don't nerf this stat
-		breakthrough = -0.6
-		#armor_value = -0.75
-		
-		amphibious = {
-			attack = -0.5
-		}
-		
-		same_support_type = artillery
-	}
-}
+#sub_units = {
+#
+#	support_light_sp_artillery = {
+#		sprite = light_armor
+#		map_icon_category = armored
+#		priority = 0
+#		ai_priority = 0
+#		active = yes
+#		
+#		type = {
+#			armor
+#			artillery
+#			support
+#		}
+#		
+#		group = support
+#
+#		categories = {
+#			category_support_battalions
+#			category_all_armor
+#			category_army
+#		}	
+#
+#		combat_width = 0
+#
+#		need = {
+#			light_tank_artillery_chassis = 38
+#		}
+#		
+#		can_be_parachuted = yes
+#		
+#		manpower = 300
+#		max_organisation = 0
+#		default_morale = 0.1
+#		max_strength = 0.3
+#		training_time = 180
+#		weight = 0.5
+#		supply_consumption = 0.2
+#		
+#		#support unit nerf
+#		defense = -0.50	#Don't nerf this stat
+#		breakthrough = -0.6
+#		#armor_value = -0.75
+#		
+#		amphibious = {
+#			attack = -0.5
+#		}
+#
+#		
+#		same_support_type = artillery
+#	}
+#	
+#	support_medium_sp_artillery = {
+#		sprite = medium_armor
+#		map_icon_category = armored
+#		priority = 0
+#		ai_priority = 0
+#		active = yes
+#		
+#		type = {
+#			armor
+#			artillery
+#			support
+#		}
+#		
+#		group = support
+#
+#		categories = {
+#			category_support_battalions
+#			category_all_armor
+#			category_army
+#		}	
+#		combat_width = 0
+#
+#		need = {
+#			medium_tank_artillery_chassis = 34
+#		}
+#		manpower = 300
+#		max_organisation = 0
+#		default_morale = 0.1
+#		max_strength = 0.3
+#		training_time = 180
+#		weight = 0.75
+#		supply_consumption = 0.22
+#		
+#		#support unit nerf
+#		defense = -0.50	#Don't nerf this stat
+#		breakthrough = -0.6
+#		#armor_value = -0.75
+#		
+#		amphibious = {
+#			attack = -0.5
+#		}
+#		
+#		same_support_type = artillery
+#	}
+#	
+#	support_heavy_sp_artillery = {
+#		sprite = heavy_armor
+#		map_icon_category = armored
+#		priority = 0
+#		ai_priority = 0
+#		active = yes
+#		training_time = 180
+#		
+#		type = {
+#			armor
+#			artillery
+#			support
+#		}
+#		
+#		group = support
+#		
+#		categories = {
+#			category_support_battalions
+#			category_all_armor
+#			category_army
+#		}
+#
+#		combat_width = 0
+#
+#		need = {
+#			heavy_tank_artillery_chassis = 26
+#		}
+#		manpower = 300
+#		max_organisation = 0
+#		default_morale = 0.1
+#		max_strength = 0.3
+#		weight = 1.0
+#		supply_consumption = 0.3
+#		
+#		#support unit nerf
+#		defense = -0.50	#Don't nerf this stat
+#		breakthrough = -0.6
+#		#armor_value = -0.75
+#		
+#		amphibious = {
+#			attack = -0.5
+#		}
+#		
+#		same_support_type = artillery
+#	}
+#	
+#	support_super_heavy_sp_artillery = {
+#		sprite = heavy_armor
+#		map_icon_category = armored
+#		priority = 0
+#		ai_priority = 0
+#		active = yes
+#		
+#		type = {
+#			armor
+#			artillery
+#			support
+#		}
+#		
+#		group = support
+#		
+#		categories = {
+#			category_support_battalions
+#			category_all_armor
+#			category_army
+#		}
+#		
+#
+#		combat_width = 0
+#
+#		need = {
+#			super_heavy_tank_artillery_chassis = 16
+#		}
+#		manpower = 300
+#		max_organisation = 0
+#		default_morale = 0.1
+#		max_strength = 0.3
+#		training_time = 180
+#		weight = 1.3
+#		supply_consumption = 0.5
+#		
+#		#support unit nerf
+#		defense = -0.50	#Don't nerf this stat
+#		breakthrough = -0.6
+#		#armor_value = -0.75
+#		
+#		amphibious = {
+#			attack = -0.5
+#		}
+#		
+#		same_support_type = artillery
+#	}
+#	
+#	support_modern_sp_artillery = {
+#		sprite = medium_armor
+#		map_icon_category = armored
+#		priority = 0
+#		ai_priority = 0
+#		active = yes
+#		
+#		type = {
+#			armor
+#			artillery
+#			support
+#		}
+#		
+#		group = support
+#		
+#		categories = {
+#			category_support_battalions
+#			category_all_armor
+#			category_army
+#		}
+#
+#		combat_width = 0
+#
+#		need = {
+#			modern_tank_artillery_chassis = 26
+#		}
+#		manpower = 300
+#		max_organisation = 0
+#		default_morale = 0.1
+#		max_strength = 0.3
+#		training_time = 180
+#		weight = 1.0
+#		supply_consumption = 0.3
+#		
+#		#support unit nerf
+#		defense = -0.50	#Don't nerf this stat
+#		breakthrough = -0.6
+#		#armor_value = -0.75
+#		
+#		amphibious = {
+#			attack = -0.5
+#		}
+#		
+#		same_support_type = artillery
+#	}
+#}
+#
