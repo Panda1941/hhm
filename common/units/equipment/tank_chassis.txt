@@ -24,8 +24,10 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament_tier_1
-					tank_small_main_armament_tier_2
+					
 					tank_flamethrower
+					tank_small_main_armament_SPG
+					tank_anti_air_main_armament
 				}
 			}
 
@@ -35,11 +37,11 @@ equipments = {
 					tank_light_turret_type
 				}
 			}
+
 			suspension_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_suspension_type
-					tank_non_tracked_suspension_type
 				}
 			}
 			
@@ -64,10 +66,54 @@ equipments = {
 				}
 			}
 			
-			special_type_slot_1 = {
+			special_type_slot_1 = {	# AMMO
 				required = yes
 				allowed_module_categories = {
 					tank_ammo_type
+				}
+			}
+			
+			special_type_slot_2 = {	# RADIO
+				required = no
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
+			
+			special_type_slot_3 = {	# ARMOUR AMOUNT
+				required = yes
+				allowed_module_categories = {
+					tank_armor_amount
+				}
+			}
+			
+			special_type_slot_4 = {	# MISC
+				required = no
+				allowed_module_categories = {
+					tank_special_module_DEFENSE
+					tank_special_module_BREAKTHROUGH
+					tank_special_module_OTHER
+					tank_secondary_turret
+				}
+			}
+			
+			special_type_slot_5 = {	# MISC
+				required = no
+				allowed_module_categories = {
+					tank_special_module_DEFENSE
+					tank_special_module_BREAKTHROUGH
+					tank_special_module_OTHER
+					tank_secondary_turret
+				}
+			}
+			
+			special_type_slot_6 = {	# MISC
+				required = no
+				allowed_module_categories = {
+					tank_special_module_DEFENSE
+					tank_special_module_BREAKTHROUGH
+					tank_special_module_OTHER
+					tank_secondary_turret
 				}
 			}
 		}
@@ -186,13 +232,15 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament_tier_1
 					tank_small_main_armament_tier_2
-					tank_small_main_armament_tier_3
+					
 					tank_flamethrower
+					tank_medium_main_armament_SPG
+					tank_medium_main_armament_TD
+					tank_anti_air_main_armament
 				}
 			}
-			
+
 
 			turret_type_slot = inherit
 			suspension_type_slot = inherit
@@ -200,6 +248,11 @@ equipments = {
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+			special_type_slot_6 = inherit
 		}
 	}
 
@@ -225,14 +278,15 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament_tier_1
-					tank_small_main_armament_tier_2
 					tank_small_main_armament_tier_3
-					tank_small_main_armament_tier_4
+					
 					tank_flamethrower
+					tank_medium_main_armament_SPG
+					tank_medium_main_armament_TD
+					tank_anti_air_main_armament
 				}
 			}
-			
+
 
 			turret_type_slot = inherit
 			suspension_type_slot = inherit
@@ -240,6 +294,11 @@ equipments = {
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+			special_type_slot_6 = inherit
 		}
 	}
 
@@ -265,12 +324,12 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament_tier_1
-					tank_small_main_armament_tier_2
 					tank_small_main_armament_tier_3
-					tank_small_main_armament_tier_4
-					tank_small_main_armament_tier_5
+					
 					tank_flamethrower
+					tank_medium_main_armament_SPG
+					tank_medium_main_armament_TD
+					tank_anti_air_main_armament
 				}
 			}
 
@@ -281,16 +340,11 @@ equipments = {
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
-
-
-            special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+			special_type_slot_6 = inherit
 		}
 	}
 	
@@ -317,12 +371,12 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament_tier_1
-					tank_small_main_armament_tier_2
-					tank_small_main_armament_tier_3
-					tank_small_main_armament_tier_4
 					tank_small_main_armament_tier_5
+					
 					tank_flamethrower
+					tank_medium_main_armament_SPG
+					tank_medium_main_armament_TD
+					tank_anti_air_main_armament
 				}
 			}
 
@@ -334,16 +388,10 @@ equipments = {
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
-
-
-			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+			special_type_slot_6 = inherit
 		}
 	}
 	light_tank_chassis_5 = {
@@ -365,16 +413,16 @@ equipments = {
 			steel = 2
 		}
 
-        module_slots = {
+		module_slots = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament_tier_1
-					tank_small_main_armament_tier_2
-					tank_small_main_armament_tier_3
-					tank_small_main_armament_tier_4
 					tank_small_main_armament_tier_5
+					
 					tank_flamethrower
+					tank_medium_main_armament_SPG
+					tank_medium_main_armament_TD
+					tank_anti_air_main_armament
 				}
 			}
 
@@ -387,17 +435,10 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
-
-
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-		}	
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+			special_type_slot_6 = inherit
+		}
 	}
 
 	
