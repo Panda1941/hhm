@@ -82,6 +82,11 @@ technologies = {
 			AAHE
 			
 			tank_module_camouflage
+
+			tank_low_armour
+			tank_medium_armour
+			tank_high_armour
+			tank_very_high_armour
 		}
 		enable_subunits = {
 			light_armor
