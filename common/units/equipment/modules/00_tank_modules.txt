@@ -121,6 +121,8 @@ equipment_modules = {
 		    hardness = 0.125
 			defense = 6
 			breakthrough = 6		
+
+			max_strength = 0.1	# MULTIPLIES THE TANK'S BATTALIONS TOTAL HP => LIGHT TANK +1, MEDIUM TANK +1.25, HEAVY TANK +1.5
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
@@ -1582,8 +1584,7 @@ equipment_modules = {
 
 	tank_heavy_howitzer = {
 		abbreviation = "hh1"
-		category = tank_heavy_main_armament_tier_1
-		gui_category = tank_heavy_main_armament_SPG
+		category = tank_heavy_main_armament_SPG
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
@@ -1612,8 +1613,7 @@ equipment_modules = {
 	
 	tank_heavy_howitzer_2 = {
 		abbreviation = "hh2"
-		category = tank_heavy_main_armament_tier_2
-		gui_category = tank_heavy_main_armament_SPG
+		category = tank_heavy_main_armament_SPG
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
@@ -1665,37 +1665,12 @@ equipment_modules = {
 			steel = 1
 		}
 	}
-	
-	tank_super_heavy_cannon_2 = {
-		abbreviation = "sh2"
-		category = tank_super_heavy_main_armament
-		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = anti_tank
-		parent = tank_super_heavy_cannon
-
-		add_stats = {
-			soft_attack = 54
-			hard_attack = 72
-			ap_attack = 255
-			build_cost_ic = 10.8
-			maximum_speed = -0.8
-			reliability = -0.30
-		}
-		dismantle_cost_ic = 1
-		xp_cost = 0
-		build_cost_resources = {
-			tungsten = 4
-			chromium = 2
-			steel = 2
-		}
-	}
 
 	
 
 	tank_modern_cannon = {
 		abbreviation = "modc"
-		category = tank_medium_main_armament_tier_6
-		gui_category = tank_medium_main_armament
+		category = tank_modern_main_armament
 		sfx = sfx_ui_sd_module_turret
 		dismantle_cost_ic = 1
 		add_stats = {
@@ -1788,7 +1763,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 4
 			hard_attack = 1
-			build_cost_ic = 2.7
+			build_cost_ic = 2.5
 		}
 		xp_cost = 0
 		multiply_stats = {
@@ -1837,7 +1812,7 @@ equipment_modules = {
 		add_stats = {		
 			soft_attack = 1
 			hard_attack = 4
-			build_cost_ic = 3.6
+			build_cost_ic = 3.5
 		}
 		xp_cost = 0
 		multiply_stats = {

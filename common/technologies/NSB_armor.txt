@@ -312,6 +312,9 @@ technologies = {
 		
 		enable_equipment_modules = {
 			tank_auto_cannon_3
+
+			secondary_turret_hmg_2
+			secondary_turret_small_cannon_2
 		}
 
 		path = {
@@ -600,6 +603,9 @@ technologies = {
 			tank_small_cannon_4
 			tank_close_support_gun_3
 			tank_anti_air_cannon_3
+			
+			secondary_turret_hmg_3
+			secondary_turret_small_cannon_3
 		}
 
 		research_cost = 2
@@ -737,6 +743,10 @@ technologies = {
 			tank_rocket_launcher
 			tank_medium_howitzer
 			tank_anti_air_cannon_2
+			
+
+			secondary_turret_hmg_2
+			secondary_turret_small_cannon_2
 		}
 
 		path = {
@@ -903,6 +913,9 @@ technologies = {
 			#stabilizer
 			
 			tank_anti_air_cannon_4
+			
+			secondary_turret_hmg_3
+			secondary_turret_small_cannon_3
 		}
 
 		path = {
@@ -1147,6 +1160,10 @@ technologies = {
 			#squeezebore_adaptor
 			tank_anti_air_cannon_2
 			#sloped_armor
+			
+
+			secondary_turret_hmg_2
+			secondary_turret_small_cannon_2
 		}
 
 		path = {
@@ -1223,6 +1240,10 @@ technologies = {
 			tank_heavy_howitzer_2
 			#auto_loader
 			tank_anti_air_cannon_3
+			
+
+			secondary_turret_hmg_3
+			secondary_turret_small_cannon_3
 		}
 
 		path = {
@@ -1312,6 +1333,7 @@ technologies = {
 
 	armor_tech_1 = {
 		enable_equipment_modules = {
+			armor_skirts
 		}
 
 		path = {
