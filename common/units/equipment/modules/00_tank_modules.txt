@@ -83,10 +83,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			hardness = -0.125
+			hardness = -0.10
 			reliability = -0.10
-			defense = 0.5
-			breakthrough = 0.5
+			defense = 1.0
+			breakthrough = 1.0
+			
+			max_strength = -0.05	# MULTIPLIES THE TANK'S BATTALIONS TOTAL HP => LIGHT TANK -0.5, MEDIUM TANK -0.625, HEAVY TANK -0.75
 		}
 		xp_cost = 0
 		multiply_stats = {
@@ -190,6 +192,8 @@ equipment_modules = {
 		add_stats = {
 			hardness = 0.06
 			reliability = -0.05
+
+			max_strength = 0.05	# MULTIPLIES THE TANK'S BATTALIONS TOTAL HP => LIGHT TANK +0.5, MEDIUM TANK +0.625, HEAVY TANK +0.75
 		}
 		xp_cost = 0
 		multiply_stats = {
@@ -2034,6 +2038,8 @@ equipment_modules = {
 			armor_value = 6
 			breakthrough = 3
 			build_cost_ic = 1.8
+			
+			max_strength = 0.05	# MULTIPLIES THE TANK'S BATTALIONS TOTAL HP => LIGHT TANK +0.5, MEDIUM TANK +0.625, HEAVY TANK +0.75
 		}
 		xp_cost = 0
 		multiply_stats = {
