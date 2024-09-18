@@ -600,12 +600,13 @@ equipment_modules = {
 
 	light_mg_4x = {
 		abbreviation = "lmg4"
-		category = fighter_weapon
+		category = fighter_weapon_lmg
+		gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 22
+			air_attack = 12
 			build_cost_ic = 6
 			weight = 4
 		}
@@ -623,7 +624,7 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 32
+			air_attack = 20
 			build_cost_ic = 12
 			weight = 10
 		}
@@ -645,7 +646,7 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 44
+			air_attack = 28
 			build_cost_ic = 16
 			air_agility = -2
 			weight = 12
@@ -668,7 +669,7 @@ equipment_modules = {
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = { fighter heavy_fighter }
 		add_stats = {
-			air_attack = 52
+			air_attack = 36
 			build_cost_ic = 24
 			air_agility = -2
 			weight = 14

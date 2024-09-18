@@ -51,6 +51,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
+					fighter_weapon_lmg
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -234,6 +235,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
+					fighter_weapon_lmg
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -296,6 +298,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
+					fighter_weapon_lmg
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -362,6 +365,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
+					fighter_weapon_lmg
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -428,6 +432,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
+					fighter_weapon_lmg
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -518,6 +523,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
+					fighter_weapon_lmg
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -704,6 +710,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
+					fighter_weapon_lmg
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -766,6 +773,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
+					fighter_weapon_lmg
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -831,6 +839,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
+					fighter_weapon_lmg
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -979,6 +988,7 @@ equipments = {
 				allowed_module_categories = {
 					tac_weapon
 					fighter_weapon
+					fighter_weapon_lmg
 					recon_camera
 				}
 			}
@@ -990,6 +1000,7 @@ equipments = {
 					recon_camera
 					tac_weapon
 					nav_bomber_weapon
+					fighter_weapon_lmg
 				}
 			}
 
@@ -1181,6 +1192,7 @@ equipments = {
 				allowed_module_categories = {
 					tac_weapon
 					fighter_weapon
+					fighter_weapon_lmg
 					recon_camera
 				}
 			}
@@ -1192,6 +1204,7 @@ equipments = {
 					tac_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
+					fighter_weapon_lmg
 				}
 			}
 
@@ -1266,6 +1279,7 @@ equipments = {
 				allowed_module_categories = {
 					tac_weapon
 					fighter_weapon
+					fighter_weapon_lmg
 					recon_camera
 				}
 			}
@@ -1277,6 +1291,7 @@ equipments = {
 					tac_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
+					fighter_weapon_lmg
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -1363,6 +1378,7 @@ equipments = {
 				allowed_module_categories = {
 					tac_weapon
 					fighter_weapon
+					fighter_weapon_lmg
 					recon_camera
 				}
 			}
@@ -1374,6 +1390,7 @@ equipments = {
 					tac_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
+					fighter_weapon_lmg
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -1460,6 +1477,7 @@ equipments = {
 				allowed_module_categories = {
 					tac_weapon
 					fighter_weapon
+					fighter_weapon_lmg
 					recon_camera
 				}
 			}
@@ -1472,6 +1490,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					mine_warfare_offense
+					fighter_weapon_lmg
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
