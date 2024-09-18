@@ -16,6 +16,7 @@ sub_units = {
 		group = armor_combat_support
 
 		categories = {
+			category_tanks
 			category_all_armor
 			category_army
 		}		
@@ -23,47 +24,55 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			light_tank_artillery_chassis = 38
+			light_tank_artillery_chassis = 52
 		}
 		manpower = 500
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.6
+		max_organisation = 15
+		default_morale = 0.3
 		training_time = 180
+		max_strength = 10
 		weight = 1
-		supply_consumption = 0.42
+		supply_consumption = 0.22
 
-		breakthrough = -0.42
+		breakthrough = -0.20
+		defense = -0.20
         soft_attack = 0.05
 
-		suppression = 1.25
+		suppression = 1.0
 
 		forest = {
-		    attack = -0.2
+		    attack = -0.025
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.4
+			defence = -0.4
 		}
 		jungle = {
-		    attack = -0.3
+		    attack = -0.35
+			defence = -0.8
 			movement = -0.4
 		}
 		marsh = {
-		    attack = -0.1 
+		    attack = -0.05 
 			movement = -0.1
+			defence = -0.15
 		}
 		urban = {
-			attack = -0.4
+			attack = -0.35
 			defence = -0.1
 		}
 		river = { 
-			attack = -0.2 
+			attack = -0.15 
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.6
+			attack = -0.4
 		}
+        desert = {
+			attack = 0.1
+			movement = -0.2
+		}	
 	}
 	
 	medium_sp_artillery_brigade = {
@@ -82,55 +91,64 @@ sub_units = {
 		group = armor_combat_support
 
 		categories = {
+			category_tanks
 			category_all_armor
 			category_army
 		}		
 		combat_width = 2
 
 		need = {
-			medium_tank_artillery_chassis = 34
+			medium_tank_artillery_chassis = 42
 		}
 		manpower = 500
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.6
+		max_organisation = 20
+		default_morale = 0.3
+		max_strength = 10
 		training_time = 180
 		weight = 1.25
-		supply_consumption = 0.46
+		supply_consumption = 0.25
 
-		breakthrough = -0.25
+		breakthrough = -0.20
+		defense = -0.20
         soft_attack = 0.07
 
-		suppression = 1.5
+		suppression = 1.25
 
 		forest = {
-		    attack = -0.3
+		    attack = -0.1
+			defence = -0.1
 			movement = -0.4
 		}
 		hills = 	{
 		    attack = -0.1
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.5
+			defence = -0.5
 		}
 		jungle = {
-		    attack = -0.4
-			movement = -0.4
+		    attack = -0.5
+			defence = -1
+			movement = -0.5
 		}
 		marsh = {
-		    attack = -0.1 
+		    attack = -0.05
+			defence = -0.3
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.4
+			attack = -0.35
 			defence = -0.1
 		}
 		river = { 
-			attack = -0.2 
+			attack = -0.2
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.7
+			attack = -0.8
+		}
+		desert = {
+			movement = -0.2
 		}
 	}
 	
@@ -151,6 +169,7 @@ sub_units = {
 		group = armor_combat_support
 		
 		categories = {
+			category_tanks
 			category_all_armor
 			category_army
 		}
@@ -161,45 +180,57 @@ sub_units = {
 			heavy_tank_artillery_chassis = 26
 		}
 		manpower = 500
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.6
+		max_organisation = 20
+		default_morale = 0.3
+		max_strength = 12.5
 		weight = 1.5
-		supply_consumption = 0.6
+		supply_consumption = 0.32
 
-		breakthrough = -0.25
+		breakthrough = -0.20
+		defense = -0.20
         soft_attack = 0.09
 
-		suppression = 1.5
+		suppression = 1.25
 
 		forest = {
-		    attack = -0.40
-			movement = -0.40
+		    attack = -0.15
+			defence = -0.15
+			movement = -0.4
 		}
 		hills = {
-		    attack = -0.20
+		    attack = -0.125
+			defence = -0.1
 		}
 		mountain = 	{
-		    attack = -0.3
+		    attack = -0.6
+			defence = -0.9
 		}
 		jungle = {
 		    attack = -0.6
+			defence = -1.1
 			movement = -0.4
 		}
 		marsh = {
-		    attack = -0.4 
+		    attack = -0.3
+			defence = -0.4
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.5
+			attack = -0.35
 			defence = -0.2
 		}
 		river = { 
-			attack = -0.4 
+			attack = -0.3
 			movement = -0.4
 		}
 		amphibious = { 
-			attack = -0.8 
+			attack = -0.9
+		}
+		fort = {
+			attack = 0.15
+		}
+		desert = {
+			movement = -0.2
 		}
 	}
 	
@@ -232,11 +263,11 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 0
-		default_morale = 0.1
+		default_morale = 0.3
 		max_strength = 0.6
 		training_time = 180
 		weight = 1.75
-		supply_consumption = 0.8
+		supply_consumption = 0.4
 
 		breakthrough = -0.25
         soft_attack = 0.09
@@ -272,6 +303,9 @@ sub_units = {
 		amphibious = { 
 			attack = -1.0
 		}
+		fort = {
+			attack = 0.3
+		}
 	}
 	
 	modern_sp_artillery_brigade = {
@@ -290,6 +324,7 @@ sub_units = {
 		group = armor_combat_support
 		
 		categories = {
+			category_tanks
 			category_all_armor
 			category_army
 		}
@@ -297,49 +332,56 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			modern_tank_artillery_chassis = 28
+			modern_tank_artillery_chassis = 32
 		}
 		manpower = 500
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.6
+		max_organisation = 10
+		default_morale = 0.3
+		max_strength = 10
 		training_time = 180
 		weight = 1.5
-		supply_consumption = 0.5
+		supply_consumption = 0.25
 		
-		breakthrough = -0.25
+		breakthrough = -0.20
+		defense = -0.20
         soft_attack = 0.09 
 
 		suppression = 1.5
 
 		forest = {
-		    attack = -0.3
+		    attack = -0.15
 			movement = -0.4
 		}
 		hills = 	{
 		    attack = -0.1
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.6
+			defence = -0.9
 		}
 		jungle = {
-		    attack = -0.4
+		    attack = -0.35
+			defence = -0.65
 			movement = -0.4
 		}
 		marsh = {
-		    attack = -0.1 
+		    attack = -0.05
+			defence = -0.35
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.4
+			attack = -0.35
 			defence = -0.1
 		}
 		river = { 
-			attack = -0.2 
+			attack = -0.15
 			movement = -0.2
 		}
 		amphibious = { 
 			attack = -0.7
+		}
+		desert = {
+			movement = -0.2
 		}
 	}
 }
