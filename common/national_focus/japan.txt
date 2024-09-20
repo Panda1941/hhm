@@ -17,7 +17,7 @@
 	focus = {
 		id = JAP_purge_the_kodoha_faction
 		icon = GFX_goal_generic_major_war
-		x = 0
+		x = 5
 		y = 0
 
 		offset = {
@@ -51,11 +51,38 @@
 			add_stability = 0.1
 		}
 	}
+	focus = {
+		id = JAP_placeholder
+		x = 2
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
 
 	focus = {
 		id = JAP_liaison_conference
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = JAP_purge_the_kodoha_faction }
+		prerequisite = { focus = JAP_purge_the_kodoha_faction focus = JAP_placeholder }
 		x = -1
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction
