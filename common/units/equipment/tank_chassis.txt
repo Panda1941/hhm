@@ -918,7 +918,7 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_heavy_turret_type
 				}
 			}
 
@@ -1270,7 +1270,7 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_modern_turret_type
 				}
 			}
 
@@ -1475,7 +1475,7 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_super_heavy_turret_type
 				}
 			}
 

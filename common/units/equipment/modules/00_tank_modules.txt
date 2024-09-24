@@ -393,7 +393,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 0.5
-			breakthrough = 14
+			breakthrough = 12
 			hardness = -0.1
 		}
 		dismantle_cost_ic = 0.5
@@ -408,7 +408,7 @@ equipment_modules = {
 		dismantle_cost_ic = 0.5
 		add_stats = {
 			build_cost_ic = 2.0
-			breakthrough = 10
+			breakthrough = 12
 			defense = 3
 		}
 	}
@@ -428,9 +428,6 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
-		multiply_stats = {
-	
-		}
 	}
 	tank_medium_cheap_turret_1 = {
 		abbreviation = "mc1"
@@ -469,12 +466,11 @@ equipment_modules = {
 		abbreviation = "hb1"
 		category = tank_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
 
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		add_stats = {
-			build_cost_ic = 5
+			build_cost_ic = 5.0
 			breakthrough = 24
 		}
 	}
@@ -482,63 +478,13 @@ equipment_modules = {
 		abbreviation = "hc1"
 		category = tank_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_medium_main_armament
-				tank_heavy_main_armament
-			}
-		}
 
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		add_stats = {
-			build_cost_ic = 4
-			breakthrough = 18
-			reliability = -0.1
+			build_cost_ic = 4.0
+			breakthrough = 15
 			hardness = -0.1
-		}
-	}
-	tank_heavy_aa_turret_1 = {
-		abbreviation = "haa1"
-		category = tank_heavy_turret_type
-		sfx = sfx_ui_sd_module_turret
-
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_medium_main_armament_tier_1
-				tank_medium_main_armament_tier_2
-				tank_medium_main_armament_tier_3
-				tank_medium_main_armament_tier_4
-				tank_medium_main_armament_tier_5
-				tank_medium_main_armament_tier_6
-
-				tank_heavy_main_armament_tier_1
-				tank_heavy_main_armament_tier_2
-				tank_heavy_main_armament_tier_3
-			}
-		}
-		forbid_equipment_type_exact_match_for_category = {
-			tank_heavy_main_armament = armor
-			tank_super_heavy_main_armament = armor
-		}
-
-		xp_cost = 0
-		dismantle_cost_ic = 1
-		add_stats = {
-			build_cost_ic = 2.5
-		}
-
-		multiply_stats = {
-			breakthrough = -0.75
-			soft_attack = -0.75
-			hard_attack = -0.75
-		}
-
-		can_convert_from = {
-			module = tank_heavy_turret_type
-			convert_cost_ic = 1.5
 		}
 	}
 
@@ -546,45 +492,14 @@ equipment_modules = {
 		abbreviation = "hfs"
 		category = tank_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
 
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_medium_main_armament_tier_1
-				tank_medium_main_armament_tier_2
-				tank_medium_main_armament_tier_3
-				tank_medium_main_armament_tier_4
-				tank_medium_main_armament_tier_5
-				tank_medium_main_armament_tier_6
-
-				tank_heavy_main_armament_tier_1
-				tank_heavy_main_armament_tier_2
-				tank_heavy_main_armament_tier_3
-				tank_super_heavy_main_armament
-			}
-		}
-		forbid_equipment_type_exact_match_for_category = {
-			tank_super_heavy_main_armament = armor
-		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		add_stats = {
-			build_cost_ic = 4
-			reliability = 0.1
-			breakthrough = 8
+			build_cost_ic = 5.0
+			breakthrough = 15
+			defense = 4
 		}
-
-		multiply_stats = {
-			breakthrough = -0.25
-			soft_attack = 0.06
-			hard_attack = 0.06
-		}
-
-		can_convert_from = {
-			module = tank_heavy_turret_type
-			convert_cost_ic = 5
-		}
-
 	}
 	
 
