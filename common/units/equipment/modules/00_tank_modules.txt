@@ -136,7 +136,7 @@ equipment_modules = {
 
 ### ARMOR AMOUNT
 
-	tank_low_armour = {
+	tank_0_low_armour = {
 		abbreviation = "arm0"
 		category = tank_armor_amount
 		sfx = sfx_ui_sd_module_sonar
@@ -152,7 +152,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_medium_armour = {
+	tank_1_medium_armour = {
 		abbreviation = "arm1"
 		category = tank_armor_amount
 		sfx = sfx_ui_sd_module_sonar
@@ -168,7 +168,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_high_armour = {
+	tank_2_high_armour = {
 		abbreviation = "arm2"
 		category = tank_armor_amount
 		sfx = sfx_ui_sd_module_sonar
@@ -184,7 +184,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_very_high_armour = {
+	tank_3_very_high_armour = {
 		abbreviation = "arm3"
 		category = tank_armor_amount
 		sfx = sfx_ui_sd_module_sonar

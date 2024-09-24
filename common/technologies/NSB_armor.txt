@@ -83,10 +83,10 @@ technologies = {
 			
 			tank_module_camouflage
 
-			tank_low_armour
-			tank_medium_armour
-			tank_high_armour
-			tank_very_high_armour
+			tank_0_low_armour
+			tank_1_medium_armour
+			tank_2_high_armour
+			tank_3_very_high_armour
 		}
 		enable_subunits = {
 			light_armor
