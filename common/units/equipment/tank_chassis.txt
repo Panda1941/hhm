@@ -903,11 +903,7 @@ equipments = {
 		module_slots = {
 			main_armament_slot = {
 				required = yes
-				allowed_module_categories = {
-					tank_small_main_armament_tier_1
-					tank_small_main_armament_tier_2
-					tank_medium_main_armament_tier_1
-					
+				allowed_module_categories = {					
 					tank_flamethrower
 					tank_heavy_main_armament_SPG
 					tank_medium_main_armament_TD
