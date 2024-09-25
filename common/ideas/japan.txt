@@ -229,9 +229,38 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_steel_refinery_factor = 0.1
+				production_speed_aluminium_refinery_factor = 0.1
+				production_speed_advanced_steel_refinery_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_industrial_complex_factor = 0.20
 			}
 		}
+		JAP_government_industry = {
+		
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_control
+		
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.2
+			}
+		
+		}
+	
 		JAP_guide_the_zaibatsus = {
 
 			allowed = {
