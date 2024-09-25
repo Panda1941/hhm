@@ -40,6 +40,7 @@ technologies = {
 			tank_gasoline_engine
 			tank_diesel_engine
 			tank_petrol_electric_engine
+			tank_gas_turbine_engine
 			tank_cast_armor
 			tank_christie_suspension
 			tank_bogie_suspension
