@@ -24,7 +24,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			light_tank_artillery_chassis = 52
+			light_tank_artillery_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 15
@@ -98,7 +98,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			medium_tank_artillery_chassis = 42
+			medium_tank_artillery_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 20
@@ -177,7 +177,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			heavy_tank_artillery_chassis = 26
+			heavy_tank_artillery_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 20
@@ -259,7 +259,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			super_heavy_tank_artillery_chassis = 16
+			super_heavy_tank_artillery_chassis = 20
 		}
 		manpower = 500
 		max_organisation = 0
@@ -332,7 +332,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			modern_tank_artillery_chassis = 32
+			modern_tank_artillery_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 10
