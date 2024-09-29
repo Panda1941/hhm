@@ -904,7 +904,7 @@ equipments = {
 				allowed_module_categories = {					
 					tank_flamethrower
 					tank_heavy_main_armament_SPG
-					tank_medium_main_armament_TD
+					tank_heavy_main_armament_TD
 					tank_anti_air_main_armament
 				}
 			}
@@ -1116,7 +1116,7 @@ equipments = {
 					
 					tank_flamethrower
 					tank_heavy_main_armament_SPG
-					tank_medium_main_armament_TD
+					tank_heavy_main_armament_TD
 					tank_anti_air_main_armament
 				}
 			}
@@ -1164,7 +1164,7 @@ equipments = {
 					
 					tank_flamethrower
 					tank_heavy_main_armament_SPG
-					tank_medium_main_armament_TD
+					tank_heavy_main_armament_TD
 					tank_anti_air_main_armament
 				}
 			}
@@ -1212,7 +1212,7 @@ equipments = {
 					
 					tank_flamethrower
 					tank_heavy_main_armament_SPG
-					tank_medium_main_armament_TD
+					tank_heavy_main_armament_TD
 					tank_anti_air_main_armament
 				}
 			}
@@ -1460,8 +1460,8 @@ equipments = {
 					tank_super_heavy_main_armament
 					
 					tank_flamethrower
-					tank_medium_main_armament_SPG
-					tank_medium_main_armament_TD
+					tank_heavy_main_armament_SPG
+					tank_heavy_main_armament_TD
 					tank_anti_air_main_armament
 				}
 			}
