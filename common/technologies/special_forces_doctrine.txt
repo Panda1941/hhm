@@ -214,8 +214,9 @@ technologies = {
 		mountaineers = {
 			initiative = 0.01
 			max_organisation = 3
-			max_strength = 0.1
+			max_strength = 2
 		}
+		on_research_complete = { custom_effect_tooltip = "HP added is 2" }
 		recon = {
 			battalion_mult = {
 				category = category_line_artillery
@@ -582,14 +583,15 @@ technologies = {
 		#}
 		marine = {
 			max_organisation = 5
-			max_strength = 0.1
+			max_strength = 2
 			supply_consumption = -0.01
 		}
 		marine_commando = {
 			max_organisation = 5
-			max_strength = 0.1
+			max_strength = 2
 			supply_consumption = -0.01
 		}
+		on_research_complete = { custom_effect_tooltip = "HP added is 2" }
         special_forces_min = 36
 		
 		doctrine = yes	
@@ -1948,9 +1950,10 @@ technologies = {
 	
 	
 		shock_troops = {
-			max_strength = 0.2
+			max_strength = 4
 			breakthrough = 0.04
 		}
+		on_research_complete = { custom_effect_tooltip = "HP added is 4" }
 		
 		
 		
@@ -2474,9 +2477,11 @@ technologies = {
 
 		jaeger = {
 			max_organisation = 2
-			max_strength = 0.2
+			max_strength = 4
 			defense = 0.05
 		}
+		on_research_complete = { custom_effect_tooltip = "HP added is 4" }
+
 		
 		
 		

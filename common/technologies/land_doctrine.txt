@@ -2212,8 +2212,9 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 80
 		category_army = {
-			max_strength = 0.5
+			max_strength = 5
 		}
+		on_research_complete = { custom_effect_tooltip = "HP added is 5" }
 
 		field_hospital = {
 			casualty_trickleback = 0.05
@@ -2402,8 +2403,9 @@ technologies = {
 			max_organisation = 4
 		}
 		category_tanks = {	
-			max_strength = 0.25
+			max_strength = 2
 		}
+		on_research_complete = { custom_effect_tooltip = "HP added is 2" }
 		
 		path = {
 			leads_to_tech = branch_interoperation_2 
@@ -2866,8 +2868,9 @@ technologies = {
 		xp_unlock_cost = 80
 		
 		category_special_forces = { 
-			max_strength = 0.25
+			max_strength = 2
 		}
+		on_research_complete = { custom_effect_tooltip = "HP added is 2" }
 		
 		
 		
@@ -3542,10 +3545,11 @@ technologies = {
 		
 		
 		category_all_armor = {
-		    max_strength = 0.25
+		    max_strength = 2
 			max_organisation = 3
 			default_morale = 0.05
 		}
+		on_research_complete = { custom_effect_tooltip = "HP added is 2" }
 		enable_tactic = tactic_backhand_blow
 
 		doctrine = yes	
@@ -3616,8 +3620,9 @@ technologies = {
 		
 		category_all_infantry = {
 			max_organisation = 3
-			max_strength = 0.5
+			max_strength = 5
 		}
+		on_research_complete = { custom_effect_tooltip = "HP added is 5" }
 		
 
 		doctrine = yes	
@@ -3780,9 +3785,10 @@ technologies = {
 		xp_unlock_cost = 80
 		
 		category_special_forces = { 
-		    max_strength = 0.2 
+		    max_strength = 2 
 			breakthrough = 0.1
 		}
+		on_research_complete = { custom_effect_tooltip = "HP added is 2" }
         infantry = {
 			default_morale = 0.10
 		}	

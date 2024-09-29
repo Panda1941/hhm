@@ -373,7 +373,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = more_slots_on_equipment
+			#custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		categories = {
@@ -456,7 +456,7 @@ technologies = {
 
 		
 		on_research_complete = {
-			custom_effect_tooltip = more_slots_on_equipment
+			#custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		categories = {
@@ -639,7 +639,7 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			custom_effect_tooltip = more_slots_on_equipment
+			#custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		categories = {
@@ -764,7 +764,7 @@ technologies = {
 
 		
 		on_research_complete = {
-			custom_effect_tooltip = more_slots_on_equipment
+			#custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		ai_will_do = {
@@ -839,7 +839,7 @@ technologies = {
 		}
 		
 		on_research_complete = {
-			custom_effect_tooltip = more_slots_on_equipment
+			#custom_effect_tooltip = more_slots_on_equipment
 		}
 		
 
@@ -932,7 +932,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = more_slots_on_equipment
+			#custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		ai_will_do = {
@@ -1191,7 +1191,7 @@ technologies = {
 
 		
 		on_research_complete = {
-			custom_effect_tooltip = more_slots_on_equipment
+			#custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		ai_will_do = {
@@ -1266,7 +1266,7 @@ technologies = {
 
 		
 		on_research_complete = {
-			custom_effect_tooltip = more_slots_on_equipment
+			#custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		ai_will_do = {
