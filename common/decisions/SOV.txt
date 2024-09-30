@@ -75,7 +75,8 @@ SOV_diplomacy_baltic_decision_category = {
 			}
 
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 25911 }
-			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 4450 }	
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 4450 }
+			custom_effect_tooltip = "This decision will also add 4450 of the most modern gun we have researched"
 
 			custom_effect_tooltip = SOV_decision_will_be_locked_tt
 		}

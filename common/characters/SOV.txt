@@ -2429,15 +2429,13 @@ characters = {
 				original_tag = SOV
 			}
 			visible = {
-				NOT = {
-					has_character_flag = SOV_character_purged_flag 
-				}
+				
 			}
 			available = {
 				
 			}
 			traits = {
-				pc_for_foreign_affairs_molotov 
+				war_industrialist 
 			}
 		}
 	}
