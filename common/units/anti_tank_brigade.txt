@@ -104,7 +104,7 @@ sub_units = {
 		}
 		manpower = 500
 		max_strength = 20
-		max_organisation = 40
+		max_organisation = 30
 		default_morale = 0.30
 		training_time = 120
 		weight = 0.5
@@ -178,7 +178,7 @@ sub_units = {
 			mechanized_chassis 
 		}
 		manpower = 500
-		max_organisation = 40
+		max_organisation = 30
 		default_morale = 0.3
 		max_strength = 20
 		training_time = 120
