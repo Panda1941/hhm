@@ -25,17 +25,20 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			light_tank_chassis = 40
+			light_tank_chassis = 60
 		}
 		manpower = 500
-		max_organisation = 10
+		max_organisation = 15
 		default_morale = 0.3
 		training_time = 180
 		max_strength = 10
 		weight = 1
 		supply_consumption = 0.22
 
-		breakthrough = 0.1
+		#Tanks are awesome
+		# soft_attack = 0.5
+
+		breakthrough = 0.15
 
 		suppression = 2.5
 
@@ -44,8 +47,8 @@ sub_units = {
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.5
-			defence = -0.4
+		    attack = -0.50
+			defence = -0.40
 		}
 		jungle = {
 		    attack = -0.4
@@ -59,7 +62,7 @@ sub_units = {
 		}
 		urban = {
 			attack = -0.4
-			defence = -0.1
+			defence = -0.10
 		}
 		river = { 
 			attack = -0.2 
@@ -126,7 +129,7 @@ sub_units = {
 		}
 
 		need = {
-			light_tank_chassis = 40
+			light_tank_chassis = 45
 		}
 
 		plains = {

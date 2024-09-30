@@ -132,9 +132,6 @@ equipments = {
 		archetype = mechanized_chassis
 		priority = 40
 		module_slots = inherit
-
-		breakthrough = 0.5
-		defense = 2
 	}
 
 	mechanized_chassis_1 = {
@@ -163,9 +160,6 @@ equipments = {
 				}
 			}
 		}
-		
-		breakthrough = 1
-		defense = 4
 	}
 
 	mechanized_chassis_2 = {
@@ -194,8 +188,5 @@ equipments = {
 				}
 			}
 		}
-
-		breakthrough = 1.5
-		defense = 6
 	}
 }

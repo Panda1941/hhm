@@ -62,16 +62,16 @@ technologies = {
 			tank_light_breakthrough_turret_1
 			tank_light_cheap_turret_1
 			tank_light_fixed_superstructure_turret_1
-			#tank_light_aa_turret_1
+			tank_light_aa_turret_1
 
 			tank_medium_breakthrough_turret_1
 			tank_medium_cheap_turret_1
 			tank_medium_fixed_superstructure_turret_1
-			#tank_medium_aa_turret_1
+			tank_medium_aa_turret_1
 
 			tank_heavy_breakthrough_turret_1
 			tank_heavy_cheap_turret_1
-			#tank_heavy_aa_turret_1
+			tank_heavy_aa_turret_1
 			tank_heavy_fixed_superstructure_turret_1
 			
 			ammo_ap
@@ -82,11 +82,6 @@ technologies = {
 			AAHE
 			
 			tank_module_camouflage
-
-			tank_0_low_armour
-			tank_1_medium_armour
-			tank_2_high_armour
-			tank_3_very_high_armour
 		}
 		enable_subunits = {
 			light_armor
@@ -312,9 +307,6 @@ technologies = {
 		
 		enable_equipment_modules = {
 			tank_auto_cannon_3
-
-			#secondary_turret_hmg_2
-			#secondary_turret_small_cannon_2
 		}
 
 		path = {
@@ -373,7 +365,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			#custom_effect_tooltip = more_slots_on_equipment
+			custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		categories = {
@@ -456,7 +448,7 @@ technologies = {
 
 		
 		on_research_complete = {
-			#custom_effect_tooltip = more_slots_on_equipment
+			custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		categories = {
@@ -603,9 +595,6 @@ technologies = {
 			tank_small_cannon_4
 			tank_close_support_gun_3
 			tank_anti_air_cannon_3
-			
-			#secondary_turret_hmg_3
-			#secondary_turret_small_cannon_3
 		}
 
 		research_cost = 2
@@ -639,7 +628,7 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			#custom_effect_tooltip = more_slots_on_equipment
+			custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		categories = {
@@ -743,10 +732,6 @@ technologies = {
 			tank_rocket_launcher
 			tank_medium_howitzer
 			tank_anti_air_cannon_2
-			
-
-			#secondary_turret_hmg_2
-			#secondary_turret_small_cannon_2
 		}
 
 		path = {
@@ -764,7 +749,7 @@ technologies = {
 
 		
 		on_research_complete = {
-			#custom_effect_tooltip = more_slots_on_equipment
+			custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		ai_will_do = {
@@ -839,7 +824,7 @@ technologies = {
 		}
 		
 		on_research_complete = {
-			#custom_effect_tooltip = more_slots_on_equipment
+			custom_effect_tooltip = more_slots_on_equipment
 		}
 		
 
@@ -913,9 +898,6 @@ technologies = {
 			#stabilizer
 			
 			tank_anti_air_cannon_4
-			
-			#secondary_turret_hmg_3
-			#secondary_turret_small_cannon_3
 		}
 
 		path = {
@@ -932,7 +914,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			#custom_effect_tooltip = more_slots_on_equipment
+			custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		ai_will_do = {
@@ -1160,10 +1142,6 @@ technologies = {
 			#squeezebore_adaptor
 			tank_anti_air_cannon_2
 			#sloped_armor
-			
-
-			#secondary_turret_hmg_2
-			#secondary_turret_small_cannon_2
 		}
 
 		path = {
@@ -1191,7 +1169,7 @@ technologies = {
 
 		
 		on_research_complete = {
-			#custom_effect_tooltip = more_slots_on_equipment
+			custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		ai_will_do = {
@@ -1240,10 +1218,6 @@ technologies = {
 			tank_heavy_howitzer_2
 			#auto_loader
 			tank_anti_air_cannon_3
-			
-
-			#secondary_turret_hmg_3
-			#secondary_turret_small_cannon_3
 		}
 
 		path = {
@@ -1266,7 +1240,7 @@ technologies = {
 
 		
 		on_research_complete = {
-			#custom_effect_tooltip = more_slots_on_equipment
+			custom_effect_tooltip = more_slots_on_equipment
 		}
 
 		ai_will_do = {
@@ -1333,7 +1307,6 @@ technologies = {
 
 	armor_tech_1 = {
 		enable_equipment_modules = {
-			armor_skirts
 		}
 
 		path = {
