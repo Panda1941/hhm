@@ -2985,7 +2985,7 @@ focus_tree = {
 		prerequisite = { focus = GER_mol_rib_pact }
 		will_lead_to_war_with = POL
 		available = {
-			date > 1939.01.01
+			date > 1939.06.01
 			is_subject = no	
 			#Make custom trigger tooltip here
 			85 = {
