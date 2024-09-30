@@ -79,10 +79,13 @@ guiTypes = {
 			@fixed_btn_mod_col_3 = 220
 			@fixed_btn_mod_col_4 = 293
 			@fixed_btn_mod_col_5 = 366
+			@fixed_btn_mod_col_5_5 = 402
 			@fixed_btn_mod_col_6 = 439
 
 			@fixed_btn_mod_row_0 = 1
+			@fixed_btn_mod_row_0_5 = 49
 			@fixed_btn_mod_row_1 = 300
+			@fixed_btn_mod_row_1_5 = 251
 
 			# Code checks this position to know if module is in upper or low row to
 			# give the tooltip the correct anchor 
@@ -129,22 +132,32 @@ guiTypes = {
 			######################################################################
 
 			positionType = {
-				name = "pos_custom_module_slot_window_6"
-				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_0 }
+				name = "pos_custom_module_slot_window_6"	# AMMO SLOT
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_0_5 }
 			}
 
 			positionType = {
-				name = "pos_custom_module_slot_window_7"
-				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_0 }
+				name = "pos_custom_module_slot_window_7"	# RADIO SLOT
+				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_1 }
 			}
 
 			positionType = {
-				name = "pos_custom_module_slot_window_8"
-				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_0 }
+				name = "pos_custom_module_slot_window_8"	# ARMOUR AMOUNT
+				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_1_5 }
 			}
 
 			positionType = {
 				name = "pos_custom_module_slot_window_9"
+				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_0 }
+			}
+
+			positionType = {
+				name = "pos_custom_module_slot_window_10"
+				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_0 }
+			}
+
+			positionType = {
+				name = "pos_custom_module_slot_window_11"
 				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_0 }
 			}
 
@@ -154,7 +167,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "equipment_upgrade_0"
-				position = { x = 220 y = 297 }
+				position = { x = 297 y = 297 }
 				size = { width = 130 height = 50 } 
 			
 				buttonType = {

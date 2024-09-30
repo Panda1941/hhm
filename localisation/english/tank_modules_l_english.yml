@@ -7,6 +7,28 @@
  tank_close_support_gun_2:0 "Advanced Close Support Gun"
  tank_modern_cannon:0 "Modern Cannon"
 
+ secondary_turret_hmg:0 "Basic Heavy Machine Gun"
+ secondary_turret_hmg_2:0 "Improved Heavy Machine Gun"
+ secondary_turret_hmg_3:0 "Advanced Heavy Machine Gun"
+ secondary_turret_small_cannon:0 "Basic Small Cannon"
+ secondary_turret_small_cannon_2:0 "Improved Small Cannon"
+ secondary_turret_small_cannon_3:0 "Advanced Small Cannon"
+
+ EQ_MOD_CAT_tank_special_module_BREAKTHROUGH_TITLE:0 "Breakthrough Modules"
+ EQ_MOD_CAT_tank_special_module_DEFENSE_TITLE:0 "Defense Modules"
+ EQ_MOD_CAT_tank_special_module_OTHER_TITLE:0 "Other Modules"
+ 
+ EQ_MOD_CAT_tank_anti_air_main_armament_TITLE:0 "AA Armaments"
+ EQ_MOD_CAT_tank_small_main_armament_SPG_TITLE:0 "SPG Armaments"
+ EQ_MOD_CAT_tank_medium_main_armament_SPG_TITLE:0 "SPG Armaments"
+ EQ_MOD_CAT_tank_medium_main_armament_TD_TITLE:0 "TD Armaments"
+ EQ_MOD_CAT_tank_heavy_main_armament_SPG_TITLE:0 "SPG Armaments"
+
+ tank_0_low_armour:0 "Flat Armour"
+ tank_1_medium_armour:0 "Sloped Armour"
+ tank_2_high_armour:0 "Steeply Sloped Armour"
+ tank_3_very_high_armour:0 "Curved Armour"
+
 
 
 

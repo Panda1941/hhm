@@ -540,6 +540,7 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			roadwheels_type_slot = tank_small_roadwheels
 			armor_type_slot = tank_riveted_armor
+			special_type_slot_3 = tank_1_medium_armour
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = ammo_ap
 		}
@@ -561,6 +562,7 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			roadwheels_type_slot = tank_small_roadwheels
 			armor_type_slot = tank_riveted_armor
+			special_type_slot_3 = tank_1_medium_armour
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = ammo_ap
 		}
@@ -583,6 +585,7 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			roadwheels_type_slot = tank_small_roadwheels
 			armor_type_slot = tank_riveted_armor
+			special_type_slot_3 = tank_1_medium_armour
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = ammo_ap
 		}
@@ -603,6 +606,7 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			roadwheels_type_slot = tank_small_roadwheels
 			armor_type_slot = tank_riveted_armor
+			special_type_slot_3 = tank_1_medium_armour
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = ammo_ap
 		}
@@ -624,6 +628,7 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			roadwheels_type_slot = tank_small_roadwheels
 			armor_type_slot = tank_riveted_armor
+			special_type_slot_3 = tank_1_medium_armour
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = ammo_ap
 		}
