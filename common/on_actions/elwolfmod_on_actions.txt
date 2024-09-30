@@ -14,26 +14,6 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = {
-						tag = GRE
-					}
-				}
-				GRE = {
-					load_oob = "GRE_ELWOLF_SPAWN"
-				}
-			}
-			if = {
-				limit = {
-					FROM = {
-						tag = YUG
-					}
-				}
-				YUG = {
-					load_oob = "YUG_ELWOLF_SPAWN"
-				}
-			}
-			if = {
-				limit = {
-					FROM = {
 						tag = POL
 					}
 				}

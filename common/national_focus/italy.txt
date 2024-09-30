@@ -4014,36 +4014,34 @@ focus_tree = {
 			add_state_claim = 103 #DALMATIA
 			add_state_claim = 105 #MONTENEGRO
 
-			if = {
-				limit = {
-					country_exists = CRO
-					OR = {
-						103 = { is_fully_controlled_by = CRO }
-						105 = { is_fully_controlled_by = CRO }
-					}
-				}
-				activate_targeted_decision = { target = CRO decision = ITA_send_ultimatum_to_country_balkan }
+			add_named_threat = { threat = 6 name = ITA_balkan_ambition }
+
+			
+
+			YUG = {
+				transfer_navy = { target = ITA }
 			}
-			if = {
-				limit = {
-					country_exists = MNT
-					OR = {
-						103 = { is_fully_controlled_by = MNT }
-						105 = { is_fully_controlled_by = MNT }
-					}
-				}
-				activate_targeted_decision = { target = MNT decision = ITA_send_ultimatum_to_country_balkan }
+			ITA = {
+				annex_country = { target = YUG }
 			}
-			if = {
-				limit = {
-					country_exists = YUG
-					OR = {
-						103 = { is_fully_controlled_by = YUG }
-						105 = { is_fully_controlled_by = YUG }
-					}
-				}
-				activate_targeted_decision = { target = YUG decision = ITA_send_ultimatum_to_country_balkan }
-			}	
+
+			BUL = {
+				transfer_state = 803
+				transfer_state = 106
+				transfer_state = 77
+
+				give_resource_rights = { receiver = ITA state = 803 }
+				give_resource_rights = { receiver = ITA state = 106 }	
+			}
+
+			803 = {	add_core_of = BUL}
+			106 = {	add_core_of = BUL}
+			77 = { add_core_of = BUL}
+
+			HUN = {
+				transfer_state = 764
+				transfer_state = 45
+			}
 		}
 	}
 
@@ -4352,10 +4350,35 @@ focus_tree = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = GRE
+
+			
+			GRE = {
+				transfer_navy = { target = ITA }
 			}
+
+			ITA = {
+				add_named_threat = { threat = 2 name = ITA_war_with_greece }
+				annex_country = { target = GRE }
+			}
+
+			BUL = {
+				transfer_state = 731
+				transfer_state = 184
+				give_resource_rights = { receiver = ITA state = 184 }
+				give_resource_rights = { receiver = ITA state = 731 }
+			}
+
+			
+			
+			184 = {	add_core_of = BUL }
+			731 = { add_core_of = BUL }
+
+			341 = {
+				set_demilitarized_zone = no
+				add_core_of = BUL
+				transfer_state_to = BUL
+				add_manpower = 289548
+			}	
 		}
 	}
 
