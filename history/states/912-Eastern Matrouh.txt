@@ -10,6 +10,10 @@ state={
 		owner = ENG
 		buildings = {
 			infrastructure = 2
+			13264 = {
+				naval_base = 1
+
+			}
 
 		}
 		victory_points = {
@@ -20,7 +24,7 @@ state={
 	}
 
 	provinces={
-		10061 11910 11967 13259 13261 13264 13275 13276 13279 
+		7148 10061 11910 11967 13259 13261 13264 13275 13276 13279 
 	}
 	manpower=32556
 	buildings_max_level_factor=1.000
