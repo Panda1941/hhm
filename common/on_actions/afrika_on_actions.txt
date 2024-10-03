@@ -1,15 +1,5 @@
 on_actions = {
 		
-	on_startup = {
-		effect = {
-			451 = {
-				add_dynamic_modifier = { 
-					modifier = africa_state_bonus 
-					scope = ITA
-				}
-			}
-		}
-	}
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 

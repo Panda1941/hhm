@@ -695,8 +695,5 @@ spriteTypes = {
 		name = "SOV_war_zone_modifier_icon"
 		textureFile = "gfx/interface/state_modifiers/SOV_war_zone_modifier_icon.dds"
 	}
-	spriteType = {
-		name = "africa_bonus"
-		textureFile = "gfx/interface/ideas/idea_generic_org_of_african_unity.dds"
-	}
+
 }

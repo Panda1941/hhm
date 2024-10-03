@@ -26,15 +26,6 @@
 #	can be added to countries, states or unit leaders
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
-africa_state_bonus = {
-	enable = { always = yes }
-	attacker_modifier = true
-	icon = africa_bonus
-	
-	army_strength_factor = 1.0
-	army_org_regain = 0.25
-}
-
 sabotaged_resources = {
 	remove_trigger = { 
 		ROOT = {
