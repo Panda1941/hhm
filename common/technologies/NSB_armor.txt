@@ -1307,6 +1307,7 @@ technologies = {
 
 	armor_tech_1 = {
 		enable_equipment_modules = {
+			armor_skirts
 		}
 
 		path = {
