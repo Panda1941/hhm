@@ -652,9 +652,9 @@ technologies = {
 		}
 		
 		enable_equipment_modules = {
-			tank_medium_howitzer
 			tank_medium_cannon
 			tank_high_velocity_cannon
+			tank_medium_howitzer
 			tank_anti_air_cannon
 		}
 
@@ -730,7 +730,6 @@ technologies = {
 			tank_medium_cannon_2
 			tank_high_velocity_cannon_2
 			tank_rocket_launcher
-			tank_medium_howitzer
 			tank_anti_air_cannon_2
 		}
 
@@ -813,8 +812,6 @@ technologies = {
 			tank_high_velocity_cannon_3
 			tank_rocket_launcher_2
 			tank_medium_howitzer_2
-			#squeezebore_adaptor
-			##stabilizer
 			tank_anti_air_cannon_3
 		}
 
@@ -894,9 +891,7 @@ technologies = {
 		}
 		
 		enable_equipment_modules = {
-		    tank_medium_cannon_4
-			#stabilizer
-			
+		    tank_medium_cannon_4			
 			tank_anti_air_cannon_4
 		}
 
@@ -957,8 +952,6 @@ technologies = {
 			tank_high_velocity_cannon_4
 			tank_medium_howitzer_3 
 			tank_rocket_launcher_3
-			#auto_loader
-			#sloped_armor
 		}
 
 		path = {

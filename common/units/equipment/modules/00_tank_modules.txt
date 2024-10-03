@@ -396,6 +396,7 @@ equipment_modules = {
 		abbreviation = "mb1"
 		category = tank_medium_turret_type
 		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
 		
 		add_stats = {
 			build_cost_ic = 4.0
@@ -411,6 +412,7 @@ equipment_modules = {
 		abbreviation = "mc1"
 		category = tank_medium_turret_type
 		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
 		
 		add_stats = {
 			build_cost_ic = 2.5
