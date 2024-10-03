@@ -39,6 +39,9 @@ ideas = {
 			removal_cost = -1
 			picture = generic_org_of_african_unity
 			name = "Africa Bonus"
+			cancel = {
+				SOV = { has_war_with = GER }
+			}
 			modifier = {  
 				army_strength_factor = 1.0
 				supply_consumption_factor = -0.05

@@ -238,8 +238,7 @@ focus_tree = {
 		id = ITA_strengthen_northern_industry
 		icon = GFX_focus_ITA_northern_industry
 		prerequisite = { focus = ITA_industria_della_gomma_sintetica }
-		mutually_exclusive = { focus = ITA_modernize_the_mezzogiorno }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
 		cost = 10
@@ -280,82 +279,10 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
-			ITA_replace_designers_by_improved_version_north = yes
-		}
-	}
-
-	focus = {
-		id = ITA_modernize_the_mezzogiorno
-		icon = GFX_focus_ITA_southern_industry
-		prerequisite = { focus = ITA_industria_della_gomma_sintetica }
-		mutually_exclusive = { focus = ITA_strengthen_northern_industry }
-		x = 1
-		y = 1
-		relative_position_id = ITA_industria_della_gomma_sintetica
-		cost = 6
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			117 = { #CAMPAGNA (Napoli)
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes						
-				}
-
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			115 = { #SICILY (Palermo, Messina, Catania)
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes						
-				}
-
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			849 = { #PUGLIA (Taranto, Bari, Foggia)
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes						
-				}
-				
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-
 			162 = {
 				add_resource = {
 					type = steel
@@ -368,8 +295,9 @@ focus_tree = {
 					amount = 12
 				}
 			}
-
+			
 			ITA_replace_designers_by_improved_version_south = yes
+			ITA_replace_designers_by_improved_version_north = yes
 		}
 	}
 
@@ -679,8 +607,7 @@ focus_tree = {
 		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = ITA_expand_national_universities }
 		prerequisite = { focus = ITA_redirect_alfa_romeo_production }
-		mutually_exclusive = { focus = ITA_keep_specialization }
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = ITA_redirect_alfa_romeo_production
 		cost = 10
@@ -693,46 +620,19 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = 0.2 }
-			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = -0.04 }
 			custom_effect_tooltip = ITA_increase_production_military_industry_tt
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
-		}
-	}
-
-	focus = {
-		id = ITA_keep_specialization
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = ITA_expand_national_universities }
-		prerequisite = { focus = ITA_redirect_alfa_romeo_production }
-		mutually_exclusive = { focus = ITA_increase_production }
-		x = 1
-		y = 2
-		relative_position_id = ITA_redirect_alfa_romeo_production
-		cost = 10
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
-			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = 0.1 }
-			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.1 }
-			add_to_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = -0.2 }
-			custom_effect_tooltip = ITA_keep_specialization_military_industry_tt
-
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 		}
 	}
 
 	focus = {
 		id = ITA_thermojet_research
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = ITA_increase_production focus = ITA_keep_specialization }
-
+		prerequisite = { focus = ITA_increase_production }
+		prerequisite = { focus = ITA_milan_comms_industry }
+		
 		x = 1
 		y = 1
 		relative_position_id = ITA_increase_production
@@ -931,8 +831,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 
 			custom_effect_tooltip = ITA_increase_artillery_production_military_industry_tt
 			hidden_effect = {
@@ -1129,8 +1029,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 
 			add_to_variable = { ITA_re_land_doctrine_cost_factor = -0.1 }
 			add_to_variable = { ITA_re_army_army_org_factor = 0.05 }
@@ -1392,8 +1292,8 @@ focus_tree = {
 				remove_ideas = ITA_hidden_research_penalties_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 
 
 			#Update NS icon
@@ -1420,8 +1320,8 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0.05 }
 			custom_effect_tooltip = ITA_modernize_ansaldo_facilities_military_industry_tt
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 
 			158 = { #PIEDMONT (Genova)
 				add_extra_state_shared_building_slots = 1
@@ -1544,8 +1444,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 
 			add_tech_bonus = {
 				name = ITA_citta_dell_aria
@@ -1784,8 +1684,7 @@ focus_tree = {
 		id = ITA_standardization
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = ITA_superaereo }
-		mutually_exclusive = { focus = ITA_specialization }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_superaereo
 		cost = 5
@@ -1802,70 +1701,13 @@ focus_tree = {
 				add_ideas = ITA_hidden_standardization_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 		
 			add_tech_bonus = {
 				name = ITA_standardization
 				bonus = 0.75
 				uses = 1
-				category = air_equipment
-			}
-
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-
-			#Update NS icon
-			ITA_improve_regia_aeronautica_dm_effect = yes
-		}
-	}
-
-	focus = {
-		id = ITA_specialization
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = ITA_superaereo }
-		mutually_exclusive = { focus = ITA_standardization }
-		x = 1
-		y = 1
-		relative_position_id = ITA_superaereo
-		cost = 5
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
-
-		completion_reward = {
-			#More expensive to edit templates, more cheap to produce aircraft
-			add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = -0.5 }
-			custom_effect_tooltip = ITA_specialization_ra_tt
-
-			hidden_effect = {
-				add_ideas = ITA_hidden_specialization_ns
-			}
-
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
-
-			air_experience = 15
-	
-			add_tech_bonus = {
-				name = ITA_specialization
-				bonus = 0.5
-				uses = 2
 				category = air_equipment
 			}
 
@@ -1897,7 +1739,7 @@ focus_tree = {
 		icon = GFX_focus_generic_long_range_aircraft
 		prerequisite = { focus = ITA_standardization }
 
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = ITA_standardization
 		cost = 5
@@ -1934,7 +1776,7 @@ focus_tree = {
 	focus = {
 		id = ITA_bomber_designs
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = ITA_standardization focus = ITA_specialization }
+		prerequisite = { focus = ITA_standardization }
 
 		x = 2
 		y = 0
@@ -1970,7 +1812,7 @@ focus_tree = {
 	focus = {
 		id = ITA_fighter_designs
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = ITA_standardization focus = ITA_specialization }
+		prerequisite = { focus = ITA_standardization }
 
 		x = 4
 		y = 0
@@ -2006,7 +1848,7 @@ focus_tree = {
 	focus = {
 		id = ITA_multirole_aircraft
 		icon = GFX_focus_generic_multi_role_aircraft
-		prerequisite = { focus = ITA_specialization }
+		prerequisite = { focus = ITA_standardization }
 
 		x = 6
 		y = 0
@@ -2058,8 +1900,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 
 			add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
 			add_to_variable = { ITA_ra_air_superiority_efficiency = 0.05 }
@@ -2278,8 +2120,12 @@ focus_tree = {
 
 		completion_reward = {
 			
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			add_to_variable = { ITA_rm_naval_doctrine_cost_factor = -0.1 }
+			add_to_variable = { ITA_rm_naval_morale_factor = 0.1 }
+			add_to_variable = { ITA_rm_strike_force_movement_org_loss = -0.05 }
+			custom_effect_tooltip = ITA_supermarina_rm_tt
+			navy_experience = 50
+			
 			if = {
 				limit = {
 					162 = {
@@ -2473,48 +2319,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_supermarina
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = ITA_expand_naval_facilities }
-
-		x = 0
-		y = 1
-		relative_position_id = ITA_expand_naval_facilities
-		cost = 5
-		available = {
-			date > 1936.06.1
-		}
-
-		search_filters = {FOCUS_FILTER_NAVY_XP}
-
-		completion_reward = {
-			add_to_variable = { ITA_rm_naval_doctrine_cost_factor = -0.1 }
-			add_to_variable = { ITA_rm_naval_morale_factor = 0.1 }
-			add_to_variable = { ITA_rm_strike_force_movement_org_loss = -0.05 }
-			custom_effect_tooltip = ITA_supermarina_rm_tt
-			
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
-
-			navy_experience = 50
-			#if = {
-			#	limit = {
-			#		has_dlc = "No Step Back"
-			#	}
-			#	custom_effect_tooltip = "TODO_Manu: Cost reduction for Navy spirits. Code support"
-			#}
-
-			#Update NS icon
-			ITA_improve_regia_marina_dm_effect = yes
-		}
-	}
-
-	focus = {
 		id = ITA_stockpile_fuel
 		icon = GFX_focus_generic_stockpile_fuel
 		prerequisite = { focus = ITA_expand_naval_facilities }
 
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
@@ -2654,7 +2463,7 @@ focus_tree = {
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = ITA_expand_naval_facilities }
 
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
@@ -2701,11 +2510,10 @@ focus_tree = {
 	focus = {
 		id = ITA_incrociatori_leggeri
 		icon = GFX_focus_generic_cruiser2
-		prerequisite = { focus = ITA_supermarina }
-		mutually_exclusive = { focus = ITA_incrociatori_pesanti }
+		prerequisite = { focus = ITA_expand_naval_facilities }
 		x = -1
 		y = 1
-		relative_position_id = ITA_supermarina
+		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
 		available = {
 		}
@@ -2719,8 +2527,8 @@ focus_tree = {
 				add_ideas = ITA_hidden_light_cruisers_production_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 
 			navy_experience = 25
 
@@ -2746,11 +2554,10 @@ focus_tree = {
 	focus = {
 		id = ITA_incrociatori_pesanti
 		icon = GFX_focus_generic_navy_battleship2
-		prerequisite = { focus = ITA_supermarina }
-		mutually_exclusive = { focus = ITA_incrociatori_leggeri }
+		prerequisite = { focus = ITA_expand_naval_facilities }
 		x = 1
 		y = 1
-		relative_position_id = ITA_supermarina
+		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
 		available = {
 		}
@@ -2764,8 +2571,8 @@ focus_tree = {
 				add_ideas = ITA_hidden_heavy_cruisers_production_ns
 			}			
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 
 			navy_experience = 25
 
@@ -2931,7 +2738,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_cacciatorpediniere_di_scorta
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -2939,8 +2746,8 @@ focus_tree = {
 
 		completion_reward = {
 			
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			
+			
 			custom_effect_tooltip = ITA_flotta_d_evasione_admiral_traits_tt
 			#Stupid tooltips oh my god I hate this game
 			hidden_effect = {

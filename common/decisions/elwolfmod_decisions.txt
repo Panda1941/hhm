@@ -540,83 +540,44 @@ operations = {
 		}
 		complete_effect = {
 			ENG = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			FRA = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			CAN = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			SAF = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			RAJ = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			AST = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			NZL = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 
 			GER = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			ITA = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			ROM = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			HUN = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			SPR = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 			BUL = {
-				add_timed_idea = {
-					idea = africa_bonus
-					days = 240
-				}
+				add_ideas = { africa_bonus }
 			}
 		}
 	}
