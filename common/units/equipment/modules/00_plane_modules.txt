@@ -619,7 +619,8 @@ equipment_modules = {
 
 	heavy_mg_4x = {
 		abbreviation = "hmg4"
-		category = fighter_weapon
+		category = fighter_weapon_lmg
+		gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { fighter heavy_fighter }
 
@@ -1763,286 +1764,21 @@ equipment_modules = {
 ##     ## ######   ######   ######   ## ## ##  ######   ##  ##     ## ######         ##    ##     ## ########  ########  ######      ##     ######  
 ##     ## ##       ##       ##       ##  ####       ##  ##   ##   ##  ##             ##    ##     ## ##   ##   ##   ##   ##          ##          ## 
 ##     ## ##       ##       ##       ##   ### ##    ##  ##    ## ##   ##             ##    ##     ## ##    ##  ##    ##  ##          ##    ##    ## 
-########  ######## ##       ######## ##    ##  ######  ####    ###    ########       ##     #######  ##     ## ##     ## ########    ##     ######  
-
-	lmg_defense_turret = {
-		abbreviation = "lmgt"
-		category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			build_cost_ic = 1
-			weight = 0.5
-			air_attack = 0.5
-			air_defence = 0.75
-		}
-
-		mission_type_stats = {
-			limit = {
-				naval_bomber
-				port_strike
-				strategic_bomber
-				naval_patrol
-				cas
-				attack_logistics
-				naval_mines_planting
-			}
-
-			add_stats = {
-				air_agility = 0.5
-			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.01
-		}
-
-		dismantle_cost_ic = 1
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret
-			convert_cost_ic = 1.25
-		}
-		can_convert_from = {
-			module = lmg_defense_turret
-			convert_cost_ic = 1
-		}
-		can_convert_from = {
-			module = cannon_defense_turret
-			convert_cost_ic = 1
-		}
-		xp_cost = 0
-	}
-
-	lmg_defense_turret_2x = {
-		abbreviation = "lmgt2"
-		category = plane_special_module_defense_turret_x2
-		gui_category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			build_cost_ic = 2
-			weight = 1
-			air_attack = 0.75
-			air_defence = 1.5
-		}
-
-		mission_type_stats = {
-			limit = {
-				naval_bomber
-				port_strike
-				strategic_bomber
-				naval_patrol
-				cas
-				attack_logistics
-				naval_mines_planting
-			}
-
-			add_stats = {
-				air_agility = 1
-			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.02
-		}
-
-		dismantle_cost_ic = 2
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret_x2
-			convert_cost_ic = 2.5
-		}
-		can_convert_from = {
-			module = hmg_defense_turret_2x
-			convert_cost_ic = 2.25
-		}
-		can_convert_from = {
-			module = cannon_defense_turret_2x
-			convert_cost_ic = 2.25
-		}
-		xp_cost = 0
-	}
-
-	hmg_defense_turret = {
-		abbreviation = "hmgt"
-		category = plane_special_module_defense_turret
-		gui_category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			build_cost_ic = 2
-			weight = 1
-			air_attack = 0.75
-			air_defence = 1.5
-		}
-
-		mission_type_stats = {
-			limit = {
-				naval_bomber
-				port_strike
-				strategic_bomber
-				naval_patrol
-				cas
-				attack_logistics
-				naval_mines_planting
-			}
-			add_stats = {
-				air_agility = 1
-			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.02
-		}
-
-		dismantle_cost_ic = 1
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret
-			convert_cost_ic = 2.75
-		}
-		can_convert_from = {
-			module = lmg_defense_turret
-			convert_cost_ic = 2
-		}
-		can_convert_from = {
-			module = cannon_defense_turret
-			convert_cost_ic = 2
-		}
-		xp_cost = 0
-	}
-
-	hmg_defense_turret_2x = {
-		abbreviation = "hmgt2"
-		category = plane_special_module_defense_turret_x2
-		gui_category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			build_cost_ic = 4
-			weight = 2
-			air_attack = 1.5
-			air_defence = 3
-		}
-
-		mission_type_stats = {
-			limit = {
-				naval_bomber
-				port_strike
-				strategic_bomber
-				naval_patrol
-				cas
-				attack_logistics
-				naval_mines_planting
-			}
-			add_stats = {
-				air_agility = 2
-			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.03
-		}
-
-		dismantle_cost_ic = 2
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret_x2
-			convert_cost_ic = 4
-		}
-		can_convert_from = {
-			module = lmg_defense_turret_2x
-			convert_cost_ic = 3
-		}
-		can_convert_from = {
-			module = cannon_defense_turret_2x
-			convert_cost_ic = 3
-		}
-		xp_cost = 0
-	}
-
-	cannon_defense_turret = {
-		abbreviation = "cat"
-		category = plane_special_module_defense_turret
-		gui_category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			build_cost_ic = 4
-			weight = 2
-			air_attack = 1.5
-			air_defence = 3
-		}
-
-		mission_type_stats = {
-			limit = {
-				naval_bomber
-				port_strike
-				strategic_bomber
-				naval_patrol
-				cas
-				attack_logistics
-				naval_mines_planting
-			}
-			add_stats = {
-				air_agility = 2
-			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.03
-		}
-
-		dismantle_cost_ic = 1
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret
-			convert_cost_ic = 3
-		}
-		can_convert_from = {
-			module = hmg_defense_turret
-			convert_cost_ic = 2.5
-		}
-		xp_cost = 0
-	}
+########  ######## ##       ######## ##    ##  ######  ####    ###    ########       ##     #######  ##     ## ##     ## ########    ##     ###### 
 
 	cannon_defense_turret_2x = {
 		abbreviation = "cat2"
-		category = plane_special_module_defense_turret_x2
-		gui_category = plane_special_module_defense_turret
+		category = plane_special_module_defense_turret
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 8
+			build_cost_ic = 4
 			weight = 4
-			air_attack = 3
-			air_defence = 6
-		}
-
-		mission_type_stats = {
-			limit = {
-				naval_bomber
-				port_strike
-				strategic_bomber
-				naval_patrol
-				cas
-				attack_logistics
-				naval_mines_planting
-			}
-			add_stats = {
-				air_agility = 4
-			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.075
+			air_attack = 4
+			air_defence = 1
 		}
 
 		dismantle_cost_ic = 2
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret_x2
-			convert_cost_ic = 6
-		}
-		can_convert_from = {
-			module = hmg_defense_turret_2x
-			convert_cost_ic = 5
-		}
 		xp_cost = 0
 	}
 
