@@ -66,6 +66,10 @@ sub_units = {
 		urban = {
 			attack = -0.05
 		}
+		
+		urban_fortress = {
+			attack = -0.05
+		}
 
 		amphibious = {
 			attack = -0.4
@@ -140,6 +144,11 @@ sub_units = {
 		}
 
 		urban = {
+			attack = -0.05
+			movement = -0.05
+		}
+		
+		urban_fortress = {
 			attack = -0.05
 			movement = -0.05
 		}

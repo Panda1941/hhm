@@ -249,6 +249,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/terrains/terrain_desert.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_terrain_urban_fortress"
+		textureFile = "gfx/interface/terrains/terrain_urban_fortress.dds"
+	}
+	
 	# TERRAIN WINTER
 	
 	spriteType = {
@@ -296,6 +301,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/strait_canal_icon.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_terrain_urban_fortress_winter"
+		textureFile = "gfx/interface/terrains/terrain_urban_fortress_winter.dds"
+	}
 	
 	### Water Terrain
 	

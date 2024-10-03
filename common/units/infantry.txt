@@ -114,6 +114,9 @@ sub_units = {
 		urban = {
 			movement = 0.2
 		}
+		urban_fortress = {
+			movement = 0.2
+		}
 		desert = {
 			movement = 0.05
 		}
@@ -461,6 +464,10 @@ sub_units = {
 			attack = 0.15
 		}
 		
+		urban_fortress = {
+			attack = 0.15
+		}
+		
 	}
 	
 	shock_troops = {
@@ -522,6 +529,12 @@ sub_units = {
 		}
 		
 		urban = {
+			attack = 0.15
+			defence = 0.05
+			movement = 0.17
+		}
+		
+		urban_fortress = {
 			attack = 0.15
 			defence = 0.05
 			movement = 0.17
@@ -665,6 +678,10 @@ sub_units = {
 			attack = -0.1
 			defence = -0.1
 		}
+		urban_fortress = {
+			attack = -0.1
+			defence = -0.1
+		}
 		river = {
 			attack = -0.1
 			movement = -0.1
@@ -740,6 +757,10 @@ sub_units = {
 			attack = -0.1
 		}
 		urban = {
+			attack = -0.10
+			defence = -0.10
+		}
+		urban_fortress = {
 			attack = -0.10
 			defence = -0.10
 		}
@@ -841,6 +862,9 @@ sub_units = {
 		}
 		
 		urban = {
+			defence = 0.05
+		}
+		urban_fortress = {
 			defence = 0.05
 		}
 	}
@@ -964,6 +988,9 @@ sub_units = {
 			defence = 0.05
 		}	
 		urban = {
+			defence = 0.05
+		}
+		urban_fortress = {
 			defence = 0.05
 		}
 	}

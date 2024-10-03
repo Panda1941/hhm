@@ -355,6 +355,9 @@ sub_units = {
 		urban = {
 			defence = -0.10 
 		}
+		urban_fortress = {
+			defence = -0.10 
+		}
 
 		mountain = {
 			movement = -0.2
@@ -440,6 +443,9 @@ sub_units = {
 			defence = -0.6
 		}
 		urban = {
+			defence = -0.10 
+		}
+		urban_fortress = {
 			defence = -0.10 
 		}
 

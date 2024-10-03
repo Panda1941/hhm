@@ -13,4 +13,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ENG/idea_ENG_railways.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_adjuster_urban_fortress_bg"
+		textureFile = "gfx/interface/dense_urban_icon.dds"
+	}
+	
 }

@@ -217,6 +217,9 @@ sub_units = {
 		urban = {
 			defence = -0.10 
 		}
+		urban_fortress = {
+			defence = -0.10 
+		}
 		fort = {
 			attack = 0.1
 		}
