@@ -503,9 +503,9 @@ NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.15
 -- NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS_PROGRESS = 0.5  -- min required intel to show current focus progress
 
 -- Flicker Bombing
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.05    -- How much efficiency to regain per day. Gain applied hourly.
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.05    -- How much efficiency to regain per day. Gain applied hourly.
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 0.5
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.192    -- How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.072    -- How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 0.192
 
 
 ---- Dockyards
