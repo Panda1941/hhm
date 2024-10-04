@@ -1102,7 +1102,7 @@ characters={
 				rocketry = 0.150
 			}
 			traits = {
-				rocket_scientist
+				military_theorist
 			}
 		}
 	}

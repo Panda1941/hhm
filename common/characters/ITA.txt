@@ -1391,7 +1391,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				assault_avaition
+				military_theorist
 			}
 		}
 	}

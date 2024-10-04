@@ -799,7 +799,7 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				submarine_specialist
+				military_theorist
 			}
 		}
 		
