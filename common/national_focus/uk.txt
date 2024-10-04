@@ -1689,9 +1689,6 @@ focus_tree = {
 		prerequisite = {
 			focus = uk_waves_focus
 		}
-		mutually_exclusive = {
-			focus = uk_battleship_focus
-		}
 		icon = GFX_goal_generic_navy_carrier
 		x = -1
 		y = 1
@@ -1718,9 +1715,6 @@ focus_tree = {
 		id = uk_battleship_focus
 		prerequisite = {
 			focus = uk_waves_focus
-		}
-		mutually_exclusive = {
-			focus = uk_carrier_focus
 		}
 		icon = GFX_goal_generic_navy_battleship
 		x = 1
