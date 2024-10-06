@@ -1281,7 +1281,7 @@ equipment_modules = {
 
 		add_stats = {
 			air_range = 800
-			build_cost_ic = 4
+			build_cost_ic = 15
 			weight = 2
 		}
 
