@@ -1275,14 +1275,16 @@ equipment_modules = {
 
 	heavy_fighter_range_module = {
 		abbreviation = "hfrm"
-		category = plane_special_defence_module_small
+		category = plane_special_range_module_small
 		gui_category = plane_special_module_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_range = 800
-			build_cost_ic = 15
-			weight = 2
+			build_cost_ic = 18
+		}
+		multiply_stats = {
+			air_range = 0.2
 		}
 
 		xp_cost = 0
