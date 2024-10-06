@@ -25,6 +25,7 @@ technologies = {
 			
 			self_sealing_fuel_tanks_small
 			armor_plate_small
+			heavy_fighter_range_module
 		}	
 	
 		path = {

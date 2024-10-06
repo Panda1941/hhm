@@ -1099,7 +1099,7 @@ equipments = {
 
 		module_count_limit = {
 			module = medium_bomb_bay
-			count < 3
+			count < 6
 		}
 
 		module_count_limit = {
@@ -1157,8 +1157,8 @@ equipments = {
 
 		air_range = 1250
 		maximum_speed = 325
-		air_agility = 25
-		air_defence = 12
+		air_agility = 15
+		air_defence = 18
 		weight = 8
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
@@ -1176,8 +1176,8 @@ equipments = {
 
 		air_range = 1500
 		maximum_speed = 350
-		air_agility = 30
-		air_defence = 14
+		air_agility = 20
+		air_defence = 21
 		weight = 8
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
@@ -1191,8 +1191,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tac_weapon
-					fighter_weapon
-					fighter_weapon_lmg
 					recon_camera
 				}
 			}
@@ -1204,7 +1202,6 @@ equipments = {
 					tac_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
-					fighter_weapon_lmg
 				}
 			}
 
@@ -1263,8 +1260,8 @@ equipments = {
 
 		air_range = 1750
 		maximum_speed = 375
-		air_agility = 35
-		air_defence = 16
+		air_agility = 25
+		air_defence = 24
 		weight = 12
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
@@ -1278,8 +1275,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tac_weapon
-					fighter_weapon
-					fighter_weapon_lmg
 					recon_camera
 				}
 			}
@@ -1291,7 +1286,6 @@ equipments = {
 					tac_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
-					fighter_weapon_lmg
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -1362,8 +1356,8 @@ equipments = {
 
 		air_range = 2000
 		maximum_speed = 400
-		air_agility = 40
-		air_defence = 18
+		air_agility = 30
+		air_defence = 27
 		weight = 14
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
@@ -1377,8 +1371,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tac_weapon
-					fighter_weapon
-					fighter_weapon_lmg
 					recon_camera
 				}
 			}
@@ -1390,7 +1382,6 @@ equipments = {
 					tac_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
-					fighter_weapon_lmg
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -1461,8 +1452,8 @@ equipments = {
 
 		air_range = 2500
 		maximum_speed = 425
-		air_agility = 45
-		air_defence = 20
+		air_agility = 35
+		air_defence = 30
 		weight = 16
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
@@ -1476,8 +1467,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tac_weapon
-					fighter_weapon
-					fighter_weapon_lmg
 					recon_camera
 				}
 			}
@@ -1490,7 +1479,6 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					mine_warfare_offense
-					fighter_weapon_lmg
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
