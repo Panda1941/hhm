@@ -1281,10 +1281,12 @@ equipment_modules = {
 
 		add_stats = {
 			air_range = 800
-			build_cost_ic = 18
+			weight = 3
+			build_cost_ic = 12
 		}
 		multiply_stats = {
-			air_range = 0.2
+			air_range = 0.25
+			maximum_speed = -0.06
 		}
 
 		xp_cost = 0
