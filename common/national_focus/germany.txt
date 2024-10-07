@@ -2096,6 +2096,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_long_range_escorts
+		text = "Tactical Bombing Initiative"
 		icon = GFX_focus_GER_long_range_escorts
 		prerequisite = { focus = GER_tactical_air_effort focus = GER_strategic_air_effort }
 		x = -1
