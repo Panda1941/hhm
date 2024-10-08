@@ -1660,7 +1660,8 @@ focus_tree = {
 				}
 				remove_ideas = ROM_army_tensions
 			}
-			remove_ideas = neutrality_idea 				
+			remove_ideas = neutrality_idea 		
+			remove_ideas = ROM_king_carol_ii_hedonist		
 		}
 	}
 
