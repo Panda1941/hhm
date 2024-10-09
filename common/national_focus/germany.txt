@@ -1999,7 +1999,7 @@ focus_tree = {
 			mio:GER_messerschmitt_organization = { add_mio_size = 1 }
 
 
-			add_research_slot = 1
+			#add_research_slot = 1
 			
 			
 			add_tech_bonus = {
