@@ -182,12 +182,12 @@ ideas = {
 					has_government = fascism
 					has_government = communism
 					has_war = yes
-					AND = { NOT = { tag = USA } threat > 0.45 }
+					AND = { NOT = { tag = USA } threat > 0.30 }
 					AND = { tag = USA threat > 0.85 }
 				}
 				OR = { 
 				has_war_support > 0.40
-				AND = { has_war_support > 0.45 has_war = yes } 
+				AND = { has_war_support > 0.30 has_war = yes } 
 				}
 				if = {
 					limit = {
