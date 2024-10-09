@@ -264,8 +264,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 2
-			hard_attack = 1
+			soft_attack = 4
+			hard_attack = 2
 			ap_attack = 1
 			build_cost_ic = 0.75
 		}
@@ -285,9 +285,9 @@ equipment_modules = {
 		parent = mech_heavy_machine_gun
 
 		add_stats = {
-			soft_attack = 4
-			hard_attack = 2
-			ap_attack = 4
+			soft_attack = 8
+			hard_attack = 8
+			ap_attack = 6
 			build_cost_ic = 1.0
 			reliability = -0.08
 		}
@@ -305,9 +305,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		parent = mech_auto_cannon
 		add_stats = {
-			soft_attack = 6
-			hard_attack = 4
-			ap_attack = 8
+			soft_attack = 10
+			hard_attack = 12
+			ap_attack = 20
 			build_cost_ic = 1.25
 			reliability = -0.08
 		}
