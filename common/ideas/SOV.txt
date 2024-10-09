@@ -108,7 +108,7 @@ ideas = {
 			}
 			
 			modifier = {
-				operative_slot = 1
+				operative_slot = 2
 			}
 		}
 
@@ -124,7 +124,6 @@ ideas = {
 			}
 			
 			modifier = {
-				operative_slot = 1
 				land_reinforce_rate = 0.08
 			}
 		}

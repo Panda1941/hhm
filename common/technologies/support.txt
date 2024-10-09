@@ -100,7 +100,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -183,7 +183,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -224,7 +224,7 @@ technologies = {
 			pioneer_support
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -283,7 +283,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -351,7 +351,7 @@ technologies = {
 				attack = 0.10
 			}
 		}
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -400,7 +400,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -459,7 +459,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -500,7 +500,7 @@ technologies = {
 			rangers_support
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -526,7 +526,7 @@ technologies = {
 			dozer_blade
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -556,7 +556,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -596,7 +596,7 @@ technologies = {
 			recon = 2
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -642,7 +642,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 0.5
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -712,7 +712,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -747,7 +747,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -777,7 +777,7 @@ technologies = {
 			suppression_factor = 0.1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -827,7 +827,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -881,7 +881,7 @@ technologies = {
 		}
 		
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -922,7 +922,7 @@ technologies = {
 			easy_maintenance
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -953,7 +953,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -994,7 +994,7 @@ technologies = {
 			#equipment_capture_factor = 0.05
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1044,7 +1044,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1092,7 +1092,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1139,7 +1139,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1181,7 +1181,7 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1242,7 +1242,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1299,7 +1299,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1356,7 +1356,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1402,7 +1402,7 @@ technologies = {
 			supply_consumption_factor = -0.08
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1455,7 +1455,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1494,7 +1494,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1540,7 +1540,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1581,7 +1581,7 @@ technologies = {
 			initiative = 0.12
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50

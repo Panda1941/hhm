@@ -108,7 +108,14 @@ focus_tree = {
 		completion_reward = {
 			
 			add_ideas = BUL_foreign_industry_idea
-
+212 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -132,6 +139,14 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = BUL_national_industry_01
 				add_idea = BUL_national_industry_02
+			}
+			48 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -307,7 +322,15 @@ focus_tree = {
 					level = 2
 					path = { 949 935 907 3882 }
 				}
-			}				
+			}
+801 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}			
 		}
 	}
 	
@@ -389,12 +412,17 @@ focus_tree = {
 					type = steel
 					amount = 16
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
-				}	
+				}
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}				
 			}
 		}
 	}
@@ -870,14 +898,14 @@ always = false
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			212 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
+			#212 = {
+			#	add_extra_state_shared_building_slots = 2
+			#	add_building_construction = {
+			#		type = arms_factory
+			#		level = 2
+			#		instant_build = yes
+			#	}
+			#}
 			
 			add_tech_bonus = {
 				name = BUL_darzhavna_voenna_fabrika
@@ -1246,6 +1274,14 @@ YUG = {
 		add_relation_modifier = {
 				target = GER
 				modifier = BUL_license_german_equipment
+			}
+        212 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
 			}			
 		}
 	}

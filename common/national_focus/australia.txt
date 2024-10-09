@@ -1232,10 +1232,10 @@
 					}
 					NOT = { state = 674 }
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1362,10 +1362,10 @@
 					}
 					NOT = { state = 674 }
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = AST_allied_works_council_IC2
@@ -1409,7 +1409,7 @@
 		id = AST_uranium_mining
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = AST_australian_arms_production }
-		x = 1
+		x = 0
 		y = 5
 		relative_position_id = AST_standard_gauge_railway
 
@@ -1518,6 +1518,17 @@
 				remove_idea = AST_great_depression_1
 				add_idea = AST_great_depression_2
 			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = { state = 674 }
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1583,6 +1594,17 @@
 			swap_ideas = {
 				remove_idea = AST_great_depression_2
 				add_idea = AST_great_depression_3
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = { state = 674 }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}

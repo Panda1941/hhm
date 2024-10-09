@@ -108,7 +108,7 @@ technologies = {
 		} 
 		xor = { artillery2 }
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -166,7 +166,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 
 		start_year = 1939
 
@@ -266,7 +266,7 @@ technologies = {
 
 		xor = { interwar_artillery }
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -341,7 +341,7 @@ technologies = {
 		
 		xor = { artillery5 }
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -392,7 +392,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 
 		start_year = 1941
 
@@ -498,7 +498,7 @@ technologies = {
 		
 		xor = { artillery3 }
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -570,7 +570,7 @@ technologies = {
 		
 		xor = { artillery8 }
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -626,7 +626,7 @@ technologies = {
 		
 
 
-		research_cost = 1.5
+		research_cost = 1.0
 
 		start_year = 1943
 
@@ -693,7 +693,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -760,7 +760,7 @@ technologies = {
 		support_super_heavy_sp_artillery = { soft_attack = 0.05 }
 		support_modern_sp_artillery= { soft_attack = 0.05 }
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -829,7 +829,7 @@ technologies = {
 		
 		
 
-		research_cost = 1.5
+		research_cost = 1.0
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.50
@@ -1080,7 +1080,7 @@ technologies = {
 			leads_to_tech = rocket_artillery6
 			research_cost_coeff = 1
 		}
-		research_cost = 1.5
+		research_cost = 1.0
 
 		start_year = 1942
 
@@ -1387,7 +1387,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 
@@ -1590,7 +1590,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1942
 
@@ -1715,7 +1715,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1944
 
@@ -2221,7 +2221,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 
@@ -2518,7 +2518,7 @@ technologies = {
 			leads_to_tech = antitank9
 			research_cost_coeff = 1
 		}
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1942
 
@@ -2724,7 +2724,7 @@ technologies = {
 		}
 
 
-		research_cost = 2
+		research_cost = 1
 		
 		
 

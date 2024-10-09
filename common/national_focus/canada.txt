@@ -184,6 +184,22 @@
 					ideology = liberalism 
 				}
 			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -495,10 +511,10 @@
 				}
 				
 				add_stability = 0.15
-				swap_ideas = {
-					remove_idea = CAN_great_depression_5
-					add_idea = CAN_great_depression_6		
-				}
+				#swap_ideas = {
+				#	remove_idea = CAN_great_depression_5
+				#	add_idea = CAN_great_depression_6		
+				#}
 			}
 		}
 	}
@@ -820,6 +836,22 @@
 			swap_ideas = {
 				remove_idea = CAN_great_depression_3
 				add_idea = CAN_great_depression_4		
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1152,22 +1184,22 @@
 					has_state_flag = CAN_war_fueled_economy_AF1
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+				#add_building_construction = {
+				#	type = arms_factory
+				#	level = 2
+				#	instant_build = yes
+				#}
 			}
 			random_state = {
 				limit = {
 					has_state_flag = CAN_war_fueled_economy_AF2
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+				#add_building_construction = {
+				#	type = arms_factory
+				#	level = 2
+				#	instant_build = yes
+				#}
 			}
 		}
 
@@ -1183,11 +1215,11 @@
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+				#add_building_construction = {
+				#	type = arms_factory
+				#	level = 2
+				#	instant_build = yes
+				#}
 				set_state_flag = CAN_war_fueled_economy_AF1
 			}
 			random_owned_controlled_state = {
@@ -1200,11 +1232,11 @@
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+				#add_building_construction = {
+				#	type = arms_factory
+				#	level = 2
+				#	instant_build = yes
+				#}
 				set_state_flag = CAN_war_fueled_economy_AF2
 			}
 		}
@@ -1365,10 +1397,10 @@
 
 		completion_reward = {
 		    random_owned_controlled_state= {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1476,10 +1508,10 @@
 		completion_reward = {
 		    add_war_support = 0.05
 			random_owned_controlled_state= {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1527,14 +1559,14 @@
 			}
 			
 			
-			random_owned_controlled_state= {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
+			#random_owned_controlled_state= {
+			#	add_extra_state_shared_building_slots = 1
+			#	add_building_construction = {
+			#		type = arms_factory
+			#		level = 1
+			#		instant_build = yes
+			#	}
+			#}
 		}
 	}
 
@@ -1657,10 +1689,10 @@
 			add_war_support = 0.05
 			add_research_slot = 1
 			random_owned_controlled_state= {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1875,10 +1907,10 @@
 			
 		   
 			random_owned_controlled_state= {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1916,15 +1948,15 @@
 		completion_reward = {
 		    add_tech_bonus = {
 				name = CAN_heavy_tank_bonus
-				bonus = 0.75
+				bonus = 1.0
 				uses = 2
 				category = cat_heavy_armor
 			}
 			random_owned_controlled_state= {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1962,7 +1994,7 @@
 		    
 			add_tech_bonus = {
 				name = CAN_light_tank_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cat_light_armor
 			}
@@ -2252,15 +2284,16 @@
 				parent_version = 1
 				modules = {
 					main_armament_slot = tank_medium_howitzer
-					turret_type_slot = tank_medium_fixed_superstructure_turret
+					turret_type_slot = tank_medium_fixed_superstructure_turret_1
 					suspension_type_slot = tank_christie_suspension
+					roadwheels_type_slot = tank_small_roadwheels
 					armor_type_slot = tank_riveted_armor
 					engine_type_slot = tank_gasoline_engine
-					special_type_slot_1 = secondary_turret_hmg
+					special_type_slot_1 = ammo_he
 					special_type_slot_2 = secondary_turret_hmg
 				}
 				upgrades = {
-					tank_nsb_engine_upgrade = 1
+					#tank_nsb_engine_upgrade = 0
 					tank_nsb_armor_upgrade = 0
 				}
 				icon = "gfx/interface/technologies/eng_medium_spg_1.dds"
@@ -2603,10 +2636,10 @@ CAN = {
 				limit = {
 					has_state_flag = CAN_shadow_factories_AF2
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2614,10 +2647,10 @@ CAN = {
 				limit = {
 					has_state_flag = CAN_shadow_factories_AF3
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2632,10 +2665,10 @@ CAN = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = CAN_shadow_factories_AF2
@@ -2648,10 +2681,10 @@ CAN = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = CAN_shadow_factories_AF3

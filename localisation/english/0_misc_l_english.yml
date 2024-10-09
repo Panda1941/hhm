@@ -879,4 +879,6 @@
  
  infantry_mot:0"Semi Motorized Infantry"
  infantry_mot_desc:0"Mobile Infantry fore greater speed."
+ 
+ ENG_industrial_expansion_effect_tt:0 "§RFor every colony developed gain 2 military factories after the conference is over!"
 

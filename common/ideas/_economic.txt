@@ -70,8 +70,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value  = 0.35
-				production_speed_industrial_complex_factor = -0.20
-				production_speed_arms_factory_factor = -0.35
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_arms_factory_factor = -0.40
 				conversion_cost_mil_to_civ_factor = -0.05
 				conversion_cost_civ_to_mil_factor = 0.3
 				production_factory_max_efficiency_factor = -0.05
@@ -133,7 +133,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value  = 0.3
-				production_speed_industrial_complex_factor = -0.15
+				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = -0.20
 				conversion_cost_mil_to_civ_factor = -0.025
 				conversion_cost_civ_to_mil_factor = 0.15
@@ -186,7 +186,7 @@ ideas = {
 					AND = { tag = USA threat > 0.85 }
 				}
 				OR = { 
-				has_war_support > 0.50
+				has_war_support > 0.40
 				AND = { has_war_support > 0.45 has_war = yes } 
 				}
 				if = {
@@ -217,7 +217,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value  = 0.25
-				production_speed_industrial_complex_factor = -0.05
+				#production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = -0.1
 				fuel_gain_factor = -0.1
 			}
@@ -304,7 +304,9 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value  = 0.2
-				production_speed_arms_factory_factor = 0.0
+				production_speed_industrial_complex_factor = -0.20
+				#production_speed_arms_factory_factor = 0
+				stability_factor = -0.05
 			}
 
 			cancel_if_invalid = no
@@ -357,15 +359,25 @@ ideas = {
 
 			available = {
 				has_war = yes
-				date > 1941.01.01
+				date > 1941.06.01
 				
 				NOT = {
 					original_tag = USA
 					original_tag = ENG
-					original_tag = SOV
-					original_tag = GER
+					#original_tag = SOV
+					#original_tag = GER
 					original_tag = ITA
 					original_tag = JAP
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = SPR
+					original_tag = BRA
+					original_tag = CAN
+					original_tag = SPR
+					original_tag = AST
+					original_tag = NZL
+					original_tag = RAJ
 				}
 			}
 			ai_will_do = {
@@ -378,6 +390,8 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value  = 0.15
 				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.10
+				stability_factor = -0.10
 			}
 
 			cancel_if_invalid = no

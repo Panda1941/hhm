@@ -801,18 +801,18 @@ focus_tree = {
 
 		completion_reward = {
 			46 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}	
 			}
 			81 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1539,14 +1539,14 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
-			81 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes 
-				}
-			}
+			#81 = {
+			#	add_extra_state_shared_building_slots = 1
+			#	add_building_construction = {
+			#		type = arms_factory
+			#		level = 1
+			#		instant_build = yes 
+			#	}
+			#}
 			add_tech_bonus = {
 				category = construction_tech
 				uses = 1
@@ -1968,10 +1968,10 @@ focus_tree = {
 
 		completion_reward = {
 			79 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2068,6 +2068,14 @@ focus_tree = {
 				uses = 1
 				bonus = 1.0
 				name = ROM_import_and_convert_antique_artillery
+			}
+			81 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes 
+				}
 			}
 		}
 	}
