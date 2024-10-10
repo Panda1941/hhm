@@ -257,6 +257,11 @@ technologies = {
 		allow = {
 			tag = SOV 			
 		}
+		
+		path = {
+			leads_to_tech = mass_assault_overall_debuff 
+			research_cost_coeff = 1
+		}
 
 		infantry = {
 			need = { infantry_equipment = -10 }
@@ -292,14 +297,7 @@ technologies = {
 				anti_tank_equipment = -7
 			}
 		}
-		
-		category_light_infantry = {
-			max_strength = -4
-			breakthrough = -0.15
-		}
-		category_line_artillery = {
-			max_strength = -0.25
-		}
+
 		
 		artillery_brigade={
 			need = {
@@ -339,5 +337,63 @@ technologies = {
 		category_army = {
 			defense = 0.05
 		}
+	}
+	
+	mass_assault_overall_debuff = {
+		
+		#doctrine_name = "MASS_ASSAULT_OVERALL_DEBUFF"
+
+		#dependencies = {
+		#	OR = {
+		#		mobile_warfare = 1
+		#		superior_firepower = 1
+		#		trench_warfare = 1
+		#		mass_assault = 1
+		#	}
+		#}
+		allow = {
+			tag = SOV 			
+		}
+
+		
+		category_light_infantry = {
+			max_strength = -5
+			breakthrough = -0.15
+		}
+		category_line_artillery = {
+			max_strength = -0.25
+		}
+		
+		artillery_brigade={
+			need = {
+				artillery_equipment = -5
+			}
+		}
+		
+		on_research_complete = { 
+		}
+
+		doctrine = yes
+
+		research_cost = 1
+		xp_research_type = army
+		xp_unlock_cost = 40
+		
+		categories = {
+			land_doctrine
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 3}
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		# Effects
 	}
 }

@@ -27,6 +27,9 @@
  mass_assault_overall:0 "Mass Assault"
  mass_assault_overall_desc:0 ""
  
+ mass_assault_overall_debuff:0 "Mass Assault Debuff"
+ mass_assault_overall_debuff_desc:0 "§YA DEBUFF TO ENSURE YOU ARE NOT HAVING FUN AS NOAIR SOVIETS :)§!"
+ 
  
  # Naval Doctrines
  FLEET_IN_BEING_OVERALL_LABEL:0 "Fleet In Being Overall"

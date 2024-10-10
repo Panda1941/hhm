@@ -115,6 +115,12 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	
+	SpriteType = {
+		name = "GFX_mass_assault_overall_debuff_medium"
+		texturefile = "gfx/interface/technologies/mass_assault.dds"
+		alwaystransparent = yes
+	}
+	
 	######################
 	# Naval Doctrines
 	######################
