@@ -187,14 +187,15 @@ technologies = {
 		}
 
 		# BATALIONS
-		marine= { need = { special_forces_equipment -10 } }
-		marine_commando= { need = { special_forces_equipment -10 } }
-		mountaineers= { need = { special_forces_equipment -10 } }
-		paratrooper= { need = { special_forces_equipment -10 } }
-		shock_troops= { need = { special_forces_equipment -10 } }
-		jaeger= { need = { special_forces_equipment -10 } }
-
+		marine= { need = { special_forces_equipment = -10 } }
+		marine_commando= { need = { special_forces_equipment = -10 } }
+		mountaineers= { need = { special_forces_equipment = -10 } }
+		paratrooper= { need = { special_forces_equipment = -10 } }
+		shock_troops= { need = { special_forces_equipment = -10 } }
+		jaeger= { need = { special_forces_equipment = -10 } }
+		
 		# SUPPORT COMPANIES
+		engineer = { need = { support_equipment = -5 } }
 		field_hospital = { need = { support_equipment = -5 } }
 		logistics_company = { need = { support_equipment = -5 } }
 		logistics_company_infantry = { need = { support_equipment = -5 } }
@@ -204,7 +205,8 @@ technologies = {
 		mot_recon = { need = { support_equipment = -5 } }
 		armored_car_recon = { need = { support_equipment = -5 } }
 		light_tank_recon = { need = { support_equipment = -5 } }
-		rangers_support = { need = { support_equipment = -5 } }
+		rangers_support = { need = { support_equipment = -5 special_forces_equipment = -10 } }
+		pioneer_support = { need = { support_equipment = -5 special_forces_equipment = -10 } }
 		winter_logistics_support = { need = { support_equipment = -5 } }
 		long_range_patrol_support = { need = { support_equipment = -5 } }
 		signal_company = { need = { support_equipment = -5 } }
