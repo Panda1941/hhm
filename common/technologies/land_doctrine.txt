@@ -2929,9 +2929,11 @@ technologies = {
 		land_reinforce_rate = 0.01
 		minimum_training_level = -0.1
 		weekly_casualties_war_support = 0.001
-		#infantry = {
-		#	defense = -0.10
-		#}
+		category_light_infantry = {
+			defense = 0.12
+		}
+		
+		
 
 		doctrine = yes	
 		research_cost = 2.25
@@ -3001,7 +3003,7 @@ technologies = {
 		
 		conscription = 0.03
 		category_light_infantry = {
-			max_organisation = 2
+			max_organisation = 4
 		}
 		
 		path = {
@@ -3077,7 +3079,7 @@ technologies = {
 		additional_brigade_column_size = 1		
 		
 		category_all_infantry = {
-			max_organisation = 4	
+			max_organisation = 8	
 		}
 
 		enable_tactic = tactic_relentless_assault
@@ -3280,8 +3282,9 @@ technologies = {
 		
 		land_reinforce_rate = 0.01
 		category_all_infantry = {
-			max_organisation = 4
+			max_organisation = 8
 			breakthrough = 0.06
+			defense = 0.10
 		}
 		
 
@@ -3619,10 +3622,10 @@ technologies = {
 		xp_unlock_cost = 80
 		
 		category_all_infantry = {
-			max_organisation = 3
-			max_strength = 5
+			max_organisation = 6
+			#max_strength = 5
 		}
-		on_research_complete = { custom_effect_tooltip = "HP added is 5" }
+		#on_research_complete = { custom_effect_tooltip = "HP added is 5" }
 		
 
 		doctrine = yes	
@@ -3785,10 +3788,10 @@ technologies = {
 		xp_unlock_cost = 80
 		
 		category_special_forces = { 
-		    max_strength = 2 
+		    #max_strength = 2 
 			breakthrough = 0.1
 		}
-		on_research_complete = { custom_effect_tooltip = "HP added is 2" }
+		#on_research_complete = { custom_effect_tooltip = "HP added is 2" }
         infantry = {
 			default_morale = 0.10
 		}	

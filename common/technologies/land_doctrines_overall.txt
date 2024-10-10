@@ -282,10 +282,35 @@ technologies = {
 		jaeger= {
 			need = { infantry_equipment = -20 }
 		}
+		anti_air_brigade = {
+			need = {
+				anti_air_equipment = -6
+			}
+		}
+		anti_tank_brigade = {
+			need = {
+				anti_tank_equipment = -7
+			}
+		}
+		
+		category_light_infantry = {
+			max_strength = -4
+			breakthrough = -0.15
+		}
+		category_line_artillery = {
+			max_strength = -0.25
+		}
+		
+		artillery_brigade={
+			need = {
+				artillery_equipment = -5
+			}
+		}
 		
 		on_research_complete = { 
 			custom_effect_tooltip = spam_inf_tt
 			custom_effect_tooltip = spam_inf2_tt
+			custom_effect_tooltip = spam_aa_at_tt
 		}
 
 		doctrine = yes
@@ -311,5 +336,8 @@ technologies = {
 
 		# Effects
 		land_reinforce_rate = 0.04
+		category_army = {
+			defense = 0.05
+		}
 	}
 }
