@@ -357,7 +357,15 @@ technologies = {
 			tag = SOV 			
 		}
 
-		
+		category_all_armor = {
+			max_strength = -3
+		}
+		motorized = {
+			max_strength = -5
+		}
+		mechanized = {
+			max_strength = -5
+		}
 		category_light_infantry = {
 			max_strength = -5
 			breakthrough = -0.15
