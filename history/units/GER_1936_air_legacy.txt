@@ -1,0 +1,118 @@
+﻿
+### Air oob
+air_wings = {
+	### I. Luftkreiskommando -- Konigsberg ###
+	763 = { 
+		# Jagdgeschwader 232 	
+		name = "Jagdgeschwader 232"
+	}
+
+	### II. Luftkreiskommando -- Berlin ###
+	64 = { 
+		fighter_equipment_0 =  {		# Ar 68
+			owner = "GER" 
+			amount = 100
+		}
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+			modifier="fighter_genius"
+			name="Erich"
+			surname="Hartmann"
+			callsign="Bubi"
+			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+		}
+		fighter_equipment_0 =  {		# He 51
+			owner = "GER" 
+			amount = 100
+		}	
+		fighter_equipment_0 =  {		# He 51
+			owner = "GER" 
+			amount = 100
+		}
+		fighter_equipment_0 =  {		# He 51
+			owner = "GER" 
+			amount = 100
+		}	
+		fighter_equipment_0 =  {		# He 51
+			owner = "GER" 
+			amount = 100
+		}	
+		CAS_equipment_1 =  {			# Hs 123
+			owner = "GER" 
+			amount = 100
+		}	
+		nav_bomber_equipment_1 =  {		# He 59, Do 18
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 = {		# Do 23
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 = {		# Do 23
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
+			owner = "GER" 
+			amount = 100
+		}
+		name = "Kampfgeschwader 153"
+		transport_plane_equipment_1 = {
+			owner = "GER" 
+			amount = 100
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+		industrial_manufacturer = mio:GER_messerschmitt_organization
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+		industrial_manufacturer = mio:GER_junkers_organization
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+		industrial_manufacturer = mio:GER_heinkel_organization
+	}
+}
+
+#####################
