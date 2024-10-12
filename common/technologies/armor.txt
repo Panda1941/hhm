@@ -4,7 +4,6 @@ technologies = {
 
 		enable_equipments = {
 			gw_tank_equipment
-
 		}
 		enable_subunits = {
 			light_armor
