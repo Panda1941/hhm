@@ -209,8 +209,6 @@ equipments = {
 		visual_level = 0
 		
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_gun_upgrade
 		}
@@ -379,8 +377,6 @@ equipments = {
 		}
 
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_art_upgrade
 		}
@@ -487,8 +483,6 @@ equipments = {
 			light_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_at_upgrade
 		}
@@ -597,8 +591,6 @@ equipments = {
 			light_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_aa_upgrade
 		}
@@ -702,8 +694,6 @@ equipments = {
 		visual_level = 0
 		is_convertable = yes
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_gun_upgrade
 		}
@@ -811,8 +801,6 @@ equipments = {
 			medium_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_art_upgrade
 		}
@@ -921,8 +909,6 @@ equipments = {
 			medium_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_at_upgrade
 		}
@@ -1035,8 +1021,6 @@ equipments = {
 			medium_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_aa_upgrade
 		}
@@ -1176,8 +1160,6 @@ equipments = {
 		fuel_consumption = 4.4
 
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_gun_upgrade
 		}
@@ -1260,8 +1242,6 @@ equipments = {
 		maximum_speed = 5
 		reliability = 0.8
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_art_upgrade
 		}
@@ -1362,8 +1342,6 @@ equipments = {
 		priority = 120
 		visual_level = 0
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_at_upgrade
 		}
@@ -1473,8 +1451,6 @@ equipments = {
 		priority = 110
 		visual_level = 0
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_aa_upgrade
 		}
@@ -1603,8 +1579,6 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_gun_upgrade
 		}
@@ -1628,8 +1602,6 @@ equipments = {
 			modern_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_art_upgrade
 		}
@@ -1669,8 +1641,6 @@ equipments = {
 			modern_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_at_upgrade
 		}
@@ -1711,8 +1681,6 @@ equipments = {
 			modern_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_aa_upgrade
 		}
@@ -1769,8 +1737,6 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 15
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_gun_upgrade
 		}
@@ -1794,8 +1760,6 @@ equipments = {
 			super_heavy_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_art_upgrade
 		}
@@ -1834,8 +1798,6 @@ equipments = {
 			super_heavy_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_at_upgrade
 		}
@@ -1874,8 +1836,6 @@ equipments = {
 			super_heavy_tank_equipment_1 
 		}
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_aa_upgrade
 		}
@@ -1916,8 +1876,6 @@ equipments = {
 		}
 
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
 			tank_armor_upgrade
 			tank_gun_upgrade
 		}
