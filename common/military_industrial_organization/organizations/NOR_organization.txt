@@ -192,28 +192,7 @@ NOR_marinens_flyvebaatfabrikk_organization = {
         equipment_bonus = {
             naval_strike_attack = 0.07
         }
-    }
-
-    add_trait = { 
-        token = DEN_mio_trait_standardized_production_flyvertroppernes
-        name = generic_mio_initial_trait_standardized_production
-        icon = GFX_generic_mio_department_icon_plane_general_line_efficiency
-        special_trait_background = yes
-
-        position = { x=9 y=0 }
-        
-        available = {
-            FROM = {
-                has_completed_focus = NOR_increase_air_production
-            }
-        }
-
-        production_bonus = {
-            production_capacity_factor = 0.05
-            production_efficiency_cap_factor = 0.05
-            production_efficiency_gain_factor = 0.05
-        }
-    }        
+    }      
 }
 
 ### GER_messerschmitt_organization -> see GER_organizations.txt 

@@ -44,29 +44,6 @@ BUL_varna_naval_dockyard_organization = {
 	}
 
 	research_bonus = 0
-
-	add_trait = { 
-		token = BUL_mio_trait_an_aegean_sea_fleet
-		name = BUL_an_aegean_sea_fleet
-		icon = GFX_generic_mio_department_icon_facilities
-		special_trait_background = yes
-
-		position = { x=@prussia_of_the_balkans_position_X y=@prussia_of_the_balkans_position_Y }
-		
-		available = {
-			FROM = {
-				has_completed_focus = BUL_an_aegean_sea_fleet
-			}
-		}
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = @prussia_of_the_balkans_research_bonus
-		}
-
-		production_bonus = {
-			production_capacity_factor = @prussia_of_the_balkans_production_capacity_factor
-		}
-	}
 }
 
 ### Foreign Subsidiaries
@@ -102,29 +79,6 @@ BUL_dar_organization = {
 			#FROM = { has_completed_focus = BUL_darzhavna_aeroplanna_rabotilnitsa }
 		}
 	}
-
-	add_trait = { 
-		token = BUL_mio_trait_prussia_of_the_balkans
-		name = BUL_prussia_of_the_balkans
-		icon = GFX_generic_mio_department_icon_facilities
-		special_trait_background = yes
-
-		position = { x=@prussia_of_the_balkans_position_X y=@prussia_of_the_balkans_position_Y }
-		
-		available = {
-			FROM = {
-				has_completed_focus = BUL_prussia_of_the_balkans
-			}
-		}
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = @prussia_of_the_balkans_research_bonus
-		}
-
-		production_bonus = {
-			production_capacity_factor = @prussia_of_the_balkans_production_capacity_factor
-		}
-	}
 }
 
 BUL_kaproni_bulgarski_organization = {
@@ -138,29 +92,6 @@ BUL_kaproni_bulgarski_organization = {
 
 	available = {
 		#FROM = { has_completed_focus = BUL_kaproni_bulgarski }
-	}
-
-	add_trait = { 
-		token = BUL_mio_trait_prussia_of_the_balkans
-		name = BUL_prussia_of_the_balkans
-		icon = GFX_generic_mio_department_icon_facilities
-		special_trait_background = yes
-
-		position = { x=@prussia_of_the_balkans_position_X y=@prussia_of_the_balkans_position_Y }
-		
-		available = {
-			FROM = {
-				has_completed_focus = BUL_prussia_of_the_balkans
-			}
-		}
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = @prussia_of_the_balkans_research_bonus
-		}
-
-		production_bonus = {
-			production_capacity_factor = @prussia_of_the_balkans_production_capacity_factor
-		}
 	}
 }
 
@@ -194,29 +125,6 @@ BUL_dvf_organization = {
 	available = {
 		#FROM = { has_completed_focus = BUL_darzhavna_voenna_fabrika }
 	}
-
-	add_trait = { 
-		token = BUL_mio_trait_prussia_of_the_balkans
-		name = BUL_prussia_of_the_balkans
-		icon = GFX_generic_mio_department_icon_facilities
-		special_trait_background = yes
-
-		position = { x=@prussia_of_the_balkans_position_X y=@prussia_of_the_balkans_position_Y }
-		
-		available = {
-			FROM = {
-				has_completed_focus = BUL_prussia_of_the_balkans
-			}
-		}
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = @prussia_of_the_balkans_research_bonus
-		}
-
-		production_bonus = {
-			production_capacity_factor = @prussia_of_the_balkans_production_capacity_factor
-		}
-	}
 }
 
 BUL_dvf_sopot_organization = {
@@ -230,29 +138,6 @@ BUL_dvf_sopot_organization = {
 
 	available = {
 		#FROM = { has_completed_focus = BUL_found_dvf_sopot }
-	}
-
-	add_trait = { 
-		token = BUL_mio_trait_prussia_of_the_balkans
-		name = BUL_prussia_of_the_balkans
-		icon = GFX_generic_mio_department_icon_facilities
-		special_trait_background = yes
-
-		position = { x=@prussia_of_the_balkans_position_X y=@prussia_of_the_balkans_position_Y }
-		
-		available = {
-			FROM = {
-				has_completed_focus = BUL_prussia_of_the_balkans
-			}
-		}
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = @prussia_of_the_balkans_research_bonus
-		}
-
-		production_bonus = {
-			production_capacity_factor = @prussia_of_the_balkans_production_capacity_factor
-		}
 	}
 }
 

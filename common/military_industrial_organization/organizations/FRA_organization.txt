@@ -58,41 +58,6 @@ FRA_renault_organization = {
 			military_industrial_organization_research_bonus = 0.05
 		}
 	}
-
-	add_trait = { 
-		token = FRA_mio_trait_automitrailleuses
-		name = FRA_mio_trait_automitrailleuses
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		special_trait_background = yes
-		
-		position = { x=6 y=0 }  
-		
-		limit_to_equipment_type = { medium_tank_chassis }
-		
-		equipment_bonus = {
-			maximum_speed = 0.1
-			armor_value = -0.05
-		} 
-
-	}
-	add_trait = {
-		token = FRA_mio_trait_b1_bis_suspension
-		name = FRA_mio_trait_b1_bis_suspension
-		icon = GFX_generic_mio_trait_icon_breakthrough
-		special_trait_background = yes
-		
-		position = { x=0 y=4 }  
-		relative_position_id = generic_mio_trait_heavy_tank_improvements
-		
-		any_parent = { generic_mio_trait_heavy_tank_improvements }
-		
-		limit_to_equipment_type = { heavy_tank_chassis }
-		
-		equipment_bonus = {
-			maximum_speed = 0.05
-			breakthrough = 0.1 
-		} 
-	}
 }
 
 FRA_hotchkiss_organization = {
@@ -101,18 +66,6 @@ FRA_hotchkiss_organization = {
 	allowed = {	
 		tag = FRA 
 		has_dlc = "Arms Against Tyranny"
-	}
-	add_trait = { 
-		token = FRA_mio_trait_l_35
-		name = FRA_mio_trait_l_35
-		icon = GFX_generic_mio_department_icon_tank_general_weapons
-		any_parent = { generic_mio_enlarged_breech }
-		relative_position_id = generic_mio_enlarged_breech
-		position = { x=1 y=2 }  
-		equipment_bonus = {
-			hard_attack = 0.05
-			ap_attack = 0.05
-		}  
 	}
 
 	override_trait = {
