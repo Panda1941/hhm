@@ -3,14 +3,6 @@
 
 duplicate_archetypes = {
 
-	mechanized_amtrac_chassis = {
-		archetype = mechanized_chassis
-		type = { armor amphibious }
-		for_each = {
-			variant_name = { find_and_replace = { "mechanized_amtrac_chassis" "amphibious_mechanized_equipment" } }
-		}
-	}
-
 	# light_tank
 
 	light_tank_aa_chassis = {
