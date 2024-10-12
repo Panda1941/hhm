@@ -392,6 +392,22 @@ operations = {
 				transfer_state = 461
 				transfer_state = 462
 			}
+			ENG = {
+				transfer_state = 550
+				transfer_state = 841
+				transfer_state = 842
+				transfer_state = 908
+				transfer_state = 843
+				transfer_state = 840
+				transfer_state = 839
+				transfer_state = 838
+				transfer_state = 271
+				transfer_state = 835
+				transfer_state = 836
+				transfer_state = 837
+				transfer_state = 559
+				transfer_state = 844
+			}
 			ITA = {
 				declare_war_on = {
 					target = ENG 
@@ -864,6 +880,51 @@ operations = {
 				division_template = "Kebur Zabagna"
 				disband = yes				# if yes, equipment will be returned to country equipment. default is no
 			}
+			550 = {
+				set_demilitarized_zone = yes
+			}
+			842 = {
+				set_demilitarized_zone = yes
+			}
+			841 = {
+				set_demilitarized_zone = yes
+			}
+			908 = {
+				set_demilitarized_zone = yes
+			}
+			835 = {
+				set_demilitarized_zone = yes
+			}
+			271 = {
+				set_demilitarized_zone = yes
+			}
+			839 = {
+				set_demilitarized_zone = yes
+			}
+			838 = {
+				set_demilitarized_zone = yes
+			}
+			837 = {
+				set_demilitarized_zone = yes
+			}
+			836 = {
+				set_demilitarized_zone = yes
+			}
+			835 = {
+				set_demilitarized_zone = yes
+			}
+			559 = {
+				set_demilitarized_zone = yes
+			}
+			844 = {
+				set_demilitarized_zone = yes
+			}
+			843 = {
+				set_demilitarized_zone = yes
+			}
+			840 = {
+				set_demilitarized_zone = yes
+			}
 		}
 	}
 	annex_siam = {
@@ -1182,31 +1243,11 @@ operations = {
 						always = no
 					}
 				}
-				add_ideas = { artificial_intelligence }
-				add_ideas = { ai_limiter }
 			}
-			123 = {
-				add_building_construction = {
-					type = industrial_complex 
-					level = 4 
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory 
-					level = 4 
-					instant_build = yes
-				}
-			}
-			131 = {
-				add_building_construction = {
-					type = industrial_complex 
-					level = 3 
-					instant_build = yes
-				}
-			}
-			WST = {
+			ENG = {
 				annex_country = {
 					target = BRA
+					transfer_troops = yes
 				}
 			}
 		}
@@ -1223,9 +1264,6 @@ operations = {
 		}
 		available = {
 			CAN = {
-				is_ai = yes
-			}
-			SAF = {
 				is_ai = yes
 			}
 		}
@@ -1306,9 +1344,6 @@ operations = {
 		}
 		available = {
 			SAF = {
-				is_ai = yes
-			}
-			CAN = {
 				is_ai = yes
 			}
 		}
