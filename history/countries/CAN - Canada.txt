@@ -1,19 +1,14 @@
 ﻿capital = 276
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "CAN_1936"
+
+set_oob = "CAN_1936_nsb"
+set_air_oob = "CAN_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "CAN_1936_nsb"
-}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_naval_oob = "CAN_1936_naval_mtg"
@@ -31,7 +26,6 @@ if = {
 			iw_small_airframe = 1
 		}
 	else = {
-		set_air_oob = "CAN_1936_air_legacy"
 	}
 }
 
@@ -101,36 +95,13 @@ set_technology = {
 	basic_train = 1
 	air_torpedoe_1 = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
-		early_fighter = 1
-		naval_bomber1 = 1
-		early_bomber = 1
-		
-	}
+
+
+set_technology = {
+	gwtank = 1
+	basic_light_tank = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

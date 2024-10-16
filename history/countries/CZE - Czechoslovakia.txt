@@ -1,38 +1,13 @@
 ﻿capital = 9
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "CZE_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "CZE_1936_nsb"
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "CZE_1936_air_bba"
-		set_technology = {
-			aa_lmg = 1
-			
-			
-			iw_small_airframe = 1
-			iw_medium_airframe = 1
-			early_bombs = 1
-		}
-	else = {
-		set_air_oob = "CZE_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			CAS1 = 1
-		}
-	}
+
+set_oob = "CZE_1936_nsb"
+
+set_air_oob = "CZE_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
 }
 
 set_technology = {
@@ -76,25 +51,11 @@ recruit_character = CZE_konrad_henlein
 recruit_character = CZE_gustav_husak
 
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-	}
+
+set_technology = {
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
 }
 
 set_research_slots = 3
@@ -120,70 +81,9 @@ if = {
 	add_ideas = {
 		CZE_skoda_works
 		CZE_divided_nation
-}
+	}
 }
 
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "Tancik vz. 33"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_auto_cannon
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "LT vz. 35"
-		type = light_tank_chassis_1
-		parent_version = 1
-		modules = {
-			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "TNH"
-		type = light_tank_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-			special_type_slot_2 = tank_radio_1
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 3
-		}
-	}
-}
 
 if = {
 	limit = {

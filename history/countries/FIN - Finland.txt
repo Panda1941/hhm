@@ -90,15 +90,6 @@ set_popularities = {
 	neutrality = 79
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1939.7.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-}
-
 
 add_ideas = {
 	sisu

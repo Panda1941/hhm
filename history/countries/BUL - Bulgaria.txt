@@ -2,13 +2,8 @@
 
 #TROOPS
 oob = "BUL_1936" #VANILLA & DLC
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "BUL_1936_air_bba"
-	else = {
-		set_air_oob = "BUL_1936_air_legacy"
-	}
-}
+set_air_oob = "BUL_1936_air_legacy"
+
 set_convoys = 5 #VANILLA & DLC
 
 set_technology = { mtg_transport = 1 }
@@ -244,13 +239,7 @@ set_technology = { #VANILLA & DLC
 	gw_artillery = 1
 	interwar_antiair = 1
 }
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "By Blood Alone"
-		}
-	}
-	set_technology = {
-		early_fighter = 1
-	}
+
+set_technology = {
+	early_fighter = 1
 }

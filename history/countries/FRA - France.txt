@@ -1,19 +1,7 @@
 ﻿capital = 16
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "FRA_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "FRA_1936_nsb"
-}
+
+set_oob = "FRA_1936_nsb"
 
 starting_train_buffer = 2
 
@@ -27,31 +15,16 @@ if = {
 	}
 }
 
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "FRA_1936_air_bba"
-		set_technology = {
-			aa_lmg = 1
-			
-			
-			early_bombs = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
-			iw_medium_airframe = 1
-			iw_large_airframe = 1
-		}
-	else = {
-		set_air_oob = "FRA_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			naval_bomber1 = 1
-			cv_early_fighter = 1
-			cv_naval_bomber1 = 1
-			early_bomber = 1
-			tactical_bomber1 = 1
-			CAS1 = 1
-		}
-	}
+
+set_air_oob = "FRA_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
 }
 
 set_research_slots = 3
@@ -80,29 +53,11 @@ set_technology = {
 	air_torpedoe_1 = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		basic_heavy_tank = 1
-		improved_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		basic_heavy_tank_chassis = 1
-		improved_light_tank_chassis = 1
-		armor_tech_1 = 1
-		#engine_tech_1 = 1
-	}
+set_technology = {
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1
+	improved_light_tank = 1
 }
 
 if = {
@@ -354,197 +309,6 @@ if = {
 			ship_armor_upgrade = 1
 			ship_gun_upgrade = 1
 		}
-	}
-}
-if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	create_equipment_variant = {
-		name = "Br. 19" #
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_1_1x
-			special_type_slot_3 = lmg_defense_turret
-		}
-		icon = "GFX_FRA_CAS1_medium"
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "NiD 62" #
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "D.500" #
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_FRA_light_plane_2_medium"
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "D.510" #also covers D.501
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_FRA_light_plane_2_medium"
-	}
-	create_equipment_variant = {
-		name = "Latécoère 296" #
-		type = small_plane_naval_bomber_airframe_0
-		modules = {
-			fixed_main_weapon_slot = torpedo_mounting
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = floats
-		}
-		icon = "GFX_FRA_naval_bomber1_medium"
-	}
-	create_equipment_variant = {
-		name = "Amiot 143" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = bomb_locks
-			engine_type_slot = engine_2_2x
-			special_type_slot_3 = lmg_defense_turret
-		}
-		icon = "GFX_FRA_early_bomber_medium"
-	}
-	create_equipment_variant = {
-		name = "F.222" #
-		type = large_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = large_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_2_4x
-			special_type_slot_3 = lmg_defense_turret
-		}
-		icon = "GFX_FRA_strategic_bomber1_medium"
-	}
-	create_equipment_variant = {
-		name = "M.B. 200" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_1_2x
-			special_type_slot_3 = lmg_defense_turret
-		}
-		obsolete = yes
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "FT mod. 31"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 2
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "FT Char Cannon"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 2
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "H-35" #due to similar design this also covers R-35
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 2
-		}
-		icon = "GFX_FRA_basic_light_tank_medium"
-	}
-	create_equipment_variant = {
-		name = "Char B1"
-		type = heavy_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_cannon
-			turret_type_slot = tank_heavy_defence_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 2
-		}
-		icon = "GFX_FRA_basic_heavy_tank_medium"
-	}
-
-	create_equipment_variant = {
-		name = "SOUMUA S35"
-		type = medium_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_medium_cannon
-			turret_type_slot = tank_medium_defence_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 2
-		}
-		icon = "GFX_FRA_improved_medium_tank_medium"
 	}
 }
 if = {

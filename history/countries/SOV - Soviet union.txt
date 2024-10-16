@@ -297,20 +297,7 @@ capital = 219
 
 starting_train_buffer = 3.0
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "SOV_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "SOV_1936_nsb"
-}
+set_oob = "SOV_1936_nsb"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SOV_1936_naval_mtg"
@@ -318,32 +305,13 @@ if = {
 		set_naval_oob = "SOV_1936_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "SOV_1936_air_bba"
-		set_technology = {
-			iw_small_airframe = 1
-			aa_lmg = 1
-			aa_cannon_1 = 1
-			early_bombs = 1
-			
-			
-			iw_medium_airframe = 1
-			iw_large_airframe = 1
-			basic_small_airframe = 1
-			basic_medium_airframe = 1
-			aircraft_construction = 1
-		}
-	else = {
-		set_air_oob = "SOV_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			fighter1 = 1
-			early_bomber = 1
-			strategic_bomber1 = 1
-			naval_bomber1 = 1
-		}
-	}
+set_air_oob = "SOV_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
 }
 
 
@@ -379,29 +347,13 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	interwar_antitank = 1
 	mass_assault_overall_debuff = 1
 }
-
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-
-	}
+set_technology = {
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	#basic_heavy_tank = 1
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-		#engine_tech_1 = 1
-		#engine_tech_2 = 1
-	}
-}
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -521,189 +473,6 @@ if = {
 
 ### VARIANTS ###
 # 1936 Start #
-
-if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	create_equipment_variant = {
-		name = "I-15" #
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "I-16" #
-		type = small_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_SOV_fighter1_medium"
-	}
-	create_equipment_variant = {
-		name = "DB-3" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = bomb_locks
-			engine_type_slot = engine_2_2x
-			special_type_slot_3 = lmg_defense_turret
-		}
-		icon = "GFX_SOV_early_bomber_medium"
-	}
-	create_equipment_variant = {
-		name = "TB-3" #
-		type = large_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = large_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_1_4x
-			special_type_slot_3 = lmg_defense_turret_2x
-		}
-		icon = "GFX_SOV_transport_plane_equipment_1_medium"
-	}
-	create_equipment_variant = {
-		name = "ANT-40" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = bomb_locks
-			engine_type_slot = engine_2_2x
-			special_type_slot_3 = lmg_defense_turret_2x
-		}
-		icon = "GFX_SOV_tactical_bomber1_medium"
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "T-27"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_cheap_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			roadwheels_type_slot = tank_small_roadwheels
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		obsolete = yes
-		icon = "GFX_gwtank_medium"
-	}
-
-	create_equipment_variant = {
-		name = "T-26TU mod. 1933"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_light_cheap_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			roadwheels_type_slot = tank_small_roadwheels
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_SOV_basic_light_tank_medium"
-	}
-	create_equipment_variant = {
-		name = "BT-5"
-		type = light_tank_chassis_1
-		parent_version = 1
-		modules = {
-			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_light_cheap_turret_1
-			suspension_type_slot = tank_christie_suspension
-			armor_type_slot = tank_riveted_armor
-			roadwheels_type_slot = tank_small_roadwheels
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 3
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_SOV_improved_light_tank_medium"
-	}
-	create_equipment_variant = {
-		name = "BT-7"
-		type = light_tank_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_light_cheap_turret_1
-			suspension_type_slot = tank_christie_suspension
-			armor_type_slot = tank_welded_armor
-			roadwheels_type_slot = tank_small_roadwheels
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-			special_type_slot_2 = tank_radio_1
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 3
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_SOV_improved_light_tank_medium"
-	}
-
-	create_equipment_variant = {
-		name = "T-28"
-		type = medium_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_close_support_gun
-			turret_type_slot = tank_medium_cheap_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			roadwheels_type_slot = tank_small_roadwheels
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 3
-			#tank_nsb_engine_upgrade = 1
-		}
-		icon = "GFX_SOV_basic_heavy_tank_medium"
-	}
-	create_equipment_variant = {
-		name = "T-35"
-		type = heavy_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_close_support_gun
-			turret_type_slot = tank_heavy_cheap_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			roadwheels_type_slot = tank_small_roadwheels
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 1
-			#tank_nsb_engine_upgrade = 3
-		}
-		icon = "GFX_SOV_basic_heavy_tank_medium"
-	}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###

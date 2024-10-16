@@ -1,19 +1,7 @@
 ﻿capital = 126
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "ENG_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
+
 	set_oob = "ENG_1936_nsb"
-}
 
 starting_train_buffer = 4
 
@@ -27,33 +15,15 @@ if = {
 	}
 }
 
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "ENG_1936_air_bba"
-		set_technology = {
-			aa_lmg = 1
-			
-			
-			early_bombs = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
-			iw_medium_airframe = 1
-			iw_large_airframe = 1
-			basic_medium_airframe = 1
-			basic_small_airframe = 1
-			air_torpedoe_1 = 1
-		}
-	else = {
-		set_air_oob = "ENG_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			cv_early_fighter = 1
-			cv_naval_bomber1 = 1
-			naval_bomber1 = 1
-			early_bomber = 1
-			CAS1 = 1
-		}
-	}
+
+set_air_oob = "ENG_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
 }
 
 load_oob = "ENG_Motorized"
@@ -526,116 +496,6 @@ if = {
 }
 
 if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "Light Tank Mk. IV"
-		type = light_tank_chassis_1
-		parent_version = 0
-		show_position = no
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_ENG_basic_light_tank_medium"
-		obsolete = yes #used for oob
-	}
-	create_equipment_variant = {
-		name = "Light Tank Mk. VI"
-		type = light_tank_chassis_1
-		parent_version = 1
-		show_position = no
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		icon = "GFX_ENG_basic_light_tank_medium"
-		upgrades = {
-			#tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 2
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Medium Mk. II"
-		type = medium_tank_chassis_0
-		design_team = mio:ENG_vickers_armstrong_eng_organization
-		parent_version = 0
-		show_position = no
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_medium_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 1
-			#tank_nsb_engine_upgrade = 2
-		}
-		icon = "GFX_ENG_basic_light_tank_medium"
-	}
-
-	create_equipment_variant = {
-		name = "Vickers 6 ton A"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 3
-			#tank_nsb_engine_upgrade = 2
-		}
-		icon = "GFX_ENG_light_BAB_camo"
-		obsolete = yes #export only
-	}
-
-	create_equipment_variant = {
-		name = "Vickers 6 ton B"
-		type = light_tank_chassis_0
-		parent_version = 1
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			roadwheels_type_slot = tank_small_roadwheels
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 3
-			#tank_nsb_engine_upgrade = 2
-		}
-		icon = "GFX_ENG_light_BAB_camo"
-		obsolete = yes #export only
-	}
-}
-if = {
 	limit = { has_dlc = "Man the Guns" }
 	### Variants ###
 	# Submarines #
@@ -1069,87 +929,19 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-			name = "Ark Royal Class"
-			type = ship_hull_carrier_1
-			name_group = ENG_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries_2
-				front_1_custom_slot = ship_deck_space
-			}
+		name = "Ark Royal Class"
+		type = ship_hull_carrier_1
+		name_group = ENG_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			front_1_custom_slot = ship_deck_space
 		}
 	}
-	if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		create_equipment_variant = {
-			name = "Hawker Fury" #also covers Gloster Gauntlet, Hawker Demon
-			type = small_plane_airframe_0
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-		}
-
-		create_equipment_variant = {
-			name = "Gloster Gladiator" 
-			type = small_plane_airframe_0
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-		}
-
-		create_equipment_variant = {
-			name = "Fairey Gordon" 
-			type = small_plane_cas_airframe_0
-			modules = {
-				fixed_main_weapon_slot = bomb_locks
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-			icon = "GFX_ENG_CAS1_medium"
-		}
-		create_equipment_variant = {
-			name = "Vickers Vildebeest" 
-			type = small_plane_naval_bomber_airframe_0
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
-		}
-		
-		create_equipment_variant = {
-			name = "Handley Page Heyford" 
-			type = medium_plane_airframe_0
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				engine_type_slot = engine_1_2x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Bristol Blenheim" 
-			type = medium_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				engine_type_slot = engine_2_2x
-				special_type_slot_3 = lmg_defense_turret
-			}
-			icon = "GFX_ENG_heavy_fighter1_medium"
-		}
-	}
+}
 

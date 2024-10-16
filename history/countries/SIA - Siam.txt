@@ -8,16 +8,10 @@ if = {
 		set_naval_oob = "SIA_1936_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "SIA_1936_air_bba"
-	else = {
-		set_air_oob = "SIA_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
+set_air_oob = "SIA_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	CAS1 = 1
 }
 
 recruit_character = SIA_phraya_phahon

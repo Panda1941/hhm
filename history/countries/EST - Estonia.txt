@@ -1,17 +1,6 @@
 ﻿capital = 812
 
 oob = "EST_1936"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "EST_1936_air_bba"
-	else = {
-		set_air_oob = "EST_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-
-		}
-	}
-}
 set_research_slots = 3
 
 add_ideas = {
@@ -110,13 +99,4 @@ set_popularities = {
 	fascism = 15
 	communism = 5
 	neutrality = 60
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1938.2.25"
-		election_frequency = 48
-		elections_allowed = no
-	}
 }

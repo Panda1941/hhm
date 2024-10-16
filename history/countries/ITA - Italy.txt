@@ -1,19 +1,7 @@
 ﻿capital = 2
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "ITA_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "ITA_1936_nsb"
-}
+
+set_oob = "ITA_1936_nsb"
 
 starting_train_buffer = 1.5
 
@@ -360,26 +348,14 @@ if = {
 		armored_car1 = 1 #Fiat AB611 entered service in 1933
 	}
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
+
+set_technology = {
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	basic_heavy_tank = 1
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-		basic_heavy_tank_chassis = 1
-	}
-}
+
 if = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"
@@ -430,30 +406,6 @@ if = {
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
 
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "ITA_1936_air_bba"
-		set_technology = {
-			aa_lmg = 1
-			early_bombs = 1
-			aircraft_construction = 1
-			
-			
-			iw_small_airframe = 1
-			iw_medium_airframe = 1
-			basic_small_airframe = 1
-			basic_medium_airframe = 1
-		}
-	else = {
-		set_air_oob = "ITA_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			naval_bomber1 = 1
-			CAS1 = 1
-		}
-	}
-}
 
 ### STOCKPILE ###
 add_equipment_to_stockpile = {
@@ -465,14 +417,8 @@ add_equipment_to_stockpile = {
 	amount = 150
 }
 add_equipment_to_stockpile = {
-	type = light_tank_chassis_0
-	amount = 150
-	variant_name = "Fiat 3000"
-}
-add_equipment_to_stockpile = {
-	type = light_tank_chassis_0
-	amount = 40
-	variant_name = "Fiat 3000B"
+	type = light_tank_equipment_1
+	amount = 190
 }
 
 # DIPLOMACY / WAR 36
@@ -669,180 +615,6 @@ add_equipment_to_stockpile = {
 
 ### VARIANTS ###
 # 1936 Start #
-#plane variants
-if = {
-	limit = { NOT = { has_dlc = "By Blood Alone" } }
-	create_equipment_variant = {
-		name = "CR.42"
-		type = fighter_equipment_0
-		upgrades = {
-			plane_gun_upgrade = 1
-			plane_range_upgrade = 0  
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 1
-		}
-	}
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	create_equipment_variant = {
-		name = "CR.32" #
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Ca.111" #
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-		icon = "GFX_ITA_CAS1_medium"
-	}
-	create_equipment_variant = {
-		name = "Ca.101" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			engine_type_slot = engine_1_3x
-			special_type_slot_3 = lmg_defense_turret
-		}
-		obsolete = yes
-		icon = "GFX_ITA_early_bomber_old_medium"
-	}
-	create_equipment_variant = {
-		name = "Ca.133" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = bomb_locks
-			engine_type_slot = engine_1_3x
-			special_type_slot_3 = lmg_defense_turret_2x
-		}
-		obsolete = yes
-		icon = "GFX_ITA_early_bomber_old_medium"
-	}
-	create_equipment_variant = {
-		name = "SM.81" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			engine_type_slot = engine_1_3x
-			special_type_slot_3 = lmg_defense_turret_2x
-		}
-		icon = "GFX_ITA_early_bomber_medium"
-	}
-	create_equipment_variant = {
-		name = "SM.79" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-			engine_type_slot = engine_2_3x
-			special_type_slot_3 = lmg_defense_turret_2x
-		}
-		icon = "GFX_ITA_naval_bomber1_medium"
-	}
-	create_equipment_variant = {
-		name = "Ba.65" #
-		type = small_plane_cas_airframe_1
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = light_mg_4x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_ITA_CAS1_medium"
-	}
-
-}
-
-#TANKS
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "Fiat 3000"
-		type = light_tank_chassis_0
-		parent_version = 0
-		obsolete = yes
-		modules = {
-			main_armament_slot = tank_auto_cannon
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			roadwheels_type_slot = tank_small_roadwheels
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_gwtank_medium"
-	}
-
-	add_equipment_to_stockpile = {
-		type = light_tank_chassis_0
-		amount = 150
-		variant_name = "Fiat 3000"
-	}
-
-	create_equipment_variant = {
-		name = "Fiat 3000B"
-		type = light_tank_chassis_0
-		parent_version = 1
-		obsolete = yes
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			roadwheels_type_slot = tank_small_roadwheels
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_gwtank_medium"
-	}
-
-	add_equipment_to_stockpile = {
-		type = light_tank_chassis_0
-		amount = 40
-		variant_name = "Fiat 3000B"
-	}
-
-	create_equipment_variant = {
-		name = "L3/35"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_auto_cannon
-			turret_type_slot = tank_light_breakthrough_turret_1
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			roadwheels_type_slot = tank_small_roadwheels
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = ammo_ap
-		}
-		upgrades = {
-			#tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_ITA_basic_light_tank_medium"
-	}
-}
 if = {
 	limit = {
 		NOT = { has_dlc = "Man the Guns" }

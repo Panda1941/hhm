@@ -11,13 +11,8 @@ set_technology = {
 	tech_engineers = 1
 	basic_train = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
-		early_fighter = 1
-	}
+set_technology = {
+	early_fighter = 1
 }
 set_war_support = 0.1
 set_stability = 0.8

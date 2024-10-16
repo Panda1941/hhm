@@ -24,21 +24,8 @@ set_technology = {
 
 	fleet_in_being = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-	}
+set_technology = {
+	gwtank = 1
 }
 if = {
 	limit = {
@@ -72,20 +59,15 @@ if = {
 	}
 	set_naval_oob = "AST_1936_naval"
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "AST_1936_air_bba"
-	else = {
-		set_air_oob = "AST_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			cv_early_fighter = 1
-			cv_naval_bomber1 = 1
-			naval_bomber1 = 1
-			early_bomber = 1
-			CAS1 = 1
-		}
-	}
+
+set_air_oob = "AST_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
 }
 
 recruit_character = AST_john_curtin

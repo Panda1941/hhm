@@ -1,17 +1,10 @@
 ﻿capital = 266
 
 oob = "PER_1936"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "PER_1936_air_bba"
-	else = {
-		set_air_oob = "PER_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-
-		}
-	}
+set_air_oob = "PER_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	CAS1 = 1
 }
 
 # Starting tech
