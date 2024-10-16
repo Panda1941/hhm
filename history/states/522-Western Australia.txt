@@ -1,8 +1,13 @@
 state={
 	id=522
 	name="STATE_522"
+	resources={
+		steel=24
+		chromium = 5
+	}
 
-history={ 1936.1.1.13 = { owner = WST add_core_of = WST }
+	history={ 
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 		owner = AST
 		buildings = {
 			infrastructure = 3
