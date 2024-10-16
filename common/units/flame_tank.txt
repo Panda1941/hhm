@@ -43,7 +43,7 @@ sub_units = {
 		can_be_parachuted = no
 
 		need = {
-			flame_tank_equipment = 12
+			flame_tank_chassis = 12
 		}
 
 		forest = {
