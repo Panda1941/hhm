@@ -1007,19 +1007,19 @@ technologies = {
 	rocket_artillery3 = {
 
 		rocket_artillery = {
-			soft_attack = 0.18
+			soft_attack = 0.16
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.18
+			soft_attack = 0.16
 		}
 		mot_rocket_artillery_brigade = {
-			soft_attack = 0.18
+			soft_attack = 0.16
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.18
+			soft_attack = 0.16
 		}
 		mech_rarty = {
-			soft_attack = 0.18
+			soft_attack = 0.16
 		}
 
 		path = {
@@ -1163,19 +1163,19 @@ technologies = {
 	rocket_artillery6 = {
 
 		rocket_artillery = {
-			soft_attack = 0.18
+			soft_attack = 0.16
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.18
+			soft_attack = 0.16
 		}
 		mot_rocket_artillery_brigade = {
-			soft_attack = 0.18
+			soft_attack = 0.16
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.18
+			soft_attack = 0.16
 		}
 		mech_rarty = {
-			soft_attack = 0.18
+			soft_attack = 0.16
 		}
 
 		
