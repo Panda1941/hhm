@@ -1156,9 +1156,9 @@ technologies = {
 		support_super_heavy_sp_anti_air = { air_attack = 0.05 }
 		support_modern_sp_anti_air= { air_attack = 0.05 }
 
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.05
 		
-		industry_air_damage_factor = -0.05
+		industry_air_damage_factor = -0.1
 
 		path = {
 			leads_to_tech = antiair2
@@ -1287,7 +1287,7 @@ technologies = {
 		support_modern_sp_anti_air= { air_attack = 0.05 }
 
 		tech_air_damage_factor = -0.02
-		industry_air_damage_factor = -0.05
+		industry_air_damage_factor = -0.1
 
 		path = {
 			leads_to_tech = antiair5
@@ -1399,19 +1399,19 @@ technologies = {
 	antiair6 = {
 
 		anti_air = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		anti_air_brigade = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		mot_anti_air_brigade = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		mech_anti_air = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		support_light_sp_anti_air= { air_attack = 0.05 }
@@ -1421,7 +1421,7 @@ technologies = {
 		support_modern_sp_anti_air= { air_attack = 0.05 }
 
 		tech_air_damage_factor = -0.02
-		industry_air_damage_factor = -0.05
+		industry_air_damage_factor = -0.1
 
 		path = {
 			leads_to_tech = antiair5
@@ -1590,19 +1590,19 @@ technologies = {
 	antiair9 = {
 
 		anti_air = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		anti_air_brigade = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		mot_anti_air_brigade = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		mech_anti_air = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		support_light_sp_anti_air= { air_attack = 0.05 }
@@ -1723,19 +1723,19 @@ technologies = {
 	antiair11 = {
 
 		anti_air = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		anti_air_brigade = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		mot_anti_air_brigade = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		mech_anti_air = {
-			hard_attack = 0.1
+			hard_attack = 0.2
 			ap_attack = 0.4
 		}
 		support_light_sp_anti_air= { air_attack = 0.05 }
