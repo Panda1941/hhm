@@ -92,7 +92,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_subtitle_motorized"
-					position = { x = 30 y = 510 }
+					position = { x = 30 y = 580 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -271,7 +271,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "tech_trucks_tree"
-				position = { x = 140 y = 620 }
+				position = { x = 140 y = 690 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
