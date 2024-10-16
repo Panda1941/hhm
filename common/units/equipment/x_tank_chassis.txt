@@ -205,12 +205,6 @@ equipments = {
 		is_archetype = yes
 		is_buildable = no
 
-		can_be_produced = {
-			NOT = {
-				has_idea = BUL_army_restrictions
-			}
-		}
-
 		picture = archetype_light_tank_equipment
 		type = armor
 		group_by = archetype
@@ -249,11 +243,11 @@ equipments = {
 		year = 1934
 		
 		archetype = flame_tank_chassis
-		priority = 10
+		priority = 1
 		visual_level = 0
 	}
 
-	
+
 
 	gw_tank_equipment = {
 		year = 1914
