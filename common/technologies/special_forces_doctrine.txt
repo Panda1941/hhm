@@ -10,6 +10,9 @@ technologies = {
 			supply_consumption = -0.01
 			max_organisation = 3
 		}
+		enable_subunits = {
+			rangers_support
+		}
         special_forces_min = 36
 		###########
 		
@@ -550,7 +553,9 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		
-		
+		enable_subunits = {
+			pioneer_support
+		}
 		
 		allow = {
 			enough_sfxp_for_doctrine = yes
