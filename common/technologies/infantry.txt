@@ -92,6 +92,7 @@ technologies = {
 
 		category_all_infantry = {
 			soft_attack = 0.05
+			hard_attack = 0.01
 		}
 		
 		path = {
@@ -191,6 +192,7 @@ technologies = {
 
 		category_all_infantry = {
 			soft_attack = 0.05
+			hard_attack = 0.01
 		}
 		
 		path = {
@@ -235,8 +237,8 @@ technologies = {
 	infantry_at = {
 
 		category_all_infantry = {
-			hard_attack = 0.12
-			ap_attack = 0.3
+			hard_attack = 0.15
+			ap_attack = 0.33
 		}
 		
 		path = {
@@ -281,8 +283,8 @@ technologies = {
 	infantry_at2 = {
 
 		category_all_infantry = {
-			hard_attack = 0.14
-			ap_attack = 0.3
+			hard_attack = 0.15
+			ap_attack = 0.33
 		}
 		
 		path = {
@@ -327,8 +329,8 @@ technologies = {
 	infantry_at3 = {
 
 		category_all_infantry = {
-			hard_attack = 0.18
-			ap_attack = 0.5
+			hard_attack = 0.15
+			ap_attack = 0.33
 		}
 		
 		research_cost = 1.5
@@ -411,6 +413,7 @@ technologies = {
 
 		category_all_infantry = {
 			soft_attack = 0.05
+			hard_attack = 0.01
 		}
 
         path = {
@@ -456,6 +459,7 @@ technologies = {
 
 		category_all_infantry = {
 			soft_attack = 0.05
+			hard_attack = 0.01
 		}
 
 		path = {
@@ -501,6 +505,7 @@ technologies = {
 
 		category_all_infantry = {
 			soft_attack = 0.05
+			hard_attack = 0.01
 		}
 
 		path = {
@@ -546,6 +551,7 @@ technologies = {
 
 		category_all_infantry = {
 			soft_attack = 0.05
+			hard_attack = 0.01
 		}
 
 		research_cost = 1.5
