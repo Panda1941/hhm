@@ -1,7 +1,7 @@
 equipments = {
 
 	motorized_equipment = {
-		year = 1936
+		year = 1933
 
 		is_archetype = yes
 		picture = archetype_motorized_equipment		
@@ -12,22 +12,18 @@ equipments = {
 		}
 		group_by = archetype
 		
-		upgrades = {
-			
-		}
-
 		interface_category = interface_category_land
 		
-		maximum_speed = 10
+		maximum_speed = 8
 		reliability = 0.8
 		hardness = 0.1
 
-		breakthrough = 5
+		breakthrough = 2
 
 		#Space taken in convoy
 		lend_lease_cost = 5
 
-		build_cost_ic = 6.5
+		build_cost_ic = 5.5
 		resources = {
 			#oil = 1
 			rubber = 1
@@ -37,28 +33,13 @@ equipments = {
 		fuel_consumption = 1.2
 		supply_truck = yes
 	}
-	
+
 	motorized_equipment_0 = { # Introducing WW1 style trucks
-		year = 1936
+		year = 1933
 
 		archetype = motorized_equipment
 		priority = 30
-		maximum_speed = 6
 		reliability = 0.65
-		breakthrough = 2
-
-        #Space taken in convoy
-		lend_lease_cost = 5	
-		
-		build_cost_ic = 5.5
-		resources = {
-			#oil = 1
-			rubber = 1
-			steel = 1
-		}
-		
-		fuel_consumption = 1.0
-		supply_truck = yes
 	}
 
 	motorized_equipment_1 = {
@@ -66,7 +47,13 @@ equipments = {
 
 		archetype = motorized_equipment
 		parent = motorized_equipment_0
-		priority = 30			
+		priority = 30		
+		
+		breakthrough = 5
+
+		build_cost_ic = 6.5	
+
+		maximum_speed = 12
 	}
 
 }
