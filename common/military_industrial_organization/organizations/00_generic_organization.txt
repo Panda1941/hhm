@@ -1361,10 +1361,6 @@ generic_infantry_equipment_organization = {
 		production_bonus = {
 			production_efficiency_cap_factor = 0.03
 		}
-
-		equipment_bonus = {
-			soft_attack = 0.03
-		}
 	}
 }
 
@@ -1401,6 +1397,9 @@ generic_support_equipment_organization = {
 
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
 		}
 	}
 }
@@ -1493,6 +1492,9 @@ generic_motorized_mechanized_organization = {
 	initial_trait = {
 		name = generic_mio_initial_trait_motorized_mechanized_manufacturer
 
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.05
 		}
@@ -1530,10 +1532,12 @@ generic_armored_car_organization = {
 	
 	initial_trait = {
 		name = generic_mio_initial_trait_standardized_production
-		equipment_bonus = {
-			armor_value = 0.05
-			defense =0.05
-			build_cost_ic = -0.025
+		
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
 		}
 	}
 }
