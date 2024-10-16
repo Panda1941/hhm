@@ -8,6 +8,8 @@
  flame_tank_chassis:0 "Flame Tank"
  flame_tank_equipment:0 "Flame Tank"
 
+ GER_applies_to_modern_tank:0 "\ngThis bonus also applies to Modern Tanks!"
+
 
 
 

@@ -2006,7 +2006,7 @@ focus_tree = {
 				name = GER_air_innovation
 				bonus = 1.0
 				uses = 1
-				category = light_air
+				category = light_fighter
 			}
 
 			add_doctrine_cost_reduction = {
@@ -2082,8 +2082,8 @@ focus_tree = {
 				name = GER_tactical_air_effort
 				bonus = 1.0
 				uses = 1
-				category = medium_air
-				category = light_air
+				category = cas_bomber
+				category = tactical_bomber
 			}
 			add_doctrine_cost_reduction = {
 				name = op_dest_bonus
@@ -2116,7 +2116,8 @@ focus_tree = {
 				name = GER_long_range_escorts
 				bonus = 1.5
 				uses = 1
-				category = medium_air
+				category = tactical_bomber
+				category = cat_heavy_fighter
 			}
 		}
 	}
@@ -2140,6 +2141,12 @@ focus_tree = {
 		completion_reward = {
 			mio:GER_dornier_organization = { add_mio_size = 1 }
 			add_ideas = Luftwaffe_marine
+			add_tech_bonus = {
+				name = GER_air_innovation
+				bonus = 1.0
+				uses = 1
+				category = naval_bomber
+			}
 		}
 	}
 
@@ -2167,7 +2174,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.5
 				uses = 1
-				category = heavy_air
+				category = cat_strategic_bomber
 			}
 			add_doctrine_cost_reduction = {
 				name = strat_dest_bonus
@@ -2560,10 +2567,11 @@ focus_tree = {
 			
 			add_tech_bonus = {
                 name = improved_medium_tank			
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = cat_medium_armor
 			}
+			custom_effect_tooltip = GER_applies_to_modern_tank
 		}
 	}
 	
@@ -2591,9 +2599,10 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.75
 				uses = 1
-				name = army_innovation_3_bonus
-				technology = advanced_medium_tank_chassis_1
+				name = GER_panther
+				technology = advanced_medium_tank
 			}
+
 		}
 	}
 	
@@ -2621,8 +2630,14 @@ focus_tree = {
 			add_tech_bonus = {
                 name = GER_tiger			
 				bonus = 1.0
-				uses = 2
-				category = cat_heavy_armor
+				uses = 1
+				technology = improved_heavy_tank
+			}
+			add_tech_bonus = {
+                name = GER_tiger			
+				bonus = 0.75
+				uses = 1
+				technology = advanced_heavy_tank
 			}
 
 			#add_ideas = GER_heavy_research
