@@ -1531,7 +1531,7 @@ generic_armored_car_organization = {
 
 	
 	initial_trait = {
-		name = generic_mio_initial_trait_standardized_production
+		name = generic_armored_car_organization_tt
 		
 		production_bonus = {
 			production_efficiency_cap_factor = 0.03
