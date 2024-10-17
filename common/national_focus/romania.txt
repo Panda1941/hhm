@@ -31,7 +31,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = free_trade
+			add_stability = 0.05
+			if = {
+				limit = {
+					NOT = {
+						has_idea = free_trade
+					}
+				}
+				add_ideas = free_trade
+			}
+			else = {
+				add_political_power = 120
+			}
 		}
 	}
 
@@ -350,7 +361,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_encourage_trade_with_germany
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -457,7 +468,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ROM_national_recovery
-		cost = 7
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -507,7 +518,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_autarky
-		cost = 7
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1155,6 +1166,14 @@ focus_tree = {
 				add_idea = ROM_preserve_greater_romania3
 				remove_idea = ROM_preserve_greater_romania2
 			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
 		}
 	}
 
@@ -1297,7 +1316,7 @@ focus_tree = {
 		x = -3
 		y = 3
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
