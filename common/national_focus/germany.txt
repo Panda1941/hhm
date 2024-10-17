@@ -3465,29 +3465,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 64070 }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 968 }
 			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1254 }
-			create_equipment_variant = {
-				name = "Panzer 38(t)"
-				type = light_tank_chassis_2
-				parent_version = 1
-				
-				modules = {
-					main_armament_slot = tank_small_cannon_2
-					turret_type_slot = tank_light_breakthrough_turret_1
-					suspension_type_slot = tank_bogie_suspension
-					roadwheels_type_slot = tank_small_roadwheels
-					armor_type_slot = tank_riveted_armor
-					engine_type_slot = tank_gasoline_engine
-					special_type_slot_1 = ammo_ap
-					special_type_slot_2 = smoke_launchers
-				}
-				upgrades = {
-					tank_nsb_engine_upgrade = 2
-					tank_nsb_armor_upgrade = 1
-				}
-				
-				icon = "gfx/interface/technologies/cze_basic_main_tank.dds"
-			}
-			add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 2160 producer = GER variant_name = "Panzer 38(t)" }
+			add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 2160 producer = CZE }
 			hidden_effect = {
 				country_event = { hours = 6 id = news.60 }
 				add_to_variable = { var = GER_mefo_bill_counter value = -5 }
