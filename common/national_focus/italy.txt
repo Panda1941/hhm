@@ -3832,18 +3832,24 @@ focus_tree = {
 				annex_country = { target = YUG }
 			}
 
-			BUL = {
-				transfer_state = 803
-				transfer_state = 106
-				transfer_state = 77
+			if = {
+				limit = { 
+					country_exists = BUL
+				}
 
-				give_resource_rights = { receiver = ITA state = 803 }
-				give_resource_rights = { receiver = ITA state = 106 }	
+				BUL = {
+					transfer_state = 803
+					transfer_state = 106
+					transfer_state = 77
+
+					give_resource_rights = { receiver = ITA state = 803 }
+					give_resource_rights = { receiver = ITA state = 106 }	
+				}
+				803 = {	add_core_of = BUL}
+				106 = {	add_core_of = BUL}
+				77 = { add_core_of = BUL}
 			}
 
-			803 = {	add_core_of = BUL}
-			106 = {	add_core_of = BUL}
-			77 = { add_core_of = BUL}
 
 			HUN = {
 				transfer_state = 764
@@ -4168,24 +4174,32 @@ focus_tree = {
 				annex_country = { target = GRE }
 			}
 
-			BUL = {
-				transfer_state = 731
-				transfer_state = 184
-				give_resource_rights = { receiver = ITA state = 184 }
-				give_resource_rights = { receiver = ITA state = 731 }
+			IF = {
+				limit = {
+					country_exists = BUL
+				}
+				BUL = {
+					transfer_state = 731
+					transfer_state = 184
+					give_resource_rights = { receiver = ITA state = 184 }
+					give_resource_rights = { receiver = ITA state = 731 }
+				}
+				184 = {	add_core_of = BUL }
+				731 = { add_core_of = BUL }
+				341 = {
+					set_demilitarized_zone = no
+					add_core_of = BUL
+					transfer_state_to = BUL
+					add_manpower = 289548
+				}	
 			}
-
-			
-			
-			184 = {	add_core_of = BUL }
-			731 = { add_core_of = BUL }
-
-			341 = {
-				set_demilitarized_zone = no
-				add_core_of = BUL
-				transfer_state_to = BUL
-				add_manpower = 289548
-			}	
+			ELSE = {
+				341 = {
+					set_demilitarized_zone = no
+					transfer_state_to = ITA
+					add_manpower = 289548
+				}	
+			}
 		}
 	}
 
