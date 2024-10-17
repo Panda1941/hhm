@@ -385,6 +385,7 @@ focus_tree = {
 
 		available = {
 			date > 1940.07.01
+			has_idea = HUN_hungaro_german_trade_agreement
 		}
 
 		bypass = {
@@ -1104,7 +1105,7 @@ focus_tree = {
 		}
 
 		available = {
-			num_of_factories > 45
+			num_of_factories > 40
 		}
 
 		bypass = {
@@ -1137,8 +1138,8 @@ focus_tree = {
 		}
 
 		available = {
-			date >1940.01.01
-			num_of_factories > 75
+			date >1940.06.01
+			num_of_factories > 60
 		}
 
 		bypass = {
