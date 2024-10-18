@@ -69,7 +69,7 @@ categories =  {
 	
 	mountain = {
 		color = { 157 192 208 }
-		movement_cost = 1.5
+		movement_cost = 2.0  # Further increased
 		attrition = 0.4
 		combat_width = 40
 		combat_support_width = 20
@@ -86,7 +86,7 @@ categories =  {
 
 		enemy_army_bonus_air_superiority_factor = -0.10
 		
-		supply_flow_penalty_factor = 0.12
+		supply_flow_penalty_factor = 0.10  # Minor adjustment for balance
 		
 		truck_attrition_factor = 1.0
 	}
@@ -107,7 +107,7 @@ categories =  {
 	
 	urban = {
 		color = { 120 120 120 }
-		movement_cost = 1.1
+		movement_cost = 1.25  # Increased to reflect difficult navigation
 		ai_terrain_importance_factor = 4.0
 		combat_width = 40
 		combat_support_width = 20
@@ -127,7 +127,7 @@ categories =  {
 
 	urban_fortress = {
 		color = { 120 0 0 }
-		movement_cost = 1.1
+		movement_cost = 1.25  # Increased to reflect difficult navigation
 		ai_terrain_importance_factor = 4.0
 		combat_width = 40
 		combat_support_width = 20
@@ -136,7 +136,7 @@ categories =  {
 		local_supplies = 0.25
 
 		units = {
-			attack = -0.50
+			attack = -0.70  # Increased attack penalty
 			defence = 0.50
 			movement = -0.25
 		}
@@ -147,8 +147,8 @@ categories =  {
 	
 	jungle = {
 		color = { 127 191 0 }
-		movement_cost = 1.25
-		attrition = 0.2
+		movement_cost = 1.5  # Increased movement cost for jungles
+		attrition = 0.25    # Increased for harsher conditions
 		combat_width = 40
 		combat_support_width = 20
 
@@ -172,7 +172,7 @@ categories =  {
 	marsh = {
 		color = { 76 96 35 }
 		movement_cost = 1.5
-		attrition = 0.50
+		attrition = 0.6     # Increased for movement difficulties
 		combat_width = 40
 		combat_support_width = 20
 		ai_terrain_importance_factor = 8.0
@@ -185,7 +185,7 @@ categories =  {
 			defence = -0.1
 		}
 		
-		supply_flow_penalty_factor = 0.16
+		supply_flow_penalty_factor = 0.18 # Reflects higher difficulties in supply flow
 		
 		truck_attrition_factor = 4.0
 	}
@@ -202,13 +202,13 @@ categories =  {
 		local_supplies = -0.40
 		
 		units = {
-		    attack = -0.15
+			attack = -0.15
 			defence = -0.15
 			movement = -0.20	
 		}
 		army_attack_speed_factor = -0.1
 		
-		supply_flow_penalty_factor = 0.14
+		supply_flow_penalty_factor = 0.14  # Minor adjustment for balance
 		
 		truck_attrition_factor = 0.5
 	}
