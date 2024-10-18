@@ -1,7 +1,5 @@
-
 ##################################################################
 ### Terrain Categories
-###
 ###
 
 categories =  {
@@ -27,9 +25,8 @@ categories =  {
 	forest = {
 		color = { 89 199 85 }
 		movement_cost = 1.25
-		#combat_width = -0.20
-		combat_width = 90
-		combat_support_width = 30
+		combat_width = 80
+		combat_support_width = 40
 		ai_terrain_importance_factor = 5.0
 		match_value = 5
 		sound_type = forest
@@ -51,9 +48,8 @@ categories =  {
 	hills = {
 		color = { 248 255 153 }
 		movement_cost = 1.25
-		#combat_width = -0.33
-		combat_width = 90
-		combat_support_width = 30
+		combat_width = 80
+		combat_support_width = 40
 		ai_terrain_importance_factor = 3.0
 		match_value = 2
 		sound_type = desert
@@ -75,9 +71,8 @@ categories =  {
 		color = { 157 192 208 }
 		movement_cost = 1.5
 		attrition = 0.4
-		#combat_width = -0.66
-		combat_width = 60
-		combat_support_width = 30
+		combat_width = 40
+		combat_support_width = 20
 		ai_terrain_importance_factor = 10.0
 		match_value = 10
 		sound_type = desert
@@ -101,13 +96,12 @@ categories =  {
 		movement_cost = 1.0
 		ai_terrain_importance_factor = 0.1
 		combat_width = 120
-		combat_support_width = 30
+		combat_support_width = 40
 		match_value = 0.5
 		sound_type = plains
 		
 		units = {
 			defence = -0.1
-			#movement = 0.1
 		}
 	}
 	
@@ -115,8 +109,8 @@ categories =  {
 		color = { 120 120 120 }
 		movement_cost = 1.1
 		ai_terrain_importance_factor = 4.0
-		combat_width = 60
-		combat_support_width = 30
+		combat_width = 40
+		combat_support_width = 20
 		match_value = 4
 		sound_type = plains
 		local_supplies = 0.1
@@ -128,7 +122,6 @@ categories =  {
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.60
-				
 		supply_flow_penalty_factor = -0.2
 	}
 	
@@ -136,8 +129,8 @@ categories =  {
 		color = { 120 0 0 }
 		movement_cost = 1.1
 		ai_terrain_importance_factor = 4.0
-		combat_width = 60
-		combat_support_width = 30
+		combat_width = 40
+		combat_support_width = 20
 		match_value = 4
 		sound_type = plains
 		local_supplies = 0.25
@@ -149,7 +142,6 @@ categories =  {
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.80
-				
 		supply_flow_penalty_factor = -0.2
 	}
 	
@@ -157,9 +149,8 @@ categories =  {
 		color = { 127 191 0 }
 		movement_cost = 1.25
 		attrition = 0.2
-		# combat_width = -0.25
-		combat_width = 60
-		combat_support_width = 30
+		combat_width = 40
+		combat_support_width = 20
 
 		ai_terrain_importance_factor = 6.0
 		match_value = 6
@@ -173,8 +164,6 @@ categories =  {
 
 		enemy_army_bonus_air_superiority_factor = -0.25
 		
-		#sickness_chance = 1.0
-		
 		supply_flow_penalty_factor = 0.16
 		
 		truck_attrition_factor = 3.0
@@ -184,9 +173,8 @@ categories =  {
 		color = { 76 96 35 }
 		movement_cost = 1.5
 		attrition = 0.50
-		# combat_width = -0.25
-		combat_width = 60
-		combat_support_width = 30
+		combat_width = 40
+		combat_support_width = 20
 		ai_terrain_importance_factor = 8.0
 		match_value = 8
 		sound_type = forest
@@ -194,11 +182,8 @@ categories =  {
 
 		units = {
 			attack = -0.4
-			#movement = -0.4
 			defence = -0.1
 		}
-		
-		#sickness_chance = 1.0
 		
 		supply_flow_penalty_factor = 0.16
 		
@@ -210,7 +195,7 @@ categories =  {
 		movement_cost = 1.5
 		attrition = 0.2
 		combat_width = 120
-		combat_support_width = 30
+		combat_support_width = 40
 		ai_terrain_importance_factor = 8.0
 		match_value = 8
 		sound_type = desert
@@ -222,7 +207,6 @@ categories =  {
 			movement = -0.20	
 		}
 		army_attack_speed_factor = -0.1
-		#sickness_chance = 0.10
 		
 		supply_flow_penalty_factor = 0.14
 		
@@ -297,8 +281,6 @@ categories =  {
 		naval_mine_hit_chance = -0.5
 	}
 }
-	
-
 
 ##################################################################
 ### Graphical terrain
