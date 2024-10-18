@@ -26,7 +26,7 @@ categories =  {
 		color = { 89 199 85 }
 		movement_cost = 1.25
 		combat_width = 80
-		combat_support_width = 40
+		combat_support_width = 20
 		ai_terrain_importance_factor = 5.0
 		match_value = 5
 		sound_type = forest
@@ -49,7 +49,7 @@ categories =  {
 		color = { 248 255 153 }
 		movement_cost = 1.25
 		combat_width = 80
-		combat_support_width = 40
+		combat_support_width = 20
 		ai_terrain_importance_factor = 3.0
 		match_value = 2
 		sound_type = desert
@@ -124,7 +124,7 @@ categories =  {
 		enemy_army_bonus_air_superiority_factor = -0.60
 		supply_flow_penalty_factor = -0.2
 	}
-	
+
 	urban_fortress = {
 		color = { 120 0 0 }
 		movement_cost = 1.1
