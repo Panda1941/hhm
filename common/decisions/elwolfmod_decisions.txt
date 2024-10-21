@@ -33,34 +33,43 @@ templates_retards_ai = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			custom_effect_tooltip = "Will add a 9/6 Infantry template"
+			custom_effect_tooltip = generic_20_w_inf_tt
 			division_template = {
-				name = "30w infantry + arty"
+				name = "20w infantry"
 				regiments = {
-					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } infantry = { x = 3 y = 0 }
 					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
 					infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
-					artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 } 
-					artillery_brigade = { x = 3 y = 1 }	artillery_brigade = { x = 4 y = 1 }
-					artillery_brigade = { x = 3 y = 2 }	artillery_brigade = { x = 4 y = 2 }
 				}
 				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
 			}
-			custom_effect_tooltip = "Will add a 15/0 Infantry template"
+			custom_effect_tooltip = generic_20_w_inf_at_tt
 			division_template = {
-				name = "30w pure infantry"
+				name = "20w infantry"
 				regiments = {
-					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } infantry = { x = 3 y = 0 }
-					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } infantry = { x = 3 y = 1 } 
-					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } infantry = { x = 3 y = 2 }
-					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } infantry = { x = 2 y = 3 }
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } anti_tank_brigade = { x = 3 y = 0 }
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
+					infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+			}
+			custom_effect_tooltip = generic_40_w_inf_tt
+			division_template = {
+				name = "40w infantry"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } infantry = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 }
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } infantry = { x = 3 y = 1 } artillery_brigade = { x = 4 y = 1 }
+					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } infantry = { x = 3 y = 2 } artillery_brigade = { x = 4 y = 2 }
+					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } infantry = { x = 2 y = 3 } infantry = { x = 3 y = 3 } artillery_brigade = { x = 4 y = 3 }
 				}
 				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
 			}
 			
+			custom_effect_tooltip = generic_new_line_segment
+
 			if = {
 			limit = { has_tech = tech_military_police }
-				custom_effect_tooltip = "Will add a mp template"
+				custom_effect_tooltip = generic_50_w_cav_mp_tt
 				division_template = {
 					name = "mp"
 					regiments = {
@@ -74,7 +83,7 @@ templates_retards_ai = {
 				}
 			}
 			else = {
-				custom_effect_tooltip = "Will add a mp template"
+				custom_effect_tooltip = generic_50_w_cav_tt
 				division_template = {
 					name = "mp"
 					regiments = {
@@ -104,84 +113,178 @@ templates_retards_ai = {
 		fire_only_once = yes
 		
 		complete_effect = {	
+			custom_effect_tooltip = generic_sf_warning_tt
 			if = {
-			limit = { has_tech = tech_mountaineers }
-				custom_effect_tooltip = "Will add a Mountaineer template"
+				limit = { AND = { has_tech = tech_mountaineers has_tech = rocket_artillery } }
+				custom_effect_tooltip = generic_sf_40_w_mtn_ra_tt
 				division_template = {
-					name = "30w mountaineers"
+					name = "Mountaineers"
 					regiments = {
 						mountaineers = { x = 0 y = 0 } mountaineers = { x = 1 y = 0 } mountaineers = { x = 2 y = 0 }
 						mountaineers = { x = 0 y = 1 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 2 y = 1 } 
 						mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 2 } mountaineers = { x = 2 y = 2 }
+						mountaineers = { x = 0 y = 3 } mountaineers = { x = 1 y = 3 } mountaineers = { x = 2 y = 3 }
 						rocket_artillery_brigade = { x = 3 y = 0 } rocket_artillery_brigade = { x = 4 y = 0 }
 						rocket_artillery_brigade = { x = 3 y = 1 } rocket_artillery_brigade = { x = 4 y = 1 }
 						rocket_artillery_brigade = { x = 3 y = 2 }	rocket_artillery_brigade = { x = 4 y = 2 }
+						rocket_artillery_brigade = { x = 3 y = 3 }	rocket_artillery_brigade = { x = 4 y = 3 }
 					}
 					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } rocket_artillery = { x = 0 y = 2 } }
 				}
 			}
-			if = {
-			limit = { has_tech = marines }
-				custom_effect_tooltip = "Will add a Marine template"
+			else_if = {
+				limit = { AND = { has_tech = tech_mountaineers NOT = { has_tech = rocket_artillery } } }
+				custom_effect_tooltip = generic_sf_40_w_mtn_tt
 				division_template = {
-					name = "30w marines"
+					name = "Mountaineers"
+					regiments = {
+						mountaineers = { x = 0 y = 0 } mountaineers = { x = 1 y = 0 } mountaineers = { x = 2 y = 0 }
+						mountaineers = { x = 0 y = 1 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 2 y = 1 } 
+						mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 2 } mountaineers = { x = 2 y = 2 }
+						mountaineers = { x = 0 y = 3 } mountaineers = { x = 1 y = 3 } mountaineers = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 3 y = 1 } artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }	artillery_brigade = { x = 4 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }	artillery_brigade = { x = 4 y = 3 }
+					}
+					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+				}
+			}
+			if = {
+				limit = { AND = { has_tech = marines has_tech = rocket_artillery } }
+				custom_effect_tooltip = generic_sf_40_w_mrn_ra_tt
+				division_template = {
+					name = "Marines"
 					regiments = {
 						marine = { x = 0 y = 0 } marine = { x = 1 y = 0 } marine = { x = 2 y = 0 }
 						marine = { x = 0 y = 1 } marine = { x = 1 y = 1 } marine = { x = 2 y = 1 } 
 						marine = { x = 0 y = 2 } marine = { x = 1 y = 2 } marine = { x = 2 y = 2 }
+						marine = { x = 0 y = 3 } marine = { x = 1 y = 3 } marine = { x = 2 y = 3 }
 						rocket_artillery_brigade = { x = 3 y = 0 } rocket_artillery_brigade = { x = 4 y = 0 }
 						rocket_artillery_brigade = { x = 3 y = 1 } rocket_artillery_brigade = { x = 4 y = 1 }
 						rocket_artillery_brigade = { x = 3 y = 2 }	rocket_artillery_brigade = { x = 4 y = 2 }
+						rocket_artillery_brigade = { x = 3 y = 3 }	rocket_artillery_brigade = { x = 4 y = 3 }
 					}
 					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } rocket_artillery = { x = 0 y = 2 } }
 				}
 			}
-			if = {
-			limit = { has_tech = paratroopers }
-				custom_effect_tooltip = "Will add a Paratrooper template"
+			else_if = {
+				limit = { AND = { has_tech = marines NOT = { has_tech = rocket_artillery } } }
+				custom_effect_tooltip = generic_sf_40_w_mrn_tt
 				division_template = {
-					name = "30w paratroopers"	# Arty can't be paradropped so there is no point adding it in
+					name = "Marines"
 					regiments = {
-						paratrooper = { x = 0 y = 0 } paratrooper = { x = 1 y = 0 } paratrooper = { x = 2 y = 0 }
-						paratrooper = { x = 0 y = 1 } paratrooper = { x = 1 y = 1 } paratrooper = { x = 2 y = 1 } 
-						paratrooper = { x = 0 y = 2 } paratrooper = { x = 1 y = 2 } paratrooper = { x = 2 y = 2 }
-						paratrooper = { x = 0 y = 3 } paratrooper = { x = 1 y = 3 } paratrooper = { x = 2 y = 3 }
-						paratrooper = { x = 0 y = 4 } paratrooper = { x = 1 y = 4 } paratrooper = { x = 2 y = 4 } 
+						marine = { x = 0 y = 0 } marine = { x = 1 y = 0 } marine = { x = 2 y = 0 }
+						marine = { x = 0 y = 1 } marine = { x = 1 y = 1 } marine = { x = 2 y = 1 } 
+						marine = { x = 0 y = 2 } marine = { x = 1 y = 2 } marine = { x = 2 y = 2 }
+						marine = { x = 0 y = 3 } marine = { x = 1 y = 3 } marine = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 3 y = 1 } artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }	artillery_brigade = { x = 4 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }	artillery_brigade = { x = 4 y = 3 }
 					}
-					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } rocket_artillery = { x = 0 y = 2 } }
-				}	
+					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+				}
 			}
 			if = {
-			limit = { has_tech = jaegers }
-				custom_effect_tooltip = "Will add a Jaeger template"
+				limit = { AND = { has_tech = paratroopers has_tech = rocket_artillery } }
+				custom_effect_tooltip = generic_sf_40_w_pra_ra_tt
 				division_template = {
-					name = "30w jaegers"	# Arty can't be paradropped so there is no point adding it in
+					name = "Paratroopers"
+					regiments = {
+						paratrooper = { x = 0 y = 0 } paratrooper = { x = 1 y = 0 } paratrooper = { x = 2 y = 0 } paratrooper = { x = 3 y = 0 } paratrooper = { x = 4 y = 0 }
+						paratrooper = { x = 0 y = 1 } paratrooper = { x = 1 y = 1 } paratrooper = { x = 2 y = 1 } paratrooper = { x = 3 y = 1 } paratrooper = { x = 4 y = 1 }
+						paratrooper = { x = 0 y = 2 } paratrooper = { x = 1 y = 2 } paratrooper = { x = 2 y = 2 } paratrooper = { x = 3 y = 2 } paratrooper = { x = 4 y = 2 }
+						paratrooper = { x = 0 y = 3 } paratrooper = { x = 1 y = 3 } paratrooper = { x = 2 y = 3 } paratrooper = { x = 3 y = 3 } paratrooper = { x = 4 y = 3 }
+					}
+					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } rocket_artillery = { x = 0 y = 2 } }
+				}
+			}
+			else_if = {
+				limit = { AND = { has_tech = paratroopers NOT = { has_tech = rocket_artillery } } }
+				custom_effect_tooltip = generic_sf_40_w_pra_tt
+				division_template = {
+					name = "Paratroopers"
+					regiments = {
+						paratrooper = { x = 0 y = 0 } paratrooper = { x = 1 y = 0 } paratrooper = { x = 2 y = 0 } paratrooper = { x = 3 y = 0 } paratrooper = { x = 4 y = 0 }
+						paratrooper = { x = 0 y = 1 } paratrooper = { x = 1 y = 1 } paratrooper = { x = 2 y = 1 } paratrooper = { x = 3 y = 1 } paratrooper = { x = 4 y = 1 }
+						paratrooper = { x = 0 y = 2 } paratrooper = { x = 1 y = 2 } paratrooper = { x = 2 y = 2 } paratrooper = { x = 3 y = 2 } paratrooper = { x = 4 y = 2 }
+						paratrooper = { x = 0 y = 3 } paratrooper = { x = 1 y = 3 } paratrooper = { x = 2 y = 3 } paratrooper = { x = 3 y = 3 } paratrooper = { x = 4 y = 3 }
+					}
+					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+				}
+			}
+			if = {
+				limit = { AND = { has_tech = jaegers has_tech = rocket_artillery } }
+				custom_effect_tooltip = generic_sf_40_w_jag_ra_tt
+				division_template = {
+					name = "Jaegers"
 					regiments = {
 						jaeger = { x = 0 y = 0 } jaeger = { x = 1 y = 0 } jaeger = { x = 2 y = 0 }
 						jaeger = { x = 0 y = 1 } jaeger = { x = 1 y = 1 } jaeger = { x = 2 y = 1 } 
 						jaeger = { x = 0 y = 2 } jaeger = { x = 1 y = 2 } jaeger = { x = 2 y = 2 }
+						jaeger = { x = 0 y = 3 } jaeger = { x = 1 y = 3 } jaeger = { x = 2 y = 3 }
 						rocket_artillery_brigade = { x = 3 y = 0 } rocket_artillery_brigade = { x = 4 y = 0 }
 						rocket_artillery_brigade = { x = 3 y = 1 } rocket_artillery_brigade = { x = 4 y = 1 }
 						rocket_artillery_brigade = { x = 3 y = 2 }	rocket_artillery_brigade = { x = 4 y = 2 }
+						rocket_artillery_brigade = { x = 3 y = 3 }	rocket_artillery_brigade = { x = 4 y = 3 }
 					}
 					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } rocket_artillery = { x = 0 y = 2 } }
-				}	
+				}
+			}
+			else_if = {
+				limit = { AND = { has_tech = jaegers NOT = { has_tech = rocket_artillery } } }
+				custom_effect_tooltip = generic_sf_40_w_jag_tt
+				division_template = {
+					name = "Jaegers"
+					regiments = {
+						jaeger = { x = 0 y = 0 } jaeger = { x = 1 y = 0 } jaeger = { x = 2 y = 0 }
+						jaeger = { x = 0 y = 1 } jaeger = { x = 1 y = 1 } jaeger = { x = 2 y = 1 } 
+						jaeger = { x = 0 y = 2 } jaeger = { x = 1 y = 2 } jaeger = { x = 2 y = 2 }
+						jaeger = { x = 0 y = 3 } jaeger = { x = 1 y = 3 } jaeger = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 3 y = 1 } artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }	artillery_brigade = { x = 4 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }	artillery_brigade = { x = 4 y = 3 }
+					}
+					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+				}
 			}
 			if = {
-			limit = { has_tech = shock_troops }
-				custom_effect_tooltip = "Will add a Shock Troop template"
+				limit = { AND = { has_tech = shock_troops has_tech = rocket_artillery } }
+				custom_effect_tooltip = generic_sf_40_w_shk_ra_tt
 				division_template = {
-					name = "30w shock troops"	# Arty can't be paradropped so there is no point adding it in
+					name = "Shock Troops"
 					regiments = {
 						shock_troops = { x = 0 y = 0 } shock_troops = { x = 1 y = 0 } shock_troops = { x = 2 y = 0 }
 						shock_troops = { x = 0 y = 1 } shock_troops = { x = 1 y = 1 } shock_troops = { x = 2 y = 1 } 
 						shock_troops = { x = 0 y = 2 } shock_troops = { x = 1 y = 2 } shock_troops = { x = 2 y = 2 }
+						shock_troops = { x = 0 y = 3 } shock_troops = { x = 1 y = 3 } shock_troops = { x = 2 y = 3 }
 						rocket_artillery_brigade = { x = 3 y = 0 } rocket_artillery_brigade = { x = 4 y = 0 }
 						rocket_artillery_brigade = { x = 3 y = 1 } rocket_artillery_brigade = { x = 4 y = 1 }
 						rocket_artillery_brigade = { x = 3 y = 2 }	rocket_artillery_brigade = { x = 4 y = 2 }
+						rocket_artillery_brigade = { x = 3 y = 3 }	rocket_artillery_brigade = { x = 4 y = 3 }
 					}
 					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } rocket_artillery = { x = 0 y = 2 } }
-				}	
+				}
+			}
+			else_if = {
+				limit = { AND = { has_tech = shock_troops NOT = { has_tech = rocket_artillery } } }
+				custom_effect_tooltip = generic_sf_40_w_shk_tt
+				division_template = {
+					name = "Shock Troops"
+					regiments = {
+						shock_troops = { x = 0 y = 0 } shock_troops = { x = 1 y = 0 } shock_troops = { x = 2 y = 0 }
+						shock_troops = { x = 0 y = 1 } shock_troops = { x = 1 y = 1 } shock_troops = { x = 2 y = 1 } 
+						shock_troops = { x = 0 y = 2 } shock_troops = { x = 1 y = 2 } shock_troops = { x = 2 y = 2 }
+						shock_troops = { x = 0 y = 3 } shock_troops = { x = 1 y = 3 } shock_troops = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 3 y = 1 } artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }	artillery_brigade = { x = 4 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }	artillery_brigade = { x = 4 y = 3 }
+					}
+					support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } }
+				}
 			}				
 		}
 	}
@@ -192,64 +295,85 @@ templates_retards_ai = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			custom_effect_tooltip = "Will add a Motorized Light tank Template template"
-			division_template = {
-				name = "light tanks"
-				regiments = {
-					light_armor = { x = 0 y = 0 } light_armor = { x = 1 y = 0 } light_armor = { x = 2 y = 0 } motorized = { x = 3 y = 0 }	motorized = { x = 4 y = 0 }
-					light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 1 } light_armor = { x = 2 y = 1 } motorized = { x = 3 y = 1 }	motorized = { x = 4 y = 1 }
-					light_armor = { x = 0 y = 2 } light_armor = { x = 1 y = 2 } light_armor = { x = 2 y = 2 } motorized = { x = 3 y = 2 }	motorized = { x = 4 y = 2 }
-					}											
-				support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+			if = {
+			limit = { has_tech = mechanised_infantry }
+				custom_effect_tooltip = "Will add a Mechanized Medium tank Template template"
+				division_template = {
+					name = "Mediums"
+					regiments = {
+						light_armor = { x = 0 y = 0 } light_armor = { x = 1 y = 0 } light_armor = { x = 2 y = 0 } mechanized = { x = 3 y = 0 }	mechanized = { x = 4 y = 0 }
+						light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 1 } light_armor = { x = 2 y = 1 } mechanized = { x = 3 y = 1 }	mechanized = { x = 4 y = 1 }
+						light_armor = { x = 0 y = 2 } light_armor = { x = 1 y = 2 } light_armor = { x = 2 y = 2 } mechanized = { x = 3 y = 2 }	mechanized = { x = 4 y = 2 }
+						light_armor = { x = 0 y = 3 } light_armor = { x = 1 y = 3 } light_armor = { x = 2 y = 3 } mechanized = { x = 3 y = 3 }	mechanized = { x = 4 y = 3 }
+						}											
+					support = { engineer = { x = 0 y = 0 } light_tank_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+				}
+			}
+			else = {
+				custom_effect_tooltip = "Will add a Motorized Light tank Template template"
+				division_template = {
+				name = "Lights"
+					regiments = {
+						light_armor = { x = 0 y = 0 } light_armor = { x = 1 y = 0 } light_armor = { x = 2 y = 0 } motorized = { x = 3 y = 0 }	motorized = { x = 4 y = 0 }
+						light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 1 } light_armor = { x = 2 y = 1 } motorized = { x = 3 y = 1 }	motorized = { x = 4 y = 1 }
+						light_armor = { x = 0 y = 2 } light_armor = { x = 1 y = 2 } light_armor = { x = 2 y = 2 } motorized = { x = 3 y = 2 }	motorized = { x = 4 y = 2 }
+						light_armor = { x = 0 y = 3 } light_armor = { x = 1 y = 3 } light_armor = { x = 2 y = 3 } motorized = { x = 3 y = 3 }	motorized = { x = 4 y = 3 }
+						}											
+					support = { engineer = { x = 0 y = 0 } light_tank_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 } }
+				}
 			}
 			if = {
 			limit = { has_tech = mechanised_infantry }
 				custom_effect_tooltip = "Will add a Mechanized Medium tank Template template"
 				division_template = {
-					name = "medium tanks"
+					name = "Mediums"
 					regiments = {
 						medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } medium_armor = { x = 2 y = 0 } mechanized = { x = 3 y = 0 }	mechanized = { x = 4 y = 0 }
 						medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } medium_armor = { x = 2 y = 1 } mechanized = { x = 3 y = 1 }	mechanized = { x = 4 y = 1 }
 						medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } medium_armor = { x = 2 y = 2 } mechanized = { x = 3 y = 2 }	mechanized = { x = 4 y = 2 }
+						medium_armor = { x = 0 y = 3 } medium_armor = { x = 1 y = 3 } medium_armor = { x = 2 y = 3 } mechanized = { x = 3 y = 3 }	mechanized = { x = 4 y = 3 }
 						}											
-					support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+					support = { engineer = { x = 0 y = 0 } light_tank_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
 				}
 			}
 			else = {
 				custom_effect_tooltip = "Will add a Motorized Medium tank Template template"
 				division_template = {
-					name = "medium tanks"
+					name = "Mediums"
 					regiments = {
 						medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } medium_armor = { x = 2 y = 0 } motorized = { x = 3 y = 0 }	motorized = { x = 4 y = 0 }
 						medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } medium_armor = { x = 2 y = 1 } motorized = { x = 3 y = 1 }	motorized = { x = 4 y = 1 }
 						medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } medium_armor = { x = 2 y = 2 } motorized = { x = 3 y = 2 }	motorized = { x = 4 y = 2 }
+						medium_armor = { x = 0 y = 3 } medium_armor = { x = 1 y = 3 } medium_armor = { x = 2 y = 3 } motorized = { x = 3 y = 3 }	motorized = { x = 4 y = 3 }
 						}											
-					support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+					support = { engineer = { x = 0 y = 0 } light_tank_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
 				}
 			}
 			if = {
 			limit = { has_tech = mechanised_infantry }
 				custom_effect_tooltip = "Will add a Mechanized Heavy tank Template template"
 				division_template = {
-					name = "heavy tanks"
+					name = "Heavies"
 					regiments = {
 						heavy_armor = { x = 0 y = 0 } heavy_armor = { x = 1 y = 0 } heavy_armor = { x = 2 y = 0 } mechanized = { x = 3 y = 0 }	mechanized = { x = 4 y = 0 }
 						heavy_armor = { x = 0 y = 1 } heavy_armor = { x = 1 y = 1 } heavy_armor = { x = 2 y = 1 } mechanized = { x = 3 y = 1 }	mechanized = { x = 4 y = 1 }
 						heavy_armor = { x = 0 y = 2 } heavy_armor = { x = 1 y = 2 } heavy_armor = { x = 2 y = 2 } mechanized = { x = 3 y = 2 }	mechanized = { x = 4 y = 2 }
+						heavy_armor = { x = 0 y = 3 } heavy_armor = { x = 1 y = 3 } heavy_armor = { x = 2 y = 3 } mechanized = { x = 3 y = 3 }	mechanized = { x = 4 y = 3 }
 						}											
-					support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+					support = { engineer = { x = 0 y = 0 } light_tank_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
 				}
 			}
 			else = {
 				custom_effect_tooltip = "Will add a Motorized Heavy tank Template template"
 				division_template = {
-					name = "heavy tanks"
+					name = "Heavies"
 					regiments = {
 						heavy_armor = { x = 0 y = 0 } heavy_armor = { x = 1 y = 0 } heavy_armor = { x = 2 y = 0 } motorized = { x = 3 y = 0 }	motorized = { x = 4 y = 0 }
 						heavy_armor = { x = 0 y = 1 } heavy_armor = { x = 1 y = 1 } heavy_armor = { x = 2 y = 1 } motorized = { x = 3 y = 1 }	motorized = { x = 4 y = 1 }
 						heavy_armor = { x = 0 y = 2 } heavy_armor = { x = 1 y = 2 } heavy_armor = { x = 2 y = 2 } motorized = { x = 3 y = 2 }	motorized = { x = 4 y = 2 }
+						heavy_armor = { x = 0 y = 3 } heavy_armor = { x = 1 y = 3 } heavy_armor = { x = 2 y = 3 } motorized = { x = 3 y = 3 }	motorized = { x = 4 y = 3 }
 						}											
-					support = { engineer = { x = 0 y = 0 } mot_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
+					support = { engineer = { x = 0 y = 0 } light_tank_recon = { x = 0 y = 1 } signal_company = { x = 0 y = 2 }  }
 				}
 			}
 		}
@@ -262,6 +386,9 @@ political_actions = {
 		fire_only_once = yes
 		allowed = {
 			tag = FRA
+		}
+		avaliable = {
+			always = no
 		}
 		visible = {
 			tag = FRA

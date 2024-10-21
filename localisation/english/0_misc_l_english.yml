@@ -12,6 +12,27 @@
 
  generic_armored_car_organization_tt:"Armored Car Manufacturer"
 
+ generic_new_line_segment:0 "\n\n"
+
+ generic_20_w_inf_tt:0 "Will add a 20 width 10/0 Infantry template"
+ generic_20_w_inf_at_tt:0 "Will add a 20 width 9/0/1 Infantry template with line AT"
+ generic_40_w_inf_tt:0 "Will add a 40 width 16/4 Infantry template"
+ 
+ generic_50_w_cav_mp_tt:0 "Will add a 50w cavalry template with MP support company"
+ generic_50_w_cav_tt:0 "Will add a 50w cavalry template"
+
+ generic_sf_warning_tt:0 "RThis decision can only be selected once!\ngBe wise when you click it, it will give you a template of each special force if you have the tech. This also includes weather or not you have rocket arty.!\n\n"
+
+ generic_sf_40_w_mtn_ra_tt:0 "Will add a 40 width Mountaineer template with Rocket Artillery"
+ generic_sf_40_w_mtn_tt:0 "Will add a 40 width Mountaineer template with Regular Artillery"
+ generic_sf_40_w_mrn_ra_tt:0 "Will add a 40 width Marine template with Rocket Artillery"
+ generic_sf_40_w_mrn_tt:0 "Will add a 40 width Marine template with Regular Artillery"
+ generic_sf_40_w_pra_ra_tt:0 "Will add a 40 width Paratrooper template with Rocket Artillery"
+ generic_sf_40_w_pra_tt:0 "Will add a 40 width Paratrooper template with Regular Artillery"
+ generic_sf_40_w_jag_ra_tt:0 "Will add a 40 width Jaeger template with Rocket Artillery"
+ generic_sf_40_w_jag_tt:0 "Will add a 40 width Jaeger template with Regular Artillery"
+ generic_sf_40_w_shk_ra_tt:0 "Will add a 40 width Shock Troop template with Rocket Artillery"
+ generic_sf_40_w_shk_tt:0 "Will add a 40 width Shock Troop template with Regular Artillery"
 
 
 
