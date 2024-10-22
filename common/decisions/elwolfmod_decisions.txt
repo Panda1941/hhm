@@ -387,7 +387,7 @@ political_actions = {
 		allowed = {
 			tag = FRA
 		}
-		avaliable = {
+		available = {
 			always = no
 		}
 		visible = {
@@ -397,6 +397,7 @@ political_actions = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = "Dissabled, to prevent noob trap. This makes you capitulate and die..."
 			set_capital = {
 				state = 461
 			}
@@ -408,6 +409,9 @@ political_actions = {
 		allowed = {
 			tag = FRA
 		}
+		available = {
+			always = no
+		}
 		visible = {
 			tag = FRA
 			NOT = {
@@ -415,6 +419,7 @@ political_actions = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = "Dissabled, to prevent noob trap. This makes you capitulate and die..."
 			set_capital = {
 				state = 539
 			}
