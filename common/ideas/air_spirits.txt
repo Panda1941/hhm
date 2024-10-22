@@ -170,27 +170,11 @@ ideas = {
 				}
 			}
 		}
-		cag_night_fighting_spirit = {
-			ledger = air
-			visible = { always = no }
-			modifier = {
-				air_carrier_night_penalty_reduction_factor = 0.33
-				carrier_night_traffic = 0.5
-			}
-			cost = 30
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
-		}
 		veteran_air_instructors_spirit = {
 			ledger = air
 			available = { has_air_force_command = yes }
 			modifier = {
-				air_range_factor = 0.15
+				air_range_factor = 0.2
 			}
 			cost = 30
 			ai_will_do = {
@@ -205,7 +189,7 @@ ideas = {
 			ledger = air
 			available = { has_air_force_command = yes }
 			modifier = {
-				air_mission_efficiency = 0.06
+				air_mission_efficiency = 0.1
 			}
 			cost = 30
 			visible = {  }
@@ -223,24 +207,9 @@ ideas = {
 			available = { has_air_force_command = yes tag = SOV date > 1942.01.01 }
 			modifier = {
 				air_defence_factor = 0.1
+				air_mission_efficiency = 0.05
 			}
 			cost = 30
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
-		}
-		home_defence_spirit = {
-			ledger = air
-			available = { has_air_force_command = yes }
-			modifier = {
-				ace_effectiveness_factor = 0.5
-			}
-			cost = 30
-			visible = { always = no }
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -300,7 +269,7 @@ ideas = {
 			ledger = air
 			available = { has_air_force_command = yes }
 			modifier = {
-				air_strategic_bomber_bombing_factor = 0.06
+				air_strategic_bomber_bombing_factor = 0.1
 			}
 			cost = 30
 			ai_will_do = {
