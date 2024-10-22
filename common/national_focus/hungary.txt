@@ -236,6 +236,49 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = HUN_new_budget
+		text = "New Budget"
+		icon = GFX_
+		prerequisite = { focus = HUN_elect_a_fascist_king }
+		x = 0
+		y = 1
+		relative_position_id = HUN_elect_a_fascist_king
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality				
+			}
+			OR = {
+				date > 1941.06.01
+				has_war_with = SOV
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = HUN_balanced_budget_2
+				remove_idea = HUN_balanced_budget
+			}
+		}
+	}
 
 	############################
 	## ECONOMIC INTERVENTION ###
