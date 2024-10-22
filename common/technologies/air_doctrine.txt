@@ -1,0 +1,26 @@
+technologies = {
+
+
+	air_superiority = {
+		doctrine_name = "TITLE_STRATEGIC_DESTRUCTION"
+
+		xp_research_type = air
+		xp_unlock_cost = 9999
+
+		on_research_complete = { custom_effect_tooltip = "Air Doctrine Removed" }
+		
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			air_doctrine
+			strategic_destruction_tree
+			cat_strategic_destruction
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+	}
+}

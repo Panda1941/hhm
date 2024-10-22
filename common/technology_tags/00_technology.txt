@@ -199,6 +199,9 @@ technology_folders = {
 	air_doctrine_folder = {
 		ledger = air
 		doctrine = yes
+		available = {
+			always = no
+		}
 	}
 	special_forces_doctrine_folder = {
 		available = {

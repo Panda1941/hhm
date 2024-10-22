@@ -45,7 +45,7 @@ templates_retards_ai = {
 			}
 			custom_effect_tooltip = generic_20_w_inf_at_tt
 			division_template = {
-				name = "20w infantry"
+				name = "20w infantry AT"
 				regiments = {
 					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } anti_tank_brigade = { x = 3 y = 0 }
 					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } 
@@ -299,7 +299,7 @@ templates_retards_ai = {
 			limit = { has_tech = mechanised_infantry }
 				custom_effect_tooltip = "Will add a Mechanized Medium tank Template template"
 				division_template = {
-					name = "Mediums"
+					name = "Lights"
 					regiments = {
 						light_armor = { x = 0 y = 0 } light_armor = { x = 1 y = 0 } light_armor = { x = 2 y = 0 } mechanized = { x = 3 y = 0 }	mechanized = { x = 4 y = 0 }
 						light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 1 } light_armor = { x = 2 y = 1 } mechanized = { x = 3 y = 1 }	mechanized = { x = 4 y = 1 }
