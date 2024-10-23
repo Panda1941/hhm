@@ -361,6 +361,7 @@ set_technology = {
 	CAS1 = 1
 	naval_bomber1 = 1
 }
+set_air_oob = ITA_1936_air_legacy
 
 if = {
 	limit = {
