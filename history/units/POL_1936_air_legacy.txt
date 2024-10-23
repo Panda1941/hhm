@@ -1,0 +1,23 @@
+﻿
+
+##### Wojska Lotnicze i Obrony Powietrzne #####
+air_wings = {
+	86 = { 
+		fighter_equipment_0 =  {
+			owner = "POL" 
+			amount = 100
+		}
+		fighter_equipment_0 =  {
+			owner = "POL" 
+			amount = 100
+		}
+		fighter_equipment_0 =  {
+			owner = "POL" 
+			amount = 100
+		}
+		CAS_equipment_1 =  {
+			owner = "POL" 
+			amount = 100
+		}
+	}
+}

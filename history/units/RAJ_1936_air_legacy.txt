@@ -1,0 +1,13 @@
+﻿
+
+air_wings = {
+	### AHQ India
+	439 = { 
+		### AHQ India -- Fairey Gordons, Battles
+		fighter_equipment_0 = {
+			owner = "RAJ" 
+			creator = "ENG"
+			amount = 100
+		}
+	}
+}

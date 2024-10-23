@@ -1,11 +1,6 @@
 ﻿
 ### Air oob
 air_wings = {
-	### I. Luftkreiskommando -- Konigsberg ###
-	763 = { 
-		# Jagdgeschwader 232 	
-		name = "Jagdgeschwader 232"
-	}
 
 	### II. Luftkreiskommando -- Berlin ###
 	64 = { 

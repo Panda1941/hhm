@@ -1,0 +1,12 @@
+﻿
+
+### Magyar Légiero ###
+air_wings = {
+	43 = {
+		fighter_equipment_0 = {
+			owner = "HUN" 
+			creator = "GER"
+			amount = 100
+		}
+	}
+}

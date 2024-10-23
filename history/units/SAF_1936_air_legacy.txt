@@ -1,0 +1,14 @@
+﻿
+
+air_wings = {
+	###South African Air Force (SAAF)
+	275 = {
+		# SAAF Fighter Squadron -- Hawker Furys
+		fighter_equipment_0 =  {
+			owner = "SAF" 
+			creator = "ENG"
+			amount = 100
+		}
+	}
+}
+

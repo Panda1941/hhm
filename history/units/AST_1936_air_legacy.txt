@@ -4,11 +4,10 @@ air_wings = {
 	### Royal Australian Air Force (RAAF)-- New South Wales
 	285 = {
 		# RAAF Stations Laverton, Richmond -- Hawker Demons, Avro Ansons
-		small_plane_airframe_0 =  {
+		fighter_equipment_0 = {
 			owner = "AST" 
+			creator = "ENG" 
 			amount = 100
-			creator = "ENG"
-			version_name = "Hawker Fury"
 		}
 	}
 }

@@ -1,0 +1,14 @@
+﻿
+
+air_wings = {
+	### Royal Canadian Air Force (RCAF)-- New South Wales
+	276 = {
+		fighter_equipment_0 =  {
+			owner = "CAN" 
+			creator = "ENG" 
+			amount = 100
+		}
+	}
+}
+
+

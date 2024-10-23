@@ -247,7 +247,7 @@
 			# Submarine Division 71
 			ship = { name = "HMS Severn" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }		
 			ship = { name = "HMS Clyde" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }		
-			ship = { name = "HMS Hermes" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = ENG version_name = "Hermes Class" } } 
+			ship = { name = "HMS Hermes" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = ENG version_name = "Courageous Class" } } 
 				
 			}
 			ship = { name = "HMS Danae" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }

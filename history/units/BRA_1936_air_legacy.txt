@@ -3,11 +3,10 @@ air_wings = {
 	### Aviação Militar -- Rio de Janiero
 	500 = {
 		# Fighter Air Group -- Boeing 256s
-		small_plane_airframe_0 =  {
+		fighter_equipment_0 =  {
 			owner = "BRA" 
-			creator = "USA"
+			creator = "USA" 
 			amount = 100
-			version_name = "P-26A"
 		}
 	}
 }

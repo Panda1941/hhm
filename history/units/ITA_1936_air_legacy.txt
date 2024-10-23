@@ -1,0 +1,70 @@
+﻿
+
+
+
+##### AIR WINGS #####
+air_wings = { 
+	### ITALY ###
+	2 = { 
+		fighter_equipment_0 = { 
+			amount = 100 
+			owner = "ITA" 
+		} 
+		fighter_equipment_0 = { 
+			amount = 100 
+			owner = "ITA" 
+		} 
+		fighter_equipment_0 = { 
+			amount = 100 
+			owner = "ITA" 
+		} 
+		fighter_equipment_0 = { 
+			amount = 100
+			owner = "ITA" 
+		} 
+		fighter_equipment_0 = { 
+			amount = 100 
+			owner = "ITA" 
+		} 
+		nav_bomber_equipment_1 = { 
+			amount = 100 
+			owner = "ITA" 
+		} 
+		CAS_equipment_1 = { 
+			amount = 100 
+			owner = "ITA" 
+		} 
+		tac_bomber_equipment_0 = { 
+			amount = 100 
+			owner = "ITA" 
+		} 
+		tac_bomber_equipment_0 = { 
+			amount = 100 
+			owner = "ITA" 
+		}
+		tac_bomber_equipment_0 = { 
+			amount = 100
+			owner = "ITA" 
+		} 
+	}
+} 
+
+
+####### Starting Production Queue #######
+instant_effect = { 
+	if = { 
+		limit = { is_tutorial = no } 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = CAS_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.2 
+			efficiency = 50 
+			industrial_manufacturer = mio:ITA_caproni_organization
+		} 
+	}
+} 

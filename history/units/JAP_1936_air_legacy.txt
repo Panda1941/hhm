@@ -1,0 +1,91 @@
+﻿
+
+
+
+
+#AIRCRAFT
+air_wings = {
+	### IJA Air Forces ###
+	# 1 Hikodan -- Tokyo
+	282 = { 
+		fighter_equipment_0 = {
+			owner = "JAP" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "JAP" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "JAP" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "JAP" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "JAP" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "JAP" 
+			amount = 100
+		}
+		CAS_equipment_1 =  {
+			owner = "JAP" 
+			amount = 100
+		}
+		CAS_equipment_1 =  {
+			owner = "JAP" 
+			amount = 100
+		}
+		CAS_equipment_1 =  {
+			owner = "JAP" 
+			amount = 100
+		}
+		nav_bomber_equipment_1 = {
+			owner = "JAP" 
+			amount = 100
+		}
+		nav_bomber_equipment_1 = {
+			owner = "JAP" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "JAP" 
+			amount = 100
+		}
+	}	
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = 
+{
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "JAP" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+		industrial_manufacturer = mio:JAP_aichi_organization
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = nav_bomber_equipment_1
+			creator = "JAP" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+		industrial_manufacturer = mio:JAP_yokosuka_organization
+	}
+}
