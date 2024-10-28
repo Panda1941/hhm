@@ -240,6 +240,31 @@ ideas = {
 			}
 		}
 
+		SPA_carlism_1_phalanx = {
+
+			name = SPA_carlism
+
+			picture = SPA_carlism
+
+			allowed = {
+				original_tag = SPR
+				OR = {
+					has_government = democratic
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+
+
 		SPA_carlism_2 = {
 
 			name = SPA_carlism

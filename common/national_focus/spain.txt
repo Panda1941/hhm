@@ -498,6 +498,10 @@ focus_tree = {
 			    amount = 30
 			    producer = SPR
 			}
+			swap_ideas = {
+				remove_idea = SPA_carlism_1
+				add_idea = SPA_carlism_1_phalanx
+			}
 		}
 	}
 
@@ -523,6 +527,7 @@ focus_tree = {
 			    ideology = neutrality
 			    popularity = 0.1
 			}
+			add_stability = -0.05
 			add_manpower = 25000
 			add_political_power = 60
 		}
@@ -547,7 +552,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			add_stability = 0.05
 			custom_effect_tooltip = SPA_establish_the_directory_tt
 			hidden_effect = {
 				drop_cosmetic_tag = yes
