@@ -58,7 +58,7 @@ NDefines.NMarket.PURCHASE_CONTRACT_DELIVERY_TOTAL_DAYS = 14
 NDefines.NMarket.IC_TO_CIC_FACTOR = 1
 
 -- Research
-NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2
 
 -- Free Templates
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
