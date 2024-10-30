@@ -206,10 +206,6 @@ generic_medium_tank_organization = {
 
 	initial_trait = {
 		name = generic_mio_initial_trait_medium_tank_designer
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 		
 		production_bonus = {
 			production_capacity_factor = 0.05
@@ -251,10 +247,6 @@ generic_heavy_tank_organization = {
 
 	initial_trait = {
 		name = generic_mio_initial_trait_heavy_tank_designer
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 		
 		equipment_bonus = {
 			armor_value = 0.05
@@ -308,10 +300,6 @@ generic_tank_refurbishment_plant_organization = {
 		name = generic_mio_initial_trait_tank_refurbishment_plant
 
 		limit_to_equipment_type = { armor }
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 
 		production_bonus = {
 			production_conversion_speed_factor = 0.15
@@ -370,9 +358,6 @@ generic_task_force_ship_organization = {
 	initial_trait = {
 		name = generic_mio_initial_trait_task_force_ship_builders
 
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 		equipment_bonus = {
 			max_strength = 0.05
 		}
@@ -410,9 +395,6 @@ generic_battle_line_ship_organization = {
 	initial_trait = {
 		name = generic_mio_initial_trait_battle_line_ship_builders
 
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -500,9 +482,6 @@ generic_escort_ship_organization = {
 	initial_trait = {
 		name = generic_mio_initial_trait_escort_fleet
 
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -546,9 +525,6 @@ generic_raider_ship_organization = {
 	initial_trait = {
 		name = generic_mio_initial_trait_raiding_fleet
 
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 		equipment_bonus = {
 			surface_visibility = -0.05
 		}
@@ -584,9 +560,6 @@ generic_submarine_organization = {
 	initial_trait = {
 		name = generic_mio_initial_trait_submarine_designer
 
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 		equipment_bonus = {
 			sub_visibility = -0.05
 		}
@@ -672,10 +645,6 @@ generic_refurbishment_repair_organization = {
 		limit_to_equipment_type = { capital_ship screen_ship ship_hull_submarine }
 		equipment_bonus = {
 			max_strength = 0.03
-		}
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.01
 		}
 	}
 }
@@ -767,11 +736,8 @@ generic_general_aircraft_organization = {
 	initial_trait = {
 		name = generic_mio_initial_trait_general_aircraft_designer
 
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 		production_bonus = {
-			production_capacity_factor = 0.03
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -909,9 +875,6 @@ generic_heavy_aircraft_organization = {
 
 		limit_to_equipment_type = { large_plane_airframe large_plane_maritime_patrol_plane_airframe }
 
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 		equipment_bonus = {
 			air_bombing = 0.05
 			air_range = 0.10
@@ -1003,12 +966,10 @@ generic_naval_aircraft_organization = {
 	initial_trait = {
 		name = generic_mio_initial_trait_naval_aircraft_designer
 
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
-
-		production_bonus = {
-			production_capacity_factor = 0.05
+		equipment_bonus = {
+			naval_strike_attack = 0.05
+			naval_strike_targetting = 0.05
+			maximum_speed = -0.1
 		}
 	}
 }
@@ -1259,13 +1220,6 @@ generic_artillery_organization = {
 
 	initial_trait = {
 		name = generic_mio_initial_trait_artillery_manufacturer
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
-		production_bonus = {
-			#production_cost_factor = -0.03
-		}
 	}
 }
 
@@ -1360,14 +1314,6 @@ generic_infantry_equipment_organization = {
 
 	initial_trait = {
 		name = generic_mio_initial_trait_infantry_manufacturer
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
-
-		production_bonus = {
-			#production_efficiency_cap_factor = 0.03
-		}
 	}
 }
 
@@ -1401,13 +1347,6 @@ generic_support_equipment_organization = {
 	
 	initial_trait = {
 		name = generic_mio_initial_trait_support_equipment_manufacturer
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
-		production_bonus = {
-			#production_efficiency_cap_factor = 0.03
-		}
 	}
 }
 
@@ -1498,13 +1437,6 @@ generic_motorized_mechanized_organization = {
 	
 	initial_trait = {
 		name = generic_mio_initial_trait_motorized_mechanized_manufacturer
-
-		production_bonus = {
-			#production_efficiency_cap_factor = 0.03
-		}
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 	}
 }
 
@@ -1539,13 +1471,6 @@ generic_armored_car_organization = {
 	
 	initial_trait = {
 		name = generic_armored_car_organization_tt
-		
-		production_bonus = {
-			#production_efficiency_cap_factor = 0.03
-		}
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
 	}
 }
 
