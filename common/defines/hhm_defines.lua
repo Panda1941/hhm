@@ -211,6 +211,7 @@ NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always r
 	}
 ------------------------------------------------------------------------------------------------------
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 4	-- was 5, reduced because SPG and TD are battalions
 
 -- SPECIAL FORCES
 
