@@ -182,17 +182,12 @@ resistance_effect_base = {
 }
 
 resistance_effect = {
-	#local_supplies = -0.5
-	#local_intel_to_enemies = 10
-	#local_factory_sabotage = 0.75
-	#attrition = 0.25
+	# REMOVED
 }
 
 # For compliance base + effect * compliance_level will be applied as a modifier.
 compliance_effect_base = {
-	#local_factories = -0.75
-	#local_manpower = -0.75
-	#local_resources = -0.75
+	# REMOVED
 }
 
 compliance_effect = {
@@ -352,8 +347,6 @@ stability_bad_modifier = {
 
 war_support_good_modifier = {
 	mobilization_speed = 0.30 #in 1/1000 of 1 %
-	# army_core_attack_factor = 0.1
-	# army_core_defence_factor = 0.1
 	command_power_gain_mult = 0.33
 	conscription_factor = 0.05
 }
