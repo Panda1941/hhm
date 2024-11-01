@@ -854,10 +854,7 @@ focus_tree = {
 	focus = {
 		id = SPA_the_will_to_empire
 		available = {
-			has_country_leader = {
-				character = SPA_jose_antonio_primo_de_rivera
-				ruling_only = yes
-			}
+			has_global_flag = scw_over
 		}
 		bypass = {
 		}

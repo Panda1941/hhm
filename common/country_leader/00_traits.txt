@@ -1127,7 +1127,7 @@ leader_traits = {
 	empire_builder = {
 		random = no
 		war_support_factor = 0.05
-		justify_war_goal_time = -0.25
+		army_org_factor = 0.05
 	}
 
 	jefe = {
