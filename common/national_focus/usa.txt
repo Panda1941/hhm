@@ -852,12 +852,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				OR = {
-					has_war_with = JAP
-					has_war_with = CHI
-				}
-			}
+			has_government = democratic
 		}
 		
 		bypass = {
@@ -2905,7 +2900,7 @@ focus_tree = {
 		id = USA_first_special_service_force
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = USA_support_rock_island }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = USA_support_rock_island
 		cost = 10
@@ -2970,7 +2965,7 @@ focus_tree = {
 	focus = {
 		id = USA_womens_armed_service_integration_act
 		icon = GFX_focus_generic_treaty
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		relative_position_id = USA_louisiana_maneuvers
@@ -3025,63 +3020,18 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
-				uses = 2
+				uses = 1
 				bonus = 1.0
 				category = armor
 			}
 		}
 	}
 	focus = {
-		id = USA_tank_destroyer_doctrine
-		icon = GFX_focus_usa_tank_destroyer_doctrine
-		x = -1
-		y = 1
-		prerequisite = { focus = USA_tank_experiments }
-		mutually_exclusive = { focus = USA_main_battle_tanks }
-		relative_position_id = USA_tank_experiments
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}	
-				mio:USA_tank_destroyer_board_organization = {
-					add_mio_size = 2
-				}
-			}
-			
-			add_tech_bonus = {
-				name = USA_armored_infantry
-				uses = 1
-				bonus = 1.0
-				category = motorized_equipment
-			}
-		}
-	}
-	focus = {
 		id = USA_main_battle_tanks
 		icon = GFX_focus_generic_combined_arms
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = { focus = USA_tank_experiments }
-		mutually_exclusive = { focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_tank_experiments
 		cost = 10
 
@@ -3102,30 +3052,28 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}	
-				mio:USA_detroit_arsenal_organization = {
-					add_mio_size = 2
-				}
-			}
 			
+			add_tech_bonus = {
+				name = USA_tank_experiments
+				uses = 1
+				bonus = 1.25
+				category = armor
+			}
 			add_tech_bonus = {
 				name = USA_armored_infantry
 				uses = 1
-				bonus = 1.0
-				category = motorized_equipment
+				bonus = 1.5
+				category = cat_mechanized_equipment
 			}
 		}
 	}
 	focus = {
 		id = USA_build_the_pentagon
 		icon = GFX_focus_usa_build_the_pentagon
-		x = 1
+		x = 0
 		y = 1
-		prerequisite = { focus = USA_first_special_service_force focus = USA_tank_destroyer_doctrine focus = USA_main_battle_tanks focus = USA_womens_armed_service_integration_act }
-		relative_position_id = USA_tank_destroyer_doctrine
+		prerequisite = { focus = USA_first_special_service_force focus = USA_main_battle_tanks focus = USA_womens_armed_service_integration_act }
+		relative_position_id = USA_main_battle_tanks
 		cost = 10
 
 		ai_will_do = {

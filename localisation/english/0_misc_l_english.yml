@@ -60,7 +60,7 @@
  hhm_event.3.d:0 "Air is reworked:\n- Only one gun can be added on an airframe\n- RCannon II > Cannon I > HMG > LMG!\n- One range, one defence and one special module can be added on every airframe\n- Airfield size is 100 * airport level, because fewer planes exist, this is done to simplify air micro"
  hhm_event.4.d:0 "Navy is slightly reworked:\n- RRefitting is now always worth!, since you only pay what you change (even refiting armour / engine is fine)\n- RCarrier limit is 2!, carriers are strong and should be present in most fleets\n- Torpedoes pack a big punch, but are not every accurate, vs a no screen fleet they are really good"
 
- JAP_the_zero_tt_mod:0 "LThis bonus only applies to the Y1940 Airframe! and YCannon 1!, if you already have thoes techs, this focus will be wasted.!\n\n"
+ JAP_the_zero_tt_mod:0 "LThis bonus only applies to the YFighter II (1940)!, if you already have this tech, this focus will be wasted.!\n\n"
 
  GER_integrate_war_economies_mod_tt:0 "If an axis minor (YHungary, Romania, Spain, Bulgaria!) is in faction with YGermany! and YGermany! has completed their respective YAlignment! focuses, they will get 2 YMilitary Factories! in their capital, this does not turn them into a puppet.\n\nYGermany! will receive 2 YMilitary Factories! per minor (up to 8)\n"
 

@@ -2,13 +2,13 @@
 @tier2 = 15
 @tier3 = 5
 
-@experience_gain_low = 0.03
-@experience_gain_medium = 0.06
-@experience_gain_high = 0.08
+@experience_gain_low = 0.05
+@experience_gain_medium = 0.05
+@experience_gain_high = 0.05
 
-@chief_experience_gain_low = 0.10
+@chief_experience_gain_low = 0.15
 @chief_experience_gain_medium = 0.15
-@chief_experience_gain_high = 0.225
+@chief_experience_gain_high = 0.15
 
 ###Todo remove commented advisor experience gains
 

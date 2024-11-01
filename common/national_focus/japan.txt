@@ -1762,107 +1762,13 @@
 	}
 
 	focus = {
-		id = JAP_range_focus
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = JAP_fighter_modernization }
-		x = -1
-		y = 1
-		relative_position_id = JAP_fighter_modernization
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}	
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = JAP_aichi_organization
-				mio:JAP_aichi_organization = {
-					add_mio_funds = 1500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = aichi
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_agility_focus
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = JAP_fighter_modernization }
-		x = 1
-		y = 1
-		relative_position_id = JAP_fighter_modernization
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_purge_the_kodoha_faction
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}	
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = JAP_mitsubishi_organization
-				mio:JAP_mitsubishi_organization = {
-					add_mio_funds = 1500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = mitsubishi
-			}
-		}
-	}
-
-	focus = {
 		id = JAP_the_zero
 		icon = GFX_focus_jap_zero
 		prerequisite = { focus = JAP_first_air_fleet }
-		prerequisite = { focus = JAP_agility_focus }
-		x = 1
-		y = 1
-		relative_position_id = JAP_agility_focus
+		prerequisite = { focus = JAP_fighter_modernization }
+		x = 2
+		y = 2
+		relative_position_id = JAP_fighter_modernization
 
 		cost = 10
 
@@ -1879,7 +1785,7 @@
 		}
 
 		bypass = {
-			has_tech = cv_fighter2
+
 		}
 
 		cancel_if_invalid = yes
@@ -1894,14 +1800,7 @@
 				bonus = 9.99
 				ahead_reduction = 2
 				uses = 1
-				technology = improved_small_airframe
-			}
-			add_tech_bonus = {
-				name = JAP_the_zero
-				bonus = 9.99
-				ahead_reduction = 2
-				uses = 1
-				technology = aa_cannon_1
+				technology = fighter2
 			}
 		}
 	}
@@ -1909,9 +1808,9 @@
 	focus = {
 		id = JAP_bomber_modernization
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = JAP_range_focus focus = JAP_agility_focus }
+		prerequisite = { focus = JAP_fighter_modernization }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = JAP_fighter_modernization
 
 		cost = 10
@@ -1947,11 +1846,10 @@
 	focus = {
 		id = JAP_strategic_bomber_effort
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = JAP_range_focus }
 		prerequisite = { focus = JAP_bomber_modernization }
-		x = -1
-		y = 3
-		relative_position_id = JAP_fighter_modernization
+		x = 0
+		y = 1
+		relative_position_id = JAP_bomber_modernization
 
 		cost = 10
 
@@ -1987,7 +1885,7 @@
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = JAP_agility_focus }
 		prerequisite = { focus = JAP_the_zero }
-		x = 1
+		x = 2
 		y = 3
 		relative_position_id = JAP_fighter_modernization
 
@@ -2392,18 +2290,6 @@
 				bonus = 1.0
 				uses = 1
 				category = bb_tech
-			}
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}	
-				mio:JAP_kure_naval_arsenal_organization = {
-					add_mio_size = 2
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = kure_naval_arsenal
 			}
 		}
 	}

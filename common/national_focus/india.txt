@@ -437,49 +437,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-		custom_effect_tooltip = RAJ_create_unit_red_eagles_tt
-		army_experience = 50
-			hidden_effect = {
-				division_template = {
-					name = "Red Eagles Division"
-					priority = 2
-					division_names_group = RAJ_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-			
-	    	   		 	infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-
-						artillery_brigade = { x = 4 y = 0 }
-						artillery_brigade = { x = 4 y = 1 }
-						artillery_brigade = { x = 4 y = 2 }
-					}
-
-					support = {
-        				artillery = { x = 0 y = 0 }
-        				engineer = { x = 0 y = 1 }
-					}
-				}
-	
-				random_owned_controlled_state = {
-					prioritize = { 439 }
-					create_unit = {
-						division = "name = \"Red Eagles Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
-						owner = RAJ
-					}	
-				}
-			}
+			army_experience = 80
 		}
 	}
 
@@ -688,44 +646,7 @@ focus_tree = {
 				tooltip = add_positive_amount_of_special_forces_xp_tt
 			}
 			add_set_amount_of_special_forces_xp = yes
-			add_ideas = RAJ_indian_gurkhas			
-			custom_effect_tooltip = RAJ_create_unit_gurkas_tt
-			hidden_effect = {	
-				division_template = {
-					name = "Gorkha Rifles"
-					priority = 2
-					division_names_group = RAJ_MNT_01
-					regiments = {
-						mountaineers = { x = 0 y = 0 }
-						mountaineers = { x = 0 y = 1 }
-						mountaineers = { x = 0 y = 2 }
-			
-	    	   		 	mountaineers = { x = 1 y = 0 }
-						mountaineers = { x = 1 y = 1 }
-						mountaineers = { x = 1 y = 2 }
-
-						mountaineers = { x = 2 y = 0 }
-						mountaineers = { x = 2 y = 1 }
-						mountaineers = { x = 2 y = 2 }
-						
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						
-						artillery_brigade = { x = 4 y = 0 }
-						artillery_brigade = { x = 4 y = 1 }
-						artillery_brigade = { x = 4 y = 2 }
-					}
-				}
-	
-				random_owned_controlled_state = {
-					prioritize = { 439 }
-					create_unit = {
-						division = "name = \"1. Gorkha Rifles\" division_template = \"Gorkha Rifles\" start_experience_factor = 1.0" 
-						owner = RAJ
-					}	
-				}
-			}
+			add_ideas = RAJ_indian_gurkhas
 
 		}
 	}
@@ -1223,29 +1144,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_expand_air_bases_AB1
-				}
-				add_building_construction = {
-					type = air_base
-					level = 4
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_expand_air_bases_AB2
-				}
-				add_building_construction = {
-					type = air_base
-					level = 4
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 431 }
@@ -1257,7 +1155,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 4
+					level = 8
 					instant_build = yes
 				}
 				set_state_flag = RAJ_expand_air_bases_AB1
@@ -1272,7 +1170,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 				set_state_flag = RAJ_expand_air_bases_AB2
