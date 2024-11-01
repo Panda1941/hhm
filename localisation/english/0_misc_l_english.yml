@@ -34,7 +34,7 @@
  generic_sf_40_w_shk_ra_tt:0 "Will add a 40 width Shock Troop template with Rocket Artillery"
  generic_sf_40_w_shk_tt:0 "Will add a 40 width Shock Troop template with Regular Artillery"
 
-
+ SPR_constitution_tt:0 "Half of our current YDemocratic! and YCommunist! support is appplied as a RStability! penalty."
 
 
  USA_general_motors_trait:0 "General Motors"

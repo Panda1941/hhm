@@ -428,12 +428,16 @@ focus_tree = {
 					var = suspend_the_constitution_var
 					value = party_popularity@democratic
 				}
+				add_to_temp_variable = {
+					var = suspend_the_constitution_var
+					value = party_popularity@communism
+				}
 				multiply_temp_variable = {
 					var = suspend_the_constitution_var
 					value = -0.5
 				}
 			}
-			custom_effect_tooltip = ENG_alliance_with_germany_tt
+			custom_effect_tooltip = SPR_constitution_tt
 			add_stability = suspend_the_constitution_var
 		}
 	}
@@ -473,7 +477,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPA_suspend_the_constitution
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
@@ -518,18 +522,18 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPA_eliminate_the_carlists
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 		completion_reward = {
 			add_popularity = {
 			    ideology = neutrality
-			    popularity = 0.1
+			    popularity = 0.2
 			}
-			add_stability = -0.05
-			add_manpower = 25000
-			add_political_power = 60
+			add_stability = 0.05
+			add_manpower = 125000
+			add_political_power = 90
 		}
 	}
 
