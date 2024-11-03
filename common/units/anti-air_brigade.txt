@@ -27,9 +27,9 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_organisation = 0
+		max_strength = 3.0
+		max_organisation = 5
 		default_morale = 0.1
-		max_strength = 0.6
 		manpower = 500
 		training_time = 120
 		weight = 0.5
