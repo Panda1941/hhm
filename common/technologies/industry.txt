@@ -1958,7 +1958,7 @@ technologies = {
 	construction1 = {
 		
 		production_speed_buildings_factor = 0.05
-		industry_repair_factor = 0.1
+		industry_repair_factor = 0.05
 
 		path = {
 			leads_to_tech = construction2
@@ -1999,7 +1999,12 @@ technologies = {
 			modify_building_resources = {
 				building = steel_refinery
 				resource = steel
-				amount = 4
+				amount = 2
+			}
+			modify_building_resources = {
+				building = aluminium_refinery
+				resource = aluminium
+				amount = 2
 			}
 		}
 		show_effect_as_desc = yes
@@ -2053,7 +2058,7 @@ technologies = {
 	construction2 = {
 
 		production_speed_buildings_factor = 0.05
-		industry_repair_factor = 0.1
+		industry_repair_factor = 0.05
 		
 		path = {
 			leads_to_tech = construction3 
@@ -2097,9 +2102,14 @@ technologies = {
 
 		on_research_complete = {
 			modify_building_resources = {
+				building = steel_refinery
+				resource = steel
+				amount = 2
+			}
+			modify_building_resources = {
 				building = aluminium_refinery
 				resource = aluminium
-				amount = 4
+				amount = 2
 			}
 		}
 		show_effect_as_desc = yes
@@ -2150,7 +2160,7 @@ technologies = {
 	construction3 = {
 
 		production_speed_buildings_factor = 0.05
-		industry_repair_factor = 0.1
+		industry_repair_factor = 0.05
 		
 		path = {
 			leads_to_tech = construction4 
@@ -2264,7 +2274,7 @@ technologies = {
 	construction4 = {
 
 		production_speed_buildings_factor = 0.05
-		industry_repair_factor = 0.1
+		industry_repair_factor = 0.05
 		
 		path = {
 			leads_to_tech = construction5 
@@ -2366,7 +2376,7 @@ technologies = {
 	construction5 = {
 
 		production_speed_buildings_factor = 0.05
-		industry_repair_factor = 0.1
+		industry_repair_factor = 0.05
 		
 		path = {
 			leads_to_tech = excavation5
@@ -2472,7 +2482,7 @@ technologies = {
     construction6 = {
 
 		production_speed_buildings_factor = 0.05
-		industry_repair_factor = 0.1
+		industry_repair_factor = 0.05
 		
 		path = {
 			leads_to_tech = excavation6
