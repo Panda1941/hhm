@@ -17,7 +17,6 @@ buildings = {
 		allied_build = yes
 
 		infrastructure_construction_effect = yes
-		damage_factor = 2.25
 	}
 
 	arms_factory = {
@@ -30,7 +29,6 @@ buildings = {
 		shares_slots = yes
 		value = 8
 		infrastructure_construction_effect = yes
-		damage_factor = 2.0
 	}
 
 	industrial_complex = {
@@ -43,7 +41,6 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		damage_factor = 2.5
 	}
 
 	air_base = {
@@ -54,7 +51,7 @@ buildings = {
 		air_base = yes
 		max_level = 10
 		value = 1
-		damage_factor = 1.25
+		damage_factor = 0.5
 		allied_build = yes
 		infrastructure_construction_effect = yes
 	}
@@ -68,8 +65,8 @@ buildings = {
 		max_level = 1
 		centered = yes
 		supply_node = yes
-		value = 10
-		damage_factor = 0.15
+		value = 3
+		damage_factor = 0.1
 		allied_build = yes
 		always_shown = yes
 		infrastructure_construction_effect = yes
@@ -83,8 +80,6 @@ buildings = {
 		icon_frame = 16
 		max_level = 1
 		infrastructure_construction_effect = yes
-		value = 3
-		damage_factor = 0.25
 	}
 	
 	naval_base = {
@@ -98,10 +93,9 @@ buildings = {
 		is_port = yes
 		icon_frame = 6
 		max_level = 10
-		value = 1
+		value = 2
 		allied_build = yes
 		infrastructure_construction_effect = yes
-		damage_factor = 0.25
 	}
 
 	bunker = {
@@ -115,7 +109,6 @@ buildings = {
 		max_level = 5
 		value = 1
 		infrastructure_construction_effect = yes
-		damage_factor = 1.75
 	}
 	
 	coastal_bunker = {
@@ -130,7 +123,6 @@ buildings = {
 		max_level = 5
 		value = 1
 		infrastructure_construction_effect = yes
-		damage_factor = 1.75
 	}
 
 	dockyard = {
@@ -145,7 +137,6 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		damage_factor = 1.25
 	}
 
 	
@@ -158,8 +149,8 @@ buildings = {
 		disabled_in_dmz = yes
 		air_defence = 1
 		max_level = 5 # This is the max unlock level
-		damage_factor = 0.25
-		value = 1
+		damage_factor = 0.1
+		value = 2
 		infrastructure_construction_effect = yes
 	}
 
@@ -185,15 +176,13 @@ buildings = {
 		show_on_map = 1
 		base_cost = 8000
 		icon_frame = 10
-		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 4 # This is the max unlock level
 		shares_slots = no
 		value = 10
 		infrastructure_construction_effect = yes
-		damage_factor = 0.2
-		
+		damage_factor = 0.1
 		show_modifier = yes
 		fuel_gain_from_states = 4 #per hour
 	}
@@ -208,8 +197,7 @@ buildings = {
 		shares_slots = no
 		value = 10
 		infrastructure_construction_effect = yes
-		damage_factor = 0.2
-		
+		damage_factor = 0.1
 		show_modifier = yes
 	}
 
@@ -223,8 +211,7 @@ buildings = {
 		shares_slots = no
 		value = 10
 		infrastructure_construction_effect = yes
-		damage_factor = 0.2
-		
+		damage_factor = 0.1
 		show_modifier = yes
 	}
 
@@ -239,8 +226,7 @@ buildings = {
 		shares_slots = no
 		value = 10
 		infrastructure_construction_effect = yes
-		damage_factor = 0.2
-		
+		damage_factor = 0.1
 		show_modifier = yes
 	}
 
@@ -252,7 +238,6 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		damage_factor = 0.2
 		fuel_silo = yes
 		
 		show_modifier = yes
@@ -284,7 +269,6 @@ buildings = {
 		shares_slots = yes
 		value = 1
 		infrastructure_construction_effect = yes
-		damage_factor = 0.75
 	}
 
 	nuclear_reactor = {
@@ -297,6 +281,5 @@ buildings = {
 		shares_slots = yes
 		value = 10
 		infrastructure_construction_effect = yes
-		damage_factor = 0.75
 	}
 }
